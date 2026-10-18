@@ -33,7 +33,7 @@ jobs:
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq sqlite3
-          pip install requests beautifulsoup4
+         
 
       - name: Nightly data update
         run: |
