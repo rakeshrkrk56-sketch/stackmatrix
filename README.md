@@ -43,3 +43,77 @@ Some outbound links on the live site may earn a referral commission at no extra 
 ---
 
 © 2026 StackCostMatrix.com
+
+---
+
+## Complete page directory (crawlable index)
+
+Every calculator and guide on the live site, for search engines and researchers:
+
+### Pillar guides
+- [Crm Integration Pricing Guide](https://stackcostmatrix.com/crm-integration-pricing-guide/)
+- [Hubspot Integrations Cost](https://stackcostmatrix.com/hubspot-integrations-cost/)
+- [Salesforce Integrations Cost](https://stackcostmatrix.com/salesforce-integrations-cost/)
+
+### All 55 integration cost calculators
+- [Activecampaign + Calendly](https://stackcostmatrix.com/stack/activecampaign-and-calendly/)
+- [Activecampaign + Pipedrive](https://stackcostmatrix.com/stack/activecampaign-and-pipedrive/)
+- [Activecampaign + Stripe](https://stackcostmatrix.com/stack/activecampaign-and-stripe/)
+- [Airtable + Quickbooks](https://stackcostmatrix.com/stack/airtable-and-quickbooks/)
+- [Airtable + Stripe](https://stackcostmatrix.com/stack/airtable-and-stripe/)
+- [Asana + Mailchimp](https://stackcostmatrix.com/stack/asana-and-mailchimp/)
+- [Asana + Quickbooks](https://stackcostmatrix.com/stack/asana-and-quickbooks/)
+- [Asana + Slack](https://stackcostmatrix.com/stack/asana-and-slack/)
+- [Clickup + Slack](https://stackcostmatrix.com/stack/clickup-and-slack/)
+- [Clickup + Stripe](https://stackcostmatrix.com/stack/clickup-and-stripe/)
+- [Clickup + Zendesk](https://stackcostmatrix.com/stack/clickup-and-zendesk/)
+- [Freshdesk + Hubspot](https://stackcostmatrix.com/stack/freshdesk-and-hubspot/)
+- [Freshdesk + Slack](https://stackcostmatrix.com/stack/freshdesk-and-slack/)
+- [Hubspot + Asana](https://stackcostmatrix.com/stack/hubspot-and-asana/)
+- [Hubspot + Calendly](https://stackcostmatrix.com/stack/hubspot-and-calendly/)
+- [Hubspot + Clickup](https://stackcostmatrix.com/stack/hubspot-and-clickup/)
+- [Hubspot + Mailchimp](https://stackcostmatrix.com/stack/hubspot-and-mailchimp/)
+- [Hubspot + Monday](https://stackcostmatrix.com/stack/hubspot-and-monday/)
+- [Hubspot + Pipedrive](https://stackcostmatrix.com/stack/hubspot-and-pipedrive/)
+- [Hubspot + Salesforce](https://stackcostmatrix.com/stack/hubspot-and-salesforce/)
+- [Hubspot + Slack](https://stackcostmatrix.com/stack/hubspot-and-slack/)
+- [Hubspot + Stripe](https://stackcostmatrix.com/stack/hubspot-and-stripe/)
+- [Hubspot + Zendesk](https://stackcostmatrix.com/stack/hubspot-and-zendesk/)
+- [Intercom + Hubspot](https://stackcostmatrix.com/stack/intercom-and-hubspot/)
+- [Intercom + Stripe](https://stackcostmatrix.com/stack/intercom-and-stripe/)
+- [Mailchimp + Airtable](https://stackcostmatrix.com/stack/mailchimp-and-airtable/)
+- [Mailchimp + Calendly](https://stackcostmatrix.com/stack/mailchimp-and-calendly/)
+- [Monday + Quickbooks](https://stackcostmatrix.com/stack/monday-and-quickbooks/)
+- [Monday + Slack](https://stackcostmatrix.com/stack/monday-and-slack/)
+- [Monday + Zendesk](https://stackcostmatrix.com/stack/monday-and-zendesk/)
+- [Notion + Calendly](https://stackcostmatrix.com/stack/notion-and-calendly/)
+- [Notion + Stripe](https://stackcostmatrix.com/stack/notion-and-stripe/)
+- [Pipedrive + Calendly](https://stackcostmatrix.com/stack/pipedrive-and-calendly/)
+- [Pipedrive + Mailchimp](https://stackcostmatrix.com/stack/pipedrive-and-mailchimp/)
+- [Pipedrive + Slack](https://stackcostmatrix.com/stack/pipedrive-and-slack/)
+- [Pipedrive + Xero](https://stackcostmatrix.com/stack/pipedrive-and-xero/)
+- [Quickbooks + Mailchimp](https://stackcostmatrix.com/stack/quickbooks-and-mailchimp/)
+- [Quickbooks + Slack](https://stackcostmatrix.com/stack/quickbooks-and-slack/)
+- [Salesforce + Mailchimp](https://stackcostmatrix.com/stack/salesforce-and-mailchimp/)
+- [Salesforce + Slack](https://stackcostmatrix.com/stack/salesforce-and-slack/)
+- [Salesforce + Stripe](https://stackcostmatrix.com/stack/salesforce-and-stripe/)
+- [Salesforce + Zendesk](https://stackcostmatrix.com/stack/salesforce-and-zendesk/)
+- [Slack + Airtable](https://stackcostmatrix.com/stack/slack-and-airtable/)
+- [Slack + Calendly](https://stackcostmatrix.com/stack/slack-and-calendly/)
+- [Slack + Intercom](https://stackcostmatrix.com/stack/slack-and-intercom/)
+- [Slack + Notion](https://stackcostmatrix.com/stack/slack-and-notion/)
+- [Slack + Zendesk](https://stackcostmatrix.com/stack/slack-and-zendesk/)
+- [Stripe + Mailchimp](https://stackcostmatrix.com/stack/stripe-and-mailchimp/)
+- [Stripe + Quickbooks](https://stackcostmatrix.com/stack/stripe-and-quickbooks/)
+- [Stripe + Slack](https://stackcostmatrix.com/stack/stripe-and-slack/)
+- [Stripe + Xero](https://stackcostmatrix.com/stack/stripe-and-xero/)
+- [Xero + Activecampaign](https://stackcostmatrix.com/stack/xero-and-activecampaign/)
+- [Xero + Calendly](https://stackcostmatrix.com/stack/xero-and-calendly/)
+- [Zendesk + Notion](https://stackcostmatrix.com/stack/zendesk-and-notion/)
+- [Zendesk + Stripe](https://stackcostmatrix.com/stack/zendesk-and-stripe/)
+
+### Site pages
+- [Stackcostmatrix.Com](https://stackcostmatrix.com/)
+- [About](https://stackcostmatrix.com/about/)
+- [Privacy](https://stackcostmatrix.com/privacy/)
+- [Terms](https://stackcostmatrix.com/terms/)
