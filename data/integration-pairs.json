@@ -1,0 +1,1815 @@
+{
+ "name": "StackCostMatrix B2B SaaS Integration Cost Index",
+ "license": "CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)",
+ "attribution": "StackCostMatrix, https://stackcostmatrix.com",
+ "generated_from_live_site": "2026-11-03",
+ "notes": [
+  "Plan prices are monthly-billing list prices in USD where the vendor publishes one; annual_billing_per_seat_usd_per_month is the vendor's annual-billing price, where published.",
+  "Free tiers are listed where the vendor documents the integration working on its free plan.",
+  "Modeled assumptions: HubSpot Professional and Enterprise are flat monthly prices; ActiveCampaign and Pipedrive list annual-billing rates only; Salesforce and QuickBooks Online prices were last verified 2026-10-17.",
+  "Each pair's 'verification' field states what was checked and when, including exceptions."
+ ],
+ "tools": {
+  "activecampaign": {
+   "name": "ActiveCampaign",
+   "plans": {
+    "Starter": {
+     "monthly_base_usd": 15,
+     "monthly_per_seat_usd": 0,
+     "min_seats": 1,
+     "api_access": true
+    },
+    "Plus": {
+     "monthly_base_usd": 49,
+     "monthly_per_seat_usd": 0,
+     "min_seats": 1,
+     "api_access": true
+    },
+    "Pro": {
+     "monthly_base_usd": 79,
+     "monthly_per_seat_usd": 0,
+     "min_seats": 1,
+     "api_access": true
+    }
+   }
+  },
+  "airtable": {
+   "name": "Airtable",
+   "plans": {
+    "Free": {
+     "monthly_base_usd": 0,
+     "monthly_per_seat_usd": 0,
+     "min_seats": 1,
+     "api_access": true
+    },
+    "Team": {
+     "monthly_base_usd": 0,
+     "monthly_per_seat_usd": 24,
+     "min_seats": 1,
+     "api_access": true,
+     "annual_billing_per_seat_usd_per_month": 20
+    },
+    "Business": {
+     "monthly_base_usd": 0,
+     "monthly_per_seat_usd": 54,
+     "min_seats": 1,
+     "api_access": true,
+     "annual_billing_per_seat_usd_per_month": 45
+    }
+   }
+  },
+  "asana": {
+   "name": "Asana",
+   "plans": {
+    "Starter": {
+     "monthly_base_usd": 0,
+     "monthly_per_seat_usd": 13.49,
+     "min_seats": 1,
+     "api_access": true,
+     "annual_billing_per_seat_usd_per_month": 10.99
+    },
+    "Advanced": {
+     "monthly_base_usd": 0,
+     "monthly_per_seat_usd": 30.49,
+     "min_seats": 1,
+     "api_access": true,
+     "annual_billing_per_seat_usd_per_month": 24.99
+    }
+   }
+  },
+  "calendly": {
+   "name": "Calendly",
+   "plans": {
+    "Standard": {
+     "monthly_base_usd": 0,
+     "monthly_per_seat_usd": 12,
+     "min_seats": 1,
+     "api_access": true,
+     "annual_billing_per_seat_usd_per_month": 10
+    },
+    "Teams": {
+     "monthly_base_usd": 0,
+     "monthly_per_seat_usd": 20,
+     "min_seats": 1,
+     "api_access": true,
+     "annual_billing_per_seat_usd_per_month": 16
+    },
+    "Free": {
+     "monthly_base_usd": 0,
+     "monthly_per_seat_usd": 0,
+     "min_seats": 1,
+     "api_access": true
+    }
+   }
+  },
+  "clickup": {
+   "name": "ClickUp",
+   "plans": {
+    "Free": {
+     "monthly_base_usd": 0,
+     "monthly_per_seat_usd": 0,
+     "min_seats": 1,
+     "api_access": true
+    },
+    "Core": {
+     "monthly_base_usd": 0,
+     "monthly_per_seat_usd": 12,
+     "min_seats": 1,
+     "api_access": true,
+     "annual_billing_per_seat_usd_per_month": 9
+    },
+    "Business": {
+     "monthly_base_usd": 0,
+     "monthly_per_seat_usd": 25,
+     "min_seats": 1,
+     "api_access": true,
+     "annual_billing_per_seat_usd_per_month": 17
+    }
+   }
+  },
+  "freshdesk": {
+   "name": "Freshdesk",
+   "plans": {
+    "Growth": {
+     "monthly_base_usd": 0,
+     "monthly_per_seat_usd": 23,
+     "min_seats": 1,
+     "api_access": true,
+     "annual_billing_per_seat_usd_per_month": 19
+    },
+    "Pro": {
+     "monthly_base_usd": 0,
+     "monthly_per_seat_usd": 66,
+     "min_seats": 1,
+     "api_access": true,
+     "annual_billing_per_seat_usd_per_month": 55
+    },
+    "Enterprise": {
+     "monthly_base_usd": 0,
+     "monthly_per_seat_usd": 107,
+     "min_seats": 1,
+     "api_access": true,
+     "annual_billing_per_seat_usd_per_month": 89
+    }
+   }
+  },
+  "hubspot": {
+   "name": "HubSpot",
+   "plans": {
+    "Free": {
+     "monthly_base_usd": 0,
+     "monthly_per_seat_usd": 0,
+     "min_seats": 1,
+     "api_access": true
+    },
+    "Starter": {
+     "monthly_base_usd": 0,
+     "monthly_per_seat_usd": 20,
+     "min_seats": 1,
+     "api_access": true
+    },
+    "Professional": {
+     "monthly_base_usd": 800,
+     "monthly_per_seat_usd": 0,
+     "min_seats": 1,
+     "api_access": true
+    },
+    "Enterprise": {
+     "monthly_base_usd": 3600,
+     "monthly_per_seat_usd": 0,
+     "min_seats": 1,
+     "api_access": true
+    }
+   }
+  },
+  "intercom": {
+   "name": "Intercom",
+   "plans": {
+    "Essential": {
+     "monthly_base_usd": 0,
+     "monthly_per_seat_usd": 39,
+     "min_seats": 1,
+     "api_access": true,
+     "annual_billing_per_seat_usd_per_month": 29
+    },
+    "Advanced": {
+     "monthly_base_usd": 0,
+     "monthly_per_seat_usd": 99,
+     "min_seats": 1,
+     "api_access": true,
+     "annual_billing_per_seat_usd_per_month": 85
+    }
+   }
+  },
+  "mailchimp": {
+   "name": "Mailchimp",
+   "plans": {
+    "Essentials": {
+     "monthly_base_usd": 13,
+     "monthly_per_seat_usd": 0,
+     "min_seats": 1,
+     "api_access": true
+    },
+    "Standard": {
+     "monthly_base_usd": 20,
+     "monthly_per_seat_usd": 0,
+     "min_seats": 1,
+     "api_access": true
+    },
+    "Premium": {
+     "monthly_base_usd": 350,
+     "monthly_per_seat_usd": 0,
+     "min_seats": 1,
+     "api_access": true
+    },
+    "Free": {
+     "monthly_base_usd": 0,
+     "monthly_per_seat_usd": 0,
+     "min_seats": 1,
+     "api_access": true
+    }
+   }
+  },
+  "monday": {
+   "name": "Monday.com",
+   "plans": {
+    "Basic": {
+     "monthly_base_usd": 0,
+     "monthly_per_seat_usd": 12,
+     "min_seats": 3,
+     "api_access": false,
+     "annual_billing_per_seat_usd_per_month": 9
+    },
+    "Standard": {
+     "monthly_base_usd": 0,
+     "monthly_per_seat_usd": 14,
+     "min_seats": 3,
+     "api_access": true,
+     "annual_billing_per_seat_usd_per_month": 12
+    },
+    "Pro": {
+     "monthly_base_usd": 0,
+     "monthly_per_seat_usd": 24,
+     "min_seats": 3,
+     "api_access": true,
+     "annual_billing_per_seat_usd_per_month": 19
+    }
+   }
+  },
+  "notion": {
+   "name": "Notion",
+   "plans": {
+    "Plus": {
+     "monthly_base_usd": 0,
+     "monthly_per_seat_usd": 12,
+     "min_seats": 1,
+     "api_access": true,
+     "annual_billing_per_seat_usd_per_month": 10
+    },
+    "Business": {
+     "monthly_base_usd": 0,
+     "monthly_per_seat_usd": 24,
+     "min_seats": 1,
+     "api_access": true,
+     "annual_billing_per_seat_usd_per_month": 20
+    }
+   }
+  },
+  "pipedrive": {
+   "name": "Pipedrive",
+   "plans": {
+    "Lite": {
+     "monthly_base_usd": 0,
+     "monthly_per_seat_usd": 14,
+     "min_seats": 1,
+     "api_access": true
+    },
+    "Growth": {
+     "monthly_base_usd": 0,
+     "monthly_per_seat_usd": 39,
+     "min_seats": 1,
+     "api_access": true
+    },
+    "Premium": {
+     "monthly_base_usd": 0,
+     "monthly_per_seat_usd": 59,
+     "min_seats": 1,
+     "api_access": true
+    },
+    "Ultimate": {
+     "monthly_base_usd": 0,
+     "monthly_per_seat_usd": 79,
+     "min_seats": 1,
+     "api_access": true
+    }
+   }
+  },
+  "quickbooks": {
+   "name": "QuickBooks Online",
+   "plans": {
+    "Simple Start": {
+     "monthly_base_usd": 35,
+     "monthly_per_seat_usd": 0,
+     "min_seats": 1,
+     "api_access": true
+    },
+    "Essentials": {
+     "monthly_base_usd": 65,
+     "monthly_per_seat_usd": 0,
+     "min_seats": 1,
+     "api_access": true
+    },
+    "Plus": {
+     "monthly_base_usd": 99,
+     "monthly_per_seat_usd": 0,
+     "min_seats": 1,
+     "api_access": true
+    }
+   }
+  },
+  "salesforce": {
+   "name": "Salesforce Sales Cloud",
+   "plans": {
+    "Starter": {
+     "monthly_base_usd": 0,
+     "monthly_per_seat_usd": 25,
+     "min_seats": 1,
+     "api_access": false
+    },
+    "Professional": {
+     "monthly_base_usd": 0,
+     "monthly_per_seat_usd": 100,
+     "min_seats": 1,
+     "api_access": true
+    },
+    "Enterprise": {
+     "monthly_base_usd": 0,
+     "monthly_per_seat_usd": 165,
+     "min_seats": 1,
+     "api_access": true
+    },
+    "Unlimited": {
+     "monthly_base_usd": 0,
+     "monthly_per_seat_usd": 330,
+     "min_seats": 1,
+     "api_access": true
+    }
+   }
+  },
+  "slack": {
+   "name": "Slack",
+   "plans": {
+    "Free": {
+     "monthly_base_usd": 0,
+     "monthly_per_seat_usd": 0,
+     "min_seats": 1,
+     "api_access": true
+    },
+    "Pro": {
+     "monthly_base_usd": 0,
+     "monthly_per_seat_usd": 8.75,
+     "min_seats": 1,
+     "api_access": true
+    },
+    "Business+": {
+     "monthly_base_usd": 0,
+     "monthly_per_seat_usd": 18,
+     "min_seats": 1,
+     "api_access": true
+    }
+   }
+  },
+  "stripe": {
+   "name": "Stripe",
+   "plans": {
+    "Standard": {
+     "monthly_base_usd": 0,
+     "monthly_per_seat_usd": 0,
+     "min_seats": 1,
+     "api_access": true
+    }
+   }
+  },
+  "xero": {
+   "name": "Xero",
+   "plans": {
+    "Early": {
+     "monthly_base_usd": 27,
+     "monthly_per_seat_usd": 0,
+     "min_seats": 1,
+     "api_access": true
+    },
+    "Growing": {
+     "monthly_base_usd": 59,
+     "monthly_per_seat_usd": 0,
+     "min_seats": 1,
+     "api_access": true
+    },
+    "Established": {
+     "monthly_base_usd": 97,
+     "monthly_per_seat_usd": 0,
+     "min_seats": 1,
+     "api_access": true
+    }
+   }
+  },
+  "zendesk": {
+   "name": "Zendesk",
+   "plans": {
+    "Suite Team": {
+     "monthly_base_usd": 0,
+     "monthly_per_seat_usd": 69,
+     "min_seats": 1,
+     "api_access": true,
+     "annual_billing_per_seat_usd_per_month": 55
+    },
+    "Suite Growth": {
+     "monthly_base_usd": 0,
+     "monthly_per_seat_usd": 115,
+     "min_seats": 1,
+     "api_access": true,
+     "annual_billing_per_seat_usd_per_month": 89
+    },
+    "Suite Professional": {
+     "monthly_base_usd": 0,
+     "monthly_per_seat_usd": 149,
+     "min_seats": 1,
+     "api_access": true,
+     "annual_billing_per_seat_usd_per_month": 115
+    }
+   }
+  }
+ },
+ "pairs": [
+  {
+   "pair": "activecampaign-and-calendly",
+   "url": "https://stackcostmatrix.com/stack/activecampaign-and-calendly/",
+   "tools": [
+    "ActiveCampaign",
+    "Calendly"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "ActiveCampaign": "Starter",
+    "Calendly": "Standard"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "1-way (Calendly → ActiveCampaign)",
+   "ten_seat_monthly_cost_usd": 135,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026",
+   "last_reviewed": "2026-11-03",
+   "date_modified": "2026-11-03",
+   "sources": []
+  },
+  {
+   "pair": "activecampaign-and-pipedrive",
+   "url": "https://stackcostmatrix.com/stack/activecampaign-and-pipedrive/",
+   "tools": [
+    "ActiveCampaign",
+    "Pipedrive"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "ActiveCampaign": "Starter",
+    "Pipedrive": "Growth"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "2-way",
+   "ten_seat_monthly_cost_usd": 405,
+   "verification": "Integration requirements checked · Nov 3, 2026 (Pipedrive plan unconfirmed) · Prices checked · Nov 3, 2026 (Pipedrive prices: from an indexed copy of its pricing page)",
+   "last_reviewed": "2026-11-03",
+   "date_modified": "2026-11-03",
+   "sources": [
+    {
+     "title": "ActiveCampaign: Use the Pipedrive integration",
+     "url": "https://help.activecampaign.com/hc/en-us/articles/360013357320-Use-the-ActiveCampaign-Pipedrive-integration"
+    }
+   ]
+  },
+  {
+   "pair": "activecampaign-and-stripe",
+   "url": "https://stackcostmatrix.com/stack/activecampaign-and-stripe/",
+   "tools": [
+    "ActiveCampaign",
+    "Stripe"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "ActiveCampaign": "Starter",
+    "Stripe": "Standard"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "2-way",
+   "ten_seat_monthly_cost_usd": 15,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026",
+   "last_reviewed": "2026-11-03",
+   "date_modified": "2026-11-03",
+   "sources": []
+  },
+  {
+   "pair": "airtable-and-quickbooks",
+   "url": "https://stackcostmatrix.com/stack/airtable-and-quickbooks/",
+   "tools": [
+    "Airtable",
+    "QuickBooks Online"
+   ],
+   "connection_type": "middleware",
+   "minimum_plans": {
+    "Airtable": "Free",
+    "QuickBooks Online": "Plus"
+   },
+   "middleware_monthly_usd": 9,
+   "sync_direction": "1-way (trigger → action)",
+   "ten_seat_monthly_cost_usd": 108,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (QuickBooks prices: Oct 17, 2026; Make/Zapier fee: Oct 17, 2026)",
+   "last_reviewed": "2026-11-03",
+   "date_modified": "2026-11-03",
+   "sources": []
+  },
+  {
+   "pair": "airtable-and-stripe",
+   "url": "https://stackcostmatrix.com/stack/airtable-and-stripe/",
+   "tools": [
+    "Airtable",
+    "Stripe"
+   ],
+   "connection_type": "middleware",
+   "minimum_plans": {
+    "Airtable": "Free",
+    "Stripe": "Standard"
+   },
+   "middleware_monthly_usd": 9,
+   "sync_direction": "1-way (trigger → action)",
+   "ten_seat_monthly_cost_usd": 9,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Make/Zapier fee: Oct 17, 2026)",
+   "last_reviewed": "2026-11-03",
+   "date_modified": "2026-11-03",
+   "sources": []
+  },
+  {
+   "pair": "asana-and-mailchimp",
+   "url": "https://stackcostmatrix.com/stack/asana-and-mailchimp/",
+   "tools": [
+    "Asana",
+    "Mailchimp"
+   ],
+   "connection_type": "middleware",
+   "minimum_plans": {
+    "Asana": "Starter",
+    "Mailchimp": "Essentials"
+   },
+   "middleware_monthly_usd": 19.99,
+   "sync_direction": "1-way (trigger → action)",
+   "ten_seat_monthly_cost_usd": 167.89,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Make/Zapier fee: Oct 17, 2026)",
+   "last_reviewed": "2026-11-03",
+   "date_modified": "2026-11-03",
+   "sources": []
+  },
+  {
+   "pair": "asana-and-quickbooks",
+   "url": "https://stackcostmatrix.com/stack/asana-and-quickbooks/",
+   "tools": [
+    "Asana",
+    "QuickBooks Online"
+   ],
+   "connection_type": "middleware",
+   "minimum_plans": {
+    "Asana": "Advanced",
+    "QuickBooks Online": "Plus"
+   },
+   "middleware_monthly_usd": 9,
+   "sync_direction": "1-way (trigger → action)",
+   "ten_seat_monthly_cost_usd": 412.9,
+   "verification": "Prices checked against official vendor docs · Nov 3, 2026 (QuickBooks prices: Oct 17, 2026; Make/Zapier fee: Oct 17, 2026) · Integration requirements last checked · Oct 17, 2026 (re-check pending)",
+   "last_reviewed": "2026-10-17",
+   "date_modified": "2026-11-03",
+   "sources": []
+  },
+  {
+   "pair": "asana-and-slack",
+   "url": "https://stackcostmatrix.com/stack/asana-and-slack/",
+   "tools": [
+    "Asana",
+    "Slack"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "Asana": "Starter",
+    "Slack": "Free"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "2-way",
+   "ten_seat_monthly_cost_usd": 134.9,
+   "verification": "Integration requirements checked · Nov 3, 2026 (Asana plan unconfirmed) · Prices checked · Nov 3, 2026",
+   "last_reviewed": "2026-11-03",
+   "date_modified": "2026-11-03",
+   "sources": []
+  },
+  {
+   "pair": "clickup-and-slack",
+   "url": "https://stackcostmatrix.com/stack/clickup-and-slack/",
+   "tools": [
+    "ClickUp",
+    "Slack"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "ClickUp": "Free",
+    "Slack": "Free"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "2-way",
+   "ten_seat_monthly_cost_usd": 0,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026",
+   "last_reviewed": "2026-11-03",
+   "date_modified": "2026-11-03",
+   "sources": [
+    {
+     "title": "ClickUp: Intro to the integration with Slack",
+     "url": "https://help.clickup.com/hc/en-us/articles/6304922742295-Intro-to-the-integration-with-Slack"
+    },
+    {
+     "title": "Slack: Free plan limits",
+     "url": "https://slack.com/help/articles/27204752526611-Feature-limitations-on-the-free-version-of-Slack"
+    }
+   ]
+  },
+  {
+   "pair": "clickup-and-stripe",
+   "url": "https://stackcostmatrix.com/stack/clickup-and-stripe/",
+   "tools": [
+    "ClickUp",
+    "Stripe"
+   ],
+   "connection_type": "middleware",
+   "minimum_plans": {
+    "ClickUp": "Free",
+    "Stripe": "Standard"
+   },
+   "middleware_monthly_usd": 9,
+   "sync_direction": "1-way (trigger → action)",
+   "ten_seat_monthly_cost_usd": 9,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Make/Zapier fee: Oct 17, 2026)",
+   "last_reviewed": "2026-11-03",
+   "date_modified": "2026-11-03",
+   "sources": []
+  },
+  {
+   "pair": "clickup-and-zendesk",
+   "url": "https://stackcostmatrix.com/stack/clickup-and-zendesk/",
+   "tools": [
+    "ClickUp",
+    "Zendesk"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "ClickUp": "Free",
+    "Zendesk": "Suite Team"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "Linked tasks (2-way sync needs ClickUp Business Plus)",
+   "ten_seat_monthly_cost_usd": 690,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026",
+   "last_reviewed": "2026-11-03",
+   "date_modified": "2026-11-03",
+   "sources": []
+  },
+  {
+   "pair": "freshdesk-and-hubspot",
+   "url": "https://stackcostmatrix.com/stack/freshdesk-and-hubspot/",
+   "tools": [
+    "Freshdesk",
+    "HubSpot"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "Freshdesk": "Growth",
+    "HubSpot": "Free"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "2-way",
+   "ten_seat_monthly_cost_usd": 230,
+   "verification": "Integration requirements checked · Nov 3, 2026 (Freshdesk plan unconfirmed) · Prices checked · Nov 3, 2026",
+   "last_reviewed": "2026-11-03",
+   "date_modified": "2026-11-03",
+   "sources": [
+    {
+     "title": "HubSpot Marketplace: Freshdesk Data Sync",
+     "url": "https://ecosystem.hubspot.com/marketplace/listing/freshdesk-data-sync"
+    }
+   ]
+  },
+  {
+   "pair": "freshdesk-and-slack",
+   "url": "https://stackcostmatrix.com/stack/freshdesk-and-slack/",
+   "tools": [
+    "Freshdesk",
+    "Slack"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "Freshdesk": "Growth",
+    "Slack": "Free"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "2-way",
+   "ten_seat_monthly_cost_usd": 230,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026",
+   "last_reviewed": "2026-11-03",
+   "date_modified": "2026-11-03",
+   "sources": [
+    {
+     "title": "Freshdesk: The latest Slack app",
+     "url": "https://support.freshdesk.com/support/solutions/articles/50000001687-simplifying-collaboration-using-the-latest-slack-app"
+    },
+    {
+     "title": "Freshdesk: Overview of collaboration",
+     "url": "https://support.freshdesk.com/support/solutions/articles/50000006589-overview-of-collaboration"
+    }
+   ]
+  },
+  {
+   "pair": "hubspot-and-asana",
+   "url": "https://stackcostmatrix.com/stack/hubspot-and-asana/",
+   "tools": [
+    "HubSpot",
+    "Asana"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "HubSpot": "Professional",
+    "Asana": "Starter"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "1-way (HubSpot → Asana)",
+   "ten_seat_monthly_cost_usd": 934.9,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (HubSpot Professional: modeled at a flat monthly price)",
+   "last_reviewed": "2026-11-03",
+   "date_modified": "2026-11-03",
+   "sources": [
+    {
+     "title": "HubSpot: Create Asana tasks with workflows",
+     "url": "https://knowledge.hubspot.com/workflows/create-asana-tasks-with-workflows"
+    },
+    {
+     "title": "HubSpot Marketplace: Asana",
+     "url": "https://ecosystem.hubspot.com/marketplace/listing/asana"
+    }
+   ]
+  },
+  {
+   "pair": "hubspot-and-calendly",
+   "url": "https://stackcostmatrix.com/stack/hubspot-and-calendly/",
+   "tools": [
+    "HubSpot",
+    "Calendly"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "HubSpot": "Free",
+    "Calendly": "Standard"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "1-way (Calendly → HubSpot)",
+   "ten_seat_monthly_cost_usd": 120,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026",
+   "last_reviewed": "2026-11-03",
+   "date_modified": "2026-11-03",
+   "sources": [
+    {
+     "title": "Calendly: Calendly + HubSpot",
+     "url": "https://calendly.com/help/calendly-hubspot"
+    },
+    {
+     "title": "HubSpot Marketplace: Calendly",
+     "url": "https://ecosystem.hubspot.com/marketplace/listing/calendly-199720"
+    }
+   ]
+  },
+  {
+   "pair": "hubspot-and-clickup",
+   "url": "https://stackcostmatrix.com/stack/hubspot-and-clickup/",
+   "tools": [
+    "HubSpot",
+    "ClickUp"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "HubSpot": "Free",
+    "ClickUp": "Core"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "1-way (automation triggers)",
+   "ten_seat_monthly_cost_usd": 120,
+   "verification": "Integration requirements checked · Nov 3, 2026 (ClickUp plan unconfirmed) · Prices checked · Nov 3, 2026",
+   "last_reviewed": "2026-11-03",
+   "date_modified": "2026-11-03",
+   "sources": [
+    {
+     "title": "HubSpot Marketplace: ClickUp",
+     "url": "https://ecosystem.hubspot.com/marketplace/listing/clickup"
+    }
+   ]
+  },
+  {
+   "pair": "hubspot-and-mailchimp",
+   "url": "https://stackcostmatrix.com/stack/hubspot-and-mailchimp/",
+   "tools": [
+    "HubSpot",
+    "Mailchimp"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "HubSpot": "Free",
+    "Mailchimp": "Standard"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "1-way (HubSpot → Mailchimp)",
+   "ten_seat_monthly_cost_usd": 20,
+   "verification": "Integration requirements checked · Nov 3, 2026 (Mailchimp plan unconfirmed) · Prices checked · Nov 3, 2026",
+   "last_reviewed": "2026-11-03",
+   "date_modified": "2026-11-03",
+   "sources": [
+    {
+     "title": "HubSpot: Use HubSpot's integration with Mailchimp",
+     "url": "https://knowledge.hubspot.com/forms/connect-non-hubspot-forms-to-mailchimp"
+    },
+    {
+     "title": "HubSpot Marketplace: Mailchimp Data Sync",
+     "url": "https://ecosystem.hubspot.com/marketplace/listing/mailchimp-data-sync"
+    }
+   ]
+  },
+  {
+   "pair": "hubspot-and-monday",
+   "url": "https://stackcostmatrix.com/stack/hubspot-and-monday/",
+   "tools": [
+    "HubSpot",
+    "Monday.com"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "HubSpot": "Free",
+    "Monday.com": "Standard"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "1-way (HubSpot → monday.com)",
+   "ten_seat_monthly_cost_usd": 140,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026",
+   "last_reviewed": "2026-11-03",
+   "date_modified": "2026-11-03",
+   "sources": [
+    {
+     "title": "HubSpot Marketplace: monday.com",
+     "url": "https://ecosystem.hubspot.com/marketplace/listing/monday-com-203938"
+    },
+    {
+     "title": "HubSpot Marketplace: monday.com Data Sync",
+     "url": "https://ecosystem.hubspot.com/marketplace/listing/mondaycom-data-sync"
+    }
+   ]
+  },
+  {
+   "pair": "hubspot-and-pipedrive",
+   "url": "https://stackcostmatrix.com/stack/hubspot-and-pipedrive/",
+   "tools": [
+    "HubSpot",
+    "Pipedrive"
+   ],
+   "connection_type": "middleware",
+   "minimum_plans": {
+    "HubSpot": "Free",
+    "Pipedrive": "Lite"
+   },
+   "middleware_monthly_usd": 9,
+   "sync_direction": "1-way (trigger → action)",
+   "ten_seat_monthly_cost_usd": 149,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Pipedrive prices: from an indexed copy of its pricing page; Make/Zapier fee: Oct 17, 2026)",
+   "last_reviewed": "2026-11-03",
+   "date_modified": "2026-11-03",
+   "sources": [
+    {
+     "title": "HubSpot: Supported apps for Smart Transfer",
+     "url": "https://knowledge.hubspot.com/integrations/supported-apps-for-hubspot-smart-transfer"
+    }
+   ]
+  },
+  {
+   "pair": "hubspot-and-salesforce",
+   "url": "https://stackcostmatrix.com/stack/hubspot-and-salesforce/",
+   "tools": [
+    "HubSpot",
+    "Salesforce Sales Cloud"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "HubSpot": "Professional",
+    "Salesforce Sales Cloud": "Professional"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "2-way",
+   "ten_seat_monthly_cost_usd": 2050,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (HubSpot Professional: modeled at a flat monthly price; Salesforce prices: Oct 17, 2026)",
+   "last_reviewed": "2026-11-03",
+   "date_modified": "2026-11-03",
+   "sources": [
+    {
+     "title": "HubSpot: Connect HubSpot and Salesforce",
+     "url": "https://knowledge.hubspot.com/salesforce/install-the-hubspot-salesforce-integration"
+    },
+    {
+     "title": "HubSpot Marketplace: Salesforce",
+     "url": "https://ecosystem.hubspot.com/marketplace/listing/salesforce"
+    }
+   ]
+  },
+  {
+   "pair": "hubspot-and-slack",
+   "url": "https://stackcostmatrix.com/stack/hubspot-and-slack/",
+   "tools": [
+    "HubSpot",
+    "Slack"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "HubSpot": "Free",
+    "Slack": "Free"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "2-way",
+   "ten_seat_monthly_cost_usd": 0,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026",
+   "last_reviewed": "2026-11-03",
+   "date_modified": "2026-11-03",
+   "sources": [
+    {
+     "title": "HubSpot: Connect HubSpot and Slack",
+     "url": "https://knowledge.hubspot.com/integrations/how-do-i-use-the-slack-integration"
+    },
+    {
+     "title": "HubSpot Marketplace: Slack",
+     "url": "https://ecosystem.hubspot.com/marketplace/listing/slack"
+    },
+    {
+     "title": "Slack: Free plan limits",
+     "url": "https://slack.com/help/articles/27204752526611-Feature-limitations-on-the-free-version-of-Slack"
+    }
+   ]
+  },
+  {
+   "pair": "hubspot-and-stripe",
+   "url": "https://stackcostmatrix.com/stack/hubspot-and-stripe/",
+   "tools": [
+    "HubSpot",
+    "Stripe"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "HubSpot": "Free",
+    "Stripe": "Standard"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "2-way",
+   "ten_seat_monthly_cost_usd": 0,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026",
+   "last_reviewed": "2026-11-03",
+   "date_modified": "2026-11-03",
+   "sources": [
+    {
+     "title": "HubSpot: Connect Stripe as a payment processor",
+     "url": "https://knowledge.hubspot.com/payment-processing/connect-your-stripe-account-as-a-payment-processor-in-hubspot"
+    },
+    {
+     "title": "HubSpot Marketplace: Stripe Data Sync",
+     "url": "https://ecosystem.hubspot.com/marketplace/listing/stripe-data-sync"
+    }
+   ]
+  },
+  {
+   "pair": "hubspot-and-zendesk",
+   "url": "https://stackcostmatrix.com/stack/hubspot-and-zendesk/",
+   "tools": [
+    "HubSpot",
+    "Zendesk"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "HubSpot": "Free",
+    "Zendesk": "Suite Team"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "1-way (Zendesk → HubSpot)",
+   "ten_seat_monthly_cost_usd": 690,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026",
+   "last_reviewed": "2026-11-03",
+   "date_modified": "2026-11-03",
+   "sources": [
+    {
+     "title": "Zendesk: Zendesk Support for HubSpot",
+     "url": "https://support.zendesk.com/hc/en-us/articles/4408884090650-Setting-up-the-Zendesk-Support-for-HubSpot-integration"
+    },
+    {
+     "title": "HubSpot Marketplace: Zendesk",
+     "url": "https://ecosystem.hubspot.com/marketplace/listing/zendesk"
+    }
+   ]
+  },
+  {
+   "pair": "intercom-and-hubspot",
+   "url": "https://stackcostmatrix.com/stack/intercom-and-hubspot/",
+   "tools": [
+    "Intercom",
+    "HubSpot"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "Intercom": "Essential",
+    "HubSpot": "Free"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "1-way (Intercom → HubSpot)",
+   "ten_seat_monthly_cost_usd": 390,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026",
+   "last_reviewed": "2026-11-03",
+   "date_modified": "2026-11-03",
+   "sources": [
+    {
+     "title": "Intercom: HubSpot app",
+     "url": "https://www.intercom.com/help/en/articles/2128216-hubspot-app"
+    },
+    {
+     "title": "HubSpot Marketplace: Intercom",
+     "url": "https://ecosystem.hubspot.com/marketplace/listing/intercom"
+    }
+   ]
+  },
+  {
+   "pair": "intercom-and-stripe",
+   "url": "https://stackcostmatrix.com/stack/intercom-and-stripe/",
+   "tools": [
+    "Intercom",
+    "Stripe"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "Intercom": "Essential",
+    "Stripe": "Standard"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "2-way",
+   "ten_seat_monthly_cost_usd": 390,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026",
+   "last_reviewed": "2026-11-03",
+   "date_modified": "2026-11-03",
+   "sources": []
+  },
+  {
+   "pair": "mailchimp-and-airtable",
+   "url": "https://stackcostmatrix.com/stack/mailchimp-and-airtable/",
+   "tools": [
+    "Mailchimp",
+    "Airtable"
+   ],
+   "connection_type": "middleware",
+   "minimum_plans": {
+    "Mailchimp": "Essentials",
+    "Airtable": "Free"
+   },
+   "middleware_monthly_usd": 9,
+   "sync_direction": "1-way (trigger → action)",
+   "ten_seat_monthly_cost_usd": 22,
+   "verification": "Integration requirements checked · Nov 3, 2026 (Mailchimp plan unconfirmed) · Prices checked · Nov 3, 2026 (Make/Zapier fee: Oct 17, 2026)",
+   "last_reviewed": "2026-11-03",
+   "date_modified": "2026-11-03",
+   "sources": [
+    {
+     "title": "Mailchimp: Syncgrip integration",
+     "url": "https://mailchimp.com/integrations/syncgrip/"
+    },
+    {
+     "title": "Mailchimp: Unito integration",
+     "url": "https://mailchimp.com/integrations/unito/"
+    },
+    {
+     "title": "Airtable: Create a webhook",
+     "url": "https://airtable.com/developers/web/api/create-a-webhook"
+    }
+   ]
+  },
+  {
+   "pair": "mailchimp-and-calendly",
+   "url": "https://stackcostmatrix.com/stack/mailchimp-and-calendly/",
+   "tools": [
+    "Mailchimp",
+    "Calendly"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "Mailchimp": "Essentials",
+    "Calendly": "Standard"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "2-way",
+   "ten_seat_monthly_cost_usd": 133,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026",
+   "last_reviewed": "2026-11-03",
+   "date_modified": "2026-11-03",
+   "sources": []
+  },
+  {
+   "pair": "monday-and-quickbooks",
+   "url": "https://stackcostmatrix.com/stack/monday-and-quickbooks/",
+   "tools": [
+    "Monday.com",
+    "QuickBooks Online"
+   ],
+   "connection_type": "middleware",
+   "minimum_plans": {
+    "Monday.com": "Pro",
+    "QuickBooks Online": "Plus"
+   },
+   "middleware_monthly_usd": 9,
+   "sync_direction": "1-way (trigger → action)",
+   "ten_seat_monthly_cost_usd": 348,
+   "verification": "Prices checked against official vendor docs · Nov 3, 2026 (QuickBooks prices: Oct 17, 2026; Make/Zapier fee: Oct 17, 2026) · Integration requirements last checked · Oct 17, 2026 (re-check pending)",
+   "last_reviewed": "2026-10-17",
+   "date_modified": "2026-11-03",
+   "sources": []
+  },
+  {
+   "pair": "monday-and-slack",
+   "url": "https://stackcostmatrix.com/stack/monday-and-slack/",
+   "tools": [
+    "Monday.com",
+    "Slack"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "Monday.com": "Standard",
+    "Slack": "Free"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "2-way",
+   "ten_seat_monthly_cost_usd": 140,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026",
+   "last_reviewed": "2026-11-03",
+   "date_modified": "2026-11-03",
+   "sources": []
+  },
+  {
+   "pair": "monday-and-zendesk",
+   "url": "https://stackcostmatrix.com/stack/monday-and-zendesk/",
+   "tools": [
+    "Monday.com",
+    "Zendesk"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "Monday.com": "Standard",
+    "Zendesk": "Suite Team"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "1-way (Zendesk → monday.com)",
+   "ten_seat_monthly_cost_usd": 830,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026",
+   "last_reviewed": "2026-11-03",
+   "date_modified": "2026-11-03",
+   "sources": [
+    {
+     "title": "monday.com: Zendesk integration",
+     "url": "https://support.monday.com/hc/en-us/articles/360001938339-Zendesk-Integration"
+    }
+   ]
+  },
+  {
+   "pair": "notion-and-calendly",
+   "url": "https://stackcostmatrix.com/stack/notion-and-calendly/",
+   "tools": [
+    "Notion",
+    "Calendly"
+   ],
+   "connection_type": "middleware",
+   "minimum_plans": {
+    "Notion": "Plus",
+    "Calendly": "Standard"
+   },
+   "middleware_monthly_usd": 9,
+   "sync_direction": "1-way (trigger → action)",
+   "ten_seat_monthly_cost_usd": 249,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Make/Zapier fee: Oct 17, 2026)",
+   "last_reviewed": "2026-11-03",
+   "date_modified": "2026-11-03",
+   "sources": [
+    {
+     "title": "Notion: Calendly integration",
+     "url": "https://www.notion.com/integrations/calendly"
+    },
+    {
+     "title": "Calendly: API overview",
+     "url": "https://calendly.com/help/calendly-api-overview"
+    }
+   ]
+  },
+  {
+   "pair": "notion-and-stripe",
+   "url": "https://stackcostmatrix.com/stack/notion-and-stripe/",
+   "tools": [
+    "Notion",
+    "Stripe"
+   ],
+   "connection_type": "middleware",
+   "minimum_plans": {
+    "Notion": "Business",
+    "Stripe": "Standard"
+   },
+   "middleware_monthly_usd": 9,
+   "sync_direction": "1-way (trigger → action)",
+   "ten_seat_monthly_cost_usd": 249,
+   "verification": "Prices checked against official vendor docs · Nov 3, 2026 (Make/Zapier fee: Oct 17, 2026) · Integration requirements last checked · Oct 17, 2026 (re-check pending)",
+   "last_reviewed": "2026-10-17",
+   "date_modified": "2026-11-03",
+   "sources": []
+  },
+  {
+   "pair": "pipedrive-and-calendly",
+   "url": "https://stackcostmatrix.com/stack/pipedrive-and-calendly/",
+   "tools": [
+    "Pipedrive",
+    "Calendly"
+   ],
+   "connection_type": "middleware",
+   "minimum_plans": {
+    "Pipedrive": "Lite",
+    "Calendly": "Standard"
+   },
+   "middleware_monthly_usd": 9,
+   "sync_direction": "1-way (trigger → action)",
+   "ten_seat_monthly_cost_usd": 269,
+   "verification": "Integration requirements checked · Nov 3, 2026 (Pipedrive plan unconfirmed) · Prices checked · Nov 3, 2026 (Pipedrive prices: from an indexed copy of its pricing page; Make/Zapier fee: Oct 17, 2026)",
+   "last_reviewed": "2026-11-03",
+   "date_modified": "2026-11-03",
+   "sources": [
+    {
+     "title": "Calendly: Outfunnel integration",
+     "url": "https://calendly.com/integration/outfunnel"
+    },
+    {
+     "title": "Pipedrive Marketplace: Calendly Sync",
+     "url": "https://www.pipedrive.com/en/marketplace/app/calendly-sync/0356741bcb89ba03"
+    },
+    {
+     "title": "Calendly: API overview",
+     "url": "https://calendly.com/help/calendly-api-overview"
+    }
+   ]
+  },
+  {
+   "pair": "pipedrive-and-mailchimp",
+   "url": "https://stackcostmatrix.com/stack/pipedrive-and-mailchimp/",
+   "tools": [
+    "Pipedrive",
+    "Mailchimp"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "Pipedrive": "Lite",
+    "Mailchimp": "Essentials"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "2-way",
+   "ten_seat_monthly_cost_usd": 153,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Pipedrive prices: from an indexed copy of its pricing page)",
+   "last_reviewed": "2026-11-03",
+   "date_modified": "2026-11-03",
+   "sources": []
+  },
+  {
+   "pair": "pipedrive-and-slack",
+   "url": "https://stackcostmatrix.com/stack/pipedrive-and-slack/",
+   "tools": [
+    "Pipedrive",
+    "Slack"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "Pipedrive": "Growth",
+    "Slack": "Free"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "1-way (Pipedrive → Slack)",
+   "ten_seat_monthly_cost_usd": 390,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Pipedrive prices: from an indexed copy of its pricing page)",
+   "last_reviewed": "2026-11-03",
+   "date_modified": "2026-11-03",
+   "sources": [
+    {
+     "title": "Pipedrive: Automations Slack notifications",
+     "url": "https://support.pipedrive.com/en/article/workflow-automation-slack-notifications"
+    },
+    {
+     "title": "Slack: Free plan limits",
+     "url": "https://slack.com/help/articles/27204752526611-Feature-limitations-on-the-free-version-of-Slack"
+    }
+   ]
+  },
+  {
+   "pair": "pipedrive-and-xero",
+   "url": "https://stackcostmatrix.com/stack/pipedrive-and-xero/",
+   "tools": [
+    "Pipedrive",
+    "Xero"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "Pipedrive": "Lite",
+    "Xero": "Early"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "2-way",
+   "ten_seat_monthly_cost_usd": 167,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Pipedrive prices: from an indexed copy of its pricing page)",
+   "last_reviewed": "2026-11-03",
+   "date_modified": "2026-11-03",
+   "sources": []
+  },
+  {
+   "pair": "quickbooks-and-mailchimp",
+   "url": "https://stackcostmatrix.com/stack/quickbooks-and-mailchimp/",
+   "tools": [
+    "QuickBooks Online",
+    "Mailchimp"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "QuickBooks Online": "Plus",
+    "Mailchimp": "Free"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "1-way (QuickBooks → Mailchimp)",
+   "ten_seat_monthly_cost_usd": 99,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (QuickBooks prices: Oct 17, 2026)",
+   "last_reviewed": "2026-11-03",
+   "date_modified": "2026-11-03",
+   "sources": []
+  },
+  {
+   "pair": "quickbooks-and-slack",
+   "url": "https://stackcostmatrix.com/stack/quickbooks-and-slack/",
+   "tools": [
+    "QuickBooks Online",
+    "Slack"
+   ],
+   "connection_type": "middleware",
+   "minimum_plans": {
+    "QuickBooks Online": "Plus",
+    "Slack": "Free"
+   },
+   "middleware_monthly_usd": 19.99,
+   "sync_direction": "1-way (trigger → action)",
+   "ten_seat_monthly_cost_usd": 118.99,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (QuickBooks prices: Oct 17, 2026; Make/Zapier fee: Oct 17, 2026)",
+   "last_reviewed": "2026-11-03",
+   "date_modified": "2026-11-03",
+   "sources": []
+  },
+  {
+   "pair": "salesforce-and-mailchimp",
+   "url": "https://stackcostmatrix.com/stack/salesforce-and-mailchimp/",
+   "tools": [
+    "Salesforce Sales Cloud",
+    "Mailchimp"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "Salesforce Sales Cloud": "Professional",
+    "Mailchimp": "Standard"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "2-way",
+   "ten_seat_monthly_cost_usd": 1270,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Salesforce prices: Oct 17, 2026)",
+   "last_reviewed": "2026-11-03",
+   "date_modified": "2026-11-03",
+   "sources": [
+    {
+     "title": "Mailchimp: Connect Mailchimp for Salesforce",
+     "url": "https://mailchimp.com/help/connect-mailchimp-for-salesforce/"
+    },
+    {
+     "title": "Mailchimp: About Mailchimp for Salesforce",
+     "url": "https://mailchimp.com/help/about-mailchimp-for-salesforce/"
+    }
+   ]
+  },
+  {
+   "pair": "salesforce-and-slack",
+   "url": "https://stackcostmatrix.com/stack/salesforce-and-slack/",
+   "tools": [
+    "Salesforce Sales Cloud",
+    "Slack"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "Salesforce Sales Cloud": "Enterprise",
+    "Slack": "Pro"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "2-way",
+   "ten_seat_monthly_cost_usd": 1737.5,
+   "verification": "Integration requirements checked · Nov 3, 2026 (Salesforce edition unconfirmed) · Prices checked · Nov 3, 2026 (Salesforce prices: Oct 17, 2026)",
+   "last_reviewed": "2026-11-03",
+   "date_modified": "2026-11-03",
+   "sources": [
+    {
+     "title": "Slack: Salesforce apps for Slack",
+     "url": "https://slack.com/help/articles/227838227-Salesforce-apps-for-Slack"
+    },
+    {
+     "title": "Salesforce Help: Enable Sales Cloud for Slack",
+     "url": "https://help.salesforce.com/s/articleView?id=slack.slack_apps_sales_enable_the_sales_cloud_for_slack_app.htm&language=en_US&type=5"
+    }
+   ]
+  },
+  {
+   "pair": "salesforce-and-stripe",
+   "url": "https://stackcostmatrix.com/stack/salesforce-and-stripe/",
+   "tools": [
+    "Salesforce Sales Cloud",
+    "Stripe"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "Salesforce Sales Cloud": "Professional",
+    "Stripe": "Standard"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "2-way",
+   "ten_seat_monthly_cost_usd": 1250,
+   "verification": "Integration requirements checked · Nov 3, 2026 (Salesforce edition unconfirmed) · Prices checked · Nov 3, 2026 (Salesforce prices: Oct 17, 2026)",
+   "last_reviewed": "2026-11-03",
+   "date_modified": "2026-11-03",
+   "sources": [
+    {
+     "title": "Stripe: Stripe app for Salesforce Platform",
+     "url": "https://docs.stripe.com/connectors/stripe-connector-for-salesforce/overview"
+    },
+    {
+     "title": "Stripe: Installation guide",
+     "url": "https://docs.stripe.com/plugins/stripe-connector-for-salesforce/installation-guide"
+    }
+   ]
+  },
+  {
+   "pair": "salesforce-and-zendesk",
+   "url": "https://stackcostmatrix.com/stack/salesforce-and-zendesk/",
+   "tools": [
+    "Salesforce Sales Cloud",
+    "Zendesk"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "Salesforce Sales Cloud": "Professional",
+    "Zendesk": "Suite Team"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "1-way per object (accounts → Zendesk, tickets → Salesforce)",
+   "ten_seat_monthly_cost_usd": 1940,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Salesforce prices: Oct 17, 2026)",
+   "last_reviewed": "2026-11-03",
+   "date_modified": "2026-11-03",
+   "sources": [
+    {
+     "title": "Zendesk: Connecting Salesforce to Zendesk",
+     "url": "https://support.zendesk.com/hc/en-us/articles/4408821555482-Connecting-your-Salesforce-organization-to-Zendesk"
+    },
+    {
+     "title": "Zendesk: Data sync from Salesforce",
+     "url": "https://support.zendesk.com/hc/en-us/articles/4408828539290-Configuring-data-sync-from-Salesforce-to-Zendesk"
+    },
+    {
+     "title": "Zendesk: Ticket sync to Salesforce",
+     "url": "https://support.zendesk.com/hc/en-us/articles/4408828449050-Setting-up-ticket-sync-from-Zendesk-to-Salesforce"
+    }
+   ]
+  },
+  {
+   "pair": "slack-and-airtable",
+   "url": "https://stackcostmatrix.com/stack/slack-and-airtable/",
+   "tools": [
+    "Slack",
+    "Airtable"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "Slack": "Free",
+    "Airtable": "Free"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "2-way",
+   "ten_seat_monthly_cost_usd": 0,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026",
+   "last_reviewed": "2026-11-03",
+   "date_modified": "2026-11-03",
+   "sources": []
+  },
+  {
+   "pair": "slack-and-calendly",
+   "url": "https://stackcostmatrix.com/stack/slack-and-calendly/",
+   "tools": [
+    "Slack",
+    "Calendly"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "Slack": "Free",
+    "Calendly": "Free"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "2-way",
+   "ten_seat_monthly_cost_usd": 0,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026",
+   "last_reviewed": "2026-11-03",
+   "date_modified": "2026-11-03",
+   "sources": []
+  },
+  {
+   "pair": "slack-and-intercom",
+   "url": "https://stackcostmatrix.com/stack/slack-and-intercom/",
+   "tools": [
+    "Slack",
+    "Intercom"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "Slack": "Free",
+    "Intercom": "Essential"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "2-way",
+   "ten_seat_monthly_cost_usd": 390,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026",
+   "last_reviewed": "2026-11-03",
+   "date_modified": "2026-11-03",
+   "sources": [
+    {
+     "title": "Intercom: Connect your Slack channel",
+     "url": "https://www.intercom.com/help/en/articles/11534476-connect-your-slack-channel"
+    },
+    {
+     "title": "Slack: Free plan limits",
+     "url": "https://slack.com/help/articles/27204752526611-Feature-limitations-on-the-free-version-of-Slack"
+    }
+   ]
+  },
+  {
+   "pair": "slack-and-notion",
+   "url": "https://stackcostmatrix.com/stack/slack-and-notion/",
+   "tools": [
+    "Slack",
+    "Notion"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "Slack": "Free",
+    "Notion": "Plus"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "1-way (Notion → Slack)",
+   "ten_seat_monthly_cost_usd": 120,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026",
+   "last_reviewed": "2026-11-03",
+   "date_modified": "2026-11-03",
+   "sources": [
+    {
+     "title": "Notion: Connect Slack to Notion",
+     "url": "https://www.notion.com/help/slack"
+    },
+    {
+     "title": "Slack: Free plan limits",
+     "url": "https://slack.com/help/articles/27204752526611-Feature-limitations-on-the-free-version-of-Slack"
+    }
+   ]
+  },
+  {
+   "pair": "slack-and-zendesk",
+   "url": "https://stackcostmatrix.com/stack/slack-and-zendesk/",
+   "tools": [
+    "Slack",
+    "Zendesk"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "Slack": "Free",
+    "Zendesk": "Suite Team"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "2-way",
+   "ten_seat_monthly_cost_usd": 690,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026",
+   "last_reviewed": "2026-11-03",
+   "date_modified": "2026-11-03",
+   "sources": [
+    {
+     "title": "Zendesk: Slack for Zendesk Support",
+     "url": "https://support.zendesk.com/hc/en-us/articles/4408833756698-Understanding-and-installing-the-Slack-for-Zendesk-Support-integration"
+    },
+    {
+     "title": "Slack: Free plan limits",
+     "url": "https://slack.com/help/articles/27204752526611-Feature-limitations-on-the-free-version-of-Slack"
+    }
+   ]
+  },
+  {
+   "pair": "stripe-and-mailchimp",
+   "url": "https://stackcostmatrix.com/stack/stripe-and-mailchimp/",
+   "tools": [
+    "Stripe",
+    "Mailchimp"
+   ],
+   "connection_type": "middleware",
+   "minimum_plans": {
+    "Stripe": "Standard",
+    "Mailchimp": "Free"
+   },
+   "middleware_monthly_usd": 15,
+   "sync_direction": "1-way (Stripe → Mailchimp)",
+   "ten_seat_monthly_cost_usd": 15,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026",
+   "last_reviewed": "2026-11-03",
+   "date_modified": "2026-11-03",
+   "sources": [
+    {
+     "title": "Mailchimp: Connect Mailchimp for Stripe",
+     "url": "https://mailchimp.com/help/connect-disconnect-mailchimp-stripe/"
+    },
+    {
+     "title": "Mailchimp: Stripe integration",
+     "url": "https://mailchimp.com/integrations/stripe/"
+    },
+    {
+     "title": "Data Mapper for Mailchimp: Pricing",
+     "url": "https://data-mapper-for-mailchimp.thisdot.co/pricing"
+    }
+   ]
+  },
+  {
+   "pair": "stripe-and-quickbooks",
+   "url": "https://stackcostmatrix.com/stack/stripe-and-quickbooks/",
+   "tools": [
+    "Stripe",
+    "QuickBooks Online"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "Stripe": "Standard",
+    "QuickBooks Online": "Essentials"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "2-way",
+   "ten_seat_monthly_cost_usd": 65,
+   "verification": "Prices checked against official vendor docs · Nov 3, 2026 (QuickBooks prices: Oct 17, 2026) · Integration requirements last checked · Oct 17, 2026 (re-check pending)",
+   "last_reviewed": "2026-10-17",
+   "date_modified": "2026-11-03",
+   "sources": []
+  },
+  {
+   "pair": "stripe-and-slack",
+   "url": "https://stackcostmatrix.com/stack/stripe-and-slack/",
+   "tools": [
+    "Stripe",
+    "Slack"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "Stripe": "Standard",
+    "Slack": "Free"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "1-way (Stripe → Slack)",
+   "ten_seat_monthly_cost_usd": 0,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026",
+   "last_reviewed": "2026-11-03",
+   "date_modified": "2026-11-03",
+   "sources": [
+    {
+     "title": "Stripe: Stripe Workflows for Slack",
+     "url": "https://docs.stripe.com/use-stripe-apps/stripe-workflows-slack"
+    },
+    {
+     "title": "Slack: Free plan limits",
+     "url": "https://slack.com/help/articles/27204752526611-Feature-limitations-on-the-free-version-of-Slack"
+    }
+   ]
+  },
+  {
+   "pair": "stripe-and-xero",
+   "url": "https://stackcostmatrix.com/stack/stripe-and-xero/",
+   "tools": [
+    "Stripe",
+    "Xero"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "Stripe": "Standard",
+    "Xero": "Early"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "2-way",
+   "ten_seat_monthly_cost_usd": 27,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026",
+   "last_reviewed": "2026-11-03",
+   "date_modified": "2026-11-03",
+   "sources": [
+    {
+     "title": "Xero: Connect Stripe to Xero",
+     "url": "https://central.xero.com/0/article/Stripe-AU"
+    },
+    {
+     "title": "Xero: US pricing plans",
+     "url": "https://www.xero.com/us/pricing-plans/"
+    }
+   ]
+  },
+  {
+   "pair": "xero-and-activecampaign",
+   "url": "https://stackcostmatrix.com/stack/xero-and-activecampaign/",
+   "tools": [
+    "Xero",
+    "ActiveCampaign"
+   ],
+   "connection_type": "middleware",
+   "minimum_plans": {
+    "Xero": "Growing",
+    "ActiveCampaign": "Starter"
+   },
+   "middleware_monthly_usd": 9,
+   "sync_direction": "1-way (trigger → action)",
+   "ten_seat_monthly_cost_usd": 83,
+   "verification": "Prices checked against official vendor docs · Nov 3, 2026 (Make/Zapier fee: Oct 17, 2026) · Integration requirements last checked · Oct 17, 2026 (re-check pending)",
+   "last_reviewed": "2026-10-17",
+   "date_modified": "2026-11-03",
+   "sources": []
+  },
+  {
+   "pair": "xero-and-calendly",
+   "url": "https://stackcostmatrix.com/stack/xero-and-calendly/",
+   "tools": [
+    "Xero",
+    "Calendly"
+   ],
+   "connection_type": "middleware",
+   "minimum_plans": {
+    "Xero": "Growing",
+    "Calendly": "Standard"
+   },
+   "middleware_monthly_usd": 19.99,
+   "sync_direction": "1-way (trigger → action)",
+   "ten_seat_monthly_cost_usd": 198.99,
+   "verification": "Integration requirements checked · Nov 3, 2026 (Xero plan unconfirmed) · Prices checked · Nov 3, 2026 (Make/Zapier fee: Oct 17, 2026)",
+   "last_reviewed": "2026-11-03",
+   "date_modified": "2026-11-03",
+   "sources": []
+  },
+  {
+   "pair": "zendesk-and-notion",
+   "url": "https://stackcostmatrix.com/stack/zendesk-and-notion/",
+   "tools": [
+    "Zendesk",
+    "Notion"
+   ],
+   "connection_type": "middleware",
+   "minimum_plans": {
+    "Zendesk": "Suite Growth",
+    "Notion": "Plus"
+   },
+   "middleware_monthly_usd": 19.99,
+   "sync_direction": "1-way (trigger → action)",
+   "ten_seat_monthly_cost_usd": 1289.99,
+   "verification": "Prices checked against official vendor docs · Nov 3, 2026 (Make/Zapier fee: Oct 17, 2026) · Integration requirements last checked · Oct 17, 2026 (re-check pending)",
+   "last_reviewed": "2026-10-17",
+   "date_modified": "2026-11-03",
+   "sources": []
+  },
+  {
+   "pair": "zendesk-and-stripe",
+   "url": "https://stackcostmatrix.com/stack/zendesk-and-stripe/",
+   "tools": [
+    "Zendesk",
+    "Stripe"
+   ],
+   "connection_type": "middleware",
+   "minimum_plans": {
+    "Zendesk": "Suite Team",
+    "Stripe": "Standard"
+   },
+   "middleware_monthly_usd": 9,
+   "sync_direction": "1-way (trigger → action)",
+   "ten_seat_monthly_cost_usd": 699,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Make/Zapier fee: Oct 17, 2026)",
+   "last_reviewed": "2026-11-03",
+   "date_modified": "2026-11-03",
+   "sources": []
+  }
+ ]
+}
