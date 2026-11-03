@@ -36,6 +36,8 @@ Every price is verified against live vendor pricing pages (per-seat cost per tie
 - `site/` — Astro 5 + Tailwind 4 static frontend source
 - `agent_scripts/` — seeding, verification, and affiliate-link management scripts
 
+The pricing data (`database/seed.sql` and the published cost figures on stackcostmatrix.com) is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/): you may reuse and adapt it, including commercially, as long as you credit StackCostMatrix and link to https://stackcostmatrix.com.
+
 ## Affiliate disclosure
 
 Some outbound links on the live site may earn a referral commission at no extra cost to the user.
