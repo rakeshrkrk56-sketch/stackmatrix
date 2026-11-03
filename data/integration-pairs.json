@@ -617,7 +617,7 @@
      "min_seats": 1,
      "api_access": true,
      "api_access_by_vendor_docs": "Yes",
-     "api_access_note": "No plan requirement in Intuit's developer docs",
+     "api_access_note": "Any paid plan (Zapier, Make and Mailchimp name no tier)",
      "developer_webhooks": "Yes",
      "developer_webhooks_note": "App-level webhooks",
      "api_facts_checked": "2026-11-03"
@@ -628,7 +628,7 @@
      "min_seats": 1,
      "api_access": true,
      "api_access_by_vendor_docs": "Yes",
-     "api_access_note": "No plan requirement in Intuit's developer docs",
+     "api_access_note": "Any paid plan (Zapier, Make and Mailchimp name no tier)",
      "developer_webhooks": "Yes",
      "developer_webhooks_note": "App-level webhooks",
      "api_facts_checked": "2026-11-03"
@@ -639,13 +639,25 @@
      "min_seats": 1,
      "api_access": true,
      "api_access_by_vendor_docs": "Yes",
-     "api_access_note": "No plan requirement in Intuit's developer docs",
+     "api_access_note": "Any paid plan (Zapier, Make and Mailchimp name no tier)",
      "developer_webhooks": "Yes",
      "developer_webhooks_note": "App-level webhooks",
      "api_facts_checked": "2026-11-03"
     }
    },
    "api_sources": [
+    {
+     "title": "Zapier help: QuickBooks Online API prerequisites",
+     "url": "https://help.zapier.com/hc/en-us/articles/8495935103885"
+    },
+    {
+     "title": "Make: QuickBooks app",
+     "url": "https://apps.make.com/quickbooks"
+    },
+    {
+     "title": "Mailchimp: QuickBooks Online integration",
+     "url": "https://mailchimp.com/integrations/quickbooksonline/"
+    },
     {
      "title": "Intuit developers: Webhooks",
      "url": "https://developer.intuit.com/app/developer/qbo/docs/develop/webhooks"
@@ -944,12 +956,12 @@
    "connection_type": "middleware",
    "minimum_plans": {
     "Airtable": "Team",
-    "QuickBooks Online": "Plus"
+    "QuickBooks Online": "Simple Start"
    },
    "middleware_monthly_usd": 10.59,
    "middleware_annual_billing_usd_per_month": 9,
    "sync_direction": "1-way (trigger → action)",
-   "ten_seat_monthly_cost_usd": 349.59,
+   "ten_seat_monthly_cost_usd": 285.59,
    "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (QuickBooks prices: Oct 17, 2026; Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks)",
    "last_reviewed": "2026-11-03",
    "date_modified": "2026-11-03",
@@ -961,6 +973,10 @@
     {
      "title": "Airtable: Create a webhook",
      "url": "https://airtable.com/developers/web/api/create-a-webhook"
+    },
+    {
+     "title": "Make: QuickBooks app",
+     "url": "https://apps.make.com/quickbooks"
     }
    ]
   },
@@ -1025,13 +1041,13 @@
    "connection_type": "middleware",
    "minimum_plans": {
     "Asana": "Starter",
-    "QuickBooks Online": "Plus"
+    "QuickBooks Online": "Simple Start"
    },
    "middleware_monthly_usd": 10.59,
    "middleware_annual_billing_usd_per_month": 9,
    "sync_direction": "1-way (trigger → action)",
-   "ten_seat_monthly_cost_usd": 244.49,
-   "verification": "Integration requirements checked · Nov 3, 2026 (QuickBooks plan unconfirmed) · Prices checked · Nov 3, 2026 (QuickBooks prices: Oct 17, 2026; Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks)",
+   "ten_seat_monthly_cost_usd": 180.49,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (QuickBooks prices: Oct 17, 2026; Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks)",
    "last_reviewed": "2026-11-03",
    "date_modified": "2026-11-03",
    "sources": []
@@ -1588,13 +1604,13 @@
    "connection_type": "middleware",
    "minimum_plans": {
     "Monday.com": "Standard",
-    "QuickBooks Online": "Plus"
+    "QuickBooks Online": "Simple Start"
    },
    "middleware_monthly_usd": 10.59,
    "middleware_annual_billing_usd_per_month": 9,
    "sync_direction": "1-way (trigger → action)",
-   "ten_seat_monthly_cost_usd": 249.59,
-   "verification": "Integration requirements checked · Nov 3, 2026 (QuickBooks plan unconfirmed) · Prices checked · Nov 3, 2026 (QuickBooks prices: Oct 17, 2026; Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks)",
+   "ten_seat_monthly_cost_usd": 185.59,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (QuickBooks prices: Oct 17, 2026; Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks)",
    "last_reviewed": "2026-11-03",
    "date_modified": "2026-11-03",
    "sources": []
@@ -1807,16 +1823,21 @@
    ],
    "connection_type": "native",
    "minimum_plans": {
-    "QuickBooks Online": "Plus",
+    "QuickBooks Online": "Simple Start",
     "Mailchimp": "Free"
    },
    "middleware_monthly_usd": 0,
    "sync_direction": "1-way (QuickBooks → Mailchimp)",
-   "ten_seat_monthly_cost_usd": 99,
+   "ten_seat_monthly_cost_usd": 35,
    "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (QuickBooks prices: Oct 17, 2026)",
    "last_reviewed": "2026-11-03",
    "date_modified": "2026-11-03",
-   "sources": []
+   "sources": [
+    {
+     "title": "Mailchimp: QuickBooks Online integration",
+     "url": "https://mailchimp.com/integrations/quickbooksonline/"
+    }
+   ]
   },
   {
    "pair": "quickbooks-and-slack",
@@ -1827,17 +1848,22 @@
    ],
    "connection_type": "middleware",
    "minimum_plans": {
-    "QuickBooks Online": "Plus",
+    "QuickBooks Online": "Simple Start",
     "Slack": "Free"
    },
    "middleware_monthly_usd": 29.99,
    "middleware_annual_billing_usd_per_month": 19.99,
    "sync_direction": "1-way (trigger → action)",
-   "ten_seat_monthly_cost_usd": 128.99,
+   "ten_seat_monthly_cost_usd": 64.99,
    "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (QuickBooks prices: Oct 17, 2026; Zapier Professional fee: Nov 3, 2026)",
    "last_reviewed": "2026-11-03",
    "date_modified": "2026-11-03",
-   "sources": []
+   "sources": [
+    {
+     "title": "Zapier: Get started with QuickBooks Online",
+     "url": "https://help.zapier.com/hc/en-us/articles/8495935103885"
+    }
+   ]
   },
   {
    "pair": "salesforce-and-mailchimp",
@@ -2135,18 +2161,32 @@
     "Stripe",
     "QuickBooks Online"
    ],
-   "connection_type": "native",
+   "connection_type": "middleware",
    "minimum_plans": {
     "Stripe": "Standard",
-    "QuickBooks Online": "Essentials"
+    "QuickBooks Online": "Simple Start"
    },
-   "middleware_monthly_usd": 0,
-   "sync_direction": "2-way",
-   "ten_seat_monthly_cost_usd": 65,
-   "verification": "Prices checked against official vendor docs · Nov 3, 2026 (QuickBooks prices: Oct 17, 2026) · Integration requirements last checked · Oct 17, 2026 (re-check pending)",
-   "last_reviewed": "2026-10-17",
+   "middleware_monthly_usd": 10.59,
+   "middleware_annual_billing_usd_per_month": 9,
+   "sync_direction": "1-way (Stripe → QuickBooks)",
+   "ten_seat_monthly_cost_usd": 45.59,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (QuickBooks prices: Oct 17, 2026; Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks)",
+   "last_reviewed": "2026-11-03",
    "date_modified": "2026-11-03",
-   "sources": []
+   "sources": [
+    {
+     "title": "Stripe: Accounting integrations",
+     "url": "https://docs.stripe.com/stripe-apps/embedded-apps/accounting-integrations"
+    },
+    {
+     "title": "Make: QuickBooks app",
+     "url": "https://apps.make.com/quickbooks"
+    },
+    {
+     "title": "Stripe Partners: Acodei",
+     "url": "https://stripe.partners/directory/quickbooks-online-sync-by-acodei"
+    }
+   ]
   },
   {
    "pair": "stripe-and-slack",
