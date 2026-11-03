@@ -8,7 +8,8 @@
   "Middleware and connector fees follow the same rule: middleware_monthly_usd is the monthly-billing price and middleware_annual_billing_usd_per_month the annual-billing price (Make Core's monthly price comes from third-party pricing reviews because make.com blocks automated checks).",
   "Free tiers are listed where the vendor documents the integration working on its free plan.",
   "Modeled assumptions: HubSpot Professional and Enterprise are flat monthly prices; ActiveCampaign and Pipedrive list annual-billing rates only; Salesforce and QuickBooks Online prices were last verified 2026-10-17.",
-  "Each pair's 'verification' field states what was checked and when, including exceptions."
+  "Each pair's 'verification' field states what was checked and when, including exceptions.",
+  "API and webhook facts per plan (api_access_by_vendor_docs, developer_webhooks, webhook_automation_action, api_rate_limit) were checked against each vendor's developer and help-center docs on 2026-11-03; 'Not stated' means the docs we read don't say."
  ],
  "tools": {
   "activecampaign": {
@@ -18,21 +19,47 @@
      "monthly_base_usd": 15,
      "monthly_per_seat_usd": 0,
      "min_seats": 1,
-     "api_access": true
+     "api_access": true,
+     "api_access_by_vendor_docs": "Yes",
+     "developer_webhooks": "Yes",
+     "webhook_automation_action": "Yes (help center lists all plans)",
+     "api_facts_checked": "2026-11-03"
     },
     "Plus": {
      "monthly_base_usd": 49,
      "monthly_per_seat_usd": 0,
      "min_seats": 1,
-     "api_access": true
+     "api_access": true,
+     "api_access_by_vendor_docs": "Yes",
+     "developer_webhooks": "Yes",
+     "webhook_automation_action": "Yes",
+     "api_facts_checked": "2026-11-03"
     },
     "Pro": {
      "monthly_base_usd": 79,
      "monthly_per_seat_usd": 0,
      "min_seats": 1,
-     "api_access": true
+     "api_access": true,
+     "api_access_by_vendor_docs": "Yes",
+     "developer_webhooks": "Yes",
+     "webhook_automation_action": "Yes",
+     "api_facts_checked": "2026-11-03"
     }
-   }
+   },
+   "api_sources": [
+    {
+     "title": "ActiveCampaign: Getting started with the API",
+     "url": "https://help.activecampaign.com/hc/en-us/articles/207317590"
+    },
+    {
+     "title": "ActiveCampaign: Use webhooks",
+     "url": "https://help.activecampaign.com/hc/en-us/articles/115001403484"
+    },
+    {
+     "title": "ActiveCampaign: Send a webhook in an automation",
+     "url": "https://help.activecampaign.com/hc/en-us/articles/115000161204"
+    }
+   ]
   },
   "airtable": {
    "name": "Airtable",
@@ -41,23 +68,45 @@
      "monthly_base_usd": 0,
      "monthly_per_seat_usd": 0,
      "min_seats": 1,
-     "api_access": true
+     "api_access": true,
+     "api_access_by_vendor_docs": "Yes",
+     "api_rate_limit": "1,000 API calls a month",
+     "developer_webhooks": "Yes",
+     "api_facts_checked": "2026-11-03"
     },
     "Team": {
      "monthly_base_usd": 0,
      "monthly_per_seat_usd": 24,
      "min_seats": 1,
      "api_access": true,
-     "annual_billing_per_seat_usd_per_month": 20
+     "annual_billing_per_seat_usd_per_month": 20,
+     "api_access_by_vendor_docs": "Yes",
+     "api_rate_limit": "100,000 API calls a month",
+     "developer_webhooks": "Yes",
+     "api_facts_checked": "2026-11-03"
     },
     "Business": {
      "monthly_base_usd": 0,
      "monthly_per_seat_usd": 54,
      "min_seats": 1,
      "api_access": true,
-     "annual_billing_per_seat_usd_per_month": 45
+     "annual_billing_per_seat_usd_per_month": 45,
+     "api_access_by_vendor_docs": "Yes",
+     "api_rate_limit": "Not stated in the article we read",
+     "developer_webhooks": "Yes",
+     "api_facts_checked": "2026-11-03"
     }
-   }
+   },
+   "api_sources": [
+    {
+     "title": "Airtable: Managing API call limits",
+     "url": "https://support.airtable.com/articles/7735693959-managing-api-call-limits-in-airtable"
+    },
+    {
+     "title": "Airtable: Create a webhook",
+     "url": "https://airtable.com/developers/web/api/create-a-webhook"
+    }
+   ]
   },
   "asana": {
    "name": "Asana",
@@ -67,16 +116,42 @@
      "monthly_per_seat_usd": 13.49,
      "min_seats": 1,
      "api_access": true,
-     "annual_billing_per_seat_usd_per_month": 10.99
+     "annual_billing_per_seat_usd_per_month": 10.99,
+     "api_access_by_vendor_docs": "Yes",
+     "api_access_note": "No plan requirement in Asana's developer docs",
+     "developer_webhooks": "Yes",
+     "developer_webhooks_note": "API webhooks; no plan requirement stated",
+     "webhook_automation_action": "Not stated",
+     "api_facts_checked": "2026-11-03"
     },
     "Advanced": {
      "monthly_base_usd": 0,
      "monthly_per_seat_usd": 30.49,
      "min_seats": 1,
      "api_access": true,
-     "annual_billing_per_seat_usd_per_month": 24.99
+     "annual_billing_per_seat_usd_per_month": 24.99,
+     "api_access_by_vendor_docs": "Yes",
+     "api_access_note": "No plan requirement in Asana's developer docs",
+     "developer_webhooks": "Yes",
+     "developer_webhooks_note": "API webhooks; no plan requirement stated",
+     "webhook_automation_action": "Not stated",
+     "api_facts_checked": "2026-11-03"
     }
-   }
+   },
+   "api_sources": [
+    {
+     "title": "Asana developers: Webhooks guide",
+     "url": "https://developers.asana.com/docs/webhooks-guide"
+    },
+    {
+     "title": "Asana developers: Personal access token",
+     "url": "https://developers.asana.com/docs/personal-access-token"
+    },
+    {
+     "title": "Asana: Rules",
+     "url": "https://asana.com/features/workflow-automation/rules"
+    }
+   ]
   },
   "calendly": {
    "name": "Calendly",
@@ -86,22 +161,38 @@
      "monthly_per_seat_usd": 12,
      "min_seats": 1,
      "api_access": true,
-     "annual_billing_per_seat_usd_per_month": 10
+     "annual_billing_per_seat_usd_per_month": 10,
+     "api_access_by_vendor_docs": "Yes",
+     "developer_webhooks": "Yes",
+     "api_facts_checked": "2026-11-03"
     },
     "Teams": {
      "monthly_base_usd": 0,
      "monthly_per_seat_usd": 20,
      "min_seats": 1,
      "api_access": true,
-     "annual_billing_per_seat_usd_per_month": 16
+     "annual_billing_per_seat_usd_per_month": 16,
+     "api_access_by_vendor_docs": "Yes",
+     "developer_webhooks": "Yes",
+     "api_facts_checked": "2026-11-03"
     },
     "Free": {
      "monthly_base_usd": 0,
      "monthly_per_seat_usd": 0,
      "min_seats": 1,
-     "api_access": true
+     "api_access": true,
+     "api_access_by_vendor_docs": "Yes",
+     "developer_webhooks": "No",
+     "developer_webhooks_note": "Webhooks need a paid plan",
+     "api_facts_checked": "2026-11-03"
     }
-   }
+   },
+   "api_sources": [
+    {
+     "title": "Calendly: API overview",
+     "url": "https://calendly.com/help/calendly-api-overview"
+    }
+   ]
   },
   "clickup": {
    "name": "ClickUp",
@@ -110,23 +201,56 @@
      "monthly_base_usd": 0,
      "monthly_per_seat_usd": 0,
      "min_seats": 1,
-     "api_access": true
+     "api_access": true,
+     "api_access_by_vendor_docs": "Yes",
+     "api_rate_limit": "100 requests/min per token",
+     "developer_webhooks": "Yes",
+     "developer_webhooks_note": "API webhooks",
+     "webhook_automation_action": "Not stated",
+     "api_facts_checked": "2026-11-03"
     },
     "Core": {
      "monthly_base_usd": 0,
      "monthly_per_seat_usd": 12,
      "min_seats": 1,
      "api_access": true,
-     "annual_billing_per_seat_usd_per_month": 9
+     "annual_billing_per_seat_usd_per_month": 9,
+     "api_access_by_vendor_docs": "Yes",
+     "api_access_note": "Core is ClickUp's former Unlimited plan",
+     "api_rate_limit": "100 requests/min per token",
+     "developer_webhooks": "Yes",
+     "developer_webhooks_note": "API webhooks",
+     "webhook_automation_action": "Not stated",
+     "api_facts_checked": "2026-11-03"
     },
     "Business": {
      "monthly_base_usd": 0,
      "monthly_per_seat_usd": 25,
      "min_seats": 1,
      "api_access": true,
-     "annual_billing_per_seat_usd_per_month": 17
+     "annual_billing_per_seat_usd_per_month": 17,
+     "api_access_by_vendor_docs": "Yes",
+     "api_rate_limit": "100 requests/min per token",
+     "developer_webhooks": "Yes",
+     "developer_webhooks_note": "API webhooks",
+     "webhook_automation_action": "Not stated",
+     "api_facts_checked": "2026-11-03"
     }
-   }
+   },
+   "api_sources": [
+    {
+     "title": "ClickUp developers: API availability by plan",
+     "url": "https://developer.clickup.com/docs/apis-available-by-plan"
+    },
+    {
+     "title": "ClickUp developers: Rate limits",
+     "url": "https://developer.clickup.com/docs/rate-limits"
+    },
+    {
+     "title": "ClickUp: Automation webhooks",
+     "url": "https://help.clickup.com/hc/en-us/articles/35313844961943-Integrate-ClickUp-using-Automation-webhooks"
+    }
+   ]
   },
   "freshdesk": {
    "name": "Freshdesk",
@@ -136,23 +260,46 @@
      "monthly_per_seat_usd": 23,
      "min_seats": 1,
      "api_access": true,
-     "annual_billing_per_seat_usd_per_month": 19
+     "annual_billing_per_seat_usd_per_month": 19,
+     "api_access_by_vendor_docs": "Yes",
+     "developer_webhooks": "Yes",
+     "developer_webhooks_note": "Webhooks run from automation rules",
+     "webhook_automation_action": "Trigger Webhook action",
+     "api_facts_checked": "2026-11-03"
     },
     "Pro": {
      "monthly_base_usd": 0,
      "monthly_per_seat_usd": 66,
      "min_seats": 1,
      "api_access": true,
-     "annual_billing_per_seat_usd_per_month": 55
+     "annual_billing_per_seat_usd_per_month": 55,
+     "api_access_by_vendor_docs": "Yes",
+     "developer_webhooks": "Yes",
+     "webhook_automation_action": "Trigger Webhook action",
+     "api_facts_checked": "2026-11-03"
     },
     "Enterprise": {
      "monthly_base_usd": 0,
      "monthly_per_seat_usd": 107,
      "min_seats": 1,
      "api_access": true,
-     "annual_billing_per_seat_usd_per_month": 89
+     "annual_billing_per_seat_usd_per_month": 89,
+     "api_access_by_vendor_docs": "Yes",
+     "developer_webhooks": "Yes",
+     "webhook_automation_action": "Trigger Webhook action",
+     "api_facts_checked": "2026-11-03"
     }
-   }
+   },
+   "api_sources": [
+    {
+     "title": "Freshdesk API reference",
+     "url": "https://developers.freshdesk.com/api/"
+    },
+    {
+     "title": "Freshdesk: Using webhooks in automation rules",
+     "url": "https://support.freshdesk.com/en/support/solutions/articles/132589"
+    }
+   ]
   },
   "hubspot": {
    "name": "HubSpot",
@@ -161,27 +308,61 @@
      "monthly_base_usd": 0,
      "monthly_per_seat_usd": 0,
      "min_seats": 1,
-     "api_access": true
+     "api_access": true,
+     "api_access_by_vendor_docs": "Yes",
+     "api_rate_limit": "100 req/10 s · 250,000/day (private apps)",
+     "developer_webhooks": "Not stated",
+     "developer_webhooks_note": "Developer webhooks via apps; plan not stated",
+     "webhook_automation_action": "Needs Data Hub Professional",
+     "api_facts_checked": "2026-11-03"
     },
     "Starter": {
      "monthly_base_usd": 0,
      "monthly_per_seat_usd": 20,
      "min_seats": 1,
-     "api_access": true
+     "api_access": true,
+     "api_access_by_vendor_docs": "Yes",
+     "api_rate_limit": "100 req/10 s · 250,000/day (private apps)",
+     "developer_webhooks": "Not stated",
+     "developer_webhooks_note": "Developer webhooks via apps; plan not stated",
+     "webhook_automation_action": "Needs Data Hub Professional",
+     "api_facts_checked": "2026-11-03"
     },
     "Professional": {
      "monthly_base_usd": 800,
      "monthly_per_seat_usd": 0,
      "min_seats": 1,
-     "api_access": true
+     "api_access": true,
+     "api_access_by_vendor_docs": "Yes",
+     "api_rate_limit": "190 req/10 s · 625,000/day (private apps)",
+     "developer_webhooks": "Not stated",
+     "developer_webhooks_note": "Developer webhooks via apps; plan not stated",
+     "webhook_automation_action": "Only with Data Hub Professional",
+     "api_facts_checked": "2026-11-03"
     },
     "Enterprise": {
      "monthly_base_usd": 3600,
      "monthly_per_seat_usd": 0,
      "min_seats": 1,
-     "api_access": true
+     "api_access": true,
+     "api_access_by_vendor_docs": "Yes",
+     "api_rate_limit": "190 req/10 s · 1,000,000/day (private apps)",
+     "developer_webhooks": "Not stated",
+     "developer_webhooks_note": "Developer webhooks via apps; plan not stated",
+     "webhook_automation_action": "Only with Data Hub Enterprise",
+     "api_facts_checked": "2026-11-03"
     }
-   }
+   },
+   "api_sources": [
+    {
+     "title": "HubSpot developers: Usage guidelines",
+     "url": "https://developers.hubspot.com/docs/developer-tooling/platform/usage-guidelines"
+    },
+    {
+     "title": "HubSpot KB: Webhooks in workflows",
+     "url": "https://knowledge.hubspot.com/workflows/how-do-i-use-webhooks-with-hubspot-workflows"
+    }
+   ]
   },
   "intercom": {
    "name": "Intercom",
@@ -191,16 +372,30 @@
      "monthly_per_seat_usd": 39,
      "min_seats": 1,
      "api_access": true,
-     "annual_billing_per_seat_usd_per_month": 29
+     "annual_billing_per_seat_usd_per_month": 29,
+     "api_access_by_vendor_docs": "Yes",
+     "api_access_note": "Paid workspaces",
+     "developer_webhooks": "Yes",
+     "api_facts_checked": "2026-11-03"
     },
     "Advanced": {
      "monthly_base_usd": 0,
      "monthly_per_seat_usd": 99,
      "min_seats": 1,
      "api_access": true,
-     "annual_billing_per_seat_usd_per_month": 85
+     "annual_billing_per_seat_usd_per_month": 85,
+     "api_access_by_vendor_docs": "Yes",
+     "api_access_note": "Paid workspaces",
+     "developer_webhooks": "Yes",
+     "api_facts_checked": "2026-11-03"
     }
-   }
+   },
+   "api_sources": [
+    {
+     "title": "Intercom developers: Webhooks",
+     "url": "https://developers.intercom.com/docs/webhooks"
+    }
+   ]
   },
   "mailchimp": {
    "name": "Mailchimp",
@@ -209,27 +404,57 @@
      "monthly_base_usd": 13,
      "monthly_per_seat_usd": 0,
      "min_seats": 1,
-     "api_access": true
+     "api_access": true,
+     "api_access_by_vendor_docs": "Yes",
+     "api_access_note": "No plan requirement in Mailchimp's API key article",
+     "developer_webhooks": "No",
+     "developer_webhooks_note": "Webhook automation step needs Standard",
+     "webhook_automation_action": "Upgrade prompt",
+     "api_facts_checked": "2026-11-03"
     },
     "Standard": {
      "monthly_base_usd": 20,
      "monthly_per_seat_usd": 0,
      "min_seats": 1,
-     "api_access": true
+     "api_access": true,
+     "api_access_by_vendor_docs": "Yes",
+     "developer_webhooks": "Yes",
+     "webhook_automation_action": "Yes",
+     "api_facts_checked": "2026-11-03"
     },
     "Premium": {
      "monthly_base_usd": 350,
      "monthly_per_seat_usd": 0,
      "min_seats": 1,
-     "api_access": true
+     "api_access": true,
+     "api_access_by_vendor_docs": "Yes",
+     "developer_webhooks": "Yes",
+     "webhook_automation_action": "Yes",
+     "api_facts_checked": "2026-11-03"
     },
     "Free": {
      "monthly_base_usd": 0,
      "monthly_per_seat_usd": 0,
      "min_seats": 1,
-     "api_access": true
+     "api_access": true,
+     "api_access_by_vendor_docs": "Yes",
+     "api_access_note": "No plan requirement in Mailchimp's API key article",
+     "developer_webhooks": "No",
+     "developer_webhooks_note": "Webhook automation step needs Standard",
+     "webhook_automation_action": "Upgrade prompt",
+     "api_facts_checked": "2026-11-03"
     }
-   }
+   },
+   "api_sources": [
+    {
+     "title": "Mailchimp: About API keys",
+     "url": "https://mailchimp.com/help/about-api-keys/"
+    },
+    {
+     "title": "Mailchimp: About webhooks",
+     "url": "https://mailchimp.com/help/about-webhooks/"
+    }
+   ]
   },
   "monday": {
    "name": "Monday.com",
@@ -239,23 +464,49 @@
      "monthly_per_seat_usd": 12,
      "min_seats": 3,
      "api_access": false,
-     "annual_billing_per_seat_usd_per_month": 9
+     "annual_billing_per_seat_usd_per_month": 9,
+     "api_access_by_vendor_docs": "Yes",
+     "api_rate_limit": "1,000 calls/day",
+     "developer_webhooks": "No",
+     "developer_webhooks_note": "Integrations start on Standard",
+     "webhook_automation_action": "No",
+     "api_facts_checked": "2026-11-03"
     },
     "Standard": {
      "monthly_base_usd": 0,
      "monthly_per_seat_usd": 14,
      "min_seats": 3,
      "api_access": true,
-     "annual_billing_per_seat_usd_per_month": 12
+     "annual_billing_per_seat_usd_per_month": 12,
+     "api_access_by_vendor_docs": "Yes",
+     "api_rate_limit": "1,000 calls/day",
+     "developer_webhooks": "Yes",
+     "webhook_automation_action": "250 integration actions/mo",
+     "api_facts_checked": "2026-11-03"
     },
     "Pro": {
      "monthly_base_usd": 0,
      "monthly_per_seat_usd": 24,
      "min_seats": 3,
      "api_access": true,
-     "annual_billing_per_seat_usd_per_month": 19
+     "annual_billing_per_seat_usd_per_month": 19,
+     "api_access_by_vendor_docs": "Yes",
+     "api_rate_limit": "10,000 calls/day",
+     "developer_webhooks": "Yes",
+     "webhook_automation_action": "25,000 integration actions/mo",
+     "api_facts_checked": "2026-11-03"
     }
-   }
+   },
+   "api_sources": [
+    {
+     "title": "monday.com developers: Rate limits",
+     "url": "https://developer.monday.com/api-reference/docs/rate-limits"
+    },
+    {
+     "title": "monday.com: Automations and integrations pricing",
+     "url": "https://support.monday.com/hc/en-us/articles/360002826680"
+    }
+   ]
   },
   "notion": {
    "name": "Notion",
@@ -265,16 +516,38 @@
      "monthly_per_seat_usd": 12,
      "min_seats": 1,
      "api_access": true,
-     "annual_billing_per_seat_usd_per_month": 10
+     "annual_billing_per_seat_usd_per_month": 10,
+     "api_access_by_vendor_docs": "Yes",
+     "developer_webhooks": "Yes",
+     "webhook_automation_action": "Yes (paid plans)",
+     "api_facts_checked": "2026-11-03"
     },
     "Business": {
      "monthly_base_usd": 0,
      "monthly_per_seat_usd": 24,
      "min_seats": 1,
      "api_access": true,
-     "annual_billing_per_seat_usd_per_month": 20
+     "annual_billing_per_seat_usd_per_month": 20,
+     "api_access_by_vendor_docs": "Yes",
+     "developer_webhooks": "Yes",
+     "webhook_automation_action": "Yes (paid plans)",
+     "api_facts_checked": "2026-11-03"
     }
-   }
+   },
+   "api_sources": [
+    {
+     "title": "Notion developers: Webhooks",
+     "url": "https://developers.notion.com/reference/webhooks"
+    },
+    {
+     "title": "Notion help: Webhook actions",
+     "url": "https://www.notion.com/help/webhook-actions"
+    },
+    {
+     "title": "Notion API public beta",
+     "url": "https://developers.notion.com/changelog/hello-world-notion-api-is-now-in-public-beta"
+    }
+   ]
   },
   "pipedrive": {
    "name": "Pipedrive",
@@ -283,27 +556,57 @@
      "monthly_base_usd": 0,
      "monthly_per_seat_usd": 14,
      "min_seats": 1,
-     "api_access": true
+     "api_access": true,
+     "api_access_by_vendor_docs": "Yes",
+     "api_rate_limit": "20 req/2 s · daily budget ×1",
+     "developer_webhooks": "Yes",
+     "webhook_automation_action": "No (Growth and up)",
+     "api_facts_checked": "2026-11-03"
     },
     "Growth": {
      "monthly_base_usd": 0,
      "monthly_per_seat_usd": 39,
      "min_seats": 1,
-     "api_access": true
+     "api_access": true,
+     "api_access_by_vendor_docs": "Yes",
+     "api_rate_limit": "40 req/2 s · daily budget ×2",
+     "developer_webhooks": "Yes",
+     "webhook_automation_action": "Yes",
+     "api_facts_checked": "2026-11-03"
     },
     "Premium": {
      "monthly_base_usd": 0,
      "monthly_per_seat_usd": 59,
      "min_seats": 1,
-     "api_access": true
+     "api_access": true,
+     "api_access_by_vendor_docs": "Yes",
+     "api_rate_limit": "100 req/2 s · daily budget ×5",
+     "developer_webhooks": "Yes",
+     "webhook_automation_action": "Yes",
+     "api_facts_checked": "2026-11-03"
     },
     "Ultimate": {
      "monthly_base_usd": 0,
      "monthly_per_seat_usd": 79,
      "min_seats": 1,
-     "api_access": true
+     "api_access": true,
+     "api_access_by_vendor_docs": "Yes",
+     "api_rate_limit": "120 req/2 s · daily budget ×7",
+     "developer_webhooks": "Yes",
+     "webhook_automation_action": "Yes",
+     "api_facts_checked": "2026-11-03"
     }
-   }
+   },
+   "api_sources": [
+    {
+     "title": "Pipedrive developers: Rate limiting",
+     "url": "https://pipedrive.readme.io/docs/core-api-concepts-rate-limiting"
+    },
+    {
+     "title": "Pipedrive: Automations webhook requests",
+     "url": "https://support.pipedrive.com/en/article/automations-webhook-requests"
+    }
+   ]
   },
   "quickbooks": {
    "name": "QuickBooks Online",
@@ -312,21 +615,42 @@
      "monthly_base_usd": 35,
      "monthly_per_seat_usd": 0,
      "min_seats": 1,
-     "api_access": true
+     "api_access": true,
+     "api_access_by_vendor_docs": "Yes",
+     "api_access_note": "No plan requirement in Intuit's developer docs",
+     "developer_webhooks": "Yes",
+     "developer_webhooks_note": "App-level webhooks",
+     "api_facts_checked": "2026-11-03"
     },
     "Essentials": {
      "monthly_base_usd": 65,
      "monthly_per_seat_usd": 0,
      "min_seats": 1,
-     "api_access": true
+     "api_access": true,
+     "api_access_by_vendor_docs": "Yes",
+     "api_access_note": "No plan requirement in Intuit's developer docs",
+     "developer_webhooks": "Yes",
+     "developer_webhooks_note": "App-level webhooks",
+     "api_facts_checked": "2026-11-03"
     },
     "Plus": {
      "monthly_base_usd": 99,
      "monthly_per_seat_usd": 0,
      "min_seats": 1,
-     "api_access": true
+     "api_access": true,
+     "api_access_by_vendor_docs": "Yes",
+     "api_access_note": "No plan requirement in Intuit's developer docs",
+     "developer_webhooks": "Yes",
+     "developer_webhooks_note": "App-level webhooks",
+     "api_facts_checked": "2026-11-03"
     }
-   }
+   },
+   "api_sources": [
+    {
+     "title": "Intuit developers: Webhooks",
+     "url": "https://developer.intuit.com/app/developer/qbo/docs/develop/webhooks"
+    }
+   ]
   },
   "salesforce": {
    "name": "Salesforce Sales Cloud",
@@ -335,27 +659,46 @@
      "monthly_base_usd": 0,
      "monthly_per_seat_usd": 25,
      "min_seats": 1,
-     "api_access": false
+     "api_access": false,
+     "api_access_by_vendor_docs": "No",
+     "developer_webhooks": "Not stated",
+     "api_facts_checked": "2026-11-03"
     },
     "Professional": {
      "monthly_base_usd": 0,
      "monthly_per_seat_usd": 100,
      "min_seats": 1,
-     "api_access": true
+     "api_access": true,
+     "api_access_by_vendor_docs": "Add-on",
+     "api_access_note": "Web Services API add-on (modeled at $25/user)",
+     "developer_webhooks": "Not stated",
+     "api_facts_checked": "2026-11-03"
     },
     "Enterprise": {
      "monthly_base_usd": 0,
      "monthly_per_seat_usd": 165,
      "min_seats": 1,
-     "api_access": true
+     "api_access": true,
+     "api_access_by_vendor_docs": "Yes",
+     "developer_webhooks": "Not stated",
+     "api_facts_checked": "2026-11-03"
     },
     "Unlimited": {
      "monthly_base_usd": 0,
      "monthly_per_seat_usd": 330,
      "min_seats": 1,
-     "api_access": true
+     "api_access": true,
+     "api_access_by_vendor_docs": "Yes",
+     "developer_webhooks": "Not stated",
+     "api_facts_checked": "2026-11-03"
     }
-   }
+   },
+   "api_sources": [
+    {
+     "title": "Salesforce developers: Supported editions",
+     "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-rest-compatible-editions.html"
+    }
+   ]
   },
   "slack": {
    "name": "Slack",
@@ -364,21 +707,44 @@
      "monthly_base_usd": 0,
      "monthly_per_seat_usd": 0,
      "min_seats": 1,
-     "api_access": true
+     "api_access": true,
+     "api_access_by_vendor_docs": "Yes",
+     "developer_webhooks": "Yes",
+     "developer_webhooks_note": "Incoming webhooks",
+     "webhook_automation_action": "No (paid plans)",
+     "api_facts_checked": "2026-11-03"
     },
     "Pro": {
      "monthly_base_usd": 0,
      "monthly_per_seat_usd": 8.75,
      "min_seats": 1,
-     "api_access": true
+     "api_access": true,
+     "api_access_by_vendor_docs": "Yes",
+     "developer_webhooks": "Yes",
+     "webhook_automation_action": "Yes",
+     "api_facts_checked": "2026-11-03"
     },
     "Business+": {
      "monthly_base_usd": 0,
      "monthly_per_seat_usd": 18,
      "min_seats": 1,
-     "api_access": true
+     "api_access": true,
+     "api_access_by_vendor_docs": "Yes",
+     "developer_webhooks": "Yes",
+     "webhook_automation_action": "Yes",
+     "api_facts_checked": "2026-11-03"
     }
-   }
+   },
+   "api_sources": [
+    {
+     "title": "Slack developers: Incoming webhooks",
+     "url": "https://api.slack.com/messaging/webhooks"
+    },
+    {
+     "title": "Slack help: Guide to Workflow Builder",
+     "url": "https://slack.com/help/articles/17542172840595-Guide-to-Workflow-Builder"
+    }
+   ]
   },
   "stripe": {
    "name": "Stripe",
@@ -387,9 +753,23 @@
      "monthly_base_usd": 0,
      "monthly_per_seat_usd": 0,
      "min_seats": 1,
-     "api_access": true
+     "api_access": true,
+     "api_access_by_vendor_docs": "Yes",
+     "api_access_note": "Every account",
+     "developer_webhooks": "Yes",
+     "api_facts_checked": "2026-11-03"
     }
-   }
+   },
+   "api_sources": [
+    {
+     "title": "Stripe API reference",
+     "url": "https://docs.stripe.com/api"
+    },
+    {
+     "title": "Stripe: Webhooks",
+     "url": "https://docs.stripe.com/webhooks"
+    }
+   ]
   },
   "xero": {
    "name": "Xero",
@@ -398,21 +778,43 @@
      "monthly_base_usd": 27,
      "monthly_per_seat_usd": 0,
      "min_seats": 1,
-     "api_access": true
+     "api_access": true,
+     "api_access_by_vendor_docs": "Yes",
+     "api_access_note": "Limits set by the app's developer tier",
+     "developer_webhooks": "Yes",
+     "api_facts_checked": "2026-11-03"
     },
     "Growing": {
      "monthly_base_usd": 59,
      "monthly_per_seat_usd": 0,
      "min_seats": 1,
-     "api_access": true
+     "api_access": true,
+     "api_access_by_vendor_docs": "Yes",
+     "api_access_note": "Limits set by the app's developer tier",
+     "developer_webhooks": "Yes",
+     "api_facts_checked": "2026-11-03"
     },
     "Established": {
      "monthly_base_usd": 97,
      "monthly_per_seat_usd": 0,
      "min_seats": 1,
-     "api_access": true
+     "api_access": true,
+     "api_access_by_vendor_docs": "Yes",
+     "api_access_note": "Limits set by the app's developer tier",
+     "developer_webhooks": "Yes",
+     "api_facts_checked": "2026-11-03"
     }
-   }
+   },
+   "api_sources": [
+    {
+     "title": "Xero developers: Pricing and tiers",
+     "url": "https://developer.xero.com/pricing"
+    },
+    {
+     "title": "Xero developers: Webhooks",
+     "url": "https://developer.xero.com/documentation/guides/webhooks/overview"
+    }
+   ]
   },
   "zendesk": {
    "name": "Zendesk",
@@ -422,23 +824,48 @@
      "monthly_per_seat_usd": 69,
      "min_seats": 1,
      "api_access": true,
-     "annual_billing_per_seat_usd_per_month": 55
+     "annual_billing_per_seat_usd_per_month": 55,
+     "api_access_by_vendor_docs": "Yes",
+     "api_rate_limit": "200 requests/min",
+     "developer_webhooks": "Yes",
+     "webhook_automation_action": "Via triggers",
+     "api_facts_checked": "2026-11-03"
     },
     "Suite Growth": {
      "monthly_base_usd": 0,
      "monthly_per_seat_usd": 115,
      "min_seats": 1,
      "api_access": true,
-     "annual_billing_per_seat_usd_per_month": 89
+     "annual_billing_per_seat_usd_per_month": 89,
+     "api_access_by_vendor_docs": "Yes",
+     "api_rate_limit": "400 requests/min",
+     "developer_webhooks": "Yes",
+     "webhook_automation_action": "Via triggers",
+     "api_facts_checked": "2026-11-03"
     },
     "Suite Professional": {
      "monthly_base_usd": 0,
      "monthly_per_seat_usd": 149,
      "min_seats": 1,
      "api_access": true,
-     "annual_billing_per_seat_usd_per_month": 115
+     "annual_billing_per_seat_usd_per_month": 115,
+     "api_access_by_vendor_docs": "Yes",
+     "api_rate_limit": "400 requests/min",
+     "developer_webhooks": "Yes",
+     "webhook_automation_action": "Via triggers",
+     "api_facts_checked": "2026-11-03"
     }
-   }
+   },
+   "api_sources": [
+    {
+     "title": "Zendesk developers: Rate limits",
+     "url": "https://developer.zendesk.com/api-reference/introduction/rate-limits/"
+    },
+    {
+     "title": "Zendesk: Creating webhooks",
+     "url": "https://support.zendesk.com/hc/en-us/articles/4408839108378"
+    }
+   ]
   }
  },
  "pairs": [
@@ -597,15 +1024,15 @@
    ],
    "connection_type": "middleware",
    "minimum_plans": {
-    "Asana": "Advanced",
+    "Asana": "Starter",
     "QuickBooks Online": "Plus"
    },
    "middleware_monthly_usd": 10.59,
    "middleware_annual_billing_usd_per_month": 9,
    "sync_direction": "1-way (trigger → action)",
-   "ten_seat_monthly_cost_usd": 414.49,
-   "verification": "Prices checked against official vendor docs · Nov 3, 2026 (QuickBooks prices: Oct 17, 2026; Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks) · Integration requirements last checked · Oct 17, 2026 (re-check pending)",
-   "last_reviewed": "2026-10-17",
+   "ten_seat_monthly_cost_usd": 244.49,
+   "verification": "Integration requirements checked · Nov 3, 2026 (QuickBooks plan unconfirmed) · Prices checked · Nov 3, 2026 (QuickBooks prices: Oct 17, 2026; Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks)",
+   "last_reviewed": "2026-11-03",
    "date_modified": "2026-11-03",
    "sources": []
   },
@@ -1160,15 +1587,15 @@
    ],
    "connection_type": "middleware",
    "minimum_plans": {
-    "Monday.com": "Pro",
+    "Monday.com": "Standard",
     "QuickBooks Online": "Plus"
    },
    "middleware_monthly_usd": 10.59,
    "middleware_annual_billing_usd_per_month": 9,
    "sync_direction": "1-way (trigger → action)",
-   "ten_seat_monthly_cost_usd": 349.59,
-   "verification": "Prices checked against official vendor docs · Nov 3, 2026 (QuickBooks prices: Oct 17, 2026; Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks) · Integration requirements last checked · Oct 17, 2026 (re-check pending)",
-   "last_reviewed": "2026-10-17",
+   "ten_seat_monthly_cost_usd": 249.59,
+   "verification": "Integration requirements checked · Nov 3, 2026 (QuickBooks plan unconfirmed) · Prices checked · Nov 3, 2026 (QuickBooks prices: Oct 17, 2026; Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks)",
+   "last_reviewed": "2026-11-03",
    "date_modified": "2026-11-03",
    "sources": []
   },
@@ -1256,15 +1683,15 @@
    ],
    "connection_type": "middleware",
    "minimum_plans": {
-    "Notion": "Business",
+    "Notion": "Plus",
     "Stripe": "Standard"
    },
    "middleware_monthly_usd": 10.59,
    "middleware_annual_billing_usd_per_month": 9,
    "sync_direction": "1-way (trigger → action)",
-   "ten_seat_monthly_cost_usd": 250.59,
-   "verification": "Prices checked against official vendor docs · Nov 3, 2026 (Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks) · Integration requirements last checked · Oct 17, 2026 (re-check pending)",
-   "last_reviewed": "2026-10-17",
+   "ten_seat_monthly_cost_usd": 130.59,
+   "verification": "Integration requirements checked · Nov 3, 2026 (Notion plan unconfirmed) · Prices checked · Nov 3, 2026 (Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks)",
+   "last_reviewed": "2026-11-03",
    "date_modified": "2026-11-03",
    "sources": []
   },
@@ -1830,15 +2257,15 @@
    ],
    "connection_type": "middleware",
    "minimum_plans": {
-    "Zendesk": "Suite Growth",
+    "Zendesk": "Suite Team",
     "Notion": "Plus"
    },
    "middleware_monthly_usd": 29.99,
    "middleware_annual_billing_usd_per_month": 19.99,
    "sync_direction": "1-way (trigger → action)",
-   "ten_seat_monthly_cost_usd": 1299.99,
-   "verification": "Prices checked against official vendor docs · Nov 3, 2026 (Zapier Professional fee: Nov 3, 2026) · Integration requirements last checked · Oct 17, 2026 (re-check pending)",
-   "last_reviewed": "2026-10-17",
+   "ten_seat_monthly_cost_usd": 839.99,
+   "verification": "Integration requirements checked · Nov 3, 2026 (Notion plan unconfirmed) · Prices checked · Nov 3, 2026 (Zapier Professional fee: Nov 3, 2026)",
+   "last_reviewed": "2026-11-03",
    "date_modified": "2026-11-03",
    "sources": []
   },
