@@ -5,6 +5,7 @@
  "generated_from_live_site": "2026-11-03",
  "notes": [
   "Plan prices are monthly-billing list prices in USD where the vendor publishes one; annual_billing_per_seat_usd_per_month is the vendor's annual-billing price, where published.",
+  "Middleware and connector fees follow the same rule: middleware_monthly_usd is the monthly-billing price and middleware_annual_billing_usd_per_month the annual-billing price (Make Core's monthly price comes from third-party pricing reviews because make.com blocks automated checks).",
   "Free tiers are listed where the vendor documents the integration working on its free plan.",
   "Modeled assumptions: HubSpot Professional and Enterprise are flat monthly prices; ActiveCampaign and Pipedrive list annual-billing rates only; Salesforce and QuickBooks Online prices were last verified 2026-10-17.",
   "Each pair's 'verification' field states what was checked and when, including exceptions."
@@ -515,16 +516,26 @@
    ],
    "connection_type": "middleware",
    "minimum_plans": {
-    "Airtable": "Free",
+    "Airtable": "Team",
     "QuickBooks Online": "Plus"
    },
-   "middleware_monthly_usd": 9,
+   "middleware_monthly_usd": 10.59,
+   "middleware_annual_billing_usd_per_month": 9,
    "sync_direction": "1-way (trigger → action)",
-   "ten_seat_monthly_cost_usd": 108,
-   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (QuickBooks prices: Oct 17, 2026; Make/Zapier fee: Oct 17, 2026)",
+   "ten_seat_monthly_cost_usd": 349.59,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (QuickBooks prices: Oct 17, 2026; Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks)",
    "last_reviewed": "2026-11-03",
    "date_modified": "2026-11-03",
-   "sources": []
+   "sources": [
+    {
+     "title": "Airtable: Managing API call limits",
+     "url": "https://support.airtable.com/articles/7735693959-managing-api-call-limits-in-airtable"
+    },
+    {
+     "title": "Airtable: Create a webhook",
+     "url": "https://airtable.com/developers/web/api/create-a-webhook"
+    }
+   ]
   },
   {
    "pair": "airtable-and-stripe",
@@ -535,16 +546,26 @@
    ],
    "connection_type": "middleware",
    "minimum_plans": {
-    "Airtable": "Free",
+    "Airtable": "Team",
     "Stripe": "Standard"
    },
-   "middleware_monthly_usd": 9,
+   "middleware_monthly_usd": 10.59,
+   "middleware_annual_billing_usd_per_month": 9,
    "sync_direction": "1-way (trigger → action)",
-   "ten_seat_monthly_cost_usd": 9,
-   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Make/Zapier fee: Oct 17, 2026)",
+   "ten_seat_monthly_cost_usd": 250.59,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks)",
    "last_reviewed": "2026-11-03",
    "date_modified": "2026-11-03",
-   "sources": []
+   "sources": [
+    {
+     "title": "Airtable: Managing API call limits",
+     "url": "https://support.airtable.com/articles/7735693959-managing-api-call-limits-in-airtable"
+    },
+    {
+     "title": "Airtable: Create a webhook",
+     "url": "https://airtable.com/developers/web/api/create-a-webhook"
+    }
+   ]
   },
   {
    "pair": "asana-and-mailchimp",
@@ -558,10 +579,11 @@
     "Asana": "Starter",
     "Mailchimp": "Essentials"
    },
-   "middleware_monthly_usd": 19.99,
+   "middleware_monthly_usd": 29.99,
+   "middleware_annual_billing_usd_per_month": 19.99,
    "sync_direction": "1-way (trigger → action)",
-   "ten_seat_monthly_cost_usd": 167.89,
-   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Make/Zapier fee: Oct 17, 2026)",
+   "ten_seat_monthly_cost_usd": 177.89,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Zapier Professional fee: Nov 3, 2026)",
    "last_reviewed": "2026-11-03",
    "date_modified": "2026-11-03",
    "sources": []
@@ -578,10 +600,11 @@
     "Asana": "Advanced",
     "QuickBooks Online": "Plus"
    },
-   "middleware_monthly_usd": 9,
+   "middleware_monthly_usd": 10.59,
+   "middleware_annual_billing_usd_per_month": 9,
    "sync_direction": "1-way (trigger → action)",
-   "ten_seat_monthly_cost_usd": 412.9,
-   "verification": "Prices checked against official vendor docs · Nov 3, 2026 (QuickBooks prices: Oct 17, 2026; Make/Zapier fee: Oct 17, 2026) · Integration requirements last checked · Oct 17, 2026 (re-check pending)",
+   "ten_seat_monthly_cost_usd": 414.49,
+   "verification": "Prices checked against official vendor docs · Nov 3, 2026 (QuickBooks prices: Oct 17, 2026; Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks) · Integration requirements last checked · Oct 17, 2026 (re-check pending)",
    "last_reviewed": "2026-10-17",
    "date_modified": "2026-11-03",
    "sources": []
@@ -647,10 +670,11 @@
     "ClickUp": "Free",
     "Stripe": "Standard"
    },
-   "middleware_monthly_usd": 9,
+   "middleware_monthly_usd": 10.59,
+   "middleware_annual_billing_usd_per_month": 9,
    "sync_direction": "1-way (trigger → action)",
-   "ten_seat_monthly_cost_usd": 9,
-   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Make/Zapier fee: Oct 17, 2026)",
+   "ten_seat_monthly_cost_usd": 10.59,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks)",
    "last_reviewed": "2026-11-03",
    "date_modified": "2026-11-03",
    "sources": []
@@ -882,10 +906,11 @@
     "HubSpot": "Free",
     "Pipedrive": "Lite"
    },
-   "middleware_monthly_usd": 9,
+   "middleware_monthly_usd": 10.59,
+   "middleware_annual_billing_usd_per_month": 9,
    "sync_direction": "1-way (trigger → action)",
-   "ten_seat_monthly_cost_usd": 149,
-   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Pipedrive prices: from an indexed copy of its pricing page; Make/Zapier fee: Oct 17, 2026)",
+   "ten_seat_monthly_cost_usd": 150.59,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Pipedrive prices: from an indexed copy of its pricing page; Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks)",
    "last_reviewed": "2026-11-03",
    "date_modified": "2026-11-03",
    "sources": [
@@ -1074,12 +1099,13 @@
    "connection_type": "middleware",
    "minimum_plans": {
     "Mailchimp": "Essentials",
-    "Airtable": "Free"
+    "Airtable": "Team"
    },
-   "middleware_monthly_usd": 9,
+   "middleware_monthly_usd": 10.59,
+   "middleware_annual_billing_usd_per_month": 9,
    "sync_direction": "1-way (trigger → action)",
-   "ten_seat_monthly_cost_usd": 22,
-   "verification": "Integration requirements checked · Nov 3, 2026 (Mailchimp plan unconfirmed) · Prices checked · Nov 3, 2026 (Make/Zapier fee: Oct 17, 2026)",
+   "ten_seat_monthly_cost_usd": 263.59,
+   "verification": "Integration requirements checked · Nov 3, 2026 (Mailchimp plan unconfirmed) · Prices checked · Nov 3, 2026 (Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks)",
    "last_reviewed": "2026-11-03",
    "date_modified": "2026-11-03",
    "sources": [
@@ -1094,6 +1120,14 @@
     {
      "title": "Airtable: Create a webhook",
      "url": "https://airtable.com/developers/web/api/create-a-webhook"
+    },
+    {
+     "title": "Airtable: Managing API call limits",
+     "url": "https://support.airtable.com/articles/7735693959-managing-api-call-limits-in-airtable"
+    },
+    {
+     "title": "Mailchimp: About pricing plans",
+     "url": "https://mailchimp.com/help/about-mailchimp-pricing-plans/"
     }
    ]
   },
@@ -1129,10 +1163,11 @@
     "Monday.com": "Pro",
     "QuickBooks Online": "Plus"
    },
-   "middleware_monthly_usd": 9,
+   "middleware_monthly_usd": 10.59,
+   "middleware_annual_billing_usd_per_month": 9,
    "sync_direction": "1-way (trigger → action)",
-   "ten_seat_monthly_cost_usd": 348,
-   "verification": "Prices checked against official vendor docs · Nov 3, 2026 (QuickBooks prices: Oct 17, 2026; Make/Zapier fee: Oct 17, 2026) · Integration requirements last checked · Oct 17, 2026 (re-check pending)",
+   "ten_seat_monthly_cost_usd": 349.59,
+   "verification": "Prices checked against official vendor docs · Nov 3, 2026 (QuickBooks prices: Oct 17, 2026; Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks) · Integration requirements last checked · Oct 17, 2026 (re-check pending)",
    "last_reviewed": "2026-10-17",
    "date_modified": "2026-11-03",
    "sources": []
@@ -1194,10 +1229,11 @@
     "Notion": "Plus",
     "Calendly": "Standard"
    },
-   "middleware_monthly_usd": 9,
+   "middleware_monthly_usd": 10.59,
+   "middleware_annual_billing_usd_per_month": 9,
    "sync_direction": "1-way (trigger → action)",
-   "ten_seat_monthly_cost_usd": 249,
-   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Make/Zapier fee: Oct 17, 2026)",
+   "ten_seat_monthly_cost_usd": 250.59,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks)",
    "last_reviewed": "2026-11-03",
    "date_modified": "2026-11-03",
    "sources": [
@@ -1223,10 +1259,11 @@
     "Notion": "Business",
     "Stripe": "Standard"
    },
-   "middleware_monthly_usd": 9,
+   "middleware_monthly_usd": 10.59,
+   "middleware_annual_billing_usd_per_month": 9,
    "sync_direction": "1-way (trigger → action)",
-   "ten_seat_monthly_cost_usd": 249,
-   "verification": "Prices checked against official vendor docs · Nov 3, 2026 (Make/Zapier fee: Oct 17, 2026) · Integration requirements last checked · Oct 17, 2026 (re-check pending)",
+   "ten_seat_monthly_cost_usd": 250.59,
+   "verification": "Prices checked against official vendor docs · Nov 3, 2026 (Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks) · Integration requirements last checked · Oct 17, 2026 (re-check pending)",
    "last_reviewed": "2026-10-17",
    "date_modified": "2026-11-03",
    "sources": []
@@ -1243,10 +1280,11 @@
     "Pipedrive": "Lite",
     "Calendly": "Standard"
    },
-   "middleware_monthly_usd": 9,
+   "middleware_monthly_usd": 10.59,
+   "middleware_annual_billing_usd_per_month": 9,
    "sync_direction": "1-way (trigger → action)",
-   "ten_seat_monthly_cost_usd": 269,
-   "verification": "Integration requirements checked · Nov 3, 2026 (Pipedrive plan unconfirmed) · Prices checked · Nov 3, 2026 (Pipedrive prices: from an indexed copy of its pricing page; Make/Zapier fee: Oct 17, 2026)",
+   "ten_seat_monthly_cost_usd": 270.59,
+   "verification": "Integration requirements checked · Nov 3, 2026 (Pipedrive plan unconfirmed) · Prices checked · Nov 3, 2026 (Pipedrive prices: from an indexed copy of its pricing page; Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks)",
    "last_reviewed": "2026-11-03",
    "date_modified": "2026-11-03",
    "sources": [
@@ -1365,10 +1403,11 @@
     "QuickBooks Online": "Plus",
     "Slack": "Free"
    },
-   "middleware_monthly_usd": 19.99,
+   "middleware_monthly_usd": 29.99,
+   "middleware_annual_billing_usd_per_month": 19.99,
    "sync_direction": "1-way (trigger → action)",
-   "ten_seat_monthly_cost_usd": 118.99,
-   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (QuickBooks prices: Oct 17, 2026; Make/Zapier fee: Oct 17, 2026)",
+   "ten_seat_monthly_cost_usd": 128.99,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (QuickBooks prices: Oct 17, 2026; Zapier Professional fee: Nov 3, 2026)",
    "last_reviewed": "2026-11-03",
    "date_modified": "2026-11-03",
    "sources": []
@@ -1633,6 +1672,7 @@
     "Mailchimp": "Free"
    },
    "middleware_monthly_usd": 15,
+   "middleware_annual_billing_usd_per_month": 12.75,
    "sync_direction": "1-way (Stripe → Mailchimp)",
    "ten_seat_monthly_cost_usd": 15,
    "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026",
@@ -1650,6 +1690,14 @@
     {
      "title": "Data Mapper for Mailchimp: Pricing",
      "url": "https://data-mapper-for-mailchimp.thisdot.co/pricing"
+    },
+    {
+     "title": "Data Mapper: Sync your customer purchases",
+     "url": "https://thisdot.gitbook.io/data-mapper-for-mailchimp/e-commerce/sync-your-customer-purchases"
+    },
+    {
+     "title": "Data Mapper: Choosing a plan",
+     "url": "https://thisdot.gitbook.io/data-mapper-for-mailchimp/getting-started/choosing-a-plan"
     }
    ]
   },
@@ -1743,10 +1791,11 @@
     "Xero": "Growing",
     "ActiveCampaign": "Starter"
    },
-   "middleware_monthly_usd": 9,
+   "middleware_monthly_usd": 10.59,
+   "middleware_annual_billing_usd_per_month": 9,
    "sync_direction": "1-way (trigger → action)",
-   "ten_seat_monthly_cost_usd": 83,
-   "verification": "Prices checked against official vendor docs · Nov 3, 2026 (Make/Zapier fee: Oct 17, 2026) · Integration requirements last checked · Oct 17, 2026 (re-check pending)",
+   "ten_seat_monthly_cost_usd": 84.59,
+   "verification": "Prices checked against official vendor docs · Nov 3, 2026 (Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks) · Integration requirements last checked · Oct 17, 2026 (re-check pending)",
    "last_reviewed": "2026-10-17",
    "date_modified": "2026-11-03",
    "sources": []
@@ -1763,10 +1812,11 @@
     "Xero": "Growing",
     "Calendly": "Standard"
    },
-   "middleware_monthly_usd": 19.99,
+   "middleware_monthly_usd": 29.99,
+   "middleware_annual_billing_usd_per_month": 19.99,
    "sync_direction": "1-way (trigger → action)",
-   "ten_seat_monthly_cost_usd": 198.99,
-   "verification": "Integration requirements checked · Nov 3, 2026 (Xero plan unconfirmed) · Prices checked · Nov 3, 2026 (Make/Zapier fee: Oct 17, 2026)",
+   "ten_seat_monthly_cost_usd": 208.99,
+   "verification": "Integration requirements checked · Nov 3, 2026 (Xero plan unconfirmed) · Prices checked · Nov 3, 2026 (Zapier Professional fee: Nov 3, 2026)",
    "last_reviewed": "2026-11-03",
    "date_modified": "2026-11-03",
    "sources": []
@@ -1783,10 +1833,11 @@
     "Zendesk": "Suite Growth",
     "Notion": "Plus"
    },
-   "middleware_monthly_usd": 19.99,
+   "middleware_monthly_usd": 29.99,
+   "middleware_annual_billing_usd_per_month": 19.99,
    "sync_direction": "1-way (trigger → action)",
-   "ten_seat_monthly_cost_usd": 1289.99,
-   "verification": "Prices checked against official vendor docs · Nov 3, 2026 (Make/Zapier fee: Oct 17, 2026) · Integration requirements last checked · Oct 17, 2026 (re-check pending)",
+   "ten_seat_monthly_cost_usd": 1299.99,
+   "verification": "Prices checked against official vendor docs · Nov 3, 2026 (Zapier Professional fee: Nov 3, 2026) · Integration requirements last checked · Oct 17, 2026 (re-check pending)",
    "last_reviewed": "2026-10-17",
    "date_modified": "2026-11-03",
    "sources": []
@@ -1803,10 +1854,11 @@
     "Zendesk": "Suite Team",
     "Stripe": "Standard"
    },
-   "middleware_monthly_usd": 9,
+   "middleware_monthly_usd": 10.59,
+   "middleware_annual_billing_usd_per_month": 9,
    "sync_direction": "1-way (trigger → action)",
-   "ten_seat_monthly_cost_usd": 699,
-   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Make/Zapier fee: Oct 17, 2026)",
+   "ten_seat_monthly_cost_usd": 700.59,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks)",
    "last_reviewed": "2026-11-03",
    "date_modified": "2026-11-03",
    "sources": []
