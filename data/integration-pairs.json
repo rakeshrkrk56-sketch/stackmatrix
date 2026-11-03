@@ -914,7 +914,16 @@
    "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026",
    "last_reviewed": "2026-11-03",
    "date_modified": "2026-11-03",
-   "sources": []
+   "sources": [
+    {
+     "title": "Calendly: ActiveCampaign integration",
+     "url": "https://calendly.com/help/calendly-activecampaign"
+    },
+    {
+     "title": "ActiveCampaign: Integrate Calendly",
+     "url": "https://help.activecampaign.com/hc/en-us/articles/360010946759"
+    }
+   ]
   },
   {
    "pair": "activecampaign-and-pipedrive",
@@ -1648,7 +1657,20 @@
    "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026",
    "last_reviewed": "2026-11-03",
    "date_modified": "2026-11-03",
-   "sources": []
+   "sources": [
+    {
+     "title": "monday.com: Slack integration",
+     "url": "https://monday.com/integrations/slack"
+    },
+    {
+     "title": "monday.com: Automations and integrations pricing",
+     "url": "https://support.monday.com/hc/en-us/articles/360002826680"
+    },
+    {
+     "title": "Slack: Free plan limits",
+     "url": "https://slack.com/help/articles/27204752526611-Feature-limitations-on-the-free-version-of-Slack"
+    }
+   ]
   },
   {
    "pair": "monday-and-zendesk",
@@ -1778,7 +1800,12 @@
    "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Pipedrive prices: from an indexed copy of its pricing page)",
    "last_reviewed": "2026-11-03",
    "date_modified": "2026-11-03",
-   "sources": []
+   "sources": [
+    {
+     "title": "Pipedrive: Mailchimp sync",
+     "url": "https://support.pipedrive.com/en/article/pipedrive-integration-mailchimp-sync"
+    }
+   ]
   },
   {
    "pair": "pipedrive-and-slack",
