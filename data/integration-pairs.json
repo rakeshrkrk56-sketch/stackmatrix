@@ -834,6 +834,10 @@
      "url": "https://developer.xero.com/pricing"
     },
     {
+     "title": "Zapier help: Xero prerequisites",
+     "url": "https://help.zapier.com/hc/en-us/articles/38844152391821-How-to-get-started-with-Xero-on-Zapier"
+    },
+    {
      "title": "Xero developers: Webhooks",
      "url": "https://developer.xero.com/documentation/guides/webhooks/overview"
     }
@@ -2300,17 +2304,30 @@
    ],
    "connection_type": "middleware",
    "minimum_plans": {
-    "Xero": "Growing",
+    "Xero": "Early",
     "Calendly": "Standard"
    },
    "middleware_monthly_usd": 29.99,
    "middleware_annual_billing_usd_per_month": 19.99,
    "sync_direction": "1-way (trigger → action)",
-   "ten_seat_monthly_cost_usd": 208.99,
-   "verification": "Integration requirements checked · Nov 3, 2026 (Xero plan unconfirmed) · Prices checked · Nov 3, 2026 (Zapier Professional fee: Nov 3, 2026)",
+   "ten_seat_monthly_cost_usd": 176.99,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Zapier Professional fee: Nov 3, 2026)",
    "last_reviewed": "2026-11-03",
    "date_modified": "2026-11-03",
-   "sources": []
+   "sources": [
+    {
+     "title": "Zapier: Get started with Xero",
+     "url": "https://help.zapier.com/hc/en-us/articles/38844152391821-How-to-get-started-with-Xero-on-Zapier"
+    },
+    {
+     "title": "Calendly: API overview",
+     "url": "https://calendly.com/help/calendly-api-overview"
+    },
+    {
+     "title": "Xero: US pricing plans",
+     "url": "https://www.xero.com/us/pricing-plans/"
+    }
+   ]
   },
   {
    "pair": "zendesk-and-notion",
