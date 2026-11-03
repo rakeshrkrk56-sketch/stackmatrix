@@ -794,7 +794,8 @@
      "api_access_by_vendor_docs": "Yes",
      "api_access_note": "Limits set by the app's developer tier",
      "developer_webhooks": "Yes",
-     "api_facts_checked": "2026-11-03"
+     "api_facts_checked": "2026-11-03",
+     "developer_webhooks_note": "No plan requirement in Xero's webhook docs"
     },
     "Growing": {
      "monthly_base_usd": 59,
@@ -804,7 +805,8 @@
      "api_access_by_vendor_docs": "Yes",
      "api_access_note": "Limits set by the app's developer tier",
      "developer_webhooks": "Yes",
-     "api_facts_checked": "2026-11-03"
+     "api_facts_checked": "2026-11-03",
+     "developer_webhooks_note": "No plan requirement in Xero's webhook docs"
     },
     "Established": {
      "monthly_base_usd": 97,
@@ -814,10 +816,19 @@
      "api_access_by_vendor_docs": "Yes",
      "api_access_note": "Limits set by the app's developer tier",
      "developer_webhooks": "Yes",
-     "api_facts_checked": "2026-11-03"
+     "api_facts_checked": "2026-11-03",
+     "developer_webhooks_note": "No plan requirement in Xero's webhook docs"
     }
    },
    "api_sources": [
+    {
+     "title": "Make: Xero app",
+     "url": "https://apps.make.com/xero"
+    },
+    {
+     "title": "Xero: US pricing plans",
+     "url": "https://www.xero.com/us/pricing-plans/"
+    },
     {
      "title": "Xero developers: Pricing and tiers",
      "url": "https://developer.xero.com/pricing"
@@ -2255,17 +2266,30 @@
    ],
    "connection_type": "middleware",
    "minimum_plans": {
-    "Xero": "Growing",
+    "Xero": "Early",
     "ActiveCampaign": "Starter"
    },
    "middleware_monthly_usd": 10.59,
    "middleware_annual_billing_usd_per_month": 9,
    "sync_direction": "1-way (trigger → action)",
-   "ten_seat_monthly_cost_usd": 84.59,
-   "verification": "Prices checked against official vendor docs · Nov 3, 2026 (Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks) · Integration requirements last checked · Oct 17, 2026 (re-check pending)",
-   "last_reviewed": "2026-10-17",
+   "ten_seat_monthly_cost_usd": 52.59,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks)",
+   "last_reviewed": "2026-11-03",
    "date_modified": "2026-11-03",
-   "sources": []
+   "sources": [
+    {
+     "title": "ActiveCampaign: Xero integration",
+     "url": "https://www.activecampaign.com/apps/xero"
+    },
+    {
+     "title": "Make: Xero app",
+     "url": "https://apps.make.com/xero"
+    },
+    {
+     "title": "Xero: US pricing plans",
+     "url": "https://www.xero.com/us/pricing-plans/"
+    }
+   ]
   },
   {
    "pair": "xero-and-calendly",
