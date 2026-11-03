@@ -10,8 +10,8 @@ This is the open data behind [StackMatrix](https://stackcostmatrix.com), a free 
 
 Vendors advertise integrations as "free" or "included" — then gate the API access, webhooks, or automation features the integration depends on behind a plan tier costing 3–5x more. Examples we've documented:
 
-- **Salesforce** charges **$25/user/month extra** for API access on the $100/user Professional plan — a $12,000/year hidden tax for a 40-person team. ([Salesforce + Slack breakdown](https://stackcostmatrix.com/stack/salesforce-and-slack/))
-- **HubSpot's** "free" Slack integration requires **Professional tier+** for AI summaries, workflow notifications, and record creation from Slack. ([HubSpot + Slack breakdown](https://stackcostmatrix.com/stack/hubspot-and-slack/))
+- **Salesforce** charges **$25/user/month extra** for API access on the $100/user Professional plan — a $12,000/year hidden tax for a 40-person team. ([Salesforce + Stripe breakdown](https://stackcostmatrix.com/stack/salesforce-and-stripe/))
+- **HubSpot's** native Salesforce connector only works on **HubSpot Professional or Enterprise**, so the free CRM can't use it. ([HubSpot + Salesforce breakdown](https://stackcostmatrix.com/stack/hubspot-and-salesforce/))
 - **Per-seat traps:** a $20/seat tier jump across 50 users = $12,000/year, even if only 5 people use the connected workflow.
 
 ## What's inside
@@ -28,15 +28,16 @@ Vendors advertise integrations as "free" or "included" — then gate the API acc
 
 ## Methodology
 
-Every price is verified against live vendor pricing pages (per-seat cost per tier, which tier unlocks API access and webhooks, published middleware plans). Prices are re-verified on a rolling basis — mismatches are flagged for review, never silently rewritten.
+Prices and integration requirements are checked against the vendors' own pricing pages, help centers and integration listings. Each pair page and each record in `data/integration-pairs.json` states what was checked and when, including exceptions (for example, Salesforce and QuickBooks Online prices were last verified on 2026-10-17). Mismatches are flagged for review, never silently rewritten.
 
 ## Data
 
-- `database/seed.sql` — all 20 tools, 51 pricing tiers, and 55 integration pairs (idempotent reseed)
+- `data/integration-pairs.json` — **current data**: 18 tools plus Zapier and Make, 53 pricing plans and all 55 integration pairs, exported from the live site (see `data/README.md`)
+- `database/seed.sql` — older snapshot from before the November 3, 2026 update, kept for history
 - `site/` — Astro 5 + Tailwind 4 static frontend source
 - `agent_scripts/` — seeding, verification, and affiliate-link management scripts
 
-The pricing data (`database/seed.sql` and the published cost figures on stackcostmatrix.com) is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/): you may reuse and adapt it, including commercially, as long as you credit StackCostMatrix and link to https://stackcostmatrix.com.
+The pricing data (`data/integration-pairs.json` and the published cost figures on stackcostmatrix.com) is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/): you may reuse and adapt it, including commercially, as long as you credit StackCostMatrix and link to https://stackcostmatrix.com.
 
 ## Affiliate disclosure
 
