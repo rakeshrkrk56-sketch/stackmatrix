@@ -1,5 +1,5 @@
 # 2026-11-04: four new pairs. Requirements read on the vendors' pages on Nov 4, 2026; prices are the site's
-# Nov 3 data (Salesforce and QuickBooks prices last verified Oct 17).
+# Nov 3 data (Salesforce prices last verified Oct 17; QuickBooks re-checked Nov 4).
 MAKE = "Make Core ($10.59/mo, or $9/mo billed annually)"
 SF_ED = ("Salesforce developers: Supported editions", "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-rest-compatible-editions.html")
 MAKE_SF = ("Make: Salesforce app", "https://apps.make.com/salesforce")

@@ -7,7 +7,7 @@
   "Plan prices are monthly-billing list prices in USD where the vendor publishes one; annual_billing_per_seat_usd_per_month is the vendor's annual-billing price, where published.",
   "Middleware and connector fees follow the same rule: middleware_monthly_usd is the monthly-billing price and middleware_annual_billing_usd_per_month the annual-billing price (Make Core's monthly price comes from third-party pricing reviews because make.com blocks automated checks).",
   "Free tiers are listed where the vendor documents the integration working on its free plan.",
-  "Modeled assumptions: HubSpot Professional and Enterprise are flat monthly prices; ActiveCampaign and Pipedrive list annual-billing rates only; Salesforce and QuickBooks Online prices were last verified 2026-10-17.",
+  "Modeled assumptions: HubSpot Professional and Enterprise are flat monthly prices; ActiveCampaign and Pipedrive list annual-billing rates only; Salesforce prices were last verified 2026-10-17 and QuickBooks Online prices 2026-11-04.",
   "Each pair's 'verification' field states what was checked and when, including exceptions.",
   "API and webhook facts per plan (api_access_by_vendor_docs, developer_webhooks, webhook_automation_action, api_rate_limit) were checked against each vendor's developer and help-center docs on 2026-11-03; 'Not stated' means the docs we read don't say."
  ],
@@ -612,7 +612,7 @@
    "name": "QuickBooks Online",
    "plans": {
     "Simple Start": {
-     "monthly_base_usd": 35,
+     "monthly_base_usd": 38,
      "monthly_per_seat_usd": 0,
      "min_seats": 1,
      "api_access": true,
@@ -623,7 +623,7 @@
      "api_facts_checked": "2026-11-03"
     },
     "Essentials": {
-     "monthly_base_usd": 65,
+     "monthly_base_usd": 75,
      "monthly_per_seat_usd": 0,
      "min_seats": 1,
      "api_access": true,
@@ -634,7 +634,7 @@
      "api_facts_checked": "2026-11-03"
     },
     "Plus": {
-     "monthly_base_usd": 99,
+     "monthly_base_usd": 115,
      "monthly_per_seat_usd": 0,
      "min_seats": 1,
      "api_access": true,
@@ -985,8 +985,8 @@
    "middleware_monthly_usd": 10.59,
    "middleware_annual_billing_usd_per_month": 9,
    "sync_direction": "1-way (trigger → action)",
-   "ten_seat_monthly_cost_usd": 285.59,
-   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (QuickBooks prices: Oct 17, 2026; Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks)",
+   "ten_seat_monthly_cost_usd": 288.59,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (QuickBooks prices: Nov 4, 2026; Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks)",
    "last_reviewed": "2026-11-03",
    "date_modified": "2026-11-03",
    "sources": [
@@ -1070,8 +1070,8 @@
    "middleware_monthly_usd": 10.59,
    "middleware_annual_billing_usd_per_month": 9,
    "sync_direction": "1-way (trigger → action)",
-   "ten_seat_monthly_cost_usd": 180.49,
-   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (QuickBooks prices: Oct 17, 2026; Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks)",
+   "ten_seat_monthly_cost_usd": 183.49,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (QuickBooks prices: Nov 4, 2026; Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks)",
    "last_reviewed": "2026-11-03",
    "date_modified": "2026-11-03",
    "sources": []
@@ -1401,8 +1401,8 @@
    },
    "middleware_monthly_usd": 0,
    "sync_direction": "2-way",
-   "ten_seat_monthly_cost_usd": 35,
-   "verification": "Integration requirements checked against official vendor docs · Nov 4, 2026 · Prices checked · Nov 3, 2026 (QuickBooks prices: Oct 17, 2026)",
+   "ten_seat_monthly_cost_usd": 38,
+   "verification": "Integration requirements checked against official vendor docs · Nov 4, 2026 · Prices checked · Nov 3, 2026 (QuickBooks prices: Nov 4, 2026)",
    "last_reviewed": "2026-11-04",
    "date_modified": "2026-11-04",
    "sources": [
@@ -1658,8 +1658,8 @@
    "middleware_monthly_usd": 10.59,
    "middleware_annual_billing_usd_per_month": 9,
    "sync_direction": "1-way (trigger → action)",
-   "ten_seat_monthly_cost_usd": 185.59,
-   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (QuickBooks prices: Oct 17, 2026; Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks)",
+   "ten_seat_monthly_cost_usd": 188.59,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (QuickBooks prices: Nov 4, 2026; Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks)",
    "last_reviewed": "2026-11-03",
    "date_modified": "2026-11-03",
    "sources": []
@@ -1846,8 +1846,8 @@
    },
    "middleware_monthly_usd": 0,
    "sync_direction": "2-way",
-   "ten_seat_monthly_cost_usd": 175,
-   "verification": "Integration requirements checked against official vendor docs · Nov 4, 2026 · Prices checked · Nov 3, 2026 (Pipedrive prices: from an indexed copy of its pricing page; QuickBooks prices: Oct 17, 2026)",
+   "ten_seat_monthly_cost_usd": 178,
+   "verification": "Integration requirements checked against official vendor docs · Nov 4, 2026 · Prices checked · Nov 3, 2026 (Pipedrive prices: from an indexed copy of its pricing page; QuickBooks prices: Nov 4, 2026)",
    "last_reviewed": "2026-11-04",
    "date_modified": "2026-11-04",
    "sources": [
@@ -1958,8 +1958,8 @@
    },
    "middleware_monthly_usd": 0,
    "sync_direction": "1-way (QuickBooks → Mailchimp)",
-   "ten_seat_monthly_cost_usd": 35,
-   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (QuickBooks prices: Oct 17, 2026)",
+   "ten_seat_monthly_cost_usd": 38,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (QuickBooks prices: Nov 4, 2026)",
    "last_reviewed": "2026-11-03",
    "date_modified": "2026-11-03",
    "sources": [
@@ -1984,8 +1984,8 @@
    "middleware_monthly_usd": 29.99,
    "middleware_annual_billing_usd_per_month": 19.99,
    "sync_direction": "1-way (trigger → action)",
-   "ten_seat_monthly_cost_usd": 64.99,
-   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (QuickBooks prices: Oct 17, 2026; Zapier Professional fee: Nov 3, 2026)",
+   "ten_seat_monthly_cost_usd": 67.99,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (QuickBooks prices: Nov 4, 2026; Zapier Professional fee: Nov 3, 2026)",
    "last_reviewed": "2026-11-03",
    "date_modified": "2026-11-03",
    "sources": [
@@ -2039,8 +2039,8 @@
    "middleware_monthly_usd": 10.59,
    "middleware_annual_billing_usd_per_month": 9,
    "sync_direction": "1-way (trigger → action)",
-   "ten_seat_monthly_cost_usd": 1295.59,
-   "verification": "Integration requirements checked against official vendor docs · Nov 4, 2026 · Prices checked · Nov 3, 2026 (Salesforce prices: Oct 17, 2026; QuickBooks prices: Oct 17, 2026; Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks)",
+   "ten_seat_monthly_cost_usd": 1298.59,
+   "verification": "Integration requirements checked against official vendor docs · Nov 4, 2026 · Prices checked · Nov 3, 2026 (Salesforce prices: Oct 17, 2026; QuickBooks prices: Nov 4, 2026; Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks)",
    "last_reviewed": "2026-11-04",
    "date_modified": "2026-11-04",
    "sources": [
@@ -2337,8 +2337,8 @@
    "middleware_monthly_usd": 10.59,
    "middleware_annual_billing_usd_per_month": 9,
    "sync_direction": "1-way (Stripe → QuickBooks)",
-   "ten_seat_monthly_cost_usd": 45.59,
-   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (QuickBooks prices: Oct 17, 2026; Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks)",
+   "ten_seat_monthly_cost_usd": 48.59,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (QuickBooks prices: Nov 4, 2026; Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks)",
    "last_reviewed": "2026-11-03",
    "date_modified": "2026-11-03",
    "sources": [

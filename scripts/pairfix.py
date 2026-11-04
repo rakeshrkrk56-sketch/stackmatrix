@@ -56,6 +56,8 @@ for _p, _t in TOP12.items():
     if "summary" in _t:
         assert _p in PAIRS, _p
         PAIRS[_p] = dict(PAIRS[_p], summary=_t["summary"])
+from pairdata14 import TOOL_TIERS14
+TOOL_TIERS.update(TOOL_TIERS14)
 from pairdata13 import PAIRS13, COPY13, NEW13
 # 2026-11-04: Pipedrive + Mailchimp. Pipedrive's Marketplace lists "Mailchimp by Pipedrive" as FREE and neither vendor
 # names a Mailchimp plan (Pipedrive: "The number of audiences you can create depends on your Mailchimp plan").
