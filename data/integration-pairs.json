@@ -1388,6 +1388,31 @@
    ]
   },
   {
+   "pair": "hubspot-and-quickbooks",
+   "url": "https://stackcostmatrix.com/stack/hubspot-and-quickbooks/",
+   "tools": [
+    "HubSpot",
+    "QuickBooks Online"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "HubSpot": "Free",
+    "QuickBooks Online": "Simple Start"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "2-way",
+   "ten_seat_monthly_cost_usd": 35,
+   "verification": "Integration requirements checked against official vendor docs · Nov 4, 2026 · Prices checked · Nov 3, 2026 (QuickBooks prices: Oct 17, 2026)",
+   "last_reviewed": "2026-11-04",
+   "date_modified": "2026-11-04",
+   "sources": [
+    {
+     "title": "HubSpot: Connect HubSpot and QuickBooks Online",
+     "url": "https://knowledge.hubspot.com/integrations/connect-hubspot-and-quickbooks-online"
+    }
+   ]
+  },
+  {
    "pair": "hubspot-and-salesforce",
    "url": "https://stackcostmatrix.com/stack/hubspot-and-salesforce/",
    "tools": [
@@ -1808,6 +1833,69 @@
    ]
   },
   {
+   "pair": "pipedrive-and-quickbooks",
+   "url": "https://stackcostmatrix.com/stack/pipedrive-and-quickbooks/",
+   "tools": [
+    "Pipedrive",
+    "QuickBooks Online"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "Pipedrive": "Lite",
+    "QuickBooks Online": "Simple Start"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "2-way",
+   "ten_seat_monthly_cost_usd": 175,
+   "verification": "Integration requirements checked against official vendor docs · Nov 4, 2026 · Prices checked · Nov 3, 2026 (Pipedrive prices: from an indexed copy of its pricing page; QuickBooks prices: Oct 17, 2026)",
+   "last_reviewed": "2026-11-04",
+   "date_modified": "2026-11-04",
+   "sources": [
+    {
+     "title": "Pipedrive: QuickBooks integration",
+     "url": "https://support.pipedrive.com/en/article/pipedrive-integration-quickbooks"
+    },
+    {
+     "title": "Pipedrive: Invoicing feature",
+     "url": "https://support.pipedrive.com/en/article/invoicing-feature-in-pipedrive"
+    }
+   ]
+  },
+  {
+   "pair": "pipedrive-and-salesforce",
+   "url": "https://stackcostmatrix.com/stack/pipedrive-and-salesforce/",
+   "tools": [
+    "Pipedrive",
+    "Salesforce Sales Cloud"
+   ],
+   "connection_type": "middleware",
+   "minimum_plans": {
+    "Pipedrive": "Lite",
+    "Salesforce Sales Cloud": "Professional"
+   },
+   "middleware_monthly_usd": 10.59,
+   "middleware_annual_billing_usd_per_month": 9,
+   "sync_direction": "1-way (trigger → action)",
+   "ten_seat_monthly_cost_usd": 1400.59,
+   "verification": "Integration requirements checked against official vendor docs · Nov 4, 2026 · Prices checked · Nov 3, 2026 (Pipedrive prices: from an indexed copy of its pricing page; Salesforce prices: Oct 17, 2026; Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks)",
+   "last_reviewed": "2026-11-04",
+   "date_modified": "2026-11-04",
+   "sources": [
+    {
+     "title": "Make: Salesforce app",
+     "url": "https://apps.make.com/salesforce"
+    },
+    {
+     "title": "Salesforce developers: Supported editions",
+     "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-rest-compatible-editions.html"
+    },
+    {
+     "title": "Pipedrive developers: Rate limiting",
+     "url": "https://pipedrive.readme.io/docs/core-api-concepts-rate-limiting"
+    }
+   ]
+  },
+  {
    "pair": "pipedrive-and-slack",
    "url": "https://stackcostmatrix.com/stack/pipedrive-and-slack/",
    "tools": [
@@ -1933,6 +2021,44 @@
     {
      "title": "Mailchimp: About Mailchimp for Salesforce",
      "url": "https://mailchimp.com/help/about-mailchimp-for-salesforce/"
+    }
+   ]
+  },
+  {
+   "pair": "salesforce-and-quickbooks",
+   "url": "https://stackcostmatrix.com/stack/salesforce-and-quickbooks/",
+   "tools": [
+    "Salesforce Sales Cloud",
+    "QuickBooks Online"
+   ],
+   "connection_type": "middleware",
+   "minimum_plans": {
+    "Salesforce Sales Cloud": "Professional",
+    "QuickBooks Online": "Simple Start"
+   },
+   "middleware_monthly_usd": 10.59,
+   "middleware_annual_billing_usd_per_month": 9,
+   "sync_direction": "1-way (trigger → action)",
+   "ten_seat_monthly_cost_usd": 1295.59,
+   "verification": "Integration requirements checked against official vendor docs · Nov 4, 2026 · Prices checked · Nov 3, 2026 (Salesforce prices: Oct 17, 2026; QuickBooks prices: Oct 17, 2026; Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks)",
+   "last_reviewed": "2026-11-04",
+   "date_modified": "2026-11-04",
+   "sources": [
+    {
+     "title": "Make: Salesforce app",
+     "url": "https://apps.make.com/salesforce"
+    },
+    {
+     "title": "Salesforce developers: Supported editions",
+     "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-rest-compatible-editions.html"
+    },
+    {
+     "title": "Breadwinner: Pricing",
+     "url": "https://breadwinner.com/pricing"
+    },
+    {
+     "title": "Make: QuickBooks app",
+     "url": "https://apps.make.com/quickbooks"
     }
    ]
   },
