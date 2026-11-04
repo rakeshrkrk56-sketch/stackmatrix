@@ -13,7 +13,7 @@ SHORT = {"salesforce": "Salesforce", "quickbooks": "QuickBooks", "monday": "Mond
 PRICE_NOTE = {
     "activecampaign": "ActiveCampaign publishes annual-billing rates only, so these are per-month prices billed yearly. Prices re-checked Nov 3, 2026.",
     "pipedrive": "Pipedrive prices are per-seat annual-billing rates taken from an indexed copy of its pricing page, because pipedrive.com/pricing can't be read automatically.",
-    "quickbooks": "QuickBooks Online prices were last verified Oct 17, 2026; Intuit's pricing pages couldn't be re-read on Nov 3.",
+    "quickbooks": "QuickBooks Online prices are flat monthly list prices per company, re-checked on Intuit's pricing page on Nov 4, 2026.",
     "mailchimp": "Mailchimp prices are starting prices for up to 500 contacts; the price rises with your contact count, not seats.",
     "stripe": "Stripe has no monthly plan fee; it charges per transaction, so the calculators count it as $0/month.",
     "xero": "Xero prices are flat monthly prices per organisation, re-checked Nov 3, 2026.",

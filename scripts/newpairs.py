@@ -16,7 +16,7 @@ FAQ4 = {1: "Setup typically takes under 1 hour — an estimate based on a setup-
         2: "Setup typically takes about 1–3 hours — an estimate based on a setup-difficulty rating of 2 out of 5, not a vendor-quoted time.",
         3: "Setup typically takes about half a day — an estimate based on a setup-difficulty rating of 3 out of 5, not a vendor-quoted time."}
 MAKE_EX = "Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks"
-PRICE_EX = {"salesforce": "Salesforce prices: Oct 17, 2026", "quickbooks": "QuickBooks prices: Oct 17, 2026", "pipedrive": "Pipedrive prices: from an indexed copy of its pricing page"}
+PRICE_EX = {"salesforce": "Salesforce prices: Oct 17, 2026", "quickbooks": "QuickBooks prices: Nov 4, 2026", "pipedrive": "Pipedrive prices: from an indexed copy of its pricing page"}
 CARD = ('<a href="/stack/{slug}/" class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"> '
         '<h3 class="font-semibold text-slate-900 hover:text-indigo-700"> {label} </h3> <p class="mt-1 text-xs font-medium text-slate-500"> {kind} </p> </a>')
 LINK = 'class="font-medium text-indigo-600 hover:underline"'
