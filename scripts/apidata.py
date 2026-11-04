@@ -1,0 +1,142 @@
+# API / webhook access by plan, checked against vendor documentation on 2026-11-03.
+# Every value traces to SOURCES[slug]; "Not stated" means the vendor's docs we read don't say.
+# Cell values: api / wh in {"Yes","No","Add-on","Not stated"}; *_note is shown under the value.
+CHECKED = "Nov 3, 2026"
+
+def P(api, wh, auto="", api_note="", lim="", wh_note=""):
+    return dict(api=api, api_note=api_note, lim=lim, wh=wh, wh_note=wh_note, auto=auto)
+
+TOOLS = {
+ "activecampaign": dict(
+   answer="Every ActiveCampaign plan includes API access and webhooks: ActiveCampaign's help center lists Starter, Plus, Pro and Enterprise for both.",
+   plans={"Starter": P("Yes", "Yes", "Yes (help center lists all plans)"), "Plus": P("Yes", "Yes", "Yes"), "Pro": P("Yes", "Yes", "Yes")},
+   note="A third-party guide (WP Fusion) says the automation webhook action now needs Plus; ActiveCampaign's own help center still lists Starter, so we follow the vendor.",
+   sources=[("ActiveCampaign: Getting started with the API", "https://help.activecampaign.com/hc/en-us/articles/207317590", "Plans: Starter, Plus, Pro, Enterprise"),
+            ("ActiveCampaign: Use webhooks", "https://help.activecampaign.com/hc/en-us/articles/115001403484", "Plans: Starter, Plus, Pro, Enterprise"),
+            ("ActiveCampaign: Send a webhook in an automation", "https://help.activecampaign.com/hc/en-us/articles/115000161204", "The \"Webhook\" action in an automation is located under \"Workflow\"")]),
+ "airtable": dict(
+   answer="Airtable's API and webhooks work on every plan, including Free, but the Free plan is capped at 1,000 API calls a month; Team raises that to 100,000.",
+   plans={"Free": P("Yes", "Yes", "", lim="1,000 API calls a month"), "Team": P("Yes", "Yes", "", lim="100,000 API calls a month"), "Business": P("Yes", "Yes", "", lim="Not stated in the article we read")},
+   note="A Make or Zapier scenario that checks Airtable every 15 minutes uses about 2,880 calls a month, so Free only suits very low-volume syncs.",
+   sources=[("Airtable: Managing API call limits", "https://support.airtable.com/articles/7735693959-managing-api-call-limits-in-airtable", "Free plan: 1000 API calls per month · Team plan: 100000 API calls per month"),
+            ("Airtable: Create a webhook", "https://airtable.com/developers/web/api/create-a-webhook", "Billing plans: All plans")]),
+ "asana": dict(
+   answer="Asana's developer documentation sets no plan requirement for API access, personal access tokens or API webhooks, so they aren't tied to Advanced.",
+   plans={"Starter": P("Yes", "Yes", "Not stated", api_note="No plan requirement in Asana's developer docs", wh_note="API webhooks; no plan requirement stated"),
+          "Advanced": P("Yes", "Yes", "Not stated", api_note="No plan requirement in Asana's developer docs", wh_note="API webhooks; no plan requirement stated")},
+   note="Asana's Rules automation is a separate feature on Starter and up; we found no Asana documentation of a Rules action that sends webhooks. Make and Zapier use the API instead.",
+   sources=[("Asana developers: Webhooks guide", "https://developers.asana.com/docs/webhooks-guide", "you must create and host a server that can receive and handle webhook events"),
+            ("Asana developers: Personal access token", "https://developers.asana.com/docs/personal-access-token", "You can generate a personal access token from the Asana developer console"),
+            ("Asana: Rules", "https://asana.com/features/workflow-automation/rules", "Rules are available on Starter, Advanced, Enterprise, and Enterprise Plus plans")]),
+ "calendly": dict(
+   answer="Calendly's API works on any plan, but webhooks need a paid plan: Standard or higher.",
+   plans={"Free": P("Yes", "No", "", wh_note="Webhooks need a paid plan"), "Standard": P("Yes", "Yes", ""), "Teams": P("Yes", "Yes", "")},
+   note="Real-time automations (new booking → CRM record) rely on webhooks, so most Calendly integrations need Standard.",
+   sources=[("Calendly: API overview", "https://calendly.com/help/calendly-api-overview", "For webhooks and Scheduling API endpoints, the Calendly user must have a paid subscription on the Professional, Standard, Standard Plus, Teams, Teams Plus, or Enterprise plan.")]),
+ "clickup": dict(
+   answer="ClickUp's public API, including API webhooks, is available on every ClickUp plan; rate limits are 100 requests a minute per token until Business Plus.",
+   plans={"Free": P("Yes", "Yes", "Not stated", lim="100 requests/min per token", wh_note="API webhooks"),
+          "Core": P("Yes", "Yes", "Not stated", lim="100 requests/min per token", api_note="Core is ClickUp's former Unlimited plan", wh_note="API webhooks"),
+          "Business": P("Yes", "Yes", "Not stated", lim="100 requests/min per token", wh_note="API webhooks")},
+   note="ClickUp also has a \"Call webhook\" automation action; its help center doesn't say which plans include it. Business Plus raises the API limit to 1,000 requests a minute.",
+   sources=[("ClickUp developers: API availability by plan", "https://developer.clickup.com/docs/apis-available-by-plan", "Our Public API is available on all ClickUp Plans"),
+            ("ClickUp developers: Rate limits", "https://developer.clickup.com/docs/rate-limits", "FreeForever 100 · Unlimited 100 · Business 100 · Business Plus 1,000"),
+            ("ClickUp: Automation webhooks", "https://help.clickup.com/hc/en-us/articles/35313844961943-Integrate-ClickUp-using-Automation-webhooks", "two kinds of webhooks: API webhooks and Automation webhooks")]),
+ "freshdesk": dict(
+   answer="Freshdesk's API isn't available on the Free plan; it starts on Growth, which is also the first plan with the \"Trigger Webhook\" automation action.",
+   plans={"Growth": P("Yes", "Yes", "Trigger Webhook action", wh_note="Webhooks run from automation rules"), "Pro": P("Yes", "Yes", "Trigger Webhook action"), "Enterprise": P("Yes", "Yes", "Trigger Webhook action")},
+   note="Freshdesk's API rate limit is set per minute by plan; its API reference doesn't print the Growth figure on the page we read.",
+   sources=[("Freshdesk API reference", "https://developers.freshdesk.com/api/", "The number of API calls per minute is based on your plan."),
+            ("Freshdesk: Using webhooks in automation rules", "https://support.freshdesk.com/en/support/solutions/articles/132589", "Applicable Plans Freshdesk Growth, Pro, Enterprise")]),
+ "hubspot": dict(
+   answer="HubSpot's API is available on every plan, including the free CRM, with higher limits on Professional and Enterprise. Webhook actions in workflows need Data Hub Professional or Enterprise.",
+   plans={"Free": P("Yes", "Not stated", "Needs Data Hub Professional", lim="100 req/10 s · 250,000/day (private apps)", wh_note="Developer webhooks via apps; plan not stated"),
+          "Starter": P("Yes", "Not stated", "Needs Data Hub Professional", lim="100 req/10 s · 250,000/day (private apps)", wh_note="Developer webhooks via apps; plan not stated"),
+          "Professional": P("Yes", "Not stated", "Only with Data Hub Professional", lim="190 req/10 s · 625,000/day (private apps)", wh_note="Developer webhooks via apps; plan not stated"),
+          "Enterprise": P("Yes", "Not stated", "Only with Data Hub Enterprise", lim="190 req/10 s · 1,000,000/day (private apps)", wh_note="Developer webhooks via apps; plan not stated")},
+   note="Limits depend on the subscription of the account an app is installed in; an API limit increase add-on adds capacity. Apps can also receive events through HubSpot's developer webhooks API, which isn't covered by the workflow requirement.",
+   sources=[("HubSpot developers: Usage guidelines", "https://developers.hubspot.com/docs/developer-tooling/platform/usage-guidelines", "The number of calls your app can make is based on your account subscription"),
+            ("HubSpot KB: Webhooks in workflows", "https://knowledge.hubspot.com/workflows/how-do-i-use-webhooks-with-hubspot-workflows", "Available with any of the following subscriptions, except where noted: Data Hub Professional, Enterprise")]),
+ "intercom": dict(
+   answer="Intercom's webhooks and API apps work from any paid workspace (or a free development workspace), so Essential is enough.",
+   plans={"Essential": P("Yes", "Yes", "", api_note="Paid workspaces"), "Advanced": P("Yes", "Yes", "", api_note="Paid workspaces")},
+   note="Intercom's own workflows, which some integrations build on, are an Advanced feature.",
+   sources=[("Intercom developers: Webhooks", "https://developers.intercom.com/docs/webhooks", "You can start utilizing webhooks from your Intercom paid workspace or development workspace")]),
+ "mailchimp": dict(
+   answer="Mailchimp API keys can be created on any account, but the webhook step in Mailchimp automations needs Standard or Premium; Free and Essentials are prompted to upgrade.",
+   plans={"Free": P("Yes", "No", "Upgrade prompt", api_note="No plan requirement in Mailchimp's API key article", wh_note="Webhook automation step needs Standard"),
+          "Essentials": P("Yes", "No", "Upgrade prompt", api_note="No plan requirement in Mailchimp's API key article", wh_note="Webhook automation step needs Standard"),
+          "Standard": P("Yes", "Yes", "Yes"), "Premium": P("Yes", "Yes", "Yes")},
+   note="Mailchimp's classic audience webhooks are a separate feature; the help article we read covers the automation step.",
+   sources=[("Mailchimp: About API keys", "https://mailchimp.com/help/about-api-keys/", "Generate an API key"),
+            ("Mailchimp: About webhooks", "https://mailchimp.com/help/about-webhooks/", "If you have an Essentials or Free plan, you can set up the webhook … but you'll be prompted to upgrade")]),
+ "monday": dict(
+   answer="monday.com's API works on every plan with a daily call limit by plan, but integrations (including webhooks) start on Standard.",
+   plans={"Basic": P("Yes", "No", "No", lim="1,000 calls/day", wh_note="Integrations start on Standard"),
+          "Standard": P("Yes", "Yes", "250 integration actions/mo", lim="1,000 calls/day"),
+          "Pro": P("Yes", "Yes", "25,000 integration actions/mo", lim="10,000 calls/day")},
+   note="Free accounts get 200 API calls a day and Enterprise 25,000; the daily limit resets at midnight UTC and can be raised with an API add-on.",
+   sources=[("monday.com developers: Rate limits", "https://developer.monday.com/api-reference/docs/rate-limits", "Free 200 · Standard/Basic 1,000 · Pro/Trial 10,000 · Enterprise 25,000"),
+            ("monday.com: Automations and integrations pricing", "https://support.monday.com/hc/en-us/articles/360002826680", "Automations and integrations are only available on the Standard plan and up")]),
+ "notion": dict(
+   answer="Notion's API and connection webhooks work on every plan, including Free; the no-code \"Send webhook\" action in automations needs a paid plan.",
+   plans={"Plus": P("Yes", "Yes", "Yes (paid plans)"), "Business": P("Yes", "Yes", "Yes (paid plans)")},
+   note="Free workspaces can use the API too; this index only models Plus and Business because the pairs here assume a team workspace.",
+   sources=[("Notion developers: Webhooks", "https://developers.notion.com/reference/webhooks", "To receive webhook events, you'll need to create a subscription through your connection settings"),
+            ("Notion help: Webhook actions", "https://www.notion.com/help/webhook-actions", "Webhook actions are available to users on paid plans"),
+            ("Notion API public beta", "https://developers.notion.com/changelog/hello-world-notion-api-is-now-in-public-beta", "open to users on free or paid plans")]),
+ "pipedrive": dict(
+   answer="Pipedrive's API and regular webhooks are available on every plan, including Lite; webhooks inside automations need Growth or higher. Rate limits rise with each plan.",
+   plans={"Lite": P("Yes", "Yes", "No (Growth and up)", lim="20 req/2 s · daily budget ×1"), "Growth": P("Yes", "Yes", "Yes", lim="40 req/2 s · daily budget ×2"),
+          "Premium": P("Yes", "Yes", "Yes", lim="100 req/2 s · daily budget ×5"), "Ultimate": P("Yes", "Yes", "Yes", lim="120 req/2 s · daily budget ×7")},
+   note="The daily token budget is 30,000 × the plan multiplier × seats. Limits shown are for API tokens; OAuth apps get four times as many requests. Growth was formerly called Advanced.",
+   sources=[("Pipedrive developers: Rate limiting", "https://pipedrive.readme.io/docs/core-api-concepts-rate-limiting", "30,000 base tokens × subscription plan multiplier × number of seats"),
+            ("Pipedrive: Automations webhook requests", "https://support.pipedrive.com/en/article/automations-webhook-requests", "regular webhooks are available in all plans")]),
+ "quickbooks": dict(
+   answer="Every paid QuickBooks Online plan can connect apps: Intuit's developer docs set no plan requirement, and Zapier, Make and Mailchimp's QuickBooks integrations ask only for a QuickBooks Online account (Zapier says a paid one).",
+   plans={"Simple Start": P("Yes", "Yes", "", api_note="Any paid plan (Zapier, Make and Mailchimp name no tier)", wh_note="App-level webhooks"),
+          "Essentials": P("Yes", "Yes", "", api_note="Any paid plan (Zapier, Make and Mailchimp name no tier)", wh_note="App-level webhooks"),
+          "Plus": P("Yes", "Yes", "", api_note="Any paid plan (Zapier, Make and Mailchimp name no tier)", wh_note="App-level webhooks")},
+   note="QuickBooks limits its API to 500 requests per minute per company, per Zapier's QuickBooks Online guide. Every integration in this index now models Simple Start, the cheapest plan.",
+   sources=[("Zapier help: QuickBooks Online API prerequisites", "https://help.zapier.com/hc/en-us/articles/8495935103885", "A paid QuickBooks Online subscription. Admin permissions in your QuickBooks Online account. A paid Zapier plan."),
+            ("Make: QuickBooks app", "https://apps.make.com/quickbooks", "To use the QuickBooks app in Make, you must have a QuickBooks account"),
+            ("Mailchimp: QuickBooks Online integration", "https://mailchimp.com/integrations/quickbooksonline/", "You will need a QuickBooks Online account to use the features of this integration."),
+            ("Intuit developers: Webhooks", "https://developer.intuit.com/app/developer/qbo/docs/develop/webhooks", "Webhooks automatically notify you whenever data changes in your end-user's QuickBooks Online company files.")]),
+ "salesforce": dict(
+   answer="Salesforce API access is included in Enterprise and Unlimited; Professional needs a paid API add-on, and Starter doesn't support the API.",
+   plans={"Starter": P("No", "Not stated", ""), "Professional": P("Add-on", "Not stated", "", api_note="Web Services API add-on (modeled at $25/user)"),
+          "Enterprise": P("Yes", "Not stated", ""), "Unlimited": P("Yes", "Not stated", "")},
+   note="Each user also needs the \"API Enabled\" permission; without org API access Salesforce returns API_DISABLED_FOR_ORG.",
+   sources=[("Salesforce developers: Supported editions", "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-rest-compatible-editions.html", "API access is enabled by default in Enterprise, Performance, Unlimited, and Developer Edition orgs … Professional Edition orgs can add API access as an add-on")]),
+ "slack": dict(
+   answer="Slack's API and incoming webhooks work on the Free plan; webhook-triggered workflows in Workflow Builder need a paid plan.",
+   plans={"Free": P("Yes", "Yes", "No (paid plans)", wh_note="Incoming webhooks"), "Pro": P("Yes", "Yes", "Yes"), "Business+": P("Yes", "Yes", "Yes")},
+   note="Third-party sites say the Free plan caps a workspace at 10 apps; Slack's developer docs we read don't mention it.",
+   sources=[("Slack developers: Incoming webhooks", "https://api.slack.com/messaging/webhooks", "Incoming webhooks are a way to post messages from apps into Slack"),
+            ("Slack help: Guide to Workflow Builder", "https://slack.com/help/articles/17542172840595-Guide-to-Workflow-Builder", "available on paid plans")]),
+ "stripe": dict(
+   answer="Stripe has no plan tiers for the API: every account gets the full API and webhooks, and you pay per transaction.",
+   plans={"Standard": P("Yes", "Yes", "", api_note="Every account")},
+   note="",
+   sources=[("Stripe API reference", "https://docs.stripe.com/api", "The Stripe API is organized around REST"),
+            ("Stripe: Webhooks", "https://docs.stripe.com/webhooks", "Listen for events from Stripe on your webhook endpoint")]),
+ "xero": dict(
+   answer="Every Xero subscription can connect apps through the API; since March 2026 the limits depend on the connecting app's developer tier, not your Xero plan.",
+   plans={"Early": P("Yes", "Yes", "", api_note="Limits set by the app's developer tier", wh_note="No plan requirement in Xero's webhook docs"), "Growing": P("Yes", "Yes", "", api_note="Limits set by the app's developer tier", wh_note="No plan requirement in Xero's webhook docs"),
+          "Established": P("Yes", "Yes", "", api_note="Limits set by the app's developer tier", wh_note="No plan requirement in Xero's webhook docs")},
+   note="Xero's developer tiers (Starter, Core, Plus, Advanced, Enterprise) cap connections at 5, 50, 1,000, 10,000 and unlimited; app developers pay for these, not Xero subscribers. Make's Xero app asks only for a Xero account, and Zapier for a paid one. On Early, apps can enter up to 20 approved sales invoices and 5 bills a month through the API.",
+   sources=[("Make: Xero app", "https://apps.make.com/xero", "To use the Xero modules, you must have a Xero account"),
+            ("Xero: US pricing plans", "https://www.xero.com/us/pricing-plans/", "Send quotes and 20 invoices"),
+            ("Xero developers: Pricing and tiers", "https://developer.xero.com/pricing", "introducing five plans: Starter, Core, Plus, Advanced, Enterprise"),
+            ("Zapier help: Xero prerequisites", "https://help.zapier.com/hc/en-us/articles/38844152391821-How-to-get-started-with-Xero-on-Zapier", "A paid Xero account. Standard or Adviser level user permissions in your Xero organization. A paid Zapier plan."),
+            ("Xero developers: Webhooks", "https://developer.xero.com/documentation/guides/webhooks/overview", "The available events are")]),
+ "zendesk": dict(
+   answer="Zendesk's API is on every Suite plan with a per-minute limit by plan, and webhooks are included from Suite Team up.",
+   plans={"Suite Team": P("Yes", "Yes", "Via triggers", lim="200 requests/min"), "Suite Growth": P("Yes", "Yes", "Via triggers", lim="400 requests/min"),
+          "Suite Professional": P("Yes", "Yes", "Via triggers", lim="400 requests/min")},
+   note="Enterprise gets 700 requests a minute and Enterprise Plus 2,500; a High Volume API add-on (Growth and up, 10+ seats) raises the limit to 2,500.",
+   sources=[("Zendesk developers: Rate limits", "https://developer.zendesk.com/api-reference/introduction/rate-limits/", "Support and Help Center API requests per minute 200 400 400 700 2500"),
+            ("Zendesk: Creating webhooks", "https://support.zendesk.com/hc/en-us/articles/4408839108378", "All Suites Team, Growth, Professional, Enterprise, or Enterprise Plus")]),
+}
+# Tools whose pair-page API cells are re-verified today (others keep their Oct 17 label).
+API_VERIFIED = {"mailchimp", "xero", "quickbooks", "activecampaign", "airtable", "calendly", "clickup", "freshdesk", "hubspot", "intercom", "monday", "notion", "pipedrive", "salesforce", "slack", "zendesk"}
