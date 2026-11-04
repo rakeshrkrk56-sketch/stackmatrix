@@ -2,7 +2,7 @@
 
 **The true cost of your software stack — not the sticker price.**
 
-This is the open data behind [StackMatrix](https://stackcostmatrix.com), a free index of **55 B2B software integration pairs** across 20 tools. For every pair, we publish the **true monthly and annual cost**: minimum required plan tiers, hidden API and webhook gates, per-seat pricing traps, and native vs middleware (Zapier/Make) totals.
+This is the open data behind [StackMatrix](https://stackcostmatrix.com), a free index of **59 B2B software integration pairs** across 20 tools. For every pair, we publish the **true monthly and annual cost**: minimum required plan tiers, hidden API and webhook gates, per-seat pricing traps, and native vs middleware (Zapier/Make) totals.
 
 🌐 **Live site:** https://stackcostmatrix.com
 
@@ -16,7 +16,7 @@ Vendors advertise integrations as "free" or "included" — then gate the API acc
 
 ## What's inside
 
-- **55 integration calculators** — interactive true-cost calculator (1–100 seat slider, required-tier toggle), hidden-cost trap callout, spec matrix, and setup guide per pair. [Browse all pairs](https://stackcostmatrix.com)
+- **59 integration calculators** — interactive true-cost calculator (1–100 seat slider, required-tier toggle), hidden-cost trap callout, spec matrix, and setup guide per pair. [Browse all pairs](https://stackcostmatrix.com)
 - **Pillar cost guides:**
   - [Complete 2026 HubSpot Integration Cost & API Tier Matrix](https://stackcostmatrix.com/hubspot-integrations-cost/)
   - [Complete 2026 Salesforce Integration Cost & API Tier Matrix](https://stackcostmatrix.com/salesforce-integrations-cost/)
@@ -32,7 +32,7 @@ Prices and integration requirements are checked against the vendors' own pricing
 
 ## Data
 
-- `data/integration-pairs.json` — **current data**: 18 tools plus Zapier and Make, 53 pricing plans and all 55 integration pairs, exported from the live site (see `data/README.md`)
+- `data/integration-pairs.json` — **current data**: 18 tools plus Zapier and Make, 53 pricing plans and all 59 integration pairs, exported from the live site (see `data/README.md`)
 - `database/seed.sql` — older snapshot from before the November 3, 2026 update, kept for history
 - `site/` — Astro 5 + Tailwind 4 static frontend source
 - `agent_scripts/` — seeding, verification, and affiliate-link management scripts
@@ -58,7 +58,7 @@ Every calculator and guide on the live site, for search engines and researchers:
 - [Hubspot Integrations Cost](https://stackcostmatrix.com/hubspot-integrations-cost/)
 - [Salesforce Integrations Cost](https://stackcostmatrix.com/salesforce-integrations-cost/)
 
-### All 55 integration cost calculators
+### All 59 integration cost calculators
 - [Activecampaign + Calendly](https://stackcostmatrix.com/stack/activecampaign-and-calendly/)
 - [Activecampaign + Pipedrive](https://stackcostmatrix.com/stack/activecampaign-and-pipedrive/)
 - [Activecampaign + Stripe](https://stackcostmatrix.com/stack/activecampaign-and-stripe/)
@@ -78,6 +78,7 @@ Every calculator and guide on the live site, for search engines and researchers:
 - [Hubspot + Mailchimp](https://stackcostmatrix.com/stack/hubspot-and-mailchimp/)
 - [Hubspot + Monday](https://stackcostmatrix.com/stack/hubspot-and-monday/)
 - [Hubspot + Pipedrive](https://stackcostmatrix.com/stack/hubspot-and-pipedrive/)
+- [Hubspot + Quickbooks](https://stackcostmatrix.com/stack/hubspot-and-quickbooks/)
 - [Hubspot + Salesforce](https://stackcostmatrix.com/stack/hubspot-and-salesforce/)
 - [Hubspot + Slack](https://stackcostmatrix.com/stack/hubspot-and-slack/)
 - [Hubspot + Stripe](https://stackcostmatrix.com/stack/hubspot-and-stripe/)
@@ -93,11 +94,14 @@ Every calculator and guide on the live site, for search engines and researchers:
 - [Notion + Stripe](https://stackcostmatrix.com/stack/notion-and-stripe/)
 - [Pipedrive + Calendly](https://stackcostmatrix.com/stack/pipedrive-and-calendly/)
 - [Pipedrive + Mailchimp](https://stackcostmatrix.com/stack/pipedrive-and-mailchimp/)
+- [Pipedrive + Quickbooks](https://stackcostmatrix.com/stack/pipedrive-and-quickbooks/)
+- [Pipedrive + Salesforce](https://stackcostmatrix.com/stack/pipedrive-and-salesforce/)
 - [Pipedrive + Slack](https://stackcostmatrix.com/stack/pipedrive-and-slack/)
 - [Pipedrive + Xero](https://stackcostmatrix.com/stack/pipedrive-and-xero/)
 - [Quickbooks + Mailchimp](https://stackcostmatrix.com/stack/quickbooks-and-mailchimp/)
 - [Quickbooks + Slack](https://stackcostmatrix.com/stack/quickbooks-and-slack/)
 - [Salesforce + Mailchimp](https://stackcostmatrix.com/stack/salesforce-and-mailchimp/)
+- [Salesforce + Quickbooks](https://stackcostmatrix.com/stack/salesforce-and-quickbooks/)
 - [Salesforce + Slack](https://stackcostmatrix.com/stack/salesforce-and-slack/)
 - [Salesforce + Stripe](https://stackcostmatrix.com/stack/salesforce-and-stripe/)
 - [Salesforce + Zendesk](https://stackcostmatrix.com/stack/salesforce-and-zendesk/)
