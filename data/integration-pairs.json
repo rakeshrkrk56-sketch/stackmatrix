@@ -1817,11 +1817,11 @@
    "connection_type": "native",
    "minimum_plans": {
     "Pipedrive": "Lite",
-    "Mailchimp": "Essentials"
+    "Mailchimp": "Free"
    },
    "middleware_monthly_usd": 0,
    "sync_direction": "2-way",
-   "ten_seat_monthly_cost_usd": 153,
+   "ten_seat_monthly_cost_usd": 140,
    "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Pipedrive prices: from an indexed copy of its pricing page)",
    "last_reviewed": "2026-11-03",
    "date_modified": "2026-11-03",
