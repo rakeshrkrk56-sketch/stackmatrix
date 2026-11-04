@@ -1,0 +1,70 @@
+{
+ "activecampaign": {
+  "name": "ActiveCampaign",
+  "url": "/activecampaign-integrations-cost/"
+ },
+ "airtable": {
+  "name": "Airtable",
+  "url": "/airtable-integrations-cost/"
+ },
+ "asana": {
+  "name": "Asana",
+  "url": "/asana-integrations-cost/"
+ },
+ "calendly": {
+  "name": "Calendly",
+  "url": "/calendly-integrations-cost/"
+ },
+ "clickup": {
+  "name": "ClickUp",
+  "url": "/clickup-integrations-cost/"
+ },
+ "hubspot": {
+  "name": "HubSpot",
+  "url": "/hubspot-integrations-cost/"
+ },
+ "intercom": {
+  "name": "Intercom",
+  "url": "/intercom-integrations-cost/"
+ },
+ "mailchimp": {
+  "name": "Mailchimp",
+  "url": "/mailchimp-integrations-cost/"
+ },
+ "monday": {
+  "name": "Monday.com",
+  "url": "/monday-integrations-cost/"
+ },
+ "notion": {
+  "name": "Notion",
+  "url": "/notion-integrations-cost/"
+ },
+ "pipedrive": {
+  "name": "Pipedrive",
+  "url": "/pipedrive-integrations-cost/"
+ },
+ "quickbooks": {
+  "name": "QuickBooks",
+  "url": "/quickbooks-integrations-cost/"
+ },
+ "salesforce": {
+  "name": "Salesforce",
+  "url": "/salesforce-integrations-cost/"
+ },
+ "slack": {
+  "name": "Slack",
+  "url": "/slack-integrations-cost/"
+ },
+ "stripe": {
+  "name": "Stripe",
+  "url": "/stripe-integrations-cost/"
+ },
+ "xero": {
+  "name": "Xero",
+  "url": "/xero-integrations-cost/"
+ },
+ "zendesk": {
+  "name": "Zendesk",
+  "url": "/zendesk-integrations-cost/"
+ }
+}

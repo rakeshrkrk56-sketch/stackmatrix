@@ -1,0 +1,74 @@
+{
+ "activecampaign": {
+  "name": "ActiveCampaign",
+  "url": "/activecampaign-api-access/"
+ },
+ "airtable": {
+  "name": "Airtable",
+  "url": "/airtable-api-access/"
+ },
+ "asana": {
+  "name": "Asana",
+  "url": "/asana-api-access/"
+ },
+ "calendly": {
+  "name": "Calendly",
+  "url": "/calendly-api-access/"
+ },
+ "clickup": {
+  "name": "ClickUp",
+  "url": "/clickup-api-access/"
+ },
+ "freshdesk": {
+  "name": "Freshdesk",
+  "url": "/freshdesk-api-access/"
+ },
+ "hubspot": {
+  "name": "HubSpot",
+  "url": "/hubspot-api-access/"
+ },
+ "intercom": {
+  "name": "Intercom",
+  "url": "/intercom-api-access/"
+ },
+ "mailchimp": {
+  "name": "Mailchimp",
+  "url": "/mailchimp-api-access/"
+ },
+ "monday": {
+  "name": "Monday.com",
+  "url": "/monday-api-access/"
+ },
+ "notion": {
+  "name": "Notion",
+  "url": "/notion-api-access/"
+ },
+ "pipedrive": {
+  "name": "Pipedrive",
+  "url": "/pipedrive-api-access/"
+ },
+ "quickbooks": {
+  "name": "QuickBooks",
+  "url": "/quickbooks-api-access/"
+ },
+ "salesforce": {
+  "name": "Salesforce",
+  "url": "/salesforce-api-access/"
+ },
+ "slack": {
+  "name": "Slack",
+  "url": "/slack-api-access/"
+ },
+ "stripe": {
+  "name": "Stripe",
+  "url": "/stripe-api-access/"
+ },
+ "xero": {
+  "name": "Xero",
+  "url": "/xero-api-access/"
+ },
+ "zendesk": {
+  "name": "Zendesk",
+  "url": "/zendesk-api-access/"
+ }
+}
