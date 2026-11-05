@@ -49,6 +49,9 @@ print(f"{len(pages)} pages checked, {bad} problems")
 sys.exit(1 if bad else 0)
 EOF
 
+step "Security tags (Content-Security-Policy matches each page's scripts)"
+python3 scripts/security.py check | tail -3; [ "${PIPESTATUS[0]}" -eq 0 ] || fail=1
+
 step "Calculator in a real browser (all pair pages, monthly + annual)"
 python3 - > "$OUT/expected.json" <<'EOF'
 import glob, json, re
@@ -67,8 +70,11 @@ EOF
 python3 -m http.server 8765 >/dev/null 2>&1 & SRV=$!
 sleep 1
 node scripts/check7.js "$PWD/$OUT/expected.json" | tee "$OUT/calc.txt"
-kill $SRV 2>/dev/null
 grep -q "mismatches 0 js errors 0" "$OUT/calc.txt" || fail=1
+
+step "Every page in a real browser: nothing blocked by the security policy, no JS errors"
+node scripts/cspcheck.js $(python3 -c "import sys;sys.path.insert(0,'scripts');import security;print(' '.join(f for f in security.pages() if not f.startswith('go/')))") | tail -5; [ "${PIPESTATUS[0]}" -eq 0 ] || fail=1
+kill $SRV 2>/dev/null
 
 echo
 if [ $fail -eq 0 ]; then echo "ALL CHECKS PASSED"; else echo "SOME CHECKS FAILED"; fi
