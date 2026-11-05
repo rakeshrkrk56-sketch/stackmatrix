@@ -23,6 +23,7 @@ Run everything **from the repo root**. Needs `python3`, plus `node` with Playwri
 | Research report | `integration-tax-2026/` | `research.py`. It also updates the homepage research card. |
 | Header menu, finder | every page / homepage + 404 | `ui13.py` |
 | Homepage FAQ markup | `index.html` | `homefaq.py` rebuilds the JSON-LD from the visible FAQ |
+| Security tags | every page | `security.py` writes a Content-Security-Policy `<meta>` (with hashes of the page's inline scripts) and a referrer policy. **Run it last, after any script that changes a page's scripts** (`check_all.sh` fails until you do). If you add an image or script from a new outside site, add its host in `security.py`. |
 | Open data | `data/integration-pairs.json` | Keep it in sync with the pages; see `wire13.py` for the field format. |
 
 ## Common jobs
@@ -35,6 +36,7 @@ python3 scripts/hubs.py               # tool hubs
 python3 scripts/apipages.py           # API pages (plan price column)
 python3 scripts/research.py           # only if the change corrects the report's figures
 python3 scripts/ui13.py               # finder data on homepage/404
+python3 scripts/security.py           # always last: refreshes each page's security policy
 bash scripts/check_all.sh
 ```
 Then update `data/integration-pairs.json` (that tool's plan prices and each affected pair's `ten_seat_monthly_cost_usd`), and add a dated entry to the changelog on `about/index.html`.
