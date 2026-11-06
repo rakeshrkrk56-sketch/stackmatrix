@@ -23,6 +23,7 @@ Run everything **from the repo root**. Needs `python3`, plus `node` with Playwri
 | Research report | `integration-tax-2026/` | `research.py`. It also updates the homepage research card. |
 | Header menu, finder | every page / homepage + 404 | `ui13.py` |
 | Homepage FAQ markup | `index.html` | `homefaq.py` rebuilds the JSON-LD from the visible FAQ |
+| HubSpot Professional guide | `hubspot-professional-integrations/` | `hspro.py`. Integration requirements come from the pair pages; each Professional Hub's prices are in its `PRO` list (re-read them on HubSpot's pricing pages, clicking the billing toggles). |
 | Security tags | every page | `security.py` writes a Content-Security-Policy `<meta>` (with hashes of the page's inline scripts) and a referrer policy. **Run it last, after any script that changes a page's scripts** (`check_all.sh` fails until you do). If you add an image or script from a new outside site, add its host in `security.py`. |
 | Open data | `data/integration-pairs.json` | Keep it in sync with the pages; see `wire13.py` for the field format. |
 
