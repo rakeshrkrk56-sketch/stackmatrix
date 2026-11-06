@@ -77,6 +77,10 @@ for _p, (_a, _b) in COPY3_PATCH.items():
     for _k in ('how', 'limits'):
         COPY[_p][_k] = COPY[_p][_k].replace(_a, _b)
     assert _b in COPY[_p]['how'] + COPY[_p]['limits'], _p
+from pairdata15 import TOOL_TIERS15, SUMMARY15, HS_CHECKED
+TOOL_TIERS.update(TOOL_TIERS15)
+for _p, _s in SUMMARY15.items():
+    PAIRS[_p] = dict(PAIRS[_p], summary=_s)
 
 FACTS_EXTRA = {("salesforce", "Enterprise"): ("Yes", "Yes"), ("slack", "Free"): ("Yes", "Yes"),
                ("clickup", "Free"): ("Yes", "No"),    # API on all plans (ClickUp); webhook value copied from Unlimited
@@ -340,7 +344,7 @@ def main(mode):
             else: d["middleware"], d["middlewareLabel"] = (fix.get("mw") or d["middleware"] or 9), "Middleware"
             if p in MW7: d["middleware"], d["middlewareAnnual"] = MW7[p]
             summ, sync = fix["summary"], fix["sync"]
-        s2, v = render_page(s, p, d, summ, sync, facts, date_modified=(fix or {}).get("date", TODAY), copy=cp, cta=(fix or {}).get('cta', True))
+        s2, v = render_page(s, p, d, summ, sync, facts, date_modified=HS_CHECKED if "hubspot" in p else (fix or {}).get("date", TODAY), copy=cp, cta=(fix or {}).get('cta', True))
         out[f] = s2
         if fix:
             home2 = render_home_card(home2, p, v, summ, limit)

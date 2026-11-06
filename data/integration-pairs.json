@@ -7,7 +7,7 @@
   "Plan prices are monthly-billing list prices in USD where the vendor publishes one; annual_billing_per_seat_usd_per_month is the vendor's annual-billing price, where published.",
   "Middleware and connector fees follow the same rule: middleware_monthly_usd is the monthly-billing price and middleware_annual_billing_usd_per_month the annual-billing price (Make Core's monthly price comes from third-party pricing reviews because make.com blocks automated checks).",
   "Free tiers are listed where the vendor documents the integration working on its free plan.",
-  "Modeled assumptions: HubSpot Professional and Enterprise are flat monthly prices; ActiveCampaign and Pipedrive list annual-billing rates only; Salesforce prices were last verified 2026-10-17 and QuickBooks Online prices 2026-11-04.",
+  "Modeled assumptions: HubSpot Professional and Enterprise are Smart CRM Professional and Enterprise, the cheapest subscriptions at each level (any Professional Hub unlocks the integrations that need Professional), checked 2026-11-05; ActiveCampaign and Pipedrive list annual-billing rates only; Salesforce prices were last verified 2026-10-17 and QuickBooks Online prices 2026-11-04.",
   "Each pair's 'verification' field states what was checked and when, including exceptions.",
   "API and webhook facts per plan (api_access_by_vendor_docs, developer_webhooks, webhook_automation_action, api_rate_limit) were checked against each vendor's developer and help-center docs on 2026-11-03; 'Not stated' means the docs we read don't say."
  ],
@@ -329,8 +329,8 @@
      "api_facts_checked": "2026-11-03"
     },
     "Professional": {
-     "monthly_base_usd": 800,
-     "monthly_per_seat_usd": 0,
+     "monthly_base_usd": 0,
+     "monthly_per_seat_usd": 50,
      "min_seats": 1,
      "api_access": true,
      "api_access_by_vendor_docs": "Yes",
@@ -338,11 +338,13 @@
      "developer_webhooks": "Not stated",
      "developer_webhooks_note": "Developer webhooks via apps; plan not stated",
      "webhook_automation_action": "Only with Data Hub Professional",
-     "api_facts_checked": "2026-11-03"
+     "api_facts_checked": "2026-11-03",
+     "annual_billing_per_seat_usd_per_month": 45,
+     "plan_note": "Modeled as Smart CRM Professional, the cheapest HubSpot Professional subscription; other Professional Hubs cost more. Prices checked 2026-11-05."
     },
     "Enterprise": {
-     "monthly_base_usd": 3600,
-     "monthly_per_seat_usd": 0,
+     "monthly_base_usd": 0,
+     "monthly_per_seat_usd": 75,
      "min_seats": 1,
      "api_access": true,
      "api_access_by_vendor_docs": "Yes",
@@ -350,7 +352,8 @@
      "developer_webhooks": "Not stated",
      "developer_webhooks_note": "Developer webhooks via apps; plan not stated",
      "webhook_automation_action": "Only with Data Hub Enterprise",
-     "api_facts_checked": "2026-11-03"
+     "api_facts_checked": "2026-11-03",
+     "plan_note": "Smart CRM Enterprise, annual commitment only. Prices checked 2026-11-05."
     }
    },
    "api_sources": [
@@ -1183,7 +1186,7 @@
    "ten_seat_monthly_cost_usd": 230,
    "verification": "Integration requirements checked · Nov 3, 2026 (Freshdesk plan unconfirmed) · Prices checked · Nov 3, 2026",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-03",
+   "date_modified": "2026-11-05",
    "sources": [
     {
      "title": "HubSpot Marketplace: Freshdesk Data Sync",
@@ -1234,10 +1237,10 @@
    },
    "middleware_monthly_usd": 0,
    "sync_direction": "1-way (HubSpot → Asana)",
-   "ten_seat_monthly_cost_usd": 934.9,
-   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (HubSpot Professional: modeled at a flat monthly price)",
+   "ten_seat_monthly_cost_usd": 634.9,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (HubSpot prices: Nov 5, 2026)",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-03",
+   "date_modified": "2026-11-05",
    "sources": [
     {
      "title": "HubSpot: Create Asana tasks with workflows",
@@ -1266,7 +1269,7 @@
    "ten_seat_monthly_cost_usd": 120,
    "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-03",
+   "date_modified": "2026-11-05",
    "sources": [
     {
      "title": "Calendly: Calendly + HubSpot",
@@ -1295,7 +1298,7 @@
    "ten_seat_monthly_cost_usd": 120,
    "verification": "Integration requirements checked · Nov 3, 2026 (ClickUp plan unconfirmed) · Prices checked · Nov 3, 2026",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-03",
+   "date_modified": "2026-11-05",
    "sources": [
     {
      "title": "HubSpot Marketplace: ClickUp",
@@ -1320,7 +1323,7 @@
    "ten_seat_monthly_cost_usd": 20,
    "verification": "Integration requirements checked · Nov 3, 2026 (Mailchimp plan unconfirmed) · Prices checked · Nov 3, 2026",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-03",
+   "date_modified": "2026-11-05",
    "sources": [
     {
      "title": "HubSpot: Use HubSpot's integration with Mailchimp",
@@ -1349,7 +1352,7 @@
    "ten_seat_monthly_cost_usd": 140,
    "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-03",
+   "date_modified": "2026-11-05",
    "sources": [
     {
      "title": "HubSpot Marketplace: monday.com",
@@ -1379,7 +1382,7 @@
    "ten_seat_monthly_cost_usd": 150.59,
    "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Pipedrive prices: from an indexed copy of its pricing page; Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks)",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-03",
+   "date_modified": "2026-11-05",
    "sources": [
     {
      "title": "HubSpot: Supported apps for Smart Transfer",
@@ -1404,7 +1407,7 @@
    "ten_seat_monthly_cost_usd": 38,
    "verification": "Integration requirements checked against official vendor docs · Nov 4, 2026 · Prices checked · Nov 3, 2026 (QuickBooks prices: Nov 4, 2026)",
    "last_reviewed": "2026-11-04",
-   "date_modified": "2026-11-04",
+   "date_modified": "2026-11-05",
    "sources": [
     {
      "title": "HubSpot: Connect HubSpot and QuickBooks Online",
@@ -1426,10 +1429,10 @@
    },
    "middleware_monthly_usd": 0,
    "sync_direction": "2-way",
-   "ten_seat_monthly_cost_usd": 2050,
-   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (HubSpot Professional: modeled at a flat monthly price; Salesforce prices: Oct 17, 2026)",
+   "ten_seat_monthly_cost_usd": 1750,
+   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (HubSpot prices: Nov 5, 2026; Salesforce prices: Oct 17, 2026)",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-03",
+   "date_modified": "2026-11-05",
    "sources": [
     {
      "title": "HubSpot: Connect HubSpot and Salesforce",
@@ -1458,7 +1461,7 @@
    "ten_seat_monthly_cost_usd": 0,
    "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-03",
+   "date_modified": "2026-11-05",
    "sources": [
     {
      "title": "HubSpot: Connect HubSpot and Slack",
@@ -1491,7 +1494,7 @@
    "ten_seat_monthly_cost_usd": 0,
    "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-03",
+   "date_modified": "2026-11-05",
    "sources": [
     {
      "title": "HubSpot: Connect Stripe as a payment processor",
@@ -1520,7 +1523,7 @@
    "ten_seat_monthly_cost_usd": 690,
    "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-03",
+   "date_modified": "2026-11-05",
    "sources": [
     {
      "title": "Zendesk: Zendesk Support for HubSpot",
@@ -1549,7 +1552,7 @@
    "ten_seat_monthly_cost_usd": 390,
    "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-03",
+   "date_modified": "2026-11-05",
    "sources": [
     {
      "title": "Intercom: HubSpot app",

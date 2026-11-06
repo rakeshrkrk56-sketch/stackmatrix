@@ -110,7 +110,7 @@ def build():
         f"<strong>Plan upgrades, not connectors, are the real cost.</strong> Forced upgrades make up {S['up_share']:.0f}% of the total integration tax, and across all {S['n']} stacks the integration tax is {S['share']:.0f}% of what they cost in total. Connector fees are small by comparison: "
         f"{', '.join(m0(x) for x in S['mw_fees'])} a month at monthly billing.",
         f"<strong>The tax is concentrated.</strong> The three most expensive integrations account for {S['top3_share']:.0f}% of all the integration tax in the index. "
-        f"{maxl} each cost {m0(S['max_tax'])} a month extra because they need HubSpot Professional, which this index models at a flat $800 a month." if hs else "",
+        f"{maxl} each cost {m0(S['max_tax'])} a month extra because they need a HubSpot Professional subscription: Smart CRM Professional, the cheapest one, is $50 per seat a month (<a href=\"/hubspot-professional-integrations/\" class=\"font-medium text-indigo-600 hover:underline\">compare the Professional plans</a>)." if hs else "",
         (f"<strong>Calendly&#39;s webhook gate is the most common trigger.</strong> {cal[1]} integrations need Calendly Standard, because Calendly&#39;s webhooks require a paid plan; "
          f"that&#39;s {m0(cal[2][0]['up'])} a month for 10 seats.") if cal else "",
         f"<strong>{S['free']} of {S['n']} integrations cost nothing extra.</strong> They work on each tool&#39;s cheapest plan with API access and need no connector, so connecting them is free on top of the plans you already pay for.",
@@ -154,7 +154,7 @@ def build():
             f'{P}<strong>Integration tax</strong> = (each tool&#39;s minimum plan for the integration − that tool&#39;s cheapest plan with API access) + the connector fee, for a 10-seat team at monthly-billing list prices. '
             f'The report covers the {S["n"]} integrations in the index when it was published on Nov 3, 2026; pairs added since then aren&#39;t included, so the figures stay comparable. Minimum plans, connector fees and prices come from those pair calculators; every figure there links to the vendor&#39;s pricing page, help center or developer docs and was checked on Nov 3, 2026.</p>'
             f'{P}<strong>Baseline plans</strong> (cheapest plan with API access, 10 seats): {esc(floors)}.</p>'
-            f'{P}<strong>Limitations.</strong> HubSpot Professional is modeled at a flat $800 a month. Make Core&#39;s $10.59 monthly price comes from third-party pricing reviews, because make.com blocks automated checks. '
+            f'{P}<strong>Limitations.</strong> HubSpot Professional is modeled as Smart CRM Professional ($50 per seat a month, $45 on annual billing), the cheapest subscription that unlocks the Salesforce connector and the Asana workflow action; other Professional Hubs cost more. Make Core&#39;s $10.59 monthly price comes from third-party pricing reviews, because make.com blocks automated checks. '
             f'Salesforce&#39;s baseline includes the $25/user API add-on that Professional needs. Stripe has no plan fee, so its baseline is $0. '
             f'{len(unc)} integrations include an upgrade that rests on a plan requirement we haven&#39;t confirmed yet ({esc(", ".join(r["label"] for r in unc))}), worth {m0(sum(r["unconfirmed_up"] for r in unc))} a month in total; '
             f'counting only confirmed requirements, {S["conf_forced"]} of {S["n"]} integrations force an upgrade instead of {S["forced"]}. Usage-based charges (Zapier tasks, Make credits, API overages) aren&#39;t included.</p>'
@@ -178,15 +178,15 @@ def build():
              'el.addEventListener("mouseleave",hide);el.addEventListener("focus",function(){show(null,el)});el.addEventListener("blur",hide);});})();</script>')
     body = (f'<section class="mx-auto max-w-4xl"> <p class="text-sm font-semibold uppercase tracking-widest text-indigo-600">Research · November 2026</p> '
             f'<h1 class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">\nThe Integration Tax 2026: What Connecting SaaS Tools Really Costs\n</h1> '
-            f'<p class="mt-3 text-sm text-slate-500">StackCostMatrix · Published Nov 3, 2026 · Data checked against vendor docs Nov 3, 2026</p> '
+            f'<p class="mt-3 text-sm text-slate-500">StackCostMatrix · Published Nov 3, 2026 · Data checked against vendor docs Nov 3, 2026 · Updated Nov 5, 2026: HubSpot Professional repriced at HubSpot&#39;s per-seat price (see Limitations)</p> '
             f'{P}{lead}</p> {tiles} {findings} {chart1} {chart2} {table} {meth} {cite}{faq_html} </section> {tipjs} ')
     ld = [
         {"@context": "https://schema.org", "@type": "Article", "headline": "The Integration Tax 2026: What Connecting SaaS Tools Really Costs", "description": desc,
          "author": {"@type": "Organization", "name": "StackCostMatrix", "url": f"{SITE}/"}, "publisher": {"@type": "Organization", "name": "StackCostMatrix", "url": f"{SITE}/", "logo": f"{SITE}/icon-512.png"},
-         "datePublished": "2026-11-03", "dateModified": "2026-11-03", "mainEntityOfPage": URL, "image": f"{SITE}/icon-512.png", "inLanguage": "en", "isBasedOn": f"{SITE}/data/integration-pairs.json"},
+         "datePublished": "2026-11-03", "dateModified": "2026-11-05", "mainEntityOfPage": URL, "image": f"{SITE}/icon-512.png", "inLanguage": "en", "isBasedOn": f"{SITE}/data/integration-pairs.json"},
         {"@context": "https://schema.org", "@type": "Dataset", "name": "StackCostMatrix Integration Tax 2026", "description": f"Monthly integration tax (forced plan upgrades plus connector fees) for {S['n']} B2B SaaS integrations at 10 seats, derived from vendor-verified plan requirements and prices checked 2026-11-03.",
          "url": URL, "license": "https://creativecommons.org/licenses/by/4.0/", "creator": {"@type": "Organization", "name": "StackCostMatrix", "url": f"{SITE}/"},
-         "dateModified": "2026-11-03", "keywords": ["SaaS pricing", "integration cost", "API access", "webhooks", "Zapier", "Make"],
+         "dateModified": "2026-11-05", "keywords": ["SaaS pricing", "integration cost", "API access", "webhooks", "Zapier", "Make"],
          "distribution": [{"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": f"{SITE}/data/integration-pairs.json"}]},
         {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faqs]},
         {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": f"{SITE}/"},
