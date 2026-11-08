@@ -9,6 +9,7 @@ SITE = "https://stackcostmatrix.com"
 EDITOR_NAME = "Rakesh"
 EDITOR_URL = f"{SITE}/about/#editor"
 EDITOR_PROFILE = "https://github.com/rakeshrkrk56-sketch"
+EDITOR_LINKEDIN = "https://www.linkedin.com/in/rakesh-kumar-23960a204/"
 ORG_ID, SITE_ID = f"{SITE}/#organization", f"{SITE}/#website"
 EDITOR = {"@type": "Person", "@id": EDITOR_URL, "name": EDITOR_NAME, "url": EDITOR_URL}
 PUBLISHER = {"@type": "Organization", "@id": ORG_ID, "name": "StackCostMatrix", "url": f"{SITE}/", "logo": f"{SITE}/icon-512.png"}
@@ -19,7 +20,7 @@ GRAPH = {"@context": "https://schema.org", "@graph": [
      "sameAs": ["https://github.com/rakeshrkrk56-sketch/stackmatrix"]},
     {"@type": "WebSite", "@id": SITE_ID, "url": f"{SITE}/", "name": "StackCostMatrix", "publisher": {"@id": ORG_ID}, "inLanguage": "en"},
     {"@type": "Person", "@id": EDITOR_URL, "name": EDITOR_NAME, "url": EDITOR_URL, "jobTitle": "Founder and editor",
-     "worksFor": {"@id": ORG_ID}, "sameAs": [EDITOR_PROFILE]}]}
+     "worksFor": {"@id": ORG_ID}, "sameAs": [EDITOR_LINKEDIN, EDITOR_PROFILE]}]}
 BREADCRUMBS = {
     "hubspot-integrations-cost/index.html": [("HubSpot integration costs", f"{SITE}/hubspot-integrations-cost/")],
     "salesforce-integrations-cost/index.html": [("Salesforce integration costs", f"{SITE}/salesforce-integrations-cost/")],
@@ -29,11 +30,13 @@ BREADCRUMBS = {
 LINK = 'class="font-medium text-indigo-600 hover:underline"'
 BYLINE_PAIR_OLD = 'Reviewed by the <strong class="text-slate-800">StackCostMatrix RevOps Research Team</strong>'
 BYLINE_PAIR_NEW = f'Edited by <a href="/about/#editor" {LINK}>{EDITOR_NAME}</a>, founder of StackCostMatrix'
+PROFILE_HTML = (f'Profiles: <a href="{EDITOR_LINKEDIN}" rel="noopener me" {LINK}>LinkedIn ↗</a> · '
+                f'<a href="{EDITOR_PROFILE}" rel="noopener me" {LINK}>GitHub ↗</a>')
 ABOUT_OLD = '<p class="leading-relaxed text-slate-600">\nStackCostMatrix is published as an independent research project. Our dataset'
 ABOUT_NEW = ('<p class="leading-relaxed text-slate-600" id="editor">\n<strong class="text-slate-800">Editor: ' + EDITOR_NAME + '.</strong> '
              'StackCostMatrix is built and run by ' + EDITOR_NAME + ', who checks each price and plan requirement against the vendor&#39;s own pricing '
              'pages and documentation and reviews every change before it&#39;s published. Corrections go to the email below and are logged in the changelog. '
-             f'Profile: <a href="{EDITOR_PROFILE}" rel="noopener" {LINK}>GitHub ↗</a>.\n</p> <p class="mt-3 leading-relaxed text-slate-600">\n'
+             f'{PROFILE_HTML}.\n</p> <p class="mt-3 leading-relaxed text-slate-600">\n'
              'StackCostMatrix is published as an independent research project. Our dataset')
 
 def fix_ld(o):
@@ -80,6 +83,8 @@ def main():
             s = s.replace("</head>", '<script type="application/ld+json">' + json.dumps(GRAPH, ensure_ascii=False, separators=(",", ":")) + "</script></head>", 1)
         if f == "about/index.html" and ABOUT_OLD in s:
             s = s.replace(ABOUT_OLD, ABOUT_NEW, 1)
+        if f == "about/index.html":   # keep the editor's profile links current
+            s = re.sub(r'Profiles?: <a href="[^"]*"[^>]*>(?:LinkedIn|GitHub) ↗</a>(?: · <a href="[^"]*"[^>]*>GitHub ↗</a>)?', lambda m: PROFILE_HTML, s, count=1)
         # 1200x630 share image for link previews (was the 512px square logo)
         s = s.replace('<meta property="og:image" content="https://stackcostmatrix.com/icon-512.png">',
                       '<meta property="og:image" content="https://stackcostmatrix.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">')
