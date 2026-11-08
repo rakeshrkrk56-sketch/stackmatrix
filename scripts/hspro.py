@@ -4,6 +4,7 @@ Prices come from HubSpot's pricing pages and product catalog, read on CHECKED wi
 Integration requirements come from the pair pages' calculator data, so they stay in step with the rest of the site."""
 import json, os, re, sys
 sys.path.insert(0, os.path.dirname(__file__))
+from site16 import fix_ld
 from hubs import load_pairs, render, read, esc, attr, m0, SITE, P, H2, TH, TD, LINK, SHORT
 from pairdata15 import HS_CHECKED
 
@@ -138,7 +139,7 @@ def build():
               f"The other {nfree} work on HubSpot's free CRM.")
     body = (f'<section class="mx-auto max-w-4xl"> <p class="text-sm font-semibold uppercase tracking-widest text-indigo-600">HubSpot plans</p> '
             f'<h1 class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">\n{esc(TITLE)}\n</h1> '
-            f'<p class="mt-3 text-sm text-slate-500">Checked against HubSpot&#39;s pricing pages and knowledge base · {CHECKED_TXT}</p> '
+            f'<p class="mt-3 text-sm text-slate-500">Checked against HubSpot&#39;s pricing pages and knowledge base · {CHECKED_TXT} · Edited by <a href="/about/#editor" class="font-medium text-indigo-600 hover:underline">Rakesh</a></p> '
             f'{P}<strong>Short answer:</strong> {esc(answer)}</p> '
             f'{H2}Which HubSpot plan each integration needs</h2> {t1} {sec_cheap} {sec_alt} {sec_other} {sources} {more}{faq_html} </section> ')
     ld = [
@@ -152,7 +153,7 @@ def build():
             {"@type": "ListItem", "position": 2, "name": "HubSpot integrations", "item": f"{SITE}/hubspot-integrations-cost/"},
             {"@type": "ListItem", "position": 3, "name": "Integrations that need HubSpot Professional", "item": URL}]},
     ]
-    return dict(title=TITLE, desc=DESC, url=URL, body=body, ld=ld)
+    return dict(title=TITLE, desc=DESC, url=URL, body=body, ld=fix_ld(ld))
 
 def money2(x):
     return f"${x:,.2f}"

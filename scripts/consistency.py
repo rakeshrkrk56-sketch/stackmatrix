@@ -1,5 +1,6 @@
 import re, json, glob, html, sys, os
 sys.path.insert(0, os.path.dirname(__file__)); from model import compute
+from pairfix import trap_text as _trap_text
 U = lambda x: re.sub(r"\s+", " ", html.unescape(x)).strip()
 def txt(fragment): return U(re.sub(r"<[^>]+>", " ", fragment))
 home = open("index.html", encoding="utf-8").read()
@@ -27,7 +28,8 @@ for p, s in allpages.items():
     if badge != typ: add(p, "High", "spec matrix", f"badge '{badge}' vs calculator type {typ}")
     if native != nrow.startswith("Yes"): add(p, "High", "spec matrix", f"'Native integration supported' = '{nrow}' vs type {typ}")
     if native != ("connection is native" in fa[2]): add(p, "High", "FAQ Q3", f"FAQ type answer disagrees with {typ}")
-    if trap_sum != summ: add(p, "Medium", "hidden cost trap", "trap summary differs from page summary")
+    # since 2026-11-08 the trap box states the pair's own extra cost (pairfix.trap_text) instead of repeating the lede
+    if trap_sum != U(_trap_text(v, d)): add(p, "Medium", "hidden cost trap", "trap text differs from the computed extra cost")
     if native and re.search(r"Route it through|No native (link|connector)|runs through middleware|iPaaS only", summ): add(p, "High", "summary", f"native page but summary implies middleware: '{summ[:90]}…'")
     if not native and re.search(r"native integration\b(?! exists)|connection is native", summ) and "no native" not in summ.lower() and "not natively" not in summ.lower() and not summ.lower().startswith("neither"): add(p, "Medium", "summary", f"middleware page but summary says native: '{summ[:90]}…'")
     # tiers mentioned in summary vs calculator

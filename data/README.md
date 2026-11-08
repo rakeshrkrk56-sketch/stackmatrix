@@ -9,4 +9,4 @@ Read the `notes` and each pair's `verification` field before reusing a figure: t
 
 **License:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Reuse and adapt it, including commercially, as long as you credit StackCostMatrix and link to https://stackcostmatrix.com.
 
-`database/seed.sql` and `site/src/data/` are older snapshots (before the November 3, 2026 update) and are kept for history only.
+Older snapshots from before the November 3, 2026 update are in the repository's git history.

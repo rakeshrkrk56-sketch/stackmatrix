@@ -24,6 +24,9 @@ Run everything **from the repo root**. Needs `python3`, plus `node` with Playwri
 | Header menu, finder | every page / homepage + 404 | `ui13.py` |
 | Homepage FAQ markup | `index.html` | `homefaq.py` rebuilds the JSON-LD from the visible FAQ |
 | HubSpot Professional guide | `hubspot-professional-integrations/` | `hspro.py`. Integration requirements come from the pair pages; each Professional Hub's prices are in its `PRO` list (re-read them on HubSpot's pricing pages, clicking the billing toggles). |
+| Editor & site identity | every page | `site16.py`: "Edited by Rakesh" byline, one Organization/WebSite/Person @id graph (homepage, /about/) that every page's schema points to, the 1200x630 `og-image.png`, breadcrumbs on the hand-written guides, and the 404 page's redirect for reversed pair URLs (/stack/b-and-a/). Run after the generators. |
+| Sitemap | `sitemap-0.xml` | `sitemap16.py` rebuilds it from the pages on disk, with lastmod from each page's dateModified (or its last commit). |
+| AI crawler guide | `llms.txt` | Hand-written; update when a major page is added. |
 | Security tags | every page | `security.py` writes a Content-Security-Policy `<meta>` (with hashes of the page's inline scripts) and a referrer policy. **Run it last, after any script that changes a page's scripts** (`check_all.sh` fails until you do). If you add an image or script from a new outside site, add its host in `security.py`. |
 | Open data | `data/integration-pairs.json` | Keep it in sync with the pages; see `wire13.py` for the field format. |
 
@@ -37,6 +40,8 @@ python3 scripts/hubs.py               # tool hubs
 python3 scripts/apipages.py           # API pages (plan price column)
 python3 scripts/research.py           # only if the change corrects the report's figures
 python3 scripts/ui13.py               # finder data on homepage/404
+python3 scripts/site16.py             # editor byline, shared Organization/Person schema, share image, 404 redirects
+python3 scripts/sitemap16.py          # sitemap with lastmod dates
 python3 scripts/security.py           # always last: refreshes each page's security policy
 bash scripts/check_all.sh
 ```

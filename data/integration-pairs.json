@@ -916,7 +916,7 @@
    "ten_seat_monthly_cost_usd": 135,
    "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-03",
+   "date_modified": "2026-11-08",
    "sources": [
     {
      "title": "Calendly: ActiveCampaign integration",
@@ -945,7 +945,7 @@
    "ten_seat_monthly_cost_usd": 405,
    "verification": "Integration requirements checked · Nov 3, 2026 (Pipedrive plan unconfirmed) · Prices checked · Nov 3, 2026 (Pipedrive prices: from an indexed copy of its pricing page)",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-03",
+   "date_modified": "2026-11-08",
    "sources": [
     {
      "title": "ActiveCampaign: Use the Pipedrive integration",
@@ -962,16 +962,25 @@
    ],
    "connection_type": "native",
    "minimum_plans": {
-    "ActiveCampaign": "Starter",
+    "ActiveCampaign": "Plus",
     "Stripe": "Standard"
    },
    "middleware_monthly_usd": 0,
-   "sync_direction": "2-way",
-   "ten_seat_monthly_cost_usd": 15,
-   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026",
-   "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-03",
-   "sources": []
+   "sync_direction": "1-way (Stripe → ActiveCampaign)",
+   "ten_seat_monthly_cost_usd": 49,
+   "verification": "Integration requirements re-checked against the vendors' own pages · Nov 8, 2026",
+   "last_reviewed": "2026-11-08",
+   "date_modified": "2026-11-08",
+   "sources": [
+    {
+     "title": "ActiveCampaign: Stripe integration (app directory)",
+     "url": "https://www.activecampaign.com/apps/stripe"
+    },
+    {
+     "title": "ActiveCampaign help: Connect your Stripe account",
+     "url": "https://help.activecampaign.com/hc/en-us/articles/360016037040"
+    }
+   ]
   },
   {
    "pair": "airtable-and-quickbooks",
@@ -991,7 +1000,7 @@
    "ten_seat_monthly_cost_usd": 288.59,
    "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (QuickBooks prices: Nov 4, 2026; Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks)",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-03",
+   "date_modified": "2026-11-08",
    "sources": [
     {
      "title": "Airtable: Managing API call limits",
@@ -1025,7 +1034,7 @@
    "ten_seat_monthly_cost_usd": 250.59,
    "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks)",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-03",
+   "date_modified": "2026-11-08",
    "sources": [
     {
      "title": "Airtable: Managing API call limits",
@@ -1055,8 +1064,17 @@
    "ten_seat_monthly_cost_usd": 177.89,
    "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Zapier Professional fee: Nov 3, 2026)",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-03",
-   "sources": []
+   "date_modified": "2026-11-08",
+   "sources": [
+    {
+     "title": "Zapier: Asana + Mailchimp integrations",
+     "url": "https://zapier.com/apps/asana/integrations/mailchimp"
+    },
+    {
+     "title": "Asana developers: Webhooks",
+     "url": "https://developers.asana.com/docs/webhooks-guide"
+    }
+   ]
   },
   {
    "pair": "asana-and-quickbooks",
@@ -1076,8 +1094,17 @@
    "ten_seat_monthly_cost_usd": 183.49,
    "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (QuickBooks prices: Nov 4, 2026; Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks)",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-03",
-   "sources": []
+   "date_modified": "2026-11-08",
+   "sources": [
+    {
+     "title": "Asana developers: Webhooks",
+     "url": "https://developers.asana.com/docs/webhooks-guide"
+    },
+    {
+     "title": "Intuit developers: QuickBooks Online API",
+     "url": "https://developer.intuit.com/app/developer/qbo/docs/get-started"
+    }
+   ]
   },
   {
    "pair": "asana-and-slack",
@@ -1096,8 +1123,17 @@
    "ten_seat_monthly_cost_usd": 134.9,
    "verification": "Integration requirements checked · Nov 3, 2026 (Asana plan unconfirmed) · Prices checked · Nov 3, 2026",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-03",
-   "sources": []
+   "date_modified": "2026-11-08",
+   "sources": [
+    {
+     "title": "Asana: Slack + Asana",
+     "url": "https://asana.com/apps/slack"
+    },
+    {
+     "title": "Asana help: Slack and Asana",
+     "url": "https://help.asana.com/s/article/slack-and-asana"
+    }
+   ]
   },
   {
    "pair": "clickup-and-slack",
@@ -1116,7 +1152,7 @@
    "ten_seat_monthly_cost_usd": 0,
    "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-03",
+   "date_modified": "2026-11-08",
    "sources": [
     {
      "title": "ClickUp: Intro to the integration with Slack",
@@ -1146,8 +1182,17 @@
    "ten_seat_monthly_cost_usd": 10.59,
    "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks)",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-03",
-   "sources": []
+   "date_modified": "2026-11-08",
+   "sources": [
+    {
+     "title": "Stripe docs: Webhooks",
+     "url": "https://docs.stripe.com/webhooks"
+    },
+    {
+     "title": "ClickUp API: Create task",
+     "url": "https://developer.clickup.com/reference/createtask"
+    }
+   ]
   },
   {
    "pair": "clickup-and-zendesk",
@@ -1166,8 +1211,17 @@
    "ten_seat_monthly_cost_usd": 690,
    "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-03",
-   "sources": []
+   "date_modified": "2026-11-08",
+   "sources": [
+    {
+     "title": "ClickUp help: Zendesk integration",
+     "url": "https://help.clickup.com/hc/en-us/articles/6304890522135-Zendesk-integration"
+    },
+    {
+     "title": "ClickUp: Zendesk integration",
+     "url": "https://clickup.com/integrations/zendesk"
+    }
+   ]
   },
   {
    "pair": "freshdesk-and-hubspot",
@@ -1186,7 +1240,7 @@
    "ten_seat_monthly_cost_usd": 230,
    "verification": "Integration requirements checked · Nov 3, 2026 (Freshdesk plan unconfirmed) · Prices checked · Nov 3, 2026",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-05",
+   "date_modified": "2026-11-08",
    "sources": [
     {
      "title": "HubSpot Marketplace: Freshdesk Data Sync",
@@ -1211,7 +1265,7 @@
    "ten_seat_monthly_cost_usd": 230,
    "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-03",
+   "date_modified": "2026-11-08",
    "sources": [
     {
      "title": "Freshdesk: The latest Slack app",
@@ -1240,7 +1294,7 @@
    "ten_seat_monthly_cost_usd": 634.9,
    "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (HubSpot prices: Nov 5, 2026)",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-05",
+   "date_modified": "2026-11-08",
    "sources": [
     {
      "title": "HubSpot: Create Asana tasks with workflows",
@@ -1269,7 +1323,7 @@
    "ten_seat_monthly_cost_usd": 120,
    "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-05",
+   "date_modified": "2026-11-08",
    "sources": [
     {
      "title": "Calendly: Calendly + HubSpot",
@@ -1298,7 +1352,7 @@
    "ten_seat_monthly_cost_usd": 120,
    "verification": "Integration requirements checked · Nov 3, 2026 (ClickUp plan unconfirmed) · Prices checked · Nov 3, 2026",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-05",
+   "date_modified": "2026-11-08",
    "sources": [
     {
      "title": "HubSpot Marketplace: ClickUp",
@@ -1323,7 +1377,7 @@
    "ten_seat_monthly_cost_usd": 20,
    "verification": "Integration requirements checked · Nov 3, 2026 (Mailchimp plan unconfirmed) · Prices checked · Nov 3, 2026",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-05",
+   "date_modified": "2026-11-08",
    "sources": [
     {
      "title": "HubSpot: Use HubSpot's integration with Mailchimp",
@@ -1352,7 +1406,7 @@
    "ten_seat_monthly_cost_usd": 140,
    "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-05",
+   "date_modified": "2026-11-08",
    "sources": [
     {
      "title": "HubSpot Marketplace: monday.com",
@@ -1382,7 +1436,7 @@
    "ten_seat_monthly_cost_usd": 150.59,
    "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Pipedrive prices: from an indexed copy of its pricing page; Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks)",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-05",
+   "date_modified": "2026-11-08",
    "sources": [
     {
      "title": "HubSpot: Supported apps for Smart Transfer",
@@ -1407,7 +1461,7 @@
    "ten_seat_monthly_cost_usd": 38,
    "verification": "Integration requirements checked against official vendor docs · Nov 4, 2026 · Prices checked · Nov 3, 2026 (QuickBooks prices: Nov 4, 2026)",
    "last_reviewed": "2026-11-04",
-   "date_modified": "2026-11-05",
+   "date_modified": "2026-11-08",
    "sources": [
     {
      "title": "HubSpot: Connect HubSpot and QuickBooks Online",
@@ -1432,7 +1486,7 @@
    "ten_seat_monthly_cost_usd": 1750,
    "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (HubSpot prices: Nov 5, 2026; Salesforce prices: Oct 17, 2026)",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-05",
+   "date_modified": "2026-11-08",
    "sources": [
     {
      "title": "HubSpot: Connect HubSpot and Salesforce",
@@ -1461,7 +1515,7 @@
    "ten_seat_monthly_cost_usd": 0,
    "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-05",
+   "date_modified": "2026-11-08",
    "sources": [
     {
      "title": "HubSpot: Connect HubSpot and Slack",
@@ -1494,7 +1548,7 @@
    "ten_seat_monthly_cost_usd": 0,
    "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-05",
+   "date_modified": "2026-11-08",
    "sources": [
     {
      "title": "HubSpot: Connect Stripe as a payment processor",
@@ -1523,7 +1577,7 @@
    "ten_seat_monthly_cost_usd": 690,
    "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-05",
+   "date_modified": "2026-11-08",
    "sources": [
     {
      "title": "Zendesk: Zendesk Support for HubSpot",
@@ -1552,7 +1606,7 @@
    "ten_seat_monthly_cost_usd": 390,
    "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-05",
+   "date_modified": "2026-11-08",
    "sources": [
     {
      "title": "Intercom: HubSpot app",
@@ -1581,8 +1635,13 @@
    "ten_seat_monthly_cost_usd": 390,
    "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-03",
-   "sources": []
+   "date_modified": "2026-11-08",
+   "sources": [
+    {
+     "title": "Intercom help: Stripe app",
+     "url": "https://www.intercom.com/help/en/articles/1829591-stripe-app"
+    }
+   ]
   },
   {
    "pair": "mailchimp-and-airtable",
@@ -1602,7 +1661,7 @@
    "ten_seat_monthly_cost_usd": 263.59,
    "verification": "Integration requirements checked · Nov 3, 2026 (Mailchimp plan unconfirmed) · Prices checked · Nov 3, 2026 (Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks)",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-03",
+   "date_modified": "2026-11-08",
    "sources": [
     {
      "title": "Mailchimp: Syncgrip integration",
@@ -1635,16 +1694,21 @@
    ],
    "connection_type": "native",
    "minimum_plans": {
-    "Mailchimp": "Essentials",
+    "Mailchimp": "Free",
     "Calendly": "Standard"
    },
    "middleware_monthly_usd": 0,
-   "sync_direction": "2-way",
-   "ten_seat_monthly_cost_usd": 133,
-   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026",
-   "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-03",
-   "sources": []
+   "sync_direction": "1-way (Calendly → Mailchimp)",
+   "ten_seat_monthly_cost_usd": 120,
+   "verification": "Integration requirements re-checked against the vendors' own pages · Nov 8, 2026",
+   "last_reviewed": "2026-11-08",
+   "date_modified": "2026-11-08",
+   "sources": [
+    {
+     "title": "Calendly help: Calendly + Mailchimp",
+     "url": "https://calendly.com/help/calendly-mailchimp"
+    }
+   ]
   },
   {
    "pair": "monday-and-quickbooks",
@@ -1664,8 +1728,17 @@
    "ten_seat_monthly_cost_usd": 188.59,
    "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (QuickBooks prices: Nov 4, 2026; Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks)",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-03",
-   "sources": []
+   "date_modified": "2026-11-08",
+   "sources": [
+    {
+     "title": "monday.com developers: API reference",
+     "url": "https://developer.monday.com/api-reference/docs"
+    },
+    {
+     "title": "Intuit developers: QuickBooks Online API",
+     "url": "https://developer.intuit.com/app/developer/qbo/docs/get-started"
+    }
+   ]
   },
   {
    "pair": "monday-and-slack",
@@ -1684,7 +1757,7 @@
    "ten_seat_monthly_cost_usd": 140,
    "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-03",
+   "date_modified": "2026-11-08",
    "sources": [
     {
      "title": "monday.com: Slack integration",
@@ -1717,7 +1790,7 @@
    "ten_seat_monthly_cost_usd": 830,
    "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-03",
+   "date_modified": "2026-11-08",
    "sources": [
     {
      "title": "monday.com: Zendesk integration",
@@ -1743,7 +1816,7 @@
    "ten_seat_monthly_cost_usd": 250.59,
    "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks)",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-03",
+   "date_modified": "2026-11-08",
    "sources": [
     {
      "title": "Notion: Calendly integration",
@@ -1773,8 +1846,17 @@
    "ten_seat_monthly_cost_usd": 130.59,
    "verification": "Integration requirements checked · Nov 3, 2026 (Notion plan unconfirmed) · Prices checked · Nov 3, 2026 (Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks)",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-03",
-   "sources": []
+   "date_modified": "2026-11-08",
+   "sources": [
+    {
+     "title": "Stripe docs: Webhooks",
+     "url": "https://docs.stripe.com/webhooks"
+    },
+    {
+     "title": "Notion API: Create a page",
+     "url": "https://developers.notion.com/reference/post-page"
+    }
+   ]
   },
   {
    "pair": "pipedrive-and-calendly",
@@ -1794,7 +1876,7 @@
    "ten_seat_monthly_cost_usd": 270.59,
    "verification": "Integration requirements checked · Nov 3, 2026 (Pipedrive plan unconfirmed) · Prices checked · Nov 3, 2026 (Pipedrive prices: from an indexed copy of its pricing page; Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks)",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-03",
+   "date_modified": "2026-11-08",
    "sources": [
     {
      "title": "Calendly: Outfunnel integration",
@@ -1827,7 +1909,7 @@
    "ten_seat_monthly_cost_usd": 140,
    "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Pipedrive prices: from an indexed copy of its pricing page)",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-03",
+   "date_modified": "2026-11-08",
    "sources": [
     {
      "title": "Pipedrive: Mailchimp sync",
@@ -1852,7 +1934,7 @@
    "ten_seat_monthly_cost_usd": 178,
    "verification": "Integration requirements checked against official vendor docs · Nov 4, 2026 · Prices checked · Nov 3, 2026 (Pipedrive prices: from an indexed copy of its pricing page; QuickBooks prices: Nov 4, 2026)",
    "last_reviewed": "2026-11-04",
-   "date_modified": "2026-11-04",
+   "date_modified": "2026-11-08",
    "sources": [
     {
      "title": "Pipedrive: QuickBooks integration",
@@ -1882,7 +1964,7 @@
    "ten_seat_monthly_cost_usd": 1400.59,
    "verification": "Integration requirements checked against official vendor docs · Nov 4, 2026 · Prices checked · Nov 3, 2026 (Pipedrive prices: from an indexed copy of its pricing page; Salesforce prices: Oct 17, 2026; Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks)",
    "last_reviewed": "2026-11-04",
-   "date_modified": "2026-11-04",
+   "date_modified": "2026-11-08",
    "sources": [
     {
      "title": "Make: Salesforce app",
@@ -1915,7 +1997,7 @@
    "ten_seat_monthly_cost_usd": 390,
    "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Pipedrive prices: from an indexed copy of its pricing page)",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-03",
+   "date_modified": "2026-11-08",
    "sources": [
     {
      "title": "Pipedrive: Automations Slack notifications",
@@ -1934,18 +2016,28 @@
     "Pipedrive",
     "Xero"
    ],
-   "connection_type": "native",
+   "connection_type": "middleware",
    "minimum_plans": {
     "Pipedrive": "Lite",
     "Xero": "Early"
    },
-   "middleware_monthly_usd": 0,
-   "sync_direction": "2-way",
-   "ten_seat_monthly_cost_usd": 167,
-   "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Pipedrive prices: from an indexed copy of its pricing page)",
-   "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-03",
-   "sources": []
+   "middleware_monthly_usd": 10.59,
+   "sync_direction": "1-way (trigger → action)",
+   "ten_seat_monthly_cost_usd": 177.59,
+   "verification": "Integration requirements re-checked against the vendors' own pages · Nov 8, 2026",
+   "last_reviewed": "2026-11-08",
+   "date_modified": "2026-11-08",
+   "sources": [
+    {
+     "title": "Pipedrive Marketplace: Xero (by Cloudify)",
+     "url": "https://www.pipedrive.com/en/marketplace/app/xero/b217602d14d86f39"
+    },
+    {
+     "title": "Xero developers",
+     "url": "https://developer.xero.com/"
+    }
+   ],
+   "middleware_annual_billing_usd_per_month": 9
   },
   {
    "pair": "quickbooks-and-mailchimp",
@@ -1964,7 +2056,7 @@
    "ten_seat_monthly_cost_usd": 38,
    "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (QuickBooks prices: Nov 4, 2026)",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-03",
+   "date_modified": "2026-11-08",
    "sources": [
     {
      "title": "Mailchimp: QuickBooks Online integration",
@@ -1990,7 +2082,7 @@
    "ten_seat_monthly_cost_usd": 67.99,
    "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (QuickBooks prices: Nov 4, 2026; Zapier Professional fee: Nov 3, 2026)",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-03",
+   "date_modified": "2026-11-08",
    "sources": [
     {
      "title": "Zapier: Get started with QuickBooks Online",
@@ -2015,7 +2107,7 @@
    "ten_seat_monthly_cost_usd": 1270,
    "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Salesforce prices: Oct 17, 2026)",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-03",
+   "date_modified": "2026-11-08",
    "sources": [
     {
      "title": "Mailchimp: Connect Mailchimp for Salesforce",
@@ -2045,7 +2137,7 @@
    "ten_seat_monthly_cost_usd": 1298.59,
    "verification": "Integration requirements checked against official vendor docs · Nov 4, 2026 · Prices checked · Nov 3, 2026 (Salesforce prices: Oct 17, 2026; QuickBooks prices: Nov 4, 2026; Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks)",
    "last_reviewed": "2026-11-04",
-   "date_modified": "2026-11-04",
+   "date_modified": "2026-11-08",
    "sources": [
     {
      "title": "Make: Salesforce app",
@@ -2082,7 +2174,7 @@
    "ten_seat_monthly_cost_usd": 1737.5,
    "verification": "Integration requirements checked · Nov 3, 2026 (Salesforce edition unconfirmed) · Prices checked · Nov 3, 2026 (Salesforce prices: Oct 17, 2026)",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-03",
+   "date_modified": "2026-11-08",
    "sources": [
     {
      "title": "Slack: Salesforce apps for Slack",
@@ -2111,7 +2203,7 @@
    "ten_seat_monthly_cost_usd": 1250,
    "verification": "Integration requirements checked · Nov 3, 2026 (Salesforce edition unconfirmed) · Prices checked · Nov 3, 2026 (Salesforce prices: Oct 17, 2026)",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-03",
+   "date_modified": "2026-11-08",
    "sources": [
     {
      "title": "Stripe: Stripe app for Salesforce Platform",
@@ -2140,7 +2232,7 @@
    "ten_seat_monthly_cost_usd": 1940,
    "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Salesforce prices: Oct 17, 2026)",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-03",
+   "date_modified": "2026-11-08",
    "sources": [
     {
      "title": "Zendesk: Connecting Salesforce to Zendesk",
@@ -2169,12 +2261,17 @@
     "Airtable": "Free"
    },
    "middleware_monthly_usd": 0,
-   "sync_direction": "2-way",
+   "sync_direction": "1-way (Airtable → Slack)",
    "ten_seat_monthly_cost_usd": 0,
    "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-03",
-   "sources": []
+   "date_modified": "2026-11-08",
+   "sources": [
+    {
+     "title": "Airtable support: Base activity notifications in Slack",
+     "url": "https://support.airtable.com/docs/receiving-base-activity-notifications-in-slack"
+    }
+   ]
   },
   {
    "pair": "slack-and-calendly",
@@ -2189,12 +2286,17 @@
     "Calendly": "Free"
    },
    "middleware_monthly_usd": 0,
-   "sync_direction": "2-way",
+   "sync_direction": "1-way (Calendly → Slack)",
    "ten_seat_monthly_cost_usd": 0,
    "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-03",
-   "sources": []
+   "date_modified": "2026-11-08",
+   "sources": [
+    {
+     "title": "Calendly help: Calendly + Slack",
+     "url": "https://calendly.com/help/calendly-slack"
+    }
+   ]
   },
   {
    "pair": "slack-and-intercom",
@@ -2213,7 +2315,7 @@
    "ten_seat_monthly_cost_usd": 390,
    "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-03",
+   "date_modified": "2026-11-08",
    "sources": [
     {
      "title": "Intercom: Connect your Slack channel",
@@ -2242,7 +2344,7 @@
    "ten_seat_monthly_cost_usd": 120,
    "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-03",
+   "date_modified": "2026-11-08",
    "sources": [
     {
      "title": "Notion: Connect Slack to Notion",
@@ -2271,7 +2373,7 @@
    "ten_seat_monthly_cost_usd": 690,
    "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-03",
+   "date_modified": "2026-11-08",
    "sources": [
     {
      "title": "Zendesk: Slack for Zendesk Support",
@@ -2301,7 +2403,7 @@
    "ten_seat_monthly_cost_usd": 15,
    "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-03",
+   "date_modified": "2026-11-08",
    "sources": [
     {
      "title": "Mailchimp: Connect Mailchimp for Stripe",
@@ -2343,7 +2445,7 @@
    "ten_seat_monthly_cost_usd": 48.59,
    "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (QuickBooks prices: Nov 4, 2026; Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks)",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-03",
+   "date_modified": "2026-11-08",
    "sources": [
     {
      "title": "Stripe: Accounting integrations",
@@ -2376,7 +2478,7 @@
    "ten_seat_monthly_cost_usd": 0,
    "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-03",
+   "date_modified": "2026-11-08",
    "sources": [
     {
      "title": "Stripe: Stripe Workflows for Slack",
@@ -2405,7 +2507,7 @@
    "ten_seat_monthly_cost_usd": 27,
    "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-03",
+   "date_modified": "2026-11-08",
    "sources": [
     {
      "title": "Xero: Connect Stripe to Xero",
@@ -2435,7 +2537,7 @@
    "ten_seat_monthly_cost_usd": 52.59,
    "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks)",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-03",
+   "date_modified": "2026-11-08",
    "sources": [
     {
      "title": "ActiveCampaign: Xero integration",
@@ -2469,7 +2571,7 @@
    "ten_seat_monthly_cost_usd": 176.99,
    "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Zapier Professional fee: Nov 3, 2026)",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-03",
+   "date_modified": "2026-11-08",
    "sources": [
     {
      "title": "Zapier: Get started with Xero",
@@ -2503,8 +2605,17 @@
    "ten_seat_monthly_cost_usd": 839.99,
    "verification": "Integration requirements checked · Nov 3, 2026 (Notion plan unconfirmed) · Prices checked · Nov 3, 2026 (Zapier Professional fee: Nov 3, 2026)",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-03",
-   "sources": []
+   "date_modified": "2026-11-08",
+   "sources": [
+    {
+     "title": "Zapier: Notion + Zendesk integrations",
+     "url": "https://zapier.com/apps/notion/integrations/zendesk"
+    },
+    {
+     "title": "Zendesk developers: Webhooks",
+     "url": "https://developer.zendesk.com/documentation/webhooks/"
+    }
+   ]
   },
   {
    "pair": "zendesk-and-stripe",
@@ -2524,8 +2635,17 @@
    "ten_seat_monthly_cost_usd": 700.59,
    "verification": "Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks)",
    "last_reviewed": "2026-11-03",
-   "date_modified": "2026-11-03",
-   "sources": []
+   "date_modified": "2026-11-08",
+   "sources": [
+    {
+     "title": "Stripe docs: Webhooks",
+     "url": "https://docs.stripe.com/webhooks"
+    },
+    {
+     "title": "Zendesk developers: Webhooks",
+     "url": "https://developer.zendesk.com/documentation/webhooks/"
+    }
+   ]
   }
  ]
 }

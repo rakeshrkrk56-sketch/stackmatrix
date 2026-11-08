@@ -6,7 +6,10 @@ from hubs import SHORT
 
 STYLE_ID = "scm-ui"
 STYLE = f"""<style id="{STYLE_ID}">
-.scm-nav{{display:flex;align-items:center;gap:18px;font-size:.875rem;font-weight:500;color:#475569}}
+.scm-nav{{display:flex;align-items:center;gap:12px;font-size:.875rem;font-weight:500;color:#475569}}
+.scm-nav a{{display:inline-block;padding:12px 2px}}
+@media (min-width:640px){{.scm-nav{{gap:18px}}}}
+@media (max-width:479px){{header .justify-between:has(.scm-nav){{flex-wrap:wrap}}.scm-nav{{width:100%;justify-content:space-between}}.scm-nav a{{padding:10px 2px}}}}
 .scm-nav a:hover{{color:#4f46e5}}
 .scm-nav .scm-wide{{display:none}}
 .scm-sep{{display:none}}
@@ -32,7 +35,7 @@ STYLE = f"""<style id="{STYLE_ID}">
 </style>"""
 OLD_NAV = '<nav class="flex items-center gap-4 text-sm font-medium text-slate-600"> <a href="/" class="hover:text-indigo-600">All pairs</a> </nav>'
 NEW_NAV = ('<nav class="scm-nav" aria-label="Main"> <a href="/#tools" class="scm-wide">Integrations by tool</a> <a href="/#tools" class="scm-narrow">Tools</a> '
-           '<a href="/#pairs" class="scm-wide">All pairs</a> <a href="/integration-tax-2026/">Research</a> <a href="/about/" class="scm-wide">About</a> </nav>')
+           '<a href="/#pairs" class="scm-wide">All pairs</a> <a href="/#pairs" class="scm-narrow">Pairs</a> <a href="/integration-tax-2026/">Research</a> <a href="/about/">About</a> </nav>')
 SEP_OLD = '<span class="text-slate-300" aria-hidden="true">|</span>'
 SEP_NEW = '<span class="text-slate-300 scm-sep" aria-hidden="true">|</span>'
 
@@ -77,6 +80,9 @@ def main():
             s2 = re.sub(r'<style id="' + STYLE_ID + r'">.*?</style>', lambda m: STYLE, s, count=1, flags=re.S)
             if s2 != s: s = s2; n["style"] += 1
         if OLD_NAV in s: s = s.replace(OLD_NAV, NEW_NAV, 1); n["nav"] += 1
+        else:   # refresh an older copy of the menu
+            s2 = re.sub(r'<nav class="scm-nav" aria-label="Main">.*?</nav>', lambda m: NEW_NAV, s, count=1, flags=re.S)
+            if s2 != s: s = s2; n["nav"] += 1
         if SEP_OLD in s: n["sep"] += s.count(SEP_OLD); s = s.replace(SEP_OLD, SEP_NEW)
         if s != s0: open(f, "w", encoding="utf-8").write(s)
     # homepage: anchors, finder, readable date

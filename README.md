@@ -28,14 +28,12 @@ Vendors advertise integrations as "free" or "included" — then gate the API acc
 
 ## Methodology
 
-Prices and integration requirements are checked against the vendors' own pricing pages, help centers and integration listings. Each pair page and each record in `data/integration-pairs.json` states what was checked and when, including exceptions (for example, Salesforce and QuickBooks Online prices were last verified on 2026-10-17). Mismatches are flagged for review, never silently rewritten.
+Prices and integration requirements are checked against the vendors' own pricing pages, help centers and integration listings. Each pair page and each record in `data/integration-pairs.json` states what was checked and when, including exceptions (for example, Salesforce prices were last verified on 2026-10-17). Mismatches are flagged for review, never silently rewritten.
 
 ## Data
 
 - `data/integration-pairs.json` — **current data**: 18 tools plus Zapier and Make, 53 pricing plans and all 59 integration pairs, exported from the live site (see `data/README.md`)
-- `database/seed.sql` — older snapshot from before the November 3, 2026 update, kept for history
-- `site/` — Astro 5 + Tailwind 4 static frontend source
-- `agent_scripts/` — seeding, verification, and affiliate-link management scripts
+- `scripts/` — the maintenance toolkit that regenerates and checks the pages (see `scripts/README.md`). The original Astro source, database snapshot and seeding scripts were removed on 2026-11-08 and remain in the git history.
 
 The pricing data (`data/integration-pairs.json` and the published cost figures on stackcostmatrix.com) is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/): you may reuse and adapt it, including commercially, as long as you credit StackCostMatrix and link to https://stackcostmatrix.com.
 

@@ -6,7 +6,7 @@ Usage (run from repo root):
 """
 import re, json, glob, html, sys, os
 sys.path.insert(0, os.path.dirname(__file__))
-from model import compute, render_tco, render_nvm, money
+from model import compute, render_tco, render_nvm, money, cheapest_api, tiers, cost as tier_cost, MAKE_MONTHLY
 from pairdata import PAIRS, COPY
 from pairdata2 import PAIRS2, COPY2
 PAIRS.update(PAIRS2); COPY.update(COPY2)
@@ -81,6 +81,16 @@ from pairdata15 import TOOL_TIERS15, SUMMARY15, HS_CHECKED
 TOOL_TIERS.update(TOOL_TIERS15)
 for _p, _s in SUMMARY15.items():
     PAIRS[_p] = dict(PAIRS[_p], summary=_s)
+from pairdata16 import PAIRS16, COPY16, MW16
+PAIRS.update(PAIRS16)
+# Airtable and Calendly only post notifications into Slack (support.airtable.com, calendly.com/help/calendly-slack)
+PAIRS["slack-and-airtable"] = dict(PAIRS["slack-and-airtable"], sync="1-way (Airtable → Slack)")
+PAIRS["slack-and-calendly"] = dict(PAIRS["slack-and-calendly"], sync="1-way (Calendly → Slack)")
+for _p, _c in COPY16.items():
+    assert not (COPY.get(_p) or {}).get("how"), _p   # round 16 only fills pairs that had no copy
+    COPY[_p] = _c
+MW7.update(MW16)
+FACTS16 = {("activecampaign", "Plus"): ("Yes", "Yes")}   # apidata: API and webhooks on every ActiveCampaign plan
 
 FACTS_EXTRA = {("salesforce", "Enterprise"): ("Yes", "Yes"), ("slack", "Free"): ("Yes", "Yes"),
                ("clickup", "Free"): ("Yes", "No"),    # API on all plans (ClickUp); webhook value copied from Unlimited
@@ -89,6 +99,7 @@ FACTS_EXTRA = {("salesforce", "Enterprise"): ("Yes", "Yes"), ("slack", "Free"): 
                ("mailchimp", "Free"): ("Yes", "No")}  # webhook value copied from Essentials
 SHORT = {"Salesforce Sales Cloud": "Salesforce", "QuickBooks Online": "QuickBooks"}
 TODAY = "2026-11-03"
+ROUND_DATE = "2026-11-08"  # last full re-render of every pair page (trap text, FAQ, descriptions)
 
 def esc(s):  # matches the site's escaping of summaries/FAQ text
     return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace("'", "&#39;")
@@ -107,7 +118,7 @@ def tco_b(v): return v["native"] and v["MP"] < v["N"]  # was: and UP >= 100 (con
 def nvm_b(v): return v["MP"] < v["N"]
 
 def build_facts():
-    facts = dict(FACTS_EXTRA)
+    facts = dict(FACTS_EXTRA); facts.update(FACTS16)
     for f in glob.glob("stack/*/index.html"):
         s = read(f); d = calc_data(s)
         for row, idx in (("API access at required tier", 0), ("Webhook support at required tier", 1)):
@@ -122,19 +133,57 @@ def build_facts():
     if ("xero", "Growing") in facts: facts.setdefault(("xero", "Established"), facts[("xero", "Growing")])
     return facts
 
-def meta_desc(v):
+CONNECTOR = {10.59: "Make Core", 29.99: "Zapier Professional", 15: "Data Mapper for Mailchimp"}
+def m0(x): return money(x).replace(".00", "")
+
+def upgrades(d):
+    """[(tool name, required tier, cheapest API tier, extra $/mo)] for each tool forced above its cheapest API plan."""
+    out = []
+    for t in d["tools"]:
+        req = next(u for u in tiers(t) if u["tier_name"] == t["required"]); ch = cheapest_api(t)
+        if ch and tier_cost(req, t["slug"]) > tier_cost(ch, t["slug"]) + 0.004:
+            out.append((t["name"], t["required"], ch["tier_name"], tier_cost(req, t["slug"]) - tier_cost(ch, t["slug"])))
+    return out
+
+def trap_label(v):
+    return "Hidden Cost Trap" if (not v["native"] or v["UP"] > 0.004) else "Plan requirements"
+
+def trap_text(v, d):
+    """The trap box's own sentence: the specific extra cost, instead of repeating the lede."""
+    A, B = v["na"], v["nb"]
+    ups = upgrades(d)
+    upt = "; ".join(f"{n} needs '{req}', {m0(x)}/mo more than '{ch}', its cheapest plan with API access" for n, req, ch, x in ups)
+    if not v["native"]:
+        conn = CONNECTOR.get(v["mw"], "a connector")
+        out = f"The hidden cost here is the connector: there's no native {A} + {B} app, so you pay for {conn} ({m0(v['mw'])}/mo) on top of both tools."
+        if ups: out += f" On top of that, {upt}."
+    elif ups:
+        out = f"The hidden cost is a forced plan upgrade: {upt}. That adds {m0(v['UP'])}/mo for 10 seats just to connect the two tools."
+        if v["MP"] < v["N"]: out += f" Running the same connection through Make on the cheapest API plans would cost about {m0(v['MP'])}/mo in total instead of {m0(v['N'])}/mo, but you'd give up the native connector."
+    else:
+        out = f"No hidden cost: the native connector works on {A} '{v['ta']}' and {B} '{v['tb']}', so connecting them adds nothing to what you already pay for the two tools."
+    if any(t["slug"] == "stripe" for t in d["tools"]):
+        out += " Stripe has no monthly plan fee; it charges per transaction, so it counts as $0/month here."
+    return out
+
+def meta_desc(v, d=None):
     A, B, ta, tb = v["na"], v["nb"], v["ta"], v["tb"]
     cost = money(v["N"]).replace(".00", "")
     mw = money(v["mw"]).replace(".00", "")
+    up = m0(v["UP"])
     for nA, nB in ((A, B), (SHORT.get(A, A), SHORT.get(B, B))):
         if not v["native"]:
-            opts = [f"{nA} + {nB} runs via middleware (+{mw}/mo) on {nA} {ta} and {nB} {tb}: {cost}/mo for 10 seats. See hidden fees and use the free calculator.",
-                    f"{nA} + {nB} runs via middleware (+{mw}/mo) on {nA} {ta} and {nB} {tb}: {cost}/mo for 10 seats. Free cost calculator."]
+            fact = f"no native app, so the {CONNECTOR.get(v['mw'], 'connector')} fee is the extra cost."
+            opts = [f"{nA} + {nB} runs via middleware (+{mw}/mo) on {nA} {ta} and {nB} {tb}: {cost}/mo for 10 seats; {fact}",
+                    f"{nA} + {nB} runs via middleware (+{mw}/mo) on {nA} {ta} and {nB} {tb}: {cost}/mo for 10 seats."]
+        elif v["UP"] > 0.004:
+            opts = [f"{nA} + {nB} needs {nA} {ta} and {nB} {tb} for the native integration: {cost}/mo for 10 seats, including a +{up}/mo forced upgrade.",
+                    f"{nA} + {nB} needs {nA} {ta} and {nB} {tb}: {cost}/mo for 10 seats, including a +{up}/mo forced upgrade."]
         else:
-            opts = [f"{nA} + {nB} needs {nA} {ta} and {nB} {tb} for the native integration: {cost}/mo for 10 seats. See hidden API gates and use the free calculator.",
-                    f"{nA} + {nB} needs {nA} {ta} and {nB} {tb} for the native integration: {cost}/mo for 10 seats. Free cost calculator."]
-        d = next((o for o in opts if len(o) <= 155), None)
-        if d: return d
+            opts = [f"{nA} + {nB} needs {nA} {ta} and {nB} {tb} for the native integration: {cost}/mo for 10 seats, with no extra cost to connect them.",
+                    f"{nA} + {nB} needs {nA} {ta} and {nB} {tb}: {cost}/mo for 10 seats, with no extra cost to connect them."]
+        out = next((o for o in opts if len(o) <= 155), None)
+        if out: return out
     raise ValueError("no description fits")
 
 def meta_desc_top(v):
@@ -147,15 +196,21 @@ def meta_desc_top(v):
             if len(o) <= 155: return o
     raise ValueError("no top description fits")
 
-def faq_answers(v):
+def faq_answers(v, d):
     A, B, ta, tb = v["na"], v["nb"], v["ta"], v["tb"]
+    ups = upgrades(d)
+    why = (" " + " ".join(f"{n}'s cheapest plan with API access is '{ch}', so '{req}' is a {m0(x)}/mo upgrade at 10 seats." for n, req, ch, x in ups)) if ups else " Neither plan is an upgrade over the cheapest plan with API access."
+    q3 = f"Is the {A} + {B} integration native, and would Make or Zapier be cheaper?" if v["native"] else f"Why does {A} + {B} need middleware, and what does it cost?"
     if v["native"]:
-        return (f"To unlock the native integration, {A} must be on the '{ta}' plan or higher and {B} must be on the '{tb}' plan or higher.",
+        alt = (f" Connecting through Make on the cheapest API plans would cost about {money(v['MP'])}/month in total instead of {money(v['N'])}, but you'd replace the native connector with a third-party automation."
+               if v["MP"] < v["N"] else f" Make would cost about {money(v['MP'])}/month on the cheapest API plans, more than the native route, so it only makes sense if you already use it.")
+        return (f"To unlock the native integration, {A} must be on the '{ta}' plan or higher and {B} must be on the '{tb}' plan or higher." + why,
                 f"At 10 seats with the required tiers ({A} '{ta}' + {B} '{tb}'), the stack costs {money(v['N'])} per month.",
-                f"The {A} + {B} connection is native — no third-party middleware subscription is required.")
-    return (f"To unlock the integration, {A} must be on the '{ta}' plan or higher and {B} must be on the '{tb}' plan or higher.",
+                f"The {A} + {B} connection is native — no third-party middleware subscription is required." + alt, q3)
+    conn = CONNECTOR.get(v["mw"], "a connector")
+    return (f"To unlock the integration, {A} must be on the '{ta}' plan or higher and {B} must be on the '{tb}' plan or higher." + why,
             f"At 10 seats with the required tiers ({A} '{ta}' + {B} '{tb}' + {money(v['mw'])}/month middleware), the stack costs {money(v['N'])} per month.",
-            f"The {A} + {B} connection runs through middleware. Budget an extra {money(v['mw'])} per month on top of both tools.")
+            f"The {A} + {B} connection runs through middleware: neither vendor offers a native app for this pair, so this page models {conn} at {money(v['mw'])} per month on top of both tools. Sync is one-way (a trigger in one tool runs an action in the other).", q3)
 
 def trap_tail(v, pair, cta=True):
     end = "  </section>  "
@@ -195,7 +250,8 @@ def render_page(s, pair, d, summary, sync, facts, date_modified=None, copy=None,
     for name, tier in ((A, ta), (B, tb)):
         s = sub1(r'(<dt class="text-sm text-amber-800">' + re.escape(name) + r' minimum tier</dt> <dd class="text-lg font-bold text-amber-950">).*?(</dd>)', lambda m, tier=tier: m.group(1) + f"'{tier}'" + m.group(2), s, what="dd " + name)
     s = sub1(r'(<dt class="text-sm text-amber-800">Middleware fee</dt> <dd class="text-lg font-bold text-amber-950">).*?(</dd>)', lambda m: m.group(1) + (" None " if v["native"] else f" {money(v['mw'])}/mo ") + m.group(2), s, what="fee")
-    s = sub1(r'(<p class="mt-4 text-sm leading-relaxed text-amber-900">).*?(<section class="mt-10" aria-label="Specification matrix">)', lambda m: m.group(1) + esc(summary) + trap_tail(v, pair, cta) + m.group(2), s, what="trap tail")
+    s = sub1(r'(aria-label="Hidden Cost Trap"> <h2 class="flex items-center gap-2 text-xl font-bold text-amber-900"> <span[^>]*>!</span>\n)[^<\n]*(\n</h2>)', lambda m: m.group(1) + trap_label(v) + m.group(2), s, what="trap label")
+    s = sub1(r'(<p class="mt-4 text-sm leading-relaxed text-amber-900">).*?(<section class="mt-10" aria-label="Specification matrix">)', lambda m: m.group(1) + esc(trap_text(v, d)) + trap_tail(v, pair, cta) + m.group(2), s, what="trap tail")
     # spec matrix
     badge = ('<span class="inline-block rounded-full px-2.5 py-0.5 text-xs font-medium ring-1 bg-emerald-100 text-emerald-800 ring-emerald-200"> Native </span>' if v["native"]
              else '<span class="inline-block rounded-full px-2.5 py-0.5 text-xs font-medium ring-1 bg-sky-100 text-sky-800 ring-sky-200"> Middleware </span>')
@@ -213,22 +269,23 @@ def render_page(s, pair, d, summary, sync, facts, date_modified=None, copy=None,
             return "".join(out)
         s = sub1(r'(' + row + r'</td> <td class="px-4 py-3">)(.*?)(</td> <td class="px-4 py-3">)(.*?)(</td> </tr>)', cellfix, s, what=row)
     # FAQ (visible + JSON-LD)
-    q1, q2, q3 = faq_answers(v)
-    blocks = re.findall(r'(<div> <h3 class="font-semibold text-slate-900">[^<]*</h3> <p class="mt-1 leading-relaxed text-slate-700">)(.*?)(</p> </div>)', s, re.S)
+    q1, q2, q3, q3q = faq_answers(v, d)
+    blocks = re.findall(r'(<div> <h3 class="font-semibold text-slate-900">)([^<]*)(</h3> <p class="mt-1 leading-relaxed text-slate-700">)(.*?)(</p> </div>)', s, re.S)
     assert len(blocks) == 4, pair
-    for (pre, old, post), new in zip(blocks[:3], (q1, q2, q3)):
-        s = s.replace(pre + old + post, pre + esc(new) + post, 1)
+    for i, ((h, q, mid, old, post), new) in enumerate(zip(blocks[:3], (q1, q2, q3))):
+        s = s.replace(h + q + mid + old + post, h + (esc(q3q) if i == 2 else q) + mid + esc(new) + post, 1)
     def faqfix(m):
         o = json.loads(m.group(1))
         if o.get("@type") == "FAQPage":
             for q, new in zip(o["mainEntity"][:3], (q1, q2, q3)): q["acceptedAnswer"]["text"] = new
+            o["mainEntity"][2]["name"] = q3q
         if o.get("@type") == "WebPage":
-            o["description"] = meta_desc_top(v) if (copy or {}).get("top") else meta_desc(v)
+            o["description"] = meta_desc_top(v) if (copy or {}).get("top") else meta_desc(v, d)
             if date_modified: o["dateModified"] = date_modified
         return '<script type="application/ld+json">' + json.dumps(o, ensure_ascii=False, separators=(",", ":")) + "</script>"
     s = re.sub(r'<script type="application/ld\+json">(.*?)</script>', faqfix, s, flags=re.S)
     # meta + og descriptions
-    md = html.escape(meta_desc_top(v) if (copy or {}).get("top") else meta_desc(v), quote=True)
+    md = html.escape(meta_desc_top(v) if (copy or {}).get("top") else meta_desc(v, d), quote=True)
     s = sub1(r'(<meta name="description" content=")[^"]*(")', lambda m: m.group(1) + md + m.group(2), s, what="meta")
     s = sub1(r'(<meta property="og:description" content=")[^"]*(")', lambda m: m.group(1) + md + m.group(2), s, what="og")
     # pair-specific copy section (inserted after the native-vs-middleware section)
@@ -326,7 +383,8 @@ def main(mode):
                 for _a, _b in SUMMARY7_GENERIC:
                     fix["summary"] = fix["summary"].replace(_a, _b)
             if p in REQ7: fix["req"] = dict(fix["req"], **REQ7[p])
-        if not fix and not cp: continue
+        if not fix and not cp:   # round 16 (2026-11-08) re-renders every pair: new trap text, FAQ and descriptions
+            fix = dict(native=d["middleware"] == 0, req={}, sync=sync, summary=summ)
         if fix:
             for t in d["tools"]:
                 if t["slug"] in TOOL_TIERS:
@@ -344,7 +402,7 @@ def main(mode):
             else: d["middleware"], d["middlewareLabel"] = (fix.get("mw") or d["middleware"] or 9), "Middleware"
             if p in MW7: d["middleware"], d["middlewareAnnual"] = MW7[p]
             summ, sync = fix["summary"], fix["sync"]
-        s2, v = render_page(s, p, d, summ, sync, facts, date_modified=HS_CHECKED if "hubspot" in p else (fix or {}).get("date", TODAY), copy=cp, cta=(fix or {}).get('cta', True))
+        s2, v = render_page(s, p, d, summ, sync, facts, date_modified=ROUND_DATE, copy=cp, cta=(fix or {}).get('cta', True))
         out[f] = s2
         if fix:
             home2 = render_home_card(home2, p, v, summ, limit)
