@@ -54,10 +54,12 @@ Integration routes compared for a 10-seat team
 | Make Core (modeled here) | Pipedrive 'Lite' + Calendly 'Standard' | $270.59 | 1-way per automation |
 | Zapier Professional instead | Pipedrive 'Lite' + Calendly 'Standard' | $289.99 | 1-way per automation |
 
+Make Core's $10.59 monthly price comes from third-party pricing reviews, because make.com blocks automated checks; Zapier's is from zapier.com/pricing.
+
 ## ✓ Verified Vendor Facts
 
-- **Plan prices:** per-seat costs verified on official vendor pricing pages.
-- **Required tiers:** 'Lite' / 'Standard' — the minimum plans that unlock the native integration.
+- **Plan prices:** from each vendor's pricing page; any exception is flagged next to the date at the top.
+- **Required tiers:** 'Lite' / 'Standard' — the minimum plans this integration needs.
 - **API & webhook gates:** audited in official developer docs (see spec matrix).
 - **Native app availability:** No native app — connected via middleware.
 

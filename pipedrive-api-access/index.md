@@ -15,6 +15,8 @@ Checked against Pipedrive's developer and help-center documentation · Nov 3, 20
 
 **Short answer:** Pipedrive's API and regular webhooks are available on every plan, including Lite; webhooks inside automations need Growth or higher. Rate limits rise with each plan.
 
+Pipedrive API & Webhook Access by Plan (2026)
+
 | Plan | Price | API access | API limit | Webhooks | Webhook automation action |
 | --- | --- | --- | --- | --- | --- |
 | Lite | $14/seat/mo | Yes | 20 req/2 s · daily budget ×1 | Yes | No (Growth and up) |

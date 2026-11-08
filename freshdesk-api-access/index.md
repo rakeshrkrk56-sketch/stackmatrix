@@ -15,6 +15,8 @@ Checked against Freshdesk's developer and help-center documentation · Nov 3, 20
 
 **Short answer:** Freshdesk's API isn't available on the Free plan; it starts on Growth, which is also the first plan with the "Trigger Webhook" automation action.
 
+Freshdesk API & Webhook Access by Plan (2026)
+
 | Plan | Price | API access | API limit | Webhooks | Webhook automation action |
 | --- | --- | --- | --- | --- | --- |
 | Growth | $23/seat/mo ($19 billed annually) | Yes | Not published per plan | Yes Webhooks run from automation rules | Trigger Webhook action |

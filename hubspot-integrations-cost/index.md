@@ -17,6 +17,8 @@ subscription. This matrix compares the
 integrations, including minimum tier requirements and middleware
 alternatives. Integration requirements and prices re-checked 2026-11-03, except Salesforce and Pipedrive prices. HubSpot prices re-checked 2026-11-05. Only two of them need HubSpot Professional: see [which integrations need HubSpot Professional, and the cheapest way to get it](https://stackcostmatrix.com/hubspot-professional-integrations/).
 
+Complete 2026 HubSpot Integration Cost & API Tier Matrix
+
 | Integration | Type | Min. HubSpot tier | Guide |
 | --- | --- | --- | --- |
 | HubSpot + Slack | Native | Free | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-slack/) |

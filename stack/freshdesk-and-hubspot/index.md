@@ -45,10 +45,12 @@ Integration routes compared for a 10-seat team
 | Native Freshdesk + HubSpot connector | Freshdesk 'Growth' + HubSpot 'Free' | $230.00 | As listed in the spec matrix |
 | Make Core on the cheapest API plans | Freshdesk 'Growth' + HubSpot 'Free' + Make | $240.59 | 1-way per scenario |
 
+Make Core's $10.59 monthly price comes from third-party pricing reviews, because make.com blocks automated checks; Zapier's is from zapier.com/pricing.
+
 ## ✓ Verified Vendor Facts
 
-- **Plan prices:** per-seat costs verified on official vendor pricing pages.
-- **Required tiers:** 'Growth' / 'Free' — the minimum plans that unlock the native integration.
+- **Plan prices:** from each vendor's pricing page; any exception is flagged next to the date at the top.
+- **Required tiers:** 'Growth' / 'Free' — the minimum plans this integration needs.
 - **API & webhook gates:** audited in official developer docs (see spec matrix).
 - **Native app availability:** Native app available in vendor marketplace.
 

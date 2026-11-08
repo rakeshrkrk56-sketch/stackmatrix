@@ -15,6 +15,8 @@ Checked against Intercom's developer and help-center documentation · Nov 3, 202
 
 **Short answer:** Intercom's webhooks and API apps work from any paid workspace (or a free development workspace), so Essential is enough.
 
+Intercom API & Webhook Access by Plan (2026)
+
 | Plan | Price | API access | API limit | Webhooks | Webhook automation action |
 | --- | --- | --- | --- | --- | --- |
 | Essential | $39/seat/mo ($29 billed annually) | Yes Paid workspaces | Not published per plan | Yes | — |

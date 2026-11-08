@@ -15,6 +15,8 @@ Built from the 7 pair calculators below · integration requirements checked Nov 
 
 This page collects the 7 Calendly integrations in the StackCostMatrix index: which Calendly plan each one needs, whether it's native or runs through middleware, and what the whole stack costs for a 10-person team. 4 of the 7 connect natively and 3 need a connector such as Make or Zapier. By minimum Calendly plan, the count is Standard (6) and Free (1). Ten-seat totals run from $0.00/mo (Slack + Calendly) to $270.59/mo (Pipedrive + Calendly).
 
+Calendly Integration Costs (2026): Minimum Plans, API Access & Hidden Fees
+
 | Integration | Type | Min. Calendly plan | Other tool's plan | 10-seat total | Checked | Details |
 | --- | --- | --- | --- | --- | --- | --- |
 | Slack + Calendly | Native | Free | Free | $0.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/slack-and-calendly/) |

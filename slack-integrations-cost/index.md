@@ -15,6 +15,8 @@ Built from the 14 pair calculators below · integration requirements checked Nov
 
 This page collects the 14 Slack integrations in the StackCostMatrix index: which Slack plan each one needs, whether it's native or runs through middleware, and what the whole stack costs for a 10-person team. 13 of the 14 connect natively and 1 needs a connector such as Make or Zapier. By minimum Slack plan, the count is Free (13) and Pro (1). Ten-seat totals run from $0.00/mo (Slack + Airtable) to $1,737.50/mo (Salesforce + Slack).
 
+Slack Integration Costs (2026): Minimum Plans, API Access & Hidden Fees
+
 | Integration | Type | Min. Slack plan | Other tool's plan | 10-seat total | Checked | Details |
 | --- | --- | --- | --- | --- | --- | --- |
 | Slack + Airtable | Native | Free | Free | $0.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/slack-and-airtable/) |

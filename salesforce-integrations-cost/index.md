@@ -17,6 +17,8 @@ hidden cost in Salesforce integrations, and it applies to most connections
 below. This matrix shows the true cost of 7 Salesforce
 integrations. Integration requirements re-checked 2026-11-03; Salesforce prices last verified 2026-10-17.
 
+Complete 2026 Salesforce Integration Cost & API Tier Matrix
+
 | Integration | Type | API add-on needed? | Guide |
 | --- | --- | --- | --- |
 | Salesforce + Slack | Native | No — needs Enterprise (API included) | [True-cost calculator →](https://stackcostmatrix.com/stack/salesforce-and-slack/) |

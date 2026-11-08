@@ -15,6 +15,8 @@ Built from the 4 pair calculators below · integration requirements checked Nov 
 
 This page collects the 4 Monday.com integrations in the StackCostMatrix index: which Monday.com plan each one needs, whether it's native or runs through middleware, and what the whole stack costs for a 10-person team. 3 of the 4 connect natively and 1 needs a connector such as Make or Zapier. By minimum Monday.com plan, the count is Standard (4). Ten-seat totals run from $140.00/mo (HubSpot + Monday.com) to $830.00/mo (Monday.com + Zendesk).
 
+Monday.com Integration Costs (2026): Minimum Plans, API Access & Hidden Fees
+
 | Integration | Type | Min. Monday.com plan | Other tool's plan | 10-seat total | Checked | Details |
 | --- | --- | --- | --- | --- | --- | --- |
 | HubSpot + Monday.com | Native | Standard | Free | $140.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/hubspot-and-monday/) |

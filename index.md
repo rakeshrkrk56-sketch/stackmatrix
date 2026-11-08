@@ -24,7 +24,7 @@ tools tracked
 
 integration pairs
 
-Nov 3, 2026
+Nov 3–5, 2026
 
 prices re-checked for 17 of 20 tools
 
@@ -461,7 +461,7 @@ connected workflow.
 
 ## Verified pricing & API documentation sources
 
-Every cost figure on this index traces to official vendor documentation. Pricing pages for 17 of 20 tools were re-checked on **Nov 3, 2026**; the rest were last audited in October 2026. Spot-check any number against
+Every cost figure on this index links to its source. Pricing pages for 17 of 20 tools were re-checked on **Nov 3–5, 2026**; Salesforce was last checked in October 2026, and Pipedrive and Make prices come from an indexed copy and third-party reviews because their pricing pages block automated checks. Spot-check any number against
 the source — that's the point.
 
 [HubSpot — official pricing ↗](https://www.hubspot.com/pricing) [HubSpot — API docs ↗](https://developers.hubspot.com/docs/api/overview) [Salesforce — official pricing ↗](https://www.salesforce.com/sales/pricing/) [Salesforce — developer docs ↗](https://developer.salesforce.com/) [Slack — official pricing ↗](https://slack.com/pricing) [Slack — API docs ↗](https://api.slack.com/) [Stripe — official pricing ↗](https://stripe.com/pricing) [Stripe — API docs ↗](https://docs.stripe.com/api) [Pipedrive — official pricing ↗](https://www.pipedrive.com/pricing) [Pipedrive — API docs ↗](https://developers.pipedrive.com/docs/api/v1) [Zapier — official pricing ↗](https://zapier.com/pricing) [Make — official pricing ↗](https://www.make.com/en/pricing)

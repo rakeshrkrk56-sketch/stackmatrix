@@ -15,6 +15,8 @@ Built from the 12 pair calculators below · integration requirements checked Nov
 
 This page collects the 12 Stripe integrations in the StackCostMatrix index: which Stripe plan each one needs, whether it's native or runs through middleware, and what the whole stack costs for a 10-person team. 6 of the 12 connect natively and 6 need a connector such as Make or Zapier. By minimum Stripe plan, the count is Standard (12). Ten-seat totals run from $0.00/mo (HubSpot + Stripe) to $1,250.00/mo (Salesforce + Stripe).
 
+Stripe Integration Costs (2026): Minimum Plans, API Access & Hidden Fees
+
 | Integration | Type | Min. Stripe plan | Other tool's plan | 10-seat total | Checked | Details |
 | --- | --- | --- | --- | --- | --- | --- |
 | HubSpot + Stripe | Native | Standard | Free | $0.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/hubspot-and-stripe/) |

@@ -15,6 +15,8 @@ Checked against Calendly's developer and help-center documentation · Nov 3, 202
 
 **Short answer:** Calendly's API works on any plan, but webhooks need a paid plan: Standard or higher.
 
+Calendly API & Webhook Access by Plan (2026)
+
 | Plan | Price | API access | API limit | Webhooks | Webhook automation action |
 | --- | --- | --- | --- | --- | --- |
 | Free | Free | Yes | Not published per plan | No Webhooks need a paid plan | — |

@@ -15,6 +15,8 @@ Checked against Xero's developer and help-center documentation · Nov 3, 2026 ·
 
 **Short answer:** Every Xero subscription can connect apps through the API; since March 2026 the limits depend on the connecting app's developer tier, not your Xero plan.
 
+Xero API & Webhook Access by Plan (2026)
+
 | Plan | Price | API access | API limit | Webhooks | Webhook automation action |
 | --- | --- | --- | --- | --- | --- |
 | Early | $27/mo | Yes Limits set by the app's developer tier | Not published per plan | Yes No plan requirement in Xero's webhook docs | — |

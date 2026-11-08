@@ -15,6 +15,8 @@ Checked against Notion's developer and help-center documentation · Nov 3, 2026 
 
 **Short answer:** Notion's API and connection webhooks work on every plan, including Free; the no-code "Send webhook" action in automations needs a paid plan.
 
+Notion API & Webhook Access by Plan (2026)
+
 | Plan | Price | API access | API limit | Webhooks | Webhook automation action |
 | --- | --- | --- | --- | --- | --- |
 | Plus | $12/seat/mo ($10 billed annually) | Yes | Not published per plan | Yes | Yes (paid plans) |

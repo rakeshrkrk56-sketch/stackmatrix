@@ -15,6 +15,8 @@ Built from the 9 pair calculators below · integration requirements checked Nov 
 
 This page collects the 9 QuickBooks Online integrations in the StackCostMatrix index: which QuickBooks plan each one needs, whether it's native or runs through middleware, and what the whole stack costs for a 10-person team. 3 of the 9 connect natively and 6 need a connector such as Make or Zapier. By minimum QuickBooks plan, the count is Simple Start (9). Ten-seat totals run from $38.00/mo (HubSpot + QuickBooks) to $1,298.59/mo (Salesforce + QuickBooks).
 
+QuickBooks Integration Costs (2026): Minimum Plans, API Access & Hidden Fees
+
 | Integration | Type | Min. QuickBooks plan | Other tool's plan | 10-seat total | Checked | Details |
 | --- | --- | --- | --- | --- | --- | --- |
 | HubSpot + QuickBooks | Native | Simple Start | Free | $38.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/hubspot-and-quickbooks/) |

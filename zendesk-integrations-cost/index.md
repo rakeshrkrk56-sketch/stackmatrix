@@ -15,6 +15,8 @@ Built from the 7 pair calculators below · integration requirements checked Nov 
 
 This page collects the 7 Zendesk integrations in the StackCostMatrix index: which Zendesk plan each one needs, whether it's native or runs through middleware, and what the whole stack costs for a 10-person team. 5 of the 7 connect natively and 2 need a connector such as Make or Zapier. By minimum Zendesk plan, the count is Suite Team (7). Ten-seat totals run from $690.00/mo (ClickUp + Zendesk) to $1,940.00/mo (Salesforce + Zendesk).
 
+Zendesk Integration Costs (2026): Minimum Plans, API Access & Hidden Fees
+
 | Integration | Type | Min. Zendesk plan | Other tool's plan | 10-seat total | Checked | Details |
 | --- | --- | --- | --- | --- | --- | --- |
 | ClickUp + Zendesk | Native | Suite Team | Free | $690.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/clickup-and-zendesk/) |

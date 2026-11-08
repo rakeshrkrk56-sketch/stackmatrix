@@ -15,6 +15,8 @@ Built from the 4 pair calculators below · integration requirements checked Nov 
 
 This page collects the 4 Asana integrations in the StackCostMatrix index: which Asana plan each one needs, whether it's native or runs through middleware, and what the whole stack costs for a 10-person team. 2 of the 4 connect natively and 2 need a connector such as Make or Zapier. By minimum Asana plan, the count is Starter (4). Ten-seat totals run from $134.90/mo (Asana + Slack) to $634.90/mo (HubSpot + Asana).
 
+Asana Integration Costs (2026): Minimum Plans, API Access & Hidden Fees
+
 | Integration | Type | Min. Asana plan | Other tool's plan | 10-seat total | Checked | Details |
 | --- | --- | --- | --- | --- | --- | --- |
 | Asana + Slack | Native | Starter | Free | $134.90 | Nov 3, 2026 (Asana plan unconfirmed) | [Calculator →](https://stackcostmatrix.com/stack/asana-and-slack/) |

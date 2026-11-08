@@ -15,6 +15,8 @@ Built from the 4 pair calculators below · integration requirements checked Nov 
 
 This page collects the 4 ClickUp integrations in the StackCostMatrix index: which ClickUp plan each one needs, whether it's native or runs through middleware, and what the whole stack costs for a 10-person team. 3 of the 4 connect natively and 1 needs a connector such as Make or Zapier. By minimum ClickUp plan, the count is Free (3) and Core (1). Ten-seat totals run from $0.00/mo (ClickUp + Slack) to $690.00/mo (ClickUp + Zendesk).
 
+ClickUp Integration Costs (2026): Minimum Plans, API Access & Hidden Fees
+
 | Integration | Type | Min. ClickUp plan | Other tool's plan | 10-seat total | Checked | Details |
 | --- | --- | --- | --- | --- | --- | --- |
 | ClickUp + Slack | Native | Free | Free | $0.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/clickup-and-slack/) |
