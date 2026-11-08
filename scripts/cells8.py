@@ -15,7 +15,7 @@ def pick(srcs, keys):
 def cell(old, yn, note, src):
     tier = re.search(r"<span class=\"text-slate-500\"> \('([^']*)'\)</span>", old).group(1)
     n = f' <span class="block text-xs text-slate-500">{html.escape(note)}</span>' if note else ""
-    return (f" {yn} <span class=\"text-slate-500\"> ('{tier}')</span>{n}  <span class=\"block text-xs text-slate-400\">Source: "
+    return (f" {yn} <span class=\"text-slate-500\"> ('{tier}')</span>{n}  <span class=\"block text-xs text-slate-500\">Source: "
             f"<a href=\"{html.escape(src[1], quote=True)}\" rel=\"noopener\" class=\"underline hover:text-indigo-600\">{html.escape(src[0])} ↗</a> · {LAB}</span> ")
 
 changed = {"cells": 0, "pages": 0}

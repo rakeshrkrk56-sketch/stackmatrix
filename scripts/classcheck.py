@@ -1,6 +1,6 @@
 import re,sys
 def css_classes(s):
-    css="".join(re.findall(r"<style>(.*?)</style>",s,re.S))
+    css="".join(re.findall(r"<style[^>]*>(.*?)</style>",s,re.S))
     return css
 def check(f):
     s=open(f,encoding="utf-8").read(); css=css_classes(s)
