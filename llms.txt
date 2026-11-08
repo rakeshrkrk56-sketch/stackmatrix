@@ -1,30 +1,119 @@
 # StackCostMatrix
 
-> Independent index of what B2B software integrations really cost: the plan each integration needs on both tools, any connector fee (Make, Zapier), and API and webhook access by plan, for 59 integration pairs across 20 tools. Every figure links to the vendor's own pricing page or documentation, with the date it was checked. Edited by Rakesh. Data is free to reuse under CC BY 4.0.
+> Independent index of what B2B software integrations really cost: the plan each integration needs on both tools, any connector fee (Make, Zapier), and API and webhook access by plan, for 59 integration pairs across 20 tools. Every figure links to the vendor's own pricing page or documentation, with the date it was checked. Edited by Rakesh Kumar. Data is free to reuse under CC BY 4.0.
 
-Costs are for a 10-person team at monthly-billing list prices unless a page says otherwise. Exceptions (prices that come from somewhere other than the vendor's page, or annual-only rates) are flagged on each page and on the About page.
+Costs are for a 10-person team at monthly-billing list prices unless a page says otherwise. Exceptions (prices that come from somewhere other than the vendor's page, or annual-only rates) are flagged on each page and on the About page. Every page also has a Markdown copy at <page>/index.md.
 
 ## Research and data
 
 - [The Integration Tax 2026](https://stackcostmatrix.com/integration-tax-2026/): original research on the extra monthly cost of connecting 55 popular SaaS integrations, with method, figures and a suggested citation
 - [Open dataset (JSON)](https://stackcostmatrix.com/data/integration-pairs.json): every pair, plan price, minimum plan, connector fee and source, CC BY 4.0
 - [Which integrations need HubSpot Professional](https://stackcostmatrix.com/hubspot-professional-integrations/): the plan each HubSpot integration needs and the cheapest way to get Professional
+- [Full text for LLMs](https://stackcostmatrix.com/llms-full.txt): every pair in one table plus the key pages
 
 ## Integration costs by tool
 
-- [HubSpot](https://stackcostmatrix.com/hubspot-integrations-cost/)
-- [Salesforce](https://stackcostmatrix.com/salesforce-integrations-cost/)
-- [Slack](https://stackcostmatrix.com/slack-integrations-cost/)
-- [Stripe](https://stackcostmatrix.com/stripe-integrations-cost/)
-- [QuickBooks Online](https://stackcostmatrix.com/quickbooks-integrations-cost/)
-- [Pipedrive](https://stackcostmatrix.com/pipedrive-integrations-cost/)
+- [ActiveCampaign Integration Costs (2026): Plans & Hidden Fees](https://stackcostmatrix.com/activecampaign-integrations-cost/)
+- [Airtable Integration Costs (2026): Plans & Hidden Fees](https://stackcostmatrix.com/airtable-integrations-cost/)
+- [Asana Integration Costs (2026): Plans & Hidden Fees](https://stackcostmatrix.com/asana-integrations-cost/)
+- [Calendly Integration Costs (2026): Plans & Hidden Fees](https://stackcostmatrix.com/calendly-integrations-cost/)
+- [ClickUp Integration Costs (2026): Plans & Hidden Fees](https://stackcostmatrix.com/clickup-integrations-cost/)
+- [HubSpot Integration Costs (2026): API Tiers & Hidden Fees](https://stackcostmatrix.com/hubspot-integrations-cost/)
+- [Intercom Integration Costs (2026): Plans & Hidden Fees](https://stackcostmatrix.com/intercom-integrations-cost/)
+- [Mailchimp Integration Costs (2026): Plans & Hidden Fees](https://stackcostmatrix.com/mailchimp-integrations-cost/)
+- [Monday.com Integration Costs (2026): Plans & Hidden Fees](https://stackcostmatrix.com/monday-integrations-cost/)
+- [Notion Integration Costs (2026): Plans & Hidden Fees](https://stackcostmatrix.com/notion-integrations-cost/)
+- [Pipedrive Integration Costs (2026): Plans & Hidden Fees](https://stackcostmatrix.com/pipedrive-integrations-cost/)
+- [QuickBooks Integration Costs (2026): Plans & Hidden Fees](https://stackcostmatrix.com/quickbooks-integrations-cost/)
+- [Salesforce Integration Costs (2026): API Add-On & Tiers](https://stackcostmatrix.com/salesforce-integrations-cost/)
+- [Slack Integration Costs (2026): Plans & Hidden Fees](https://stackcostmatrix.com/slack-integrations-cost/)
+- [Stripe Integration Costs (2026): Plans & Hidden Fees](https://stackcostmatrix.com/stripe-integrations-cost/)
+- [Xero Integration Costs (2026): Plans & Hidden Fees](https://stackcostmatrix.com/xero-integrations-cost/)
+- [Zendesk Integration Costs (2026): Plans & Hidden Fees](https://stackcostmatrix.com/zendesk-integrations-cost/)
 - [CRM integration pricing guide](https://stackcostmatrix.com/crm-integration-pricing-guide/)
 
 ## API and webhook access by plan
 
-- [HubSpot API access by plan](https://stackcostmatrix.com/hubspot-api-access/)
-- [Salesforce API access by plan](https://stackcostmatrix.com/salesforce-api-access/)
-- [Slack API access by plan](https://stackcostmatrix.com/slack-api-access/)
+- [ActiveCampaign API & Webhook Access by Plan (2026)](https://stackcostmatrix.com/activecampaign-api-access/)
+- [Airtable API & Webhook Access by Plan (2026)](https://stackcostmatrix.com/airtable-api-access/)
+- [Asana API & Webhook Access by Plan (2026)](https://stackcostmatrix.com/asana-api-access/)
+- [Calendly API & Webhook Access by Plan (2026)](https://stackcostmatrix.com/calendly-api-access/)
+- [ClickUp API & Webhook Access by Plan (2026)](https://stackcostmatrix.com/clickup-api-access/)
+- [Freshdesk API & Webhook Access by Plan (2026)](https://stackcostmatrix.com/freshdesk-api-access/)
+- [HubSpot API & Webhook Access by Plan (2026)](https://stackcostmatrix.com/hubspot-api-access/)
+- [Intercom API & Webhook Access by Plan (2026)](https://stackcostmatrix.com/intercom-api-access/)
+- [Mailchimp API & Webhook Access by Plan (2026)](https://stackcostmatrix.com/mailchimp-api-access/)
+- [Monday.com API & Webhook Access by Plan (2026)](https://stackcostmatrix.com/monday-api-access/)
+- [Notion API & Webhook Access by Plan (2026)](https://stackcostmatrix.com/notion-api-access/)
+- [Pipedrive API & Webhook Access by Plan (2026)](https://stackcostmatrix.com/pipedrive-api-access/)
+- [QuickBooks API & Webhook Access by Plan (2026)](https://stackcostmatrix.com/quickbooks-api-access/)
+- [Salesforce API & Webhook Access by Plan (2026)](https://stackcostmatrix.com/salesforce-api-access/)
+- [Slack API & Webhook Access by Plan (2026)](https://stackcostmatrix.com/slack-api-access/)
+- [Stripe API & Webhook Access by Plan (2026)](https://stackcostmatrix.com/stripe-api-access/)
+- [Xero API & Webhook Access by Plan (2026)](https://stackcostmatrix.com/xero-api-access/)
+- [Zendesk API & Webhook Access by Plan (2026)](https://stackcostmatrix.com/zendesk-api-access/)
+
+## Integration pairs
+
+- [ActiveCampaign + Calendly](https://stackcostmatrix.com/stack/activecampaign-and-calendly/): native, needs ActiveCampaign Starter + Calendly Standard, $135/mo for 10 seats
+- [ActiveCampaign + Pipedrive](https://stackcostmatrix.com/stack/activecampaign-and-pipedrive/): native, needs ActiveCampaign Starter + Pipedrive Growth, $405/mo for 10 seats
+- [ActiveCampaign + Stripe](https://stackcostmatrix.com/stack/activecampaign-and-stripe/): native, needs ActiveCampaign Plus + Stripe Standard, $49/mo for 10 seats
+- [Airtable + QuickBooks Online](https://stackcostmatrix.com/stack/airtable-and-quickbooks/): middleware, needs Airtable Team + QuickBooks Online Simple Start, $288.59/mo for 10 seats
+- [Airtable + Stripe](https://stackcostmatrix.com/stack/airtable-and-stripe/): middleware, needs Airtable Team + Stripe Standard, $250.59/mo for 10 seats
+- [Asana + Mailchimp](https://stackcostmatrix.com/stack/asana-and-mailchimp/): middleware, needs Asana Starter + Mailchimp Essentials, $177.89/mo for 10 seats
+- [Asana + QuickBooks Online](https://stackcostmatrix.com/stack/asana-and-quickbooks/): middleware, needs Asana Starter + QuickBooks Online Simple Start, $183.49/mo for 10 seats
+- [Asana + Slack](https://stackcostmatrix.com/stack/asana-and-slack/): native, needs Asana Starter + Slack Free, $134.9/mo for 10 seats
+- [ClickUp + Slack](https://stackcostmatrix.com/stack/clickup-and-slack/): native, needs ClickUp Free + Slack Free, $0/mo for 10 seats
+- [ClickUp + Stripe](https://stackcostmatrix.com/stack/clickup-and-stripe/): middleware, needs ClickUp Free + Stripe Standard, $10.59/mo for 10 seats
+- [ClickUp + Zendesk](https://stackcostmatrix.com/stack/clickup-and-zendesk/): native, needs ClickUp Free + Zendesk Suite Team, $690/mo for 10 seats
+- [Freshdesk + HubSpot](https://stackcostmatrix.com/stack/freshdesk-and-hubspot/): native, needs Freshdesk Growth + HubSpot Free, $230/mo for 10 seats
+- [Freshdesk + Slack](https://stackcostmatrix.com/stack/freshdesk-and-slack/): native, needs Freshdesk Growth + Slack Free, $230/mo for 10 seats
+- [HubSpot + Asana](https://stackcostmatrix.com/stack/hubspot-and-asana/): native, needs HubSpot Professional + Asana Starter, $634.9/mo for 10 seats
+- [HubSpot + Calendly](https://stackcostmatrix.com/stack/hubspot-and-calendly/): native, needs HubSpot Free + Calendly Standard, $120/mo for 10 seats
+- [HubSpot + ClickUp](https://stackcostmatrix.com/stack/hubspot-and-clickup/): native, needs HubSpot Free + ClickUp Core, $120/mo for 10 seats
+- [HubSpot + Mailchimp](https://stackcostmatrix.com/stack/hubspot-and-mailchimp/): native, needs HubSpot Free + Mailchimp Standard, $20/mo for 10 seats
+- [HubSpot + Monday.com](https://stackcostmatrix.com/stack/hubspot-and-monday/): native, needs HubSpot Free + Monday.com Standard, $140/mo for 10 seats
+- [HubSpot + Pipedrive](https://stackcostmatrix.com/stack/hubspot-and-pipedrive/): middleware, needs HubSpot Free + Pipedrive Lite, $150.59/mo for 10 seats
+- [HubSpot + QuickBooks Online](https://stackcostmatrix.com/stack/hubspot-and-quickbooks/): native, needs HubSpot Free + QuickBooks Online Simple Start, $38/mo for 10 seats
+- [HubSpot + Salesforce Sales Cloud](https://stackcostmatrix.com/stack/hubspot-and-salesforce/): native, needs HubSpot Professional + Salesforce Sales Cloud Professional, $1,750/mo for 10 seats
+- [HubSpot + Slack](https://stackcostmatrix.com/stack/hubspot-and-slack/): native, needs HubSpot Free + Slack Free, $0/mo for 10 seats
+- [HubSpot + Stripe](https://stackcostmatrix.com/stack/hubspot-and-stripe/): native, needs HubSpot Free + Stripe Standard, $0/mo for 10 seats
+- [HubSpot + Zendesk](https://stackcostmatrix.com/stack/hubspot-and-zendesk/): native, needs HubSpot Free + Zendesk Suite Team, $690/mo for 10 seats
+- [Intercom + HubSpot](https://stackcostmatrix.com/stack/intercom-and-hubspot/): native, needs Intercom Essential + HubSpot Free, $390/mo for 10 seats
+- [Intercom + Stripe](https://stackcostmatrix.com/stack/intercom-and-stripe/): native, needs Intercom Essential + Stripe Standard, $390/mo for 10 seats
+- [Mailchimp + Airtable](https://stackcostmatrix.com/stack/mailchimp-and-airtable/): middleware, needs Mailchimp Essentials + Airtable Team, $263.59/mo for 10 seats
+- [Mailchimp + Calendly](https://stackcostmatrix.com/stack/mailchimp-and-calendly/): native, needs Mailchimp Free + Calendly Standard, $120/mo for 10 seats
+- [Monday.com + QuickBooks Online](https://stackcostmatrix.com/stack/monday-and-quickbooks/): middleware, needs Monday.com Standard + QuickBooks Online Simple Start, $188.59/mo for 10 seats
+- [Monday.com + Slack](https://stackcostmatrix.com/stack/monday-and-slack/): native, needs Monday.com Standard + Slack Free, $140/mo for 10 seats
+- [Monday.com + Zendesk](https://stackcostmatrix.com/stack/monday-and-zendesk/): native, needs Monday.com Standard + Zendesk Suite Team, $830/mo for 10 seats
+- [Notion + Calendly](https://stackcostmatrix.com/stack/notion-and-calendly/): middleware, needs Notion Plus + Calendly Standard, $250.59/mo for 10 seats
+- [Notion + Stripe](https://stackcostmatrix.com/stack/notion-and-stripe/): middleware, needs Notion Plus + Stripe Standard, $130.59/mo for 10 seats
+- [Pipedrive + Calendly](https://stackcostmatrix.com/stack/pipedrive-and-calendly/): middleware, needs Pipedrive Lite + Calendly Standard, $270.59/mo for 10 seats
+- [Pipedrive + Mailchimp](https://stackcostmatrix.com/stack/pipedrive-and-mailchimp/): native, needs Pipedrive Lite + Mailchimp Free, $140/mo for 10 seats
+- [Pipedrive + QuickBooks Online](https://stackcostmatrix.com/stack/pipedrive-and-quickbooks/): native, needs Pipedrive Lite + QuickBooks Online Simple Start, $178/mo for 10 seats
+- [Pipedrive + Salesforce Sales Cloud](https://stackcostmatrix.com/stack/pipedrive-and-salesforce/): middleware, needs Pipedrive Lite + Salesforce Sales Cloud Professional, $1,400.59/mo for 10 seats
+- [Pipedrive + Slack](https://stackcostmatrix.com/stack/pipedrive-and-slack/): native, needs Pipedrive Growth + Slack Free, $390/mo for 10 seats
+- [Pipedrive + Xero](https://stackcostmatrix.com/stack/pipedrive-and-xero/): middleware, needs Pipedrive Lite + Xero Early, $177.59/mo for 10 seats
+- [QuickBooks Online + Mailchimp](https://stackcostmatrix.com/stack/quickbooks-and-mailchimp/): native, needs QuickBooks Online Simple Start + Mailchimp Free, $38/mo for 10 seats
+- [QuickBooks Online + Slack](https://stackcostmatrix.com/stack/quickbooks-and-slack/): middleware, needs QuickBooks Online Simple Start + Slack Free, $67.99/mo for 10 seats
+- [Salesforce Sales Cloud + Mailchimp](https://stackcostmatrix.com/stack/salesforce-and-mailchimp/): native, needs Salesforce Sales Cloud Professional + Mailchimp Standard, $1,270/mo for 10 seats
+- [Salesforce Sales Cloud + QuickBooks Online](https://stackcostmatrix.com/stack/salesforce-and-quickbooks/): middleware, needs Salesforce Sales Cloud Professional + QuickBooks Online Simple Start, $1,298.59/mo for 10 seats
+- [Salesforce Sales Cloud + Slack](https://stackcostmatrix.com/stack/salesforce-and-slack/): native, needs Salesforce Sales Cloud Enterprise + Slack Pro, $1,737.5/mo for 10 seats
+- [Salesforce Sales Cloud + Stripe](https://stackcostmatrix.com/stack/salesforce-and-stripe/): native, needs Salesforce Sales Cloud Professional + Stripe Standard, $1,250/mo for 10 seats
+- [Salesforce Sales Cloud + Zendesk](https://stackcostmatrix.com/stack/salesforce-and-zendesk/): native, needs Salesforce Sales Cloud Professional + Zendesk Suite Team, $1,940/mo for 10 seats
+- [Slack + Airtable](https://stackcostmatrix.com/stack/slack-and-airtable/): native, needs Slack Free + Airtable Free, $0/mo for 10 seats
+- [Slack + Calendly](https://stackcostmatrix.com/stack/slack-and-calendly/): native, needs Slack Free + Calendly Free, $0/mo for 10 seats
+- [Slack + Intercom](https://stackcostmatrix.com/stack/slack-and-intercom/): native, needs Slack Free + Intercom Essential, $390/mo for 10 seats
+- [Slack + Notion](https://stackcostmatrix.com/stack/slack-and-notion/): native, needs Slack Free + Notion Plus, $120/mo for 10 seats
+- [Slack + Zendesk](https://stackcostmatrix.com/stack/slack-and-zendesk/): native, needs Slack Free + Zendesk Suite Team, $690/mo for 10 seats
+- [Stripe + Mailchimp](https://stackcostmatrix.com/stack/stripe-and-mailchimp/): middleware, needs Stripe Standard + Mailchimp Free, $15/mo for 10 seats
+- [Stripe + QuickBooks Online](https://stackcostmatrix.com/stack/stripe-and-quickbooks/): middleware, needs Stripe Standard + QuickBooks Online Simple Start, $48.59/mo for 10 seats
+- [Stripe + Slack](https://stackcostmatrix.com/stack/stripe-and-slack/): native, needs Stripe Standard + Slack Free, $0/mo for 10 seats
+- [Stripe + Xero](https://stackcostmatrix.com/stack/stripe-and-xero/): native, needs Stripe Standard + Xero Early, $27/mo for 10 seats
+- [Xero + ActiveCampaign](https://stackcostmatrix.com/stack/xero-and-activecampaign/): middleware, needs Xero Early + ActiveCampaign Starter, $52.59/mo for 10 seats
+- [Xero + Calendly](https://stackcostmatrix.com/stack/xero-and-calendly/): middleware, needs Xero Early + Calendly Standard, $176.99/mo for 10 seats
+- [Zendesk + Notion](https://stackcostmatrix.com/stack/zendesk-and-notion/): middleware, needs Zendesk Suite Team + Notion Plus, $839.99/mo for 10 seats
+- [Zendesk + Stripe](https://stackcostmatrix.com/stack/zendesk-and-stripe/): middleware, needs Zendesk Suite Team + Stripe Standard, $700.59/mo for 10 seats
 
 ## About
 

@@ -1,0 +1,68 @@
+# HubSpot Integration Costs (2026): API Tiers & Hidden Fees
+
+> Every HubSpot integration's true cost in 2026: minimum plan tiers, hidden API gates, and native vs middleware totals across 13 popular connections.
+
+Source page: https://stackcostmatrix.com/hubspot-integrations-cost/  
+Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (credit StackCostMatrix and link to https://stackcostmatrix.com)
+
+---
+
+Pillar guide
+
+# Complete 2026 HubSpot Integration Cost & API Tier Matrix
+
+Most HubSpot integrations work on the free CRM, but a few need a paid Professional
+subscription. This matrix compares the
+ **true monthly cost** of 13 popular HubSpot
+integrations, including minimum tier requirements and middleware
+alternatives. Integration requirements and prices re-checked 2026-11-03, except Salesforce and Pipedrive prices. HubSpot prices re-checked 2026-11-05. Only two of them need HubSpot Professional: see [which integrations need HubSpot Professional, and the cheapest way to get it](https://stackcostmatrix.com/hubspot-professional-integrations/).
+
+| Integration | Type | Min. HubSpot tier | Guide |
+| --- | --- | --- | --- |
+| HubSpot + Slack | Native | Free | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-slack/) |
+| HubSpot + Stripe | Native | Free | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-stripe/) |
+| HubSpot + Mailchimp | Native | Free | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-mailchimp/) |
+| HubSpot + Zendesk | Native | Free | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-zendesk/) |
+| HubSpot + Calendly | Native | Free | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-calendly/) |
+| HubSpot + Freshdesk | Native | Free | [True-cost calculator →](https://stackcostmatrix.com/stack/freshdesk-and-hubspot/) |
+| HubSpot + Intercom | Native | Free | [True-cost calculator →](https://stackcostmatrix.com/stack/intercom-and-hubspot/) |
+| HubSpot + Salesforce Sales Cloud | Native | Professional | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-salesforce/) |
+| HubSpot + Pipedrive | Middleware | Free | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-pipedrive/) |
+| HubSpot + Monday.com | Native | Free | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-monday/) |
+| HubSpot + ClickUp | Native | Free | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-clickup/) |
+| HubSpot + Asana | Native | Professional | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-asana/) |
+| HubSpot + QuickBooks Online | Native | Free | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-quickbooks/) |
+
+## The HubSpot API tier trap
+
+The most common HubSpot hidden cost is a **Professional subscription**:
+the Salesforce connector and the Asana workflow action need one, and webhook actions in
+workflows need Data Hub Professional specifically. Before you commit, open any calculator above
+and check the "Hidden Cost Trap" box — it names the exact tier that
+unlocks the integration.
+
+## Verified pricing & API documentation sources
+
+[HubSpot — official pricing ↗](https://www.hubspot.com/pricing) [HubSpot — API docs ↗](https://developers.hubspot.com/docs/api/overview) [Slack — official pricing ↗](https://slack.com/pricing) [Stripe — official pricing ↗](https://stripe.com/pricing) [Mailchimp — official pricing ↗](https://mailchimp.com/pricing/) [Zendesk — official pricing ↗](https://www.zendesk.com/pricing/)
+
+Full 20-tool source index: [About StackCostMatrix →](https://stackcostmatrix.com/about/)
+
+Some outbound links may earn us a referral commission at no extra cost to you.
+
+## Integration costs by tool
+
+[ActiveCampaign](https://stackcostmatrix.com/activecampaign-integrations-cost/) · [Airtable](https://stackcostmatrix.com/airtable-integrations-cost/) · [Asana](https://stackcostmatrix.com/asana-integrations-cost/) · [Calendly](https://stackcostmatrix.com/calendly-integrations-cost/) · [ClickUp](https://stackcostmatrix.com/clickup-integrations-cost/) · [Intercom](https://stackcostmatrix.com/intercom-integrations-cost/) · [Mailchimp](https://stackcostmatrix.com/mailchimp-integrations-cost/) · [Monday.com](https://stackcostmatrix.com/monday-integrations-cost/) · [Notion](https://stackcostmatrix.com/notion-integrations-cost/) · [Pipedrive](https://stackcostmatrix.com/pipedrive-integrations-cost/) · [QuickBooks](https://stackcostmatrix.com/quickbooks-integrations-cost/) · [Salesforce](https://stackcostmatrix.com/salesforce-integrations-cost/) · [Slack](https://stackcostmatrix.com/slack-integrations-cost/) · [Stripe](https://stackcostmatrix.com/stripe-integrations-cost/) · [Xero](https://stackcostmatrix.com/xero-integrations-cost/) · [Zendesk](https://stackcostmatrix.com/zendesk-integrations-cost/)
+
+## API & webhook access by plan
+
+[ActiveCampaign](https://stackcostmatrix.com/activecampaign-api-access/) · [Airtable](https://stackcostmatrix.com/airtable-api-access/) · [Asana](https://stackcostmatrix.com/asana-api-access/) · [Calendly](https://stackcostmatrix.com/calendly-api-access/) · [ClickUp](https://stackcostmatrix.com/clickup-api-access/) · [Freshdesk](https://stackcostmatrix.com/freshdesk-api-access/) · [HubSpot](https://stackcostmatrix.com/hubspot-api-access/) · [Intercom](https://stackcostmatrix.com/intercom-api-access/) · [Mailchimp](https://stackcostmatrix.com/mailchimp-api-access/) · [Monday.com](https://stackcostmatrix.com/monday-api-access/) · [Notion](https://stackcostmatrix.com/notion-api-access/) · [Pipedrive](https://stackcostmatrix.com/pipedrive-api-access/) · [QuickBooks](https://stackcostmatrix.com/quickbooks-api-access/) · [Salesforce](https://stackcostmatrix.com/salesforce-api-access/) · [Slack](https://stackcostmatrix.com/slack-api-access/) · [Stripe](https://stackcostmatrix.com/stripe-api-access/) · [Xero](https://stackcostmatrix.com/xero-api-access/) · [Zendesk](https://stackcostmatrix.com/zendesk-api-access/)
+
+## Frequently asked questions
+
+### Which HubSpot plan do I need for API access?
+
+HubSpot's API is available on every plan, including the free CRM, and most integrations in this matrix work on HubSpot Free. The exceptions are the Salesforce connector and the Asana workflow action, which need a HubSpot Professional or Enterprise subscription. Check each pair's calculator for the exact minimum tier.
+
+### Is it cheaper to connect HubSpot natively or via Zapier/Make?
+
+For most pairs here, native: the integration works on HubSpot's free plan with no middleware fee. Middleware such as Make or Zapier is modeled at $10.59 (Make Core) to $29.99 (Zapier Professional) a month and is the only option for HubSpot + Pipedrive. Each calculator compares both totals at your team size.

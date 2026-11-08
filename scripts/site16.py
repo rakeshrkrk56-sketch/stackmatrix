@@ -6,7 +6,7 @@ hand-written pages and the pair pages' static JSON-LD."""
 import glob, json, re, os, sys
 
 SITE = "https://stackcostmatrix.com"
-EDITOR_NAME = "Rakesh"
+EDITOR_NAME = "Rakesh Kumar"
 EDITOR_URL = f"{SITE}/about/#editor"
 EDITOR_PROFILE = "https://github.com/rakeshrkrk56-sketch"
 EDITOR_LINKEDIN = "https://www.linkedin.com/in/rakesh-kumar-23960a204/"
@@ -45,7 +45,7 @@ def fix_ld(o):
     if not isinstance(o, dict): return o
     out = {}
     for k, v in o.items():
-        if k in ("author", "reviewedBy") and isinstance(v, dict) and v.get("@type") == "Organization" and "StackCostMatrix" in v.get("name", ""):
+        if k in ("author", "reviewedBy") and isinstance(v, dict) and ((v.get("@type") == "Organization" and "StackCostMatrix" in v.get("name", "")) or v.get("@id") == EDITOR_URL):
             out[k] = EDITOR
         elif k == "publisher" and isinstance(v, dict) and v.get("name") == "StackCostMatrix":
             out[k] = PUBLISHER
@@ -89,6 +89,12 @@ def main():
         s = s.replace('<meta property="og:image" content="https://stackcostmatrix.com/icon-512.png">',
                       '<meta property="og:image" content="https://stackcostmatrix.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">')
         s = s.replace('<meta name="twitter:card" content="summary">', '<meta name="twitter:card" content="summary_large_image">')
+        # pair pages: their own card (og17.py); every page: article schema image = the share image, not the logo
+        img = f"{SITE}/og-image.png"
+        if f.startswith("stack/") and os.path.exists(f"og/{f.split('/')[1]}.jpg"):
+            img = f"{SITE}/og/{f.split('/')[1]}.jpg"
+            s = re.sub(r'<meta property="og:image" content="[^"]*">', f'<meta property="og:image" content="{img}">', s, count=1)
+        s = s.replace('"image":"https://stackcostmatrix.com/icon-512.png"', f'"image":"{img}"')
         if s != s0: open(f, "w", encoding="utf-8").write(s); n += 1
     # 404: send reversed pair URLs (/stack/b-and-a/) to the page that exists; drop the 404 page's canonical
     pairs = sorted(f.split("/")[1] for f in glob.glob("stack/*/index.html"))

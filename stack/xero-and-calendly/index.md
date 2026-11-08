@@ -1,0 +1,146 @@
+# Xero + Calendly Integration Cost (2026) | StackCostMatrix
+
+> Xero + Calendly runs via middleware (+$29.99/mo) on Xero Early and Calendly Standard: $176.99/mo for 10 seats.
+
+Source page: https://stackcostmatrix.com/stack/xero-and-calendly/  
+Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (credit StackCostMatrix and link to https://stackcostmatrix.com)
+
+---
+
+[Home](https://stackcostmatrix.com/) / Xero + Calendly 
+
+# Xero + Calendly Integration Cost (2026): True Price, Minimum Plan & Hidden API Fees
+
+There's no native Calendly–Xero integration, so Zapier Professional bridges bookings into Xero; Calendly's webhooks need its Standard plan, and Zapier needs only a paid Xero account. Requires Xero on the 'Early' plan and Calendly on the 'Standard' plan. Route it through Zapier Professional ($29.99/mo, or $19.99/mo billed annually).
+
+Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Zapier Professional fee: Nov 3, 2026) | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
+
+## How the Xero + Calendly integration works
+
+Calendly and Xero don't have a native integration. Zapier, Make and similar tools connect them, for example creating a Xero contact or a draft invoice when someone books a Calendly meeting.
+
+**Limitations:** Calendly's webhooks need a paid plan from Standard up. Zapier needs a paid Xero account, Standard or Adviser permissions in Xero and a paid Zapier plan, because Xero is a premium app on Zapier. On Xero's Early plan you can enter up to 20 approved sales invoices and 5 bills a month through the API, so if each booking creates an invoice and you take more than 20 bookings a month, you'll need Growing ($59/mo).
+
+Sources (checked Nov 3, 2026): [Zapier: Get started with Xero ↗](https://help.zapier.com/hc/en-us/articles/38844152391821-How-to-get-started-with-Xero-on-Zapier) · [Calendly: API overview ↗](https://calendly.com/help/calendly-api-overview) · [Xero: US pricing plans ↗](https://www.xero.com/us/pricing-plans/)
+
+*Interactive cost calculator: open the web page to change team size, billing and add-ons.*
+
+## Default 10-seat TCO summary
+
+**Middleware integration costs $176.99/mo ($2,123.88/yr)** for a 10-seat team —
+Xero 'Early' ($27.00/mo) + Calendly 'Standard' ($120.00/mo)
++ $29.99/mo middleware. No native connector exists for this pair.
+
+## Native vs middleware for Xero + Calendly
+
+No native connector exists for this pair, so middleware is not an alternative — it is the integration. The modeled middleware cost is $29.99/mo on top of both tools, for $176.99/mo all-in at 10 seats on the modeled tiers (Xero 'Early' + Calendly 'Standard'). Sync is 1-way (trigger → action). The middleware figure is the modeled cost for this pair; your actual middleware bill scales with task and operation volume, which is not verified here — check your expected volume against the middleware plan before budgeting.
+
+API access at the required tiers: Xero Yes, Calendly Yes (see the spec matrix). That API access is what the middleware path runs on.
+
+Integration routes compared for a 10-seat team
+
+| Route | Plans | 10 seats / month | Sync |
+| --- | --- | --- | --- |
+| Zapier Professional (modeled here) | Xero 'Early' + Calendly 'Standard' | $176.99 | 1-way per automation |
+| Make Core instead | Xero 'Early' + Calendly 'Standard' | $157.59 | 1-way per automation |
+
+## ✓ Verified Vendor Facts
+
+- **Plan prices:** per-seat costs verified on official vendor pricing pages.
+- **Required tiers:** 'Early' / 'Standard' — the minimum plans that unlock the native integration.
+- **API & webhook gates:** audited in official developer docs (see spec matrix).
+- **Native app availability:** No native app — connected via middleware.
+
+Last checked: Nov 3, 2026 (exceptions listed at the top) · Sources linked below.
+
+## ◐ Model Estimates (your assumptions)
+
+- **Usage / task add-ons:** middleware overage costs you enter above.
+- **Setup & maintenance:** implementation hours and ongoing ops — adjust freely.
+- **Annual billing saving:** uses each vendor's published annual price where one exists, including the middleware or connector fee; otherwise no discount is applied.
+
+Estimates never change the verified facts — they only model your scenario.
+
+## ! Hidden Cost Trap
+
+Requires Xero on the 'Early' plan or higher — Requires Calendly on the 'Standard' plan or higher — Plus $29.99/month middleware on top of both tools.
+
+Xero minimum tier
+:   'Early'
+
+Calendly minimum tier
+:   'Standard'
+
+Middleware fee
+:   $29.99/mo
+
+The hidden cost here is the connector: there's no native Xero + Calendly app, so you pay for Zapier Professional ($29.99/mo) on top of both tools.
+
+ [Connect Xero + Calendly via Make.com — the middleware this integration runs on](https://stackcostmatrix.com/go/make) 
+
+Affiliate link — we may earn a commission at no extra cost to you.
+
+## Side-by-side spec matrix
+
+Side-by-side spec matrix
+
+| Spec | Xero | Calendly |
+| --- | --- | --- |
+| Connection type | Middleware   Source: [Xero docs ↗](https://developer.xero.com/) · [Calendly docs ↗](https://developer.calendly.com/) · Verified Nov 3, 2026 | |
+| Data sync direction | 1-way (trigger → action) | |
+| Setup time | Half a day (difficulty 3/5) | |
+| Native integration supported | No — requires middleware (Zapier / Make) | |
+| API available (distinct from native app) | Yes  — API ≠ native UI; API enables custom/middleware builds Source: [Xero API docs ↗](https://developer.xero.com/) · Verified Oct 17, 2026 | Yes  — API ≠ native UI; API enables custom/middleware builds Source: [Calendly API docs ↗](https://developer.calendly.com/) · Verified Oct 17, 2026 |
+| API access at required tier | Yes  ('Early') Limits set by the app's developer tier Source: [Xero developers: Pricing and tiers ↗](https://developer.xero.com/pricing) · Verified Nov 3, 2026 | Yes  ('Standard') Source: [Calendly: API overview ↗](https://calendly.com/help/calendly-api-overview) · Verified Nov 3, 2026 |
+| Webhook support at required tier | Yes  ('Early') No plan requirement in Xero's webhook docs Source: [Xero developers: Webhooks ↗](https://developer.xero.com/documentation/guides/webhooks/overview) · Verified Nov 3, 2026 | Yes  ('Standard') Source: [Calendly: API overview ↗](https://calendly.com/help/calendly-api-overview) · Verified Nov 3, 2026 |
+
+[Visit Xero](https://stackcostmatrix.com/go/xero)  [Visit Calendly](https://stackcostmatrix.com/go/calendly)
+
+Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
+
+## Frequently asked questions
+
+### What are the minimum plan tiers required for the Xero + Calendly integration?
+
+To unlock the integration, Xero must be on the 'Early' plan or higher and Calendly must be on the 'Standard' plan or higher. Neither plan is an upgrade over the cheapest plan with API access.
+
+### How much does the Xero + Calendly stack cost per month for a 10-person team?
+
+At 10 seats with the required tiers (Xero 'Early' + Calendly 'Standard' + $29.99/month middleware), the stack costs $176.99 per month.
+
+### Why does Xero + Calendly need middleware, and what does it cost?
+
+The Xero + Calendly connection runs through middleware: neither vendor offers a native app for this pair, so this page models Zapier Professional at $29.99 per month on top of both tools. Sync is one-way (a trigger in one tool runs an action in the other).
+
+### What are the limitations of the Xero + Calendly integration?
+
+Calendly's webhooks need a paid plan from Standard up. Zapier needs a paid Xero account, Standard or Adviser permissions in Xero and a paid Zapier plan, because Xero is a premium app on Zapier. On Xero's Early plan you can enter up to 20 approved sales invoices and 5 bills a month through the API, so if each booking creates an invoice and you take more than 20 bookings a month, you'll need Growing ($59/mo).
+
+## Related integrations
+
+[All Xero integrations →](https://stackcostmatrix.com/xero-integrations-cost/) · [All Calendly integrations →](https://stackcostmatrix.com/calendly-integrations-cost/) · [Xero API access by plan →](https://stackcostmatrix.com/xero-api-access/) · [Calendly API access by plan →](https://stackcostmatrix.com/calendly-api-access/)
+
+[### ActiveCampaign + Calendly
+
+Native](https://stackcostmatrix.com/stack/activecampaign-and-calendly/)[### HubSpot + Calendly
+
+Native](https://stackcostmatrix.com/stack/hubspot-and-calendly/)[### Pipedrive + Calendly
+
+Middleware](https://stackcostmatrix.com/stack/pipedrive-and-calendly/)[### Pipedrive + Xero
+
+Middleware](https://stackcostmatrix.com/stack/pipedrive-and-xero/)[### Slack + Calendly
+
+Native](https://stackcostmatrix.com/stack/slack-and-calendly/)[### Notion + Calendly
+
+Middleware](https://stackcostmatrix.com/stack/notion-and-calendly/)
+
+Last checked: Nov 3, 2026 (exceptions listed at the top)
+
+## Verified sources
+
+Every figure on this page links to its source below; prices that don't come straight from the vendor's page are flagged next to the date:
+
+- [Xero official pricing ↗](https://www.xero.com/pricing/)
+- [Xero API / developer docs ↗](https://developer.xero.com/)
+- [Calendly official pricing ↗](https://calendly.com/pricing)
+- [Calendly API / developer docs ↗](https://developer.calendly.com/)

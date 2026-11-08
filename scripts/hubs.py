@@ -7,7 +7,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 from model import compute, tiers, cost, cheapest_api, money
 
 TODAY = "2026-11-03"
-ED = ' · Edited by <a href="/about/#editor" class="font-medium text-indigo-600 hover:underline">Rakesh</a>'
+ED = ' · Edited by <a href="/about/#editor" class="font-medium text-indigo-600 hover:underline">Rakesh Kumar</a>'
 SITE = "https://stackcostmatrix.com"
 EXISTING = {"hubspot": "/hubspot-integrations-cost/", "salesforce": "/salesforce-integrations-cost/"}
 SHORT = {"salesforce": "Salesforce", "quickbooks": "QuickBooks", "monday": "Monday.com"}
