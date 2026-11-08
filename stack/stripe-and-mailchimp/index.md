@@ -46,8 +46,8 @@ Integration routes compared for a 10-seat team
 
 ## ✓ Verified Vendor Facts
 
-- **Plan prices:** per-seat costs verified on official vendor pricing pages.
-- **Required tiers:** 'Standard' / 'Free' — the minimum plans that unlock the native integration.
+- **Plan prices:** from each vendor's pricing page; any exception is flagged next to the date at the top.
+- **Required tiers:** 'Standard' / 'Free' — the minimum plans this integration needs.
 - **API & webhook gates:** audited in official developer docs (see spec matrix).
 - **Native app availability:** No native app — connected via middleware.
 

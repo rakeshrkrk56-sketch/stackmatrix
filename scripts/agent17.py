@@ -56,7 +56,7 @@ def add_captions(s):
     for m in re.finditer(r"<table\b[^>]*>", s):
         out.append(s[pos:m.end()]); pos = m.end()
         if s[pos:pos + 40].lstrip().startswith("<caption"): continue
-        hs = re.findall(r"<h[23][^>]*>(.*?)</h[23]>", s[:m.start()], re.S)
+        hs = re.findall(r"<h[123][^>]*>(.*?)</h[123]>", s[:m.start()], re.S)
         if not hs: continue
         cap = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", hs[-1])).strip()
         if cap: out.append(f' <caption class="sr-only">{cap}</caption>')
@@ -72,7 +72,8 @@ def main():
         if f.startswith("stack/"): s = calc_semantics(s)
         s = add_captions(s)
         link = f'<link rel="alternate" type="text/markdown" href="{md_href(f)}">'
-        if link not in s: s = s.replace("</head>", link + "</head>", 1)
+        s = re.sub(r'<link rel="alternate" type="text/markdown" href="[^"]*">', "", s)   # generated pages inherit their template's link
+        s = s.replace("</head>", link + "</head>", 1)
         if f == "index.html" and 'href="/llms.txt"' not in s:
             s = s.replace("</head>", '<link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt">' + "</head>", 1)
         if s != s0: open(f, "w", encoding="utf-8").write(s)

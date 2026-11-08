@@ -15,6 +15,8 @@ Checked against Zendesk's developer and help-center documentation · Nov 3, 2026
 
 **Short answer:** Zendesk's API is on every Suite plan with a per-minute limit by plan, and webhooks are included from Suite Team up.
 
+Zendesk API & Webhook Access by Plan (2026)
+
 | Plan | Price | API access | API limit | Webhooks | Webhook automation action |
 | --- | --- | --- | --- | --- | --- |
 | Suite Team | $69/seat/mo ($55 billed annually) | Yes | 200 requests/min | Yes | Via triggers |

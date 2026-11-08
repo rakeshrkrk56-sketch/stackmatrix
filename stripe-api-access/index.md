@@ -15,6 +15,8 @@ Checked against Stripe's developer and help-center documentation · Nov 3, 2026 
 
 **Short answer:** Stripe has no plan tiers for the API: every account gets the full API and webhooks, and you pay per transaction.
 
+Stripe API & Webhook Access by Plan (2026)
+
 | Plan | Price | API access | API limit | Webhooks | Webhook automation action |
 | --- | --- | --- | --- | --- | --- |
 | Standard | Free | Yes Every account | Not published per plan | Yes | — |

@@ -15,6 +15,8 @@ Checked against HubSpot's developer and help-center documentation · Nov 3, 2026
 
 **Short answer:** HubSpot's API is available on every plan, including the free CRM, with higher limits on Professional and Enterprise. Webhook actions in workflows need Data Hub Professional or Enterprise.
 
+HubSpot API & Webhook Access by Plan (2026)
+
 | Plan | Price | API access | API limit | Webhooks | Webhook automation action |
 | --- | --- | --- | --- | --- | --- |
 | Free | Free | Yes | 100 req/10 s · 250,000/day (private apps) | Not stated Developer webhooks via apps; plan not stated | Needs Data Hub Professional |

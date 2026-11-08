@@ -15,6 +15,8 @@ Checked against Mailchimp's developer and help-center documentation · Nov 3, 20
 
 **Short answer:** Mailchimp API keys can be created on any account, but the webhook step in Mailchimp automations needs Standard or Premium; Free and Essentials are prompted to upgrade.
 
+Mailchimp API & Webhook Access by Plan (2026)
+
 | Plan | Price | API access | API limit | Webhooks | Webhook automation action |
 | --- | --- | --- | --- | --- | --- |
 | Free | Free | Yes No plan requirement in Mailchimp's API key article | Not published per plan | No Webhook automation step needs Standard | Upgrade prompt |

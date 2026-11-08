@@ -15,6 +15,8 @@ Built from the 8 pair calculators below · integration requirements checked Nov 
 
 This page collects the 8 Pipedrive integrations in the StackCostMatrix index: which Pipedrive plan each one needs, whether it's native or runs through middleware, and what the whole stack costs for a 10-person team. 4 of the 8 connect natively and 4 need a connector such as Make or Zapier. By minimum Pipedrive plan, the count is Lite (6) and Growth (2). Ten-seat totals run from $140.00/mo (Pipedrive + Mailchimp) to $1,400.59/mo (Pipedrive + Salesforce).
 
+Pipedrive Integration Costs (2026): Minimum Plans, API Access & Hidden Fees
+
 | Integration | Type | Min. Pipedrive plan | Other tool's plan | 10-seat total | Checked | Details |
 | --- | --- | --- | --- | --- | --- | --- |
 | Pipedrive + Mailchimp | Native | Lite | Free | $140.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/pipedrive-and-mailchimp/) |

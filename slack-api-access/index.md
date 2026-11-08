@@ -15,6 +15,8 @@ Checked against Slack's developer and help-center documentation Â· Nov 3, 2026 Â
 
 **Short answer:** Slack's API and incoming webhooks work on the Free plan; webhook-triggered workflows in Workflow Builder need a paid plan.
 
+Slack API & Webhook Access by Plan (2026)
+
 | Plan | Price | API access | API limit | Webhooks | Webhook automation action |
 | --- | --- | --- | --- | --- | --- |
 | Free | Free | Yes | Not published per plan | Yes Incoming webhooks | No (paid plans) |

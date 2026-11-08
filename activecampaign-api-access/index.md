@@ -15,6 +15,8 @@ Checked against ActiveCampaign's developer and help-center documentation · Nov 
 
 **Short answer:** Every ActiveCampaign plan includes API access and webhooks: ActiveCampaign's help center lists Starter, Plus, Pro and Enterprise for both.
 
+ActiveCampaign API & Webhook Access by Plan (2026)
+
 | Plan | Price | API access | API limit | Webhooks | Webhook automation action |
 | --- | --- | --- | --- | --- | --- |
 | Starter | $15/mo | Yes | Not published per plan | Yes | Yes (help center lists all plans) |

@@ -95,6 +95,11 @@ def main():
             img = f"{SITE}/og/{f.split('/')[1]}.jpg"
             s = re.sub(r'<meta property="og:image" content="[^"]*">', f'<meta property="og:image" content="{img}">', s, count=1)
         s = s.replace('"image":"https://stackcostmatrix.com/icon-512.png"', f'"image":"{img}"')
+        t = re.search(r'<meta property="og:title" content="([^"]*)"', s)
+        s = re.sub(r'<meta property="og:image:alt"[^>]*>', "", s)   # generated pages inherit their template's
+        if t:
+            s = re.sub(r'(<meta property="og:image" content="[^"]*">(?:<meta property="og:image:width"[^>]*><meta property="og:image:height"[^>]*>)?)',
+                       lambda m: m.group(1) + f'<meta property="og:image:alt" content="{t.group(1)} — StackCostMatrix">', s, count=1)
         if s != s0: open(f, "w", encoding="utf-8").write(s); n += 1
     # 404: send reversed pair URLs (/stack/b-and-a/) to the page that exists; drop the 404 page's canonical
     pairs = sorted(f.split("/")[1] for f in glob.glob("stack/*/index.html"))

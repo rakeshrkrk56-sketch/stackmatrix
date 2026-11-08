@@ -15,6 +15,8 @@ Checked against Salesforce's developer and help-center documentation · Nov 8, 2
 
 **Short answer:** Salesforce API access is included in Enterprise and Unlimited; Professional only gets it with a paid API add-on (modeled at $25 per user a month), and Starter doesn't support the API. With API access, an org gets 100,000 API calls per 24 hours plus 1,000 per Salesforce license (Enterprise, or Professional with API access) or 5,000 per license (Unlimited). Change Data Capture, Salesforce's real-time change feed, is on Enterprise and Unlimited only.
 
+Salesforce API & Webhook Access by Plan (2026)
+
 | Plan | Price | API access | API limit | Webhooks | Webhook automation action |
 | --- | --- | --- | --- | --- | --- |
 | Starter | $25/seat/mo | No | Not published per plan | No | — |

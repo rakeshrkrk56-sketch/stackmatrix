@@ -15,6 +15,8 @@ Checked against Airtable's developer and help-center documentation · Nov 3, 202
 
 **Short answer:** Airtable's API and webhooks work on every plan, including Free, but the Free plan is capped at 1,000 API calls a month; Team raises that to 100,000.
 
+Airtable API & Webhook Access by Plan (2026)
+
 | Plan | Price | API access | API limit | Webhooks | Webhook automation action |
 | --- | --- | --- | --- | --- | --- |
 | Free | Free | Yes | 1,000 API calls a month | Yes | — |

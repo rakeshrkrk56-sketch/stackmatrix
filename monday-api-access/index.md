@@ -15,6 +15,8 @@ Checked against Monday.com's developer and help-center documentation · Nov 3, 2
 
 **Short answer:** monday.com's API works on every plan with a daily call limit by plan, but integrations (including webhooks) start on Standard.
 
+Monday.com API & Webhook Access by Plan (2026)
+
 | Plan | Price | API access | API limit | Webhooks | Webhook automation action |
 | --- | --- | --- | --- | --- | --- |
 | Basic | $12/seat/mo ($9 billed annually), min. 3 seats | Yes | 1,000 calls/day | No Integrations start on Standard | No |

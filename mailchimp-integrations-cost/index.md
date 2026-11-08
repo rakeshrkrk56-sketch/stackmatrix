@@ -15,6 +15,8 @@ Built from the 8 pair calculators below · integration requirements checked Nov 
 
 This page collects the 8 Mailchimp integrations in the StackCostMatrix index: which Mailchimp plan each one needs, whether it's native or runs through middleware, and what the whole stack costs for a 10-person team. 5 of the 8 connect natively and 3 need a connector such as Make or Zapier. By minimum Mailchimp plan, the count is Free (4), Standard (2) and Essentials (2). Ten-seat totals run from $15.00/mo (Stripe + Mailchimp) to $1,270.00/mo (Salesforce + Mailchimp).
 
+Mailchimp Integration Costs (2026): Minimum Plans, API Access & Hidden Fees
+
 | Integration | Type | Min. Mailchimp plan | Other tool's plan | 10-seat total | Checked | Details |
 | --- | --- | --- | --- | --- | --- | --- |
 | Stripe + Mailchimp | Middleware Data Mapper for Mailchimp $15/mo | Free | Standard | $15.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/stripe-and-mailchimp/) |

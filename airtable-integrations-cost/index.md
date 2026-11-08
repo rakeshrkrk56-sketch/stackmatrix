@@ -15,6 +15,8 @@ Built from the 4 pair calculators below · integration requirements checked Nov 
 
 This page collects the 4 Airtable integrations in the StackCostMatrix index: which Airtable plan each one needs, whether it's native or runs through middleware, and what the whole stack costs for a 10-person team. 1 of the 4 connects natively and 3 need a connector such as Make or Zapier. By minimum Airtable plan, the count is Team (3) and Free (1). Ten-seat totals run from $0.00/mo (Slack + Airtable) to $288.59/mo (Airtable + QuickBooks).
 
+Airtable Integration Costs (2026): Minimum Plans, API Access & Hidden Fees
+
 | Integration | Type | Min. Airtable plan | Other tool's plan | 10-seat total | Checked | Details |
 | --- | --- | --- | --- | --- | --- | --- |
 | Slack + Airtable | Native | Free | Free | $0.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/slack-and-airtable/) |

@@ -15,6 +15,8 @@ Checked against QuickBooks's developer and help-center documentation · Nov 3, 2
 
 **Short answer:** Every paid QuickBooks Online plan can connect apps: Intuit's developer docs set no plan requirement, and Zapier, Make and Mailchimp's QuickBooks integrations ask only for a QuickBooks Online account (Zapier says a paid one).
 
+QuickBooks API & Webhook Access by Plan (2026)
+
 | Plan | Price | API access | API limit | Webhooks | Webhook automation action |
 | --- | --- | --- | --- | --- | --- |
 | Simple Start | $38/mo | Yes Any paid plan (Zapier, Make and Mailchimp name no tier) | Not published per plan | Yes App-level webhooks | — |

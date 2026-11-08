@@ -15,6 +15,8 @@ Checked against ClickUp's developer and help-center documentation · Nov 3, 2026
 
 **Short answer:** ClickUp's public API, including API webhooks, is available on every ClickUp plan; rate limits are 100 requests a minute per token until Business Plus.
 
+ClickUp API & Webhook Access by Plan (2026)
+
 | Plan | Price | API access | API limit | Webhooks | Webhook automation action |
 | --- | --- | --- | --- | --- | --- |
 | Free | Free | Yes | 100 requests/min per token | Yes API webhooks | Not stated |

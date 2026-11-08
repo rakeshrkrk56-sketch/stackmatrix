@@ -35,6 +35,9 @@ for f in sorted(glob.glob("stack/*/index.html")):
     # sourcing claim: name the exceptions
     s = s.replace("Every figure on this page traces to official vendor documentation:",
                   "Every figure on this page links to its source below; prices that don&#39;t come straight from the vendor&#39;s page are flagged next to the date:")
+    s = s.replace("— the minimum plans that unlock the native integration.", "— the minimum plans this integration needs.")
+    s = s.replace("<li><strong>Plan prices:</strong> per-seat costs verified on official vendor pricing pages.</li>",
+                  "<li><strong>Plan prices:</strong> from each vendor&#39;s pricing page; any exception is flagged next to the date at the top.</li>")
     if p in BYLINE16 and BYLINE_OLD in s:
         s = s.replace(BYLINE_OLD, BYLINE16[p], 1)
     if p == "pipedrive-and-xero" and "Make&#39;s monthly price" not in s:
@@ -46,5 +49,8 @@ for f in sorted(glob.glob("stack/*/index.html")):
 f = "index.html"; s = open(f, encoding="utf-8").read(); s0 = s
 T_OLD, T_NEW = "SaaS Integration Costs: Which Plan Each One Needs (2026)", "Which Plan Does Each SaaS Integration Need? (2026 Costs)"
 s = s.replace(f"<title>{T_OLD}</title>", f"<title>{T_NEW}</title>").replace(f'<meta property="og:title" content="{T_OLD}"', f'<meta property="og:title" content="{T_NEW}"')
+s = s.replace("Every cost figure on this index traces to official vendor documentation. Pricing pages for 17 of 20 tools were re-checked on <strong>Nov 3, 2026</strong>; the rest were last audited in October 2026.",
+              "Every cost figure on this index links to its source. Pricing pages for 17 of 20 tools were re-checked on <strong>Nov 3–5, 2026</strong>; Salesforce was last checked in October 2026, and Pipedrive and Make prices come from an indexed copy and third-party reviews because their pricing pages block automated checks.")
+s = s.replace('<p class="text-3xl font-bold">Nov 3, 2026</p>', '<p class="text-3xl font-bold">Nov 3–5, 2026</p>')
 if s != s0: open(f, "w", encoding="utf-8").write(s); n += 1
 print("pages changed:", n)

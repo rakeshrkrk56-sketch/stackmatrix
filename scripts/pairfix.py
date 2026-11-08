@@ -184,7 +184,8 @@ def nvm_table(v, d):
     body = "".join(f'<tr class="border-t border-slate-100"> <td class="px-4 py-3 font-medium">{r[0]}</td> {TD_}{r[1]}</td> {TD_}{r[2]}</td> {TD_}{r[3]}</td> </tr>' for r in rows)
     return (' <div class="mt-4 overflow-x-auto rounded-xl border border-slate-200"> <table class="spec-matrix w-full text-sm"> '
             '<caption class="sr-only">Integration routes compared for a 10-seat team</caption> <thead class="bg-slate-50"> <tr class="text-left"> '
-            f'{TH_}Route</th> {TH_}Plans</th> {TH_}10 seats / month</th> {TH_}Sync</th> </tr> </thead> <tbody> {body} </tbody> </table> </div> ')
+            f'{TH_}Route</th> {TH_}Plans</th> {TH_}10 seats / month</th> {TH_}Sync</th> </tr> </thead> <tbody> {body} </tbody> </table> </div> '
+            + ('<p class="mt-2 text-xs text-slate-500">Make Core&#39;s $10.59 monthly price comes from third-party pricing reviews, because make.com blocks automated checks; Zapier&#39;s is from zapier.com/pricing.</p> ' if "Make" in body else ""))
 
 def meta_desc(v, d=None):
     A, B, ta, tb = v["na"], v["nb"], v["ta"], v["tb"]

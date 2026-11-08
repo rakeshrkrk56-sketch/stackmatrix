@@ -15,6 +15,8 @@ Checked against Asana's developer and help-center documentation Â· Nov 3, 2026 Â
 
 **Short answer:** Asana's developer documentation sets no plan requirement for API access, personal access tokens or API webhooks, so they aren't tied to Advanced.
 
+Asana API & Webhook Access by Plan (2026)
+
 | Plan | Price | API access | API limit | Webhooks | Webhook automation action |
 | --- | --- | --- | --- | --- | --- |
 | Starter | $13.49/seat/mo ($10.99 billed annually) | Yes No plan requirement in Asana's developer docs | Not published per plan | Yes API webhooks; no plan requirement stated | Not stated |
