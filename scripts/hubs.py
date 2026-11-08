@@ -7,6 +7,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 from model import compute, tiers, cost, cheapest_api, money
 
 TODAY = "2026-11-03"
+ED = ' · Edited by <a href="/about/#editor" class="font-medium text-indigo-600 hover:underline">Rakesh</a>'
 SITE = "https://stackcostmatrix.com"
 EXISTING = {"hubspot": "/hubspot-integrations-cost/", "salesforce": "/salesforce-integrations-cost/"}
 SHORT = {"salesforce": "Salesforce", "quickbooks": "QuickBooks", "monday": "Monday.com"}
@@ -116,6 +117,7 @@ def build_tool(slug, name, plans, pairs, sources, hubs):
     if pend: by += f", except {len(pend)} pending re-check ({join_names(r['other']['name'] for r in pend)}), last checked Oct 17, 2026"
     if part: by += f"; {len(part)} with a plan still unconfirmed ({join_names(r['other']['name'] for r in part)})"
     by += "."
+    by_html = esc(by) + ED
 
     # pairs table
     trs = []
@@ -193,7 +195,7 @@ def build_tool(slug, name, plans, pairs, sources, hubs):
 
     body = (f'<section class="mx-auto max-w-4xl"> <p class="text-sm font-semibold uppercase tracking-widest text-indigo-600">Tool guide</p> '
             f'<h1 class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">\n{esc(short)} Integration Costs (2026): Minimum Plans, API Access &amp; Hidden Fees\n</h1> '
-            f'<p class="mt-3 text-sm text-slate-500">{esc(by)}</p> {P}\n{intro}\n</p> {table} {trap} {mw} {plan_tbl} {sources_html} {nav}{faq_html} </section> ')
+            f'<p class="mt-3 text-sm text-slate-500">{by_html}</p> {P}\n{intro}\n</p> {table} {trap} {mw} {plan_tbl} {sources_html} {nav}{faq_html} </section> ')
 
     ld = [
         {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faqs]},
@@ -205,7 +207,8 @@ def build_tool(slug, name, plans, pairs, sources, hubs):
             {"@type": "ListItem", "position": 1, "name": "Home", "item": f"{SITE}/"},
             {"@type": "ListItem", "position": 2, "name": f"{short} integration costs", "item": url}]},
     ]
-    return dict(title=title, desc=desc, url=url, body=body, ld=ld, n=n)
+    from site16 import fix_ld
+    return dict(title=title, desc=desc, url=url, body=body, ld=fix_ld(ld), n=n)
 
 def render(tpl, page):
     s = tpl

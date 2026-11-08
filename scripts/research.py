@@ -151,7 +151,7 @@ def build():
     floors = "; ".join(f"{name(s, D)} {floor_plan(D, s)[0]} ({m0(floor_plan(D, s)[1])}/mo)" for s in sorted(D["tools"], key=lambda s: name(s, D).lower()))
     unc = S["unconf_rows"]
     meth = (f'{H2}Methodology</h2> '
-            f'{P}<strong>Integration tax</strong> = (each tool&#39;s minimum plan for the integration − that tool&#39;s cheapest plan with API access) + the connector fee, for a 10-seat team at monthly-billing list prices. '
+            f'{P}<strong>Integration tax</strong> = (each tool&#39;s minimum plan for the integration − that tool&#39;s cheapest plan with API access) + the connector fee, for a 10-seat team at monthly-billing list prices (ActiveCampaign, Pipedrive and Salesforce publish annual-billing rates only, so those rates are used). '
             f'The report covers the {S["n"]} integrations in the index when it was published on Nov 3, 2026; pairs added since then aren&#39;t included, so the figures stay comparable. Minimum plans, connector fees and prices come from those pair calculators; every figure there links to the vendor&#39;s pricing page, help center or developer docs and was checked on Nov 3, 2026.</p>'
             f'{P}<strong>Baseline plans</strong> (cheapest plan with API access, 10 seats): {esc(floors)}.</p>'
             f'{P}<strong>Limitations.</strong> HubSpot Professional is modeled as Smart CRM Professional ($50 per seat a month, $45 on annual billing), the cheapest subscription that unlocks the Salesforce connector and the Asana workflow action; other Professional Hubs cost more. Make Core&#39;s $10.59 monthly price comes from third-party pricing reviews, because make.com blocks automated checks. '
@@ -178,21 +178,22 @@ def build():
              'el.addEventListener("mouseleave",hide);el.addEventListener("focus",function(){show(null,el)});el.addEventListener("blur",hide);});})();</script>')
     body = (f'<section class="mx-auto max-w-4xl"> <p class="text-sm font-semibold uppercase tracking-widest text-indigo-600">Research · November 2026</p> '
             f'<h1 class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">\nThe Integration Tax 2026: What Connecting SaaS Tools Really Costs\n</h1> '
-            f'<p class="mt-3 text-sm text-slate-500">StackCostMatrix · Published Nov 3, 2026 · Data checked against vendor docs Nov 3, 2026 · Updated Nov 5, 2026: HubSpot Professional repriced at HubSpot&#39;s per-seat price (see Limitations)</p> '
+            f'<p class="mt-3 text-sm text-slate-500">StackCostMatrix · Published Nov 3, 2026 · Data checked against vendor docs Nov 3, 2026 · Updated Nov 8, 2026: HubSpot Professional repriced per seat (Nov 5); ActiveCampaign + Stripe, Mailchimp + Calendly and Pipedrive + Xero corrected (Nov 8; see the About page changelog) · Edited by <a href="/about/#editor" class="font-medium text-indigo-600 hover:underline">Rakesh</a></p> '
             f'{P}{lead}</p> {tiles} {findings} {chart1} {chart2} {table} {meth} {cite}{faq_html} </section> {tipjs} ')
     ld = [
         {"@context": "https://schema.org", "@type": "Article", "headline": "The Integration Tax 2026: What Connecting SaaS Tools Really Costs", "description": desc,
          "author": {"@type": "Organization", "name": "StackCostMatrix", "url": f"{SITE}/"}, "publisher": {"@type": "Organization", "name": "StackCostMatrix", "url": f"{SITE}/", "logo": f"{SITE}/icon-512.png"},
-         "datePublished": "2026-11-03", "dateModified": "2026-11-05", "mainEntityOfPage": URL, "image": f"{SITE}/icon-512.png", "inLanguage": "en", "isBasedOn": f"{SITE}/data/integration-pairs.json"},
+         "datePublished": "2026-11-03", "dateModified": "2026-11-08", "mainEntityOfPage": URL, "image": f"{SITE}/icon-512.png", "inLanguage": "en", "isBasedOn": f"{SITE}/data/integration-pairs.json"},
         {"@context": "https://schema.org", "@type": "Dataset", "name": "StackCostMatrix Integration Tax 2026", "description": f"Monthly integration tax (forced plan upgrades plus connector fees) for {S['n']} B2B SaaS integrations at 10 seats, derived from vendor-verified plan requirements and prices checked 2026-11-03.",
          "url": URL, "license": "https://creativecommons.org/licenses/by/4.0/", "creator": {"@type": "Organization", "name": "StackCostMatrix", "url": f"{SITE}/"},
-         "dateModified": "2026-11-05", "keywords": ["SaaS pricing", "integration cost", "API access", "webhooks", "Zapier", "Make"],
+         "dateModified": "2026-11-08", "keywords": ["SaaS pricing", "integration cost", "API access", "webhooks", "Zapier", "Make"],
          "distribution": [{"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": f"{SITE}/data/integration-pairs.json"}]},
         {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faqs]},
         {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": f"{SITE}/"},
                                                                                          {"@type": "ListItem", "position": 2, "name": "The Integration Tax 2026", "item": URL}]},
     ]
-    page = dict(title=title, desc=desc, url=URL, body=body, ld=ld)
+    from site16 import fix_ld
+    page = dict(title=title, desc=desc, url=URL, body=body, ld=fix_ld(ld))
     os.makedirs(SLUG, exist_ok=True)
     open(f"{SLUG}/index.html", "w", encoding="utf-8").write(render(read("hubspot-integrations-cost/index.html"), page))
     json.dump({k: (v if not isinstance(v, list) or k == "mw_fees" else len(v)) for k, v in S.items() if k != "by_tool"}, sys.stdout, default=str); print()

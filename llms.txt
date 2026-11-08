@@ -1,0 +1,32 @@
+# StackCostMatrix
+
+> Independent index of what B2B software integrations really cost: the plan each integration needs on both tools, any connector fee (Make, Zapier), and API and webhook access by plan, for 59 integration pairs across 20 tools. Every figure links to the vendor's own pricing page or documentation, with the date it was checked. Edited by Rakesh. Data is free to reuse under CC BY 4.0.
+
+Costs are for a 10-person team at monthly-billing list prices unless a page says otherwise. Exceptions (prices that come from somewhere other than the vendor's page, or annual-only rates) are flagged on each page and on the About page.
+
+## Research and data
+
+- [The Integration Tax 2026](https://stackcostmatrix.com/integration-tax-2026/): original research on the extra monthly cost of connecting 55 popular SaaS integrations, with method, figures and a suggested citation
+- [Open dataset (JSON)](https://stackcostmatrix.com/data/integration-pairs.json): every pair, plan price, minimum plan, connector fee and source, CC BY 4.0
+- [Which integrations need HubSpot Professional](https://stackcostmatrix.com/hubspot-professional-integrations/): the plan each HubSpot integration needs and the cheapest way to get Professional
+
+## Integration costs by tool
+
+- [HubSpot](https://stackcostmatrix.com/hubspot-integrations-cost/)
+- [Salesforce](https://stackcostmatrix.com/salesforce-integrations-cost/)
+- [Slack](https://stackcostmatrix.com/slack-integrations-cost/)
+- [Stripe](https://stackcostmatrix.com/stripe-integrations-cost/)
+- [QuickBooks Online](https://stackcostmatrix.com/quickbooks-integrations-cost/)
+- [Pipedrive](https://stackcostmatrix.com/pipedrive-integrations-cost/)
+- [CRM integration pricing guide](https://stackcostmatrix.com/crm-integration-pricing-guide/)
+
+## API and webhook access by plan
+
+- [HubSpot API access by plan](https://stackcostmatrix.com/hubspot-api-access/)
+- [Salesforce API access by plan](https://stackcostmatrix.com/salesforce-api-access/)
+- [Slack API access by plan](https://stackcostmatrix.com/slack-api-access/)
+
+## About
+
+- [About, methodology and changelog](https://stackcostmatrix.com/about/)
+- Corrections: admin@stackcostmatrix.com

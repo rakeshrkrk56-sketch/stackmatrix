@@ -2,6 +2,7 @@
 import json, os, sys, html
 sys.path.insert(0, os.path.dirname(__file__))
 from apidata import TOOLS, CHECKED
+from site16 import fix_ld
 from hubs import load_pairs, plan_price, render, read, esc, attr, SHORT, SITE, P, H2, TH, TD, LINK, join_names
 
 QUOTE_OK = set()  # filled from the source check: (slug, index) whose quote was found on the page
@@ -20,7 +21,7 @@ def build(slug, tool, pairs, hubs, api_urls):
             if t["slug"] == slug: need.setdefault(t["required"], []).append(p)
     title = f"{short} API & Webhook Access by Plan (2026)"
     first = plans[0][0]
-    desc = next(d for d in [f"Which {short} plans include API access and webhooks in 2026, with rate limits and the vendor source for each plan, checked {CHECKED}.",
+    desc = next(d for d in [f"Which {short} plans include API access and webhooks in 2026, with rate limits and the vendor source for each plan, checked {T.get('checked', CHECKED)}.",
                              f"Which {short} plans include API access and webhooks in 2026, with the vendor source for each plan."] if len(d) <= 155)
     rows = []
     for pl, f, pd in plans:
@@ -48,7 +49,7 @@ def build(slug, tool, pairs, hubs, api_urls):
     for i, (l, u, q) in enumerate(T["sources"]):
         qt = f' <span class="block text-xs text-slate-500">&ldquo;{esc(q)}&rdquo;</span>' if (slug, i) in QUOTE_OK else ""
         src.append(f'<li><a href="{attr(u)}" rel="noopener" {LINK}>{esc(l)} ↗</a>{qt}</li>')
-    sources = f'{H2}Sources</h2> <p class="mt-3 text-sm text-slate-500">Checked {CHECKED}.</p> <ul class="mt-3 space-y-3 text-sm"> {" ".join(src)} </ul>'
+    sources = f'{H2}Sources</h2> <p class="mt-3 text-sm text-slate-500">Checked {T.get('checked', CHECKED)}.</p> <ul class="mt-3 space-y-3 text-sm"> {" ".join(src)} </ul>'
     nav = " · ".join(f'<a href="{u}" {LINK}>{esc(n)}</a>' for s2, (n, u) in sorted(api_urls.items(), key=lambda kv: kv[1][0].lower()) if s2 != slug)
     navh = f'{H2}API access by plan for other tools</h2> <p class="mt-3 leading-relaxed text-slate-600">{nav}</p>'
     # FAQ
@@ -74,7 +75,7 @@ def build(slug, tool, pairs, hubs, api_urls):
                 "".join(f'<div> <h3 class="font-semibold text-slate-900">{esc(q)}</h3> <p class="mt-1 leading-relaxed text-slate-700">{esc(a)}</p> </div>' for q, a in faqs) + ' </div> </section>')
     body = (f'<section class="mx-auto max-w-4xl"> <p class="text-sm font-semibold uppercase tracking-widest text-indigo-600">API &amp; webhooks</p> '
             f'<h1 class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">\n{esc(title)}\n</h1> '
-            f'<p class="mt-3 text-sm text-slate-500">Checked against {esc(short)}&#39;s developer and help-center documentation · {CHECKED}</p> '
+            f'<p class="mt-3 text-sm text-slate-500">Checked against {esc(short)}&#39;s developer and help-center documentation · {T.get('checked', CHECKED)} · Edited by <a href="/about/#editor" class="font-medium text-indigo-600 hover:underline">Rakesh</a></p> '
             f'{P}<strong>Short answer:</strong> {esc(T["answer"])}</p> {table} {note} {kinds} {integ} {sources} {navh}{faq_html} </section> ')
     ld = [
         {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faqs]},
@@ -86,7 +87,7 @@ def build(slug, tool, pairs, hubs, api_urls):
             {"@type": "ListItem", "position": 1, "name": "Home", "item": f"{SITE}/"},
             {"@type": "ListItem", "position": 2, "name": f"{short} API access by plan", "item": url}]},
     ]
-    return dict(title=title, desc=desc, url=url, body=body, ld=ld)
+    return dict(title=title, desc=desc, url=url, body=body, ld=fix_ld(ld))
 
 def main():
     global QUOTE_OK
