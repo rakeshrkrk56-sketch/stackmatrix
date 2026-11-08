@@ -166,6 +166,26 @@ def trap_text(v, d):
         out += " Stripe has no monthly plan fee; it charges per transaction, so it counts as $0/month here."
     return out
 
+TH_ = '<th class="px-4 py-3 font-semibold">'; TD_ = '<td class="px-4 py-3">'
+def nvm_table(v, d):
+    """Native (or modeled connector) route vs the alternative connector route, at 10 seats."""
+    A, B = v["na"], v["nb"]
+    ch = [cheapest_api(t)["tier_name"] for t in d["tools"]]
+    rows = []
+    if v["native"]:
+        rows.append((f"Native {html.escape(A)} + {html.escape(B)} connector", f"{html.escape(A)} &#39;{v['ta']}&#39; + {html.escape(B)} &#39;{v['tb']}&#39;", money(v["N"]), "As listed in the spec matrix"))
+        rows.append(("Make Core on the cheapest API plans", f"{html.escape(A)} &#39;{ch[0]}&#39; + {html.escape(B)} &#39;{ch[1]}&#39; + Make", money(v["MP"]), "1-way per scenario"))
+    else:
+        conn = CONNECTOR.get(v["mw"], "Connector")
+        alt, altfee = ("Zapier Professional", 29.99) if v["mw"] != 29.99 else ("Make Core", MAKE_MONTHLY)
+        plans = f"{html.escape(A)} &#39;{v['ta']}&#39; + {html.escape(B)} &#39;{v['tb']}&#39;"
+        rows.append((f"{conn} (modeled here)", plans, money(v["N"]), "1-way per automation"))
+        rows.append((f"{alt} instead", plans, money(v["N"] - v["mw"] + altfee), "1-way per automation"))
+    body = "".join(f'<tr class="border-t border-slate-100"> <td class="px-4 py-3 font-medium">{r[0]}</td> {TD_}{r[1]}</td> {TD_}{r[2]}</td> {TD_}{r[3]}</td> </tr>' for r in rows)
+    return (' <div class="mt-4 overflow-x-auto rounded-xl border border-slate-200"> <table class="spec-matrix w-full text-sm"> '
+            '<caption class="sr-only">Integration routes compared for a 10-seat team</caption> <thead class="bg-slate-50"> <tr class="text-left"> '
+            f'{TH_}Route</th> {TH_}Plans</th> {TH_}10 seats / month</th> {TH_}Sync</th> </tr> </thead> <tbody> {body} </tbody> </table> </div> ')
+
 def meta_desc(v, d=None):
     A, B, ta, tb = v["na"], v["nb"], v["ta"], v["tb"]
     cost = money(v["N"]).replace(".00", "")
@@ -237,10 +257,10 @@ def render_page(s, pair, d, summary, sync, facts, date_modified=None, copy=None,
              "calc-line-m-note": d["middlewareLabel"], "calc-line-m-cost": money(v["mw"]), "calc-total": money(v["N"]), "calc-incr": money(v["N"]),
              "calc-year1": money(v["N"] * 12), "calc-tco3": money(v["N"] * 36)}
     for k, val in cells.items():
-        s = sub1(r'(id="' + k + r'">)[^<]*(<)', lambda m, val=val: m.group(1) + val + m.group(2), s, what=k)
+        s = sub1(r'(id="' + k + r'"(?: for="[^"]*")?>)[^<]*(<)', lambda m, val=val: m.group(1) + val + m.group(2), s, what=k)
     # TCO summary + native vs middleware
     s = sub1(r'(aria-label="Default 10-seat TCO summary">.*?<p class="mt-2 text-sm leading-relaxed text-indigo-950">).*?(</p> </aside>)', lambda m: m.group(1) + render_tco(v, tco_b) + m.group(2), s, what="tco")
-    s = sub1(r'(aria-label="Native versus middleware"> <h2 class="text-xl font-bold">.*?</h2>).*?(</section>)', lambda m: m.group(1) + render_nvm(v, nvm_b, sync2) + m.group(2), s, what="nvm")
+    s = sub1(r'(aria-label="Native versus middleware"> <h2 class="text-xl font-bold">.*?</h2>).*?(</section>)', lambda m: m.group(1) + render_nvm(v, nvm_b, sync2) + nvm_table(v, d) + m.group(2), s, what="nvm")
     # verified facts
     s = sub1(r"(<li><strong>Required tiers:</strong> ).*?( — the minimum plans)", lambda m: m.group(1) + f"'{ta}' / '{tb}'" + m.group(2), s, what="facts")
     s = sub1(r"(<li><strong>Native app availability:</strong>).*?(</li>)", lambda m: m.group(1) + (" Native app available in vendor marketplace." if v["native"] else " No native app — connected via middleware.") + m.group(2), s, what="avail")
@@ -274,11 +294,16 @@ def render_page(s, pair, d, summary, sync, facts, date_modified=None, copy=None,
     assert len(blocks) == 4, pair
     for i, ((h, q, mid, old, post), new) in enumerate(zip(blocks[:3], (q1, q2, q3))):
         s = s.replace(h + q + mid + old + post, h + (esc(q3q) if i == 2 else q) + mid + esc(new) + post, 1)
+    q4q, q4 = (f"What are the limitations of the {A} + {B} integration?", copy["limits"]) if (copy or {}).get("limits") else (None, None)
+    if q4q:
+        h, q, mid, old, post = blocks[3]
+        s = s.replace(h + q + mid + old + post, h + esc(q4q) + mid + esc(q4) + post, 1)
     def faqfix(m):
         o = json.loads(m.group(1))
         if o.get("@type") == "FAQPage":
             for q, new in zip(o["mainEntity"][:3], (q1, q2, q3)): q["acceptedAnswer"]["text"] = new
             o["mainEntity"][2]["name"] = q3q
+            if q4q: o["mainEntity"][3]["name"] = q4q; o["mainEntity"][3]["acceptedAnswer"]["text"] = q4
         if o.get("@type") == "WebPage":
             o["description"] = meta_desc_top(v) if (copy or {}).get("top") else meta_desc(v, d)
             if date_modified: o["dateModified"] = date_modified
@@ -306,10 +331,8 @@ def render_page(s, pair, d, summary, sync, facts, date_modified=None, copy=None,
                    f'<p class="mt-4 leading-relaxed text-slate-700"><strong>Limitations:</strong> {esc(copy["limits"])}</p> '
                    f'<p class="mt-3 text-xs text-slate-500">Sources (checked {copy.get("checked", "Nov 3, 2026")}): {src}</p> </section>')
         s = re.sub(r' <section class="mt-10 rounded-xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8" aria-label="How the integration works">.*?</section>', "", s, flags=re.S)
-        if copy.get("top"):
-            s = sub1(r'(Report a correction →</a> </div>)', lambda m: m.group(1) + sec, s, what="copy insert top")
-        else:
-            s = sub1(r'(aria-label="Native versus middleware">.*?</section>)', lambda m: m.group(1) + sec, s, what="copy insert")
+        # since 2026-11-08 every pair answers "how does it work" above the calculator (search-intent fit)
+        s = sub1(r'(Report a correction →</a> </div>)', lambda m: m.group(1) + sec, s, what="copy insert top")
     return s, v
 
 def excerpt(summary, limit):

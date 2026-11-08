@@ -1,0 +1,146 @@
+# Zendesk + Notion Integration Cost (2026) | StackCostMatrix
+
+> Zendesk + Notion runs via middleware (+$29.99/mo) on Zendesk Suite Team and Notion Plus: $839.99/mo for 10 seats.
+
+Source page: https://stackcostmatrix.com/stack/zendesk-and-notion/  
+Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (credit StackCostMatrix and link to https://stackcostmatrix.com)
+
+---
+
+[Home](https://stackcostmatrix.com/) / Zendesk + Notion 
+
+# Zendesk + Notion Integration Cost (2026): True Price, Minimum Plan & Hidden API Fees
+
+No native docs link - Zapier Professional pushes resolved tickets to a Notion knowledge base; Zendesk's triggers and webhooks are on every Suite plan from Team up. Requires Zendesk on the 'Suite Team' plan and Notion on the 'Plus' plan. Route it through Zapier Professional ($29.99/mo, or $19.99/mo billed annually).
+
+Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements checked · Nov 3, 2026 (Notion plan unconfirmed) · Prices checked · Nov 3, 2026 (Zapier Professional fee: Nov 3, 2026) | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
+
+## How the Zendesk + Notion integration works
+
+There's no native link, so a Zapier Zap connects them. Common Zaps create a Notion database item or page for each new Zendesk ticket (or each ticket in a view), or add a Zendesk ticket comment when a Notion database item is added.
+
+**Limitations:** Each Zap is one-way, and every run counts toward your Zapier task allowance. The Notion integration must be shared with the database it writes to.
+
+Sources (checked Nov 8, 2026): [Zapier: Notion + Zendesk integrations ↗](https://zapier.com/apps/notion/integrations/zendesk) · [Zendesk developers: Webhooks ↗](https://developer.zendesk.com/documentation/webhooks/)
+
+*Interactive cost calculator: open the web page to change team size, billing and add-ons.*
+
+## Default 10-seat TCO summary
+
+**Middleware integration costs $839.99/mo ($10,079.88/yr)** for a 10-seat team —
+Zendesk 'Suite Team' ($690.00/mo) + Notion 'Plus' ($120.00/mo)
++ $29.99/mo middleware. No native connector exists for this pair.
+
+## Native vs middleware for Zendesk + Notion
+
+No native connector exists for this pair, so middleware is not an alternative — it is the integration. The modeled middleware cost is $29.99/mo on top of both tools, for $839.99/mo all-in at 10 seats on the modeled tiers (Zendesk 'Suite Team' + Notion 'Plus'). Sync is 1-way (trigger → action). The middleware figure is the modeled cost for this pair; your actual middleware bill scales with task and operation volume, which is not verified here — check your expected volume against the middleware plan before budgeting.
+
+API access at the required tiers: Zendesk Yes, Notion Yes (see the spec matrix). That API access is what the middleware path runs on.
+
+Integration routes compared for a 10-seat team
+
+| Route | Plans | 10 seats / month | Sync |
+| --- | --- | --- | --- |
+| Zapier Professional (modeled here) | Zendesk 'Suite Team' + Notion 'Plus' | $839.99 | 1-way per automation |
+| Make Core instead | Zendesk 'Suite Team' + Notion 'Plus' | $820.59 | 1-way per automation |
+
+## ✓ Verified Vendor Facts
+
+- **Plan prices:** per-seat costs verified on official vendor pricing pages.
+- **Required tiers:** 'Suite Team' / 'Plus' — the minimum plans that unlock the native integration.
+- **API & webhook gates:** audited in official developer docs (see spec matrix).
+- **Native app availability:** No native app — connected via middleware.
+
+Last checked: Nov 3, 2026 (exceptions listed at the top) · Sources linked below.
+
+## ◐ Model Estimates (your assumptions)
+
+- **Usage / task add-ons:** middleware overage costs you enter above.
+- **Setup & maintenance:** implementation hours and ongoing ops — adjust freely.
+- **Annual billing saving:** uses each vendor's published annual price where one exists, including the middleware or connector fee; otherwise no discount is applied.
+
+Estimates never change the verified facts — they only model your scenario.
+
+## ! Hidden Cost Trap
+
+Requires Zendesk on the 'Suite Team' plan or higher — Requires Notion on the 'Plus' plan or higher — Plus $29.99/month middleware on top of both tools.
+
+Zendesk minimum tier
+:   'Suite Team'
+
+Notion minimum tier
+:   'Plus'
+
+Middleware fee
+:   $29.99/mo
+
+The hidden cost here is the connector: there's no native Zendesk + Notion app, so you pay for Zapier Professional ($29.99/mo) on top of both tools.
+
+ [Connect Zendesk + Notion via Make.com — the middleware this integration runs on](https://stackcostmatrix.com/go/make) 
+
+Affiliate link — we may earn a commission at no extra cost to you.
+
+## Side-by-side spec matrix
+
+Side-by-side spec matrix
+
+| Spec | Zendesk | Notion |
+| --- | --- | --- |
+| Connection type | Middleware   Source: [Zendesk docs ↗](https://developer.zendesk.com/) · [Notion docs ↗](https://developers.notion.com/) · Verified Nov 3, 2026 | |
+| Data sync direction | 1-way (trigger → action) | |
+| Setup time | 1–3 hours (difficulty 2/5) | |
+| Native integration supported | No — requires middleware (Zapier / Make) | |
+| API available (distinct from native app) | Yes  — API ≠ native UI; API enables custom/middleware builds Source: [Zendesk API docs ↗](https://developer.zendesk.com/) · Verified Oct 17, 2026 | Yes  — API ≠ native UI; API enables custom/middleware builds Source: [Notion API docs ↗](https://developers.notion.com/) · Verified Oct 17, 2026 |
+| API access at required tier | Yes  ('Suite Team') 200 requests/min Source: [Zendesk developers: Rate limits ↗](https://developer.zendesk.com/api-reference/introduction/rate-limits/) · Verified Nov 3, 2026 | Yes  ('Plus') Source: [Notion developers: Webhooks ↗](https://developers.notion.com/reference/webhooks) · Verified Nov 3, 2026 |
+| Webhook support at required tier | Yes  ('Suite Team') Source: [Zendesk: Creating webhooks ↗](https://support.zendesk.com/hc/en-us/articles/4408839108378) · Verified Nov 3, 2026 | Yes  ('Plus') Source: [Notion developers: Webhooks ↗](https://developers.notion.com/reference/webhooks) · Verified Nov 3, 2026 |
+
+[Visit Zendesk](https://stackcostmatrix.com/go/zendesk)  [Visit Notion](https://stackcostmatrix.com/go/notion)
+
+Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
+
+## Frequently asked questions
+
+### What are the minimum plan tiers required for the Zendesk + Notion integration?
+
+To unlock the integration, Zendesk must be on the 'Suite Team' plan or higher and Notion must be on the 'Plus' plan or higher. Neither plan is an upgrade over the cheapest plan with API access.
+
+### How much does the Zendesk + Notion stack cost per month for a 10-person team?
+
+At 10 seats with the required tiers (Zendesk 'Suite Team' + Notion 'Plus' + $29.99/month middleware), the stack costs $839.99 per month.
+
+### Why does Zendesk + Notion need middleware, and what does it cost?
+
+The Zendesk + Notion connection runs through middleware: neither vendor offers a native app for this pair, so this page models Zapier Professional at $29.99 per month on top of both tools. Sync is one-way (a trigger in one tool runs an action in the other).
+
+### What are the limitations of the Zendesk + Notion integration?
+
+Each Zap is one-way, and every run counts toward your Zapier task allowance. The Notion integration must be shared with the database it writes to.
+
+## Related integrations
+
+[All Zendesk integrations →](https://stackcostmatrix.com/zendesk-integrations-cost/) · [All Notion integrations →](https://stackcostmatrix.com/notion-integrations-cost/) · [Zendesk API access by plan →](https://stackcostmatrix.com/zendesk-api-access/) · [Notion API access by plan →](https://stackcostmatrix.com/notion-api-access/)
+
+[### ClickUp + Zendesk
+
+Native](https://stackcostmatrix.com/stack/clickup-and-zendesk/)[### Monday.com + Zendesk
+
+Native](https://stackcostmatrix.com/stack/monday-and-zendesk/)[### Salesforce Sales Cloud + Zendesk
+
+Native](https://stackcostmatrix.com/stack/salesforce-and-zendesk/)[### Slack + Notion
+
+Native](https://stackcostmatrix.com/stack/slack-and-notion/)[### Slack + Zendesk
+
+Native](https://stackcostmatrix.com/stack/slack-and-zendesk/)[### Notion + Stripe
+
+Middleware](https://stackcostmatrix.com/stack/notion-and-stripe/)
+
+Last checked: Nov 3, 2026 (exceptions listed at the top)
+
+## Verified sources
+
+Every figure on this page links to its source below; prices that don't come straight from the vendor's page are flagged next to the date:
+
+- [Zendesk official pricing ↗](https://www.zendesk.com/pricing/)
+- [Zendesk API / developer docs ↗](https://developer.zendesk.com/)
+- [Notion official pricing ↗](https://www.notion.so/pricing)
+- [Notion API / developer docs ↗](https://developers.notion.com/)

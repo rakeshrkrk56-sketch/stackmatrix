@@ -30,6 +30,9 @@ STYLE = f"""<style id="{STYLE_ID}">
 .scm-finder-msg{{margin-top:12px;font-size:.9rem;line-height:1.5}}
 .scm-finder-msg:empty{{display:none}}
 .scm-finder-msg a{{text-decoration:underline;font-weight:600}}
+output{{display:block}}
+.sr-only{{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0}}
+[data-msg]::before{{content:attr(data-msg)}}
 .bg-emerald-700{{background-color:#047857}}
 .hover\\:bg-emerald-800:hover{{background-color:#065f46}}
 </style>"""
@@ -90,7 +93,7 @@ def main():
     s = s.replace('<section class="mt-12" aria-label="Integration costs by tool">', '<section class="mt-12" id="tools" aria-label="Integration costs by tool">', 1)
     s = s.replace('<section class="mt-12"> <h2 class="text-2xl font-bold tracking-tight">All integration pairs</h2>', '<section class="mt-12" id="pairs"> <h2 class="text-2xl font-bold tracking-tight">All integration pairs</h2>', 1)
     s = s.replace('<p class="text-3xl font-bold">2026-11-03</p>', '<p class="text-3xl font-bold">Nov 3, 2026</p>', 1)
-    s = re.sub(r'<form class="scm-finder[^"]*" id="scm-finder".*?\}\)\(\);</script>', "", s, flags=re.S)
+    s = re.sub(r' ?<form class="scm-finder[^"]*" id="scm-finder".*?\}\)\(\);</script>', "", s, flags=re.S)
     a = 'before you sign up.\n</p>'
     assert s.count(a) == 1
     s = s.replace(a, a + " " + finder_html(D), 1)

@@ -1,0 +1,74 @@
+# Zendesk Integration Costs (2026): Plans & Hidden Fees
+
+> Zendesk integration costs in 2026: the minimum Zendesk plan, native vs middleware and 10-seat totals for 7 connections, from $690 to $1,940/mo.
+
+Source page: https://stackcostmatrix.com/zendesk-integrations-cost/  
+Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (credit StackCostMatrix and link to https://stackcostmatrix.com)
+
+---
+
+Tool guide
+
+# Zendesk Integration Costs (2026): Minimum Plans, API Access & Hidden Fees
+
+Built from the 7 pair calculators below · integration requirements checked Nov 3, 2026; 1 with a plan still unconfirmed (Notion). · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
+
+This page collects the 7 Zendesk integrations in the StackCostMatrix index: which Zendesk plan each one needs, whether it's native or runs through middleware, and what the whole stack costs for a 10-person team. 5 of the 7 connect natively and 2 need a connector such as Make or Zapier. By minimum Zendesk plan, the count is Suite Team (7). Ten-seat totals run from $690.00/mo (ClickUp + Zendesk) to $1,940.00/mo (Salesforce + Zendesk).
+
+| Integration | Type | Min. Zendesk plan | Other tool's plan | 10-seat total | Checked | Details |
+| --- | --- | --- | --- | --- | --- | --- |
+| ClickUp + Zendesk | Native | Suite Team | Free | $690.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/clickup-and-zendesk/) |
+| HubSpot + Zendesk | Native | Suite Team | Free | $690.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/hubspot-and-zendesk/) |
+| Slack + Zendesk | Native | Suite Team | Free | $690.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/slack-and-zendesk/) |
+| Zendesk + Stripe | Middleware Make Core $10.59/mo | Suite Team | Standard | $700.59 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/zendesk-and-stripe/) |
+| Monday.com + Zendesk | Native | Suite Team | Standard | $830.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/monday-and-zendesk/) |
+| Zendesk + Notion | Middleware Zapier Professional $29.99/mo | Suite Team | Plus | $839.99 | Nov 3, 2026 (Notion plan unconfirmed) | [Calculator →](https://stackcostmatrix.com/stack/zendesk-and-notion/) |
+| Salesforce + Zendesk | Native | Suite Team | Professional | $1,940.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/salesforce-and-zendesk/) |
+
+Totals are monthly-billing prices for 10 seats on the minimum plans, including any connector fee. Open a calculator to change team size, switch to annual billing or add usage costs.
+
+## Does Zendesk force an upgrade?
+
+Not for any of the 7 integrations here: each one works on Zendesk's cheapest plan with API access, so the integration itself adds no Zendesk upgrade cost. Any extra cost comes from the other tool's plan or from a connector fee, shown in the table above.
+
+## Which Zendesk integrations need middleware
+
+2 of the 7 have no native connector and run through a third-party service: Zendesk + Stripe (Make Core, $10.59/mo); Zendesk + Notion (Zapier Professional, $29.99/mo). Connector fees are the monthly-billing price; the calculators use the lower annual-billing price (Make Core $9, Zapier Professional $19.99, Data Mapper $12.75) when you switch on annual billing. Real usage can push Make or Zapier onto a bigger plan, so check your expected volume.
+
+## Zendesk plans, API access and webhooks
+
+API and webhook facts are listed for the plans that at least one integration below requires, with the date each was checked against Zendesk's documentation. Prices are monthly-billing list prices, re-checked on the vendor's pricing page on Nov 3, 2026; the annual-billing price is shown where the vendor publishes one. [Every Zendesk plan's API access, limits and webhooks →](https://stackcostmatrix.com/zendesk-api-access/)
+
+Zendesk plans, API access and webhooks
+
+| Plan | Price | API access | Webhooks | Integrations that need it |
+| --- | --- | --- | --- | --- |
+| Suite Team | $69/seat/mo ($55 billed annually) | Yes Verified Nov 3, 2026 | Yes Verified Nov 3, 2026 | 7 |
+| Suite Growth | $115/seat/mo ($89 billed annually) | Not checked here (no pair needs this plan) | Not checked here (no pair needs this plan) | 0 |
+| Suite Professional | $149/seat/mo ($115 billed annually) | Not checked here (no pair needs this plan) | Not checked here (no pair needs this plan) | 0 |
+
+## Vendor sources
+
+Each pair page lists the specific help-center and developer-docs pages behind its facts.
+
+[Zendesk — official pricing ↗](https://www.zendesk.com/pricing/) [Zendesk — API docs ↗](https://developer.zendesk.com/) [ClickUp — official pricing ↗](https://clickup.com/pricing) [HubSpot — official pricing ↗](https://www.hubspot.com/pricing) [Monday.com — official pricing ↗](https://monday.com/pricing) [Notion — official pricing ↗](https://www.notion.so/pricing) [Salesforce Sales Cloud — official pricing ↗](https://www.salesforce.com/sales/pricing/) [Slack — official pricing ↗](https://slack.com/pricing) [Stripe — official pricing ↗](https://stripe.com/pricing)
+
+Full 20-tool source index: [About StackCostMatrix →](https://stackcostmatrix.com/about/)
+
+## Integration costs by tool
+
+[ActiveCampaign](https://stackcostmatrix.com/activecampaign-integrations-cost/) · [Airtable](https://stackcostmatrix.com/airtable-integrations-cost/) · [Asana](https://stackcostmatrix.com/asana-integrations-cost/) · [Calendly](https://stackcostmatrix.com/calendly-integrations-cost/) · [ClickUp](https://stackcostmatrix.com/clickup-integrations-cost/) · [HubSpot](https://stackcostmatrix.com/hubspot-integrations-cost/) · [Intercom](https://stackcostmatrix.com/intercom-integrations-cost/) · [Mailchimp](https://stackcostmatrix.com/mailchimp-integrations-cost/) · [Monday.com](https://stackcostmatrix.com/monday-integrations-cost/) · [Notion](https://stackcostmatrix.com/notion-integrations-cost/) · [Pipedrive](https://stackcostmatrix.com/pipedrive-integrations-cost/) · [QuickBooks](https://stackcostmatrix.com/quickbooks-integrations-cost/) · [Salesforce](https://stackcostmatrix.com/salesforce-integrations-cost/) · [Slack](https://stackcostmatrix.com/slack-integrations-cost/) · [Stripe](https://stackcostmatrix.com/stripe-integrations-cost/) · [Xero](https://stackcostmatrix.com/xero-integrations-cost/)
+
+## Frequently asked questions
+
+### Which Zendesk plan do I need for integrations?
+
+Of the 7 Zendesk integrations in this index, 7 work on Zendesk's Suite Team plan. None needs a higher plan. Each pair's calculator shows the exact minimum plan on both sides.
+
+### Which Zendesk integrations need Zapier or Make?
+
+2 of the 7 have no native connector: Stripe (Make Core, $10.59/month); Notion (Zapier Professional, $29.99/month).
+
+### How much does a Zendesk integration cost for a 10-person team?
+
+Including both tools' minimum plans and any connector fee, the 10-seat monthly totals range from $690.00 (ClickUp + Zendesk) to $1,940.00 (Salesforce + Zendesk), at monthly-billing prices.

@@ -104,6 +104,10 @@ TOOLS = {
             ("Intuit developers: Webhooks", "https://developer.intuit.com/app/developer/qbo/docs/develop/webhooks", "Webhooks automatically notify you whenever data changes in your end-user's QuickBooks Online company files.")]),
  "salesforce": dict(
    checked="Nov 8, 2026",
+   faq_extra=[("Does Salesforce Professional have API access?",
+               "Only if you buy the API add-on. Salesforce's developer docs say API access is enabled by default in Enterprise, Performance, Unlimited and Developer Edition orgs, and that Professional Edition orgs can add API access as an add-on; this site models it at $25 per user a month. Once the org has API access, each user who connects an integration also needs the API Enabled permission on their profile or permission set."),
+              ("How many API calls does Salesforce allow per day?",
+               "API limits apply to the whole org per 24 hours: 100,000 calls plus 1,000 per Salesforce license on Enterprise (and on Professional with API access), or plus 5,000 per license on Unlimited, plus any API calls you buy. A 10-license org gets 110,000 calls a day on Enterprise and 150,000 on Unlimited.")],
    answer="Salesforce API access is included in Enterprise and Unlimited; Professional only gets it with a paid API add-on (modeled at $25 per user a month), and Starter doesn't support the API. With API access, an org gets 100,000 API calls per 24 hours plus 1,000 per Salesforce license (Enterprise, or Professional with API access) or 5,000 per license (Unlimited). Change Data Capture, Salesforce's real-time change feed, is on Enterprise and Unlimited only.",
    plans={"Starter": P("No", "No", ""),
           "Professional": P("Add-on", "No", "", api_note="Web Services API add-on (modeled at $25/user)", lim="100,000 + 1,000 per Salesforce license / 24 h (with API access)", wh_note="Change Data Capture isn't available on Professional"),

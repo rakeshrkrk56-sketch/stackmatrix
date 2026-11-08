@@ -178,7 +178,7 @@ def build():
              'el.addEventListener("mouseleave",hide);el.addEventListener("focus",function(){show(null,el)});el.addEventListener("blur",hide);});})();</script>')
     body = (f'<section class="mx-auto max-w-4xl"> <p class="text-sm font-semibold uppercase tracking-widest text-indigo-600">Research · November 2026</p> '
             f'<h1 class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">\nThe Integration Tax 2026: What Connecting SaaS Tools Really Costs\n</h1> '
-            f'<p class="mt-3 text-sm text-slate-500">StackCostMatrix · Published Nov 3, 2026 · Data checked against vendor docs Nov 3, 2026 · Updated Nov 8, 2026: HubSpot Professional repriced per seat (Nov 5); ActiveCampaign + Stripe, Mailchimp + Calendly and Pipedrive + Xero corrected (Nov 8; see the About page changelog) · Edited by <a href="/about/#editor" class="font-medium text-indigo-600 hover:underline">Rakesh</a></p> '
+            f'<p class="mt-3 text-sm text-slate-500">StackCostMatrix · Published Nov 3, 2026 · Data checked against vendor docs Nov 3, 2026 · Updated Nov 8, 2026: HubSpot Professional repriced per seat (Nov 5); ActiveCampaign + Stripe, Mailchimp + Calendly and Pipedrive + Xero corrected (Nov 8; see the About page changelog) · Edited by <a href="/about/#editor" class="font-medium text-indigo-600 hover:underline">Rakesh Kumar</a></p> '
             f'{P}{lead}</p> {tiles} {findings} {chart1} {chart2} {table} {meth} {cite}{faq_html} </section> {tipjs} ')
     ld = [
         {"@context": "https://schema.org", "@type": "Article", "headline": "The Integration Tax 2026: What Connecting SaaS Tools Really Costs", "description": desc,
