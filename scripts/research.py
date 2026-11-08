@@ -77,7 +77,7 @@ def bar_rows(items, vmax, legend=True):
             last = i == len(segs) - 1
             bars += (f'<span style="display:block;height:14px;width:{val / vmax * 100:.3f}%;background:{col};'
                      f'border-radius:{"0 4px 4px 0" if last else "0"};{"margin-right:2px;" if not last else ""}"></span>')
-        out.append(f'<div class="mt-3" tabindex="0" data-tip="{attr(tip)}" aria-label="{attr(tip)}" style="outline-offset:4px"> '
+        out.append(f'<div class="mt-3" role="listitem" tabindex="0" data-tip="{attr(tip)}" aria-label="{attr(tip)}" style="outline-offset:4px"> '
                    f'<div class="flex items-center justify-between gap-3 text-sm"><a href="{href}" class="font-medium text-slate-900 hover:text-indigo-700">{esc(label)}</a>'
                    f'<span class="text-slate-700" style="font-variant-numeric:tabular-nums">{esc(total)}</span></div> '
                    f'<div style="display:flex;margin-top:4px;border-left:1px solid #c3c2b7">{bars}</div> </div>')

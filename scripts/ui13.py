@@ -15,7 +15,7 @@ STYLE = f"""<style id="{STYLE_ID}">
 .scm-finder.scm-light{{background:#fff;border:1px solid #e2e8f0;box-shadow:0 1px 2px rgba(0,0,0,.05);text-align:left}}
 .scm-finder-grid{{display:grid;gap:12px}}
 @media (min-width:640px){{.scm-finder-grid{{grid-template-columns:1fr 1fr auto;align-items:end}}}}
-.scm-finder label{{display:block;margin-bottom:6px;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:#e0e7ff}}
+.scm-finder label{{display:block;margin-bottom:6px;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:#fff}}
 .scm-finder.scm-light label{{color:#475569}}
 .scm-finder select{{width:100%;border-radius:12px;border:1px solid #cbd5e1;padding:11px 12px;font-size:1rem;color:#0f172a;background:#fff}}
 .scm-finder button{{border-radius:12px;border:0;padding:12px 20px;font-size:.95rem;font-weight:700;cursor:pointer;background:#fff;color:#4338ca}}
@@ -27,6 +27,8 @@ STYLE = f"""<style id="{STYLE_ID}">
 .scm-finder-msg{{margin-top:12px;font-size:.9rem;line-height:1.5}}
 .scm-finder-msg:empty{{display:none}}
 .scm-finder-msg a{{text-decoration:underline;font-weight:600}}
+.bg-emerald-700{{background-color:#047857}}
+.hover\\:bg-emerald-800:hover{{background-color:#065f46}}
 </style>"""
 OLD_NAV = '<nav class="flex items-center gap-4 text-sm font-medium text-slate-600"> <a href="/" class="hover:text-indigo-600">All pairs</a> </nav>'
 NEW_NAV = ('<nav class="scm-nav" aria-label="Main"> <a href="/#tools" class="scm-wide">Integrations by tool</a> <a href="/#tools" class="scm-narrow">Tools</a> '
@@ -71,6 +73,9 @@ def main():
         if OLD_NAV not in s and 'class="scm-nav"' not in s: continue
         if f'id="{STYLE_ID}"' not in s:
             s = s.replace("</head>", STYLE + "</head>", 1); n["style"] += 1
+        else:   # refresh an older copy of the shared style block
+            s2 = re.sub(r'<style id="' + STYLE_ID + r'">.*?</style>', lambda m: STYLE, s, count=1, flags=re.S)
+            if s2 != s: s = s2; n["style"] += 1
         if OLD_NAV in s: s = s.replace(OLD_NAV, NEW_NAV, 1); n["nav"] += 1
         if SEP_OLD in s: n["sep"] += s.count(SEP_OLD); s = s.replace(SEP_OLD, SEP_NEW)
         if s != s0: open(f, "w", encoding="utf-8").write(s)
