@@ -1,4 +1,4 @@
-# Salesforce + Slack Integration Cost (2026) | StackCostMatrix
+# Salesforce Sales Cloud + Slack Integration Cost (2026): True Price, Minimum Plan & Hidden API Fees
 
 > Salesforce Sales Cloud + Slack needs Salesforce Sales Cloud Enterprise and Slack Pro: $1,737.50/mo for 10 seats, including a +$400/mo forced upgrade.
 
@@ -9,8 +9,6 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 [Home](https://stackcostmatrix.com/) / Salesforce Sales Cloud + Slack 
 
-# Salesforce Sales Cloud + Slack Integration Cost (2026): True Price, Minimum Plan & Hidden API Fees
-
 Big trap: Salesforce's current Slack apps need Enterprise edition or higher ($165/user/mo); the older Slack-built app that worked with lower editions no longer accepts new installs. Requires Salesforce Sales Cloud on the 'Enterprise' plan and Slack on the 'Pro' plan.
 
 Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements checked · Nov 3, 2026 (Salesforce edition unconfirmed) · Prices checked · Nov 3, 2026 (Salesforce prices: Oct 17, 2026) | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
@@ -19,7 +17,19 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 Salesforce builds its own suite of Slack integrations that bring Salesforce records and notifications into Slack. The original Slack-built Salesforce app is no longer supported.
 
+### How to set it up
+
+1. A Salesforce System Administrator first installs and configures the Slack app in Salesforce.
+2. Open the Salesforce page in the Slack Marketplace and click Add to Slack. On the Salesforce app landing page, click Add to Slack again.
+3. Follow the prompts to authenticate your Salesforce account and finish installing the app.
+4. In Slack, click Apps at the top of the left sidebar, then search for and select Salesforce.
+5. On the app's Home tab, click Connect Account. Once the accounts are connected, click Open Slack to return.
+
+Steps follow [Slack's setup guide ↗](https://slack.com/help/articles/227838227-Salesforce-apps-for-Slack), read Nov 10, 2026.
+
 **Limitations:** Salesforce lists Enterprise, Performance, Unlimited and Developer editions for its Sales Cloud app for Slack, so Starter and Professional teams would need to upgrade or use middleware instead.
+
+[Setup guide: Slack: Salesforce apps for Slack ↗](https://slack.com/help/articles/227838227-Salesforce-apps-for-Slack)
 
 Sources (checked Nov 3, 2026): [Slack: Salesforce apps for Slack ↗](https://slack.com/help/articles/227838227-Salesforce-apps-for-Slack) · [Salesforce Help: Enable Sales Cloud for Slack ↗](https://help.salesforce.com/s/articleView?id=slack.slack_apps_sales_enable_the_sales_cloud_for_slack_app.htm&language=en_US&type=5)
 
@@ -32,20 +42,29 @@ Salesforce Sales Cloud 'Enterprise' ($1,650.00/mo) + Slack 'Pro' ($87.50/mo),
 no middleware required.
 Alternative: skip the native tier upgrade and run via Make/Zapier middleware for ~$1,348.09/mo all-in (adds a third-party dependency).
 
+ 
+
 ## Native vs middleware for Salesforce Sales Cloud + Slack
 
-The native path runs on the required tiers (Salesforce Sales Cloud 'Enterprise' + Slack 'Pro') at $1,737.50/mo for a 10-seat team, with 2-way sync and no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — comes to $1,348.09/mo all-in, which is cheaper on paper because it skips the $400.00/mo forced tier upgrade. The trade-off: you replace the native connector with a third-party dependency, sync becomes 1-way (trigger → action) instead of 2-way, and Make Core's fee covers a fixed monthly allowance of credits — whether that covers your volume is not verified for this pair.
+The connector routes are cheaper on paper because they skip the forced plan upgrade. The trade-off: you swap the native connector for a third-party automation you build and maintain, sync drops from 2-way to 1-way per automation, and the connector bills by usage.
 
-API access at the required tiers: Salesforce Sales Cloud Yes, Slack Yes (see the spec matrix). That API access is what the middleware path runs on.
+Chart: Salesforce Sales Cloud + Slack: monthly cost for 10 seats by route: Native connector $1,737.50; Make Core route $1,348.09; Zapier Professional route $1,367.49
+
+Monthly cost for 10 seats by route, Salesforce Sales Cloud + Slack.
+
+ 
 
 Integration routes compared for a 10-seat team
 
 | Route | Plans | 10 seats / month | Sync |
 | --- | --- | --- | --- |
-| Native Salesforce Sales Cloud + Slack connector | Salesforce Sales Cloud 'Enterprise' + Slack 'Pro' | $1,737.50 | As listed in the spec matrix |
+| Native Salesforce Sales Cloud + Slack connector | Salesforce Sales Cloud 'Enterprise' + Slack 'Pro' | $1,737.50 | 2-way |
 | Make Core on the cheapest API plans | Salesforce Sales Cloud 'Professional' + Slack 'Pro' + Make | $1,348.09 | 1-way per scenario |
+| Zapier Professional on the cheapest API plans | Salesforce Sales Cloud 'Professional' + Slack 'Pro' + Zapier | $1,367.49 | 1-way per Zap |
 
-Make Core's $10.59 monthly price comes from third-party pricing reviews, because make.com blocks automated checks; Zapier's is from zapier.com/pricing.
+Connector prices are monthly-billing list prices: Zapier Professional $29.99 (zapier.com/pricing) and Make Core $10.59 (from third-party pricing reviews, because make.com blocks automated checks). Both bill by usage, so high volumes cost more.
+
+Image: [Salesforce Sales Cloud + Slack integration cost summary: $1,737.50 a month for 10 seats, $400 of it is the hidden cost to connect; plans needed: Salesforce Sales Cloud Enterprise and Slack Pro](https://stackcostmatrix.com/og/salesforce-and-slack.jpg)
 
 ## ✓ Verified Vendor Facts
 
@@ -55,14 +74,6 @@ Make Core's $10.59 monthly price comes from third-party pricing reviews, because
 - **Native app availability:** Native app available in vendor marketplace.
 
 Last checked: Nov 3, 2026 (exceptions listed at the top) · Sources linked below.
-
-## ◐ Model Estimates (your assumptions)
-
-- **Usage / task add-ons:** middleware overage costs you enter above.
-- **Setup & maintenance:** implementation hours and ongoing ops — adjust freely.
-- **Annual billing saving:** uses each vendor's published annual price where one exists; otherwise no discount is applied.
-
-Estimates never change the verified facts — they only model your scenario.
 
 ## ! Hidden Cost Trap
 
@@ -101,7 +112,7 @@ Side-by-side spec matrix
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
 
-## Frequently asked questions
+## Salesforce Sales Cloud + Slack integration: frequently asked questions
 
 ### What are the minimum plan tiers required for the Salesforce Sales Cloud + Slack integration?
 
@@ -119,7 +130,7 @@ The Salesforce Sales Cloud + Slack connection is native — no third-party middl
 
 Salesforce lists Enterprise, Performance, Unlimited and Developer editions for its Sales Cloud app for Slack, so Starter and Professional teams would need to upgrade or use middleware instead.
 
-## Related integrations
+## Integrations related to Salesforce Sales Cloud + Slack
 
 [All Salesforce integrations →](https://stackcostmatrix.com/salesforce-integrations-cost/) · [All Slack integrations →](https://stackcostmatrix.com/slack-integrations-cost/) · [Salesforce API access by plan →](https://stackcostmatrix.com/salesforce-api-access/) · [Slack API access by plan →](https://stackcostmatrix.com/slack-api-access/)
 

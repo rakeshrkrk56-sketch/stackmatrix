@@ -1,6 +1,6 @@
-# Salesforce + Stripe Integration Cost (2026)
+# Salesforce Sales Cloud + Stripe Integration (2026): How It Works, Setup & True Cost
 
-> Salesforce Sales Cloud + Stripe needs Salesforce Sales Cloud Professional and Stripe Standard: $1,250/mo for 10 seats, with no extra cost to connect them.
+> How the Salesforce Sales Cloud + Stripe integration works and how to set it up, plus the plans it needs and the 10-seat cost ($1,250/mo).
 
 Source page: https://stackcostmatrix.com/stack/salesforce-and-stripe/  
 Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (credit StackCostMatrix and link to https://stackcostmatrix.com)
@@ -9,8 +9,6 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 [Home](https://stackcostmatrix.com/) / Salesforce Sales Cloud + Stripe 
 
-# Salesforce Sales Cloud + Stripe Integration Cost (2026): Plans, Setup & True Price
-
 Big trap: Salesforce Starter has no API access - you must be on Professional ($100/user/mo, plus a $25/user/mo API add-on) before Stripe can talk to it at all. Requires Salesforce Sales Cloud on the 'Professional' plan and Stripe on the 'Standard' plan for full 2-way sync.
 
 Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements checked · Nov 3, 2026 (Salesforce edition unconfirmed) · Prices checked · Nov 3, 2026 (Salesforce prices: Oct 17, 2026) | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
@@ -18,6 +16,19 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 ## How the Salesforce Sales Cloud + Stripe integration works
 
 The Stripe app for Salesforce Platform lets you process and reconcile Stripe payments inside Salesforce and call Stripe from Flow and Apex, for example to create Stripe subscriptions when orders are activated.
+
+[Setup guide: Stripe: Stripe app for Salesforce Platform ↗](https://docs.stripe.com/connectors/stripe-connector-for-salesforce/overview)
+
+### How to set it up
+
+1. In Salesforce, make sure Lightning Web Security is enabled under Setup > Session Management > Session Settings.
+2. Open the app's Salesforce AppExchange listing, log in to the org where you want it and click Continue. Stripe recommends choosing Install for Admins Only.
+3. Tick the Approve Third-Party Access box and click Continue to start the installation.
+4. Go to App Launcher > Stripe for Salesforce Platform, click Get Started, then Authorize, and click Allow in the new window.
+5. Enter your Stripe publishable key and restricted access key, then click Add Account.
+6. Pick the Stripe API version, click Install Package to add the extension package, then click Finish.
+
+Steps follow [Stripe's setup guide ↗](https://docs.stripe.com/plugins/stripe-connector-for-salesforce/installation-guide), read Nov 10, 2026.
 
 **Limitations:** Stripe says it works best on core clouds such as Sales Cloud, and the app now authenticates with a Stripe API key because OAuth sign-in was retired in version 1.17.
 
@@ -30,22 +41,31 @@ Sources (checked Nov 3, 2026): [Stripe: Stripe app for Salesforce Platform ↗](
 **Native integration costs $1,250.00/mo ($15,000.00/yr)** for a 10-seat team —
 Salesforce Sales Cloud 'Professional' ($1,250.00/mo) + Stripe 'Standard' ($0.00/mo),
 no middleware required.
-Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capable tiers ($1,260.59/mo all-in) — the native path is cheaper.
+Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capable tiers ($1,260.59/mo all-in) — the native path is cheaper. Salesforce's $1,250.00 is the Professional plan ($100/user) plus the API add-on, which Salesforce sells through an account executive; this page models it at $25/user ($250 at 10 seats).
+
+ 
 
 ## Native vs middleware for Salesforce Sales Cloud + Stripe
 
-The native path runs on the required tiers (Salesforce Sales Cloud 'Professional' + Stripe 'Standard') at $1,250.00/mo for a 10-seat team, with 2-way sync and no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — would cost $1,260.59/mo all-in, so on cost alone there is no reason to switch: middleware would only make sense if you already run other automations through it, and it would drop sync to 1-way (trigger → action).
+The native connector is the cheapest route here and the only one with 2-way sync. Make or Zapier only makes sense if you already run other automations through it, or need a step the native app doesn't offer.
 
-API access at the required tiers: Salesforce Sales Cloud Yes, Stripe Yes (see the spec matrix). That API access is what the middleware path runs on.
+Chart: Salesforce Sales Cloud + Stripe: monthly cost for 10 seats by route: Native connector $1,250.00; Make Core route $1,260.59; Zapier Professional route $1,279.99
+
+Monthly cost for 10 seats by route, Salesforce Sales Cloud + Stripe.
+
+ 
 
 Integration routes compared for a 10-seat team
 
 | Route | Plans | 10 seats / month | Sync |
 | --- | --- | --- | --- |
-| Native Salesforce Sales Cloud + Stripe connector | Salesforce Sales Cloud 'Professional' + Stripe 'Standard' | $1,250.00 | As listed in the spec matrix |
+| Native Salesforce Sales Cloud + Stripe connector | Salesforce Sales Cloud 'Professional' + Stripe 'Standard' | $1,250.00 | 2-way |
 | Make Core on the cheapest API plans | Salesforce Sales Cloud 'Professional' + Stripe 'Standard' + Make | $1,260.59 | 1-way per scenario |
+| Zapier Professional on the cheapest API plans | Salesforce Sales Cloud 'Professional' + Stripe 'Standard' + Zapier | $1,279.99 | 1-way per Zap |
 
-Make Core's $10.59 monthly price comes from third-party pricing reviews, because make.com blocks automated checks; Zapier's is from zapier.com/pricing.
+Connector prices are monthly-billing list prices: Zapier Professional $29.99 (zapier.com/pricing) and Make Core $10.59 (from third-party pricing reviews, because make.com blocks automated checks). Both bill by usage, so high volumes cost more.
+
+Image: [Salesforce Sales Cloud + Stripe integration cost summary: $1,250 a month for 10 seats, nothing extra to connect; plans needed: Salesforce Sales Cloud Professional and Stripe Standard](https://stackcostmatrix.com/og/salesforce-and-stripe.jpg)
 
 ## ✓ Verified Vendor Facts
 
@@ -55,14 +75,6 @@ Make Core's $10.59 monthly price comes from third-party pricing reviews, because
 - **Native app availability:** Native app available in vendor marketplace.
 
 Last checked: Nov 3, 2026 (exceptions listed at the top) · Sources linked below.
-
-## ◐ Model Estimates (your assumptions)
-
-- **Usage / task add-ons:** middleware overage costs you enter above.
-- **Setup & maintenance:** implementation hours and ongoing ops — adjust freely.
-- **Annual billing saving:** uses each vendor's published annual price where one exists; otherwise no discount is applied.
-
-Estimates never change the verified facts — they only model your scenario.
 
 ## ! Plan requirements
 
@@ -78,11 +90,6 @@ Middleware fee
 :   None
 
 No hidden cost: the native connector works on Salesforce Sales Cloud 'Professional' and Stripe 'Standard', so connecting them adds nothing to what you already pay for the two tools. Stripe has no monthly plan fee; it charges per transaction, so it counts as $0/month here.
-
-✓ Native is the cheapest path — $0 incremental integration cost
-
-The native Salesforce Sales Cloud + Stripe connector runs on the required tiers with no middleware fee
-and no forced tier upgrade — paying for middleware here would only add cost.
 
 ## Side-by-side spec matrix
 
@@ -102,11 +109,11 @@ Side-by-side spec matrix
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
 
-## Frequently asked questions
+## Salesforce Sales Cloud + Stripe integration: frequently asked questions
 
 ### What are the minimum plan tiers required for the Salesforce Sales Cloud + Stripe integration?
 
-To unlock the native integration, Salesforce Sales Cloud must be on the 'Professional' plan or higher and Stripe must be on the 'Standard' plan or higher. Neither plan is an upgrade over the cheapest plan with API access.
+To unlock the native integration, Salesforce Sales Cloud must be on the 'Professional' plan or higher and Stripe must be on the 'Standard' plan or higher. Those are each tool's cheapest plan with API access (Salesforce Sales Cloud 'Professional' at $1,250/mo and Stripe 'Standard' at $0/mo for 10 seats), so the integration doesn't force an upgrade.
 
 ### How much does the Salesforce Sales Cloud + Stripe stack cost per month for a 10-person team?
 
@@ -120,7 +127,7 @@ The Salesforce Sales Cloud + Stripe connection is native — no third-party midd
 
 Stripe says it works best on core clouds such as Sales Cloud, and the app now authenticates with a Stripe API key because OAuth sign-in was retired in version 1.17.
 
-## Related integrations
+## Integrations related to Salesforce Sales Cloud + Stripe
 
 [All Salesforce integrations →](https://stackcostmatrix.com/salesforce-integrations-cost/) · [All Stripe integrations →](https://stackcostmatrix.com/stripe-integrations-cost/) · [Salesforce API access by plan →](https://stackcostmatrix.com/salesforce-api-access/) · [Stripe API access by plan →](https://stackcostmatrix.com/stripe-api-access/)
 

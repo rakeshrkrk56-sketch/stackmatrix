@@ -1,4 +1,4 @@
-# Stripe Integration Costs (2026): Plans & Hidden Fees
+# Stripe Integration Costs (2026): Minimum Plans, API Access & Hidden Fees
 
 > Stripe integration costs in 2026: the minimum Stripe plan, native vs middleware and 10-seat totals for 12 connections, from $0 to $1,250/mo.
 
@@ -9,9 +9,7 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 Tool guide
 
-# Stripe Integration Costs (2026): Minimum Plans, API Access & Hidden Fees
-
-Built from the 12 pair calculators below · integration requirements checked Nov 3, 2026; 2 with a plan still unconfirmed (Notion and Salesforce Sales Cloud). · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
+Built from the 12 pair calculators below · integration requirements checked Nov 3, 2026 to Nov 8, 2026; 2 with a plan still unconfirmed (Notion and Salesforce Sales Cloud). · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
 
 This page collects the 12 Stripe integrations in the StackCostMatrix index: which Stripe plan each one needs, whether it's native or runs through middleware, and what the whole stack costs for a 10-person team. 6 of the 12 connect natively and 6 need a connector such as Make or Zapier. By minimum Stripe plan, the count is Standard (12). Ten-seat totals run from $0.00/mo (HubSpot + Stripe) to $1,250.00/mo (Salesforce + Stripe).
 
@@ -19,20 +17,28 @@ Stripe Integration Costs (2026): Minimum Plans, API Access & Hidden Fees
 
 | Integration | Type | Min. Stripe plan | Other tool's plan | 10-seat total | Checked | Details |
 | --- | --- | --- | --- | --- | --- | --- |
-| HubSpot + Stripe | Native | Standard | Free | $0.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/hubspot-and-stripe/) |
-| Stripe + Slack | Native | Standard | Free | $0.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/stripe-and-slack/) |
-| ClickUp + Stripe | Middleware Make Core $10.59/mo | Standard | Free | $10.59 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/clickup-and-stripe/) |
-| Stripe + Mailchimp | Middleware Data Mapper for Mailchimp $15/mo | Standard | Free | $15.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/stripe-and-mailchimp/) |
-| Stripe + Xero | Native | Standard | Early | $27.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/stripe-and-xero/) |
-| Stripe + QuickBooks | Middleware Make Core $10.59/mo | Standard | Simple Start | $48.59 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/stripe-and-quickbooks/) |
-| ActiveCampaign + Stripe | Native | Standard | Plus | $49.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/activecampaign-and-stripe/) |
-| Notion + Stripe | Middleware Make Core $10.59/mo | Standard | Plus | $130.59 | Nov 3, 2026 (Notion plan unconfirmed) | [Calculator →](https://stackcostmatrix.com/stack/notion-and-stripe/) |
-| Airtable + Stripe | Middleware Make Core $10.59/mo | Standard | Team | $250.59 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/airtable-and-stripe/) |
-| Intercom + Stripe | Native | Standard | Essential | $390.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/intercom-and-stripe/) |
-| Zendesk + Stripe | Middleware Make Core $10.59/mo | Standard | Suite Team | $700.59 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/zendesk-and-stripe/) |
-| Salesforce + Stripe | Native | Standard | Professional | $1,250.00 | Nov 3, 2026 (Salesforce edition unconfirmed) | [Calculator →](https://stackcostmatrix.com/stack/salesforce-and-stripe/) |
+| [HubSpot + Stripe](https://stackcostmatrix.com/stack/hubspot-and-stripe/) | Native | Standard | Free | $0.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/hubspot-and-stripe/) |
+| [Stripe + Slack](https://stackcostmatrix.com/stack/stripe-and-slack/) | Native | Standard | Free | $0.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/stripe-and-slack/) |
+| [ClickUp + Stripe](https://stackcostmatrix.com/stack/clickup-and-stripe/) | Middleware Make Core $10.59/mo | Standard | Free | $10.59 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/clickup-and-stripe/) |
+| [Stripe + Mailchimp](https://stackcostmatrix.com/stack/stripe-and-mailchimp/) | Middleware Data Mapper for Mailchimp $15/mo | Standard | Free | $15.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/stripe-and-mailchimp/) |
+| [Stripe + Xero](https://stackcostmatrix.com/stack/stripe-and-xero/) | Native | Standard | Early | $27.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/stripe-and-xero/) |
+| [Stripe + QuickBooks](https://stackcostmatrix.com/stack/stripe-and-quickbooks/) | Middleware Make Core $10.59/mo | Standard | Simple Start | $48.59 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/stripe-and-quickbooks/) |
+| [ActiveCampaign + Stripe](https://stackcostmatrix.com/stack/activecampaign-and-stripe/) | Native | Standard | Plus | $49.00 | Nov 8, 2026 | [Calculator →](https://stackcostmatrix.com/stack/activecampaign-and-stripe/) |
+| [Notion + Stripe](https://stackcostmatrix.com/stack/notion-and-stripe/) | Middleware Make Core $10.59/mo | Standard | Plus | $130.59 | Nov 3, 2026 (Notion plan unconfirmed) | [Calculator →](https://stackcostmatrix.com/stack/notion-and-stripe/) |
+| [Airtable + Stripe](https://stackcostmatrix.com/stack/airtable-and-stripe/) | Middleware Make Core $10.59/mo | Standard | Team | $250.59 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/airtable-and-stripe/) |
+| [Intercom + Stripe](https://stackcostmatrix.com/stack/intercom-and-stripe/) | Native | Standard | Essential | $390.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/intercom-and-stripe/) |
+| [Zendesk + Stripe](https://stackcostmatrix.com/stack/zendesk-and-stripe/) | Middleware Make Core $10.59/mo | Standard | Suite Team | $700.59 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/zendesk-and-stripe/) |
+| [Salesforce + Stripe](https://stackcostmatrix.com/stack/salesforce-and-stripe/) | Native | Standard | Professional | $1,250.00 | Nov 3, 2026 (Salesforce edition unconfirmed) | [Calculator →](https://stackcostmatrix.com/stack/salesforce-and-stripe/) |
 
 Totals are monthly-billing prices for 10 seats on the minimum plans, including any connector fee. Open a calculator to change team size, switch to annual billing or add usage costs.
+
+Chart: Stripe integrations: monthly cost for 10 seats on the plans each needs: Salesforce + Stripe $1,250.00; Zendesk + Stripe $700.59; Intercom + Stripe $390.00; Airtable + Stripe $250.59; Notion + Stripe $130.59; ActiveCampaign + Stripe $49.00; Stripe + QuickBooks $48.59; Stripe + Xero $27.00; Stripe + Mailchimp $15.00; ClickUp + Stripe $10.59; HubSpot + Stripe $0.00; Stripe + Slack $0.00
+
+Monthly cost for 10 seats, both tools plus any connector. Indigo bars are native integrations; teal bars need a connector.
+
+ 
+
+Image: [Stripe integration costs summary: 12 integrations priced, from $0 to $1,250 a month for 10 seats](https://stackcostmatrix.com/og/stripe-integrations-cost.jpg)
 
 ## Does Stripe force an upgrade?
 
@@ -64,7 +70,7 @@ Full 20-tool source index: [About StackCostMatrix →](https://stackcostmatrix.c
 
 [ActiveCampaign](https://stackcostmatrix.com/activecampaign-integrations-cost/) · [Airtable](https://stackcostmatrix.com/airtable-integrations-cost/) · [Asana](https://stackcostmatrix.com/asana-integrations-cost/) · [Calendly](https://stackcostmatrix.com/calendly-integrations-cost/) · [ClickUp](https://stackcostmatrix.com/clickup-integrations-cost/) · [HubSpot](https://stackcostmatrix.com/hubspot-integrations-cost/) · [Intercom](https://stackcostmatrix.com/intercom-integrations-cost/) · [Mailchimp](https://stackcostmatrix.com/mailchimp-integrations-cost/) · [Monday.com](https://stackcostmatrix.com/monday-integrations-cost/) · [Notion](https://stackcostmatrix.com/notion-integrations-cost/) · [Pipedrive](https://stackcostmatrix.com/pipedrive-integrations-cost/) · [QuickBooks](https://stackcostmatrix.com/quickbooks-integrations-cost/) · [Salesforce](https://stackcostmatrix.com/salesforce-integrations-cost/) · [Slack](https://stackcostmatrix.com/slack-integrations-cost/) · [Xero](https://stackcostmatrix.com/xero-integrations-cost/) · [Zendesk](https://stackcostmatrix.com/zendesk-integrations-cost/)
 
-## Frequently asked questions
+## Stripe integration costs: frequently asked questions
 
 ### Which Stripe plan do I need for integrations?
 

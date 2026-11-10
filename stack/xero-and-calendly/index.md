@@ -1,4 +1,4 @@
-# Xero + Calendly Integration Cost (2026) | StackCostMatrix
+# Xero + Calendly Integration Cost (2026): True Price, Minimum Plan & Hidden API Fees
 
 > Xero + Calendly runs via middleware (+$29.99/mo) on Xero Early and Calendly Standard: $176.99/mo for 10 seats.
 
@@ -8,8 +8,6 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 ---
 
 [Home](https://stackcostmatrix.com/) / Xero + Calendly 
-
-# Xero + Calendly Integration Cost (2026): True Price, Minimum Plan & Hidden API Fees
 
 There's no native Calendly–Xero integration, so Zapier Professional bridges bookings into Xero; Calendly's webhooks need its Standard plan, and Zapier needs only a paid Xero account. Requires Xero on the 'Early' plan and Calendly on the 'Standard' plan. Route it through Zapier Professional ($29.99/mo, or $19.99/mo billed annually).
 
@@ -21,6 +19,8 @@ Calendly and Xero don't have a native integration. Zapier, Make and similar tool
 
 **Limitations:** Calendly's webhooks need a paid plan from Standard up. Zapier needs a paid Xero account, Standard or Adviser permissions in Xero and a paid Zapier plan, because Xero is a premium app on Zapier. On Xero's Early plan you can enter up to 20 approved sales invoices and 5 bills a month through the API, so if each booking creates an invoice and you take more than 20 bookings a month, you'll need Growing ($59/mo).
 
+[Setup guide: Zapier: Get started with Xero ↗](https://help.zapier.com/hc/en-us/articles/38844152391821-How-to-get-started-with-Xero-on-Zapier)
+
 Sources (checked Nov 3, 2026): [Zapier: Get started with Xero ↗](https://help.zapier.com/hc/en-us/articles/38844152391821-How-to-get-started-with-Xero-on-Zapier) · [Calendly: API overview ↗](https://calendly.com/help/calendly-api-overview) · [Xero: US pricing plans ↗](https://www.xero.com/us/pricing-plans/)
 
 *Interactive cost calculator: open the web page to change team size, billing and add-ons.*
@@ -31,11 +31,17 @@ Sources (checked Nov 3, 2026): [Zapier: Get started with Xero ↗](https://help.
 Xero 'Early' ($27.00/mo) + Calendly 'Standard' ($120.00/mo)
 + $29.99/mo middleware. No native connector exists for this pair.
 
+ 
+
 ## Native vs middleware for Xero + Calendly
 
-No native connector exists for this pair, so middleware is not an alternative — it is the integration. The modeled middleware cost is $29.99/mo on top of both tools, for $176.99/mo all-in at 10 seats on the modeled tiers (Xero 'Early' + Calendly 'Standard'). Sync is 1-way (trigger → action). The middleware figure is the modeled cost for this pair; your actual middleware bill scales with task and operation volume, which is not verified here — check your expected volume against the middleware plan before budgeting.
+There's no native Xero + Calendly connector, so a connector such as Make or Zapier is the integration rather than an alternative. Each automation runs one way (a trigger in one tool, an action in the other), and the connector's bill grows with the number of tasks or operations you run.
 
-API access at the required tiers: Xero Yes, Calendly Yes (see the spec matrix). That API access is what the middleware path runs on.
+Chart: Xero + Calendly: monthly cost for 10 seats by route: Zapier Professional (modeled here) $176.99; Make Core instead $157.59
+
+Monthly cost for 10 seats by route, Xero + Calendly.
+
+ 
 
 Integration routes compared for a 10-seat team
 
@@ -44,7 +50,9 @@ Integration routes compared for a 10-seat team
 | Zapier Professional (modeled here) | Xero 'Early' + Calendly 'Standard' | $176.99 | 1-way per automation |
 | Make Core instead | Xero 'Early' + Calendly 'Standard' | $157.59 | 1-way per automation |
 
-Make Core's $10.59 monthly price comes from third-party pricing reviews, because make.com blocks automated checks; Zapier's is from zapier.com/pricing.
+Connector prices are monthly-billing list prices: Zapier Professional $29.99 (zapier.com/pricing) and Make Core $10.59 (from third-party pricing reviews, because make.com blocks automated checks). Both bill by usage, so high volumes cost more.
+
+Image: [Xero + Calendly integration cost summary: $176.99 a month for 10 seats, $29.99 of it is the hidden cost to connect; plans needed: Xero Early and Calendly Standard](https://stackcostmatrix.com/og/xero-and-calendly.jpg)
 
 ## ✓ Verified Vendor Facts
 
@@ -54,14 +62,6 @@ Make Core's $10.59 monthly price comes from third-party pricing reviews, because
 - **Native app availability:** No native app — connected via middleware.
 
 Last checked: Nov 3, 2026 (exceptions listed at the top) · Sources linked below.
-
-## ◐ Model Estimates (your assumptions)
-
-- **Usage / task add-ons:** middleware overage costs you enter above.
-- **Setup & maintenance:** implementation hours and ongoing ops — adjust freely.
-- **Annual billing saving:** uses each vendor's published annual price where one exists, including the middleware or connector fee; otherwise no discount is applied.
-
-Estimates never change the verified facts — they only model your scenario.
 
 ## ! Hidden Cost Trap
 
@@ -100,11 +100,11 @@ Side-by-side spec matrix
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
 
-## Frequently asked questions
+## Xero + Calendly integration: frequently asked questions
 
 ### What are the minimum plan tiers required for the Xero + Calendly integration?
 
-To unlock the integration, Xero must be on the 'Early' plan or higher and Calendly must be on the 'Standard' plan or higher. Neither plan is an upgrade over the cheapest plan with API access.
+To unlock the integration, Xero must be on the 'Early' plan or higher and Calendly must be on the 'Standard' plan or higher. Those are each tool's cheapest plan with API access (Xero 'Early' at $27/mo and Calendly 'Standard' at $120/mo for 10 seats), so the integration doesn't force an upgrade.
 
 ### How much does the Xero + Calendly stack cost per month for a 10-person team?
 
@@ -118,7 +118,7 @@ The Xero + Calendly connection runs through middleware: neither vendor offers a 
 
 Calendly's webhooks need a paid plan from Standard up. Zapier needs a paid Xero account, Standard or Adviser permissions in Xero and a paid Zapier plan, because Xero is a premium app on Zapier. On Xero's Early plan you can enter up to 20 approved sales invoices and 5 bills a month through the API, so if each booking creates an invoice and you take more than 20 bookings a month, you'll need Growing ($59/mo).
 
-## Related integrations
+## Integrations related to Xero + Calendly
 
 [All Xero integrations →](https://stackcostmatrix.com/xero-integrations-cost/) · [All Calendly integrations →](https://stackcostmatrix.com/calendly-integrations-cost/) · [Xero API access by plan →](https://stackcostmatrix.com/xero-api-access/) · [Calendly API access by plan →](https://stackcostmatrix.com/calendly-api-access/)
 

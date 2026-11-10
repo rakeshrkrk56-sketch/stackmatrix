@@ -1,4 +1,4 @@
-# Which Plan Does Each SaaS Integration Need? (2026 Costs)
+# Which plan does each SaaS integration need — and what does it really cost?
 
 > See the plan each SaaS integration needs on both tools, any Make or Zapier fee and the 10-seat monthly cost, for 59 pairs checked against vendor docs.
 
@@ -8,8 +8,6 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 ---
 
 B2B software integration index
-
-# Which plan does each SaaS integration need — and what does it really cost?
 
 The sticker price is never the whole story. We track the minimum plan
 tiers, API and webhook gates, and middleware fees behind 59
@@ -34,7 +32,7 @@ Deep-dive cost matrices for the most-searched B2B ecosystems.
 
 [### The Integration Tax 2026
 
-Original research: 31 of 55 popular integrations add a hidden monthly cost, usually $120–$251 a month when a plan upgrade is forced.
+Original research: 31 of 55 popular integrations add a hidden monthly cost, usually $120–$251 a month when a plan upgrade is forced. It covers the 55 pairs in the index when it was published; pairs added since aren't counted.
 
 Read the research →](https://stackcostmatrix.com/integration-tax-2026/) [### HubSpot integration costs
 
@@ -432,11 +430,7 @@ plans. Below are the hidden-cost patterns we see most often.
 
 What are hidden API tier costs?
 
-Hidden API tier costs are the extra subscription fees you pay because an
-integration only works on a higher plan. Many vendors gate API access,
-webhooks, or custom integrations behind Professional or Enterprise tiers —
-so the "integration" that looked free on the Starter plan can cost a lot more
-once you actually connect your tools: in our research, a forced upgrade typically adds $120–$251 a month for a 10-person team.
+Hidden API tier costs are the extra subscription fees you pay because an integration only works on a higher plan of one of the tools. In our 2026 research, 31 of 55 popular integrations add a hidden monthly cost, and forced plan upgrades make up 93% of it: typically $120–$251 a month for a 10-person team when an upgrade is forced, against $10.59–$29.99 for a connector such as Make or Zapier. The full figures are in The Integration Tax 2026 report on this site.
 
   What is a webhook paywall?
 
@@ -472,6 +466,7 @@ Full 20-tool source index with audit timestamps: [About StackCostMatrix →](htt
 
 Recent verification activity:
 
+- **Nov 10, 2026** — Every integration page now starts with how it works and the vendor's setup guide, and compares the native route with Make and Zapier. Twenty integrations gained numbered setup steps from the vendor's own guide. New: how Salesforce Professional gets API access, and a chart of the most expensive integrations. No prices changed.
 - **Nov 8, 2026** — Three integrations corrected after re-reading vendor pages: ActiveCampaign + Stripe needs ActiveCampaign Plus ($49/mo), Mailchimp + Calendly works on Mailchimp's free plan ($120/mo), and Pipedrive + Xero now runs through Make because Pipedrive's own Xero app is gone ($177.59/mo). The Integration Tax report now counts 31 of 55 integrations with a hidden cost. Also: stale counts on the guides fixed, each cost box states its own extra cost, and every page names its editor.
 - **Nov 5, 2026** — HubSpot Professional repriced at HubSpot's per-seat price (Smart CRM Professional, $50/seat): HubSpot + Salesforce now $1,750/mo and HubSpot + Asana $634.90/mo at 10 seats.
 - **Nov 4, 2026** — QuickBooks Online prices updated ($38 / $75 / $115), Pipedrive + Mailchimp re-checked, and four QuickBooks and Pipedrive integrations added.

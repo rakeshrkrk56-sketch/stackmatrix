@@ -9,8 +9,6 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 API & webhooks
 
-# Pipedrive API & Webhook Access by Plan (2026)
-
 Checked against Pipedrive's developer and help-center documentation · Nov 3, 2026 · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
 
 **Short answer:** Pipedrive's API and regular webhooks are available on every plan, including Lite; webhooks inside automations need Growth or higher. Rate limits rise with each plan.
@@ -24,9 +22,17 @@ Pipedrive API & Webhook Access by Plan (2026)
 | Premium | $59/seat/mo | Yes | 100 req/2 s · daily budget ×5 | Yes | Yes |
 | Ultimate | $79/seat/mo | Yes | 120 req/2 s · daily budget ×7 | Yes | Yes |
 
-"Not stated" means Pipedrive's documentation that we read doesn't say either way. Prices are monthly-billing list prices from this site's calculators.
+Pipedrive publishes annual-billing rates only, so prices are per month, billed annually.
 
 The daily token budget is 30,000 × the plan multiplier × seats. Limits shown are for API tokens; OAuth apps get four times as many requests. Growth was formerly called Advanced.
+
+Chart: Pipedrive plans: monthly price for 10 seats and whether the API is included: Lite (API included) $140.00; Growth (API included) $390.00; Premium (API included) $590.00; Ultimate (API included) $790.00
+
+Pipedrive monthly price for 10 seats by plan. Green: API included; amber: paid add-on (included in the bar); grey: no API.
+
+ 
+
+Image: [Pipedrive API access by plan: Lite yes; Growth yes; Premium yes; Ultimate yes](https://stackcostmatrix.com/og/pipedrive-api-access.jpg)
 
 ## Two kinds of webhooks
 
@@ -50,7 +56,7 @@ Checked Nov 3, 2026.
 
 [ActiveCampaign](https://stackcostmatrix.com/activecampaign-api-access/) · [Airtable](https://stackcostmatrix.com/airtable-api-access/) · [Asana](https://stackcostmatrix.com/asana-api-access/) · [Calendly](https://stackcostmatrix.com/calendly-api-access/) · [ClickUp](https://stackcostmatrix.com/clickup-api-access/) · [Freshdesk](https://stackcostmatrix.com/freshdesk-api-access/) · [HubSpot](https://stackcostmatrix.com/hubspot-api-access/) · [Intercom](https://stackcostmatrix.com/intercom-api-access/) · [Mailchimp](https://stackcostmatrix.com/mailchimp-api-access/) · [Monday.com](https://stackcostmatrix.com/monday-api-access/) · [Notion](https://stackcostmatrix.com/notion-api-access/) · [QuickBooks](https://stackcostmatrix.com/quickbooks-api-access/) · [Salesforce](https://stackcostmatrix.com/salesforce-api-access/) · [Slack](https://stackcostmatrix.com/slack-api-access/) · [Stripe](https://stackcostmatrix.com/stripe-api-access/) · [Xero](https://stackcostmatrix.com/xero-api-access/) · [Zendesk](https://stackcostmatrix.com/zendesk-api-access/)
 
-## Frequently asked questions
+## Pipedrive API access: frequently asked questions
 
 ### Does Pipedrive Lite include API access?
 

@@ -9,8 +9,6 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 API & webhooks
 
-# Calendly API & Webhook Access by Plan (2026)
-
 Checked against Calendly's developer and help-center documentation · Nov 3, 2026 · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
 
 **Short answer:** Calendly's API works on any plan, but webhooks need a paid plan: Standard or higher.
@@ -23,9 +21,17 @@ Calendly API & Webhook Access by Plan (2026)
 | Standard | $12/seat/mo ($10 billed annually) | Yes | Not published per plan | Yes | — |
 | Teams | $20/seat/mo ($16 billed annually) | Yes | Not published per plan | Yes | — |
 
-"Not stated" means Calendly's documentation that we read doesn't say either way. Prices are monthly-billing list prices from this site's calculators.
+Prices are monthly-billing list prices from this site's calculators.
 
 Real-time automations (new booking → CRM record) rely on webhooks, so most Calendly integrations need Standard.
+
+Chart: Calendly plans: monthly price for 10 seats and whether the API is included: Free (API included) $0.00; Standard (API included) $120.00; Teams (API included) $200.00
+
+Calendly monthly price for 10 seats by plan. Green: API included; amber: paid add-on (included in the bar); grey: no API.
+
+ 
+
+Image: [Calendly API access by plan: Free yes; Standard yes; Teams yes](https://stackcostmatrix.com/og/calendly-api-access.jpg)
 
 ## Two kinds of webhooks
 
@@ -48,7 +54,7 @@ Checked Nov 3, 2026.
 
 [ActiveCampaign](https://stackcostmatrix.com/activecampaign-api-access/) · [Airtable](https://stackcostmatrix.com/airtable-api-access/) · [Asana](https://stackcostmatrix.com/asana-api-access/) · [ClickUp](https://stackcostmatrix.com/clickup-api-access/) · [Freshdesk](https://stackcostmatrix.com/freshdesk-api-access/) · [HubSpot](https://stackcostmatrix.com/hubspot-api-access/) · [Intercom](https://stackcostmatrix.com/intercom-api-access/) · [Mailchimp](https://stackcostmatrix.com/mailchimp-api-access/) · [Monday.com](https://stackcostmatrix.com/monday-api-access/) · [Notion](https://stackcostmatrix.com/notion-api-access/) · [Pipedrive](https://stackcostmatrix.com/pipedrive-api-access/) · [QuickBooks](https://stackcostmatrix.com/quickbooks-api-access/) · [Salesforce](https://stackcostmatrix.com/salesforce-api-access/) · [Slack](https://stackcostmatrix.com/slack-api-access/) · [Stripe](https://stackcostmatrix.com/stripe-api-access/) · [Xero](https://stackcostmatrix.com/xero-api-access/) · [Zendesk](https://stackcostmatrix.com/zendesk-api-access/)
 
-## Frequently asked questions
+## Calendly API access: frequently asked questions
 
 ### Does Calendly Free include API access?
 

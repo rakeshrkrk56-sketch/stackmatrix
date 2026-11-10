@@ -1,4 +1,4 @@
-# Pipedrive + Slack Integration: How It Works & Cost (2026)
+# Pipedrive + Slack Integration (2026): How It Works, Setup & True Cost
 
 > How the Pipedrive + Slack integration works, how to set it up, and the plans it needs: Pipedrive Growth + Slack Free, $390/mo for 10 seats.
 
@@ -8,8 +8,6 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 ---
 
 [Home](https://stackcostmatrix.com/) / Pipedrive + Slack 
-
-# Pipedrive + Slack Integration (2026): How It Works, Setup & True Cost
 
 Trap: Pipedrive sends Slack messages through its Automations feature, which is only on Growth and higher ($39/seat). Requires Pipedrive on the 'Growth' plan and Slack on the 'Free' plan.
 
@@ -21,13 +19,13 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 Pipedrive connects to Slack through its Automations feature: after you authorize the Slack app, an automation can post to a Slack channel or send a direct message when something happens in Pipedrive, such as a new or won deal.
 
+[Setup guide: Pipedrive: Automations Slack notifications ↗](https://support.pipedrive.com/en/article/workflow-automation-slack-notifications)
+
 ### How to set it up
 
-**1.** In Pipedrive, go to Tools and apps > Slack > Authorize Slack account.
-
-**2.** Create an automation, pick a trigger such as a deal being won, and add a Slack notification action.
-
-**3.** Choose a channel or a direct message, then pick the Pipedrive fields to include in the message.
+1. In Pipedrive, go to Tools and apps > Slack > Authorize Slack account.
+2. Create an automation, pick a trigger such as a deal being won, and add a Slack notification action.
+3. Choose a channel or a direct message, then pick the Pipedrive fields to include in the message.
 
 **Limitations:** Pipedrive says Automations are only available on Growth and higher plans (Advanced under its older plan names), so the cheapest Lite plan can't send Slack messages this way. Slack's free plan allows up to 10 app installations.
 
@@ -42,20 +40,29 @@ Pipedrive 'Growth' ($390.00/mo) + Slack 'Free' ($0.00/mo),
 no middleware required.
 Alternative: skip the native tier upgrade and run via Make/Zapier middleware for ~$150.59/mo all-in (adds a third-party dependency).
 
+ 
+
 ## Native vs middleware for Pipedrive + Slack
 
-The native path runs on the required tiers (Pipedrive 'Growth' + Slack 'Free') at $390.00/mo for a 10-seat team, with no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — comes to $150.59/mo all-in, which is cheaper on paper because it skips the $250.00/mo forced tier upgrade. The trade-off: you replace the native connector with a third-party dependency, sync stays 1-way (trigger → action), and Make Core's fee covers a fixed monthly allowance of credits — whether that covers your volume is not verified for this pair.
+The connector routes are cheaper on paper because they skip the forced plan upgrade. The trade-off: you swap the native connector for a third-party automation you build and maintain, sync stays 1-way per automation, and the connector bills by usage.
 
-API access at the required tiers: Pipedrive Yes, Slack Yes (see the spec matrix). That API access is what the middleware path runs on.
+Chart: Pipedrive + Slack: monthly cost for 10 seats by route: Native connector $390.00; Make Core route $150.59; Zapier Professional route $169.99
+
+Monthly cost for 10 seats by route, Pipedrive + Slack.
+
+ 
 
 Integration routes compared for a 10-seat team
 
 | Route | Plans | 10 seats / month | Sync |
 | --- | --- | --- | --- |
-| Native Pipedrive + Slack connector | Pipedrive 'Growth' + Slack 'Free' | $390.00 | As listed in the spec matrix |
+| Native Pipedrive + Slack connector | Pipedrive 'Growth' + Slack 'Free' | $390.00 | 1-way (Pipedrive → Slack) |
 | Make Core on the cheapest API plans | Pipedrive 'Lite' + Slack 'Free' + Make | $150.59 | 1-way per scenario |
+| Zapier Professional on the cheapest API plans | Pipedrive 'Lite' + Slack 'Free' + Zapier | $169.99 | 1-way per Zap |
 
-Make Core's $10.59 monthly price comes from third-party pricing reviews, because make.com blocks automated checks; Zapier's is from zapier.com/pricing.
+Connector prices are monthly-billing list prices: Zapier Professional $29.99 (zapier.com/pricing) and Make Core $10.59 (from third-party pricing reviews, because make.com blocks automated checks). Both bill by usage, so high volumes cost more.
+
+Image: [Pipedrive + Slack integration cost summary: $390 a month for 10 seats, $250 of it is the hidden cost to connect; plans needed: Pipedrive Growth and Slack Free](https://stackcostmatrix.com/og/pipedrive-and-slack.jpg)
 
 ## ✓ Verified Vendor Facts
 
@@ -65,14 +72,6 @@ Make Core's $10.59 monthly price comes from third-party pricing reviews, because
 - **Native app availability:** Native app available in vendor marketplace.
 
 Last checked: Nov 3, 2026 (exceptions listed at the top) · Sources linked below.
-
-## ◐ Model Estimates (your assumptions)
-
-- **Usage / task add-ons:** middleware overage costs you enter above.
-- **Setup & maintenance:** implementation hours and ongoing ops — adjust freely.
-- **Annual billing saving:** uses each vendor's published annual price where one exists; otherwise no discount is applied.
-
-Estimates never change the verified facts — they only model your scenario.
 
 ## ! Hidden Cost Trap
 
@@ -111,7 +110,7 @@ Side-by-side spec matrix
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
 
-## Frequently asked questions
+## Pipedrive + Slack integration: frequently asked questions
 
 ### What are the minimum plan tiers required for the Pipedrive + Slack integration?
 
@@ -129,7 +128,7 @@ The Pipedrive + Slack connection is native — no third-party middleware subscri
 
 Pipedrive says Automations are only available on Growth and higher plans (Advanced under its older plan names), so the cheapest Lite plan can't send Slack messages this way. Slack's free plan allows up to 10 app installations.
 
-## Related integrations
+## Integrations related to Pipedrive + Slack
 
 [All Pipedrive integrations →](https://stackcostmatrix.com/pipedrive-integrations-cost/) · [All Slack integrations →](https://stackcostmatrix.com/slack-integrations-cost/) · [Pipedrive API access by plan →](https://stackcostmatrix.com/pipedrive-api-access/) · [Slack API access by plan →](https://stackcostmatrix.com/slack-api-access/)
 

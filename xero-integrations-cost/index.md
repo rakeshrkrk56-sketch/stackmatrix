@@ -1,4 +1,4 @@
-# Xero Integration Costs (2026): Plans & Hidden Fees
+# Xero Integration Costs (2026): Minimum Plans, API Access & Hidden Fees
 
 > Xero integration costs in 2026: the minimum Xero plan, native vs middleware and 10-seat totals for 4 connections, from $27 to $177.59/mo.
 
@@ -9,9 +9,7 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 Tool guide
 
-# Xero Integration Costs (2026): Minimum Plans, API Access & Hidden Fees
-
-Built from the 4 pair calculators below · integration requirements checked Nov 3, 2026. · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
+Built from the 4 pair calculators below · integration requirements checked Nov 3, 2026 to Nov 8, 2026. · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
 
 This page collects the 4 Xero integrations in the StackCostMatrix index: which Xero plan each one needs, whether it's native or runs through middleware, and what the whole stack costs for a 10-person team. 1 of the 4 connects natively and 3 need a connector such as Make or Zapier. By minimum Xero plan, the count is Early (4). Ten-seat totals run from $27.00/mo (Stripe + Xero) to $177.59/mo (Pipedrive + Xero).
 
@@ -19,12 +17,20 @@ Xero Integration Costs (2026): Minimum Plans, API Access & Hidden Fees
 
 | Integration | Type | Min. Xero plan | Other tool's plan | 10-seat total | Checked | Details |
 | --- | --- | --- | --- | --- | --- | --- |
-| Stripe + Xero | Native | Early | Standard | $27.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/stripe-and-xero/) |
-| Xero + ActiveCampaign | Middleware Make Core $10.59/mo | Early | Starter | $52.59 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/xero-and-activecampaign/) |
-| Xero + Calendly | Middleware Zapier Professional $29.99/mo | Early | Standard | $176.99 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/xero-and-calendly/) |
-| Pipedrive + Xero | Middleware Make Core $10.59/mo | Early | Lite | $177.59 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/pipedrive-and-xero/) |
+| [Stripe + Xero](https://stackcostmatrix.com/stack/stripe-and-xero/) | Native | Early | Standard | $27.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/stripe-and-xero/) |
+| [Xero + ActiveCampaign](https://stackcostmatrix.com/stack/xero-and-activecampaign/) | Middleware Make Core $10.59/mo | Early | Starter | $52.59 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/xero-and-activecampaign/) |
+| [Xero + Calendly](https://stackcostmatrix.com/stack/xero-and-calendly/) | Middleware Zapier Professional $29.99/mo | Early | Standard | $176.99 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/xero-and-calendly/) |
+| [Pipedrive + Xero](https://stackcostmatrix.com/stack/pipedrive-and-xero/) | Middleware Make Core $10.59/mo | Early | Lite | $177.59 | Nov 8, 2026 | [Calculator →](https://stackcostmatrix.com/stack/pipedrive-and-xero/) |
 
 Totals are monthly-billing prices for 10 seats on the minimum plans, including any connector fee. Open a calculator to change team size, switch to annual billing or add usage costs.
+
+Chart: Xero integrations: monthly cost for 10 seats on the plans each needs: Pipedrive + Xero $177.59; Xero + Calendly $176.99; Xero + ActiveCampaign $52.59; Stripe + Xero $27.00
+
+Monthly cost for 10 seats, both tools plus any connector. Indigo bars are native integrations; teal bars need a connector.
+
+ 
+
+Image: [Xero integration costs summary: 4 integrations priced, from $27 to $177.59 a month for 10 seats](https://stackcostmatrix.com/og/xero-integrations-cost.jpg)
 
 ## Does Xero force an upgrade?
 
@@ -58,7 +64,7 @@ Full 20-tool source index: [About StackCostMatrix →](https://stackcostmatrix.c
 
 [ActiveCampaign](https://stackcostmatrix.com/activecampaign-integrations-cost/) · [Airtable](https://stackcostmatrix.com/airtable-integrations-cost/) · [Asana](https://stackcostmatrix.com/asana-integrations-cost/) · [Calendly](https://stackcostmatrix.com/calendly-integrations-cost/) · [ClickUp](https://stackcostmatrix.com/clickup-integrations-cost/) · [HubSpot](https://stackcostmatrix.com/hubspot-integrations-cost/) · [Intercom](https://stackcostmatrix.com/intercom-integrations-cost/) · [Mailchimp](https://stackcostmatrix.com/mailchimp-integrations-cost/) · [Monday.com](https://stackcostmatrix.com/monday-integrations-cost/) · [Notion](https://stackcostmatrix.com/notion-integrations-cost/) · [Pipedrive](https://stackcostmatrix.com/pipedrive-integrations-cost/) · [QuickBooks](https://stackcostmatrix.com/quickbooks-integrations-cost/) · [Salesforce](https://stackcostmatrix.com/salesforce-integrations-cost/) · [Slack](https://stackcostmatrix.com/slack-integrations-cost/) · [Stripe](https://stackcostmatrix.com/stripe-integrations-cost/) · [Zendesk](https://stackcostmatrix.com/zendesk-integrations-cost/)
 
-## Frequently asked questions
+## Xero integration costs: frequently asked questions
 
 ### Which Xero plan do I need for integrations?
 

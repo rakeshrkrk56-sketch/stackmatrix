@@ -9,6 +9,7 @@ from hubs import load_pairs, render, read, esc, attr, m0, SITE, P, H2, TH, TD, L
 from pairdata15 import HS_CHECKED
 
 CHECKED, CHECKED_TXT = HS_CHECKED, "Nov 5, 2026"
+UPDATED = "2026-11-10"   # Salesforce-side requirements section added (prices are still as checked on CHECKED)
 SLUG = "hubspot-professional-integrations"
 URL = f"{SITE}/{SLUG}/"
 TITLE = "Which Integrations Need HubSpot Professional? (2026)"
@@ -52,6 +53,8 @@ SOURCES = [
     ("HubSpot pricing: Service Hub", "https://www.hubspot.com/pricing/service/enterprise", "Professional · $90/mo/seat · $100/mo/seat · one-time Professional Onboarding for a fee of $1,500"),
     ("HubSpot pricing: Content Hub", "https://www.hubspot.com/pricing/content/enterprise", "Professional · $450/mo · $500/mo · Includes 3 Core Seats"),
     ("HubSpot pricing: Data Hub", "https://www.hubspot.com/pricing/operations/enterprise", "Professional · $720/mo · $800/mo · Includes 1 Core Seat"),
+    ("Salesforce developers: API access in Group and Professional Editions", "https://developer.salesforce.com/docs/atlas.en-us.packagingGuide.meta/packagingGuide/dev_packages_api_access.htm",
+     "after your app passes the security review … your app can make calls to Group and Professional Edition orgs … even if the customer doesn't have API access"),
     ("HubSpot Product and Services Catalog", "https://legal.hubspot.com/hubspot-product-and-services-catalog",
      "Core Seat … Professional subscriptions $50/month per seat · View-Only Seat … Available at no additional cost"),
 ]
@@ -110,6 +113,15 @@ def build():
                f'{P}Sometimes. HubSpot&#39;s API works on every plan, including the free CRM, so a connector like Make can link HubSpot to Salesforce or Asana without Professional. '
                + "".join(f'For <a href="/stack/{p["slug"]}/" {LINK}>{esc(name_of(p))}</a>, the native route costs {m0(p["v"]["N"])} a month for 10 people and the connector route about {money2(p["v"]["MP"])}. ' for p in pro)
                + 'The trade-off is that you build and maintain the sync yourself, and the native Salesforce connector does more (two-way sync of contacts, companies, deals and activities) than a simple automation.</p>')
+    sec_sf = (f'{H2}Do you need HubSpot Professional for the Salesforce integration?</h2> '
+              f'{P}<strong>Yes.</strong> HubSpot&#39;s Salesforce connector isn&#39;t available on the free CRM or Starter: HubSpot lists it for Professional and Enterprise only, on any of the Hubs in the table above. '
+              f'The cheapest way in is Smart CRM Professional at {m0(cheapest["monthly"])} per seat a month.</p>'
+              f'{P}<strong>What Salesforce needs.</strong> HubSpot&#39;s requirements read &ldquo;a Salesforce edition with API access, or Salesforce Professional&rdquo;, and Group Edition isn&#39;t supported. '
+              f'Enterprise and Unlimited include API access; Professional normally needs a paid API add-on. Salesforce also says security-reviewed AppExchange apps can reach Professional orgs '
+              f'even if the customer doesn&#39;t have API access, so ask Salesforce whether your Professional org needs the add-on for HubSpot&#39;s connector. '
+              f'The Salesforce user who connects it also needs the API Enabled permission. Details by edition: <a href="/salesforce-api-access/" {LINK}>Salesforce API access by edition</a>.</p>'
+              f'{P}<strong>One-time fees.</strong> HubSpot adds a required Professional Onboarding fee on some Hubs ({m0(1500)} for Sales Hub or Service Hub, {m0(3000)} for Marketing Hub); '
+              f'its pricing page shows none for Smart CRM Professional. Full monthly cost with both tools: <a href="/stack/hubspot-and-salesforce/" {LINK}>HubSpot + Salesforce</a>.</p>')
     sec_other = (f'{H2}What else needs Professional</h2> '
                  f'{P}<strong>Webhooks in workflows</strong> need <em>Data Hub</em> Professional or Enterprise specifically; HubSpot&#39;s knowledge base lists no other Hub for them. '
                  f'Developer webhooks, which apps and tools like Make use, are a separate feature. See <a href="/hubspot-api-access/" {LINK}>HubSpot API &amp; webhook access by plan</a>.</p>')
@@ -128,24 +140,27 @@ def build():
          f"HubSpot's help articles list it among the subscriptions that unlock both the Salesforce connector and the Asana workflow action."),
         ("Does the HubSpot Salesforce integration work on the free CRM?",
          "No. HubSpot's knowledge base says the Salesforce integration is available with Marketing Hub, Sales Hub, Service Hub, Data Hub, Content Hub or Smart CRM on Professional or Enterprise. "
-         f"For 10 people, HubSpot + Salesforce costs {m0(sf['v']['N'])} a month on the plans it needs."),
+         f"On the Salesforce side, HubSpot asks for an edition with API access or Salesforce Professional; Group Edition isn't supported. For 10 people, HubSpot + Salesforce costs {m0(sf['v']['N'])} a month on the plans it needs."),
         ("Do webhooks in HubSpot workflows need Professional?",
          "They need Data Hub Professional or Enterprise specifically. Developer webhooks for apps are a separate feature and aren't tied to that requirement."),
     ]
-    faq_html = (' <section class="mt-12" aria-label="Frequently asked questions"> <h2 class="text-xl font-bold">Frequently asked questions</h2> <div class="mt-4 space-y-6"> ' +
+    faq_html = (' <section class="mt-12" aria-label="Frequently asked questions"> <h2 class="text-xl font-bold">HubSpot Professional and integrations: frequently asked questions</h2> <div class="mt-4 space-y-6"> ' +
                 "".join(f'<div> <h3 class="font-semibold text-slate-900">{esc(q)}</h3> <p class="mt-1 leading-relaxed text-slate-700">{esc(a)}</p> </div>' for q, a in faqs) + ' </div> </section>')
+    fig = (f'<figure class="mt-6"> <img src="/og/{SLUG}.jpg" width="1200" height="630" loading="lazy" class="scm-fig" '
+           f'alt="Summary: {npro} of {n} HubSpot integrations need Professional; the cheapest Professional plan is ${cheapest["monthly"]} per seat a month; {nfree} work on the free CRM"> '
+           f'<figcaption class="mt-2 text-xs text-slate-500">HubSpot Professional and integrations at a glance. Free to reuse with credit (CC BY 4.0).</figcaption> </figure>')
     answer = (f"Only {npro} of the {n} HubSpot integrations we track need Professional: {pro_names}. Any Professional subscription HubSpot lists for them works, "
               f"and the cheapest is {cheapest['name']} at ${cheapest['monthly']} per seat a month (${cheapest['annual']} on an annual commitment), about {m0(c10)} a month for 10 people. "
               f"The other {nfree} work on HubSpot's free CRM.")
     body = (f'<section class="mx-auto max-w-4xl"> <p class="text-sm font-semibold uppercase tracking-widest text-indigo-600">HubSpot plans</p> '
             f'<h1 class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">\n{esc(TITLE)}\n</h1> '
-            f'<p class="mt-3 text-sm text-slate-500">Checked against HubSpot&#39;s pricing pages and knowledge base · {CHECKED_TXT} · Edited by <a href="/about/#editor" class="font-medium text-indigo-600 hover:underline">Rakesh Kumar</a></p> '
+            f'<p class="mt-3 text-sm text-slate-500">Checked against HubSpot&#39;s pricing pages and knowledge base · {CHECKED_TXT} · Salesforce requirements added Nov 10, 2026 · Edited by <a href="/about/#editor" class="font-medium text-indigo-600 hover:underline">Rakesh Kumar</a></p> '
             f'{P}<strong>Short answer:</strong> {esc(answer)}</p> '
-            f'{H2}Which HubSpot plan each integration needs</h2> {t1} {sec_cheap} {sec_alt} {sec_other} {sources} {more}{faq_html} </section> ')
+            f'{H2}Which HubSpot plan each integration needs</h2> {t1} {fig} {sec_cheap} {sec_sf} {sec_alt} {sec_other} {sources} {more}{faq_html} </section> ')
     ld = [
         {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faqs]},
         {"@context": "https://schema.org", "@type": "Article", "headline": TITLE, "description": DESC,
-         "author": {"@type": "Organization", "name": "StackCostMatrix", "url": f"{SITE}/", "email": "admin@stackcostmatrix.com"}, "datePublished": CHECKED, "dateModified": CHECKED,
+         "author": {"@type": "Organization", "name": "StackCostMatrix", "url": f"{SITE}/", "email": "admin@stackcostmatrix.com"}, "datePublished": CHECKED, "dateModified": UPDATED,
          "citation": [u for _, u, _ in SOURCES], "mainEntityOfPage": URL,
          "publisher": {"@type": "Organization", "name": "StackCostMatrix", "url": f"{SITE}/", "logo": f"{SITE}/icon-512.png"}, "image": f"{SITE}/icon-512.png", "inLanguage": "en"},
         {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [

@@ -4,7 +4,7 @@
 """
 import re, json, glob, html, sys, os
 sys.path.insert(0, os.path.dirname(__file__))
-from model import compute, tiers, cost, cheapest_api, money
+from model import compute, tiers, cost, cheapest_api, money, svg_bars
 
 TODAY = "2026-11-03"
 ED = ' · Edited by <a href="/about/#editor" class="font-medium text-indigo-600 hover:underline">Rakesh Kumar</a>'
@@ -50,7 +50,8 @@ def load_pairs():
         sync = re.search(r'Data sync direction</td> <td class="px-4 py-3" colspan="2">(.*?)</td>', s, re.S).group(1).strip()
         mw = d["middleware"]; conn = None
         if mw: conn = {10.59: "Make Core", 29.99: "Zapier Professional", 15: "Data Mapper for Mailchimp"}.get(mw, "Middleware")
-        pairs.append(dict(slug=slug, d=d, v=v, status=status, cells=cells, sync=sync, conn=conn))
+        chk = re.search(r"· ((?:Oct|Nov|Dec|Jan) \d{1,2}, 20\d\d)", by)
+        pairs.append(dict(slug=slug, d=d, v=v, status=status, cells=cells, sync=sync, conn=conn, checked=chk.group(1) if chk else "Nov 3, 2026"))
     return pairs
 
 def tool_cost(t, tier_name):
@@ -113,7 +114,8 @@ def build_tool(slug, name, plans, pairs, sources, hubs):
              f"{cnt(len(nat), n, 'connects', 'connect')} natively and {len(mid)} {'needs' if len(mid) == 1 else 'need'} a connector such as Make or Zapier. "
              f"By minimum {esc(short)} plan, the count is {esc(tiers_txt)}. "
              f"Ten-seat totals run from {money(lo['N'])}/mo ({esc(lo['label'])}) to {money(hi['N'])}/mo ({esc(hi['label'])}).")
-    by = f"Built from the {n} pair calculators below · integration requirements checked Nov 3, 2026"
+    _dates = sorted({r["p"]["checked"] for r in rows}, key=lambda x: (x.split(", ")[1], ["Oct", "Nov", "Dec", "Jan"].index(x[:3]), int(x.split(" ")[1].rstrip(","))))
+    by = f"Built from the {n} pair calculators below · integration requirements checked " + (_dates[0] if len(_dates) == 1 else f"{_dates[0]} to {_dates[-1]}")
     if pend: by += f", except {len(pend)} pending re-check ({join_names(r['other']['name'] for r in pend)}), last checked Oct 17, 2026"
     if part: by += f"; {len(part)} with a plan still unconfirmed ({join_names(r['other']['name'] for r in part)})"
     by += "."
@@ -123,15 +125,22 @@ def build_tool(slug, name, plans, pairs, sources, hubs):
     trs = []
     for r in rows:
         st = r["p"]["status"]
-        chk = "Nov 3, 2026" if st == "verified" else ("Oct 17, 2026 (re-check pending)" if st == "pending" else "Nov 3, 2026 (" + st.split(": ", 1)[1] + ")")
+        c0 = r["p"]["checked"]
+        chk = c0 if st == "verified" else ("Oct 17, 2026 (re-check pending)" if st == "pending" else c0 + " (" + st.split(": ", 1)[1] + ")")
         conn = "" if r["p"]["v"]["native"] else f'<span class="block text-xs text-slate-500">{esc(r["p"]["conn"])} {m0(r["p"]["d"]["middleware"])}/mo</span>'
-        trs.append(f'<tr class="border-t border-slate-100"> <td class="px-4 py-3 font-medium">{esc(r["label"])}</td> {TD}{BADGE[r["p"]["v"]["native"]]}{conn}</td> '
+        trs.append(f'<tr class="border-t border-slate-100"> <td class="px-4 py-3 font-medium"><a href="/stack/{r["p"]["slug"]}/" {LINK}>{esc(r["label"])}</a></td> {TD}{BADGE[r["p"]["v"]["native"]]}{conn}</td> '
                    f'{TD}{esc(r["me"]["required"])}</td> {TD}{esc(r["other"]["required"])}</td> {TD}{money(r["N"])}</td> {TD}<span class="text-xs text-slate-500">{esc(chk)}</span></td> '
                    f'{TD}<a href="/stack/{r["p"]["slug"]}/" {LINK}>Calculator →</a></td> </tr>')
     table = (f'<div class="mt-8 overflow-x-auto rounded-xl border border-slate-200 bg-white shadow-sm"> <table class="spec-matrix w-full min-w-[640px] text-sm"> <thead class="bg-slate-50"> <tr class="text-left"> '
              f'{TH}Integration</th> {TH}Type</th> {TH}Min. {esc(short)} plan</th> {TH}Other tool&#39;s plan</th> {TH}10-seat total</th> {TH}Checked</th> {TH}Details</th> </tr> </thead> <tbody> {"".join(trs)} </tbody> </table> </div>'
              f'<p class="mt-3 text-xs text-slate-500">Totals are monthly-billing prices for 10 seats on the minimum plans, including any connector fee. Open a calculator to change team size, switch to annual billing or add usage costs.</p>')
 
+    chart = ('<figure class="mt-6"> ' + svg_bars([(r["label"], r["N"], "#4f46e5" if r["p"]["v"]["native"] else "#0e7490") for r in sorted(rows, key=lambda r: -r["N"])],
+                                                f"{short} integrations: monthly cost for 10 seats on the plans each needs")
+             + f' <figcaption class="mt-1 text-xs text-slate-500">Monthly cost for 10 seats, both tools plus any connector. Indigo bars are native integrations; teal bars need a connector.</figcaption> </figure>')
+    fig = (f'<figure class="mt-6"> <img src="/og/{slug}-integrations-cost.jpg" width="1200" height="630" loading="lazy" class="scm-fig" '
+           f'alt="{attr(short)} integration costs summary: {n} integrations priced, from {m0(lo["N"])} to {m0(hi["N"])} a month for 10 seats"> '
+           f'<figcaption class="mt-2 text-xs text-slate-500">{esc(short)} integration costs at a glance. Free to reuse with credit (CC BY 4.0).</figcaption> </figure>') if os.path.exists(f"og/{slug}-integrations-cost.jpg") else ""
     # plans table
     facts = {}
     for r in rows:
@@ -176,7 +185,7 @@ def build_tool(slug, name, plans, pairs, sources, hubs):
     a3 = (f"Including both tools' minimum plans and any connector fee, the 10-seat monthly totals range from {money(lo['N'])} ({lo['label']}) "
           f"to {money(hi['N'])} ({hi['label']}), at monthly-billing prices.")
     faqs = [(q1, a1), (q2, a2), (q3, a3)]
-    faq_html = (' <section class="mt-12" aria-label="Frequently asked questions"> <h2 class="text-xl font-bold">Frequently asked questions</h2> <div class="mt-4 space-y-6"> ' +
+    faq_html = (f' <section class="mt-12" aria-label="Frequently asked questions"> <h2 class="text-xl font-bold">{esc(short)} integration costs: frequently asked questions</h2> <div class="mt-4 space-y-6"> ' +
                 "".join(f'<div> <h3 class="font-semibold text-slate-900">{esc(q)}</h3> <p class="mt-1 leading-relaxed text-slate-700">{esc(a)}</p> </div>' for q, a in faqs) + ' </div> </section>')
 
     # sources
@@ -195,7 +204,7 @@ def build_tool(slug, name, plans, pairs, sources, hubs):
 
     body = (f'<section class="mx-auto max-w-4xl"> <p class="text-sm font-semibold uppercase tracking-widest text-indigo-600">Tool guide</p> '
             f'<h1 class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">\n{esc(short)} Integration Costs (2026): Minimum Plans, API Access &amp; Hidden Fees\n</h1> '
-            f'<p class="mt-3 text-sm text-slate-500">{by_html}</p> {P}\n{intro}\n</p> {table} {trap} {mw} {plan_tbl} {sources_html} {nav}{faq_html} </section> ')
+            f'<p class="mt-3 text-sm text-slate-500">{by_html}</p> {P}\n{intro}\n</p> {table} {chart} {fig} {trap} {mw} {plan_tbl} {sources_html} {nav}{faq_html} </section> ')
 
     ld = [
         {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faqs]},

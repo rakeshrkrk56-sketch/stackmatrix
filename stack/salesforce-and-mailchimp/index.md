@@ -1,4 +1,4 @@
-# Salesforce + Mailchimp Integration Cost (2026)
+# Salesforce Sales Cloud + Mailchimp Integration Cost (2026): True Price, Minimum Plan & Hidden API Fees
 
 > Salesforce + Mailchimp needs Salesforce Professional and Mailchimp Standard: $1,270/mo for 10 seats, including a +$7/mo forced upgrade.
 
@@ -9,8 +9,6 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 [Home](https://stackcostmatrix.com/) / Salesforce Sales Cloud + Mailchimp 
 
-# Salesforce Sales Cloud + Mailchimp Integration Cost (2026): True Price, Minimum Plan & Hidden API Fees
-
 Trap: deep campaign-member sync requires Salesforce Professional ($100/user/mo, plus a $25/user/mo API add-on); Starter plans are locked out. Requires Salesforce Sales Cloud on the 'Professional' plan and Mailchimp on the 'Standard' plan for full 2-way sync.
 
 Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Salesforce prices: Oct 17, 2026) | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
@@ -19,7 +17,20 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 Mailchimp for Salesforce connects Salesforce contacts and leads with your Mailchimp audience and brings Mailchimp campaign activity into Salesforce.
 
+### How to set it up
+
+1. On Salesforce Professional, ask your Salesforce account executive to enable API access before you install.
+2. Follow the link on Mailchimp's integration page to the Salesforce AppExchange listing and click Get it Now.
+3. Log in with your Trailblazer.me account and click Install in Production.
+4. Agree to the terms and click Confirm and Install, choose Install for All Users and click Install. Approve third-party access when asked.
+5. In Salesforce, open Mailchimp for Salesforce from the App Launcher, click the MC Setup tab and click Login.
+6. Enter your Mailchimp username and password and click Log In. The Mailchimp user needs Manager access or higher.
+
+Steps follow [Mailchimp's setup guide ↗](https://mailchimp.com/help/connect-mailchimp-for-salesforce/), read Nov 10, 2026.
+
 **Limitations:** It supports Enterprise, Unlimited, Performance, Developer and Professional editions, but on Professional your Salesforce account executive must enable API access first. Field mapping is limited by Mailchimp plan; Premium accounts can map up to 80 fields.
+
+[Setup guide: Mailchimp: Connect Mailchimp for Salesforce ↗](https://mailchimp.com/help/connect-mailchimp-for-salesforce/)
 
 Sources (checked Nov 3, 2026): [Mailchimp: Connect Mailchimp for Salesforce ↗](https://mailchimp.com/help/connect-mailchimp-for-salesforce/) · [Mailchimp: About Mailchimp for Salesforce ↗](https://mailchimp.com/help/about-mailchimp-for-salesforce/)
 
@@ -30,22 +41,31 @@ Sources (checked Nov 3, 2026): [Mailchimp: Connect Mailchimp for Salesforce ↗]
 **Native integration costs $1,270.00/mo ($15,240.00/yr)** for a 10-seat team —
 Salesforce Sales Cloud 'Professional' ($1,250.00/mo) + Mailchimp 'Standard' ($20.00/mo),
 no middleware required.
-Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capable tiers ($1,273.59/mo all-in) — the native path is cheaper.
+Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capable tiers ($1,273.59/mo all-in) — the native path is cheaper. Salesforce's $1,250.00 is the Professional plan ($100/user) plus the API add-on, which Salesforce sells through an account executive; this page models it at $25/user ($250 at 10 seats).
+
+ 
 
 ## Native vs middleware for Salesforce Sales Cloud + Mailchimp
 
-The native path runs on the required tiers (Salesforce Sales Cloud 'Professional' + Mailchimp 'Standard') at $1,270.00/mo for a 10-seat team, with 2-way sync and no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — would cost $1,273.59/mo all-in, so on cost alone there is no reason to switch: middleware would only make sense if you already run other automations through it, and it would drop sync to 1-way (trigger → action).
+The native connector is the cheapest route here and the only one with 2-way sync. Make or Zapier only makes sense if you already run other automations through it, or need a step the native app doesn't offer.
 
-API access at the required tiers: Salesforce Sales Cloud Yes, Mailchimp Yes (see the spec matrix). That API access is what the middleware path runs on.
+Chart: Salesforce Sales Cloud + Mailchimp: monthly cost for 10 seats by route: Native connector $1,270.00; Make Core route $1,273.59; Zapier Professional route $1,292.99
+
+Monthly cost for 10 seats by route, Salesforce Sales Cloud + Mailchimp.
+
+ 
 
 Integration routes compared for a 10-seat team
 
 | Route | Plans | 10 seats / month | Sync |
 | --- | --- | --- | --- |
-| Native Salesforce Sales Cloud + Mailchimp connector | Salesforce Sales Cloud 'Professional' + Mailchimp 'Standard' | $1,270.00 | As listed in the spec matrix |
+| Native Salesforce Sales Cloud + Mailchimp connector | Salesforce Sales Cloud 'Professional' + Mailchimp 'Standard' | $1,270.00 | 2-way |
 | Make Core on the cheapest API plans | Salesforce Sales Cloud 'Professional' + Mailchimp 'Essentials' + Make | $1,273.59 | 1-way per scenario |
+| Zapier Professional on the cheapest API plans | Salesforce Sales Cloud 'Professional' + Mailchimp 'Essentials' + Zapier | $1,292.99 | 1-way per Zap |
 
-Make Core's $10.59 monthly price comes from third-party pricing reviews, because make.com blocks automated checks; Zapier's is from zapier.com/pricing.
+Connector prices are monthly-billing list prices: Zapier Professional $29.99 (zapier.com/pricing) and Make Core $10.59 (from third-party pricing reviews, because make.com blocks automated checks). Both bill by usage, so high volumes cost more.
+
+Image: [Salesforce Sales Cloud + Mailchimp integration cost summary: $1,270 a month for 10 seats, $7 of it is the hidden cost to connect; plans needed: Salesforce Sales Cloud Professional and Mailchimp Standard](https://stackcostmatrix.com/og/salesforce-and-mailchimp.jpg)
 
 ## ✓ Verified Vendor Facts
 
@@ -55,14 +75,6 @@ Make Core's $10.59 monthly price comes from third-party pricing reviews, because
 - **Native app availability:** Native app available in vendor marketplace.
 
 Last checked: Nov 3, 2026 (exceptions listed at the top) · Sources linked below.
-
-## ◐ Model Estimates (your assumptions)
-
-- **Usage / task add-ons:** middleware overage costs you enter above.
-- **Setup & maintenance:** implementation hours and ongoing ops — adjust freely.
-- **Annual billing saving:** uses each vendor's published annual price where one exists; otherwise no discount is applied.
-
-Estimates never change the verified facts — they only model your scenario.
 
 ## ! Hidden Cost Trap
 
@@ -97,7 +109,7 @@ Side-by-side spec matrix
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
 
-## Frequently asked questions
+## Salesforce Sales Cloud + Mailchimp integration: frequently asked questions
 
 ### What are the minimum plan tiers required for the Salesforce Sales Cloud + Mailchimp integration?
 
@@ -115,7 +127,7 @@ The Salesforce Sales Cloud + Mailchimp connection is native — no third-party m
 
 It supports Enterprise, Unlimited, Performance, Developer and Professional editions, but on Professional your Salesforce account executive must enable API access first. Field mapping is limited by Mailchimp plan; Premium accounts can map up to 80 fields.
 
-## Related integrations
+## Integrations related to Salesforce Sales Cloud + Mailchimp
 
 [All Salesforce integrations →](https://stackcostmatrix.com/salesforce-integrations-cost/) · [All Mailchimp integrations →](https://stackcostmatrix.com/mailchimp-integrations-cost/) · [Salesforce API access by plan →](https://stackcostmatrix.com/salesforce-api-access/) · [Mailchimp API access by plan →](https://stackcostmatrix.com/mailchimp-api-access/)
 

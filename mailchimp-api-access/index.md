@@ -9,8 +9,6 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 API & webhooks
 
-# Mailchimp API & Webhook Access by Plan (2026)
-
 Checked against Mailchimp's developer and help-center documentation · Nov 3, 2026 · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
 
 **Short answer:** Mailchimp API keys can be created on any account, but the webhook step in Mailchimp automations needs Standard or Premium; Free and Essentials are prompted to upgrade.
@@ -24,9 +22,17 @@ Mailchimp API & Webhook Access by Plan (2026)
 | Standard | $20/mo | Yes | Not published per plan | Yes | Yes |
 | Premium | $350/mo | Yes | Not published per plan | Yes | Yes |
 
-"Not stated" means Mailchimp's documentation that we read doesn't say either way. Prices are monthly-billing list prices from this site's calculators.
+Prices are monthly-billing list prices from this site's calculators.
 
 Mailchimp's classic audience webhooks are a separate feature; the help article we read covers the automation step.
+
+Chart: Mailchimp plans: monthly price for 10 seats and whether the API is included: Free (API included) $0.00; Essentials (API included) $13.00; Standard (API included) $20.00; Premium (API included) $350.00
+
+Mailchimp monthly price for 10 seats by plan. Green: API included; amber: paid add-on (included in the bar); grey: no API.
+
+ 
+
+Image: [Mailchimp API access by plan: Free yes; Essentials yes; Standard yes; Premium yes](https://stackcostmatrix.com/og/mailchimp-api-access.jpg)
 
 ## Two kinds of webhooks
 
@@ -51,7 +57,7 @@ Checked Nov 3, 2026.
 
 [ActiveCampaign](https://stackcostmatrix.com/activecampaign-api-access/) · [Airtable](https://stackcostmatrix.com/airtable-api-access/) · [Asana](https://stackcostmatrix.com/asana-api-access/) · [Calendly](https://stackcostmatrix.com/calendly-api-access/) · [ClickUp](https://stackcostmatrix.com/clickup-api-access/) · [Freshdesk](https://stackcostmatrix.com/freshdesk-api-access/) · [HubSpot](https://stackcostmatrix.com/hubspot-api-access/) · [Intercom](https://stackcostmatrix.com/intercom-api-access/) · [Monday.com](https://stackcostmatrix.com/monday-api-access/) · [Notion](https://stackcostmatrix.com/notion-api-access/) · [Pipedrive](https://stackcostmatrix.com/pipedrive-api-access/) · [QuickBooks](https://stackcostmatrix.com/quickbooks-api-access/) · [Salesforce](https://stackcostmatrix.com/salesforce-api-access/) · [Slack](https://stackcostmatrix.com/slack-api-access/) · [Stripe](https://stackcostmatrix.com/stripe-api-access/) · [Xero](https://stackcostmatrix.com/xero-api-access/) · [Zendesk](https://stackcostmatrix.com/zendesk-api-access/)
 
-## Frequently asked questions
+## Mailchimp API access: frequently asked questions
 
 ### Does Mailchimp Free include API access?
 

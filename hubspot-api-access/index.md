@@ -9,8 +9,6 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 API & webhooks
 
-# HubSpot API & Webhook Access by Plan (2026)
-
 Checked against HubSpot's developer and help-center documentation · Nov 3, 2026 · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
 
 **Short answer:** HubSpot's API is available on every plan, including the free CRM, with higher limits on Professional and Enterprise. Webhook actions in workflows need Data Hub Professional or Enterprise.
@@ -27,6 +25,14 @@ HubSpot API & Webhook Access by Plan (2026)
 "Not stated" means HubSpot's documentation that we read doesn't say either way. Prices are monthly-billing list prices from this site's calculators.
 
 Limits depend on the subscription of the account an app is installed in; an API limit increase add-on adds capacity. Apps can also receive events through HubSpot's developer webhooks API, which isn't covered by the workflow requirement.
+
+Chart: HubSpot plans: monthly price for 10 seats and whether the API is included: Free (API included) $0.00; Starter (API included) $200.00; Professional (API included) $500.00; Enterprise (API included) $750.00
+
+HubSpot monthly price for 10 seats by plan. Green: API included; amber: paid add-on (included in the bar); grey: no API.
+
+ 
+
+Image: [HubSpot API access by plan: Free yes; Starter yes; Professional yes; Enterprise yes](https://stackcostmatrix.com/og/hubspot-api-access.jpg)
 
 ## Two kinds of webhooks
 
@@ -50,7 +56,7 @@ Checked Nov 3, 2026.
 
 [ActiveCampaign](https://stackcostmatrix.com/activecampaign-api-access/) · [Airtable](https://stackcostmatrix.com/airtable-api-access/) · [Asana](https://stackcostmatrix.com/asana-api-access/) · [Calendly](https://stackcostmatrix.com/calendly-api-access/) · [ClickUp](https://stackcostmatrix.com/clickup-api-access/) · [Freshdesk](https://stackcostmatrix.com/freshdesk-api-access/) · [Intercom](https://stackcostmatrix.com/intercom-api-access/) · [Mailchimp](https://stackcostmatrix.com/mailchimp-api-access/) · [Monday.com](https://stackcostmatrix.com/monday-api-access/) · [Notion](https://stackcostmatrix.com/notion-api-access/) · [Pipedrive](https://stackcostmatrix.com/pipedrive-api-access/) · [QuickBooks](https://stackcostmatrix.com/quickbooks-api-access/) · [Salesforce](https://stackcostmatrix.com/salesforce-api-access/) · [Slack](https://stackcostmatrix.com/slack-api-access/) · [Stripe](https://stackcostmatrix.com/stripe-api-access/) · [Xero](https://stackcostmatrix.com/xero-api-access/) · [Zendesk](https://stackcostmatrix.com/zendesk-api-access/)
 
-## Frequently asked questions
+## HubSpot API access: frequently asked questions
 
 ### Does HubSpot Free include API access?
 
@@ -58,7 +64,7 @@ Yes. The limit is 100 req/10 s · 250,000/day (private apps). HubSpot's API is a
 
 ### Which HubSpot plans include webhooks?
 
-HubSpot's documentation we read doesn't state developer-webhook availability by plan. Webhook automation action by plan — Free: Needs Data Hub Professional; Starter: Needs Data Hub Professional; Professional: Only with Data Hub Professional; Enterprise: Only with Data Hub Enterprise.
+Webhook actions in workflows need Data Hub Professional or Enterprise; no other Hub unlocks them. Developer webhooks, which apps subscribe to through HubSpot's Webhooks API, are a separate feature, and HubSpot's documentation doesn't tie them to a plan.
 
 ### What are HubSpot's API rate limits by plan?
 

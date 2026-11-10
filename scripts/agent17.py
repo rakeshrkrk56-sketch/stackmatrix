@@ -24,6 +24,12 @@ def to_markdown(f, s):
     main = re.sub(r'<section[^>]*aria-label="True Cost of Ownership Calculator">.*?</section>',
                   "<p><em>Interactive cost calculator: open the web page to change team size, billing and add-ons.</em></p>", main, flags=re.S)
     main = re.sub(r"<(script|style|form|template)[^>]*>.*?</\1>", "", main, flags=re.S)
+    main = re.sub(r'<nav class="scm-jump"[^>]*>.*?</nav>', "", main, flags=re.S)   # in-page jump links mean nothing in Markdown
+    main = re.sub(r'<svg class="scm-chart"[^>]*aria-label="([^"]*)"[^>]*>.*?</svg>', lambda m: f"<p>Chart: {m.group(1)}</p>", main, flags=re.S)
+    h1 = re.search(r"<h1[^>]*>(.*?)</h1>", main, re.S)
+    if h1: title = H.unescape(re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", h1.group(1)))).strip(); main = main[:h1.start()] + main[h1.end():]
+    main = re.sub(r'<figure[^>]*> <img src="(/og/[^"]+)"[^>]*alt="([^"]*)"[^>]*> <figcaption[^>]*>.*?</figcaption> </figure>',
+                  lambda m: f'<p>Image: <a href="{m.group(1)}">{m.group(2)}</a></p>', main, flags=re.S)
     main = re.sub(r'<[^>]+class="[^"]*\bhidden\b[^"]*"[^>]*>.*?</(?:p|div)>', "", main, flags=re.S)
     md = markdownify(main, heading_style="ATX", bullets="-", strip=["img", "svg", "button", "input", "label", "select", "option"])
     md = re.sub(r"\n{3,}", "\n\n", md).strip()

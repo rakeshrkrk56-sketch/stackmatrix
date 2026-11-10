@@ -1,4 +1,4 @@
-# HubSpot + Zendesk Integration: How It Works & Cost (2026)
+# HubSpot + Zendesk Integration (2026): How It Works, Setup & True Cost
 
 > How the HubSpot + Zendesk integration works, how to set it up, and the plans it needs: HubSpot Free + Zendesk Suite Team, $690/mo for 10 seats.
 
@@ -8,8 +8,6 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 ---
 
 [Home](https://stackcostmatrix.com/) / HubSpot + Zendesk 
-
-# HubSpot + Zendesk Integration (2026): How It Works, Setup & True Cost
 
 Zendesk tickets show on HubSpot contact timelines on any HubSpot plan, but only on contacts and only one way. Requires HubSpot on the 'Free' plan and Zendesk on the 'Suite Team' plan.
 
@@ -21,15 +19,14 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 Zendesk's HubSpot integration adds Zendesk ticket events and chat transcripts to the HubSpot contact timeline, and creates new HubSpot contacts for ticket requesters who don't match an existing contact. It's available on all HubSpot subscriptions.
 
+[Setup guide: Zendesk: Zendesk Support for HubSpot ↗](https://support.zendesk.com/hc/en-us/articles/4408884090650-Setting-up-the-Zendesk-Support-for-HubSpot-integration)
+
 ### How to set it up
 
-**1.** Go to hubspot.zendesk-integrations.com/zendesk and enter your Zendesk subdomain.
-
-**2.** Authorize the Zendesk app, then allow access to HubSpot.
-
-**3.** In HubSpot, open any contact, go to the Activities tab, click Filter activity and tick Integrations > Zendesk.
-
-**4.** Zendesk creates three triggers (ticket created, solved and CSAT rated) that send tickets to HubSpot; edit their conditions to control which tickets sync.
+1. Go to hubspot.zendesk-integrations.com/zendesk and enter your Zendesk subdomain.
+2. Authorize the Zendesk app, then allow access to HubSpot.
+3. In HubSpot, open any contact, go to the Activities tab, click Filter activity and tick Integrations > Zendesk.
+4. Zendesk creates three triggers (ticket created, solved and CSAT rated) that send tickets to HubSpot; edit their conditions to control which tickets sync.
 
 **Limitations:** Tickets can only be shown on the contact timeline, not on companies or deals, and data only flows from Zendesk into HubSpot. You need a Zendesk Suite plan from Team up.
 
@@ -44,20 +41,29 @@ HubSpot 'Free' ($0.00/mo) + Zendesk 'Suite Team' ($690.00/mo),
 no middleware required.
 Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capable tiers ($700.59/mo all-in) — the native path is cheaper.
 
+ 
+
 ## Native vs middleware for HubSpot + Zendesk
 
-The native path runs on the required tiers (HubSpot 'Free' + Zendesk 'Suite Team') at $690.00/mo for a 10-seat team, with no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — would cost $700.59/mo all-in, so on cost alone there is no reason to switch: middleware would only make sense if you already run other automations through it.
+The native connector is the cheapest route here. Make or Zapier only makes sense if you already run other automations through it, or need a step the native app doesn't offer.
 
-API access at the required tiers: HubSpot Yes, Zendesk Yes (see the spec matrix). That API access is what the middleware path runs on.
+Chart: HubSpot + Zendesk: monthly cost for 10 seats by route: Native connector $690.00; Make Core route $700.59; Zapier Professional route $719.99
+
+Monthly cost for 10 seats by route, HubSpot + Zendesk.
+
+ 
 
 Integration routes compared for a 10-seat team
 
 | Route | Plans | 10 seats / month | Sync |
 | --- | --- | --- | --- |
-| Native HubSpot + Zendesk connector | HubSpot 'Free' + Zendesk 'Suite Team' | $690.00 | As listed in the spec matrix |
+| Native HubSpot + Zendesk connector | HubSpot 'Free' + Zendesk 'Suite Team' | $690.00 | 1-way (Zendesk → HubSpot) |
 | Make Core on the cheapest API plans | HubSpot 'Free' + Zendesk 'Suite Team' + Make | $700.59 | 1-way per scenario |
+| Zapier Professional on the cheapest API plans | HubSpot 'Free' + Zendesk 'Suite Team' + Zapier | $719.99 | 1-way per Zap |
 
-Make Core's $10.59 monthly price comes from third-party pricing reviews, because make.com blocks automated checks; Zapier's is from zapier.com/pricing.
+Connector prices are monthly-billing list prices: Zapier Professional $29.99 (zapier.com/pricing) and Make Core $10.59 (from third-party pricing reviews, because make.com blocks automated checks). Both bill by usage, so high volumes cost more.
+
+Image: [HubSpot + Zendesk integration cost summary: $690 a month for 10 seats, nothing extra to connect; plans needed: HubSpot Free and Zendesk Suite Team](https://stackcostmatrix.com/og/hubspot-and-zendesk.jpg)
 
 ## ✓ Verified Vendor Facts
 
@@ -67,14 +73,6 @@ Make Core's $10.59 monthly price comes from third-party pricing reviews, because
 - **Native app availability:** Native app available in vendor marketplace.
 
 Last checked: Nov 3, 2026 · Sources linked below.
-
-## ◐ Model Estimates (your assumptions)
-
-- **Usage / task add-ons:** middleware overage costs you enter above.
-- **Setup & maintenance:** implementation hours and ongoing ops — adjust freely.
-- **Annual billing saving:** uses each vendor's published annual price where one exists; otherwise no discount is applied.
-
-Estimates never change the verified facts — they only model your scenario.
 
 ## ! Plan requirements
 
@@ -90,11 +88,6 @@ Middleware fee
 :   None
 
 No hidden cost: the native connector works on HubSpot 'Free' and Zendesk 'Suite Team', so connecting them adds nothing to what you already pay for the two tools.
-
-✓ Native is the cheapest path — $0 incremental integration cost
-
-The native HubSpot + Zendesk connector runs on the required tiers with no middleware fee
-and no forced tier upgrade — paying for middleware here would only add cost.
 
 ## Side-by-side spec matrix
 
@@ -114,11 +107,11 @@ Side-by-side spec matrix
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
 
-## Frequently asked questions
+## HubSpot + Zendesk integration: frequently asked questions
 
 ### What are the minimum plan tiers required for the HubSpot + Zendesk integration?
 
-To unlock the native integration, HubSpot must be on the 'Free' plan or higher and Zendesk must be on the 'Suite Team' plan or higher. Neither plan is an upgrade over the cheapest plan with API access.
+To unlock the native integration, HubSpot must be on the 'Free' plan or higher and Zendesk must be on the 'Suite Team' plan or higher. Those are each tool's cheapest plan with API access (HubSpot 'Free' at $0/mo and Zendesk 'Suite Team' at $690/mo for 10 seats), so the integration doesn't force an upgrade.
 
 ### How much does the HubSpot + Zendesk stack cost per month for a 10-person team?
 
@@ -132,7 +125,7 @@ The HubSpot + Zendesk connection is native — no third-party middleware subscri
 
 Tickets can only be shown on the contact timeline, not on companies or deals, and data only flows from Zendesk into HubSpot. You need a Zendesk Suite plan from Team up.
 
-## Related integrations
+## Integrations related to HubSpot + Zendesk
 
 [All HubSpot integrations →](https://stackcostmatrix.com/hubspot-integrations-cost/) · [All Zendesk integrations →](https://stackcostmatrix.com/zendesk-integrations-cost/) · [HubSpot API access by plan →](https://stackcostmatrix.com/hubspot-api-access/) · [Zendesk API access by plan →](https://stackcostmatrix.com/zendesk-api-access/)
 

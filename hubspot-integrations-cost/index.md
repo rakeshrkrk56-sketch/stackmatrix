@@ -1,4 +1,4 @@
-# HubSpot Integration Costs (2026): API Tiers & Hidden Fees
+# Complete 2026 HubSpot Integration Cost & API Tier Matrix
 
 > Every HubSpot integration's true cost in 2026: minimum plan tiers, hidden API gates, and native vs middleware totals across 13 popular connections.
 
@@ -9,8 +9,6 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 Pillar guide
 
-# Complete 2026 HubSpot Integration Cost & API Tier Matrix
-
 Most HubSpot integrations work on the free CRM, but a few need a paid Professional
 subscription. This matrix compares the
  **true monthly cost** of 13 popular HubSpot
@@ -19,21 +17,29 @@ alternatives. Integration requirements and prices re-checked 2026-11-03, except 
 
 Complete 2026 HubSpot Integration Cost & API Tier Matrix
 
-| Integration | Type | Min. HubSpot tier | Guide |
-| --- | --- | --- | --- |
-| HubSpot + Slack | Native | Free | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-slack/) |
-| HubSpot + Stripe | Native | Free | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-stripe/) |
-| HubSpot + Mailchimp | Native | Free | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-mailchimp/) |
-| HubSpot + Zendesk | Native | Free | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-zendesk/) |
-| HubSpot + Calendly | Native | Free | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-calendly/) |
-| HubSpot + Freshdesk | Native | Free | [True-cost calculator →](https://stackcostmatrix.com/stack/freshdesk-and-hubspot/) |
-| HubSpot + Intercom | Native | Free | [True-cost calculator →](https://stackcostmatrix.com/stack/intercom-and-hubspot/) |
-| HubSpot + Salesforce Sales Cloud | Native | Professional | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-salesforce/) |
-| HubSpot + Pipedrive | Middleware | Free | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-pipedrive/) |
-| HubSpot + Monday.com | Native | Free | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-monday/) |
-| HubSpot + ClickUp | Native | Free | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-clickup/) |
-| HubSpot + Asana | Native | Professional | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-asana/) |
-| HubSpot + QuickBooks Online | Native | Free | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-quickbooks/) |
+| Integration | Type | Min. HubSpot tier | 10-seat total | Checked | Guide |
+| --- | --- | --- | --- | --- | --- |
+| HubSpot + Slack | Native | Free | $0.00 | Nov 3, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-slack/) |
+| HubSpot + Stripe | Native | Free | $0.00 | Nov 3, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-stripe/) |
+| HubSpot + Mailchimp | Native | Free | $20.00 | Nov 3, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-mailchimp/) |
+| HubSpot + Zendesk | Native | Free | $690.00 | Nov 3, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-zendesk/) |
+| HubSpot + Calendly | Native | Free | $120.00 | Nov 3, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-calendly/) |
+| HubSpot + Freshdesk | Native | Free | $230.00 | Nov 3, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/freshdesk-and-hubspot/) |
+| HubSpot + Intercom | Native | Free | $390.00 | Nov 3, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/intercom-and-hubspot/) |
+| HubSpot + Salesforce Sales Cloud | Native | Professional | $1,750.00 | Nov 3, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-salesforce/) |
+| HubSpot + Pipedrive | Middleware | Free | $150.59 | Nov 3, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-pipedrive/) |
+| HubSpot + Monday.com | Native | Free | $140.00 | Nov 3, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-monday/) |
+| HubSpot + ClickUp | Native | Free | $120.00 | Nov 3, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-clickup/) |
+| HubSpot + Asana | Native | Professional | $634.90 | Nov 3, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-asana/) |
+| HubSpot + QuickBooks Online | Native | Free | $38.00 | Nov 4, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-quickbooks/) |
+
+Chart: HubSpot integration costs: monthly cost for 10 seats on the plans each integration needs: HubSpot + Salesforce Sales Cloud $1,750.00; HubSpot + Zendesk $690.00; HubSpot + Asana $634.90; Intercom + HubSpot $390.00; Freshdesk + HubSpot $230.00; HubSpot + Pipedrive $150.59; HubSpot + Monday.com $140.00; HubSpot + Calendly $120.00; HubSpot + ClickUp $120.00; HubSpot + QuickBooks Online $38.00; HubSpot + Mailchimp $20.00; HubSpot + Slack $0.00; HubSpot + Stripe $0.00
+
+Monthly cost for 10 seats, both tools plus any connector. Indigo bars are native integrations; teal bars need a connector.
+
+ 
+
+Image: [HubSpot integration costs summary: 13 integrations priced, from $0 to $1,750 a month for 10 seats](https://stackcostmatrix.com/og/hubspot-integrations-cost.jpg)
 
 ## The HubSpot API tier trap
 
@@ -59,7 +65,7 @@ Some outbound links may earn us a referral commission at no extra cost to you.
 
 [ActiveCampaign](https://stackcostmatrix.com/activecampaign-api-access/) · [Airtable](https://stackcostmatrix.com/airtable-api-access/) · [Asana](https://stackcostmatrix.com/asana-api-access/) · [Calendly](https://stackcostmatrix.com/calendly-api-access/) · [ClickUp](https://stackcostmatrix.com/clickup-api-access/) · [Freshdesk](https://stackcostmatrix.com/freshdesk-api-access/) · [HubSpot](https://stackcostmatrix.com/hubspot-api-access/) · [Intercom](https://stackcostmatrix.com/intercom-api-access/) · [Mailchimp](https://stackcostmatrix.com/mailchimp-api-access/) · [Monday.com](https://stackcostmatrix.com/monday-api-access/) · [Notion](https://stackcostmatrix.com/notion-api-access/) · [Pipedrive](https://stackcostmatrix.com/pipedrive-api-access/) · [QuickBooks](https://stackcostmatrix.com/quickbooks-api-access/) · [Salesforce](https://stackcostmatrix.com/salesforce-api-access/) · [Slack](https://stackcostmatrix.com/slack-api-access/) · [Stripe](https://stackcostmatrix.com/stripe-api-access/) · [Xero](https://stackcostmatrix.com/xero-api-access/) · [Zendesk](https://stackcostmatrix.com/zendesk-api-access/)
 
-## Frequently asked questions
+## HubSpot integration costs: frequently asked questions
 
 ### Which HubSpot plan do I need for API access?
 

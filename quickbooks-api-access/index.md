@@ -9,8 +9,6 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 API & webhooks
 
-# QuickBooks API & Webhook Access by Plan (2026)
-
 Checked against QuickBooks's developer and help-center documentation · Nov 3, 2026 · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
 
 **Short answer:** Every paid QuickBooks Online plan can connect apps: Intuit's developer docs set no plan requirement, and Zapier, Make and Mailchimp's QuickBooks integrations ask only for a QuickBooks Online account (Zapier says a paid one).
@@ -23,9 +21,17 @@ QuickBooks API & Webhook Access by Plan (2026)
 | Essentials | $75/mo | Yes Any paid plan (Zapier, Make and Mailchimp name no tier) | Not published per plan | Yes App-level webhooks | — |
 | Plus | $115/mo | Yes Any paid plan (Zapier, Make and Mailchimp name no tier) | Not published per plan | Yes App-level webhooks | — |
 
-"Not stated" means QuickBooks's documentation that we read doesn't say either way. Prices are monthly-billing list prices from this site's calculators.
+Prices are monthly-billing list prices from this site's calculators.
 
 QuickBooks limits its API to 500 requests per minute per company, per Zapier's QuickBooks Online guide. Every integration in this index now models Simple Start, the cheapest plan.
+
+Chart: QuickBooks plans: monthly price for 10 seats and whether the API is included: Simple Start (API included) $38.00; Essentials (API included) $75.00; Plus (API included) $115.00
+
+QuickBooks monthly price for 10 seats by plan. Green: API included; amber: paid add-on (included in the bar); grey: no API.
+
+ 
+
+Image: [QuickBooks API access by plan: Simple Start yes; Essentials yes; Plus yes](https://stackcostmatrix.com/og/quickbooks-api-access.jpg)
 
 ## Two kinds of webhooks
 
@@ -50,7 +56,7 @@ Checked Nov 3, 2026.
 
 [ActiveCampaign](https://stackcostmatrix.com/activecampaign-api-access/) · [Airtable](https://stackcostmatrix.com/airtable-api-access/) · [Asana](https://stackcostmatrix.com/asana-api-access/) · [Calendly](https://stackcostmatrix.com/calendly-api-access/) · [ClickUp](https://stackcostmatrix.com/clickup-api-access/) · [Freshdesk](https://stackcostmatrix.com/freshdesk-api-access/) · [HubSpot](https://stackcostmatrix.com/hubspot-api-access/) · [Intercom](https://stackcostmatrix.com/intercom-api-access/) · [Mailchimp](https://stackcostmatrix.com/mailchimp-api-access/) · [Monday.com](https://stackcostmatrix.com/monday-api-access/) · [Notion](https://stackcostmatrix.com/notion-api-access/) · [Pipedrive](https://stackcostmatrix.com/pipedrive-api-access/) · [Salesforce](https://stackcostmatrix.com/salesforce-api-access/) · [Slack](https://stackcostmatrix.com/slack-api-access/) · [Stripe](https://stackcostmatrix.com/stripe-api-access/) · [Xero](https://stackcostmatrix.com/xero-api-access/) · [Zendesk](https://stackcostmatrix.com/zendesk-api-access/)
 
-## Frequently asked questions
+## QuickBooks API access: frequently asked questions
 
 ### Does QuickBooks Simple Start include API access?
 

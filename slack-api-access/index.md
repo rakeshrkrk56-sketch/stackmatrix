@@ -9,8 +9,6 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 API & webhooks
 
-# Slack API & Webhook Access by Plan (2026)
-
 Checked against Slack's developer and help-center documentation · Nov 3, 2026 · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
 
 **Short answer:** Slack's API and incoming webhooks work on the Free plan; webhook-triggered workflows in Workflow Builder need a paid plan.
@@ -23,9 +21,17 @@ Slack API & Webhook Access by Plan (2026)
 | Pro | $8.75/seat/mo | Yes | Not published per plan | Yes | Yes |
 | Business+ | $18/seat/mo | Yes | Not published per plan | Yes | Yes |
 
-"Not stated" means Slack's documentation that we read doesn't say either way. Prices are monthly-billing list prices from this site's calculators.
+Prices are monthly-billing list prices from this site's calculators.
 
 Third-party sites say the Free plan caps a workspace at 10 apps; Slack's developer docs we read don't mention it.
+
+Chart: Slack plans: monthly price for 10 seats and whether the API is included: Free (API included) $0.00; Pro (API included) $87.50; Business+ (API included) $180.00
+
+Slack monthly price for 10 seats by plan. Green: API included; amber: paid add-on (included in the bar); grey: no API.
+
+ 
+
+Image: [Slack API access by plan: Free yes; Pro yes; Business+ yes](https://stackcostmatrix.com/og/slack-api-access.jpg)
 
 ## Two kinds of webhooks
 
@@ -49,7 +55,7 @@ Checked Nov 3, 2026.
 
 [ActiveCampaign](https://stackcostmatrix.com/activecampaign-api-access/) · [Airtable](https://stackcostmatrix.com/airtable-api-access/) · [Asana](https://stackcostmatrix.com/asana-api-access/) · [Calendly](https://stackcostmatrix.com/calendly-api-access/) · [ClickUp](https://stackcostmatrix.com/clickup-api-access/) · [Freshdesk](https://stackcostmatrix.com/freshdesk-api-access/) · [HubSpot](https://stackcostmatrix.com/hubspot-api-access/) · [Intercom](https://stackcostmatrix.com/intercom-api-access/) · [Mailchimp](https://stackcostmatrix.com/mailchimp-api-access/) · [Monday.com](https://stackcostmatrix.com/monday-api-access/) · [Notion](https://stackcostmatrix.com/notion-api-access/) · [Pipedrive](https://stackcostmatrix.com/pipedrive-api-access/) · [QuickBooks](https://stackcostmatrix.com/quickbooks-api-access/) · [Salesforce](https://stackcostmatrix.com/salesforce-api-access/) · [Stripe](https://stackcostmatrix.com/stripe-api-access/) · [Xero](https://stackcostmatrix.com/xero-api-access/) · [Zendesk](https://stackcostmatrix.com/zendesk-api-access/)
 
-## Frequently asked questions
+## Slack API access: frequently asked questions
 
 ### Does Slack Free include API access?
 

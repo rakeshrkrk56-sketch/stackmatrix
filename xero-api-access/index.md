@@ -9,8 +9,6 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 API & webhooks
 
-# Xero API & Webhook Access by Plan (2026)
-
 Checked against Xero's developer and help-center documentation · Nov 3, 2026 · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
 
 **Short answer:** Every Xero subscription can connect apps through the API; since March 2026 the limits depend on the connecting app's developer tier, not your Xero plan.
@@ -23,9 +21,17 @@ Xero API & Webhook Access by Plan (2026)
 | Growing | $59/mo | Yes Limits set by the app's developer tier | Not published per plan | Yes No plan requirement in Xero's webhook docs | — |
 | Established | $97/mo | Yes Limits set by the app's developer tier | Not published per plan | Yes No plan requirement in Xero's webhook docs | — |
 
-"Not stated" means Xero's documentation that we read doesn't say either way. Prices are monthly-billing list prices from this site's calculators.
+Prices are monthly-billing list prices from this site's calculators.
 
 Xero's developer tiers (Starter, Core, Plus, Advanced, Enterprise) cap connections at 5, 50, 1,000, 10,000 and unlimited; app developers pay for these, not Xero subscribers. Make's Xero app asks only for a Xero account, and Zapier for a paid one. On Early, apps can enter up to 20 approved sales invoices and 5 bills a month through the API.
+
+Chart: Xero plans: monthly price for 10 seats and whether the API is included: Early (API included) $27.00; Growing (API included) $59.00; Established (API included) $97.00
+
+Xero monthly price for 10 seats by plan. Green: API included; amber: paid add-on (included in the bar); grey: no API.
+
+ 
+
+Image: [Xero API access by plan: Early yes; Growing yes; Established yes](https://stackcostmatrix.com/og/xero-api-access.jpg)
 
 ## Two kinds of webhooks
 
@@ -51,7 +57,7 @@ Checked Nov 3, 2026.
 
 [ActiveCampaign](https://stackcostmatrix.com/activecampaign-api-access/) · [Airtable](https://stackcostmatrix.com/airtable-api-access/) · [Asana](https://stackcostmatrix.com/asana-api-access/) · [Calendly](https://stackcostmatrix.com/calendly-api-access/) · [ClickUp](https://stackcostmatrix.com/clickup-api-access/) · [Freshdesk](https://stackcostmatrix.com/freshdesk-api-access/) · [HubSpot](https://stackcostmatrix.com/hubspot-api-access/) · [Intercom](https://stackcostmatrix.com/intercom-api-access/) · [Mailchimp](https://stackcostmatrix.com/mailchimp-api-access/) · [Monday.com](https://stackcostmatrix.com/monday-api-access/) · [Notion](https://stackcostmatrix.com/notion-api-access/) · [Pipedrive](https://stackcostmatrix.com/pipedrive-api-access/) · [QuickBooks](https://stackcostmatrix.com/quickbooks-api-access/) · [Salesforce](https://stackcostmatrix.com/salesforce-api-access/) · [Slack](https://stackcostmatrix.com/slack-api-access/) · [Stripe](https://stackcostmatrix.com/stripe-api-access/) · [Zendesk](https://stackcostmatrix.com/zendesk-api-access/)
 
-## Frequently asked questions
+## Xero API access: frequently asked questions
 
 ### Does Xero Early include API access?
 

@@ -26,6 +26,7 @@ Run everything **from the repo root**. Needs `python3`, plus `node` with Playwri
 | HubSpot Professional guide | `hubspot-professional-integrations/` | `hspro.py`. Integration requirements come from the pair pages; each Professional Hub's prices are in its `PRO` list (re-read them on HubSpot's pricing pages, clicking the billing toggles). |
 | Editor & site identity | every page | `site16.py`: "Edited by Rakesh" byline, one Organization/WebSite/Person @id graph (homepage, /about/) that every page's schema points to, the 1200x630 `og-image.png`, breadcrumbs on the hand-written guides, and the 404 page's redirect for reversed pair URLs (/stack/b-and-a/). Run after the generators. |
 | Sitemap | `sitemap-0.xml` | `sitemap16.py` rebuilds it from the pages on disk, with lastmod from each page's dateModified (or its last commit). |
+| Jump links | every long page | `ux18.py` adds the "On this page" row under the intro and the anchors it points to. Run it after `pairfix.py` and the generators (they rebuild pages without it). |
 | AI/agent files | `llms.txt`, `llms-full.txt`, `<page>/index.md`, robots.txt Content-Signal | `agent17.py` regenerates them from the pages and the open data. |
 | Share images | `og/<pair>.jpg`, `og-image.png` | `og17.py` renders a 1200x630 card per pair (cost, extra cost, plans); `site16.py` points each page at it. |
 | Security tags | every page | `security.py` writes a Content-Security-Policy `<meta>` (with hashes of the page's inline scripts) and a referrer policy. **Run it last, after any script that changes a page's scripts** (`check_all.sh` fails until you do). If you add an image or script from a new outside site, add its host in `security.py`. |
@@ -41,7 +42,8 @@ python3 scripts/hubs.py               # tool hubs
 python3 scripts/apipages.py           # API pages (plan price column)
 python3 scripts/research.py           # only if the change corrects the report's figures
 python3 scripts/ui13.py               # finder data on homepage/404
-python3 scripts/og17.py               # per-pair share images (only re-renders changed ones)
+python3 scripts/og17.py               # share images for pairs, hubs, API pages and the report chart (only re-renders changed ones)
+python3 scripts/ux18.py               # "On this page" jump links and their anchors
 python3 scripts/site16.py             # editor byline, shared Organization/Person schema, share images, 404 redirects
 python3 scripts/agent17.py            # Markdown copies, llms.txt, llms-full.txt, table captions, calculator form markup
 python3 scripts/sitemap16.py          # sitemap with lastmod dates

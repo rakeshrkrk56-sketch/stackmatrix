@@ -9,8 +9,6 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 API & webhooks
 
-# ActiveCampaign API & Webhook Access by Plan (2026)
-
 Checked against ActiveCampaign's developer and help-center documentation · Nov 3, 2026 · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
 
 **Short answer:** Every ActiveCampaign plan includes API access and webhooks: ActiveCampaign's help center lists Starter, Plus, Pro and Enterprise for both.
@@ -23,9 +21,17 @@ ActiveCampaign API & Webhook Access by Plan (2026)
 | Plus | $49/mo | Yes | Not published per plan | Yes | Yes |
 | Pro | $79/mo | Yes | Not published per plan | Yes | Yes |
 
-"Not stated" means ActiveCampaign's documentation that we read doesn't say either way. Prices are monthly-billing list prices from this site's calculators.
+ActiveCampaign publishes annual-billing rates only, so prices are per month, billed annually.
 
 A third-party guide (WP Fusion) says the automation webhook action now needs Plus; ActiveCampaign's own help center still lists Starter, so we follow the vendor.
+
+Chart: ActiveCampaign plans: monthly price for 10 seats and whether the API is included: Starter (API included) $15.00; Plus (API included) $49.00; Pro (API included) $79.00
+
+ActiveCampaign monthly price for 10 seats by plan. Green: API included; amber: paid add-on (included in the bar); grey: no API.
+
+ 
+
+Image: [ActiveCampaign API access by plan: Starter yes; Plus yes; Pro yes](https://stackcostmatrix.com/og/activecampaign-api-access.jpg)
 
 ## Two kinds of webhooks
 
@@ -50,7 +56,7 @@ Checked Nov 3, 2026.
 
 [Airtable](https://stackcostmatrix.com/airtable-api-access/) · [Asana](https://stackcostmatrix.com/asana-api-access/) · [Calendly](https://stackcostmatrix.com/calendly-api-access/) · [ClickUp](https://stackcostmatrix.com/clickup-api-access/) · [Freshdesk](https://stackcostmatrix.com/freshdesk-api-access/) · [HubSpot](https://stackcostmatrix.com/hubspot-api-access/) · [Intercom](https://stackcostmatrix.com/intercom-api-access/) · [Mailchimp](https://stackcostmatrix.com/mailchimp-api-access/) · [Monday.com](https://stackcostmatrix.com/monday-api-access/) · [Notion](https://stackcostmatrix.com/notion-api-access/) · [Pipedrive](https://stackcostmatrix.com/pipedrive-api-access/) · [QuickBooks](https://stackcostmatrix.com/quickbooks-api-access/) · [Salesforce](https://stackcostmatrix.com/salesforce-api-access/) · [Slack](https://stackcostmatrix.com/slack-api-access/) · [Stripe](https://stackcostmatrix.com/stripe-api-access/) · [Xero](https://stackcostmatrix.com/xero-api-access/) · [Zendesk](https://stackcostmatrix.com/zendesk-api-access/)
 
-## Frequently asked questions
+## ActiveCampaign API access: frequently asked questions
 
 ### Does ActiveCampaign Starter include API access?
 

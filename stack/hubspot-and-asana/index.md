@@ -1,4 +1,4 @@
-# HubSpot + Asana Integration Cost (2026) | StackCostMatrix
+# HubSpot + Asana Integration Cost (2026): True Price, Minimum Plan & Hidden API Fees
 
 > HubSpot + Asana needs HubSpot Professional and Asana Starter for the native integration: $634.90/mo for 10 seats, including a +$500/mo forced upgrade.
 
@@ -9,8 +9,6 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 [Home](https://stackcostmatrix.com/) / HubSpot + Asana 
 
-# HubSpot + Asana Integration Cost (2026): True Price, Minimum Plan & Hidden API Fees
-
 Trap: the native Asana action runs inside HubSpot workflows, which need a HubSpot Professional subscription (cheapest: Smart CRM Professional, $50 per seat a month), and tasks only flow one way. Requires HubSpot on the 'Professional' plan and Asana on the 'Starter' plan.
 
 Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (HubSpot prices: Nov 5, 2026) | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
@@ -19,9 +17,23 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 The native integration is a HubSpot workflow action: when a deal closes or a ticket changes, HubSpot creates a task in an Asana project. It's useful for handing work from sales or support to delivery and onboarding teams.
 
+### How to set it up
+
+1. Connect Asana to your HubSpot account, either from the App Marketplace or from inside a workflow. You need Super Admin or Workflows permissions.
+2. In HubSpot, go to Automation > Workflows (it may sit under More) and open an existing workflow or create a new one.
+3. Click the + icon to add a workflow action.
+4. In the left panel, select Create an Asana task and set up the action.
+5. Click Save. Private Asana projects won't appear in HubSpot, and the Asana user who connected the integration is added as a collaborator on each task.
+
+Steps follow [HubSpot's setup guide ↗](https://knowledge.hubspot.com/workflows/create-asana-tasks-with-workflows), read Nov 10, 2026.
+
 **Limitations:** It needs HubSpot workflows, so a Professional or Enterprise subscription. Tasks only go from HubSpot to Asana, private Asana projects don't appear in HubSpot, and the Asana user who connects the integration becomes a collaborator on every task it creates.
 
-Sources (checked Nov 3, 2026): [HubSpot: Create Asana tasks with workflows ↗](https://knowledge.hubspot.com/workflows/create-asana-tasks-with-workflows) · [HubSpot Marketplace: Asana ↗](https://ecosystem.hubspot.com/marketplace/listing/asana)
+**Before you budget:** HubSpot charges a required one-time Professional Onboarding fee on some Hubs ($1,500 for Sales Hub or Service Hub, $3,000 for Marketing Hub; its pricing page shows none for Smart CRM Professional). It isn't in the monthly totals here, so add it under one-time setup cost in the calculator.
+
+[Setup guide: HubSpot: Create Asana tasks with workflows ↗](https://knowledge.hubspot.com/workflows/create-asana-tasks-with-workflows)
+
+Sources (checked Nov 3, 2026): [HubSpot: Create Asana tasks with workflows ↗](https://knowledge.hubspot.com/workflows/create-asana-tasks-with-workflows) · [HubSpot Marketplace: Asana ↗](https://ecosystem.hubspot.com/marketplace/listing/asana) · [HubSpot pricing ↗](https://www.hubspot.com/pricing)
 
 *Interactive cost calculator: open the web page to change team size, billing and add-ons.*
 
@@ -32,20 +44,29 @@ HubSpot 'Professional' ($500.00/mo) + Asana 'Starter' ($134.90/mo),
 no middleware required.
 Alternative: skip the native tier upgrade and run via Make/Zapier middleware for ~$145.49/mo all-in (adds a third-party dependency).
 
+ 
+
 ## Native vs middleware for HubSpot + Asana
 
-The native path runs on the required tiers (HubSpot 'Professional' + Asana 'Starter') at $634.90/mo for a 10-seat team, with no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — comes to $145.49/mo all-in, which is cheaper on paper because it skips the $500.00/mo forced tier upgrade. The trade-off: you replace the native connector with a third-party dependency, sync stays 1-way (trigger → action), and Make Core's fee covers a fixed monthly allowance of credits — whether that covers your volume is not verified for this pair.
+The connector routes are cheaper on paper because they skip the forced plan upgrade. The trade-off: you swap the native connector for a third-party automation you build and maintain, sync stays 1-way per automation, and the connector bills by usage.
 
-API access at the required tiers: HubSpot Yes, Asana Yes (see the spec matrix). That API access is what the middleware path runs on.
+Chart: HubSpot + Asana: monthly cost for 10 seats by route: Native connector $634.90; Make Core route $145.49; Zapier Professional route $164.89
+
+Monthly cost for 10 seats by route, HubSpot + Asana.
+
+ 
 
 Integration routes compared for a 10-seat team
 
 | Route | Plans | 10 seats / month | Sync |
 | --- | --- | --- | --- |
-| Native HubSpot + Asana connector | HubSpot 'Professional' + Asana 'Starter' | $634.90 | As listed in the spec matrix |
+| Native HubSpot + Asana connector | HubSpot 'Professional' + Asana 'Starter' | $634.90 | 1-way (HubSpot → Asana) |
 | Make Core on the cheapest API plans | HubSpot 'Free' + Asana 'Starter' + Make | $145.49 | 1-way per scenario |
+| Zapier Professional on the cheapest API plans | HubSpot 'Free' + Asana 'Starter' + Zapier | $164.89 | 1-way per Zap |
 
-Make Core's $10.59 monthly price comes from third-party pricing reviews, because make.com blocks automated checks; Zapier's is from zapier.com/pricing.
+Connector prices are monthly-billing list prices: Zapier Professional $29.99 (zapier.com/pricing) and Make Core $10.59 (from third-party pricing reviews, because make.com blocks automated checks). Both bill by usage, so high volumes cost more.
+
+Image: [HubSpot + Asana integration cost summary: $634.90 a month for 10 seats, $500 of it is the hidden cost to connect; plans needed: HubSpot Professional and Asana Starter](https://stackcostmatrix.com/og/hubspot-and-asana.jpg)
 
 ## ✓ Verified Vendor Facts
 
@@ -55,14 +76,6 @@ Make Core's $10.59 monthly price comes from third-party pricing reviews, because
 - **Native app availability:** Native app available in vendor marketplace.
 
 Last checked: Nov 3, 2026 (exceptions listed at the top) · Sources linked below.
-
-## ◐ Model Estimates (your assumptions)
-
-- **Usage / task add-ons:** middleware overage costs you enter above.
-- **Setup & maintenance:** implementation hours and ongoing ops — adjust freely.
-- **Annual billing saving:** uses each vendor's published annual price where one exists; otherwise no discount is applied.
-
-Estimates never change the verified facts — they only model your scenario.
 
 ## ! Hidden Cost Trap
 
@@ -101,7 +114,7 @@ Side-by-side spec matrix
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
 
-## Frequently asked questions
+## HubSpot + Asana integration: frequently asked questions
 
 ### What are the minimum plan tiers required for the HubSpot + Asana integration?
 
@@ -119,7 +132,7 @@ The HubSpot + Asana connection is native — no third-party middleware subscript
 
 It needs HubSpot workflows, so a Professional or Enterprise subscription. Tasks only go from HubSpot to Asana, private Asana projects don't appear in HubSpot, and the Asana user who connects the integration becomes a collaborator on every task it creates.
 
-## Related integrations
+## Integrations related to HubSpot + Asana
 
 [All HubSpot integrations →](https://stackcostmatrix.com/hubspot-integrations-cost/) · [All Asana integrations →](https://stackcostmatrix.com/asana-integrations-cost/) · [HubSpot API access by plan →](https://stackcostmatrix.com/hubspot-api-access/) · [Asana API access by plan →](https://stackcostmatrix.com/asana-api-access/)
 

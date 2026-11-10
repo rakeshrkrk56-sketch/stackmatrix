@@ -9,8 +9,6 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 API & webhooks
 
-# Freshdesk API & Webhook Access by Plan (2026)
-
 Checked against Freshdesk's developer and help-center documentation · Nov 3, 2026 · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
 
 **Short answer:** Freshdesk's API isn't available on the Free plan; it starts on Growth, which is also the first plan with the "Trigger Webhook" automation action.
@@ -23,9 +21,17 @@ Freshdesk API & Webhook Access by Plan (2026)
 | Pro | $66/seat/mo ($55 billed annually) | Yes | Not published per plan | Yes | Trigger Webhook action |
 | Enterprise | $107/seat/mo ($89 billed annually) | Yes | Not published per plan | Yes | Trigger Webhook action |
 
-"Not stated" means Freshdesk's documentation that we read doesn't say either way. Prices are monthly-billing list prices from this site's calculators.
+Prices are monthly-billing list prices from this site's calculators.
 
 Freshdesk's API rate limit is set per minute by plan; its API reference doesn't print the Growth figure on the page we read.
+
+Chart: Freshdesk plans: monthly price for 10 seats and whether the API is included: Growth (API included) $230.00; Pro (API included) $660.00; Enterprise (API included) $1,070.00
+
+Freshdesk monthly price for 10 seats by plan. Green: API included; amber: paid add-on (included in the bar); grey: no API.
+
+ 
+
+Image: [Freshdesk API access by plan: Growth yes; Pro yes; Enterprise yes](https://stackcostmatrix.com/og/freshdesk-api-access.jpg)
 
 ## Two kinds of webhooks
 
@@ -46,7 +52,7 @@ Checked Nov 3, 2026.
 
 [ActiveCampaign](https://stackcostmatrix.com/activecampaign-api-access/) · [Airtable](https://stackcostmatrix.com/airtable-api-access/) · [Asana](https://stackcostmatrix.com/asana-api-access/) · [Calendly](https://stackcostmatrix.com/calendly-api-access/) · [ClickUp](https://stackcostmatrix.com/clickup-api-access/) · [HubSpot](https://stackcostmatrix.com/hubspot-api-access/) · [Intercom](https://stackcostmatrix.com/intercom-api-access/) · [Mailchimp](https://stackcostmatrix.com/mailchimp-api-access/) · [Monday.com](https://stackcostmatrix.com/monday-api-access/) · [Notion](https://stackcostmatrix.com/notion-api-access/) · [Pipedrive](https://stackcostmatrix.com/pipedrive-api-access/) · [QuickBooks](https://stackcostmatrix.com/quickbooks-api-access/) · [Salesforce](https://stackcostmatrix.com/salesforce-api-access/) · [Slack](https://stackcostmatrix.com/slack-api-access/) · [Stripe](https://stackcostmatrix.com/stripe-api-access/) · [Xero](https://stackcostmatrix.com/xero-api-access/) · [Zendesk](https://stackcostmatrix.com/zendesk-api-access/)
 
-## Frequently asked questions
+## Freshdesk API access: frequently asked questions
 
 ### Does Freshdesk Growth include API access?
 

@@ -1,4 +1,4 @@
-# Salesforce Integration Costs (2026): API Add-On & Tiers
+# Complete 2026 Salesforce Integration Cost & API Tier Matrix
 
 > Every Salesforce integration's true cost in 2026: the $25/user API add-on trap, minimum tiers, and native vs middleware totals.
 
@@ -9,8 +9,6 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 Pillar guide
 
-# Complete 2026 Salesforce Integration Cost & API Tier Matrix
-
 Salesforce Professional costs $100/user/month — but **API access costs
 an extra $25/user/month** on top. That add-on is the most common
 hidden cost in Salesforce integrations, and it applies to most connections
@@ -19,15 +17,23 @@ integrations. Integration requirements re-checked 2026-11-03; Salesforce prices 
 
 Complete 2026 Salesforce Integration Cost & API Tier Matrix
 
-| Integration | Type | API add-on needed? | Guide |
-| --- | --- | --- | --- |
-| Salesforce + Slack | Native | No — needs Enterprise (API included) | [True-cost calculator →](https://stackcostmatrix.com/stack/salesforce-and-slack/) |
-| Salesforce + Stripe | Native | Yes — +$25/user/mo on Professional | [True-cost calculator →](https://stackcostmatrix.com/stack/salesforce-and-stripe/) |
-| Salesforce + Mailchimp | Native | Yes — +$25/user/mo on Professional | [True-cost calculator →](https://stackcostmatrix.com/stack/salesforce-and-mailchimp/) |
-| Salesforce + Zendesk | Native | Yes — +$25/user/mo on Professional | [True-cost calculator →](https://stackcostmatrix.com/stack/salesforce-and-zendesk/) |
-| Salesforce + HubSpot | Native | Yes — +$25/user/mo on Professional | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-salesforce/) |
-| Salesforce Sales Cloud + QuickBooks Online | Middleware | Yes — +$25/user/mo on Professional | [True-cost calculator →](https://stackcostmatrix.com/stack/salesforce-and-quickbooks/) |
-| Pipedrive + Salesforce Sales Cloud | Middleware | Yes — +$25/user/mo on Professional | [True-cost calculator →](https://stackcostmatrix.com/stack/pipedrive-and-salesforce/) |
+| Integration | Type | API add-on needed? | 10-seat total | Checked | Guide |
+| --- | --- | --- | --- | --- | --- |
+| Salesforce + Slack | Native | No — needs Enterprise (API included) | $1,737.50 | Nov 3, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/salesforce-and-slack/) |
+| Salesforce + Stripe | Native | Yes — +$25/user/mo on Professional | $1,250.00 | Nov 3, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/salesforce-and-stripe/) |
+| Salesforce + Mailchimp | Native | Yes — +$25/user/mo on Professional | $1,270.00 | Nov 3, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/salesforce-and-mailchimp/) |
+| Salesforce + Zendesk | Native | Yes — +$25/user/mo on Professional | $1,940.00 | Nov 3, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/salesforce-and-zendesk/) |
+| Salesforce + HubSpot | Native | Yes — +$25/user/mo on Professional | $1,750.00 | Nov 3, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-salesforce/) |
+| Salesforce Sales Cloud + QuickBooks Online | Middleware | Yes — +$25/user/mo on Professional | $1,298.59 | Nov 4, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/salesforce-and-quickbooks/) |
+| Pipedrive + Salesforce Sales Cloud | Middleware | Yes — +$25/user/mo on Professional | $1,400.59 | Nov 4, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/pipedrive-and-salesforce/) |
+
+Chart: Salesforce integration costs: monthly cost for 10 seats on the plans each integration needs: Salesforce Sales Cloud + Zendesk $1,940.00; HubSpot + Salesforce Sales Cloud $1,750.00; Salesforce Sales Cloud + Slack $1,737.50; Pipedrive + Salesforce Sales Cloud $1,400.59; Salesforce Sales Cloud + QuickBooks Online $1,298.59; Salesforce Sales Cloud + Mailchimp $1,270.00; Salesforce Sales Cloud + Stripe $1,250.00
+
+Monthly cost for 10 seats, both tools plus any connector. Indigo bars are native integrations; teal bars need a connector.
+
+ 
+
+Image: [Salesforce integration costs summary: 7 integrations priced, from $1,250 to $1,940 a month for 10 seats](https://stackcostmatrix.com/og/salesforce-integrations-cost.jpg)
 
 ## The $25/user/month API trap, explained
 
@@ -53,7 +59,7 @@ Some outbound links may earn us a referral commission at no extra cost to you.
 
 [ActiveCampaign](https://stackcostmatrix.com/activecampaign-api-access/) · [Airtable](https://stackcostmatrix.com/airtable-api-access/) · [Asana](https://stackcostmatrix.com/asana-api-access/) · [Calendly](https://stackcostmatrix.com/calendly-api-access/) · [ClickUp](https://stackcostmatrix.com/clickup-api-access/) · [Freshdesk](https://stackcostmatrix.com/freshdesk-api-access/) · [HubSpot](https://stackcostmatrix.com/hubspot-api-access/) · [Intercom](https://stackcostmatrix.com/intercom-api-access/) · [Mailchimp](https://stackcostmatrix.com/mailchimp-api-access/) · [Monday.com](https://stackcostmatrix.com/monday-api-access/) · [Notion](https://stackcostmatrix.com/notion-api-access/) · [Pipedrive](https://stackcostmatrix.com/pipedrive-api-access/) · [QuickBooks](https://stackcostmatrix.com/quickbooks-api-access/) · [Salesforce](https://stackcostmatrix.com/salesforce-api-access/) · [Slack](https://stackcostmatrix.com/slack-api-access/) · [Stripe](https://stackcostmatrix.com/stripe-api-access/) · [Xero](https://stackcostmatrix.com/xero-api-access/) · [Zendesk](https://stackcostmatrix.com/zendesk-api-access/)
 
-## Frequently asked questions
+## Salesforce integration costs: frequently asked questions
 
 ### Does Salesforce charge extra for API access?
 

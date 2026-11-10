@@ -68,7 +68,7 @@ Source: https://stackcostmatrix.com · Editor: Rakesh Kumar · Licence: CC BY 4.
 
 ---
 
-# The Integration Tax 2026: Hidden Costs of SaaS Integrations
+# The Integration Tax 2026: What Connecting SaaS Tools Really Costs
 
 > Original research: 31 of 55 SaaS integrations add a hidden monthly cost, usually $120–$251/mo when a plan upgrade is forced.
 
@@ -79,9 +79,7 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 Research · November 2026
 
-# The Integration Tax 2026: What Connecting SaaS Tools Really Costs
-
-StackCostMatrix · Published Nov 3, 2026 · Data checked against vendor docs Nov 3, 2026 · Updated Nov 8, 2026: HubSpot Professional repriced per seat (Nov 5); ActiveCampaign + Stripe, Mailchimp + Calendly and Pipedrive + Xero corrected (Nov 8; see the About page changelog) · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
+StackCostMatrix · Published Nov 3, 2026 · Data checked against vendor docs Nov 3 to Nov 8, 2026 · Updated Nov 10, 2026: HubSpot Professional repriced per seat (Nov 5); ActiveCampaign + Stripe, Mailchimp + Calendly and Pipedrive + Xero corrected (Nov 8); “Three kinds of integration cost” added (Nov 10). See the About page changelog · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
 
 We priced 55 of the most common B2B software integrations at the plans each one actually requires, then compared that with the cheapest plans that still include API access. The difference, plus any connector fee for Make or Zapier, is the **integration tax**: what you pay every month only because two tools need to talk to each other.
 
@@ -109,6 +107,8 @@ $500/mo
 
 HubSpot + Asana and HubSpot + Salesforce
 
+Image: [Bar chart: the 8 most expensive SaaS integrations by monthly integration tax for a 10-seat team, led by HubSpot + Asana at $500 a month](https://stackcostmatrix.com/og/integration-tax-2026.jpg)
+
 ## Key findings
 
 **Plan upgrades, not connectors, are the real cost.** Forced upgrades make up 93% of the total integration tax, and across all 55 stacks the integration tax is 20% of what they cost in total. Connector fees are small by comparison: $10.59, $15, $29.99 a month at monthly billing.
@@ -118,6 +118,20 @@ HubSpot + Asana and HubSpot + Salesforce
 **Calendly's webhook gate is the most common trigger.** 6 integrations need Calendly Standard, because Calendly's webhooks require a paid plan; that's $120 a month for 10 seats.
 
 **24 of 55 integrations cost nothing extra.** They work on each tool's cheapest plan with API access and need no connector, so connecting them is free on top of the plans you already pay for.
+
+Chart: Where the integration tax comes from across 55 integrations, per month for 10 seats: Forced plan upgrades $3,647.50; Connector fees (Make, Zapier, Data Mapper) $283.22
+
+Total monthly integration tax across all 55 integrations, by source: forced upgrades are 93% of it.
+
+ 
+
+## Three kinds of integration cost
+
+“What does a SaaS integration cost?” can mean three different bills. This report measures the first two, because they're the ones a buyer of these tools actually meets.
+
+1. **Plan upgrades (measured here).** The integration only works on a higher plan of one of the tools. That's 93% of the integration tax in this index, typically $120 to $251 a month for 10 seats when an upgrade is forced.
+2. **Connector fees (measured here).** There's no native app, so you pay for Make, Zapier or a similar service: $10.59 to $29.99 a month at list price, more at high volumes.
+3. **Building it yourself (not measured here).** If no native app or connector fits, someone writes and maintains a custom integration against both APIs. We don't measure that. For scale, Albato, an integration-platform vendor and so not a neutral source, cites Chift's cost analysis for roughly $10,000 to $22,000 in the first year for one in-house API integration, development plus maintenance ([Albato ↗](https://albato.com/blog/publications/embedded-ipaas-roi), read Nov 10, 2026).
 
 ## The 15 most expensive integrations
 
@@ -243,7 +257,7 @@ All 55 integrations
 
 ## Methodology
 
-**Integration tax** = (each tool's minimum plan for the integration − that tool's cheapest plan with API access) + the connector fee, for a 10-seat team at monthly-billing list prices (ActiveCampaign, Pipedrive and Salesforce publish annual-billing rates only, so those rates are used). The report covers the 55 integrations in the index when it was published on Nov 3, 2026; pairs added since then aren't included, so the figures stay comparable. Minimum plans, connector fees and prices come from those pair calculators; every figure there links to the vendor's pricing page, help center or developer docs and was checked on Nov 3, 2026.
+**Integration tax** = (each tool's minimum plan for the integration − that tool's cheapest plan with API access) + the connector fee, for a 10-seat team at monthly-billing list prices (ActiveCampaign, Pipedrive and Salesforce publish annual-billing rates only, so those rates are used). The report covers the 55 integrations in the index when it was published on Nov 3, 2026; pairs added since then aren't included, so the figures stay comparable. Minimum plans, connector fees and prices come from those pair calculators; every figure there links to the vendor's pricing page, help center or developer docs, with the date it was checked (Nov 3 to Nov 8, 2026).
 
 **Baseline plans** (cheapest plan with API access, 10 seats): ActiveCampaign Starter ($15/mo); Airtable Free ($0/mo); Asana Starter ($134.90/mo); Calendly Free ($0/mo); ClickUp Free ($0/mo); Freshdesk Growth ($230/mo); HubSpot Free ($0/mo); Intercom Essential ($390/mo); Mailchimp Free ($0/mo); Monday.com Standard ($140/mo); Notion Plus ($120/mo); Pipedrive Lite ($140/mo); QuickBooks Simple Start ($38/mo); Salesforce Professional ($1,250/mo); Slack Free ($0/mo); Stripe Standard ($0/mo); Xero Early ($27/mo); Zendesk Suite Team ($690/mo).
 
@@ -257,7 +271,7 @@ The data is open under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 
 **Suggested citation:** StackCostMatrix, “The Integration Tax 2026: Hidden Costs of SaaS Integrations,” November 3, 2026, https://stackcostmatrix.com/integration-tax-2026/
 
-## Frequently asked questions
+## Integration tax: frequently asked questions
 
 ### What is the integration tax?
 
@@ -285,9 +299,7 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 HubSpot plans
 
-# Which Integrations Need HubSpot Professional? (2026)
-
-Checked against HubSpot's pricing pages and knowledge base · Nov 5, 2026 · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
+Checked against HubSpot's pricing pages and knowledge base · Nov 5, 2026 · Salesforce requirements added Nov 10, 2026 · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
 
 **Short answer:** Only 2 of the 13 HubSpot integrations we track need Professional: HubSpot + Salesforce and HubSpot + Asana. Any Professional subscription HubSpot lists for them works, and the cheapest is Smart CRM Professional at $50 per seat a month ($45 on an annual commitment), about $500 a month for 10 people. The other 11 work on HubSpot's free CRM.
 
@@ -313,6 +325,8 @@ Which HubSpot plan each integration needs
 
 Totals are both tools' required plans plus any connector fee, for 10 seats at monthly billing, from each integration's calculator. HubSpot Professional is priced as Smart CRM Professional, the cheapest Professional subscription.
 
+Image: [Summary: 2 of 13 HubSpot integrations need Professional; the cheapest Professional plan is $50 per seat a month; 11 work on the free CRM](https://stackcostmatrix.com/og/hubspot-professional-integrations.jpg)
+
 ## The cheapest way to get HubSpot Professional
 
 Both integrations work with *any* Professional subscription HubSpot lists for them, so you don't need Marketing Hub. **Smart CRM Professional** is the cheapest: $50 per seat a month, or $45 with an annual commitment, with no onboarding fee shown. For 10 people that's $500 a month. Marketing Hub Professional, the plan most people think of, costs $1,240 a month for the same team, plus a $3,000 onboarding fee.
@@ -331,6 +345,14 @@ The cheapest way to get HubSpot Professional
 Prices from HubSpot's pricing pages, checked Nov 5, 2026. Annual-commitment prices are per month. Extra Core Seats are listed as “start at” prices, so these are minimums. “Not listed” means that Hub isn't in HubSpot's help article for the integration. Revenue Hub Professional also unlocks the Asana action.
 
 **You may not need 10 paid seats.** HubSpot charges per Core Seat, and its product catalog says View-Only Seats are “available at no additional cost”. People who only look at records don't need a paid seat, so a team where a few people do the editing pays less than the 10-seat figure.
+
+## Do you need HubSpot Professional for the Salesforce integration?
+
+**Yes.** HubSpot's Salesforce connector isn't available on the free CRM or Starter: HubSpot lists it for Professional and Enterprise only, on any of the Hubs in the table above. The cheapest way in is Smart CRM Professional at $50 per seat a month.
+
+**What Salesforce needs.** HubSpot's requirements read “a Salesforce edition with API access, or Salesforce Professional”, and Group Edition isn't supported. Enterprise and Unlimited include API access; Professional normally needs a paid API add-on. Salesforce also says security-reviewed AppExchange apps can reach Professional orgs even if the customer doesn't have API access, so ask Salesforce whether your Professional org needs the add-on for HubSpot's connector. The Salesforce user who connects it also needs the API Enabled permission. Details by edition: [Salesforce API access by edition](https://stackcostmatrix.com/salesforce-api-access/).
+
+**One-time fees.** HubSpot adds a required Professional Onboarding fee on some Hubs ($1,500 for Sales Hub or Service Hub, $3,000 for Marketing Hub); its pricing page shows none for Smart CRM Professional. Full monthly cost with both tools: [HubSpot + Salesforce](https://stackcostmatrix.com/stack/hubspot-and-salesforce/).
 
 ## Is there a cheaper route than upgrading?
 
@@ -353,13 +375,14 @@ Checked Nov 5, 2026. Help-article quotes are copied from each article, with the 
 - [HubSpot pricing: Service Hub ↗](https://www.hubspot.com/pricing/service/enterprise) “Professional · $90/mo/seat · $100/mo/seat · one-time Professional Onboarding for a fee of $1,500”
 - [HubSpot pricing: Content Hub ↗](https://www.hubspot.com/pricing/content/enterprise) “Professional · $450/mo · $500/mo · Includes 3 Core Seats”
 - [HubSpot pricing: Data Hub ↗](https://www.hubspot.com/pricing/operations/enterprise) “Professional · $720/mo · $800/mo · Includes 1 Core Seat”
+- [Salesforce developers: API access in Group and Professional Editions ↗](https://developer.salesforce.com/docs/atlas.en-us.packagingGuide.meta/packagingGuide/dev_packages_api_access.htm) “after your app passes the security review … your app can make calls to Group and Professional Edition orgs … even if the customer doesn't have API access”
 - [HubSpot Product and Services Catalog ↗](https://legal.hubspot.com/hubspot-product-and-services-catalog) “Core Seat … Professional subscriptions $50/month per seat · View-Only Seat … Available at no additional cost”
 
 ## More on HubSpot
 
 [All HubSpot integration costs](https://stackcostmatrix.com/hubspot-integrations-cost/) · [HubSpot API access by plan](https://stackcostmatrix.com/hubspot-api-access/) · [The Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/)
 
-## Frequently asked questions
+## HubSpot Professional and integrations: frequently asked questions
 
 ### Which HubSpot integrations need Professional?
 
@@ -371,7 +394,7 @@ Smart CRM Professional, at $50 per seat a month on monthly billing or $45 with a
 
 ### Does the HubSpot Salesforce integration work on the free CRM?
 
-No. HubSpot's knowledge base says the Salesforce integration is available with Marketing Hub, Sales Hub, Service Hub, Data Hub, Content Hub or Smart CRM on Professional or Enterprise. For 10 people, HubSpot + Salesforce costs $1,750 a month on the plans it needs.
+No. HubSpot's knowledge base says the Salesforce integration is available with Marketing Hub, Sales Hub, Service Hub, Data Hub, Content Hub or Smart CRM on Professional or Enterprise. On the Salesforce side, HubSpot asks for an edition with API access or Salesforce Professional; Group Edition isn't supported. For 10 people, HubSpot + Salesforce costs $1,750 a month on the plans it needs.
 
 ### Do webhooks in HubSpot workflows need Professional?
 
@@ -380,7 +403,7 @@ They need Data Hub Professional or Enterprise specifically. Developer webhooks f
 
 ---
 
-# About StackCostMatrix: Methodology & Sources
+# About StackCostMatrix
 
 > Who publishes StackCostMatrix, our 3-step pricing verification methodology, and the official vendor documentation index behind every cost figure.
 
@@ -389,14 +412,12 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 ---
 
-# About StackCostMatrix
-
 StackCostMatrix is an independent B2B software cost index. We research what
 popular business tools *really* cost to connect — not the sticker
 price on the pricing page, but the true monthly cost once you factor in
 required plan tiers, API and webhook access gates, and middleware fees.
 
-## Publisher & research team
+## Publisher & editor
 
 **Editor: Rakesh Kumar.** StackCostMatrix is built and run by Rakesh Kumar, who checks each price and plan requirement against the vendor's own pricing pages and documentation and reviews every change before it's published. Corrections go to the email below and are logged in the changelog. Profiles: [LinkedIn ↗](https://www.linkedin.com/in/rakesh-kumar-23960a204/) · [GitHub ↗](https://github.com/rakeshrkrk56-sketch).
 
@@ -432,13 +453,13 @@ jump), we price the connection through published Zapier and Make plan
 pricing, so the "via middleware" total reflects reality — and the
 calculator lets you compare both totals at your team size.
 
-Pricing pages for 17 of the 20 tools below were re-checked on **Nov 3, 2026**; API documentation and the remaining pricing pages were last audited in **October 2026**.
+Pricing pages for 17 of the 20 tools below were re-checked between **Nov 3 and Nov 5, 2026**; API documentation and the remaining pricing pages were last audited in **October 2026**.
 When a vendor changes a price or tier gate, the mismatch is flagged for
 re-verification — never silently rewritten.
 
 ## Official vendor documentation index
 
-Every cost figure on StackCostMatrix traces to one of these official sources.
+Every cost figure on StackCostMatrix links to one of these sources. The “Last audited” column says where a price doesn't come straight from the vendor's own page.
 Last audited: **pricing Nov 2026 for 17 tools; API docs and other pricing Oct 2026**.
 
 Official vendor documentation index
@@ -471,6 +492,7 @@ Official vendor documentation index
 Every change to our pricing data and cost models is logged here with a
 date.
 
+- **Nov 10, 2026 — Setup guides, clearer Salesforce requirements, share images.** Every integration page now opens with how the integration works and a link to the vendor's setup guide, and compares the native route with Make and Zapier in one table. Twenty integrations gained numbered setup steps, each following the vendor's own guide (Stripe + Slack and 19 more). The Salesforce API page now explains how Professional gets API access and that some AppExchange apps work without the add-on, from Salesforce's developer docs; the HubSpot Professional guide covers the Salesforce side and HubSpot's one-time onboarding fees. The Integration Tax report adds a section on the three kinds of integration cost and a chart image. No prices or plan requirements changed.
 - **Nov 8, 2026 — Three integrations corrected; site-wide accuracy pass.** Re-read on the vendors' own pages: ActiveCampaign's app directory lists its Stripe integration as included with Plus, Professional and Enterprise, so ActiveCampaign + Stripe now models Plus ($15 → $49 a month); Calendly's help article says any Mailchimp account works, including Free, so Mailchimp + Calendly drops from $133 to $120; and Pipedrive's own Xero integration is no longer offered (the Marketplace app is a paid third-party app), so Pipedrive + Xero now models Make Core ($167 → $177.59). Slack + Airtable and Slack + Calendly are now shown as one-way notifications. In the Integration Tax report, 31 of 55 integrations now carry a hidden cost (was 29) and 24 cost nothing extra (was 26); the typical forced-upgrade range is unchanged at $120–$251. Also fixed: stale integration counts and connector prices on the HubSpot, Salesforce and CRM guides, the sourcing note in our methodology, and 15 integration pages that had no setup notes now explain how the integration works, with sources. Every page now names its editor.
 - **Nov 5, 2026 — HubSpot Professional repriced; new HubSpot Professional guide.** HubSpot's help docs list the Salesforce connector and the Asana workflow action as available on *any* Professional subscription, and the cheapest is Smart CRM Professional at $50 per seat a month ($45 on an annual commitment). The site had modeled Professional as a flat $800 a month (Marketing Hub's annual price, which includes only 3 seats). At 10 seats, HubSpot + Salesforce drops from $2,050 to $1,750 a month and HubSpot + Asana from $934.90 to $634.90. In the Integration Tax report the most expensive integrations now cost $500 a month extra (was $800) and forced upgrades make up 93% of the tax (was 94%); the headline figures are unchanged. HubSpot Enterprise is now Smart CRM Enterprise at $75 per seat. New page: [which integrations need HubSpot Professional](https://stackcostmatrix.com/hubspot-professional-integrations/).
 - **Nov 4, 2026 — QuickBooks prices updated.** QuickBooks Online now lists Simple Start at $38, Essentials at $75 and Plus at $115 a month (was $35, $65 and $99), read on Intuit's pricing page. Every QuickBooks integration page is updated.
