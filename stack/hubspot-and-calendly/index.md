@@ -17,9 +17,9 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 When someone books through Calendly, the integration creates a HubSpot contact if one doesn't exist yet, or logs the meeting on the existing contact. Reschedules update the meeting, and cancellations are marked [Canceled].
 
-**Limitations:** Routing from HubSpot forms needs Calendly Teams or Enterprise. Changing a meeting's length in HubSpot doesn't update Calendly, and using Calendly's and HubSpot's calendar sync together can create duplicate meetings.
-
 [Setup guide: Calendly: Calendly + HubSpot ↗](https://calendly.com/help/calendly-hubspot)
+
+**Limitations:** Routing from HubSpot forms needs Calendly Teams or Enterprise. Changing a meeting's length in HubSpot doesn't update Calendly, and using Calendly's and HubSpot's calendar sync together can create duplicate meetings.
 
 Sources (checked Nov 3, 2026): [Calendly: Calendly + HubSpot ↗](https://calendly.com/help/calendly-hubspot) · [HubSpot Marketplace: Calendly ↗](https://ecosystem.hubspot.com/marketplace/listing/calendly-199720)
 
@@ -36,7 +36,7 @@ Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capab
 
 ## Native vs middleware for HubSpot + Calendly
 
-The native path runs on the required tiers (HubSpot 'Free' + Calendly 'Standard') at $120.00/mo for a 10-seat team, with no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — would cost $130.59/mo all-in, so on cost alone there is no reason to switch: middleware would only make sense if you already run other automations through it.
+The native connector is the cheapest route here. Make or Zapier only makes sense if you already run other automations through it, or need a step the native app doesn't offer.
 
 Chart: HubSpot + Calendly: monthly cost for 10 seats by route: Native connector $120.00; Make Core route $130.59; Zapier Professional route $149.99
 

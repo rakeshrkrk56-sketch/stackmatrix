@@ -17,6 +17,11 @@ for f in sorted(glob.glob("stack/*/index.html")):
     names = re.search(r'<nav class="mb-6 text-sm text-slate-500" aria-label="Breadcrumb">.*?<span class="text-slate-700">(.*?)</span>', s, re.S).group(1)
     s = s.replace('<h2 class="text-xl font-bold">Frequently asked questions</h2>', f'<h2 class="text-xl font-bold">{names} integration: frequently asked questions</h2>')
     s = s.replace('<h2 class="text-xl font-bold">Related integrations</h2>', f'<h2 class="text-xl font-bold">Integrations related to {names}</h2>')
+    if p in RECHECKED:   # the connection type was what got re-read on Nov 8
+        s = re.sub(r'(Connection type</td> <td class="px-4 py-3" colspan="2"> <span[^>]*>[^<]*</span> <span class="ml-2 text-xs text-slate-500">.*?· Verified )Nov 3, 2026', r"\g<1>Nov 8, 2026", s, count=1, flags=re.S)
+    if p == "stripe-and-slack":
+        s = s.replace("<span>Integration requirements and prices checked against official vendor docs · Nov 3, 2026</span>",
+                      "<span>Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (setup steps: Nov 10, 2026)</span>")
     if p in RECHECKED:
         s = re.sub(r"Last checked: Nov 3, 2026( \(exceptions listed at the top\))? · Sources linked below\.",
                    lambda m: "Requirements checked: Nov 8, 2026; prices: Nov 3, 2026" + (m.group(1) or "") + " · Sources linked below.", s)
@@ -31,6 +36,8 @@ for d, label in (("hubspot-integrations-cost", "HubSpot integration costs"), ("s
 # About: one editor, not a "research team"; price-check dates
 f = "about/index.html"; s = open(f, encoding="utf-8").read(); s0 = s
 s = re.sub(r"(<h2[^>]*>)Publisher &amp; research team(</h2>)", r"\1Publisher &amp; editor\2", s)
+s = s.replace("Every cost figure on StackCostMatrix traces to one of these official sources.",
+              "Every cost figure on StackCostMatrix links to one of these sources. The &ldquo;Last audited&rdquo; column says where a price doesn&#39;t come straight from the vendor&#39;s own page.")
 s = s.replace("Pricing pages for 17 of the 20 tools below were re-checked on <strong>Nov 3, 2026</strong>;",
               "Pricing pages for 17 of the 20 tools below were re-checked between <strong>Nov 3 and Nov 5, 2026</strong>;")
 ENTRY = ('<li><strong class="text-slate-800">Nov 10, 2026 — Setup guides, clearer Salesforce requirements, share images.</strong> '

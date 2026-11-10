@@ -25,6 +25,12 @@ Prices are monthly-billing list prices from this site's calculators.
 
 Xero's developer tiers (Starter, Core, Plus, Advanced, Enterprise) cap connections at 5, 50, 1,000, 10,000 and unlimited; app developers pay for these, not Xero subscribers. Make's Xero app asks only for a Xero account, and Zapier for a paid one. On Early, apps can enter up to 20 approved sales invoices and 5 bills a month through the API.
 
+Chart: Xero plans: monthly price for 10 seats and whether the API is included: Early (API included) $27.00; Growing (API included) $59.00; Established (API included) $97.00
+
+Xero monthly price for 10 seats by plan. Green: API included; amber: paid add-on (included in the bar); grey: no API.
+
+ 
+
 Image: [Xero API access by plan: Early yes; Growing yes; Established yes](https://stackcostmatrix.com/og/xero-api-access.jpg)
 
 ## Two kinds of webhooks

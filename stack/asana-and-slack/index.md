@@ -17,9 +17,9 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 Install the Asana app for Slack, then type /asana in Slack to list, create, complete or comment on tasks. You can turn any Slack message into an Asana task with a few clicks, link a Slack channel to an Asana project to get updates when tasks are created or completed, and use Asana rules to post a message to a Slack channel when something happens in Asana.
 
-**Limitations:** Updates flow both ways but it isn't a full sync: Slack conversations aren't mirrored into Asana, only the message you turn into a task. Slack's free plan allows up to 10 app installations.
-
 [Setup guide: Asana: Slack + Asana ↗](https://asana.com/apps/slack)
+
+**Limitations:** Updates flow both ways but it isn't a full sync: Slack conversations aren't mirrored into Asana, only the message you turn into a task. Slack's free plan allows up to 10 app installations.
 
 Sources (checked Nov 8, 2026): [Asana: Slack + Asana ↗](https://asana.com/apps/slack) · [Asana help: Slack and Asana ↗](https://help.asana.com/s/article/slack-and-asana)
 
@@ -36,7 +36,7 @@ Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capab
 
 ## Native vs middleware for Asana + Slack
 
-The native path runs on the required tiers (Asana 'Starter' + Slack 'Free') at $134.90/mo for a 10-seat team, with 2-way sync and no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — would cost $145.49/mo all-in, so on cost alone there is no reason to switch: middleware would only make sense if you already run other automations through it, and it would drop sync to 1-way (trigger → action).
+The native connector is the cheapest route here and the only one with 2-way sync. Make or Zapier only makes sense if you already run other automations through it, or need a step the native app doesn't offer.
 
 Chart: Asana + Slack: monthly cost for 10 seats by route: Native connector $134.90; Make Core route $145.49; Zapier Professional route $164.89
 

@@ -17,9 +17,9 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 Install Stripe from the Intercom App Store and turn on sync. Intercom imports each customer's Stripe data, such as plan, interval, account balance and delinquency, as custom attributes, so you can segment and message customers by billing status. Agents can see Stripe details in the inbox and add or link a customer to Stripe without leaving Intercom.
 
-**Limitations:** Customers are matched by email address. Only live-mode Stripe data syncs, not test mode, and extra Stripe accounts sync attributes only, not the inbox app. You need to be a Stripe admin to connect it.
-
 [Setup guide: Intercom help: Stripe app ↗](https://www.intercom.com/help/en/articles/1829591-stripe-app)
+
+**Limitations:** Customers are matched by email address. Only live-mode Stripe data syncs, not test mode, and extra Stripe accounts sync attributes only, not the inbox app. You need to be a Stripe admin to connect it.
 
 Sources (checked Nov 8, 2026): [Intercom help: Stripe app ↗](https://www.intercom.com/help/en/articles/1829591-stripe-app)
 
@@ -36,7 +36,7 @@ Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capab
 
 ## Native vs middleware for Intercom + Stripe
 
-The native path runs on the required tiers (Intercom 'Essential' + Stripe 'Standard') at $390.00/mo for a 10-seat team, with 2-way sync and no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — would cost $400.59/mo all-in, so on cost alone there is no reason to switch: middleware would only make sense if you already run other automations through it, and it would drop sync to 1-way (trigger → action).
+The native connector is the cheapest route here and the only one with 2-way sync. Make or Zapier only makes sense if you already run other automations through it, or need a step the native app doesn't offer.
 
 Chart: Intercom + Stripe: monthly cost for 10 seats by route: Native connector $390.00; Make Core route $400.59; Zapier Professional route $419.99
 

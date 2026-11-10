@@ -3,6 +3,7 @@ import json, os, sys, html
 sys.path.insert(0, os.path.dirname(__file__))
 from apidata import TOOLS, CHECKED
 from site16 import fix_ld
+from model import svg_bars
 from hubs import load_pairs, plan_price, render, read, esc, attr, SHORT, SITE, P, H2, TH, TD, LINK, join_names
 
 QUOTE_OK = set()  # filled from the source check: (slug, index) whose quote was found on the page
@@ -10,6 +11,9 @@ QUOTE_OK = set()  # filled from the source check: (slug, index) whose quote was 
 def val_html(v, note):
     n = f' <span class="block text-xs text-slate-500">{esc(note)}</span>' if note else ""
     return f"{esc(v) if v else '—'}{n}"
+
+ANNUAL_ONLY = {"activecampaign", "pipedrive", "salesforce"}   # vendors that publish annual-billing rates only (see /about/)
+API_COL = {"Yes": "#047857", "Add-on": "#b45309", "No": "#64748b", "Not stated": "#64748b"}
 
 def build(slug, tool, pairs, hubs, api_urls):
     T = TOOLS[slug]; short = SHORT.get(slug, tool["name"]); name = tool["name"]
@@ -31,7 +35,7 @@ def build(slug, tool, pairs, hubs, api_urls):
                     f'{TD}{esc(f["lim"]) if f["lim"] else ("<span class=\"text-xs text-slate-500\">N/A (no API access)</span>" if f["api"] == "No" else "<span class=\"text-xs text-slate-500\">Not published per plan</span>")}</td> {TD}{val_html(f["wh"], f["wh_note"])}</td> {TD}{esc(f["auto"]) if f["auto"] else "—"}</td> </tr>')
     table = (f'<div class="mt-8 overflow-x-auto rounded-xl border border-slate-200 bg-white shadow-sm"> <table class="spec-matrix w-full min-w-[640px] text-sm"> <thead class="bg-slate-50"> <tr class="text-left"> '
              f'{TH}Plan</th> {TH}Price</th> {TH}API access</th> {TH}API limit</th> {TH}Webhooks</th> {TH}Webhook automation action</th> </tr> </thead> <tbody> {"".join(rows)} </tbody> </table> </div>'
-             f'<p class="mt-3 text-xs text-slate-500">' + (f'"Not stated" means {esc(short)}&#39;s documentation that we read doesn&#39;t say either way. ' if any("Not stated" in (f["api"], f["wh"], f["auto"]) for _, f, _ in plans) else "") + 'Prices are monthly-billing list prices from this site&#39;s calculators.</p>')
+             f'<p class="mt-3 text-xs text-slate-500">' + (f'"Not stated" means {esc(short)}&#39;s documentation that we read doesn&#39;t say either way. ' if any("Not stated" in (f["api"], f["wh"], f["auto"]) for _, f, _ in plans) else "") + (f'{esc(short)} publishes annual-billing rates only, so prices are per month, billed annually.' if slug in ANNUAL_ONLY else 'Prices are monthly-billing list prices from this site&#39;s calculators.') + '</p>')
     kinds = (f'{H2}Two kinds of webhooks</h2> {P}Vendors use "webhooks" for two different features. <strong>Developer webhooks</strong> let an app or a tool like Make or Zapier subscribe to events, '
              f'and are usually available wherever the API is. A <strong>webhook automation action</strong> is a no-code step that sends data out from the tool&#39;s own automations, and is often limited to paid plans. '
              f'The table lists them separately so you can see which one an integration actually needs.</p>')
@@ -57,6 +61,14 @@ def build(slug, tool, pairs, hubs, api_urls):
     fig = (f'<figure class="mt-6"> <img src="/og/{slug}-api-access.jpg" width="1200" height="630" loading="lazy" class="scm-fig" '
            f'alt="{attr(short)} API access by plan: ' + "; ".join(f"{pl} {f['api'].lower()}" for pl, f, _ in plans[:4]) + '"> '
            f'<figcaption class="mt-2 text-xs text-slate-500">{esc(short)} API access by plan at a glance. Free to reuse with credit (CC BY 4.0).</figcaption> </figure>') if os.path.exists(f"og/{slug}-api-access.jpg") else ""
+    priced = [(pl, f, (pd.get("monthly_base_usd", 0) + pd.get("monthly_per_seat_usd", 0) * max(10, pd.get("min_seats", 1))) + (250 if slug == "salesforce" and pl == "Professional" else 0))
+              for pl, f, pd in plans if pd]
+    chart = ""
+    if len(priced) >= 2 and any(c for _, _, c in priced):
+        lab = {"Yes": "API included", "Add-on": "API as a paid add-on", "No": "no API", "Not stated": "API not stated"}
+        chart = ('<figure class="mt-6"> ' + svg_bars([(f"{pl} ({lab[f['api']]})", c, API_COL[f["api"]]) for pl, f, c in priced],
+                                                    f"{short} plans: monthly price for 10 seats and whether the API is included")
+                 + f' <figcaption class="mt-1 text-xs text-slate-500">{esc(short)} monthly price for 10 seats by plan. Green: API included; amber: paid add-on (included in the bar); grey: no API.</figcaption> </figure>')
     extra = ""
     for h, items in T.get("sections", []):
         extra += f"{H2}{esc(h)}</h2> "
@@ -88,7 +100,7 @@ def build(slug, tool, pairs, hubs, api_urls):
     body = (f'<section class="mx-auto max-w-4xl"> <p class="text-sm font-semibold uppercase tracking-widest text-indigo-600">API &amp; webhooks</p> '
             f'<h1 class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">\n{esc(h1)}\n</h1> '
             f'<p class="mt-3 text-sm text-slate-500">Checked against {esc(short)}&#39;s developer and help-center documentation · {T.get('checked', CHECKED)} · Edited by <a href="/about/#editor" class="font-medium text-indigo-600 hover:underline">Rakesh Kumar</a></p> '
-            f'{P}<strong>Short answer:</strong> {esc(T["answer"])}</p> {table} {note} {fig} {extra} {kinds} {integ} {sources} {navh}{faq_html} </section> ')
+            f'{P}<strong>Short answer:</strong> {esc(T["answer"])}</p> {table} {note} {chart} {fig} {extra} {kinds} {integ} {sources} {navh}{faq_html} </section> ')
     ld = [
         {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faqs]},
         {"@context": "https://schema.org", "@type": "TechArticle", "headline": title, "description": desc,

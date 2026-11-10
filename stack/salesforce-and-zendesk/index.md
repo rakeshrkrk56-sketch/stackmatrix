@@ -17,9 +17,9 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 Zendesk's Salesforce integration creates and updates Zendesk organizations from Salesforce accounts (and users from contacts or leads), syncs Zendesk tickets to Salesforce Cases, and can show Zendesk tickets inside Salesforce with Ticket View.
 
-**Limitations:** It needs Salesforce Enterprise or above, or Professional with the API add-on. Account data syncs one way, from Salesforce to Zendesk, and ticket comments aren't synced to a Case field (Ticket View can display them).
-
 [Setup guide: Zendesk: Connecting Salesforce to Zendesk ↗](https://support.zendesk.com/hc/en-us/articles/4408821555482-Connecting-your-Salesforce-organization-to-Zendesk)
+
+**Limitations:** It needs Salesforce Enterprise or above, or Professional with the API add-on. Account data syncs one way, from Salesforce to Zendesk, and ticket comments aren't synced to a Case field (Ticket View can display them).
 
 Sources (checked Nov 3, 2026): [Zendesk: Connecting Salesforce to Zendesk ↗](https://support.zendesk.com/hc/en-us/articles/4408821555482-Connecting-your-Salesforce-organization-to-Zendesk) · [Zendesk: Data sync from Salesforce ↗](https://support.zendesk.com/hc/en-us/articles/4408828539290-Configuring-data-sync-from-Salesforce-to-Zendesk) · [Zendesk: Ticket sync to Salesforce ↗](https://support.zendesk.com/hc/en-us/articles/4408828449050-Setting-up-ticket-sync-from-Zendesk-to-Salesforce)
 
@@ -36,7 +36,7 @@ Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capab
 
 ## Native vs middleware for Salesforce Sales Cloud + Zendesk
 
-The native path runs on the required tiers (Salesforce Sales Cloud 'Professional' + Zendesk 'Suite Team') at $1,940.00/mo for a 10-seat team, with no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — would cost $1,950.59/mo all-in, so on cost alone there is no reason to switch: middleware would only make sense if you already run other automations through it.
+The native connector is the cheapest route here. Make or Zapier only makes sense if you already run other automations through it, or need a step the native app doesn't offer.
 
 Chart: Salesforce Sales Cloud + Zendesk: monthly cost for 10 seats by route: Native connector $1,940.00; Make Core route $1,950.59; Zapier Professional route $1,969.99
 

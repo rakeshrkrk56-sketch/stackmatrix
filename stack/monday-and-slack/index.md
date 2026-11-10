@@ -19,6 +19,8 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 Board events go out to the Slack channels you choose as they happen, and from Slack you can ask @monday about project status or create a task, so updates move both ways without anyone switching apps.
 
+[Setup guide: monday.com: Slack integration ↗](https://monday.com/integrations/slack)
+
 ### How to set it up
 
 1. Open monday.com's Slack integration page and click Add to Slack.
@@ -26,8 +28,6 @@ Board events go out to the Slack channels you choose as they happen, and from Sl
 3. Choose which monday.com board updates should notify which Slack channels.
 
 **Limitations:** monday.com includes integrations from its Standard plan, with 250 integration actions a month (Pro raises this to 25,000), so the Basic plan doesn't include it. Slack's free plan allows up to 10 app installations.
-
-[Setup guide: monday.com: Slack integration ↗](https://monday.com/integrations/slack)
 
 Sources (checked Nov 3, 2026): [monday.com: Slack integration ↗](https://monday.com/integrations/slack) · [monday.com: Automations and integrations pricing ↗](https://support.monday.com/hc/en-us/articles/360002826680) · [Slack: Free plan limits ↗](https://slack.com/help/articles/27204752526611-Feature-limitations-on-the-free-version-of-Slack)
 
@@ -44,7 +44,7 @@ Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capab
 
 ## Native vs middleware for Monday.com + Slack
 
-The native path runs on the required tiers (Monday.com 'Standard' + Slack 'Free') at $140.00/mo for a 10-seat team, with 2-way sync and no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — would cost $150.59/mo all-in, so on cost alone there is no reason to switch: middleware would only make sense if you already run other automations through it, and it would drop sync to 1-way (trigger → action).
+The native connector is the cheapest route here and the only one with 2-way sync. Make or Zapier only makes sense if you already run other automations through it, or need a step the native app doesn't offer.
 
 Chart: Monday.com + Slack: monthly cost for 10 seats by route: Native connector $140.00; Make Core route $150.59; Zapier Professional route $169.99
 

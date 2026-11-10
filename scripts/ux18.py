@@ -35,8 +35,19 @@ def pair_page(s):
         a = f'<span id="{i}" class="scm-anchor"></span>'
         s = s.replace(marker, marker + " " + a if inside else a + " " + marker, 1)
     chips = [c for c in PAIR_CHIPS if f'id="{c[0]}"' in s]
+    import json, os, sys
+    sys.path.insert(0, os.path.dirname(__file__))
+    from model import compute
+    v = compute(json.loads(re.search(r'id="calc-data">(.*?)</script>', s, re.S).group(1)))
+    if v["native"] and v["UP"] <= 0.004:   # nothing extra to pay: readers came to connect the tools, so "How it works" is the filled chip
+        chips = [(i, "How it works and setup" if i == "how-it-works" else t) for i, t in chips]
+        return _with_nav(s, chips, primary="how-it-works")
+    return _with_nav(s, chips, primary="calculator")
+
+def _with_nav(s, chips, primary):
+    html_nav = nav(chips).replace(' class="scm-jump-p"', "").replace(f'<a href="#{primary}">', f'<a href="#{primary}" class="scm-jump-p">')
     lede = re.search(r'<p class="mt-4 max-w-3xl text-lg leading-relaxed text-slate-700">.*?</p>', s, re.S)
-    return s[:lede.end()] + nav(chips) + s[lede.end():]
+    return s[:lede.end()] + html_nav + s[lede.end():]
 
 def other_page(s):
     a, b = s.index("<main"), s.index("</main>")
@@ -75,7 +86,7 @@ def guide_figures():
     import os, sys
     sys.path.insert(0, os.path.dirname(__file__))
     from hubs import load_pairs
-    from model import money
+    from model import money, svg_bars
     m0 = lambda x: money(x).replace(".00", "")
     pairs = {p["slug"]: p for p in load_pairs()}
     done = 0
@@ -88,8 +99,22 @@ def guide_figures():
         fig = (f' <figure class="mt-6" data-guide="1"> <img src="/og/{d}.jpg" width="1200" height="630" loading="lazy" class="scm-fig" '
                f'alt="{label} summary: {len(mine)} integrations priced, from {m0(min(mine))} to {m0(max(mine))} a month for 10 seats"> '
                f'<figcaption class="mt-2 text-xs text-slate-500">{label} at a glance. Free to reuse with credit (CC BY 4.0).</figcaption> </figure>')
+        # per-integration total and check date, read from each pair page (the hand-written tables only had type and plan)
+        s = re.sub(r' <t[hd] class="px-4 py-3[^"]*" data-x="1">.*?</t[hd]>', "", s)
+        def row(m):
+            p = pairs.get(m.group(2))
+            if not p: return m.group(0)
+            return (f' <td class="px-4 py-3" data-x="1">{money(p["v"]["N"])}</td> <td class="px-4 py-3" data-x="1"><span class="text-xs text-slate-500">{p["checked"]}</span></td>'
+                    + m.group(1))
+        s = re.sub(r'( <td class="px-4 py-3"> <a href="/stack/([^"/]+)/" class="font-medium text-indigo-600 hover:underline">True-cost calculator →</a> </td>)', row, s)
+        s = s.replace(' <th class="px-4 py-3 font-semibold">Guide</th>',
+                      ' <th class="px-4 py-3 font-semibold" data-x="1">10-seat total</th> <th class="px-4 py-3 font-semibold" data-x="1">Checked</th> <th class="px-4 py-3 font-semibold">Guide</th>', 1)
+        rows = sorted(((pairs[x]["v"], x) for x in set(re.findall(r'href="/stack/([^"/]+)/"', s[s.index("<main"):s.index("</main>")])) if x in pairs), key=lambda t: -t[0]["N"])[:14]
+        chart = (' <figure class="mt-6" data-guide="1"> ' + svg_bars([(f"{v['na']} + {v['nb']}", v["N"], "#4f46e5" if v["native"] else "#0e7490") for v, _ in rows],
+                                                                    f"{label}: monthly cost for 10 seats on the plans each integration needs")
+                 + ' <figcaption class="mt-1 text-xs text-slate-500">Monthly cost for 10 seats, both tools plus any connector. Indigo bars are native integrations; teal bars need a connector.</figcaption> </figure>')
         a = s.index("</table> </div>", s.index("<main")) + len("</table> </div>")
-        s = s[:a] + fig + s[a:]
+        s = s[:a] + chart + fig + s[a:]
         if s != s0: open(f, "w", encoding="utf-8").write(s); done += 1
     return done
 

@@ -17,9 +17,9 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 In Calendly, go to Integrations & apps, connect Mailchimp, then create a rule per event type: pick the Mailchimp audience to add invitees to and, optionally, tags. When someone books, Calendly adds them to that audience and sends booked, canceled and rescheduled events to the contact's activity feed, which you can use to target campaigns or trigger automated emails.
 
-**Limitations:** Data flows from Calendly to Mailchimp only. Invitees in GDPR regions are added as non-marketing contacts unless they opt in, and disconnecting Mailchimp deletes the rules you set up.
-
 [Setup guide: Calendly help: Calendly + Mailchimp ↗](https://calendly.com/help/calendly-mailchimp)
+
+**Limitations:** Data flows from Calendly to Mailchimp only. Invitees in GDPR regions are added as non-marketing contacts unless they opt in, and disconnecting Mailchimp deletes the rules you set up.
 
 Sources (checked Nov 8, 2026): [Calendly help: Calendly + Mailchimp ↗](https://calendly.com/help/calendly-mailchimp)
 
@@ -36,7 +36,7 @@ Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capab
 
 ## Native vs middleware for Mailchimp + Calendly
 
-The native path runs on the required tiers (Mailchimp 'Free' + Calendly 'Standard') at $120.00/mo for a 10-seat team, with no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — would cost $130.59/mo all-in, so on cost alone there is no reason to switch: middleware would only make sense if you already run other automations through it.
+The native connector is the cheapest route here. Make or Zapier only makes sense if you already run other automations through it, or need a step the native app doesn't offer.
 
 Chart: Mailchimp + Calendly: monthly cost for 10 seats by route: Native connector $120.00; Make Core route $130.59; Zapier Professional route $149.99
 
@@ -86,7 +86,7 @@ Side-by-side spec matrix
 
 | Spec | Mailchimp | Calendly |
 | --- | --- | --- |
-| Connection type | Native   Source: [Mailchimp docs ↗](https://mailchimp.com/developer/) · [Calendly docs ↗](https://developer.calendly.com/) · Verified Nov 3, 2026 | |
+| Connection type | Native   Source: [Mailchimp docs ↗](https://mailchimp.com/developer/) · [Calendly docs ↗](https://developer.calendly.com/) · Verified Nov 8, 2026 | |
 | Data sync direction | 1-way (Calendly → Mailchimp) | |
 | Setup time | Under 1 hour (difficulty 1/5) | |
 | Native integration supported | Yes — official native app/connector | |

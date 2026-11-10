@@ -25,6 +25,12 @@ Prices are monthly-billing list prices from this site's calculators.
 
 Real-time automations (new booking → CRM record) rely on webhooks, so most Calendly integrations need Standard.
 
+Chart: Calendly plans: monthly price for 10 seats and whether the API is included: Free (API included) $0.00; Standard (API included) $120.00; Teams (API included) $200.00
+
+Calendly monthly price for 10 seats by plan. Green: API included; amber: paid add-on (included in the bar); grey: no API.
+
+ 
+
 Image: [Calendly API access by plan: Free yes; Standard yes; Teams yes](https://stackcostmatrix.com/og/calendly-api-access.jpg)
 
 ## Two kinds of webhooks

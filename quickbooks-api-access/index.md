@@ -25,6 +25,12 @@ Prices are monthly-billing list prices from this site's calculators.
 
 QuickBooks limits its API to 500 requests per minute per company, per Zapier's QuickBooks Online guide. Every integration in this index now models Simple Start, the cheapest plan.
 
+Chart: QuickBooks plans: monthly price for 10 seats and whether the API is included: Simple Start (API included) $38.00; Essentials (API included) $75.00; Plus (API included) $115.00
+
+QuickBooks monthly price for 10 seats by plan. Green: API included; amber: paid add-on (included in the bar); grey: no API.
+
+ 
+
 Image: [QuickBooks API access by plan: Simple Start yes; Essentials yes; Plus yes](https://stackcostmatrix.com/og/quickbooks-api-access.jpg)
 
 ## Two kinds of webhooks

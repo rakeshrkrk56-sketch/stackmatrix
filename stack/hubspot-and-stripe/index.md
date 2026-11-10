@@ -17,9 +17,9 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 You can connect Stripe as a payment processor in HubSpot and collect payments through HubSpot quotes, invoices and payment links on any HubSpot plan. HubSpot's separate Stripe Data Sync app keeps Stripe customers and HubSpot contacts in sync.
 
-**Limitations:** Stripe's per-transaction processing fees still apply and aren't included in the cost above. Invoices and subscriptions you create in HubSpot aren't created in Stripe, the processor option isn't offered in every country (India is one exception), and custom field mappings in Data Sync need Operations Hub (now Data Hub) Starter.
-
 [Setup guide: HubSpot: Connect Stripe as a payment processor ↗](https://knowledge.hubspot.com/payment-processing/connect-your-stripe-account-as-a-payment-processor-in-hubspot)
+
+**Limitations:** Stripe's per-transaction processing fees still apply and aren't included in the cost above. Invoices and subscriptions you create in HubSpot aren't created in Stripe, the processor option isn't offered in every country (India is one exception), and custom field mappings in Data Sync need Operations Hub (now Data Hub) Starter.
 
 Sources (checked Nov 3, 2026): [HubSpot: Connect Stripe as a payment processor ↗](https://knowledge.hubspot.com/payment-processing/connect-your-stripe-account-as-a-payment-processor-in-hubspot) · [HubSpot Marketplace: Stripe Data Sync ↗](https://ecosystem.hubspot.com/marketplace/listing/stripe-data-sync)
 
@@ -36,7 +36,7 @@ Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capab
 
 ## Native vs middleware for HubSpot + Stripe
 
-The native path runs on the required tiers (HubSpot 'Free' + Stripe 'Standard') at $0.00/mo for a 10-seat team, with 2-way sync and no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — would cost $10.59/mo all-in, so on cost alone there is no reason to switch: middleware would only make sense if you already run other automations through it, and it would drop sync to 1-way (trigger → action).
+The native connector is the cheapest route here and the only one with 2-way sync. Make or Zapier only makes sense if you already run other automations through it, or need a step the native app doesn't offer.
 
 Chart: HubSpot + Stripe: monthly cost for 10 seats by route: Native connector $0.00; Make Core route $10.59; Zapier Professional route $29.99
 

@@ -19,6 +19,8 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 Pipedrive connects to Slack through its Automations feature: after you authorize the Slack app, an automation can post to a Slack channel or send a direct message when something happens in Pipedrive, such as a new or won deal.
 
+[Setup guide: Pipedrive: Automations Slack notifications ↗](https://support.pipedrive.com/en/article/workflow-automation-slack-notifications)
+
 ### How to set it up
 
 1. In Pipedrive, go to Tools and apps > Slack > Authorize Slack account.
@@ -26,8 +28,6 @@ Pipedrive connects to Slack through its Automations feature: after you authorize
 3. Choose a channel or a direct message, then pick the Pipedrive fields to include in the message.
 
 **Limitations:** Pipedrive says Automations are only available on Growth and higher plans (Advanced under its older plan names), so the cheapest Lite plan can't send Slack messages this way. Slack's free plan allows up to 10 app installations.
-
-[Setup guide: Pipedrive: Automations Slack notifications ↗](https://support.pipedrive.com/en/article/workflow-automation-slack-notifications)
 
 Sources (checked Nov 3, 2026): [Pipedrive: Automations Slack notifications ↗](https://support.pipedrive.com/en/article/workflow-automation-slack-notifications) · [Slack: Free plan limits ↗](https://slack.com/help/articles/27204752526611-Feature-limitations-on-the-free-version-of-Slack)
 
@@ -44,7 +44,7 @@ Alternative: skip the native tier upgrade and run via Make/Zapier middleware for
 
 ## Native vs middleware for Pipedrive + Slack
 
-The native path runs on the required tiers (Pipedrive 'Growth' + Slack 'Free') at $390.00/mo for a 10-seat team, with no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — comes to $150.59/mo all-in, which is cheaper on paper because it skips the $250.00/mo forced tier upgrade. The trade-off: you replace the native connector with a third-party dependency, sync stays 1-way (trigger → action), and Make Core's fee covers a fixed monthly allowance of credits — whether that covers your volume is not verified for this pair.
+The connector routes are cheaper on paper because they skip the forced plan upgrade. The trade-off: you swap the native connector for a third-party automation you build and maintain, sync stays 1-way per automation, and the connector bills by usage.
 
 Chart: Pipedrive + Slack: monthly cost for 10 seats by route: Native connector $390.00; Make Core route $150.59; Zapier Professional route $169.99
 

@@ -36,7 +36,7 @@ Alternative: skip the native tier upgrade and run via Make/Zapier middleware for
 
 ## Native vs middleware for Salesforce Sales Cloud + Slack
 
-The native path runs on the required tiers (Salesforce Sales Cloud 'Enterprise' + Slack 'Pro') at $1,737.50/mo for a 10-seat team, with 2-way sync and no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — comes to $1,348.09/mo all-in, which is cheaper on paper because it skips the $400.00/mo forced tier upgrade. The trade-off: you replace the native connector with a third-party dependency, sync becomes 1-way (trigger → action) instead of 2-way, and Make Core's fee covers a fixed monthly allowance of credits — whether that covers your volume is not verified for this pair.
+The connector routes are cheaper on paper because they skip the forced plan upgrade. The trade-off: you swap the native connector for a third-party automation you build and maintain, sync drops from 2-way to 1-way per automation, and the connector bills by usage.
 
 Chart: Salesforce Sales Cloud + Slack: monthly cost for 10 seats by route: Native connector $1,737.50; Make Core route $1,348.09; Zapier Professional route $1,367.49
 

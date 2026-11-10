@@ -25,6 +25,12 @@ Prices are monthly-billing list prices from this site's calculators.
 
 Third-party sites say the Free plan caps a workspace at 10 apps; Slack's developer docs we read don't mention it.
 
+Chart: Slack plans: monthly price for 10 seats and whether the API is included: Free (API included) $0.00; Pro (API included) $87.50; Business+ (API included) $180.00
+
+Slack monthly price for 10 seats by plan. Green: API included; amber: paid add-on (included in the bar); grey: no API.
+
+ 
+
 Image: [Slack API access by plan: Free yes; Pro yes; Business+ yes](https://stackcostmatrix.com/og/slack-api-access.jpg)
 
 ## Two kinds of webhooks

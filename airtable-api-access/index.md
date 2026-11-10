@@ -25,6 +25,12 @@ Prices are monthly-billing list prices from this site's calculators.
 
 A Make or Zapier scenario that checks Airtable every 15 minutes uses about 2,880 calls a month, so Free only suits very low-volume syncs.
 
+Chart: Airtable plans: monthly price for 10 seats and whether the API is included: Free (API included) $0.00; Team (API included) $240.00; Business (API included) $540.00
+
+Airtable monthly price for 10 seats by plan. Green: API included; amber: paid add-on (included in the bar); grey: no API.
+
+ 
+
 Image: [Airtable API access by plan: Free yes; Team yes; Business yes](https://stackcostmatrix.com/og/airtable-api-access.jpg)
 
 ## Two kinds of webhooks

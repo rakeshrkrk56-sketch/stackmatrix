@@ -19,6 +19,8 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 You create an invoice from the deal detail view in Pipedrive, using the deal's contact and products, and it's sent to your QuickBooks account without copying anything by hand. The invoice's status, such as paid or overdue, then updates on the deal in Pipedrive.
 
+[Setup guide: Pipedrive: QuickBooks integration ↗](https://support.pipedrive.com/en/article/pipedrive-integration-quickbooks)
+
 ### How to set it up
 
 1. In Pipedrive, open the account menu, go to Tools and apps > Invoicing and click Install next to QuickBooks.
@@ -26,8 +28,6 @@ You create an invoice from the deal detail view in Pipedrive, using the deal's c
 3. Open a deal and create an invoice from the deal detail view; if Pipedrive shows a warning on the To field, link the contact to a QuickBooks customer.
 
 **Limitations:** It needs an active paying or trial account with both Pipedrive and QuickBooks, and it works with QuickBooks Online only. Pipedrive no longer supports it in France. Keep products up to date in both tools before creating invoices.
-
-[Setup guide: Pipedrive: QuickBooks integration ↗](https://support.pipedrive.com/en/article/pipedrive-integration-quickbooks)
 
 Sources (checked Nov 4, 2026): [Pipedrive: QuickBooks integration ↗](https://support.pipedrive.com/en/article/pipedrive-integration-quickbooks) · [Pipedrive: Invoicing feature ↗](https://support.pipedrive.com/en/article/invoicing-feature-in-pipedrive)
 
@@ -44,7 +44,7 @@ Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capab
 
 ## Native vs middleware for Pipedrive + QuickBooks Online
 
-The native path runs on the required tiers (Pipedrive 'Lite' + QuickBooks Online 'Simple Start') at $178.00/mo for a 10-seat team, with 2-way sync and no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — would cost $188.59/mo all-in, so on cost alone there is no reason to switch: middleware would only make sense if you already run other automations through it, and it would drop sync to 1-way (trigger → action).
+The native connector is the cheapest route here and the only one with 2-way sync. Make or Zapier only makes sense if you already run other automations through it, or need a step the native app doesn't offer.
 
 Chart: Pipedrive + QuickBooks Online: monthly cost for 10 seats by route: Native connector $178.00; Make Core route $188.59; Zapier Professional route $207.99
 

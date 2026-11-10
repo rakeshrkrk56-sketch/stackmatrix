@@ -17,9 +17,9 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 monday.com's Zendesk integration creates board items from Zendesk tickets, with filters on fields such as ticket type, status and priority, so other teams can track support work on a monday.com board.
 
-**Limitations:** Only the ticket's initial comment is pulled into the item's updates, and that section doesn't keep syncing. You need to be a Zendesk admin on a Zendesk plan of Team or higher.
-
 [Setup guide: monday.com: Zendesk integration ↗](https://support.monday.com/hc/en-us/articles/360001938339-Zendesk-Integration)
+
+**Limitations:** Only the ticket's initial comment is pulled into the item's updates, and that section doesn't keep syncing. You need to be a Zendesk admin on a Zendesk plan of Team or higher.
 
 Sources (checked Nov 3, 2026): [monday.com: Zendesk integration ↗](https://support.monday.com/hc/en-us/articles/360001938339-Zendesk-Integration)
 
@@ -36,7 +36,7 @@ Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capab
 
 ## Native vs middleware for Monday.com + Zendesk
 
-The native path runs on the required tiers (Monday.com 'Standard' + Zendesk 'Suite Team') at $830.00/mo for a 10-seat team, with no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — would cost $840.59/mo all-in, so on cost alone there is no reason to switch: middleware would only make sense if you already run other automations through it.
+The native connector is the cheapest route here. Make or Zapier only makes sense if you already run other automations through it, or need a step the native app doesn't offer.
 
 Chart: Monday.com + Zendesk: monthly cost for 10 seats by route: Native connector $830.00; Make Core route $840.59; Zapier Professional route $859.99
 

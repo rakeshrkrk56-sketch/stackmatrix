@@ -19,6 +19,8 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 Pipedrive's Mailchimp sync works through flows. Each flow has its own trigger and field mapping: one kind keeps Pipedrive contacts that match your filters updated in a Mailchimp audience, the other brings Mailchimp contacts that match chosen segments or tags into Pipedrive.
 
+[Setup guide: Pipedrive: Mailchimp sync ↗](https://support.pipedrive.com/en/article/pipedrive-integration-mailchimp-sync)
+
 ### How to set it up
 
 1. In Pipedrive, go to Tools and apps > Integrations > Mailchimp sync and click Get started.
@@ -26,8 +28,6 @@ Pipedrive's Mailchimp sync works through flows. Each flow has its own trigger an
 3. Create a sync flow: pick a trigger, map the fields, click Save and turn the flow on.
 
 **Limitations:** Flows run on a schedule, so new matches can take a while to appear; the first sync starts within ten minutes of turning a flow on. If a contact stops matching a Mailchimp segment or tag, it stays in Pipedrive but stops updating. Each field can be mapped only once per flow, and the number of Mailchimp audiences you can create depends on your Mailchimp plan.
-
-[Setup guide: Pipedrive: Mailchimp sync ↗](https://support.pipedrive.com/en/article/pipedrive-integration-mailchimp-sync)
 
 Sources (checked Nov 3, 2026): [Pipedrive: Mailchimp sync ↗](https://support.pipedrive.com/en/article/pipedrive-integration-mailchimp-sync)
 
@@ -44,7 +44,7 @@ Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capab
 
 ## Native vs middleware for Pipedrive + Mailchimp
 
-The native path runs on the required tiers (Pipedrive 'Lite' + Mailchimp 'Free') at $140.00/mo for a 10-seat team, with 2-way sync and no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — would cost $150.59/mo all-in, so on cost alone there is no reason to switch: middleware would only make sense if you already run other automations through it, and it would drop sync to 1-way (trigger → action).
+The native connector is the cheapest route here and the only one with 2-way sync. Make or Zapier only makes sense if you already run other automations through it, or need a step the native app doesn't offer.
 
 Chart: Pipedrive + Mailchimp: monthly cost for 10 seats by route: Native connector $140.00; Make Core route $150.59; Zapier Professional route $169.99
 

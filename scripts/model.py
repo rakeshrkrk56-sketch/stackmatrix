@@ -31,18 +31,18 @@ def render_tco(v, rule_b):
     if rule_b(v): return head + f" Alternative: skip the native tier upgrade and run via Make/Zapier middleware for ~{money(v['MP'])}/mo all-in (adds a third-party dependency). "
     return head + f" Middleware via Make/Zapier would add ~{money(MAKE_MONTHLY)}/mo on top of the cheapest API-capable tiers ({money(v['MP'])}/mo all-in) — the native path is cheaper. "
 def render_nvm(v, rule_b, sync2=True):
+    """One sentence on the trade-off; the chart and the route table under it carry the numbers (2026-11-10)."""
     P = ' <p class="mt-3 leading-relaxed text-slate-700">\n'
     if not v["native"]:
-        p1 = f"No native connector exists for this pair, so middleware is not an alternative — it is the integration. The modeled middleware cost is {money(v['mw'])}/mo on top of both tools, for {money(v['N'])}/mo all-in at 10 seats on the modeled tiers ({v['na']} '{v['ta']}' + {v['nb']} '{v['tb']}'). Sync is 1-way (trigger → action). The middleware figure is the modeled cost for this pair; your actual middleware bill scales with task and operation volume, which is not verified here — check your expected volume against the middleware plan before budgeting."
+        p1 = (f"There's no native {v['na']} + {v['nb']} connector, so a connector such as Make or Zapier is the integration rather than an alternative. "
+              "Each automation runs one way (a trigger in one tool, an action in the other), and the connector's bill grows with the number of tasks or operations you run.")
+    elif rule_b(v):
+        p1 = ("The connector routes are cheaper on paper because they skip the forced plan upgrade. The trade-off: you swap the native connector for a third-party automation you build and maintain, "
+              + ("sync drops from 2-way to 1-way per automation, " if sync2 else "sync stays 1-way per automation, ") + "and the connector bills by usage.")
     else:
-        p1 = f"The native path runs on the required tiers ({v['na']} '{v['ta']}' + {v['nb']} '{v['tb']}') at {money(v['N'])}/mo for a 10-seat team, " + ("with 2-way sync and no middleware fee" if sync2 else "with no middleware fee") + f". The middleware path — the cheapest API-capable tiers plus about {money(MAKE_MONTHLY)}/mo for Make Core — "
-        if rule_b(v):
-            p1 += f"comes to {money(v['MP'])}/mo all-in, which is cheaper on paper because it skips the {money(v['UP'])}/mo forced tier upgrade. The trade-off: you replace the native connector with a third-party dependency, " + ("sync becomes 1-way (trigger → action) instead of 2-way, " if sync2 else "sync stays 1-way (trigger → action), ") + "and Make Core's fee covers a fixed monthly allowance of credits — whether that covers your volume is not verified for this pair."
-        else:
-            p1 += f"would cost {money(v['MP'])}/mo all-in, so on cost alone there is no reason to switch: middleware would only make sense if you already run other automations through it" + (", and it would drop sync to 1-way (trigger → action)." if sync2 else ".")
-    both = v["apia"] == "Yes" and v["apib"] == "Yes"
-    p2 = f"API access at the required tiers: {v['na']} {v['apia']}, {v['nb']} {v['apib']} (see the spec matrix). " + ("That API access is what the middleware path runs on. " if both else "The middleware path uses the cheapest API-capable tiers instead. ")
-    return P + p1 + "\n</p> "   # (the "API access at the required tiers" paragraph repeated the spec matrix; removed 2026-11-10)
+        p1 = ("The native connector is the cheapest route here" + (" and the only one with 2-way sync" if sync2 else "")
+              + ". Make or Zapier only makes sense if you already run other automations through it, or need a step the native app doesn't offer.")
+    return P + p1 + "\n</p> "
 
 def svg_bars(rows, title, fmt=money):
     """A small horizontal bar chart as inline SVG (label above each bar, so it stays readable on phones).

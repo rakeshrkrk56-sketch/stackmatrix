@@ -35,7 +35,7 @@ Pipedrive 'Lite' ($140.00/mo) + Xero 'Early' ($27.00/mo)
 
 ## Native vs middleware for Pipedrive + Xero
 
-No native connector exists for this pair, so middleware is not an alternative — it is the integration. The modeled middleware cost is $10.59/mo on top of both tools, for $177.59/mo all-in at 10 seats on the modeled tiers (Pipedrive 'Lite' + Xero 'Early'). Sync is 1-way (trigger → action). The middleware figure is the modeled cost for this pair; your actual middleware bill scales with task and operation volume, which is not verified here — check your expected volume against the middleware plan before budgeting.
+There's no native Pipedrive + Xero connector, so a connector such as Make or Zapier is the integration rather than an alternative. Each automation runs one way (a trigger in one tool, an action in the other), and the connector's bill grows with the number of tasks or operations you run.
 
 Chart: Pipedrive + Xero: monthly cost for 10 seats by route: Make Core (modeled here) $177.59; Zapier Professional instead $196.99
 
@@ -88,7 +88,7 @@ Side-by-side spec matrix
 
 | Spec | Pipedrive | Xero |
 | --- | --- | --- |
-| Connection type | Middleware   Source: [Pipedrive docs ↗](https://developers.pipedrive.com/docs/api/v1) · [Xero docs ↗](https://developer.xero.com/) · Verified Nov 3, 2026 | |
+| Connection type | Middleware   Source: [Pipedrive docs ↗](https://developers.pipedrive.com/docs/api/v1) · [Xero docs ↗](https://developer.xero.com/) · Verified Nov 8, 2026 | |
 | Data sync direction | 1-way (trigger → action) | |
 | Setup time | 1–3 hours (difficulty 2/5) | |
 | Native integration supported | No — requires middleware (Zapier / Make) | |

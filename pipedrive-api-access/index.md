@@ -22,9 +22,15 @@ Pipedrive API & Webhook Access by Plan (2026)
 | Premium | $59/seat/mo | Yes | 100 req/2 s · daily budget ×5 | Yes | Yes |
 | Ultimate | $79/seat/mo | Yes | 120 req/2 s · daily budget ×7 | Yes | Yes |
 
-Prices are monthly-billing list prices from this site's calculators.
+Pipedrive publishes annual-billing rates only, so prices are per month, billed annually.
 
 The daily token budget is 30,000 × the plan multiplier × seats. Limits shown are for API tokens; OAuth apps get four times as many requests. Growth was formerly called Advanced.
+
+Chart: Pipedrive plans: monthly price for 10 seats and whether the API is included: Lite (API included) $140.00; Growth (API included) $390.00; Premium (API included) $590.00; Ultimate (API included) $790.00
+
+Pipedrive monthly price for 10 seats by plan. Green: API included; amber: paid add-on (included in the bar); grey: no API.
+
+ 
 
 Image: [Pipedrive API access by plan: Lite yes; Growth yes; Premium yes; Ultimate yes](https://stackcostmatrix.com/og/pipedrive-api-access.jpg)
 

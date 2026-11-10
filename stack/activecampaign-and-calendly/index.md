@@ -19,6 +19,8 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 When someone books a Calendly meeting, the integration creates or updates the contact in ActiveCampaign with the event information, so you can start automations from it. Data flows one way, from Calendly into ActiveCampaign, and past bookings aren't synced.
 
+[Setup guide: Calendly: ActiveCampaign integration ↗](https://calendly.com/help/calendly-activecampaign)
+
 ### How to set it up
 
 1. In ActiveCampaign, click your profile icon at the bottom left and select Apps.
@@ -27,8 +29,6 @@ When someone books a Calendly meeting, the integration creates or updates the co
 4. Map Calendly fields to ActiveCampaign fields and click Finish.
 
 **Limitations:** Calendly lists the integration for its Professional, Standard, Standard Plus, Teams, Teams Plus and Enterprise plans, so Calendly's free plan doesn't include it. Each connection syncs the event type you choose during setup.
-
-[Setup guide: Calendly: ActiveCampaign integration ↗](https://calendly.com/help/calendly-activecampaign)
 
 Sources (checked Nov 3, 2026): [Calendly: ActiveCampaign integration ↗](https://calendly.com/help/calendly-activecampaign) · [ActiveCampaign: Integrate Calendly ↗](https://help.activecampaign.com/hc/en-us/articles/360010946759)
 
@@ -45,7 +45,7 @@ Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capab
 
 ## Native vs middleware for ActiveCampaign + Calendly
 
-The native path runs on the required tiers (ActiveCampaign 'Starter' + Calendly 'Standard') at $135.00/mo for a 10-seat team, with no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — would cost $145.59/mo all-in, so on cost alone there is no reason to switch: middleware would only make sense if you already run other automations through it.
+The native connector is the cheapest route here. Make or Zapier only makes sense if you already run other automations through it, or need a step the native app doesn't offer.
 
 Chart: ActiveCampaign + Calendly: monthly cost for 10 seats by route: Native connector $135.00; Make Core route $145.59; Zapier Professional route $164.99
 

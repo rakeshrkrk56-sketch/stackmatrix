@@ -308,6 +308,11 @@ def render_page(s, pair, d, summary, sync, facts, date_modified=None, copy=None,
              "calc-year1": money(v["N"] * 12), "calc-tco3": money(v["N"] * 36)}
     for k, val in cells.items():
         s = sub1(r'(id="' + k + r'"(?: for="[^"]*")?>)[^<]*(<)', lambda m, val=val: m.group(1) + val + m.group(2), s, what=k)
+    s = re.sub(r' <p class="mt-2 text-xs text-slate-500" data-sf-addon="1">.*?</p>', "", s, flags=re.S)
+    if any(t["slug"] == "salesforce" and t["required"] == "Professional" for t in d["tools"]):
+        note = (' <p class="mt-2 text-xs text-slate-500" data-sf-addon="1">The Salesforce line is the Professional plan plus the API add-on, modeled at $25 per user a month; '
+                'ask Salesforce whether your connector needs it (<a href="/salesforce-api-access/" class="underline hover:text-indigo-600">Salesforce API access by edition</a>).</p>')
+        s = sub1(r'(id="calc-line-h-cost">[^<]*</td> </tr> </tbody> </table> </div>)', lambda m: m.group(1) + note, s, what="sf addon note")
     # TCO summary + native vs middleware
     s = sub1(r'(aria-label="Default 10-seat TCO summary">.*?<p class="mt-2 text-sm leading-relaxed text-indigo-950">).*?(</p> </aside>)', lambda m: m.group(1) + render_tco(v, tco_b) + sf_addon_note(v, d) + m.group(2), s, what="tco")
     s = sub1(r'(aria-label="Native versus middleware"> <h2 class="text-xl font-bold">.*?</h2>).*?(</section>)', lambda m: m.group(1) + render_nvm(v, nvm_b, sync2) + nvm_table(v, d, sync) + pair_figure(v, d, pair) + m.group(2), s, what="nvm")
@@ -371,14 +376,18 @@ def render_page(s, pair, d, summary, sync, facts, date_modified=None, copy=None,
         parts = [f'<h2 class="text-xl font-bold">How the {html.escape(A)} + {html.escape(B)} integration works</h2> ']
         if copy.get("answer"): parts.append(f'{P_}<strong>Does {html.escape(A)} integrate with {html.escape(B)}?</strong> {esc(copy["answer"])}</p> ')
         parts.append(f'{P_}{esc(copy["how"])}</p> ')
+        cta_html = ""
+        if copy["sources"]:
+            cl, cu = copy.get("cta") or ("Setup guide: " + copy["sources"][0][0], copy["sources"][0][1])
+            cta_html = f'<p class="mt-4"><a href="{html.escape(cu, quote=True)}" rel="noopener" class="scm-cta">{html.escape(cl)} ↗</a></p> '
+        early = setup_led(v, copy)   # searchers on these pages want to connect the tools: the button goes right under the answer
+        if early: parts.append(cta_html)
         if copy.get("setup"):
             parts.append('<h3 class="mt-6 font-semibold text-slate-900">How to set it up</h3> <ol class="scm-steps"> '
                          + " ".join(f"<li>{esc(x)}</li>" for x in copy["setup"]) + " </ol> ")
         parts.append(f'{P_}<strong>Limitations:</strong> {esc(copy["limits"])}</p> ')
         if copy.get("note"): parts.append(f'{P_}<strong>Before you budget:</strong> {esc(copy["note"])}</p> ')
-        if copy["sources"]:
-            cl, cu = copy.get("cta") or ("Setup guide: " + copy["sources"][0][0], copy["sources"][0][1])
-            parts.append(f'<p class="mt-4"><a href="{html.escape(cu, quote=True)}" rel="noopener" class="scm-cta">{html.escape(cl)} ↗</a></p> ')
+        if not early: parts.append(cta_html)
         parts.append(f'<p class="mt-3 text-xs text-slate-500">Sources (checked {copy.get("checked", "Nov 3, 2026")}): {src}</p> ')
         sec = (' <section class="mt-10 rounded-xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8" aria-label="How the integration works" id="how-it-works"> '
                + "".join(parts) + '</section>')

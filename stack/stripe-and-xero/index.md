@@ -17,9 +17,9 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 Stripe is a built-in payment service in Xero: you add Stripe to an invoice template so customers can pay invoices online by card, and Xero can also create payment links.
 
-**Limitations:** Xero's cheapest Early plan ($27/mo) accepts online invoice payments but limits you to 20 invoices, and using multiple currencies needs the top Established plan ($97/mo). Stripe's processing fees apply and aren't included above.
-
 [Setup guide: Xero: Connect Stripe to Xero ↗](https://central.xero.com/0/article/Stripe-AU)
+
+**Limitations:** Xero's cheapest Early plan ($27/mo) accepts online invoice payments but limits you to 20 invoices, and using multiple currencies needs the top Established plan ($97/mo). Stripe's processing fees apply and aren't included above.
 
 Sources (checked Nov 3, 2026): [Xero: Connect Stripe to Xero ↗](https://central.xero.com/0/article/Stripe-AU) · [Xero: US pricing plans ↗](https://www.xero.com/us/pricing-plans/)
 
@@ -36,7 +36,7 @@ Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capab
 
 ## Native vs middleware for Stripe + Xero
 
-The native path runs on the required tiers (Stripe 'Standard' + Xero 'Early') at $27.00/mo for a 10-seat team, with 2-way sync and no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — would cost $37.59/mo all-in, so on cost alone there is no reason to switch: middleware would only make sense if you already run other automations through it, and it would drop sync to 1-way (trigger → action).
+The native connector is the cheapest route here and the only one with 2-way sync. Make or Zapier only makes sense if you already run other automations through it, or need a step the native app doesn't offer.
 
 Chart: Stripe + Xero: monthly cost for 10 seats by route: Native connector $27.00; Make Core route $37.59; Zapier Professional route $56.99
 

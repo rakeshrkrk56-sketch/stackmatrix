@@ -17,9 +17,9 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 Install the ClickUp app from the Zendesk Marketplace, open a ticket and launch ClickUp from the apps panel. From there you can create a ClickUp task from the ticket (with its details, assignees and due date) or link the ticket to an existing task; each task keeps a link back to the ticket, and the task's status shows inside Zendesk.
 
-**Limitations:** Only Workspace owners and admins can install it. Keeping every ticket update in sync both ways needs ClickUp's separate Zendesk Sync, which is on Business Plus and Enterprise.
-
 [Setup guide: ClickUp help: Zendesk integration ↗](https://help.clickup.com/hc/en-us/articles/6304890522135-Zendesk-integration)
+
+**Limitations:** Only Workspace owners and admins can install it. Keeping every ticket update in sync both ways needs ClickUp's separate Zendesk Sync, which is on Business Plus and Enterprise.
 
 Sources (checked Nov 8, 2026): [ClickUp help: Zendesk integration ↗](https://help.clickup.com/hc/en-us/articles/6304890522135-Zendesk-integration) · [ClickUp: Zendesk integration ↗](https://clickup.com/integrations/zendesk)
 
@@ -36,7 +36,7 @@ Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capab
 
 ## Native vs middleware for ClickUp + Zendesk
 
-The native path runs on the required tiers (ClickUp 'Free' + Zendesk 'Suite Team') at $690.00/mo for a 10-seat team, with no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — would cost $700.59/mo all-in, so on cost alone there is no reason to switch: middleware would only make sense if you already run other automations through it.
+The native connector is the cheapest route here. Make or Zapier only makes sense if you already run other automations through it, or need a step the native app doesn't offer.
 
 Chart: ClickUp + Zendesk: monthly cost for 10 seats by route: Native connector $690.00; Make Core route $700.59; Zapier Professional route $719.99
 

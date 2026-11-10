@@ -19,6 +19,8 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 A Make scenario watches one CRM and acts in the other, for example creating a Salesforce lead or contact when a deal or person is added in Pipedrive. Each scenario runs one way, so keeping both sides in step needs one scenario per direction.
 
+[Setup guide: Make: Salesforce app ↗](https://apps.make.com/salesforce)
+
 ### How to set it up
 
 1. Make sure your Salesforce org has API access: Enterprise or Unlimited include it, Professional needs the API add-on.
@@ -26,8 +28,6 @@ A Make scenario watches one CRM and acts in the other, for example creating a Sa
 3. Pick a trigger in one tool and an action in the other, map the fields and turn the scenario on.
 
 **Limitations:** This calculator models Salesforce Professional with the $25/user API add-on; Enterprise includes API access without it. Pipedrive's API is available on every plan, with rate limits that rise with the plan. Real usage can push Make onto a bigger plan.
-
-[Setup guide: Make: Salesforce app ↗](https://apps.make.com/salesforce)
 
 Sources (checked Nov 4, 2026): [Make: Salesforce app ↗](https://apps.make.com/salesforce) · [Salesforce developers: Supported editions ↗](https://developer.salesforce.com/docs/platform/api-rest/guide/intro-rest-compatible-editions.html) · [Pipedrive developers: Rate limiting ↗](https://pipedrive.readme.io/docs/core-api-concepts-rate-limiting)
 
@@ -44,7 +44,7 @@ Salesforce's $1,250.00 is the Professional plan ($100/user) plus the API add-on,
 
 ## Native vs middleware for Pipedrive + Salesforce Sales Cloud
 
-No native connector exists for this pair, so middleware is not an alternative — it is the integration. The modeled middleware cost is $10.59/mo on top of both tools, for $1,400.59/mo all-in at 10 seats on the modeled tiers (Pipedrive 'Lite' + Salesforce Sales Cloud 'Professional'). Sync is 1-way (trigger → action). The middleware figure is the modeled cost for this pair; your actual middleware bill scales with task and operation volume, which is not verified here — check your expected volume against the middleware plan before budgeting.
+There's no native Pipedrive + Salesforce Sales Cloud connector, so a connector such as Make or Zapier is the integration rather than an alternative. Each automation runs one way (a trigger in one tool, an action in the other), and the connector's bill grows with the number of tasks or operations you run.
 
 Chart: Pipedrive + Salesforce Sales Cloud: monthly cost for 10 seats by route: Make Core (modeled here) $1,400.59; Zapier Professional instead $1,419.99
 

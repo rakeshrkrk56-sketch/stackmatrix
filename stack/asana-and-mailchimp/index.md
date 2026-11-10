@@ -35,7 +35,7 @@ Asana 'Starter' ($134.90/mo) + Mailchimp 'Essentials' ($13.00/mo)
 
 ## Native vs middleware for Asana + Mailchimp
 
-No native connector exists for this pair, so middleware is not an alternative — it is the integration. The modeled middleware cost is $29.99/mo on top of both tools, for $177.89/mo all-in at 10 seats on the modeled tiers (Asana 'Starter' + Mailchimp 'Essentials'). Sync is 1-way (trigger → action). The middleware figure is the modeled cost for this pair; your actual middleware bill scales with task and operation volume, which is not verified here — check your expected volume against the middleware plan before budgeting.
+There's no native Asana + Mailchimp connector, so a connector such as Make or Zapier is the integration rather than an alternative. Each automation runs one way (a trigger in one tool, an action in the other), and the connector's bill grows with the number of tasks or operations you run.
 
 Chart: Asana + Mailchimp: monthly cost for 10 seats by route: Zapier Professional (modeled here) $177.89; Make Core instead $158.49
 

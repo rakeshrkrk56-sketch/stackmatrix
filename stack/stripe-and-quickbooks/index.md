@@ -35,7 +35,7 @@ Stripe 'Standard' ($0.00/mo) + QuickBooks Online 'Simple Start' ($38.00/mo)
 
 ## Native vs middleware for Stripe + QuickBooks Online
 
-No native connector exists for this pair, so middleware is not an alternative — it is the integration. The modeled middleware cost is $10.59/mo on top of both tools, for $48.59/mo all-in at 10 seats on the modeled tiers (Stripe 'Standard' + QuickBooks Online 'Simple Start'). Sync is 1-way (trigger → action). The middleware figure is the modeled cost for this pair; your actual middleware bill scales with task and operation volume, which is not verified here — check your expected volume against the middleware plan before budgeting.
+There's no native Stripe + QuickBooks Online connector, so a connector such as Make or Zapier is the integration rather than an alternative. Each automation runs one way (a trigger in one tool, an action in the other), and the connector's bill grows with the number of tasks or operations you run.
 
 Chart: Stripe + QuickBooks Online: monthly cost for 10 seats by route: Make Core (modeled here) $48.59; Zapier Professional instead $67.99
 

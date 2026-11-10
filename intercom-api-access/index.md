@@ -24,6 +24,12 @@ Prices are monthly-billing list prices from this site's calculators.
 
 Intercom's own workflows, which some integrations build on, are an Advanced feature.
 
+Chart: Intercom plans: monthly price for 10 seats and whether the API is included: Essential (API included) $390.00; Advanced (API included) $990.00
+
+Intercom monthly price for 10 seats by plan. Green: API included; amber: paid add-on (included in the bar); grey: no API.
+
+ 
+
 Image: [Intercom API access by plan: Essential yes; Advanced yes](https://stackcostmatrix.com/og/intercom-api-access.jpg)
 
 ## Two kinds of webhooks

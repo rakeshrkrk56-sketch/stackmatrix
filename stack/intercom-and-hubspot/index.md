@@ -19,6 +19,8 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 Intercom's HubSpot app sends leads captured in Intercom to HubSpot as contacts and logs Intercom conversations on their HubSpot activity timeline, so sales can pick up where a chat left off.
 
+[Setup guide: Intercom: HubSpot app ↗](https://www.intercom.com/help/en/articles/2128216-hubspot-app)
+
 ### How to set it up
 
 1. Make sure you have admin access in HubSpot.
@@ -27,8 +29,6 @@ Intercom's HubSpot app sends leads captured in Intercom to HubSpot as contacts a
 4. In App Store > HubSpot > Settings, choose how leads and their conversations are sent to HubSpot.
 
 **Limitations:** It only sends data one way, from Intercom to HubSpot. Customer replies sync in real time but teammate replies sync only once the conversation is closed, and company attributes other than the company name aren't sent. For HubSpot data in Intercom you need HubSpot's separate Data Sync app.
-
-[Setup guide: Intercom: HubSpot app ↗](https://www.intercom.com/help/en/articles/2128216-hubspot-app)
 
 Sources (checked Nov 3, 2026): [Intercom: HubSpot app ↗](https://www.intercom.com/help/en/articles/2128216-hubspot-app) · [HubSpot Marketplace: Intercom ↗](https://ecosystem.hubspot.com/marketplace/listing/intercom)
 
@@ -45,7 +45,7 @@ Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capab
 
 ## Native vs middleware for Intercom + HubSpot
 
-The native path runs on the required tiers (Intercom 'Essential' + HubSpot 'Free') at $390.00/mo for a 10-seat team, with no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — would cost $400.59/mo all-in, so on cost alone there is no reason to switch: middleware would only make sense if you already run other automations through it.
+The native connector is the cheapest route here. Make or Zapier only makes sense if you already run other automations through it, or need a step the native app doesn't offer.
 
 Chart: Intercom + HubSpot: monthly cost for 10 seats by route: Native connector $390.00; Make Core route $400.59; Zapier Professional route $419.99
 

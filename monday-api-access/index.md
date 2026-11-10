@@ -25,6 +25,12 @@ Prices are monthly-billing list prices from this site's calculators.
 
 Free accounts get 200 API calls a day and Enterprise 25,000; the daily limit resets at midnight UTC and can be raised with an API add-on.
 
+Chart: Monday.com plans: monthly price for 10 seats and whether the API is included: Basic (API included) $120.00; Standard (API included) $140.00; Pro (API included) $240.00
+
+Monday.com monthly price for 10 seats by plan. Green: API included; amber: paid add-on (included in the bar); grey: no API.
+
+ 
+
 Image: [Monday.com API access by plan: Basic yes; Standard yes; Pro yes](https://stackcostmatrix.com/og/monday-api-access.jpg)
 
 ## Two kinds of webhooks

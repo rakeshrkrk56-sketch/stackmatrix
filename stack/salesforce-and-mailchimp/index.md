@@ -36,7 +36,7 @@ Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capab
 
 ## Native vs middleware for Salesforce Sales Cloud + Mailchimp
 
-The native path runs on the required tiers (Salesforce Sales Cloud 'Professional' + Mailchimp 'Standard') at $1,270.00/mo for a 10-seat team, with 2-way sync and no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — would cost $1,273.59/mo all-in, so on cost alone there is no reason to switch: middleware would only make sense if you already run other automations through it, and it would drop sync to 1-way (trigger → action).
+The native connector is the cheapest route here and the only one with 2-way sync. Make or Zapier only makes sense if you already run other automations through it, or need a step the native app doesn't offer.
 
 Chart: Salesforce Sales Cloud + Mailchimp: monthly cost for 10 seats by route: Native connector $1,270.00; Make Core route $1,273.59; Zapier Professional route $1,292.99
 

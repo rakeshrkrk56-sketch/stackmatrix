@@ -17,9 +17,9 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 In Notion, a button, database button or database automation can send a Slack notification to a channel you choose, so updates to a Notion database can alert your team in Slack.
 
-**Limitations:** Notion says these Slack automation actions are only available on paid plans. Slack's free plan allows up to 10 app installations.
-
 [Setup guide: Notion: Connect Slack to Notion ↗](https://www.notion.com/help/slack)
+
+**Limitations:** Notion says these Slack automation actions are only available on paid plans. Slack's free plan allows up to 10 app installations.
 
 Sources (checked Nov 3, 2026): [Notion: Connect Slack to Notion ↗](https://www.notion.com/help/slack) · [Slack: Free plan limits ↗](https://slack.com/help/articles/27204752526611-Feature-limitations-on-the-free-version-of-Slack)
 
@@ -36,7 +36,7 @@ Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capab
 
 ## Native vs middleware for Slack + Notion
 
-The native path runs on the required tiers (Slack 'Free' + Notion 'Plus') at $120.00/mo for a 10-seat team, with no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — would cost $130.59/mo all-in, so on cost alone there is no reason to switch: middleware would only make sense if you already run other automations through it.
+The native connector is the cheapest route here. Make or Zapier only makes sense if you already run other automations through it, or need a step the native app doesn't offer.
 
 Chart: Slack + Notion: monthly cost for 10 seats by route: Native connector $120.00; Make Core route $130.59; Zapier Professional route $149.99
 

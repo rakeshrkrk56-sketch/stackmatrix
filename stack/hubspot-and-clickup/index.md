@@ -17,9 +17,9 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 ClickUp's native HubSpot integration works through automations, with over 20 ways to move work between the two, such as creating a ClickUp task or project when a HubSpot deal closes.
 
-**Limitations:** It's automation-based rather than a continuous field-level sync. HubSpot's listing names ClickUp's Free Forever plan as compatible, but this calculator assumes Core (ClickUp's former Unlimited plan), which ClickUp's help center lists for the integration.
-
 [Setup guide: HubSpot Marketplace: ClickUp ↗](https://ecosystem.hubspot.com/marketplace/listing/clickup)
+
+**Limitations:** It's automation-based rather than a continuous field-level sync. HubSpot's listing names ClickUp's Free Forever plan as compatible, but this calculator assumes Core (ClickUp's former Unlimited plan), which ClickUp's help center lists for the integration.
 
 Sources (checked Nov 3, 2026): [HubSpot Marketplace: ClickUp ↗](https://ecosystem.hubspot.com/marketplace/listing/clickup)
 
@@ -36,7 +36,7 @@ Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capab
 
 ## Native vs middleware for HubSpot + ClickUp
 
-The native path runs on the required tiers (HubSpot 'Free' + ClickUp 'Core') at $120.00/mo for a 10-seat team, with no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — would cost $130.59/mo all-in, so on cost alone there is no reason to switch: middleware would only make sense if you already run other automations through it.
+The native connector is the cheapest route here. Make or Zapier only makes sense if you already run other automations through it, or need a step the native app doesn't offer.
 
 Chart: HubSpot + ClickUp: monthly cost for 10 seats by route: Native connector $120.00; Make Core route $130.59; Zapier Professional route $149.99
 

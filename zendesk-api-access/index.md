@@ -25,6 +25,12 @@ Prices are monthly-billing list prices from this site's calculators.
 
 Enterprise gets 700 requests a minute and Enterprise Plus 2,500; a High Volume API add-on (Growth and up, 10+ seats) raises the limit to 2,500.
 
+Chart: Zendesk plans: monthly price for 10 seats and whether the API is included: Suite Team (API included) $690.00; Suite Growth (API included) $1,150.00; Suite Professional (API included) $1,490.00
+
+Zendesk monthly price for 10 seats by plan. Green: API included; amber: paid add-on (included in the bar); grey: no API.
+
+ 
+
 Image: [Zendesk API access by plan: Suite Team yes; Suite Growth yes; Suite Professional yes](https://stackcostmatrix.com/og/zendesk-api-access.jpg)
 
 ## Two kinds of webhooks

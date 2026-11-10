@@ -19,6 +19,8 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 The Slack for Zendesk Support integration connects one Zendesk account to one Slack workspace, and Zendesk side conversations can use Slack once you turn them on for that workspace.
 
+[Setup guide: Zendesk: Slack for Zendesk Support ↗](https://support.zendesk.com/hc/en-us/articles/4408833756698-Understanding-and-installing-the-Slack-for-Zendesk-Support-integration)
+
 ### How to set it up
 
 1. Make sure you have admin rights in Zendesk and permission to install apps in the Slack workspace.
@@ -27,8 +29,6 @@ The Slack for Zendesk Support integration connects one Zendesk account to one Sl
 4. Pick the Slack workspace, click Allow, then click Set up in Zendesk Admin Center and use triggers to choose which ticket events notify which channels.
 
 **Limitations:** It needs a Zendesk Suite plan from Team up. Organization-shared channels on Slack Enterprise Grid aren't supported, and each additional Slack workspace needs its own installation.
-
-[Setup guide: Zendesk: Slack for Zendesk Support ↗](https://support.zendesk.com/hc/en-us/articles/4408833756698-Understanding-and-installing-the-Slack-for-Zendesk-Support-integration)
 
 Sources (checked Nov 3, 2026): [Zendesk: Slack for Zendesk Support ↗](https://support.zendesk.com/hc/en-us/articles/4408833756698-Understanding-and-installing-the-Slack-for-Zendesk-Support-integration) · [Slack: Free plan limits ↗](https://slack.com/help/articles/27204752526611-Feature-limitations-on-the-free-version-of-Slack)
 
@@ -45,7 +45,7 @@ Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capab
 
 ## Native vs middleware for Slack + Zendesk
 
-The native path runs on the required tiers (Slack 'Free' + Zendesk 'Suite Team') at $690.00/mo for a 10-seat team, with 2-way sync and no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — would cost $700.59/mo all-in, so on cost alone there is no reason to switch: middleware would only make sense if you already run other automations through it, and it would drop sync to 1-way (trigger → action).
+The native connector is the cheapest route here and the only one with 2-way sync. Make or Zapier only makes sense if you already run other automations through it, or need a step the native app doesn't offer.
 
 Chart: Slack + Zendesk: monthly cost for 10 seats by route: Native connector $690.00; Make Core route $700.59; Zapier Professional route $719.99
 

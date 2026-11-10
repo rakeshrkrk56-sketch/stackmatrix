@@ -17,9 +17,9 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 The Stripe app for Salesforce Platform lets you process and reconcile Stripe payments inside Salesforce and call Stripe from Flow and Apex, for example to create Stripe subscriptions when orders are activated.
 
-**Limitations:** Stripe says it works best on core clouds such as Sales Cloud, and the app now authenticates with a Stripe API key because OAuth sign-in was retired in version 1.17.
-
 [Setup guide: Stripe: Stripe app for Salesforce Platform ↗](https://docs.stripe.com/connectors/stripe-connector-for-salesforce/overview)
+
+**Limitations:** Stripe says it works best on core clouds such as Sales Cloud, and the app now authenticates with a Stripe API key because OAuth sign-in was retired in version 1.17.
 
 Sources (checked Nov 3, 2026): [Stripe: Stripe app for Salesforce Platform ↗](https://docs.stripe.com/connectors/stripe-connector-for-salesforce/overview) · [Stripe: Installation guide ↗](https://docs.stripe.com/plugins/stripe-connector-for-salesforce/installation-guide)
 
@@ -36,7 +36,7 @@ Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capab
 
 ## Native vs middleware for Salesforce Sales Cloud + Stripe
 
-The native path runs on the required tiers (Salesforce Sales Cloud 'Professional' + Stripe 'Standard') at $1,250.00/mo for a 10-seat team, with 2-way sync and no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — would cost $1,260.59/mo all-in, so on cost alone there is no reason to switch: middleware would only make sense if you already run other automations through it, and it would drop sync to 1-way (trigger → action).
+The native connector is the cheapest route here and the only one with 2-way sync. Make or Zapier only makes sense if you already run other automations through it, or need a step the native app doesn't offer.
 
 Chart: Salesforce Sales Cloud + Stripe: monthly cost for 10 seats by route: Native connector $1,250.00; Make Core route $1,260.59; Zapier Professional route $1,279.99
 

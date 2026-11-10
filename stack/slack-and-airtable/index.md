@@ -17,9 +17,9 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 In an Airtable base, open the base menu and choose Slack notifications, then create rules that post to a Slack channel when the base changes, or when specific records or views change. You can make as many rules as you need, so different bases can notify different channels.
 
-**Limitations:** It's one-way (Airtable → Slack) and only posts notifications. Your organization's admins can block the integration, and only the person who set up a rule can turn it off.
-
 [Setup guide: Airtable support: Base activity notifications in Slack ↗](https://support.airtable.com/docs/receiving-base-activity-notifications-in-slack)
+
+**Limitations:** It's one-way (Airtable → Slack) and only posts notifications. Your organization's admins can block the integration, and only the person who set up a rule can turn it off.
 
 Sources (checked Nov 8, 2026): [Airtable support: Base activity notifications in Slack ↗](https://support.airtable.com/docs/receiving-base-activity-notifications-in-slack)
 
@@ -36,7 +36,7 @@ Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capab
 
 ## Native vs middleware for Slack + Airtable
 
-The native path runs on the required tiers (Slack 'Free' + Airtable 'Free') at $0.00/mo for a 10-seat team, with no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — would cost $10.59/mo all-in, so on cost alone there is no reason to switch: middleware would only make sense if you already run other automations through it.
+The native connector is the cheapest route here. Make or Zapier only makes sense if you already run other automations through it, or need a step the native app doesn't offer.
 
 Chart: Slack + Airtable: monthly cost for 10 seats by route: Native connector $0.00; Make Core route $10.59; Zapier Professional route $29.99
 

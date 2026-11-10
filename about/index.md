@@ -54,7 +54,7 @@ re-verification — never silently rewritten.
 
 ## Official vendor documentation index
 
-Every cost figure on StackCostMatrix traces to one of these official sources.
+Every cost figure on StackCostMatrix links to one of these sources. The “Last audited” column says where a price doesn't come straight from the vendor's own page.
 Last audited: **pricing Nov 2026 for 17 tools; API docs and other pricing Oct 2026**.
 
 Official vendor documentation index

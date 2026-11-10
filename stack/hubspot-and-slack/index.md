@@ -19,6 +19,8 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 The HubSpot app for Slack sends HubSpot notifications such as reminders, mentions and form submissions to Slack, and lets your team turn Slack messages into HubSpot tasks, tickets or notes. It's available on every HubSpot plan, including the free CRM.
 
+[Setup guide: HubSpot: Connect HubSpot and Slack ↗](https://knowledge.hubspot.com/integrations/how-do-i-use-the-slack-integration)
+
 ### How to set it up
 
 1. Make sure you're a Super Admin (or have App Marketplace permissions) in HubSpot and an admin of the Slack workspace.
@@ -27,8 +29,6 @@ The HubSpot app for Slack sends HubSpot notifications such as reminders, mention
 4. In Slack, the HubSpot app sends you a message: click Verify to map your HubSpot user to your Slack user.
 
 **Limitations:** One Slack workspace can connect per HubSpot account, private channels need the app added to each one, and custom Slack messages sent from HubSpot workflows need a Professional or Enterprise subscription because workflows do. Slack's free plan allows up to 10 app installations.
-
-[Setup guide: HubSpot: Connect HubSpot and Slack ↗](https://knowledge.hubspot.com/integrations/how-do-i-use-the-slack-integration)
 
 Sources (checked Nov 3, 2026): [HubSpot: Connect HubSpot and Slack ↗](https://knowledge.hubspot.com/integrations/how-do-i-use-the-slack-integration) · [HubSpot Marketplace: Slack ↗](https://ecosystem.hubspot.com/marketplace/listing/slack) · [Slack: Free plan limits ↗](https://slack.com/help/articles/27204752526611-Feature-limitations-on-the-free-version-of-Slack)
 
@@ -45,7 +45,7 @@ Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capab
 
 ## Native vs middleware for HubSpot + Slack
 
-The native path runs on the required tiers (HubSpot 'Free' + Slack 'Free') at $0.00/mo for a 10-seat team, with 2-way sync and no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — would cost $10.59/mo all-in, so on cost alone there is no reason to switch: middleware would only make sense if you already run other automations through it, and it would drop sync to 1-way (trigger → action).
+The native connector is the cheapest route here and the only one with 2-way sync. Make or Zapier only makes sense if you already run other automations through it, or need a step the native app doesn't offer.
 
 Chart: HubSpot + Slack: monthly cost for 10 seats by route: Native connector $0.00; Make Core route $10.59; Zapier Professional route $29.99
 

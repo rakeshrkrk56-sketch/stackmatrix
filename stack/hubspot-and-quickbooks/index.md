@@ -19,6 +19,8 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 Once connected, contacts, products and invoices sync between HubSpot and QuickBooks Online according to your sync settings, and you can see QuickBooks payment information on the related HubSpot deals. Products are matched on their SKU, so products without one aren't synced by default.
 
+[Setup guide: HubSpot: Connect HubSpot and QuickBooks Online ↗](https://knowledge.hubspot.com/integrations/connect-hubspot-and-quickbooks-online)
+
 ### How to set it up
 
 1. Make sure you're a Super Admin or have App Marketplace permissions in HubSpot.
@@ -27,8 +29,6 @@ Once connected, contacts, products and invoices sync between HubSpot and QuickBo
 4. Choose your sync settings and review the mapped fields.
 
 **Limitations:** The integration doesn't yet support non-U.S. QuickBooks Online accounts. Some edits to invoices created in HubSpot, such as adding or removing line items, changing prices or adding tax, have to be made in HubSpot, or the invoice fails to sync. Adding your own field mappings needs Data Hub Starter or higher.
-
-[Setup guide: HubSpot: Connect HubSpot and QuickBooks Online ↗](https://knowledge.hubspot.com/integrations/connect-hubspot-and-quickbooks-online)
 
 Sources (checked Nov 4, 2026): [HubSpot: Connect HubSpot and QuickBooks Online ↗](https://knowledge.hubspot.com/integrations/connect-hubspot-and-quickbooks-online)
 
@@ -45,7 +45,7 @@ Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capab
 
 ## Native vs middleware for HubSpot + QuickBooks Online
 
-The native path runs on the required tiers (HubSpot 'Free' + QuickBooks Online 'Simple Start') at $38.00/mo for a 10-seat team, with 2-way sync and no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — would cost $48.59/mo all-in, so on cost alone there is no reason to switch: middleware would only make sense if you already run other automations through it, and it would drop sync to 1-way (trigger → action).
+The native connector is the cheapest route here and the only one with 2-way sync. Make or Zapier only makes sense if you already run other automations through it, or need a step the native app doesn't offer.
 
 Chart: HubSpot + QuickBooks Online: monthly cost for 10 seats by route: Native connector $38.00; Make Core route $48.59; Zapier Professional route $67.99
 

@@ -26,6 +26,12 @@ Prices are monthly-billing list prices from this site's calculators.
 
 Mailchimp's classic audience webhooks are a separate feature; the help article we read covers the automation step.
 
+Chart: Mailchimp plans: monthly price for 10 seats and whether the API is included: Free (API included) $0.00; Essentials (API included) $13.00; Standard (API included) $20.00; Premium (API included) $350.00
+
+Mailchimp monthly price for 10 seats by plan. Green: API included; amber: paid add-on (included in the bar); grey: no API.
+
+ 
+
 Image: [Mailchimp API access by plan: Free yes; Essentials yes; Standard yes; Premium yes](https://stackcostmatrix.com/og/mailchimp-api-access.jpg)
 
 ## Two kinds of webhooks

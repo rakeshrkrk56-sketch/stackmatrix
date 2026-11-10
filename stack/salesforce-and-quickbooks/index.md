@@ -19,6 +19,8 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 With Make, a scenario watches Salesforce, for example for a won opportunity, and creates the customer or invoice in QuickBooks Online, or the other way round. Breadwinner is a native Salesforce app with real-time QuickBooks sync, priced separately.
 
+[Setup guide: Make: Salesforce app ↗](https://apps.make.com/salesforce)
+
 ### How to set it up
 
 1. Make sure your Salesforce org has API access: Enterprise or Unlimited include it, Professional needs the API add-on.
@@ -26,8 +28,6 @@ With Make, a scenario watches Salesforce, for example for a won opportunity, and
 3. Pick a trigger, such as a won opportunity, and a QuickBooks action, such as creating an invoice, then map the fields and turn the scenario on.
 
 **Limitations:** This calculator models Salesforce Professional with the $25/user API add-on plus Make Core; Enterprise includes API access without the add-on. Breadwinner's own price, from $310 a month, isn't included. Each Make scenario runs one way.
-
-[Setup guide: Make: Salesforce app ↗](https://apps.make.com/salesforce)
 
 Sources (checked Nov 4, 2026): [Make: Salesforce app ↗](https://apps.make.com/salesforce) · [Salesforce developers: Supported editions ↗](https://developer.salesforce.com/docs/platform/api-rest/guide/intro-rest-compatible-editions.html) · [Breadwinner: Pricing ↗](https://breadwinner.com/pricing) · [Make: QuickBooks app ↗](https://apps.make.com/quickbooks)
 
@@ -44,7 +44,7 @@ Salesforce's $1,250.00 is the Professional plan ($100/user) plus the API add-on,
 
 ## Native vs middleware for Salesforce Sales Cloud + QuickBooks Online
 
-No native connector exists for this pair, so middleware is not an alternative — it is the integration. The modeled middleware cost is $10.59/mo on top of both tools, for $1,298.59/mo all-in at 10 seats on the modeled tiers (Salesforce Sales Cloud 'Professional' + QuickBooks Online 'Simple Start'). Sync is 1-way (trigger → action). The middleware figure is the modeled cost for this pair; your actual middleware bill scales with task and operation volume, which is not verified here — check your expected volume against the middleware plan before budgeting.
+There's no native Salesforce Sales Cloud + QuickBooks Online connector, so a connector such as Make or Zapier is the integration rather than an alternative. Each automation runs one way (a trigger in one tool, an action in the other), and the connector's bill grows with the number of tasks or operations you run.
 
 Chart: Salesforce Sales Cloud + QuickBooks Online: monthly cost for 10 seats by route: Make Core (modeled here) $1,298.59; Zapier Professional instead $1,317.99
 

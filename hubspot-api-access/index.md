@@ -26,6 +26,12 @@ HubSpot API & Webhook Access by Plan (2026)
 
 Limits depend on the subscription of the account an app is installed in; an API limit increase add-on adds capacity. Apps can also receive events through HubSpot's developer webhooks API, which isn't covered by the workflow requirement.
 
+Chart: HubSpot plans: monthly price for 10 seats and whether the API is included: Free (API included) $0.00; Starter (API included) $200.00; Professional (API included) $500.00; Enterprise (API included) $750.00
+
+HubSpot monthly price for 10 seats by plan. Green: API included; amber: paid add-on (included in the bar); grey: no API.
+
+ 
+
 Image: [HubSpot API access by plan: Free yes; Starter yes; Professional yes; Enterprise yes](https://stackcostmatrix.com/og/hubspot-api-access.jpg)
 
 ## Two kinds of webhooks

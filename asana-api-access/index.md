@@ -24,6 +24,12 @@ Asana API & Webhook Access by Plan (2026)
 
 Asana's Rules automation is a separate feature on Starter and up; we found no Asana documentation of a Rules action that sends webhooks. Make and Zapier use the API instead.
 
+Chart: Asana plans: monthly price for 10 seats and whether the API is included: Starter (API included) $134.90; Advanced (API included) $304.90
+
+Asana monthly price for 10 seats by plan. Green: API included; amber: paid add-on (included in the bar); grey: no API.
+
+ 
+
 Image: [Asana API access by plan: Starter yes; Advanced yes](https://stackcostmatrix.com/og/asana-api-access.jpg)
 
 ## Two kinds of webhooks

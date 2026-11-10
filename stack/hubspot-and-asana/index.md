@@ -38,7 +38,7 @@ Alternative: skip the native tier upgrade and run via Make/Zapier middleware for
 
 ## Native vs middleware for HubSpot + Asana
 
-The native path runs on the required tiers (HubSpot 'Professional' + Asana 'Starter') at $634.90/mo for a 10-seat team, with no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — comes to $145.49/mo all-in, which is cheaper on paper because it skips the $500.00/mo forced tier upgrade. The trade-off: you replace the native connector with a third-party dependency, sync stays 1-way (trigger → action), and Make Core's fee covers a fixed monthly allowance of credits — whether that covers your volume is not verified for this pair.
+The connector routes are cheaper on paper because they skip the forced plan upgrade. The trade-off: you swap the native connector for a third-party automation you build and maintain, sync stays 1-way per automation, and the connector bills by usage.
 
 Chart: HubSpot + Asana: monthly cost for 10 seats by route: Native connector $634.90; Make Core route $145.49; Zapier Professional route $164.89
 

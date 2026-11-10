@@ -17,9 +17,9 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 Mailchimp's QuickBooks Online integration, listed in Mailchimp's integrations directory, syncs data from QuickBooks Online into Mailchimp, including contacts and purchase data, so you can segment and email your QuickBooks customers. Data flows one way, from QuickBooks to Mailchimp.
 
-**Limitations:** Mailchimp's stated requirement is a QuickBooks Online account, with no particular QuickBooks plan, so this calculator models Simple Start, QuickBooks' cheapest plan. Mailchimp notes that features vary by Mailchimp plan.
-
 [Setup guide: Mailchimp: QuickBooks Online integration ↗](https://mailchimp.com/integrations/quickbooksonline/)
+
+**Limitations:** Mailchimp's stated requirement is a QuickBooks Online account, with no particular QuickBooks plan, so this calculator models Simple Start, QuickBooks' cheapest plan. Mailchimp notes that features vary by Mailchimp plan.
 
 Sources (checked Nov 3, 2026): [Mailchimp: QuickBooks Online integration ↗](https://mailchimp.com/integrations/quickbooksonline/)
 
@@ -36,7 +36,7 @@ Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capab
 
 ## Native vs middleware for QuickBooks Online + Mailchimp
 
-The native path runs on the required tiers (QuickBooks Online 'Simple Start' + Mailchimp 'Free') at $38.00/mo for a 10-seat team, with no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — would cost $48.59/mo all-in, so on cost alone there is no reason to switch: middleware would only make sense if you already run other automations through it.
+The native connector is the cheapest route here. Make or Zapier only makes sense if you already run other automations through it, or need a step the native app doesn't offer.
 
 Chart: QuickBooks Online + Mailchimp: monthly cost for 10 seats by route: Native connector $38.00; Make Core route $48.59; Zapier Professional route $67.99
 

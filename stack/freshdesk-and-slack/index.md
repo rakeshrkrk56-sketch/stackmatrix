@@ -17,9 +17,9 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 Freshdesk's Slack app posts new-ticket and ticket-update notifications to the Slack channels you map to Freshdesk groups, lets you create tickets from Slack messages, and syncs collaboration threads in Slack back to Freshdesk.
 
-**Limitations:** Freshdesk lists Slack integration on Growth and above, and the installing admin needs a plan with API access. You can't map multiple Slack channels to one Freshdesk group, and only Freshdesk agents can invite other Slack members to collaborate on a ticket.
-
 [Setup guide: Freshdesk: The latest Slack app ↗](https://support.freshdesk.com/support/solutions/articles/50000001687-simplifying-collaboration-using-the-latest-slack-app)
+
+**Limitations:** Freshdesk lists Slack integration on Growth and above, and the installing admin needs a plan with API access. You can't map multiple Slack channels to one Freshdesk group, and only Freshdesk agents can invite other Slack members to collaborate on a ticket.
 
 Sources (checked Nov 3, 2026): [Freshdesk: The latest Slack app ↗](https://support.freshdesk.com/support/solutions/articles/50000001687-simplifying-collaboration-using-the-latest-slack-app) · [Freshdesk: Overview of collaboration ↗](https://support.freshdesk.com/support/solutions/articles/50000006589-overview-of-collaboration)
 
@@ -36,7 +36,7 @@ Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capab
 
 ## Native vs middleware for Freshdesk + Slack
 
-The native path runs on the required tiers (Freshdesk 'Growth' + Slack 'Free') at $230.00/mo for a 10-seat team, with 2-way sync and no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — would cost $240.59/mo all-in, so on cost alone there is no reason to switch: middleware would only make sense if you already run other automations through it, and it would drop sync to 1-way (trigger → action).
+The native connector is the cheapest route here and the only one with 2-way sync. Make or Zapier only makes sense if you already run other automations through it, or need a step the native app doesn't offer.
 
 Chart: Freshdesk + Slack: monthly cost for 10 seats by route: Native connector $230.00; Make Core route $240.59; Zapier Professional route $259.99
 

@@ -22,9 +22,15 @@ Salesforce API Access by Edition (2026): Professional, Enterprise & Unlimited
 | Enterprise | $165/seat/mo | Yes | 100,000 + 1,000 per Salesforce license / 24 h | Yes Change Data Capture (change events) | — |
 | Unlimited | $330/seat/mo | Yes | 100,000 + 5,000 per Salesforce license / 24 h | Yes Change Data Capture (change events) | — |
 
-Prices are monthly-billing list prices from this site's calculators.
+Salesforce publishes annual-billing rates only, so prices are per month, billed annually.
 
 Each user also needs the "API Enabled" permission; without org API access Salesforce returns API\_DISABLED\_FOR\_ORG. Limits apply to the whole org, not per user, and you can buy extra API calls. For 10 Salesforce licenses that's 110,000 calls a day on Enterprise and 150,000 on Unlimited.
+
+Chart: Salesforce plans: monthly price for 10 seats and whether the API is included: Starter (no API) $250.00; Professional (API as a paid add-on) $1,250.00; Enterprise (API included) $1,650.00; Unlimited (API included) $3,300.00
+
+Salesforce monthly price for 10 seats by plan. Green: API included; amber: paid add-on (included in the bar); grey: no API.
+
+ 
 
 Image: [Salesforce API access by plan: Starter no; Professional add-on; Enterprise yes; Unlimited yes](https://stackcostmatrix.com/og/salesforce-api-access.jpg)
 

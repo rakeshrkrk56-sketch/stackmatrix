@@ -24,6 +24,12 @@ Prices are monthly-billing list prices from this site's calculators.
 
 Free workspaces can use the API too; this index only models Plus and Business because the pairs here assume a team workspace.
 
+Chart: Notion plans: monthly price for 10 seats and whether the API is included: Plus (API included) $120.00; Business (API included) $240.00
+
+Notion monthly price for 10 seats by plan. Green: API included; amber: paid add-on (included in the bar); grey: no API.
+
+ 
+
 Image: [Notion API access by plan: Plus yes; Business yes](https://stackcostmatrix.com/og/notion-api-access.jpg)
 
 ## Two kinds of webhooks

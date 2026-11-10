@@ -33,33 +33,39 @@ is cheaper. Integration requirements re-checked 2026-11-03; prices re-checked 20
 
 All CRM integration cost guides
 
-| Integration | Type | Guide |
-| --- | --- | --- |
-| HubSpot + Slack | Native | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-slack/) |
-| HubSpot + Stripe | Native | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-stripe/) |
-| HubSpot + Mailchimp | Native | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-mailchimp/) |
-| HubSpot + Zendesk | Native | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-zendesk/) |
-| HubSpot + Calendly | Native | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-calendly/) |
-| Pipedrive + Slack | Native | [True-cost calculator →](https://stackcostmatrix.com/stack/pipedrive-and-slack/) |
-| Pipedrive + Mailchimp | Native | [True-cost calculator →](https://stackcostmatrix.com/stack/pipedrive-and-mailchimp/) |
-| Pipedrive + Xero | Middleware | [True-cost calculator →](https://stackcostmatrix.com/stack/pipedrive-and-xero/) |
-| Pipedrive + Calendly | Middleware | [True-cost calculator →](https://stackcostmatrix.com/stack/pipedrive-and-calendly/) |
-| Salesforce Sales Cloud + Slack | Native | [True-cost calculator →](https://stackcostmatrix.com/stack/salesforce-and-slack/) |
-| Salesforce Sales Cloud + Stripe | Native | [True-cost calculator →](https://stackcostmatrix.com/stack/salesforce-and-stripe/) |
-| Salesforce Sales Cloud + Mailchimp | Native | [True-cost calculator →](https://stackcostmatrix.com/stack/salesforce-and-mailchimp/) |
-| Salesforce Sales Cloud + Zendesk | Native | [True-cost calculator →](https://stackcostmatrix.com/stack/salesforce-and-zendesk/) |
-| ActiveCampaign + Pipedrive | Native | [True-cost calculator →](https://stackcostmatrix.com/stack/activecampaign-and-pipedrive/) |
-| Freshdesk + HubSpot | Native | [True-cost calculator →](https://stackcostmatrix.com/stack/freshdesk-and-hubspot/) |
-| Intercom + HubSpot | Native | [True-cost calculator →](https://stackcostmatrix.com/stack/intercom-and-hubspot/) |
-| HubSpot + Salesforce Sales Cloud | Native | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-salesforce/) |
-| HubSpot + Pipedrive | Middleware | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-pipedrive/) |
-| HubSpot + Monday.com | Native | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-monday/) |
-| HubSpot + ClickUp | Native | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-clickup/) |
-| HubSpot + Asana | Native | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-asana/) |
-| HubSpot + QuickBooks Online | Native | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-quickbooks/) |
-| Pipedrive + QuickBooks Online | Native | [True-cost calculator →](https://stackcostmatrix.com/stack/pipedrive-and-quickbooks/) |
-| Salesforce Sales Cloud + QuickBooks Online | Middleware | [True-cost calculator →](https://stackcostmatrix.com/stack/salesforce-and-quickbooks/) |
-| Pipedrive + Salesforce Sales Cloud | Middleware | [True-cost calculator →](https://stackcostmatrix.com/stack/pipedrive-and-salesforce/) |
+| Integration | Type | 10-seat total | Checked | Guide |
+| --- | --- | --- | --- | --- |
+| HubSpot + Slack | Native | $0.00 | Nov 3, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-slack/) |
+| HubSpot + Stripe | Native | $0.00 | Nov 3, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-stripe/) |
+| HubSpot + Mailchimp | Native | $20.00 | Nov 3, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-mailchimp/) |
+| HubSpot + Zendesk | Native | $690.00 | Nov 3, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-zendesk/) |
+| HubSpot + Calendly | Native | $120.00 | Nov 3, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-calendly/) |
+| Pipedrive + Slack | Native | $390.00 | Nov 3, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/pipedrive-and-slack/) |
+| Pipedrive + Mailchimp | Native | $140.00 | Nov 3, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/pipedrive-and-mailchimp/) |
+| Pipedrive + Xero | Middleware | $177.59 | Nov 8, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/pipedrive-and-xero/) |
+| Pipedrive + Calendly | Middleware | $270.59 | Nov 3, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/pipedrive-and-calendly/) |
+| Salesforce Sales Cloud + Slack | Native | $1,737.50 | Nov 3, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/salesforce-and-slack/) |
+| Salesforce Sales Cloud + Stripe | Native | $1,250.00 | Nov 3, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/salesforce-and-stripe/) |
+| Salesforce Sales Cloud + Mailchimp | Native | $1,270.00 | Nov 3, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/salesforce-and-mailchimp/) |
+| Salesforce Sales Cloud + Zendesk | Native | $1,940.00 | Nov 3, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/salesforce-and-zendesk/) |
+| ActiveCampaign + Pipedrive | Native | $405.00 | Nov 3, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/activecampaign-and-pipedrive/) |
+| Freshdesk + HubSpot | Native | $230.00 | Nov 3, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/freshdesk-and-hubspot/) |
+| Intercom + HubSpot | Native | $390.00 | Nov 3, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/intercom-and-hubspot/) |
+| HubSpot + Salesforce Sales Cloud | Native | $1,750.00 | Nov 3, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-salesforce/) |
+| HubSpot + Pipedrive | Middleware | $150.59 | Nov 3, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-pipedrive/) |
+| HubSpot + Monday.com | Native | $140.00 | Nov 3, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-monday/) |
+| HubSpot + ClickUp | Native | $120.00 | Nov 3, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-clickup/) |
+| HubSpot + Asana | Native | $634.90 | Nov 3, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-asana/) |
+| HubSpot + QuickBooks Online | Native | $38.00 | Nov 4, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-quickbooks/) |
+| Pipedrive + QuickBooks Online | Native | $178.00 | Nov 4, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/pipedrive-and-quickbooks/) |
+| Salesforce Sales Cloud + QuickBooks Online | Middleware | $1,298.59 | Nov 4, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/salesforce-and-quickbooks/) |
+| Pipedrive + Salesforce Sales Cloud | Middleware | $1,400.59 | Nov 4, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/pipedrive-and-salesforce/) |
+
+Chart: CRM integration costs for HubSpot, Salesforce and Pipedrive: monthly cost for 10 seats on the plans each integration needs: Salesforce Sales Cloud + Zendesk $1,940.00; HubSpot + Salesforce Sales Cloud $1,750.00; Salesforce Sales Cloud + Slack $1,737.50; Pipedrive + Salesforce Sales Cloud $1,400.59; Salesforce Sales Cloud + QuickBooks Online $1,298.59; Salesforce Sales Cloud + Mailchimp $1,270.00; Salesforce Sales Cloud + Stripe $1,250.00; HubSpot + Zendesk $690.00; HubSpot + Asana $634.90; ActiveCampaign + Pipedrive $405.00; Pipedrive + Slack $390.00; Intercom + HubSpot $390.00; Pipedrive + Calendly $270.59; Freshdesk + HubSpot $230.00
+
+Monthly cost for 10 seats, both tools plus any connector. Indigo bars are native integrations; teal bars need a connector.
+
+ 
 
 Image: [CRM integration costs for HubSpot, Salesforce and Pipedrive summary: 25 integrations priced, from $0 to $1,940 a month for 10 seats](https://stackcostmatrix.com/og/crm-integration-pricing-guide.jpg)
 

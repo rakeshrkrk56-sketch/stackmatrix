@@ -25,6 +25,12 @@ Prices are monthly-billing list prices from this site's calculators.
 
 Freshdesk's API rate limit is set per minute by plan; its API reference doesn't print the Growth figure on the page we read.
 
+Chart: Freshdesk plans: monthly price for 10 seats and whether the API is included: Growth (API included) $230.00; Pro (API included) $660.00; Enterprise (API included) $1,070.00
+
+Freshdesk monthly price for 10 seats by plan. Green: API included; amber: paid add-on (included in the bar); grey: no API.
+
+ 
+
 Image: [Freshdesk API access by plan: Growth yes; Pro yes; Enterprise yes](https://stackcostmatrix.com/og/freshdesk-api-access.jpg)
 
 ## Two kinds of webhooks

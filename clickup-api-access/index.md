@@ -25,6 +25,12 @@ ClickUp API & Webhook Access by Plan (2026)
 
 ClickUp also has a "Call webhook" automation action; its help center doesn't say which plans include it. Business Plus raises the API limit to 1,000 requests a minute.
 
+Chart: ClickUp plans: monthly price for 10 seats and whether the API is included: Free (API included) $0.00; Core (API included) $120.00; Business (API included) $250.00
+
+ClickUp monthly price for 10 seats by plan. Green: API included; amber: paid add-on (included in the bar); grey: no API.
+
+ 
+
 Image: [ClickUp API access by plan: Free yes; Core yes; Business yes](https://stackcostmatrix.com/og/clickup-api-access.jpg)
 
 ## Two kinds of webhooks

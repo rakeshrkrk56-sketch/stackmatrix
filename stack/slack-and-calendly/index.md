@@ -17,9 +17,9 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 Install the Calendly app from the Slack App Directory and connect your Calendly account. You can share your scheduling links in channels and DMs with meeting previews, and the app messages you in Slack whenever a meeting is scheduled, rescheduled or cancelled.
 
-**Limitations:** Each person connects their own Calendly account after a workspace admin installs the app, and your company can block app installation. Notifications arrive in the Calendly app's Messages tab, not in a channel.
-
 [Setup guide: Calendly help: Calendly + Slack ↗](https://calendly.com/help/calendly-slack)
+
+**Limitations:** Each person connects their own Calendly account after a workspace admin installs the app, and your company can block app installation. Notifications arrive in the Calendly app's Messages tab, not in a channel.
 
 Sources (checked Nov 8, 2026): [Calendly help: Calendly + Slack ↗](https://calendly.com/help/calendly-slack)
 
@@ -36,7 +36,7 @@ Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capab
 
 ## Native vs middleware for Slack + Calendly
 
-The native path runs on the required tiers (Slack 'Free' + Calendly 'Free') at $0.00/mo for a 10-seat team, with no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — would cost $10.59/mo all-in, so on cost alone there is no reason to switch: middleware would only make sense if you already run other automations through it.
+The native connector is the cheapest route here. Make or Zapier only makes sense if you already run other automations through it, or need a step the native app doesn't offer.
 
 Chart: Slack + Calendly: monthly cost for 10 seats by route: Native connector $0.00; Make Core route $10.59; Zapier Professional route $29.99
 

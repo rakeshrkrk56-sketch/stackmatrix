@@ -21,9 +21,15 @@ ActiveCampaign API & Webhook Access by Plan (2026)
 | Plus | $49/mo | Yes | Not published per plan | Yes | Yes |
 | Pro | $79/mo | Yes | Not published per plan | Yes | Yes |
 
-Prices are monthly-billing list prices from this site's calculators.
+ActiveCampaign publishes annual-billing rates only, so prices are per month, billed annually.
 
 A third-party guide (WP Fusion) says the automation webhook action now needs Plus; ActiveCampaign's own help center still lists Starter, so we follow the vendor.
+
+Chart: ActiveCampaign plans: monthly price for 10 seats and whether the API is included: Starter (API included) $15.00; Plus (API included) $49.00; Pro (API included) $79.00
+
+ActiveCampaign monthly price for 10 seats by plan. Green: API included; amber: paid add-on (included in the bar); grey: no API.
+
+ 
 
 Image: [ActiveCampaign API access by plan: Starter yes; Plus yes; Pro yes](https://stackcostmatrix.com/og/activecampaign-api-access.jpg)
 

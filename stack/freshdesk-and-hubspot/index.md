@@ -17,9 +17,9 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 HubSpot's Data Sync app for Freshdesk syncs companies, contacts and tickets between the two tools in both directions, with default field mappings and a historical sync of your existing records.
 
-**Limitations:** Custom field mappings need Data Hub Starter or Professional. HubSpot doesn't name a minimum Freshdesk plan, so check Freshdesk's pricing page; this calculator assumes Growth.
-
 [Setup guide: HubSpot Marketplace: Freshdesk Data Sync ↗](https://ecosystem.hubspot.com/marketplace/listing/freshdesk-data-sync)
+
+**Limitations:** Custom field mappings need Data Hub Starter or Professional. HubSpot doesn't name a minimum Freshdesk plan, so check Freshdesk's pricing page; this calculator assumes Growth.
 
 Sources (checked Nov 3, 2026): [HubSpot Marketplace: Freshdesk Data Sync ↗](https://ecosystem.hubspot.com/marketplace/listing/freshdesk-data-sync)
 
@@ -36,7 +36,7 @@ Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capab
 
 ## Native vs middleware for Freshdesk + HubSpot
 
-The native path runs on the required tiers (Freshdesk 'Growth' + HubSpot 'Free') at $230.00/mo for a 10-seat team, with 2-way sync and no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — would cost $240.59/mo all-in, so on cost alone there is no reason to switch: middleware would only make sense if you already run other automations through it, and it would drop sync to 1-way (trigger → action).
+The native connector is the cheapest route here and the only one with 2-way sync. Make or Zapier only makes sense if you already run other automations through it, or need a step the native app doesn't offer.
 
 Chart: Freshdesk + HubSpot: monthly cost for 10 seats by route: Native connector $230.00; Make Core route $240.59; Zapier Professional route $259.99
 

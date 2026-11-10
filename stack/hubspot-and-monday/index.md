@@ -17,9 +17,9 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 monday.com's HubSpot integration offers recipes that create monday.com board items from HubSpot companies, deals and contacts, so delivery or onboarding teams can pick up work as soon as it's sold.
 
-**Limitations:** It needs monday.com Standard or Pro. HubSpot's separate monday.com Data Sync app adds two-way sync, but activating it needs Data Hub Starter.
-
 [Setup guide: HubSpot Marketplace: monday.com ↗](https://ecosystem.hubspot.com/marketplace/listing/monday-com-203938)
+
+**Limitations:** It needs monday.com Standard or Pro. HubSpot's separate monday.com Data Sync app adds two-way sync, but activating it needs Data Hub Starter.
 
 Sources (checked Nov 3, 2026): [HubSpot Marketplace: monday.com ↗](https://ecosystem.hubspot.com/marketplace/listing/monday-com-203938) · [HubSpot Marketplace: monday.com Data Sync ↗](https://ecosystem.hubspot.com/marketplace/listing/mondaycom-data-sync)
 
@@ -36,7 +36,7 @@ Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capab
 
 ## Native vs middleware for HubSpot + Monday.com
 
-The native path runs on the required tiers (HubSpot 'Free' + Monday.com 'Standard') at $140.00/mo for a 10-seat team, with no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — would cost $150.59/mo all-in, so on cost alone there is no reason to switch: middleware would only make sense if you already run other automations through it.
+The native connector is the cheapest route here. Make or Zapier only makes sense if you already run other automations through it, or need a step the native app doesn't offer.
 
 Chart: HubSpot + Monday.com: monthly cost for 10 seats by route: Native connector $140.00; Make Core route $150.59; Zapier Professional route $169.99
 
