@@ -17,6 +17,16 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 The native integration is a HubSpot workflow action: when a deal closes or a ticket changes, HubSpot creates a task in an Asana project. It's useful for handing work from sales or support to delivery and onboarding teams.
 
+### How to set it up
+
+1. Connect Asana to your HubSpot account, either from the App Marketplace or from inside a workflow. You need Super Admin or Workflows permissions.
+2. In HubSpot, go to Automation > Workflows (it may sit under More) and open an existing workflow or create a new one.
+3. Click the + icon to add a workflow action.
+4. In the left panel, select Create an Asana task and set up the action.
+5. Click Save. Private Asana projects won't appear in HubSpot, and the Asana user who connected the integration is added as a collaborator on each task.
+
+Steps follow [HubSpot's setup guide ↗](https://knowledge.hubspot.com/workflows/create-asana-tasks-with-workflows), read Nov 10, 2026.
+
 **Limitations:** It needs HubSpot workflows, so a Professional or Enterprise subscription. Tasks only go from HubSpot to Asana, private Asana projects don't appear in HubSpot, and the Asana user who connects the integration becomes a collaborator on every task it creates.
 
 **Before you budget:** HubSpot charges a required one-time Professional Onboarding fee on some Hubs ($1,500 for Sales Hub or Service Hub, $3,000 for Marketing Hub; its pricing page shows none for Smart CRM Professional). It isn't in the monthly totals here, so add it under one-time setup cost in the calculator.

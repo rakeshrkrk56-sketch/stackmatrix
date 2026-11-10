@@ -19,6 +19,16 @@ In an Airtable base, open the base menu and choose Slack notifications, then cre
 
 [Setup guide: Airtable support: Base activity notifications in Slack ↗](https://support.airtable.com/docs/receiving-base-activity-notifications-in-slack)
 
+### How to set it up
+
+1. Open the Airtable base you want notifications from.
+2. Click the drop-down arrow next to the base name, then the ellipsis (…) icon, and select Slack notifications.
+3. Choose the base to post updates from and the Slack channel to post them to.
+4. Click Allow if an authorization window appears.
+5. Send a test message from the rule, or change something in the base and watch the channel for the update.
+
+Steps follow [Airtable's setup guide ↗](https://support.airtable.com/docs/receiving-base-activity-notifications-in-slack), read Nov 10, 2026.
+
 **Limitations:** It's one-way (Airtable → Slack) and only posts notifications. Your organization's admins can block the integration, and only the person who set up a rule can turn it off.
 
 Sources (checked Nov 8, 2026): [Airtable support: Base activity notifications in Slack ↗](https://support.airtable.com/docs/receiving-base-activity-notifications-in-slack)

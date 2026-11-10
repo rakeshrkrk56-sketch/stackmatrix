@@ -19,9 +19,20 @@ HubSpot's Data Sync app for Freshdesk syncs companies, contacts and tickets betw
 
 [Setup guide: HubSpot Marketplace: Freshdesk Data Sync ↗](https://ecosystem.hubspot.com/marketplace/listing/freshdesk-data-sync)
 
+### How to set it up
+
+1. In HubSpot, click the Marketplace icon in the top navigation bar and select HubSpot Marketplace. You need to be a Super Admin or have App Marketplace permissions.
+2. Search for Freshdesk, open the app and click Install.
+3. In the dialog box, click Next and log in to Freshdesk. Review the requested access permissions and click Allow.
+4. Go to Settings > Integrations > Connected Apps, click the app, then click Set up your sync.
+5. Select the Freshdesk object and the HubSpot object it should sync with, choose the sync direction (both ways, only to HubSpot or only to Freshdesk) and map the fields.
+6. On the Review page, check your rules and click Save and sync. The first sync starts straight away.
+
+Steps follow [HubSpot's setup guide ↗](https://knowledge.hubspot.com/integrations/connect-and-use-hubspot-data-sync), read Nov 10, 2026.
+
 **Limitations:** Custom field mappings need Data Hub Starter or Professional. HubSpot doesn't name a minimum Freshdesk plan, so check Freshdesk's pricing page; this calculator assumes Growth.
 
-Sources (checked Nov 3, 2026): [HubSpot Marketplace: Freshdesk Data Sync ↗](https://ecosystem.hubspot.com/marketplace/listing/freshdesk-data-sync)
+Sources (checked Nov 3, 2026): [HubSpot Marketplace: Freshdesk Data Sync ↗](https://ecosystem.hubspot.com/marketplace/listing/freshdesk-data-sync) · [HubSpot Knowledge Base: Connect and use HubSpot data sync ↗](https://knowledge.hubspot.com/integrations/connect-and-use-hubspot-data-sync)
 
 *Interactive cost calculator: open the web page to change team size, billing and add-ons.*
 

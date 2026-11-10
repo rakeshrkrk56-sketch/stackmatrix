@@ -19,6 +19,17 @@ Freshdesk's Slack app posts new-ticket and ticket-update notifications to the Sl
 
 [Setup guide: Freshdesk: The latest Slack app ↗](https://support.freshdesk.com/support/solutions/articles/50000001687-simplifying-collaboration-using-the-latest-slack-app)
 
+### How to set it up
+
+1. A Freshdesk admin installs the app first. Freshdesk says the admin must be on a Freshdesk plan that provides API access.
+2. Log in to your Slack workspace and click Apps in the left pane to open the app directory.
+3. Search for Freshdesk and click Add, then click Add to Slack and Allow.
+4. On the app's home page, go to Settings and click Proceed to link your Freshdesk domain.
+5. Enter your Freshdesk domain (for example company.freshdesk.com) and a valid Freshdesk API key, then click OK.
+6. Back in Settings, click Connect to map each Freshdesk group to the Slack channel that should get its ticket notifications.
+
+Steps follow [Freshdesk's setup guide ↗](https://support.freshdesk.com/support/solutions/articles/50000001687-simplifying-collaboration-using-the-latest-slack-app), read Nov 10, 2026.
+
 **Limitations:** Freshdesk lists Slack integration on Growth and above, and the installing admin needs a plan with API access. You can't map multiple Slack channels to one Freshdesk group, and only Freshdesk agents can invite other Slack members to collaborate on a ticket.
 
 Sources (checked Nov 3, 2026): [Freshdesk: The latest Slack app ↗](https://support.freshdesk.com/support/solutions/articles/50000001687-simplifying-collaboration-using-the-latest-slack-app) · [Freshdesk: Overview of collaboration ↗](https://support.freshdesk.com/support/solutions/articles/50000006589-overview-of-collaboration)

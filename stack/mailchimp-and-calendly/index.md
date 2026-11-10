@@ -19,6 +19,16 @@ In Calendly, go to Integrations & apps, connect Mailchimp, then create a rule pe
 
 [Setup guide: Calendly help: Calendly + Mailchimp ↗](https://calendly.com/help/calendly-mailchimp)
 
+### How to set it up
+
+1. In Calendly, go to Automations → Integrations & apps.
+2. Find and select Mailchimp, then select Connect Mailchimp.
+3. Sign in to Mailchimp if prompted, review the requested permissions and select Allow. You're taken back to Calendly.
+4. On the Mailchimp page in Calendly, select Create a Rule for the event you want to automate and choose the event type.
+5. Select the Mailchimp audience to add invitees to, add tags if you want them, and select Save.
+
+Steps follow [Calendly's setup guide ↗](https://calendly.com/help/calendly-mailchimp), read Nov 10, 2026.
+
 **Limitations:** Data flows from Calendly to Mailchimp only. Invitees in GDPR regions are added as non-marketing contacts unless they opt in, and disconnecting Mailchimp deletes the rules you set up.
 
 Sources (checked Nov 8, 2026): [Calendly help: Calendly + Mailchimp ↗](https://calendly.com/help/calendly-mailchimp)

@@ -466,7 +466,7 @@ Full 20-tool source index with audit timestamps: [About StackCostMatrix →](htt
 
 Recent verification activity:
 
-- **Nov 10, 2026** — Every integration page now starts with how it works and the vendor's setup guide, and compares the native route with Make and Zapier. New: how Salesforce Professional gets API access, and a chart of the most expensive integrations. No prices changed.
+- **Nov 10, 2026** — Every integration page now starts with how it works and the vendor's setup guide, and compares the native route with Make and Zapier. Twenty integrations gained numbered setup steps from the vendor's own guide. New: how Salesforce Professional gets API access, and a chart of the most expensive integrations. No prices changed.
 - **Nov 8, 2026** — Three integrations corrected after re-reading vendor pages: ActiveCampaign + Stripe needs ActiveCampaign Plus ($49/mo), Mailchimp + Calendly works on Mailchimp's free plan ($120/mo), and Pipedrive + Xero now runs through Make because Pipedrive's own Xero app is gone ($177.59/mo). The Integration Tax report now counts 31 of 55 integrations with a hidden cost. Also: stale counts on the guides fixed, each cost box states its own extra cost, and every page names its editor.
 - **Nov 5, 2026** — HubSpot Professional repriced at HubSpot's per-seat price (Smart CRM Professional, $50/seat): HubSpot + Salesforce now $1,750/mo and HubSpot + Asana $634.90/mo at 10 seats.
 - **Nov 4, 2026** — QuickBooks Online prices updated ($38 / $75 / $115), Pipedrive + Mailchimp re-checked, and four QuickBooks and Pipedrive integrations added.

@@ -19,6 +19,15 @@ Install Stripe from the Intercom App Store and turn on sync. Intercom imports ea
 
 [Setup guide: Intercom help: Stripe app ↗](https://www.intercom.com/help/en/articles/1829591-stripe-app)
 
+### How to set it up
+
+1. Find Stripe in the Intercom App Store and click Install now. You need to be an admin in Stripe; a Stripe developer account can't connect third-party apps.
+2. Connect your Stripe account. To add another account later, go to App Store > Stripe > Settings and click Add new account.
+3. Turn on sync to import your Stripe customer data into Intercom.
+4. In the inbox, click Edit apps in the right sidebar and pin Stripe so agents see billing details next to each conversation.
+
+Steps follow [Intercom's setup guide ↗](https://www.intercom.com/help/en/articles/1829591-stripe-app), read Nov 10, 2026.
+
 **Limitations:** Customers are matched by email address. Only live-mode Stripe data syncs, not test mode, and extra Stripe accounts sync attributes only, not the inbox app. You need to be a Stripe admin to connect it.
 
 Sources (checked Nov 8, 2026): [Intercom help: Stripe app ↗](https://www.intercom.com/help/en/articles/1829591-stripe-app)

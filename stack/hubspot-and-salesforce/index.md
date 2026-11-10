@@ -17,6 +17,17 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 HubSpot's own Salesforce connector syncs leads, contacts, accounts, opportunities and custom objects between the two CRMs, and can embed HubSpot contact, company and deal insights inside Salesforce. It suits teams that run marketing in HubSpot and sales in Salesforce.
 
+### How to set it up
+
+1. Check the Salesforce user who will connect it: HubSpot asks for a Salesforce system administrator with the API Enabled, View Setup and Configuration and Download AppExchange Packages permissions, and Modify All on the objects you want to sync.
+2. In HubSpot, click the Marketplace icon in the top navigation bar and select HubSpot Marketplace.
+3. Search for and select the Salesforce app, then click Install.
+4. If you're connecting a Salesforce sandbox, tick Yes, this will connect to a sandbox. Click Install.
+5. In the pop-up window, enter your Salesforce credentials and click Log In. You're sent back to HubSpot.
+6. Records don't sync on their own after installation: import your Salesforce records into HubSpot, or let them sync gradually as records change.
+
+Steps follow [HubSpot's setup guide ↗](https://knowledge.hubspot.com/salesforce/install-the-hubspot-salesforce-integration), read Nov 10, 2026.
+
 **Limitations:** The connector is only available on HubSpot Professional or Enterprise subscriptions, every sync uses part of your Salesforce API call allowance, and the Salesforce user who connects it needs the API Enabled permission.
 
 **Before you budget:** HubSpot charges a required one-time Professional Onboarding fee on some Hubs ($1,500 for Sales Hub or Service Hub, $3,000 for Marketing Hub; its pricing page shows none for Smart CRM Professional). It isn't in the monthly totals here, so add it under one-time setup cost in the calculator. On the Salesforce side, HubSpot's requirements read "a Salesforce edition with API access, or Salesforce Professional" (Group Edition isn't supported), and Salesforce says security-reviewed AppExchange apps can reach Professional orgs even if the customer doesn't have API access. So ask Salesforce whether your org needs the API add-on for HubSpot's connector before paying for it; the totals here include it.

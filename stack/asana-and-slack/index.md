@@ -19,6 +19,15 @@ Install the Asana app for Slack, then type /asana in Slack to list, create, comp
 
 [Setup guide: Asana: Slack + Asana ↗](https://asana.com/apps/slack)
 
+### How to set it up
+
+1. Sign up for a Slack account and an Asana account if you don't have both.
+2. Install the Asana app for Slack from Asana's Slack page and follow Slack's instructions to authenticate your Asana account.
+3. Type /asana in Slack to list, create, complete or comment on tasks.
+4. Link a Slack channel to an Asana project to get an update in the channel when a task is created or completed.
+
+Steps follow [Asana's setup guide ↗](https://asana.com/apps/slack), read Nov 10, 2026.
+
 **Limitations:** Updates flow both ways but it isn't a full sync: Slack conversations aren't mirrored into Asana, only the message you turn into a task. Slack's free plan allows up to 10 app installations.
 
 Sources (checked Nov 8, 2026): [Asana: Slack + Asana ↗](https://asana.com/apps/slack) · [Asana help: Slack and Asana ↗](https://help.asana.com/s/article/slack-and-asana)

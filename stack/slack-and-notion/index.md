@@ -19,6 +19,15 @@ In Notion, a button, database button or database automation can send a Slack not
 
 [Setup guide: Notion: Connect Slack to Notion ↗](https://www.notion.com/help/slack)
 
+### How to set it up
+
+1. In Notion, select ••• at the top of the database you want alerts from.
+2. Select Automations, then Add trigger.
+3. Choose Page added or Property edited, then Send Slack notification to...
+4. Select a Slack channel. If you haven't connected Slack yet, Notion asks you to connect your account at this point.
+
+Steps follow [Notion's setup guide ↗](https://www.notion.com/help/slack), read Nov 10, 2026.
+
 **Limitations:** Notion says these Slack automation actions are only available on paid plans. Slack's free plan allows up to 10 app installations.
 
 Sources (checked Nov 3, 2026): [Notion: Connect Slack to Notion ↗](https://www.notion.com/help/slack) · [Slack: Free plan limits ↗](https://slack.com/help/articles/27204752526611-Feature-limitations-on-the-free-version-of-Slack)

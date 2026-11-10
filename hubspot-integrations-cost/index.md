@@ -33,7 +33,7 @@ Complete 2026 HubSpot Integration Cost & API Tier Matrix
 | HubSpot + Asana | Native | Professional | $634.90 | Nov 3, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-asana/) |
 | HubSpot + QuickBooks Online | Native | Free | $38.00 | Nov 4, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-quickbooks/) |
 
-Chart: HubSpot integration costs: monthly cost for 10 seats on the plans each integration needs: HubSpot + Salesforce Sales Cloud $1,750.00; HubSpot + Zendesk $690.00; HubSpot + Asana $634.90; Intercom + HubSpot $390.00; Freshdesk + HubSpot $230.00; HubSpot + Pipedrive $150.59; HubSpot + Monday.com $140.00; HubSpot + Calendly $120.00; HubSpot + ClickUp $120.00; HubSpot + QuickBooks Online $38.00; HubSpot + Mailchimp $20.00; HubSpot + Stripe $0.00; HubSpot + Slack $0.00
+Chart: HubSpot integration costs: monthly cost for 10 seats on the plans each integration needs: HubSpot + Salesforce Sales Cloud $1,750.00; HubSpot + Zendesk $690.00; HubSpot + Asana $634.90; Intercom + HubSpot $390.00; Freshdesk + HubSpot $230.00; HubSpot + Pipedrive $150.59; HubSpot + Monday.com $140.00; HubSpot + Calendly $120.00; HubSpot + ClickUp $120.00; HubSpot + QuickBooks Online $38.00; HubSpot + Mailchimp $20.00; HubSpot + Slack $0.00; HubSpot + Stripe $0.00
 
 Monthly cost for 10 seats, both tools plus any connector. Indigo bars are native integrations; teal bars need a connector.
 

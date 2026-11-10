@@ -19,6 +19,17 @@ Zendesk's Salesforce integration creates and updates Zendesk organizations from 
 
 [Setup guide: Zendesk: Connecting Salesforce to Zendesk ↗](https://support.zendesk.com/hc/en-us/articles/4408821555482-Connecting-your-Salesforce-organization-to-Zendesk)
 
+### How to set it up
+
+1. In Salesforce Setup, open Security > Session Settings and clear the Lock sessions to the IP address from which they originated checkbox. Otherwise the integration disconnects when a session expires.
+2. In Zendesk Admin Center, click Apps and integrations, select Integrations > Integrations and click Salesforce.
+3. Choose the Salesforce instance, Production or Sandbox. Zendesk suggests testing with sandboxes first.
+4. Tick the checkbox to agree to the Built by Zendesk Terms of Use and click Connect Salesforce.
+5. Sign in to Salesforce with admin credentials. You're sent back to Admin Center, where the new connection appears with every feature still inactive.
+6. Click the options menu next to the Salesforce organization and click Configure to turn on the features you plan to use.
+
+Steps follow [Zendesk's setup guide ↗](https://support.zendesk.com/hc/en-us/articles/4408821555482-Connecting-your-Salesforce-organization-to-Zendesk), read Nov 10, 2026.
+
 **Limitations:** It needs Salesforce Enterprise or above, or Professional with the API add-on. Account data syncs one way, from Salesforce to Zendesk, and ticket comments aren't synced to a Case field (Ticket View can display them).
 
 Sources (checked Nov 3, 2026): [Zendesk: Connecting Salesforce to Zendesk ↗](https://support.zendesk.com/hc/en-us/articles/4408821555482-Connecting-your-Salesforce-organization-to-Zendesk) · [Zendesk: Data sync from Salesforce ↗](https://support.zendesk.com/hc/en-us/articles/4408828539290-Configuring-data-sync-from-Salesforce-to-Zendesk) · [Zendesk: Ticket sync to Salesforce ↗](https://support.zendesk.com/hc/en-us/articles/4408828449050-Setting-up-ticket-sync-from-Zendesk-to-Salesforce)

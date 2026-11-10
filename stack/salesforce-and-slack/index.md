@@ -17,6 +17,16 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 Salesforce builds its own suite of Slack integrations that bring Salesforce records and notifications into Slack. The original Slack-built Salesforce app is no longer supported.
 
+### How to set it up
+
+1. A Salesforce System Administrator first installs and configures the Slack app in Salesforce.
+2. Open the Salesforce page in the Slack Marketplace and click Add to Slack. On the Salesforce app landing page, click Add to Slack again.
+3. Follow the prompts to authenticate your Salesforce account and finish installing the app.
+4. In Slack, click Apps at the top of the left sidebar, then search for and select Salesforce.
+5. On the app's Home tab, click Connect Account. Once the accounts are connected, click Open Slack to return.
+
+Steps follow [Slack's setup guide ↗](https://slack.com/help/articles/227838227-Salesforce-apps-for-Slack), read Nov 10, 2026.
+
 **Limitations:** Salesforce lists Enterprise, Performance, Unlimited and Developer editions for its Sales Cloud app for Slack, so Starter and Professional teams would need to upgrade or use middleware instead.
 
 [Setup guide: Slack: Salesforce apps for Slack ↗](https://slack.com/help/articles/227838227-Salesforce-apps-for-Slack)

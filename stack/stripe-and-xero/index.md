@@ -19,6 +19,17 @@ Stripe is a built-in payment service in Xero: you add Stripe to an invoice templ
 
 [Setup guide: Xero: Connect Stripe to Xero ↗](https://central.xero.com/0/article/Stripe-AU)
 
+### How to set it up
+
+1. In Xero, open the Sales menu and select Online payments. You need the administrator or standard user role.
+2. Click Add a Stripe account. If online payments are already set up, use the Add a new service tab instead.
+3. Under Cards and digital wallets, click Set up cards & digital wallets, then choose Sign up for Stripe or I have a Stripe account.
+4. Follow the steps on Stripe's website to log in or sign up.
+5. Back in Xero, select the bank account for Stripe payouts and click Continue.
+6. Create an expense account for Stripe fees or pick an existing one, click Complete set up, then Save. Stripe is added to your invoice templates automatically.
+
+Steps follow [Xero's setup guide ↗](https://central.xero.com/0/article/Stripe-AU), read Nov 10, 2026.
+
 **Limitations:** Xero's cheapest Early plan ($27/mo) accepts online invoice payments but limits you to 20 invoices, and using multiple currencies needs the top Established plan ($97/mo). Stripe's processing fees apply and aren't included above.
 
 Sources (checked Nov 3, 2026): [Xero: Connect Stripe to Xero ↗](https://central.xero.com/0/article/Stripe-AU) · [Xero: US pricing plans ↗](https://www.xero.com/us/pricing-plans/)

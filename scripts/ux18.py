@@ -109,7 +109,7 @@ def guide_figures():
         s = re.sub(r'( <td class="px-4 py-3"> <a href="/stack/([^"/]+)/" class="font-medium text-indigo-600 hover:underline">True-cost calculator →</a> </td>)', row, s)
         s = s.replace(' <th class="px-4 py-3 font-semibold">Guide</th>',
                       ' <th class="px-4 py-3 font-semibold" data-x="1">10-seat total</th> <th class="px-4 py-3 font-semibold" data-x="1">Checked</th> <th class="px-4 py-3 font-semibold">Guide</th>', 1)
-        rows = sorted(((pairs[x]["v"], x) for x in set(re.findall(r'href="/stack/([^"/]+)/"', s[s.index("<main"):s.index("</main>")])) if x in pairs), key=lambda t: -t[0]["N"])[:14]
+        rows = sorted(((pairs[x]["v"], x) for x in set(re.findall(r'href="/stack/([^"/]+)/"', s[s.index("<main"):s.index("</main>")])) if x in pairs), key=lambda t: (-t[0]["N"], t[1]))[:14]   # slug breaks ties, so the order is the same on every run
         chart = (' <figure class="mt-6" data-guide="1"> ' + svg_bars([(f"{v['na']} + {v['nb']}", v["N"], "#4f46e5" if v["native"] else "#0e7490") for v, _ in rows],
                                                                     f"{label}: monthly cost for 10 seats on the plans each integration needs")
                  + ' <figcaption class="mt-1 text-xs text-slate-500">Monthly cost for 10 seats, both tools plus any connector. Indigo bars are native integrations; teal bars need a connector.</figcaption> </figure>')

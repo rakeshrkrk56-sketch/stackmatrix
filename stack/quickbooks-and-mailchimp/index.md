@@ -19,9 +19,19 @@ Mailchimp's QuickBooks Online integration, listed in Mailchimp's integrations di
 
 [Setup guide: Mailchimp: QuickBooks Online integration ↗](https://mailchimp.com/integrations/quickbooksonline/)
 
+### How to set it up
+
+1. In Mailchimp, open the integrations directory.
+2. Choose Mailchimp for QuickBooks Online.
+3. Select the Mailchimp audience you want to sync your QuickBooks Online customers to.
+4. Click Connect to QuickBooks, enter your QuickBooks ID and password and click Sign In.
+5. A success message on the integration page confirms the connection. To see the imported contacts, click the Analytics icon and choose Audience.
+
+Steps follow [Mailchimp's setup guide ↗](https://mailchimp.com/help/connect-disconnect-quickbooks-online/), read Nov 10, 2026.
+
 **Limitations:** Mailchimp's stated requirement is a QuickBooks Online account, with no particular QuickBooks plan, so this calculator models Simple Start, QuickBooks' cheapest plan. Mailchimp notes that features vary by Mailchimp plan.
 
-Sources (checked Nov 3, 2026): [Mailchimp: QuickBooks Online integration ↗](https://mailchimp.com/integrations/quickbooksonline/)
+Sources (checked Nov 3, 2026): [Mailchimp: QuickBooks Online integration ↗](https://mailchimp.com/integrations/quickbooksonline/) · [Mailchimp help: Connect or disconnect Mailchimp for QuickBooks Online ↗](https://mailchimp.com/help/connect-disconnect-quickbooks-online/)
 
 *Interactive cost calculator: open the web page to change team size, billing and add-ons.*
 

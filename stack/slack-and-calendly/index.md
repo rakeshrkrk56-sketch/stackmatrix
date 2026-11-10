@@ -19,6 +19,16 @@ Install the Calendly app from the Slack App Directory and connect your Calendly 
 
 [Setup guide: Calendly help: Calendly + Slack ↗](https://calendly.com/help/calendly-slack)
 
+### How to set it up
+
+1. Sign in to Slack and open the Slack app directory.
+2. Find Calendly, select Add to Slack and then Allow.
+3. Select Connect to Calendly, then Open Slack to return to the app. A welcome message from the Calendly app confirms the setup.
+4. Teammates connect their own accounts: in Slack, go to Apps, select + and search for Calendly, open its Home page and select Connect.
+5. To share a link, type /Calendly in a channel or direct message, select Share an event type with Calendly and choose the event type. Sharing doesn't work inside threads.
+
+Steps follow [Calendly's setup guide ↗](https://calendly.com/help/calendly-slack), read Nov 10, 2026.
+
 **Limitations:** Each person connects their own Calendly account after a workspace admin installs the app, and your company can block app installation. Notifications arrive in the Calendly app's Messages tab, not in a channel.
 
 Sources (checked Nov 8, 2026): [Calendly help: Calendly + Slack ↗](https://calendly.com/help/calendly-slack)

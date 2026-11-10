@@ -19,6 +19,17 @@ You can connect Stripe as a payment processor in HubSpot and collect payments th
 
 [Setup guide: HubSpot: Connect Stripe as a payment processor ↗](https://knowledge.hubspot.com/payment-processing/connect-your-stripe-account-as-a-payment-processor-in-hubspot)
 
+### How to set it up
+
+1. In HubSpot, go to Revenue > Payments (it may sit under More) and click Set up payments.
+2. Select Integrate with a Stripe payment processing account and click Next.
+3. Choose your company's country, tick the checkbox to agree to the Stripe Payment Processing Terms and click Next.
+4. On Stripe, enter the email address and password for your Stripe account and complete two-factor authentication.
+5. Select a business you've already set up in Stripe (or register your business) and click Connect.
+6. Review your personal and business information and click Agree and submit. You're sent back to HubSpot.
+
+Steps follow [HubSpot's setup guide ↗](https://knowledge.hubspot.com/payment-processing/connect-your-stripe-account-as-a-payment-processor-in-hubspot), read Nov 10, 2026.
+
 **Limitations:** Stripe's per-transaction processing fees still apply and aren't included in the cost above. Invoices and subscriptions you create in HubSpot aren't created in Stripe, the processor option isn't offered in every country (India is one exception), and custom field mappings in Data Sync need Operations Hub (now Data Hub) Starter.
 
 Sources (checked Nov 3, 2026): [HubSpot: Connect Stripe as a payment processor ↗](https://knowledge.hubspot.com/payment-processing/connect-your-stripe-account-as-a-payment-processor-in-hubspot) · [HubSpot Marketplace: Stripe Data Sync ↗](https://ecosystem.hubspot.com/marketplace/listing/stripe-data-sync)

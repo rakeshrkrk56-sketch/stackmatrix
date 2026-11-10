@@ -19,6 +19,16 @@ When someone books through Calendly, the integration creates a HubSpot contact i
 
 [Setup guide: Calendly: Calendly + HubSpot ↗](https://calendly.com/help/calendly-hubspot)
 
+### How to set it up
+
+1. In Calendly, go to Automations → Integrations & apps. You need Calendly administrator privileges and HubSpot admin privileges.
+2. Find and select HubSpot, then select Connect HubSpot.
+3. Sign in to HubSpot if prompted. If you have more than one HubSpot account, pick the one to connect and select Choose Account.
+4. Review the requested permissions, tick the checkbox to confirm and select Connect app. You're taken back to Calendly.
+5. In the integration settings, turn on Push Calendly events and contacts to HubSpot, and choose whether to sync events from the entire organization or from specific groups.
+
+Steps follow [Calendly's setup guide ↗](https://calendly.com/help/calendly-hubspot), read Nov 10, 2026.
+
 **Limitations:** Routing from HubSpot forms needs Calendly Teams or Enterprise. Changing a meeting's length in HubSpot doesn't update Calendly, and using Calendly's and HubSpot's calendar sync together can create duplicate meetings.
 
 Sources (checked Nov 3, 2026): [Calendly: Calendly + HubSpot ↗](https://calendly.com/help/calendly-hubspot) · [HubSpot Marketplace: Calendly ↗](https://ecosystem.hubspot.com/marketplace/listing/calendly-199720)

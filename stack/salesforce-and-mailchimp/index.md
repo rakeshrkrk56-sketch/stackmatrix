@@ -17,6 +17,17 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 Mailchimp for Salesforce connects Salesforce contacts and leads with your Mailchimp audience and brings Mailchimp campaign activity into Salesforce.
 
+### How to set it up
+
+1. On Salesforce Professional, ask your Salesforce account executive to enable API access before you install.
+2. Follow the link on Mailchimp's integration page to the Salesforce AppExchange listing and click Get it Now.
+3. Log in with your Trailblazer.me account and click Install in Production.
+4. Agree to the terms and click Confirm and Install, choose Install for All Users and click Install. Approve third-party access when asked.
+5. In Salesforce, open Mailchimp for Salesforce from the App Launcher, click the MC Setup tab and click Login.
+6. Enter your Mailchimp username and password and click Log In. The Mailchimp user needs Manager access or higher.
+
+Steps follow [Mailchimp's setup guide ↗](https://mailchimp.com/help/connect-mailchimp-for-salesforce/), read Nov 10, 2026.
+
 **Limitations:** It supports Enterprise, Unlimited, Performance, Developer and Professional editions, but on Professional your Salesforce account executive must enable API access first. Field mapping is limited by Mailchimp plan; Premium accounts can map up to 80 fields.
 
 [Setup guide: Mailchimp: Connect Mailchimp for Salesforce ↗](https://mailchimp.com/help/connect-mailchimp-for-salesforce/)

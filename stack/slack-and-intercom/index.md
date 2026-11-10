@@ -19,6 +19,15 @@ Intercom's native Slack integration lets you connect Slack as a channel in Inter
 
 [Setup guide: Intercom: Connect your Slack channel ↗](https://www.intercom.com/help/en/articles/11534476-connect-your-slack-channel)
 
+### How to set it up
+
+1. In Intercom, go to Settings > Channels > Slack.
+2. Authenticate your Slack workspace. The app can't be installed in the primary workspace of a Slack Enterprise Grid account, only in the secondary workspaces.
+3. Select Add channels, search for the channel you want to connect and tick its checkbox.
+4. Click Add channels to save. The workspace and its channels now appear under Settings > Channels > Slack.
+
+Steps follow [Intercom's setup guide ↗](https://www.intercom.com/help/en/articles/11534476-connect-your-slack-channel), read Nov 10, 2026.
+
 **Limitations:** Automatic Slack notifications for new conversations rely on Workflows, which are only on Intercom's Advanced and Expert plans, not Essential. Slack's free plan allows only 10 apps, and the app can't be installed in the primary workspace of a Slack Enterprise Grid account.
 
 Sources (checked Nov 3, 2026): [Intercom: Connect your Slack channel ↗](https://www.intercom.com/help/en/articles/11534476-connect-your-slack-channel) · [Slack: Free plan limits ↗](https://slack.com/help/articles/27204752526611-Feature-limitations-on-the-free-version-of-Slack)

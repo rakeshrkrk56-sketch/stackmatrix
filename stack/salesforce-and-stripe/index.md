@@ -19,6 +19,17 @@ The Stripe app for Salesforce Platform lets you process and reconcile Stripe pay
 
 [Setup guide: Stripe: Stripe app for Salesforce Platform ↗](https://docs.stripe.com/connectors/stripe-connector-for-salesforce/overview)
 
+### How to set it up
+
+1. In Salesforce, make sure Lightning Web Security is enabled under Setup > Session Management > Session Settings.
+2. Open the app's Salesforce AppExchange listing, log in to the org where you want it and click Continue. Stripe recommends choosing Install for Admins Only.
+3. Tick the Approve Third-Party Access box and click Continue to start the installation.
+4. Go to App Launcher > Stripe for Salesforce Platform, click Get Started, then Authorize, and click Allow in the new window.
+5. Enter your Stripe publishable key and restricted access key, then click Add Account.
+6. Pick the Stripe API version, click Install Package to add the extension package, then click Finish.
+
+Steps follow [Stripe's setup guide ↗](https://docs.stripe.com/plugins/stripe-connector-for-salesforce/installation-guide), read Nov 10, 2026.
+
 **Limitations:** Stripe says it works best on core clouds such as Sales Cloud, and the app now authenticates with a Stripe API key because OAuth sign-in was retired in version 1.17.
 
 Sources (checked Nov 3, 2026): [Stripe: Stripe app for Salesforce Platform ↗](https://docs.stripe.com/connectors/stripe-connector-for-salesforce/overview) · [Stripe: Installation guide ↗](https://docs.stripe.com/plugins/stripe-connector-for-salesforce/installation-guide)

@@ -97,6 +97,16 @@ for _p, _t in PATCH18.items():
         if _k == "extra_sources": _c["sources"] = list(_c["sources"]) + [x for x in _v if x not in _c["sources"]]
         else: _c[_k] = _v
     COPY[_p] = _c
+# 2026-11-10: numbered setup steps for 19 more native pairs, each from the vendor's setup guide (pairdata19)
+from pairdata19 import SETUP19, SETUP19_CHECKED
+for _p, _t in SETUP19.items():
+    _c = dict(COPY[_p])
+    assert not _c.get("setup"), _p   # only pairs that had no steps
+    _c.update(setup=_t["setup"], setup_src=_t["setup_src"], setup_checked=SETUP19_CHECKED)
+    _c["sources"] = list(_c["sources"]) + [x for x in _t.get("extra_sources", []) if x not in _c["sources"]]
+    COPY[_p] = _c
+STEPS_DATE = "2026-11-10"   # pages whose setup steps were written that day carry it as dateModified
+MODIFIED = {_p: STEPS_DATE for _p in list(SETUP19) + ["stripe-and-slack"]}
 FACTS16 = {("activecampaign", "Plus"): ("Yes", "Yes")}   # apidata: API and webhooks on every ActiveCampaign plan
 
 FACTS_EXTRA = {("salesforce", "Enterprise"): ("Yes", "Yes"), ("slack", "Free"): ("Yes", "Yes"),
@@ -385,6 +395,10 @@ def render_page(s, pair, d, summary, sync, facts, date_modified=None, copy=None,
         if copy.get("setup"):
             parts.append('<h3 class="mt-6 font-semibold text-slate-900">How to set it up</h3> <ol class="scm-steps"> '
                          + " ".join(f"<li>{esc(x)}</li>" for x in copy["setup"]) + " </ol> ")
+            if copy.get("setup_src"):
+                sl, su = copy["setup_src"]
+                parts.append(f'<p class="mt-2 text-xs text-slate-500">Steps follow <a href="{html.escape(su, quote=True)}" rel="noopener" class="underline hover:text-indigo-600">'
+                             f'{html.escape(sl)}&#39;s setup guide ↗</a>, read {copy["setup_checked"]}.</p> ')
         parts.append(f'{P_}<strong>Limitations:</strong> {esc(copy["limits"])}</p> ')
         if copy.get("note"): parts.append(f'{P_}<strong>Before you budget:</strong> {esc(copy["note"])}</p> ')
         if not early: parts.append(cta_html)
@@ -485,7 +499,7 @@ def main(mode):
             else: d["middleware"], d["middlewareLabel"] = (fix.get("mw") or d["middleware"] or 9), "Middleware"
             if p in MW7: d["middleware"], d["middlewareAnnual"] = MW7[p]
             summ, sync = fix["summary"], fix["sync"]
-        s2, v = render_page(s, p, d, summ, sync, facts, date_modified=ROUND_DATE, copy=cp, cta=(fix or {}).get('cta', True))
+        s2, v = render_page(s, p, d, summ, sync, facts, date_modified=MODIFIED.get(p, ROUND_DATE), copy=cp, cta=(fix or {}).get('cta', True))
         out[f] = s2
         if fix:
             home2 = render_home_card(home2, p, v, summ, limit)
