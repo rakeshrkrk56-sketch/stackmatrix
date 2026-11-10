@@ -11,7 +11,7 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 Calendly's Mailchimp integration adds invitees to a Mailchimp audience, with tags, when they book; it needs a paid Calendly plan, and any Mailchimp account works, including Free. Requires Mailchimp on the 'Free' plan and Calendly on the 'Standard' plan.
 
-Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements re-checked against the vendors' pages · Nov 8, 2026 (prices: Nov 3, 2026) | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
+Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements re-checked against the vendors' pages · Nov 8, 2026 (prices: Nov 3, 2026) · Setup steps: Nov 10, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
 
 ## How the Mailchimp + Calendly integration works
 
@@ -19,7 +19,7 @@ In Calendly, go to Integrations & apps, connect Mailchimp, then create a rule pe
 
 [Setup guide: Calendly help: Calendly + Mailchimp ↗](https://calendly.com/help/calendly-mailchimp)
 
-### How to set it up
+### How do you set up Mailchimp + Calendly?
 
 1. In Calendly, go to Automations → Integrations & apps.
 2. Find and select Mailchimp, then select Connect Mailchimp.
@@ -31,7 +31,7 @@ Steps follow [Calendly's setup guide ↗](https://calendly.com/help/calendly-mai
 
 **Limitations:** Data flows from Calendly to Mailchimp only. Invitees in GDPR regions are added as non-marketing contacts unless they opt in, and disconnecting Mailchimp deletes the rules you set up.
 
-Sources (checked Nov 8, 2026): [Calendly help: Calendly + Mailchimp ↗](https://calendly.com/help/calendly-mailchimp)
+Sources (checked Nov 8, 2026; setup guide read again for the steps on Nov 10, 2026): [Calendly help: Calendly + Mailchimp ↗](https://calendly.com/help/calendly-mailchimp)
 
 *Interactive cost calculator: open the web page to change team size, billing and add-ons.*
 

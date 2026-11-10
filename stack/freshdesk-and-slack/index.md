@@ -11,7 +11,7 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 Freshdesk lists its Slack integration on Growth and above; Slack's free plan is enough on the Slack side. Requires Freshdesk on the 'Growth' plan and Slack on the 'Free' plan.
 
-Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
+Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 · Setup steps: Nov 10, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
 
 ## How the Freshdesk + Slack integration works
 
@@ -19,7 +19,7 @@ Freshdesk's Slack app posts new-ticket and ticket-update notifications to the Sl
 
 [Setup guide: Freshdesk: The latest Slack app ↗](https://support.freshdesk.com/support/solutions/articles/50000001687-simplifying-collaboration-using-the-latest-slack-app)
 
-### How to set it up
+### How do you set up Freshdesk + Slack?
 
 1. A Freshdesk admin installs the app first. Freshdesk says the admin must be on a Freshdesk plan that provides API access.
 2. Log in to your Slack workspace and click Apps in the left pane to open the app directory.
@@ -32,7 +32,7 @@ Steps follow [Freshdesk's setup guide ↗](https://support.freshdesk.com/support
 
 **Limitations:** Freshdesk lists Slack integration on Growth and above, and the installing admin needs a plan with API access. You can't map multiple Slack channels to one Freshdesk group, and only Freshdesk agents can invite other Slack members to collaborate on a ticket.
 
-Sources (checked Nov 3, 2026): [Freshdesk: The latest Slack app ↗](https://support.freshdesk.com/support/solutions/articles/50000001687-simplifying-collaboration-using-the-latest-slack-app) · [Freshdesk: Overview of collaboration ↗](https://support.freshdesk.com/support/solutions/articles/50000006589-overview-of-collaboration)
+Sources (checked Nov 3, 2026; setup guide read again for the steps on Nov 10, 2026): [Freshdesk: The latest Slack app ↗](https://support.freshdesk.com/support/solutions/articles/50000001687-simplifying-collaboration-using-the-latest-slack-app) · [Freshdesk: Overview of collaboration ↗](https://support.freshdesk.com/support/solutions/articles/50000006589-overview-of-collaboration)
 
 *Interactive cost calculator: open the web page to change team size, billing and add-ons.*
 

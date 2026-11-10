@@ -11,9 +11,11 @@ API & webhooks
 
 Checked against Zendesk's developer and help-center documentation · Nov 3, 2026 · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
 
+## Which Zendesk plans include API access and webhooks?
+
 **Short answer:** Zendesk's API is on every Suite plan with a per-minute limit by plan, and webhooks are included from Suite Team up.
 
-Zendesk API & Webhook Access by Plan (2026)
+Which Zendesk plans include API access and webhooks?
 
 | Plan | Price | API access | API limit | Webhooks | Webhook automation action |
 | --- | --- | --- | --- | --- | --- |
@@ -33,11 +35,11 @@ Zendesk monthly price for 10 seats by plan. Green: API included; amber: paid add
 
 Image: [Zendesk API access by plan: Suite Team yes; Suite Growth yes; Suite Professional yes](https://stackcostmatrix.com/og/zendesk-api-access.jpg)
 
-## Two kinds of webhooks
+## What is the difference between developer webhooks and workflow webhooks?
 
 Vendors use "webhooks" for two different features. **Developer webhooks** let an app or a tool like Make or Zapier subscribe to events, and are usually available wherever the API is. A **webhook automation action** is a no-code step that sends data out from the tool's own automations, and is often limited to paid plans. The table lists them separately so you can see which one an integration actually needs.
 
-## Which Zendesk plan the integrations here need
+## Which Zendesk plan do the integrations here need?
 
 **Suite Team** (7): [ClickUp + Zendesk](https://stackcostmatrix.com/stack/clickup-and-zendesk/), [HubSpot + Zendesk](https://stackcostmatrix.com/stack/hubspot-and-zendesk/), [Monday.com + Zendesk](https://stackcostmatrix.com/stack/monday-and-zendesk/), [Salesforce + Zendesk](https://stackcostmatrix.com/stack/salesforce-and-zendesk/), [Slack + Zendesk](https://stackcostmatrix.com/stack/slack-and-zendesk/), [Zendesk + Notion](https://stackcostmatrix.com/stack/zendesk-and-notion/), [Zendesk + Stripe](https://stackcostmatrix.com/stack/zendesk-and-stripe/)
 

@@ -98,15 +98,20 @@ for _p, _t in PATCH18.items():
         else: _c[_k] = _v
     COPY[_p] = _c
 # 2026-11-10: numbered setup steps for 19 more native pairs, each from the vendor's setup guide (pairdata19)
-from pairdata19 import SETUP19, SETUP19_CHECKED
+from pairdata19 import SETUP19, SETUP19_CHECKED, RECHECK19, STEP_FIX19
 for _p, _t in SETUP19.items():
     _c = dict(COPY[_p])
     assert not _c.get("setup"), _p   # only pairs that had no steps
     _c.update(setup=_t["setup"], setup_src=_t["setup_src"], setup_checked=SETUP19_CHECKED)
     _c["sources"] = list(_c["sources"]) + [x for x in _t.get("extra_sources", []) if x not in _c["sources"]]
     COPY[_p] = _c
-STEPS_DATE = "2026-11-10"   # pages whose setup steps were written that day carry it as dateModified
-MODIFIED = {_p: STEPS_DATE for _p in list(SETUP19) + ["stripe-and-slack"]}
+for _p, _src in RECHECK19.items():   # older step lists, compared with the guide again on the same day
+    _c = dict(COPY[_p]); _steps = list(_c["setup"])
+    for _i, _x in STEP_FIX19.get(_p, {}).items(): _steps[_i] = _x
+    _c.update(setup=_steps, setup_src=_src, setup_checked=SETUP19_CHECKED)
+    COPY[_p] = _c
+STEPS_DATE = "2026-11-10"   # pages whose setup steps were written or re-read that day carry it as dateModified
+MODIFIED = {_p: STEPS_DATE for _p in list(SETUP19) + list(RECHECK19)}
 FACTS16 = {("activecampaign", "Plus"): ("Yes", "Yes")}   # apidata: API and webhooks on every ActiveCampaign plan
 
 FACTS_EXTRA = {("salesforce", "Enterprise"): ("Yes", "Yes"), ("slack", "Free"): ("Yes", "Yes"),
@@ -393,7 +398,7 @@ def render_page(s, pair, d, summary, sync, facts, date_modified=None, copy=None,
         early = setup_led(v, copy)   # searchers on these pages want to connect the tools: the button goes right under the answer
         if early: parts.append(cta_html)
         if copy.get("setup"):
-            parts.append('<h3 class="mt-6 font-semibold text-slate-900">How to set it up</h3> <ol class="scm-steps"> '
+            parts.append(f'<h3 class="mt-6 font-semibold text-slate-900">How do you set up {html.escape(A)} + {html.escape(B)}?</h3> <ol class="scm-steps"> '
                          + " ".join(f"<li>{esc(x)}</li>" for x in copy["setup"]) + " </ol> ")
             if copy.get("setup_src"):
                 sl, su = copy["setup_src"]
@@ -402,7 +407,10 @@ def render_page(s, pair, d, summary, sync, facts, date_modified=None, copy=None,
         parts.append(f'{P_}<strong>Limitations:</strong> {esc(copy["limits"])}</p> ')
         if copy.get("note"): parts.append(f'{P_}<strong>Before you budget:</strong> {esc(copy["note"])}</p> ')
         if not early: parts.append(cta_html)
-        parts.append(f'<p class="mt-3 text-xs text-slate-500">Sources (checked {copy.get("checked", "Nov 3, 2026")}): {src}</p> ')
+        chk = copy.get("checked", "Nov 3, 2026")
+        if copy.get("setup_checked") and copy["setup_checked"] != chk:   # one guide, two dates: say which is which
+            chk += f"; setup guide read again for the steps on {copy['setup_checked']}"
+        parts.append(f'<p class="mt-3 text-xs text-slate-500">Sources (checked {chk}): {src}</p> ')
         sec = (' <section class="mt-10 rounded-xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8" aria-label="How the integration works" id="how-it-works"> '
                + "".join(parts) + '</section>')
         s = re.sub(r' <section class="mt-10 rounded-xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8" aria-label="How the integration works"[^>]*>.*?</section>', "", s, flags=re.S)

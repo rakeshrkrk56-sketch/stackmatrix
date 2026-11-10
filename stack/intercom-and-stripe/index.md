@@ -11,7 +11,7 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 Billing data enriches chat profiles on base plans. Requires Intercom on the 'Essential' plan and Stripe on the 'Standard' plan for full 2-way sync.
 
-Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
+Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 · Setup steps: Nov 10, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
 
 ## How the Intercom + Stripe integration works
 
@@ -19,7 +19,7 @@ Install Stripe from the Intercom App Store and turn on sync. Intercom imports ea
 
 [Setup guide: Intercom help: Stripe app ↗](https://www.intercom.com/help/en/articles/1829591-stripe-app)
 
-### How to set it up
+### How do you set up Intercom + Stripe?
 
 1. Find Stripe in the Intercom App Store and click Install now. You need to be an admin in Stripe; a Stripe developer account can't connect third-party apps.
 2. Connect your Stripe account. To add another account later, go to App Store > Stripe > Settings and click Add new account.
@@ -30,7 +30,7 @@ Steps follow [Intercom's setup guide ↗](https://www.intercom.com/help/en/artic
 
 **Limitations:** Customers are matched by email address. Only live-mode Stripe data syncs, not test mode, and extra Stripe accounts sync attributes only, not the inbox app. You need to be a Stripe admin to connect it.
 
-Sources (checked Nov 8, 2026): [Intercom help: Stripe app ↗](https://www.intercom.com/help/en/articles/1829591-stripe-app)
+Sources (checked Nov 8, 2026; setup guide read again for the steps on Nov 10, 2026): [Intercom help: Stripe app ↗](https://www.intercom.com/help/en/articles/1829591-stripe-app)
 
 *Interactive cost calculator: open the web page to change team size, billing and add-ons.*
 

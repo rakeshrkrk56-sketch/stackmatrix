@@ -11,13 +11,13 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 Big trap: Salesforce's current Slack apps need Enterprise edition or higher ($165/user/mo); the older Slack-built app that worked with lower editions no longer accepts new installs. Requires Salesforce Sales Cloud on the 'Enterprise' plan and Slack on the 'Pro' plan.
 
-Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements checked · Nov 3, 2026 (Salesforce edition unconfirmed) · Prices checked · Nov 3, 2026 (Salesforce prices: Oct 17, 2026) | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
+Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements checked · Nov 3, 2026 (Salesforce edition unconfirmed) · Prices checked · Nov 3, 2026 (Salesforce prices: Oct 17, 2026) · Setup steps: Nov 10, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
 
 ## How the Salesforce Sales Cloud + Slack integration works
 
 Salesforce builds its own suite of Slack integrations that bring Salesforce records and notifications into Slack. The original Slack-built Salesforce app is no longer supported.
 
-### How to set it up
+### How do you set up Salesforce Sales Cloud + Slack?
 
 1. A Salesforce System Administrator first installs and configures the Slack app in Salesforce.
 2. Open the Salesforce page in the Slack Marketplace and click Add to Slack. On the Salesforce app landing page, click Add to Slack again.
@@ -31,7 +31,7 @@ Steps follow [Slack's setup guide ↗](https://slack.com/help/articles/227838227
 
 [Setup guide: Slack: Salesforce apps for Slack ↗](https://slack.com/help/articles/227838227-Salesforce-apps-for-Slack)
 
-Sources (checked Nov 3, 2026): [Slack: Salesforce apps for Slack ↗](https://slack.com/help/articles/227838227-Salesforce-apps-for-Slack) · [Salesforce Help: Enable Sales Cloud for Slack ↗](https://help.salesforce.com/s/articleView?id=slack.slack_apps_sales_enable_the_sales_cloud_for_slack_app.htm&language=en_US&type=5)
+Sources (checked Nov 3, 2026; setup guide read again for the steps on Nov 10, 2026): [Slack: Salesforce apps for Slack ↗](https://slack.com/help/articles/227838227-Salesforce-apps-for-Slack) · [Salesforce Help: Enable Sales Cloud for Slack ↗](https://help.salesforce.com/s/articleView?id=slack.slack_apps_sales_enable_the_sales_cloud_for_slack_app.htm&language=en_US&type=5)
 
 *Interactive cost calculator: open the web page to change team size, billing and add-ons.*
 

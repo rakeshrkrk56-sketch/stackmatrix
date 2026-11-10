@@ -11,9 +11,11 @@ API & webhooks
 
 Checked against Pipedrive's developer and help-center documentation · Nov 3, 2026 · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
 
+## Which Pipedrive plans include API access and webhooks?
+
 **Short answer:** Pipedrive's API and regular webhooks are available on every plan, including Lite; webhooks inside automations need Growth or higher. Rate limits rise with each plan.
 
-Pipedrive API & Webhook Access by Plan (2026)
+Which Pipedrive plans include API access and webhooks?
 
 | Plan | Price | API access | API limit | Webhooks | Webhook automation action |
 | --- | --- | --- | --- | --- | --- |
@@ -34,11 +36,11 @@ Pipedrive monthly price for 10 seats by plan. Green: API included; amber: paid a
 
 Image: [Pipedrive API access by plan: Lite yes; Growth yes; Premium yes; Ultimate yes](https://stackcostmatrix.com/og/pipedrive-api-access.jpg)
 
-## Two kinds of webhooks
+## What is the difference between developer webhooks and workflow webhooks?
 
 Vendors use "webhooks" for two different features. **Developer webhooks** let an app or a tool like Make or Zapier subscribe to events, and are usually available wherever the API is. A **webhook automation action** is a no-code step that sends data out from the tool's own automations, and is often limited to paid plans. The table lists them separately so you can see which one an integration actually needs.
 
-## Which Pipedrive plan the integrations here need
+## Which Pipedrive plan do the integrations here need?
 
 **Lite** (6): [HubSpot + Pipedrive](https://stackcostmatrix.com/stack/hubspot-and-pipedrive/), [Pipedrive + Calendly](https://stackcostmatrix.com/stack/pipedrive-and-calendly/), [Pipedrive + Mailchimp](https://stackcostmatrix.com/stack/pipedrive-and-mailchimp/), [Pipedrive + QuickBooks](https://stackcostmatrix.com/stack/pipedrive-and-quickbooks/), [Pipedrive + Salesforce](https://stackcostmatrix.com/stack/pipedrive-and-salesforce/), [Pipedrive + Xero](https://stackcostmatrix.com/stack/pipedrive-and-xero/)  
 **Growth** (2): [ActiveCampaign + Pipedrive](https://stackcostmatrix.com/stack/activecampaign-and-pipedrive/), [Pipedrive + Slack](https://stackcostmatrix.com/stack/pipedrive-and-slack/)

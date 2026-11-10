@@ -11,7 +11,7 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 The Slack for Zendesk Support integration works on every Zendesk Suite plan from Team up and with Slack's free plan. Requires Slack on the 'Free' plan and Zendesk on the 'Suite Team' plan.
 
-Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
+Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 · Setup steps: Nov 10, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
 
 ## How the Slack + Zendesk integration works
 
@@ -21,16 +21,18 @@ The Slack for Zendesk Support integration connects one Zendesk account to one Sl
 
 [Setup guide: Zendesk: Slack for Zendesk Support ↗](https://support.zendesk.com/hc/en-us/articles/4408833756698-Understanding-and-installing-the-Slack-for-Zendesk-Support-integration)
 
-### How to set it up
+### How do you set up Slack + Zendesk?
 
 1. Make sure you have admin rights in Zendesk and permission to install apps in the Slack workspace.
 2. In Zendesk Admin Center, click Apps and integrations, then Integrations > Integrations.
 3. Click the options menu next to Slack, click View, then Connect workspace.
 4. Pick the Slack workspace, click Allow, then click Set up in Zendesk Admin Center and use triggers to choose which ticket events notify which channels.
 
+Steps follow [Zendesk's setup guide ↗](https://support.zendesk.com/hc/en-us/articles/4408833756698-Understanding-and-installing-the-Slack-for-Zendesk-Support-integration), read Nov 10, 2026.
+
 **Limitations:** It needs a Zendesk Suite plan from Team up. Organization-shared channels on Slack Enterprise Grid aren't supported, and each additional Slack workspace needs its own installation.
 
-Sources (checked Nov 3, 2026): [Zendesk: Slack for Zendesk Support ↗](https://support.zendesk.com/hc/en-us/articles/4408833756698-Understanding-and-installing-the-Slack-for-Zendesk-Support-integration) · [Slack: Free plan limits ↗](https://slack.com/help/articles/27204752526611-Feature-limitations-on-the-free-version-of-Slack)
+Sources (checked Nov 3, 2026; setup guide read again for the steps on Nov 10, 2026): [Zendesk: Slack for Zendesk Support ↗](https://support.zendesk.com/hc/en-us/articles/4408833756698-Understanding-and-installing-the-Slack-for-Zendesk-Support-integration) · [Slack: Free plan limits ↗](https://slack.com/help/articles/27204752526611-Feature-limitations-on-the-free-version-of-Slack)
 
 *Interactive cost calculator: open the web page to change team size, billing and add-ons.*
 

@@ -42,19 +42,19 @@ Monthly cost for 10 seats, both tools plus any connector. Indigo bars are native
 
 Image: [Slack integration costs summary: 14 integrations priced, from $0 to $1,737.50 a month for 10 seats](https://stackcostmatrix.com/og/slack-integrations-cost.jpg)
 
-## Where Slack forces an upgrade
+## Which Slack integrations force a plan upgrade?
 
 1 of the 14 integrations needs a more expensive Slack plan than Free, Slack's cheapest plan with API access. The extra Slack cost at 10 seats: Salesforce + Slack needs Pro (+$87.50/mo). That gap is the hidden cost: you pay it every month even if you only wanted the integration. Each pair's "Hidden Cost Trap" box shows the full breakdown.
 
-## Which Slack integrations need middleware
+## Which Slack integrations need Make or Zapier?
 
 1 of the 14 has no native connector and runs through a third-party service: QuickBooks + Slack (Zapier Professional, $29.99/mo). Connector fees are the monthly-billing price; the calculators use the lower annual-billing price (Make Core $9, Zapier Professional $19.99, Data Mapper $12.75) when you switch on annual billing. Real usage can push Make or Zapier onto a bigger plan, so check your expected volume.
 
-## Slack plans, API access and webhooks
+## Which Slack plans include API access and webhooks?
 
-API and webhook facts are listed for the plans that at least one integration below requires, with the date each was checked against Slack's documentation. Prices are monthly-billing list prices, re-checked on the vendor's pricing page on Nov 3, 2026; the annual-billing price is shown where the vendor publishes one. [Every Slack plan's API access, limits and webhooks →](https://stackcostmatrix.com/slack-api-access/)
+On the plans these integrations need: Free (API access: yes; webhooks: yes); Pro (API access: yes; webhooks: yes). API and webhook facts are listed for the plans that at least one integration below requires, with the date each was checked against Slack's documentation. Prices are monthly-billing list prices, re-checked on the vendor's pricing page on Nov 3, 2026; the annual-billing price is shown where the vendor publishes one. [Every Slack plan's API access, limits and webhooks →](https://stackcostmatrix.com/slack-api-access/)
 
-Slack plans, API access and webhooks
+Which Slack plans include API access and webhooks?
 
 | Plan | Price | API access | Webhooks | Integrations that need it |
 | --- | --- | --- | --- | --- |

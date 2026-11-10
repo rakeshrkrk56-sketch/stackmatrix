@@ -11,7 +11,7 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 The free built-in integration only pushes name and email from non-HubSpot forms into Mailchimp; choosing two-way sync needs HubSpot Data Hub Starter. Requires HubSpot on the 'Free' plan and Mailchimp on the 'Standard' plan.
 
-Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements checked · Nov 3, 2026 (Mailchimp plan unconfirmed) · Prices checked · Nov 3, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
+Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements checked · Nov 3, 2026 (Mailchimp plan unconfirmed) · Prices checked · Nov 3, 2026 · Setup steps: Nov 10, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
 
 ## How the HubSpot + Mailchimp integration works
 
@@ -21,7 +21,7 @@ HubSpot's built-in Mailchimp integration, available on every HubSpot plan, adds 
 
 [Setup guide: HubSpot: Use HubSpot's integration with Mailchimp ↗](https://knowledge.hubspot.com/forms/connect-non-hubspot-forms-to-mailchimp)
 
-### How to set it up
+### How do you set up HubSpot + Mailchimp?
 
 1. Make sure you have App Marketplace access in HubSpot.
 2. In HubSpot, click the Marketplace icon, open HubSpot Marketplace and search for Mailchimp.
@@ -29,9 +29,11 @@ HubSpot's built-in Mailchimp integration, available on every HubSpot plan, adds 
 4. To sync a form, go to Marketing > Forms, hover over a non-HubSpot form, click Actions > Edit Mailchimp lists and choose a list.
 5. To log email activity, go to Settings > Integrations > Email service provider and turn the Mailchimp sync on; HubSpot then syncs events every 15 minutes.
 
+Steps follow [HubSpot's setup guide ↗](https://knowledge.hubspot.com/forms/connect-non-hubspot-forms-to-mailchimp), read Nov 10, 2026.
+
 **Limitations:** The built-in integration only sends contacts from HubSpot to Mailchimp, not the other way, and only their first name, last name and email address. Choosing one- or two-way sync in the Data Sync app needs Data Hub Starter.
 
-Sources (checked Nov 3, 2026): [HubSpot: Use HubSpot's integration with Mailchimp ↗](https://knowledge.hubspot.com/forms/connect-non-hubspot-forms-to-mailchimp) · [HubSpot Marketplace: Mailchimp Data Sync ↗](https://ecosystem.hubspot.com/marketplace/listing/mailchimp-data-sync)
+Sources (checked Nov 3, 2026; setup guide read again for the steps on Nov 10, 2026): [HubSpot: Use HubSpot's integration with Mailchimp ↗](https://knowledge.hubspot.com/forms/connect-non-hubspot-forms-to-mailchimp) · [HubSpot Marketplace: Mailchimp Data Sync ↗](https://ecosystem.hubspot.com/marketplace/listing/mailchimp-data-sync)
 
 *Interactive cost calculator: open the web page to change team size, billing and add-ons.*
 

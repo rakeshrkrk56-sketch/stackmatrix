@@ -11,7 +11,7 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 Pipedrive's own Mailchimp sync app is free and keeps contacts in step both ways: Pipedrive filters push contacts into a Mailchimp audience, and Mailchimp segments or tags bring contacts into Pipedrive. Neither vendor names a Mailchimp plan for it. Requires Pipedrive on the 'Lite' plan and Mailchimp on the 'Free' plan.
 
-Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Pipedrive prices: from an indexed copy of its pricing page) | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
+Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Pipedrive prices: from an indexed copy of its pricing page) · Setup steps: Nov 10, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
 
 ## How the Pipedrive + Mailchimp integration works
 
@@ -21,15 +21,17 @@ Pipedrive's Mailchimp sync works through flows. Each flow has its own trigger an
 
 [Setup guide: Pipedrive: Mailchimp sync ↗](https://support.pipedrive.com/en/article/pipedrive-integration-mailchimp-sync)
 
-### How to set it up
+### How do you set up Pipedrive + Mailchimp?
 
 1. In Pipedrive, go to Tools and apps > Integrations > Mailchimp sync and click Get started.
 2. Click Connect Mailchimp, log in and click Allow.
 3. Create a sync flow: pick a trigger, map the fields, click Save and turn the flow on.
 
+Steps follow [Pipedrive's setup guide ↗](https://support.pipedrive.com/en/article/pipedrive-integration-mailchimp-sync), read Nov 10, 2026.
+
 **Limitations:** Flows run on a schedule, so new matches can take a while to appear; the first sync starts within ten minutes of turning a flow on. If a contact stops matching a Mailchimp segment or tag, it stays in Pipedrive but stops updating. Each field can be mapped only once per flow, and the number of Mailchimp audiences you can create depends on your Mailchimp plan.
 
-Sources (checked Nov 3, 2026): [Pipedrive: Mailchimp sync ↗](https://support.pipedrive.com/en/article/pipedrive-integration-mailchimp-sync)
+Sources (checked Nov 3, 2026; setup guide read again for the steps on Nov 10, 2026): [Pipedrive: Mailchimp sync ↗](https://support.pipedrive.com/en/article/pipedrive-integration-mailchimp-sync)
 
 *Interactive cost calculator: open the web page to change team size, billing and add-ons.*
 

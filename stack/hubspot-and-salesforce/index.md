@@ -11,13 +11,13 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 Big trap: HubSpot's native Salesforce connector needs a HubSpot Professional or Enterprise subscription — the free CRM can't use it. The cheapest route is Smart CRM Professional at $50 per seat a month ($45 on annual billing). Requires HubSpot on the 'Professional' plan and Salesforce Sales Cloud on the 'Professional' plan for full 2-way sync.
 
-Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (HubSpot prices: Nov 5, 2026; Salesforce prices: Oct 17, 2026) | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
+Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (HubSpot prices: Nov 5, 2026; Salesforce prices: Oct 17, 2026) · Setup steps: Nov 10, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
 
 ## How the HubSpot + Salesforce Sales Cloud integration works
 
 HubSpot's own Salesforce connector syncs leads, contacts, accounts, opportunities and custom objects between the two CRMs, and can embed HubSpot contact, company and deal insights inside Salesforce. It suits teams that run marketing in HubSpot and sales in Salesforce.
 
-### How to set it up
+### How do you set up HubSpot + Salesforce Sales Cloud?
 
 1. Check the Salesforce user who will connect it: HubSpot asks for a Salesforce system administrator with the API Enabled, View Setup and Configuration and Download AppExchange Packages permissions, and Modify All on the objects you want to sync.
 2. In HubSpot, click the Marketplace icon in the top navigation bar and select HubSpot Marketplace.
@@ -34,7 +34,7 @@ Steps follow [HubSpot's setup guide ↗](https://knowledge.hubspot.com/salesforc
 
 [Setup guide: HubSpot: Connect HubSpot and Salesforce ↗](https://knowledge.hubspot.com/salesforce/install-the-hubspot-salesforce-integration)
 
-Sources (checked Nov 3, 2026): [HubSpot: Connect HubSpot and Salesforce ↗](https://knowledge.hubspot.com/salesforce/install-the-hubspot-salesforce-integration) · [HubSpot Marketplace: Salesforce ↗](https://ecosystem.hubspot.com/marketplace/listing/salesforce) · [Salesforce developers: API access in Group and Professional Editions ↗](https://developer.salesforce.com/docs/atlas.en-us.packagingGuide.meta/packagingGuide/dev_packages_api_access.htm) · [HubSpot pricing ↗](https://www.hubspot.com/pricing)
+Sources (checked Nov 3, 2026; setup guide read again for the steps on Nov 10, 2026): [HubSpot: Connect HubSpot and Salesforce ↗](https://knowledge.hubspot.com/salesforce/install-the-hubspot-salesforce-integration) · [HubSpot Marketplace: Salesforce ↗](https://ecosystem.hubspot.com/marketplace/listing/salesforce) · [Salesforce developers: API access in Group and Professional Editions ↗](https://developer.salesforce.com/docs/atlas.en-us.packagingGuide.meta/packagingGuide/dev_packages_api_access.htm) · [HubSpot pricing ↗](https://www.hubspot.com/pricing)
 
 *Interactive cost calculator: open the web page to change team size, billing and add-ons.*
 

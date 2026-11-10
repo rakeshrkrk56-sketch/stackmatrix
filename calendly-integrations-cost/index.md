@@ -35,19 +35,19 @@ Monthly cost for 10 seats, both tools plus any connector. Indigo bars are native
 
 Image: [Calendly integration costs summary: 7 integrations priced, from $0 to $270.59 a month for 10 seats](https://stackcostmatrix.com/og/calendly-integrations-cost.jpg)
 
-## Where Calendly forces an upgrade
+## Which Calendly integrations force a plan upgrade?
 
 6 of the 7 integrations need a more expensive Calendly plan than Free, Calendly's cheapest plan with API access. The extra Calendly cost at 10 seats: HubSpot + Calendly needs Standard (+$120.00/mo); Mailchimp + Calendly needs Standard (+$120.00/mo); ActiveCampaign + Calendly needs Standard (+$120.00/mo); Xero + Calendly needs Standard (+$120.00/mo); Notion + Calendly needs Standard (+$120.00/mo); Pipedrive + Calendly needs Standard (+$120.00/mo). That gap is the hidden cost: you pay it every month even if you only wanted the integration. Each pair's "Hidden Cost Trap" box shows the full breakdown.
 
-## Which Calendly integrations need middleware
+## Which Calendly integrations need Make or Zapier?
 
 3 of the 7 have no native connector and run through a third-party service: Xero + Calendly (Zapier Professional, $29.99/mo); Notion + Calendly (Make Core, $10.59/mo); Pipedrive + Calendly (Make Core, $10.59/mo). Connector fees are the monthly-billing price; the calculators use the lower annual-billing price (Make Core $9, Zapier Professional $19.99, Data Mapper $12.75) when you switch on annual billing. Real usage can push Make or Zapier onto a bigger plan, so check your expected volume.
 
-## Calendly plans, API access and webhooks
+## Which Calendly plans include API access and webhooks?
 
-API and webhook facts are listed for the plans that at least one integration below requires, with the date each was checked against Calendly's documentation. Prices are monthly-billing list prices, re-checked on the vendor's pricing page on Nov 3, 2026; the annual-billing price is shown where the vendor publishes one. [Every Calendly plan's API access, limits and webhooks →](https://stackcostmatrix.com/calendly-api-access/)
+On the plans these integrations need: Standard (API access: yes; webhooks: yes); Free (API access: yes; webhooks: no). API and webhook facts are listed for the plans that at least one integration below requires, with the date each was checked against Calendly's documentation. Prices are monthly-billing list prices, re-checked on the vendor's pricing page on Nov 3, 2026; the annual-billing price is shown where the vendor publishes one. [Every Calendly plan's API access, limits and webhooks →](https://stackcostmatrix.com/calendly-api-access/)
 
-Calendly plans, API access and webhooks
+Which Calendly plans include API access and webhooks?
 
 | Plan | Price | API access | Webhooks | Integrations that need it |
 | --- | --- | --- | --- | --- |

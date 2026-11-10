@@ -41,15 +41,15 @@ Image: [QuickBooks integration costs summary: 9 integrations priced, from $38 to
 
 Not for any of the 9 integrations here: each one works on QuickBooks's cheapest plan with API access, so the integration itself adds no QuickBooks upgrade cost. Any extra cost comes from the other tool's plan or from a connector fee, shown in the table above.
 
-## Which QuickBooks integrations need middleware
+## Which QuickBooks integrations need Make or Zapier?
 
 6 of the 9 have no native connector and run through a third-party service: Stripe + QuickBooks (Make Core, $10.59/mo); QuickBooks + Slack (Zapier Professional, $29.99/mo); Asana + QuickBooks (Make Core, $10.59/mo); Monday.com + QuickBooks (Make Core, $10.59/mo); Airtable + QuickBooks (Make Core, $10.59/mo); Salesforce + QuickBooks (Make Core, $10.59/mo). Connector fees are the monthly-billing price; the calculators use the lower annual-billing price (Make Core $9, Zapier Professional $19.99, Data Mapper $12.75) when you switch on annual billing. Real usage can push Make or Zapier onto a bigger plan, so check your expected volume.
 
-## QuickBooks plans, API access and webhooks
+## Which QuickBooks plans include API access and webhooks?
 
-API and webhook facts are listed for the plans that at least one integration below requires, with the date each was checked against QuickBooks's documentation. QuickBooks Online prices are flat monthly list prices per company, re-checked on Intuit's pricing page on Nov 4, 2026. [Every QuickBooks plan's API access, limits and webhooks →](https://stackcostmatrix.com/quickbooks-api-access/)
+On the plans these integrations need: Simple Start (API access: yes; webhooks: yes). API and webhook facts are listed for the plans that at least one integration below requires, with the date each was checked against QuickBooks's documentation. QuickBooks Online prices are flat monthly list prices per company, re-checked on Intuit's pricing page on Nov 4, 2026. [Every QuickBooks plan's API access, limits and webhooks →](https://stackcostmatrix.com/quickbooks-api-access/)
 
-QuickBooks plans, API access and webhooks
+Which QuickBooks plans include API access and webhooks?
 
 | Plan | Price | API access | Webhooks | Integrations that need it |
 | --- | --- | --- | --- | --- |

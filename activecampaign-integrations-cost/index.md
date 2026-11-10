@@ -32,19 +32,19 @@ Monthly cost for 10 seats, both tools plus any connector. Indigo bars are native
 
 Image: [ActiveCampaign integration costs summary: 4 integrations priced, from $49 to $405 a month for 10 seats](https://stackcostmatrix.com/og/activecampaign-integrations-cost.jpg)
 
-## Where ActiveCampaign forces an upgrade
+## Which ActiveCampaign integrations force a plan upgrade?
 
 1 of the 4 integrations needs a more expensive ActiveCampaign plan than Starter, ActiveCampaign's cheapest plan with API access. The extra ActiveCampaign cost at 10 seats: ActiveCampaign + Stripe needs Plus (+$34.00/mo). That gap is the hidden cost: you pay it every month even if you only wanted the integration. Each pair's "Hidden Cost Trap" box shows the full breakdown.
 
-## Which ActiveCampaign integrations need middleware
+## Which ActiveCampaign integrations need Make or Zapier?
 
 1 of the 4 has no native connector and runs through a third-party service: Xero + ActiveCampaign (Make Core, $10.59/mo). Connector fees are the monthly-billing price; the calculators use the lower annual-billing price (Make Core $9, Zapier Professional $19.99, Data Mapper $12.75) when you switch on annual billing. Real usage can push Make or Zapier onto a bigger plan, so check your expected volume.
 
-## ActiveCampaign plans, API access and webhooks
+## Which ActiveCampaign plans include API access and webhooks?
 
-API and webhook facts are listed for the plans that at least one integration below requires, with the date each was checked against ActiveCampaign's documentation. ActiveCampaign publishes annual-billing rates only, so these are per-month prices billed yearly. Prices re-checked Nov 3, 2026. [Every ActiveCampaign plan's API access, limits and webhooks →](https://stackcostmatrix.com/activecampaign-api-access/)
+On the plans these integrations need: Starter (API access: yes; webhooks: yes); Plus (API access: yes; webhooks: yes). API and webhook facts are listed for the plans that at least one integration below requires, with the date each was checked against ActiveCampaign's documentation. ActiveCampaign publishes annual-billing rates only, so these are per-month prices billed yearly. Prices re-checked Nov 3, 2026. [Every ActiveCampaign plan's API access, limits and webhooks →](https://stackcostmatrix.com/activecampaign-api-access/)
 
-ActiveCampaign plans, API access and webhooks
+Which ActiveCampaign plans include API access and webhooks?
 
 | Plan | Price | API access | Webhooks | Integrations that need it |
 | --- | --- | --- | --- | --- |

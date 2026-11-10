@@ -11,9 +11,11 @@ API & webhooks
 
 Checked against Asana's developer and help-center documentation · Nov 3, 2026 · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
 
+## Which Asana plans include API access and webhooks?
+
 **Short answer:** Asana's developer documentation sets no plan requirement for API access, personal access tokens or API webhooks, so they aren't tied to Advanced.
 
-Asana API & Webhook Access by Plan (2026)
+Which Asana plans include API access and webhooks?
 
 | Plan | Price | API access | API limit | Webhooks | Webhook automation action |
 | --- | --- | --- | --- | --- | --- |
@@ -32,11 +34,11 @@ Asana monthly price for 10 seats by plan. Green: API included; amber: paid add-o
 
 Image: [Asana API access by plan: Starter yes; Advanced yes](https://stackcostmatrix.com/og/asana-api-access.jpg)
 
-## Two kinds of webhooks
+## What is the difference between developer webhooks and workflow webhooks?
 
 Vendors use "webhooks" for two different features. **Developer webhooks** let an app or a tool like Make or Zapier subscribe to events, and are usually available wherever the API is. A **webhook automation action** is a no-code step that sends data out from the tool's own automations, and is often limited to paid plans. The table lists them separately so you can see which one an integration actually needs.
 
-## Which Asana plan the integrations here need
+## Which Asana plan do the integrations here need?
 
 **Starter** (4): [Asana + Mailchimp](https://stackcostmatrix.com/stack/asana-and-mailchimp/), [Asana + QuickBooks](https://stackcostmatrix.com/stack/asana-and-quickbooks/), [Asana + Slack](https://stackcostmatrix.com/stack/asana-and-slack/), [HubSpot + Asana](https://stackcostmatrix.com/stack/hubspot-and-asana/)
 

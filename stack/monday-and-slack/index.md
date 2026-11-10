@@ -21,7 +21,7 @@ Board events go out to the Slack channels you choose as they happen, and from Sl
 
 [Setup guide: monday.com: Slack integration ↗](https://monday.com/integrations/slack)
 
-### How to set it up
+### How do you set up Monday.com + Slack?
 
 1. Open monday.com's Slack integration page and click Add to Slack.
 2. Authorize monday.com in your Slack workspace.

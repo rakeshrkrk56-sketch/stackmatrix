@@ -11,7 +11,7 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 Intercom's HubSpot app works on Intercom Essential and any HubSpot plan, but it only syncs one way, from Intercom into HubSpot. Requires Intercom on the 'Essential' plan and HubSpot on the 'Free' plan.
 
-Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
+Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 · Setup steps: Nov 10, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
 
 ## How the Intercom + HubSpot integration works
 
@@ -21,16 +21,18 @@ Intercom's HubSpot app sends leads captured in Intercom to HubSpot as contacts a
 
 [Setup guide: Intercom: HubSpot app ↗](https://www.intercom.com/help/en/articles/2128216-hubspot-app)
 
-### How to set it up
+### How do you set up Intercom + HubSpot?
 
 1. Make sure you have admin access in HubSpot.
 2. In Intercom, open the App Store, find HubSpot and click Install now.
 3. Connect your HubSpot account when prompted.
 4. In App Store > HubSpot > Settings, choose how leads and their conversations are sent to HubSpot.
 
+Steps follow [Intercom's setup guide ↗](https://www.intercom.com/help/en/articles/2128216-hubspot-app), read Nov 10, 2026.
+
 **Limitations:** It only sends data one way, from Intercom to HubSpot. Customer replies sync in real time but teammate replies sync only once the conversation is closed, and company attributes other than the company name aren't sent. For HubSpot data in Intercom you need HubSpot's separate Data Sync app.
 
-Sources (checked Nov 3, 2026): [Intercom: HubSpot app ↗](https://www.intercom.com/help/en/articles/2128216-hubspot-app) · [HubSpot Marketplace: Intercom ↗](https://ecosystem.hubspot.com/marketplace/listing/intercom)
+Sources (checked Nov 3, 2026; setup guide read again for the steps on Nov 10, 2026): [Intercom: HubSpot app ↗](https://www.intercom.com/help/en/articles/2128216-hubspot-app) · [HubSpot Marketplace: Intercom ↗](https://ecosystem.hubspot.com/marketplace/listing/intercom)
 
 *Interactive cost calculator: open the web page to change team size, billing and add-ons.*
 

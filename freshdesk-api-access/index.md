@@ -11,9 +11,11 @@ API & webhooks
 
 Checked against Freshdesk's developer and help-center documentation · Nov 3, 2026 · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
 
+## Which Freshdesk plans include API access and webhooks?
+
 **Short answer:** Freshdesk's API isn't available on the Free plan; it starts on Growth, which is also the first plan with the "Trigger Webhook" automation action.
 
-Freshdesk API & Webhook Access by Plan (2026)
+Which Freshdesk plans include API access and webhooks?
 
 | Plan | Price | API access | API limit | Webhooks | Webhook automation action |
 | --- | --- | --- | --- | --- | --- |
@@ -33,11 +35,11 @@ Freshdesk monthly price for 10 seats by plan. Green: API included; amber: paid a
 
 Image: [Freshdesk API access by plan: Growth yes; Pro yes; Enterprise yes](https://stackcostmatrix.com/og/freshdesk-api-access.jpg)
 
-## Two kinds of webhooks
+## What is the difference between developer webhooks and workflow webhooks?
 
 Vendors use "webhooks" for two different features. **Developer webhooks** let an app or a tool like Make or Zapier subscribe to events, and are usually available wherever the API is. A **webhook automation action** is a no-code step that sends data out from the tool's own automations, and is often limited to paid plans. The table lists them separately so you can see which one an integration actually needs.
 
-## Which Freshdesk plan the integrations here need
+## Which Freshdesk plan do the integrations here need?
 
 **Growth** (2): [Freshdesk + HubSpot](https://stackcostmatrix.com/stack/freshdesk-and-hubspot/), [Freshdesk + Slack](https://stackcostmatrix.com/stack/freshdesk-and-slack/)
 

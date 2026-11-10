@@ -11,7 +11,7 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 The Calendly app for Slack is available on all Calendly plans, including Free, and works with Slack's free plan. Requires Slack on the 'Free' plan and Calendly on the 'Free' plan.
 
-Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
+Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 · Setup steps: Nov 10, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
 
 ## How the Slack + Calendly integration works
 
@@ -19,7 +19,7 @@ Install the Calendly app from the Slack App Directory and connect your Calendly 
 
 [Setup guide: Calendly help: Calendly + Slack ↗](https://calendly.com/help/calendly-slack)
 
-### How to set it up
+### How do you set up Slack + Calendly?
 
 1. Sign in to Slack and open the Slack app directory.
 2. Find Calendly, select Add to Slack and then Allow.
@@ -31,7 +31,7 @@ Steps follow [Calendly's setup guide ↗](https://calendly.com/help/calendly-sla
 
 **Limitations:** Each person connects their own Calendly account after a workspace admin installs the app, and your company can block app installation. Notifications arrive in the Calendly app's Messages tab, not in a channel.
 
-Sources (checked Nov 8, 2026): [Calendly help: Calendly + Slack ↗](https://calendly.com/help/calendly-slack)
+Sources (checked Nov 8, 2026; setup guide read again for the steps on Nov 10, 2026): [Calendly help: Calendly + Slack ↗](https://calendly.com/help/calendly-slack)
 
 *Interactive cost calculator: open the web page to change team size, billing and add-ons.*
 

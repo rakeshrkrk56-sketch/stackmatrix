@@ -36,15 +36,15 @@ Image: [Xero integration costs summary: 4 integrations priced, from $27 to $177.
 
 Not for any of the 4 integrations here: each one works on Xero's cheapest plan with API access, so the integration itself adds no Xero upgrade cost. Any extra cost comes from the other tool's plan or from a connector fee, shown in the table above.
 
-## Which Xero integrations need middleware
+## Which Xero integrations need Make or Zapier?
 
 3 of the 4 have no native connector and run through a third-party service: Xero + ActiveCampaign (Make Core, $10.59/mo); Xero + Calendly (Zapier Professional, $29.99/mo); Pipedrive + Xero (Make Core, $10.59/mo). Connector fees are the monthly-billing price; the calculators use the lower annual-billing price (Make Core $9, Zapier Professional $19.99, Data Mapper $12.75) when you switch on annual billing. Real usage can push Make or Zapier onto a bigger plan, so check your expected volume.
 
-## Xero plans, API access and webhooks
+## Which Xero plans include API access and webhooks?
 
-API and webhook facts are listed for the plans that at least one integration below requires, with the date each was checked against Xero's documentation. Xero prices are flat monthly prices per organisation, re-checked Nov 3, 2026. [Every Xero plan's API access, limits and webhooks →](https://stackcostmatrix.com/xero-api-access/)
+On the plans these integrations need: Early (API access: yes; webhooks: yes). API and webhook facts are listed for the plans that at least one integration below requires, with the date each was checked against Xero's documentation. Xero prices are flat monthly prices per organisation, re-checked Nov 3, 2026. [Every Xero plan's API access, limits and webhooks →](https://stackcostmatrix.com/xero-api-access/)
 
-Xero plans, API access and webhooks
+Which Xero plans include API access and webhooks?
 
 | Plan | Price | API access | Webhooks | Integrations that need it |
 | --- | --- | --- | --- | --- |

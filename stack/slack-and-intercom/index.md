@@ -11,7 +11,7 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 Intercom's native Slack integration is on every Intercom plan and works with Slack's free plan, but automatic Slack alerts for new conversations need Intercom Advanced. Requires Slack on the 'Free' plan and Intercom on the 'Essential' plan.
 
-Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
+Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 · Setup steps: Nov 10, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
 
 ## How the Slack + Intercom integration works
 
@@ -19,7 +19,7 @@ Intercom's native Slack integration lets you connect Slack as a channel in Inter
 
 [Setup guide: Intercom: Connect your Slack channel ↗](https://www.intercom.com/help/en/articles/11534476-connect-your-slack-channel)
 
-### How to set it up
+### How do you set up Slack + Intercom?
 
 1. In Intercom, go to Settings > Channels > Slack.
 2. Authenticate your Slack workspace. The app can't be installed in the primary workspace of a Slack Enterprise Grid account, only in the secondary workspaces.
@@ -30,7 +30,7 @@ Steps follow [Intercom's setup guide ↗](https://www.intercom.com/help/en/artic
 
 **Limitations:** Automatic Slack notifications for new conversations rely on Workflows, which are only on Intercom's Advanced and Expert plans, not Essential. Slack's free plan allows only 10 apps, and the app can't be installed in the primary workspace of a Slack Enterprise Grid account.
 
-Sources (checked Nov 3, 2026): [Intercom: Connect your Slack channel ↗](https://www.intercom.com/help/en/articles/11534476-connect-your-slack-channel) · [Slack: Free plan limits ↗](https://slack.com/help/articles/27204752526611-Feature-limitations-on-the-free-version-of-Slack)
+Sources (checked Nov 3, 2026; setup guide read again for the steps on Nov 10, 2026): [Intercom: Connect your Slack channel ↗](https://www.intercom.com/help/en/articles/11534476-connect-your-slack-channel) · [Slack: Free plan limits ↗](https://slack.com/help/articles/27204752526611-Feature-limitations-on-the-free-version-of-Slack)
 
 *Interactive cost calculator: open the web page to change team size, billing and add-ons.*
 

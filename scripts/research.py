@@ -229,6 +229,19 @@ def update_home_card():
     h, n = re.subn(r'(<summary class="cursor-pointer font-semibold text-slate-900">What are hidden API tier costs\?</summary> <p class="mt-2 text-sm leading-relaxed text-slate-600">).*?(</p>)',
                    lambda m: m.group(1) + faq + m.group(2), h, count=1, flags=re.S)
     assert n == 1
+    # "What does a SaaS integration cost?": the three kinds of cost, with the report's current figures, above the tool list
+    cost = (f'<section class="mt-12" aria-label="What a SaaS integration costs" data-cost="1"> <h2 class="text-2xl font-bold tracking-tight">What does a SaaS integration cost?</h2> '
+            f'<p class="mt-3 max-w-3xl leading-relaxed text-slate-600">It depends which of three bills you mean. Connecting two tools you already pay for is often free: '
+            f'{S["free"]} of the {S["n"]} integrations in our 2026 report add no cost at all. When there is a cost, it&#39;s one of these.</p> '
+            f'<ol class="scm-steps"> <li><strong>A plan upgrade.</strong> The integration only works on a higher plan of one of the tools. '
+            f'That&#39;s {S["up_share"]:.0f}% of the extra cost in this index, typically {rng} a month for 10 seats when an upgrade is forced.</li> '
+            f'<li><strong>A connector fee.</strong> There&#39;s no native app, so you pay for a service such as Make or Zapier: ${S["conn_min"]:.2f}–${S["conn_max"]:.2f} a month at list price.</li> '
+            f'<li><strong>Building it yourself.</strong> A custom integration written against both APIs. This index doesn&#39;t measure that; the report says why and quotes one outside estimate.</li> </ol> '
+            f'<p class="mt-4"><a href="/integration-tax-2026/" class="font-medium text-indigo-600 hover:underline">SaaS integration costs explained: The Integration Tax 2026 →</a></p> </section> ')
+    h = re.sub(r'<section class="mt-12" aria-label="What a SaaS integration costs" data-cost="1">.*?</section> ', "", h, flags=re.S)
+    anchor = '<section class="mt-12" id="tools" aria-label="Integration costs by tool">'
+    assert h.count(anchor) == 1
+    h = h.replace(anchor, cost + anchor, 1)
     open("index.html", "w", encoding="utf-8").write(h)
 
 if __name__ == "__main__":

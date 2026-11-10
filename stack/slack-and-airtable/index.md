@@ -11,7 +11,7 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 Airtable's Slack features work on all Airtable plan types, including Free, and on Slack's free plan. Requires Slack on the 'Free' plan and Airtable on the 'Free' plan.
 
-Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
+Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 · Setup steps: Nov 10, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
 
 ## How the Slack + Airtable integration works
 
@@ -19,7 +19,7 @@ In an Airtable base, open the base menu and choose Slack notifications, then cre
 
 [Setup guide: Airtable support: Base activity notifications in Slack ↗](https://support.airtable.com/docs/receiving-base-activity-notifications-in-slack)
 
-### How to set it up
+### How do you set up Slack + Airtable?
 
 1. Open the Airtable base you want notifications from.
 2. Click the drop-down arrow next to the base name, then the ellipsis (…) icon, and select Slack notifications.
@@ -31,7 +31,7 @@ Steps follow [Airtable's setup guide ↗](https://support.airtable.com/docs/rece
 
 **Limitations:** It's one-way (Airtable → Slack) and only posts notifications. Your organization's admins can block the integration, and only the person who set up a rule can turn it off.
 
-Sources (checked Nov 8, 2026): [Airtable support: Base activity notifications in Slack ↗](https://support.airtable.com/docs/receiving-base-activity-notifications-in-slack)
+Sources (checked Nov 8, 2026; setup guide read again for the steps on Nov 10, 2026): [Airtable support: Base activity notifications in Slack ↗](https://support.airtable.com/docs/receiving-base-activity-notifications-in-slack)
 
 *Interactive cost calculator: open the web page to change team size, billing and add-ons.*
 

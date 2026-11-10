@@ -32,19 +32,19 @@ Monthly cost for 10 seats, both tools plus any connector. Indigo bars are native
 
 Image: [ClickUp integration costs summary: 4 integrations priced, from $0 to $690 a month for 10 seats](https://stackcostmatrix.com/og/clickup-integrations-cost.jpg)
 
-## Where ClickUp forces an upgrade
+## Which ClickUp integrations force a plan upgrade?
 
 1 of the 4 integrations needs a more expensive ClickUp plan than Free, ClickUp's cheapest plan with API access. The extra ClickUp cost at 10 seats: HubSpot + ClickUp needs Core (+$120.00/mo). That gap is the hidden cost: you pay it every month even if you only wanted the integration. Each pair's "Hidden Cost Trap" box shows the full breakdown.
 
-## Which ClickUp integrations need middleware
+## Which ClickUp integrations need Make or Zapier?
 
 1 of the 4 has no native connector and runs through a third-party service: ClickUp + Stripe (Make Core, $10.59/mo). Connector fees are the monthly-billing price; the calculators use the lower annual-billing price (Make Core $9, Zapier Professional $19.99, Data Mapper $12.75) when you switch on annual billing. Real usage can push Make or Zapier onto a bigger plan, so check your expected volume.
 
-## ClickUp plans, API access and webhooks
+## Which ClickUp plans include API access and webhooks?
 
-API and webhook facts are listed for the plans that at least one integration below requires, with the date each was checked against ClickUp's documentation. Prices are monthly-billing list prices, re-checked on the vendor's pricing page on Nov 3, 2026; the annual-billing price is shown where the vendor publishes one. [Every ClickUp plan's API access, limits and webhooks →](https://stackcostmatrix.com/clickup-api-access/)
+On the plans these integrations need: Free (API access: yes; webhooks: yes); Core (API access: yes; webhooks: yes). API and webhook facts are listed for the plans that at least one integration below requires, with the date each was checked against ClickUp's documentation. Prices are monthly-billing list prices, re-checked on the vendor's pricing page on Nov 3, 2026; the annual-billing price is shown where the vendor publishes one. [Every ClickUp plan's API access, limits and webhooks →](https://stackcostmatrix.com/clickup-api-access/)
 
-ClickUp plans, API access and webhooks
+Which ClickUp plans include API access and webhooks?
 
 | Plan | Price | API access | Webhooks | Integrations that need it |
 | --- | --- | --- | --- | --- |

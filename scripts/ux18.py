@@ -40,7 +40,8 @@ def pair_page(s):
     from model import compute
     v = compute(json.loads(re.search(r'id="calc-data">(.*?)</script>', s, re.S).group(1)))
     if v["native"] and v["UP"] <= 0.004:   # nothing extra to pay: readers came to connect the tools, so "How it works" is the filled chip
-        chips = [(i, "How it works and setup" if i == "how-it-works" else t) for i, t in chips]
+        if 'class="scm-steps"' in s:   # only promise setup where the page has numbered steps
+            chips = [(i, "How it works and setup" if i == "how-it-works" else t) for i, t in chips]
         return _with_nav(s, chips, primary="how-it-works")
     return _with_nav(s, chips, primary="calculator")
 
@@ -59,6 +60,8 @@ def other_page(s):
         mid = re.search(r'\bid="([^"]+)"', attrs)
         i = mid.group(1) if mid else slug(text)
         if not i or not text: return m.group(0)
+        chip = re.search(r'data-chip="([^"]+)"', attrs)   # long question headings name a short label for their chip
+        if chip: text = html.unescape(chip.group(1))
         items.append((i, text if len(text) <= 46 else text[:44].rsplit(" ", 1)[0] + "…"))
         return m.group(0) if mid else f'<h2{attrs} id="{i}">{inner}</h2>'
     main = re.sub(r"<h2([^>]*)>(.*?)</h2>", h2, main, flags=re.S)
@@ -109,10 +112,12 @@ def guide_figures():
         s = re.sub(r'( <td class="px-4 py-3"> <a href="/stack/([^"/]+)/" class="font-medium text-indigo-600 hover:underline">True-cost calculator →</a> </td>)', row, s)
         s = s.replace(' <th class="px-4 py-3 font-semibold">Guide</th>',
                       ' <th class="px-4 py-3 font-semibold" data-x="1">10-seat total</th> <th class="px-4 py-3 font-semibold" data-x="1">Checked</th> <th class="px-4 py-3 font-semibold">Guide</th>', 1)
-        rows = sorted(((pairs[x]["v"], x) for x in set(re.findall(r'href="/stack/([^"/]+)/"', s[s.index("<main"):s.index("</main>")])) if x in pairs), key=lambda t: (-t[0]["N"], t[1]))[:14]   # slug breaks ties, so the order is the same on every run
+        allrows = sorted(((pairs[x]["v"], x) for x in set(re.findall(r'href="/stack/([^"/]+)/"', s[s.index("<main"):s.index("</main>")])) if x in pairs), key=lambda t: (-t[0]["N"], t[1]))   # slug breaks ties, so the order is the same on every run
+        rows = allrows[:14]
+        scope = f"the {len(rows)} most expensive of {len(allrows)} integrations, " if len(rows) < len(allrows) else ""
         chart = (' <figure class="mt-6" data-guide="1"> ' + svg_bars([(f"{v['na']} + {v['nb']}", v["N"], "#4f46e5" if v["native"] else "#0e7490") for v, _ in rows],
-                                                                    f"{label}: monthly cost for 10 seats on the plans each integration needs")
-                 + ' <figcaption class="mt-1 text-xs text-slate-500">Monthly cost for 10 seats, both tools plus any connector. Indigo bars are native integrations; teal bars need a connector.</figcaption> </figure>')
+                                                                    f"{label}: {scope}monthly cost for 10 seats on the plans each integration needs")
+                 + f' <figcaption class="mt-1 text-xs text-slate-500">{("The " + scope[4:-2] + ". ") if scope else ""}Monthly cost for 10 seats, both tools plus any connector. Indigo bars are native integrations; teal bars need a connector.</figcaption> </figure>')
         a = s.index("</table> </div>", s.index("<main")) + len("</table> </div>")
         s = s[:a] + chart + fig + s[a:]
         if s != s0: open(f, "w", encoding="utf-8").write(s); done += 1

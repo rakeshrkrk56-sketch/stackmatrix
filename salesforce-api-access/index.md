@@ -11,9 +11,11 @@ API & webhooks
 
 Checked against Salesforce's developer and help-center documentation · Nov 10, 2026 · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
 
+## Which Salesforce plans include API access and webhooks?
+
 **Short answer:** Salesforce API access is included in Enterprise and Unlimited; Professional only gets it with a paid API add-on (modeled at $25 per user a month), and Starter doesn't support the API. With API access, an org gets 100,000 API calls per 24 hours plus 1,000 per Salesforce license (Enterprise, or Professional with API access) or 5,000 per license (Unlimited). Change Data Capture, Salesforce's real-time change feed, is on Enterprise and Unlimited only.
 
-Salesforce API Access by Edition (2026): Professional, Enterprise & Unlimited
+Which Salesforce plans include API access and webhooks?
 
 | Plan | Price | API access | API limit | Webhooks | Webhook automation action |
 | --- | --- | --- | --- | --- | --- |
@@ -44,11 +46,11 @@ Professional doesn't include the API. Salesforce's developer docs say "Professio
 
 Some AppExchange apps work on Professional without the add-on. Salesforce's packaging guide says that after a partner app passes its security review, the app "can make calls to Group and Professional Edition orgs ... even if the customer doesn't have API access". That covers the standard SOAP and REST data APIs; Bulk API 2.0 and Data Loader stay unavailable. So before you buy the add-on for one connector, ask that connector's vendor whether it needs it.
 
-## Two kinds of webhooks
+## What is the difference between developer webhooks and workflow webhooks?
 
 Vendors use "webhooks" for two different features. **Developer webhooks** let an app or a tool like Make or Zapier subscribe to events, and are usually available wherever the API is. A **webhook automation action** is a no-code step that sends data out from the tool's own automations, and is often limited to paid plans. The table lists them separately so you can see which one an integration actually needs.
 
-## Which Salesforce plan the integrations here need
+## Which Salesforce plan do the integrations here need?
 
 **Professional** (6): [HubSpot + Salesforce](https://stackcostmatrix.com/stack/hubspot-and-salesforce/), [Pipedrive + Salesforce](https://stackcostmatrix.com/stack/pipedrive-and-salesforce/), [Salesforce + Mailchimp](https://stackcostmatrix.com/stack/salesforce-and-mailchimp/), [Salesforce + QuickBooks](https://stackcostmatrix.com/stack/salesforce-and-quickbooks/), [Salesforce + Stripe](https://stackcostmatrix.com/stack/salesforce-and-stripe/), [Salesforce + Zendesk](https://stackcostmatrix.com/stack/salesforce-and-zendesk/)  
 **Enterprise** (1): [Salesforce + Slack](https://stackcostmatrix.com/stack/salesforce-and-slack/)

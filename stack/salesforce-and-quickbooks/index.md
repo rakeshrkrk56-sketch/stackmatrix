@@ -11,7 +11,7 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 Salesforce doesn't build a QuickBooks connector; AppExchange apps such as Breadwinner (from $310/mo) or Make Core link them through Salesforce's API, which Professional Edition gets only as a paid add-on. Requires Salesforce Sales Cloud on the 'Professional' plan and QuickBooks Online on the 'Simple Start' plan. Route it through Make Core ($10.59/mo, or $9/mo billed annually).
 
-Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements checked against official vendor docs · Nov 4, 2026 · Prices checked · Nov 3, 2026 (Salesforce prices: Oct 17, 2026; QuickBooks prices: Nov 4, 2026; Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks) | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
+Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements checked against official vendor docs · Nov 4, 2026 · Prices checked · Nov 3, 2026 (Salesforce prices: Oct 17, 2026; QuickBooks prices: Nov 4, 2026; Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks) · Setup steps: Nov 10, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
 
 ## How the Salesforce Sales Cloud + QuickBooks Online integration works
 
@@ -21,15 +21,17 @@ With Make, a scenario watches Salesforce, for example for a won opportunity, and
 
 [Setup guide: Make: Salesforce app ↗](https://apps.make.com/salesforce)
 
-### How to set it up
+### How do you set up Salesforce Sales Cloud + QuickBooks Online?
 
 1. Make sure your Salesforce org has API access: Enterprise or Unlimited include it, Professional needs the API add-on.
-2. In Make, create a scenario and connect your Salesforce account and your QuickBooks account.
+2. In Make, create a scenario, add a Salesforce module and click Create a connection. Choose the connection type, say whether it's a Salesforce sandbox and click Save. Connect your QuickBooks account the same way.
 3. Pick a trigger, such as a won opportunity, and a QuickBooks action, such as creating an invoice, then map the fields and turn the scenario on.
+
+Steps follow [Make's setup guide ↗](https://apps.make.com/salesforce), read Nov 10, 2026.
 
 **Limitations:** This calculator models Salesforce Professional with the $25/user API add-on plus Make Core; Enterprise includes API access without the add-on. Breadwinner's own price, from $310 a month, isn't included. Each Make scenario runs one way.
 
-Sources (checked Nov 4, 2026): [Make: Salesforce app ↗](https://apps.make.com/salesforce) · [Salesforce developers: Supported editions ↗](https://developer.salesforce.com/docs/platform/api-rest/guide/intro-rest-compatible-editions.html) · [Breadwinner: Pricing ↗](https://breadwinner.com/pricing) · [Make: QuickBooks app ↗](https://apps.make.com/quickbooks)
+Sources (checked Nov 4, 2026; setup guide read again for the steps on Nov 10, 2026): [Make: Salesforce app ↗](https://apps.make.com/salesforce) · [Salesforce developers: Supported editions ↗](https://developer.salesforce.com/docs/platform/api-rest/guide/intro-rest-compatible-editions.html) · [Breadwinner: Pricing ↗](https://breadwinner.com/pricing) · [Make: QuickBooks app ↗](https://apps.make.com/quickbooks)
 
 *Interactive cost calculator: open the web page to change team size, billing and add-ons.*
 

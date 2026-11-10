@@ -36,19 +36,19 @@ Monthly cost for 10 seats, both tools plus any connector. Indigo bars are native
 
 Image: [Pipedrive integration costs summary: 8 integrations priced, from $140 to $1,400.59 a month for 10 seats](https://stackcostmatrix.com/og/pipedrive-integrations-cost.jpg)
 
-## Where Pipedrive forces an upgrade
+## Which Pipedrive integrations force a plan upgrade?
 
 2 of the 8 integrations need a more expensive Pipedrive plan than Lite, Pipedrive's cheapest plan with API access. The extra Pipedrive cost at 10 seats: Pipedrive + Slack needs Growth (+$250.00/mo); ActiveCampaign + Pipedrive needs Growth (+$250.00/mo). That gap is the hidden cost: you pay it every month even if you only wanted the integration. Each pair's "Hidden Cost Trap" box shows the full breakdown.
 
-## Which Pipedrive integrations need middleware
+## Which Pipedrive integrations need Make or Zapier?
 
 4 of the 8 have no native connector and run through a third-party service: HubSpot + Pipedrive (Make Core, $10.59/mo); Pipedrive + Xero (Make Core, $10.59/mo); Pipedrive + Calendly (Make Core, $10.59/mo); Pipedrive + Salesforce (Make Core, $10.59/mo). Connector fees are the monthly-billing price; the calculators use the lower annual-billing price (Make Core $9, Zapier Professional $19.99, Data Mapper $12.75) when you switch on annual billing. Real usage can push Make or Zapier onto a bigger plan, so check your expected volume.
 
-## Pipedrive plans, API access and webhooks
+## Which Pipedrive plans include API access and webhooks?
 
-API and webhook facts are listed for the plans that at least one integration below requires, with the date each was checked against Pipedrive's documentation. Pipedrive prices are per-seat annual-billing rates taken from an indexed copy of its pricing page, because pipedrive.com/pricing can't be read automatically. [Every Pipedrive plan's API access, limits and webhooks →](https://stackcostmatrix.com/pipedrive-api-access/)
+On the plans these integrations need: Lite (API access: yes; webhooks: yes); Growth (API access: yes; webhooks: yes). API and webhook facts are listed for the plans that at least one integration below requires, with the date each was checked against Pipedrive's documentation. Pipedrive prices are per-seat annual-billing rates taken from an indexed copy of its pricing page, because pipedrive.com/pricing can't be read automatically. [Every Pipedrive plan's API access, limits and webhooks →](https://stackcostmatrix.com/pipedrive-api-access/)
 
-Pipedrive plans, API access and webhooks
+Which Pipedrive plans include API access and webhooks?
 
 | Plan | Price | API access | Webhooks | Integrations that need it |
 | --- | --- | --- | --- | --- |

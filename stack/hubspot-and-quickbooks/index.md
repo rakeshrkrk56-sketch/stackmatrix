@@ -11,7 +11,7 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 HubSpot's own QuickBooks Online integration syncs contacts, products and invoices on every HubSpot plan, including the free CRM, and shows QuickBooks payments on HubSpot deals; it supports U.S. QuickBooks accounts only. Requires HubSpot on the 'Free' plan and QuickBooks Online on the 'Simple Start' plan.
 
-Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements checked against official vendor docs · Nov 4, 2026 · Prices checked · Nov 3, 2026 (QuickBooks prices: Nov 4, 2026) | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
+Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements checked against official vendor docs · Nov 4, 2026 · Prices checked · Nov 3, 2026 (QuickBooks prices: Nov 4, 2026) · Setup steps: Nov 10, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
 
 ## How the HubSpot + QuickBooks Online integration works
 
@@ -21,16 +21,18 @@ Once connected, contacts, products and invoices sync between HubSpot and QuickBo
 
 [Setup guide: HubSpot: Connect HubSpot and QuickBooks Online ↗](https://knowledge.hubspot.com/integrations/connect-hubspot-and-quickbooks-online)
 
-### How to set it up
+### How do you set up HubSpot + QuickBooks Online?
 
 1. Make sure you're a Super Admin or have App Marketplace permissions in HubSpot.
 2. In HubSpot, click the Marketplace icon, select HubSpot Marketplace, search for QuickBooks Online and click Install.
 3. Click Connect to QuickBooks Online and log in with your QuickBooks details.
 4. Choose your sync settings and review the mapped fields.
 
+Steps follow [HubSpot's setup guide ↗](https://knowledge.hubspot.com/integrations/connect-hubspot-and-quickbooks-online), read Nov 10, 2026.
+
 **Limitations:** The integration doesn't yet support non-U.S. QuickBooks Online accounts. Some edits to invoices created in HubSpot, such as adding or removing line items, changing prices or adding tax, have to be made in HubSpot, or the invoice fails to sync. Adding your own field mappings needs Data Hub Starter or higher.
 
-Sources (checked Nov 4, 2026): [HubSpot: Connect HubSpot and QuickBooks Online ↗](https://knowledge.hubspot.com/integrations/connect-hubspot-and-quickbooks-online)
+Sources (checked Nov 4, 2026; setup guide read again for the steps on Nov 10, 2026): [HubSpot: Connect HubSpot and QuickBooks Online ↗](https://knowledge.hubspot.com/integrations/connect-hubspot-and-quickbooks-online)
 
 *Interactive cost calculator: open the web page to change team size, billing and add-ons.*
 

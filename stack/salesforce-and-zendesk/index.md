@@ -11,7 +11,7 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 Zendesk's Salesforce integration works on every Zendesk Suite plan from Team up, but Salesforce Professional still needs the $25/user API add-on. Requires Salesforce Sales Cloud on the 'Professional' plan and Zendesk on the 'Suite Team' plan.
 
-Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Salesforce prices: Oct 17, 2026) | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
+Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Salesforce prices: Oct 17, 2026) · Setup steps: Nov 10, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
 
 ## How the Salesforce Sales Cloud + Zendesk integration works
 
@@ -19,7 +19,7 @@ Zendesk's Salesforce integration creates and updates Zendesk organizations from 
 
 [Setup guide: Zendesk: Connecting Salesforce to Zendesk ↗](https://support.zendesk.com/hc/en-us/articles/4408821555482-Connecting-your-Salesforce-organization-to-Zendesk)
 
-### How to set it up
+### How do you set up Salesforce Sales Cloud + Zendesk?
 
 1. In Salesforce Setup, open Security > Session Settings and clear the Lock sessions to the IP address from which they originated checkbox. Otherwise the integration disconnects when a session expires.
 2. In Zendesk Admin Center, click Apps and integrations, select Integrations > Integrations and click Salesforce.
@@ -32,7 +32,7 @@ Steps follow [Zendesk's setup guide ↗](https://support.zendesk.com/hc/en-us/ar
 
 **Limitations:** It needs Salesforce Enterprise or above, or Professional with the API add-on. Account data syncs one way, from Salesforce to Zendesk, and ticket comments aren't synced to a Case field (Ticket View can display them).
 
-Sources (checked Nov 3, 2026): [Zendesk: Connecting Salesforce to Zendesk ↗](https://support.zendesk.com/hc/en-us/articles/4408821555482-Connecting-your-Salesforce-organization-to-Zendesk) · [Zendesk: Data sync from Salesforce ↗](https://support.zendesk.com/hc/en-us/articles/4408828539290-Configuring-data-sync-from-Salesforce-to-Zendesk) · [Zendesk: Ticket sync to Salesforce ↗](https://support.zendesk.com/hc/en-us/articles/4408828449050-Setting-up-ticket-sync-from-Zendesk-to-Salesforce)
+Sources (checked Nov 3, 2026; setup guide read again for the steps on Nov 10, 2026): [Zendesk: Connecting Salesforce to Zendesk ↗](https://support.zendesk.com/hc/en-us/articles/4408821555482-Connecting-your-Salesforce-organization-to-Zendesk) · [Zendesk: Data sync from Salesforce ↗](https://support.zendesk.com/hc/en-us/articles/4408828539290-Configuring-data-sync-from-Salesforce-to-Zendesk) · [Zendesk: Ticket sync to Salesforce ↗](https://support.zendesk.com/hc/en-us/articles/4408828449050-Setting-up-ticket-sync-from-Zendesk-to-Salesforce)
 
 *Interactive cost calculator: open the web page to change team size, billing and add-ons.*
 

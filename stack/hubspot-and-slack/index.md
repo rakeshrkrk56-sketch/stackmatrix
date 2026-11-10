@@ -11,7 +11,7 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 Notifications and record actions work on HubSpot's free CRM and Slack's free plan; custom Slack messages from workflows need a HubSpot Professional subscription (from $50 per seat a month). Requires HubSpot on the 'Free' plan and Slack on the 'Free' plan.
 
-Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
+Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 · Setup steps: Nov 10, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
 
 ## How the HubSpot + Slack integration works
 
@@ -21,16 +21,18 @@ The HubSpot app for Slack sends HubSpot notifications such as reminders, mention
 
 [Setup guide: HubSpot: Connect HubSpot and Slack ↗](https://knowledge.hubspot.com/integrations/how-do-i-use-the-slack-integration)
 
-### How to set it up
+### How do you set up HubSpot + Slack?
 
 1. Make sure you're a Super Admin (or have App Marketplace permissions) in HubSpot and an admin of the Slack workspace.
 2. In HubSpot, click the Marketplace icon, open HubSpot Marketplace, search for Slack and click Install.
 3. Review the requested permissions in Slack and allow access.
-4. In Slack, the HubSpot app sends you a message: click Verify to map your HubSpot user to your Slack user.
+4. If your HubSpot email differs from your Slack email, HubSpot asks you to map the two: enter your Slack email, click Verify in Slack, then click Verify in the message the HubSpot app sends you in Slack.
+
+Steps follow [HubSpot's setup guide ↗](https://knowledge.hubspot.com/integrations/how-do-i-use-the-slack-integration), read Nov 10, 2026.
 
 **Limitations:** One Slack workspace can connect per HubSpot account, private channels need the app added to each one, and custom Slack messages sent from HubSpot workflows need a Professional or Enterprise subscription because workflows do. Slack's free plan allows up to 10 app installations.
 
-Sources (checked Nov 3, 2026): [HubSpot: Connect HubSpot and Slack ↗](https://knowledge.hubspot.com/integrations/how-do-i-use-the-slack-integration) · [HubSpot Marketplace: Slack ↗](https://ecosystem.hubspot.com/marketplace/listing/slack) · [Slack: Free plan limits ↗](https://slack.com/help/articles/27204752526611-Feature-limitations-on-the-free-version-of-Slack)
+Sources (checked Nov 3, 2026; setup guide read again for the steps on Nov 10, 2026): [HubSpot: Connect HubSpot and Slack ↗](https://knowledge.hubspot.com/integrations/how-do-i-use-the-slack-integration) · [HubSpot Marketplace: Slack ↗](https://ecosystem.hubspot.com/marketplace/listing/slack) · [Slack: Free plan limits ↗](https://slack.com/help/articles/27204752526611-Feature-limitations-on-the-free-version-of-Slack)
 
 *Interactive cost calculator: open the web page to change team size, billing and add-ons.*
 

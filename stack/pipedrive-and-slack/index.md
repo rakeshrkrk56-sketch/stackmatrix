@@ -11,7 +11,7 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 Trap: Pipedrive sends Slack messages through its Automations feature, which is only on Growth and higher ($39/seat). Requires Pipedrive on the 'Growth' plan and Slack on the 'Free' plan.
 
-Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Pipedrive prices: from an indexed copy of its pricing page) | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
+Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Pipedrive prices: from an indexed copy of its pricing page) · Setup steps: Nov 10, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
 
 ## How the Pipedrive + Slack integration works
 
@@ -21,15 +21,17 @@ Pipedrive connects to Slack through its Automations feature: after you authorize
 
 [Setup guide: Pipedrive: Automations Slack notifications ↗](https://support.pipedrive.com/en/article/workflow-automation-slack-notifications)
 
-### How to set it up
+### How do you set up Pipedrive + Slack?
 
 1. In Pipedrive, go to Tools and apps > Slack > Authorize Slack account.
 2. Create an automation, pick a trigger such as a deal being won, and add a Slack notification action.
 3. Choose a channel or a direct message, then pick the Pipedrive fields to include in the message.
 
+Steps follow [Pipedrive's setup guide ↗](https://support.pipedrive.com/en/article/workflow-automation-slack-notifications), read Nov 10, 2026.
+
 **Limitations:** Pipedrive says Automations are only available on Growth and higher plans (Advanced under its older plan names), so the cheapest Lite plan can't send Slack messages this way. Slack's free plan allows up to 10 app installations.
 
-Sources (checked Nov 3, 2026): [Pipedrive: Automations Slack notifications ↗](https://support.pipedrive.com/en/article/workflow-automation-slack-notifications) · [Slack: Free plan limits ↗](https://slack.com/help/articles/27204752526611-Feature-limitations-on-the-free-version-of-Slack)
+Sources (checked Nov 3, 2026; setup guide read again for the steps on Nov 10, 2026): [Pipedrive: Automations Slack notifications ↗](https://support.pipedrive.com/en/article/workflow-automation-slack-notifications) · [Slack: Free plan limits ↗](https://slack.com/help/articles/27204752526611-Feature-limitations-on-the-free-version-of-Slack)
 
 *Interactive cost calculator: open the web page to change team size, billing and add-ons.*
 
