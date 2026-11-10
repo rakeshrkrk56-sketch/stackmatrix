@@ -1,6 +1,6 @@
-# Stripe + Xero Integration Cost (2026) | StackCostMatrix
+# Stripe + Xero Integration: Setup, Plans & Cost (2026)
 
-> Stripe + Xero needs Stripe Standard and Xero Early for the native integration: $27/mo for 10 seats, with no extra cost to connect them.
+> How the Stripe + Xero integration works, how to set it up, and the plans it needs: Stripe Standard + Xero Early, $27/mo for 10 seats.
 
 Source page: https://stackcostmatrix.com/stack/stripe-and-xero/  
 Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (credit StackCostMatrix and link to https://stackcostmatrix.com)
@@ -9,7 +9,7 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 [Home](https://stackcostmatrix.com/) / Stripe + Xero 
 
-# Stripe + Xero Integration Cost (2026): Plans, Setup & True Price
+# Stripe + Xero Integration (2026): How It Works, Setup & True Cost
 
 Xero accepts online invoice payments through Stripe on its cheapest Early plan; multi-currency needs Xero's top Established plan ($97/mo). Requires Stripe on the 'Standard' plan and Xero on the 'Early' plan.
 
@@ -20,6 +20,8 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 Stripe is a built-in payment service in Xero: you add Stripe to an invoice template so customers can pay invoices online by card, and Xero can also create payment links.
 
 **Limitations:** Xero's cheapest Early plan ($27/mo) accepts online invoice payments but limits you to 20 invoices, and using multiple currencies needs the top Established plan ($97/mo). Stripe's processing fees apply and aren't included above.
+
+[Setup guide: Xero: Connect Stripe to Xero ↗](https://central.xero.com/0/article/Stripe-AU)
 
 Sources (checked Nov 3, 2026): [Xero: Connect Stripe to Xero ↗](https://central.xero.com/0/article/Stripe-AU) · [Xero: US pricing plans ↗](https://www.xero.com/us/pricing-plans/)
 
@@ -32,20 +34,23 @@ Stripe 'Standard' ($0.00/mo) + Xero 'Early' ($27.00/mo),
 no middleware required.
 Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capable tiers ($37.59/mo all-in) — the native path is cheaper.
 
+ 
+
 ## Native vs middleware for Stripe + Xero
 
 The native path runs on the required tiers (Stripe 'Standard' + Xero 'Early') at $27.00/mo for a 10-seat team, with 2-way sync and no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — would cost $37.59/mo all-in, so on cost alone there is no reason to switch: middleware would only make sense if you already run other automations through it, and it would drop sync to 1-way (trigger → action).
-
-API access at the required tiers: Stripe Yes, Xero Yes (see the spec matrix). That API access is what the middleware path runs on.
 
 Integration routes compared for a 10-seat team
 
 | Route | Plans | 10 seats / month | Sync |
 | --- | --- | --- | --- |
-| Native Stripe + Xero connector | Stripe 'Standard' + Xero 'Early' | $27.00 | As listed in the spec matrix |
+| Native Stripe + Xero connector | Stripe 'Standard' + Xero 'Early' | $27.00 | 2-way |
 | Make Core on the cheapest API plans | Stripe 'Standard' + Xero 'Early' + Make | $37.59 | 1-way per scenario |
+| Zapier Professional on the cheapest API plans | Stripe 'Standard' + Xero 'Early' + Zapier | $56.99 | 1-way per Zap |
 
-Make Core's $10.59 monthly price comes from third-party pricing reviews, because make.com blocks automated checks; Zapier's is from zapier.com/pricing.
+Connector prices are monthly-billing list prices: Zapier Professional $29.99 (zapier.com/pricing) and Make Core $10.59 (from third-party pricing reviews, because make.com blocks automated checks). Both bill by usage, so high volumes cost more.
+
+Image: [Stripe + Xero integration cost summary: $27 a month for 10 seats, nothing extra to connect; plans needed: Stripe Standard and Xero Early](https://stackcostmatrix.com/og/stripe-and-xero.jpg)
 
 ## ✓ Verified Vendor Facts
 
@@ -55,14 +60,6 @@ Make Core's $10.59 monthly price comes from third-party pricing reviews, because
 - **Native app availability:** Native app available in vendor marketplace.
 
 Last checked: Nov 3, 2026 · Sources linked below.
-
-## ◐ Model Estimates (your assumptions)
-
-- **Usage / task add-ons:** middleware overage costs you enter above.
-- **Setup & maintenance:** implementation hours and ongoing ops — adjust freely.
-- **Annual billing saving:** uses each vendor's published annual price where one exists; otherwise no discount is applied.
-
-Estimates never change the verified facts — they only model your scenario.
 
 ## ! Plan requirements
 
@@ -78,11 +75,6 @@ Middleware fee
 :   None
 
 No hidden cost: the native connector works on Stripe 'Standard' and Xero 'Early', so connecting them adds nothing to what you already pay for the two tools. Stripe has no monthly plan fee; it charges per transaction, so it counts as $0/month here.
-
-✓ Native is the cheapest path — $0 incremental integration cost
-
-The native Stripe + Xero connector runs on the required tiers with no middleware fee
-and no forced tier upgrade — paying for middleware here would only add cost.
 
 ## Side-by-side spec matrix
 
@@ -106,7 +98,7 @@ Some outbound links may earn us a referral commission at no extra cost to you. [
 
 ### What are the minimum plan tiers required for the Stripe + Xero integration?
 
-To unlock the native integration, Stripe must be on the 'Standard' plan or higher and Xero must be on the 'Early' plan or higher. Neither plan is an upgrade over the cheapest plan with API access.
+To unlock the native integration, Stripe must be on the 'Standard' plan or higher and Xero must be on the 'Early' plan or higher. Those are each tool's cheapest plan with API access (Stripe 'Standard' at $0/mo and Xero 'Early' at $27/mo for 10 seats), so the integration doesn't force an upgrade.
 
 ### How much does the Stripe + Xero stack cost per month for a 10-person team?
 

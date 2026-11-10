@@ -3,7 +3,7 @@ WebSite and Person (@id graph on the homepage and /about/). Idempotent; run afte
 security.py:   python3 scripts/site16.py
 Generators (apipages, hubs, hspro, research) already emit EDITOR/PUBLISHER from here, so this mainly covers
 hand-written pages and the pair pages' static JSON-LD."""
-import glob, json, re, os, sys
+import glob, html, json, re, os, sys
 
 SITE = "https://stackcostmatrix.com"
 EDITOR_NAME = "Rakesh Kumar"
@@ -12,15 +12,26 @@ EDITOR_PROFILE = "https://github.com/rakeshrkrk56-sketch"
 EDITOR_LINKEDIN = "https://www.linkedin.com/in/rakesh-kumar-23960a204/"
 ORG_ID, SITE_ID = f"{SITE}/#organization", f"{SITE}/#website"
 EDITOR = {"@type": "Person", "@id": EDITOR_URL, "name": EDITOR_NAME, "url": EDITOR_URL}
-PUBLISHER = {"@type": "Organization", "@id": ORG_ID, "name": "StackCostMatrix", "url": f"{SITE}/", "logo": f"{SITE}/icon-512.png"}
-GRAPH = {"@context": "https://schema.org", "@graph": [
-    {"@type": "Organization", "@id": ORG_ID, "name": "StackCostMatrix", "url": f"{SITE}/", "logo": f"{SITE}/icon-512.png",
-     "email": "admin@stackcostmatrix.com", "founder": {"@id": EDITOR_URL},
-     "description": "Independent index of what B2B software integrations really cost: the plan each integration needs, connector fees and API access by plan, checked against vendor documentation.",
-     "sameAs": ["https://github.com/rakeshrkrk56-sketch/stackmatrix"]},
-    {"@type": "WebSite", "@id": SITE_ID, "url": f"{SITE}/", "name": "StackCostMatrix", "publisher": {"@id": ORG_ID}, "inLanguage": "en"},
-    {"@type": "Person", "@id": EDITOR_URL, "name": EDITOR_NAME, "url": EDITOR_URL, "jobTitle": "Founder and editor",
-     "worksFor": {"@id": ORG_ID}, "sameAs": [EDITOR_LINKEDIN, EDITOR_PROFILE]}]}
+LOGO = {"@type": "ImageObject", "url": f"{SITE}/icon-512.png", "width": 512, "height": 512}
+PUBLISHER = {"@type": "Organization", "@id": ORG_ID, "name": "StackCostMatrix", "url": f"{SITE}/", "logo": LOGO}
+DATASET_ID = f"{SITE}/#dataset"
+ORG = {"@type": "Organization", "@id": ORG_ID, "name": "StackCostMatrix", "url": f"{SITE}/", "logo": LOGO, "image": f"{SITE}/og-image.png",
+       "foundingDate": "2026-10-17", "founder": {"@id": EDITOR_URL},
+       "contactPoint": {"@type": "ContactPoint", "contactType": "corrections and enquiries", "email": "admin@stackcostmatrix.com", "availableLanguage": "en"},
+       "description": "Independent index of what B2B software integrations really cost: the plan each integration needs, connector fees and API access by plan, checked against vendor documentation.",
+       "sameAs": ["https://github.com/rakeshrkrk56-sketch/stackmatrix", "https://www.saashub.com/stackcostmatrix", "https://startupfa.me/s/stackcostmatrix"]}
+WEBSITE = {"@type": "WebSite", "@id": SITE_ID, "url": f"{SITE}/", "name": "StackCostMatrix", "publisher": {"@id": ORG_ID}, "inLanguage": "en",
+           "description": "What B2B software integrations really cost: plans, connector fees and API access by plan."}
+PERSON = {"@type": "Person", "@id": EDITOR_URL, "name": EDITOR_NAME, "url": EDITOR_URL, "jobTitle": "Founder and editor",
+          "worksFor": {"@id": ORG_ID}, "sameAs": [EDITOR_LINKEDIN, EDITOR_PROFILE]}
+def graph(f, title):
+    """Organization + WebSite + Person, plus the page's own node (homepage WebPage / AboutPage)."""
+    url = f"{SITE}/" + ("" if f == "index.html" else f[:-len("index.html")])
+    page = {"@type": "AboutPage" if f.startswith("about/") else "WebPage", "@id": url + "#webpage", "url": url, "name": title, "inLanguage": "en",
+            "isPartOf": {"@id": SITE_ID}, "about": {"@id": ORG_ID},
+            "primaryImageOfPage": {"@type": "ImageObject", "url": f"{SITE}/og-image.png", "width": 1200, "height": 630}}
+    if f.startswith("about/"): page["mainEntity"] = {"@id": ORG_ID}
+    return {"@context": "https://schema.org", "@graph": [ORG, WEBSITE, PERSON, page]}
 BREADCRUMBS = {
     "hubspot-integrations-cost/index.html": [("HubSpot integration costs", f"{SITE}/hubspot-integrations-cost/")],
     "salesforce-integrations-cost/index.html": [("Salesforce integration costs", f"{SITE}/salesforce-integrations-cost/")],
@@ -38,6 +49,13 @@ ABOUT_NEW = ('<p class="leading-relaxed text-slate-600" id="editor">\n<strong cl
              'pages and documentation and reviews every change before it&#39;s published. Corrections go to the email below and are logged in the changelog. '
              f'{PROFILE_HTML}.\n</p> <p class="mt-3 leading-relaxed text-slate-600">\n'
              'StackCostMatrix is published as an independent research project. Our dataset')
+
+def _vendor_urls():
+    from urllib.parse import urlparse
+    a = open("about/index.html", encoding="utf-8").read()
+    rows = re.findall(r'<td class="px-4 py-3 font-medium">([^<]+)</td> <td class="px-4 py-3"> <a href="([^"]+)"', a)
+    return {html.unescape(n): "{0.scheme}://{0.netloc}/".format(urlparse(u)) for n, u in rows}
+VENDOR_URL = _vendor_urls()
 
 def fix_ld(o):
     """Point authors/reviewers/publishers at the shared entities."""
@@ -72,6 +90,19 @@ def main():
                 o["creator"] = {"@id": ORG_ID}; o["publisher"] = {"@id": ORG_ID}
                 o["distribution"] = [{"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": f"{SITE}/data/integration-pairs.json"}]
                 o["dateModified"] = "2026-11-08"
+                o["@id"] = DATASET_ID; o["isAccessibleForFree"] = True; o["temporalCoverage"] = "2026-10-17/2026-11-08"
+                o["keywords"] = ["SaaS pricing", "integration cost", "minimum plan", "API access by plan", "webhooks", "Zapier", "Make", "HubSpot", "Salesforce", "Slack", "Stripe"]
+                o["variableMeasured"] = ["Minimum plan required on each tool", "Monthly plan price (USD)", "Connector fee (USD per month)", "Monthly cost for 10 seats (USD)",
+                                         "API access by plan", "Webhook availability by plan", "Date checked"]
+                o["measurementTechnique"] = "Read from each vendor's pricing page, help centre and developer documentation; every record carries the date it was checked."
+            if f.startswith("stack/") and o.get("@type") == "WebPage":
+                pair = f.split("/")[1]; url = f"{SITE}/stack/{pair}/"
+                o["@id"] = url + "#webpage"; o["isPartOf"] = {"@id": SITE_ID}; o["breadcrumb"] = {"@id": url + "#breadcrumb"}
+                o["primaryImageOfPage"] = {"@type": "ImageObject", "url": f"{SITE}/og/{pair}.jpg", "width": 1200, "height": 630}
+                for app in o.get("about", []):
+                    if app.get("name") in VENDOR_URL: app["url"] = VENDOR_URL[app["name"]]
+            if f.startswith("stack/") and o.get("@type") == "BreadcrumbList":
+                o["@id"] = f"{SITE}/stack/{f.split('/')[1]}/#breadcrumb"
             return '<script type="application/ld+json">' + json.dumps(fix_ld(o), ensure_ascii=False, separators=(",", ":")) + "</script>"
         s = re.sub(r'<script type="application/ld\+json">(.*?)</script>', rep, s, flags=re.S)
         crumbs = BREADCRUMBS.get(f)
@@ -80,7 +111,8 @@ def main():
                 {"@type": "ListItem", "position": i, "name": n, "item": u} for i, (n, u) in enumerate([("Home", f"{SITE}/")] + crumbs, 1)]}
             s = s.replace("</head>", '<script type="application/ld+json">' + json.dumps(bl, ensure_ascii=False, separators=(",", ":")) + "</script></head>", 1)
         if f in ("index.html", "about/index.html"):
-            s = s.replace("</head>", '<script type="application/ld+json">' + json.dumps(GRAPH, ensure_ascii=False, separators=(",", ":")) + "</script></head>", 1)
+            title = html.unescape(re.search(r"<title>(.*?)</title>", s, re.S).group(1)).strip()
+            s = s.replace("</head>", '<script type="application/ld+json">' + json.dumps(graph(f, title), ensure_ascii=False, separators=(",", ":")) + "</script></head>", 1)
         if f == "about/index.html" and ABOUT_OLD in s:
             s = s.replace(ABOUT_OLD, ABOUT_NEW, 1)
         if f == "about/index.html":   # keep the editor's profile links current
@@ -91,10 +123,11 @@ def main():
         s = s.replace('<meta name="twitter:card" content="summary">', '<meta name="twitter:card" content="summary_large_image">')
         # pair pages: their own card (og17.py); every page: article schema image = the share image, not the logo
         img = f"{SITE}/og-image.png"
-        if f.startswith("stack/") and os.path.exists(f"og/{f.split('/')[1]}.jpg"):
-            img = f"{SITE}/og/{f.split('/')[1]}.jpg"
+        key = f.split("/")[-2] if "/" in f else ""
+        if key and os.path.exists(f"og/{key}.jpg"):
+            img = f"{SITE}/og/{key}.jpg"
             s = re.sub(r'<meta property="og:image" content="[^"]*">', f'<meta property="og:image" content="{img}">', s, count=1)
-        s = s.replace('"image":"https://stackcostmatrix.com/icon-512.png"', f'"image":"{img}"')
+        s = re.sub(r'"image":"https://stackcostmatrix\.com/(?:icon-512\.png|og-image\.png|og/[a-z0-9-]+\.jpg)"', f'"image":"{img}"', s)
         t = re.search(r'<meta property="og:title" content="([^"]*)"', s)
         s = re.sub(r'<meta property="og:image:alt"[^>]*>', "", s)   # generated pages inherit their template's
         if t:

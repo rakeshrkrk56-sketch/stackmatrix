@@ -21,6 +21,8 @@ You connect Stripe from ActiveCampaign's apps page and choose which Stripe resou
 
 **Limitations:** Data flows from Stripe into ActiveCampaign, not back. The integration doesn't add contacts to a list on its own (use an automation for that), and it can only map Stripe fields to fields that already exist in ActiveCampaign.
 
+[Setup guide: ActiveCampaign: Stripe integration (app directory) ↗](https://www.activecampaign.com/apps/stripe)
+
 Sources (checked Nov 8, 2026): [ActiveCampaign: Stripe integration (app directory) ↗](https://www.activecampaign.com/apps/stripe) · [ActiveCampaign help: Connect your Stripe account ↗](https://help.activecampaign.com/hc/en-us/articles/360016037040)
 
 *Interactive cost calculator: open the web page to change team size, billing and add-ons.*
@@ -32,20 +34,23 @@ ActiveCampaign 'Plus' ($49.00/mo) + Stripe 'Standard' ($0.00/mo),
 no middleware required.
 Alternative: skip the native tier upgrade and run via Make/Zapier middleware for ~$25.59/mo all-in (adds a third-party dependency).
 
+ 
+
 ## Native vs middleware for ActiveCampaign + Stripe
 
 The native path runs on the required tiers (ActiveCampaign 'Plus' + Stripe 'Standard') at $49.00/mo for a 10-seat team, with no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — comes to $25.59/mo all-in, which is cheaper on paper because it skips the $34.00/mo forced tier upgrade. The trade-off: you replace the native connector with a third-party dependency, sync stays 1-way (trigger → action), and Make Core's fee covers a fixed monthly allowance of credits — whether that covers your volume is not verified for this pair.
-
-API access at the required tiers: ActiveCampaign Yes, Stripe Yes (see the spec matrix). That API access is what the middleware path runs on.
 
 Integration routes compared for a 10-seat team
 
 | Route | Plans | 10 seats / month | Sync |
 | --- | --- | --- | --- |
-| Native ActiveCampaign + Stripe connector | ActiveCampaign 'Plus' + Stripe 'Standard' | $49.00 | As listed in the spec matrix |
+| Native ActiveCampaign + Stripe connector | ActiveCampaign 'Plus' + Stripe 'Standard' | $49.00 | 1-way (Stripe → ActiveCampaign) |
 | Make Core on the cheapest API plans | ActiveCampaign 'Starter' + Stripe 'Standard' + Make | $25.59 | 1-way per scenario |
+| Zapier Professional on the cheapest API plans | ActiveCampaign 'Starter' + Stripe 'Standard' + Zapier | $44.99 | 1-way per Zap |
 
-Make Core's $10.59 monthly price comes from third-party pricing reviews, because make.com blocks automated checks; Zapier's is from zapier.com/pricing.
+Connector prices are monthly-billing list prices: Zapier Professional $29.99 (zapier.com/pricing) and Make Core $10.59 (from third-party pricing reviews, because make.com blocks automated checks). Both bill by usage, so high volumes cost more.
+
+Image: [ActiveCampaign + Stripe integration cost summary: $49 a month for 10 seats, $34 of it is the hidden cost to connect; plans needed: ActiveCampaign Plus and Stripe Standard](https://stackcostmatrix.com/og/activecampaign-and-stripe.jpg)
 
 ## ✓ Verified Vendor Facts
 
@@ -54,15 +59,7 @@ Make Core's $10.59 monthly price comes from third-party pricing reviews, because
 - **API & webhook gates:** audited in official developer docs (see spec matrix).
 - **Native app availability:** Native app available in vendor marketplace.
 
-Last checked: Nov 3, 2026 · Sources linked below.
-
-## ◐ Model Estimates (your assumptions)
-
-- **Usage / task add-ons:** middleware overage costs you enter above.
-- **Setup & maintenance:** implementation hours and ongoing ops — adjust freely.
-- **Annual billing saving:** uses each vendor's published annual price where one exists; otherwise no discount is applied.
-
-Estimates never change the verified facts — they only model your scenario.
+Requirements checked: Nov 8, 2026; prices: Nov 3, 2026 · Sources linked below.
 
 ## ! Hidden Cost Trap
 

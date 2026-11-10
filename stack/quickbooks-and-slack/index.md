@@ -1,4 +1,4 @@
-# QuickBooks + Slack Integration Cost (2026) | StackCostMatrix
+# QuickBooks + Slack Integration Cost (2026): Plans & Setup
 
 > QuickBooks Online + Slack runs via middleware (+$29.99/mo) on QuickBooks Online Simple Start and Slack Free: $67.99/mo for 10 seats.
 
@@ -21,6 +21,8 @@ There's no official QuickBooks Online app for Slack. Zapier connects them, for e
 
 **Limitations:** Zapier needs a paid QuickBooks Online subscription, admin permissions in QuickBooks and a paid Zapier plan, because QuickBooks Online is a premium app on Zapier. No specific QuickBooks plan is required, so this calculator models Simple Start. QuickBooks limits its API to 500 requests per minute per company.
 
+[Setup guide: Zapier: Get started with QuickBooks Online ↗](https://help.zapier.com/hc/en-us/articles/8495935103885)
+
 Sources (checked Nov 3, 2026): [Zapier: Get started with QuickBooks Online ↗](https://help.zapier.com/hc/en-us/articles/8495935103885)
 
 *Interactive cost calculator: open the web page to change team size, billing and add-ons.*
@@ -31,11 +33,11 @@ Sources (checked Nov 3, 2026): [Zapier: Get started with QuickBooks Online ↗](
 QuickBooks Online 'Simple Start' ($38.00/mo) + Slack 'Free' ($0.00/mo)
 + $29.99/mo middleware. No native connector exists for this pair.
 
+ 
+
 ## Native vs middleware for QuickBooks Online + Slack
 
 No native connector exists for this pair, so middleware is not an alternative — it is the integration. The modeled middleware cost is $29.99/mo on top of both tools, for $67.99/mo all-in at 10 seats on the modeled tiers (QuickBooks Online 'Simple Start' + Slack 'Free'). Sync is 1-way (trigger → action). The middleware figure is the modeled cost for this pair; your actual middleware bill scales with task and operation volume, which is not verified here — check your expected volume against the middleware plan before budgeting.
-
-API access at the required tiers: QuickBooks Online Yes, Slack Yes (see the spec matrix). That API access is what the middleware path runs on.
 
 Integration routes compared for a 10-seat team
 
@@ -44,7 +46,9 @@ Integration routes compared for a 10-seat team
 | Zapier Professional (modeled here) | QuickBooks Online 'Simple Start' + Slack 'Free' | $67.99 | 1-way per automation |
 | Make Core instead | QuickBooks Online 'Simple Start' + Slack 'Free' | $48.59 | 1-way per automation |
 
-Make Core's $10.59 monthly price comes from third-party pricing reviews, because make.com blocks automated checks; Zapier's is from zapier.com/pricing.
+Connector prices are monthly-billing list prices: Zapier Professional $29.99 (zapier.com/pricing) and Make Core $10.59 (from third-party pricing reviews, because make.com blocks automated checks). Both bill by usage, so high volumes cost more.
+
+Image: [QuickBooks Online + Slack integration cost summary: $67.99 a month for 10 seats, $29.99 of it is the hidden cost to connect; plans needed: QuickBooks Online Simple Start and Slack Free](https://stackcostmatrix.com/og/quickbooks-and-slack.jpg)
 
 ## ✓ Verified Vendor Facts
 
@@ -54,14 +58,6 @@ Make Core's $10.59 monthly price comes from third-party pricing reviews, because
 - **Native app availability:** No native app — connected via middleware.
 
 Last checked: Nov 3, 2026 (exceptions listed at the top) · Sources linked below.
-
-## ◐ Model Estimates (your assumptions)
-
-- **Usage / task add-ons:** middleware overage costs you enter above.
-- **Setup & maintenance:** implementation hours and ongoing ops — adjust freely.
-- **Annual billing saving:** uses each vendor's published annual price where one exists, including the middleware or connector fee; otherwise no discount is applied.
-
-Estimates never change the verified facts — they only model your scenario.
 
 ## ! Hidden Cost Trap
 
@@ -104,7 +100,7 @@ Some outbound links may earn us a referral commission at no extra cost to you. [
 
 ### What are the minimum plan tiers required for the QuickBooks Online + Slack integration?
 
-To unlock the integration, QuickBooks Online must be on the 'Simple Start' plan or higher and Slack must be on the 'Free' plan or higher. Neither plan is an upgrade over the cheapest plan with API access.
+To unlock the integration, QuickBooks Online must be on the 'Simple Start' plan or higher and Slack must be on the 'Free' plan or higher. Those are each tool's cheapest plan with API access (QuickBooks Online 'Simple Start' at $38/mo and Slack 'Free' at $0/mo for 10 seats), so the integration doesn't force an upgrade.
 
 ### How much does the QuickBooks Online + Slack stack cost per month for a 10-person team?
 

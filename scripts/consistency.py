@@ -22,7 +22,7 @@ for p, s in allpages.items():
     faq = next(b for b in blocks if b["@type"] == "FAQPage"); wp = next(b for b in blocks if b["@type"] == "WebPage")
     fa = [q["acceptedAnswer"]["text"] for q in faq["mainEntity"]]
     meta = U(re.search(r'<meta name="description" content="([^"]*)"', s).group(1)); og = U(re.search(r'<meta property="og:description" content="([^"]*)"', s).group(1))
-    how = re.search(r'aria-label="How the integration works">(.*?)</section>', s, re.S)
+    how = re.search(r'aria-label="How the integration works"[^>]*>(.*?)</section>', s, re.S)
     info[p] = dict(type=typ, req=req, cost=v["N"], sync=sync, how=bool(how), summary=summ, lastReviewed=wp.get("lastReviewed"), dateModified=wp.get("dateModified"))
     # type consistency
     if badge != typ: add(p, "High", "spec matrix", f"badge '{badge}' vs calculator type {typ}")

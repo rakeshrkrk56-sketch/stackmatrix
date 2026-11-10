@@ -23,9 +23,11 @@ Calendly API & Webhook Access by Plan (2026)
 | Standard | $12/seat/mo ($10 billed annually) | Yes | Not published per plan | Yes | — |
 | Teams | $20/seat/mo ($16 billed annually) | Yes | Not published per plan | Yes | — |
 
-"Not stated" means Calendly's documentation that we read doesn't say either way. Prices are monthly-billing list prices from this site's calculators.
+Prices are monthly-billing list prices from this site's calculators.
 
 Real-time automations (new booking → CRM record) rely on webhooks, so most Calendly integrations need Standard.
+
+Image: [Calendly API access by plan: Free yes; Standard yes; Teams yes](https://stackcostmatrix.com/og/calendly-api-access.jpg)
 
 ## Two kinds of webhooks
 

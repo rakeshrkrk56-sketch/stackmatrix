@@ -11,7 +11,7 @@ Research · November 2026
 
 # The Integration Tax 2026: What Connecting SaaS Tools Really Costs
 
-StackCostMatrix · Published Nov 3, 2026 · Data checked against vendor docs Nov 3, 2026 · Updated Nov 8, 2026: HubSpot Professional repriced per seat (Nov 5); ActiveCampaign + Stripe, Mailchimp + Calendly and Pipedrive + Xero corrected (Nov 8; see the About page changelog) · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
+StackCostMatrix · Published Nov 3, 2026 · Data checked against vendor docs Nov 3, 2026 · Updated Nov 10, 2026: HubSpot Professional repriced per seat (Nov 5); ActiveCampaign + Stripe, Mailchimp + Calendly and Pipedrive + Xero corrected (Nov 8); “Three kinds of integration cost” added (Nov 10). See the About page changelog · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
 
 We priced 55 of the most common B2B software integrations at the plans each one actually requires, then compared that with the cheapest plans that still include API access. The difference, plus any connector fee for Make or Zapier, is the **integration tax**: what you pay every month only because two tools need to talk to each other.
 
@@ -39,6 +39,8 @@ $500/mo
 
 HubSpot + Asana and HubSpot + Salesforce
 
+Image: [Bar chart: the 8 most expensive SaaS integrations by monthly integration tax for a 10-seat team, led by HubSpot + Asana at $500 a month](https://stackcostmatrix.com/og/integration-tax-2026.jpg)
+
 ## Key findings
 
 **Plan upgrades, not connectors, are the real cost.** Forced upgrades make up 93% of the total integration tax, and across all 55 stacks the integration tax is 20% of what they cost in total. Connector fees are small by comparison: $10.59, $15, $29.99 a month at monthly billing.
@@ -48,6 +50,14 @@ HubSpot + Asana and HubSpot + Salesforce
 **Calendly's webhook gate is the most common trigger.** 6 integrations need Calendly Standard, because Calendly's webhooks require a paid plan; that's $120 a month for 10 seats.
 
 **24 of 55 integrations cost nothing extra.** They work on each tool's cheapest plan with API access and need no connector, so connecting them is free on top of the plans you already pay for.
+
+## Three kinds of integration cost
+
+“What does a SaaS integration cost?” can mean three different bills. This report measures the first two, because they're the ones a buyer of these tools actually meets.
+
+1. **Plan upgrades (measured here).** The integration only works on a higher plan of one of the tools. That's 93% of the integration tax in this index, typically $120 to $251 a month for 10 seats when an upgrade is forced.
+2. **Connector fees (measured here).** There's no native app, so you pay for Make, Zapier or a similar service: $10.59 to $29.99 a month at list price, more at high volumes.
+3. **Building it yourself (not measured here).** If no native app or connector fits, someone writes and maintains a custom integration against both APIs. We don't measure that. For scale, Albato, an integration-platform vendor and so not a neutral source, cites Chift's cost analysis for roughly $10,000 to $22,000 in the first year for one in-house API integration, development plus maintenance ([Albato ↗](https://albato.com/blog/publications/embedded-ipaas-roi), read Nov 10, 2026).
 
 ## The 15 most expensive integrations
 
@@ -173,7 +183,7 @@ All 55 integrations
 
 ## Methodology
 
-**Integration tax** = (each tool's minimum plan for the integration − that tool's cheapest plan with API access) + the connector fee, for a 10-seat team at monthly-billing list prices (ActiveCampaign, Pipedrive and Salesforce publish annual-billing rates only, so those rates are used). The report covers the 55 integrations in the index when it was published on Nov 3, 2026; pairs added since then aren't included, so the figures stay comparable. Minimum plans, connector fees and prices come from those pair calculators; every figure there links to the vendor's pricing page, help center or developer docs and was checked on Nov 3, 2026.
+**Integration tax** = (each tool's minimum plan for the integration − that tool's cheapest plan with API access) + the connector fee, for a 10-seat team at monthly-billing list prices (ActiveCampaign, Pipedrive and Salesforce publish annual-billing rates only, so those rates are used). The report covers the 55 integrations in the index when it was published on Nov 3, 2026; pairs added since then aren't included, so the figures stay comparable. Minimum plans, connector fees and prices come from those pair calculators; every figure there links to the vendor's pricing page, help center or developer docs, with the date it was checked (Nov 3 to Nov 8, 2026).
 
 **Baseline plans** (cheapest plan with API access, 10 seats): ActiveCampaign Starter ($15/mo); Airtable Free ($0/mo); Asana Starter ($134.90/mo); Calendly Free ($0/mo); ClickUp Free ($0/mo); Freshdesk Growth ($230/mo); HubSpot Free ($0/mo); Intercom Essential ($390/mo); Mailchimp Free ($0/mo); Monday.com Standard ($140/mo); Notion Plus ($120/mo); Pipedrive Lite ($140/mo); QuickBooks Simple Start ($38/mo); Salesforce Professional ($1,250/mo); Slack Free ($0/mo); Stripe Standard ($0/mo); Xero Early ($27/mo); Zendesk Suite Team ($690/mo).
 

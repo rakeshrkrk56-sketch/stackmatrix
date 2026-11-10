@@ -1,4 +1,4 @@
-# Salesforce + Slack Integration Cost (2026) | StackCostMatrix
+# Salesforce + Slack Integration Cost (2026): Plans & Setup
 
 > Salesforce Sales Cloud + Slack needs Salesforce Sales Cloud Enterprise and Slack Pro: $1,737.50/mo for 10 seats, including a +$400/mo forced upgrade.
 
@@ -21,6 +21,8 @@ Salesforce builds its own suite of Slack integrations that bring Salesforce reco
 
 **Limitations:** Salesforce lists Enterprise, Performance, Unlimited and Developer editions for its Sales Cloud app for Slack, so Starter and Professional teams would need to upgrade or use middleware instead.
 
+[Setup guide: Slack: Salesforce apps for Slack ↗](https://slack.com/help/articles/227838227-Salesforce-apps-for-Slack)
+
 Sources (checked Nov 3, 2026): [Slack: Salesforce apps for Slack ↗](https://slack.com/help/articles/227838227-Salesforce-apps-for-Slack) · [Salesforce Help: Enable Sales Cloud for Slack ↗](https://help.salesforce.com/s/articleView?id=slack.slack_apps_sales_enable_the_sales_cloud_for_slack_app.htm&language=en_US&type=5)
 
 *Interactive cost calculator: open the web page to change team size, billing and add-ons.*
@@ -32,20 +34,23 @@ Salesforce Sales Cloud 'Enterprise' ($1,650.00/mo) + Slack 'Pro' ($87.50/mo),
 no middleware required.
 Alternative: skip the native tier upgrade and run via Make/Zapier middleware for ~$1,348.09/mo all-in (adds a third-party dependency).
 
+ 
+
 ## Native vs middleware for Salesforce Sales Cloud + Slack
 
 The native path runs on the required tiers (Salesforce Sales Cloud 'Enterprise' + Slack 'Pro') at $1,737.50/mo for a 10-seat team, with 2-way sync and no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — comes to $1,348.09/mo all-in, which is cheaper on paper because it skips the $400.00/mo forced tier upgrade. The trade-off: you replace the native connector with a third-party dependency, sync becomes 1-way (trigger → action) instead of 2-way, and Make Core's fee covers a fixed monthly allowance of credits — whether that covers your volume is not verified for this pair.
-
-API access at the required tiers: Salesforce Sales Cloud Yes, Slack Yes (see the spec matrix). That API access is what the middleware path runs on.
 
 Integration routes compared for a 10-seat team
 
 | Route | Plans | 10 seats / month | Sync |
 | --- | --- | --- | --- |
-| Native Salesforce Sales Cloud + Slack connector | Salesforce Sales Cloud 'Enterprise' + Slack 'Pro' | $1,737.50 | As listed in the spec matrix |
+| Native Salesforce Sales Cloud + Slack connector | Salesforce Sales Cloud 'Enterprise' + Slack 'Pro' | $1,737.50 | 2-way |
 | Make Core on the cheapest API plans | Salesforce Sales Cloud 'Professional' + Slack 'Pro' + Make | $1,348.09 | 1-way per scenario |
+| Zapier Professional on the cheapest API plans | Salesforce Sales Cloud 'Professional' + Slack 'Pro' + Zapier | $1,367.49 | 1-way per Zap |
 
-Make Core's $10.59 monthly price comes from third-party pricing reviews, because make.com blocks automated checks; Zapier's is from zapier.com/pricing.
+Connector prices are monthly-billing list prices: Zapier Professional $29.99 (zapier.com/pricing) and Make Core $10.59 (from third-party pricing reviews, because make.com blocks automated checks). Both bill by usage, so high volumes cost more.
+
+Image: [Salesforce Sales Cloud + Slack integration cost summary: $1,737.50 a month for 10 seats, $400 of it is the hidden cost to connect; plans needed: Salesforce Sales Cloud Enterprise and Slack Pro](https://stackcostmatrix.com/og/salesforce-and-slack.jpg)
 
 ## ✓ Verified Vendor Facts
 
@@ -55,14 +60,6 @@ Make Core's $10.59 monthly price comes from third-party pricing reviews, because
 - **Native app availability:** Native app available in vendor marketplace.
 
 Last checked: Nov 3, 2026 (exceptions listed at the top) · Sources linked below.
-
-## ◐ Model Estimates (your assumptions)
-
-- **Usage / task add-ons:** middleware overage costs you enter above.
-- **Setup & maintenance:** implementation hours and ongoing ops — adjust freely.
-- **Annual billing saving:** uses each vendor's published annual price where one exists; otherwise no discount is applied.
-
-Estimates never change the verified facts — they only model your scenario.
 
 ## ! Hidden Cost Trap
 

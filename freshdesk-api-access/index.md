@@ -23,9 +23,11 @@ Freshdesk API & Webhook Access by Plan (2026)
 | Pro | $66/seat/mo ($55 billed annually) | Yes | Not published per plan | Yes | Trigger Webhook action |
 | Enterprise | $107/seat/mo ($89 billed annually) | Yes | Not published per plan | Yes | Trigger Webhook action |
 
-"Not stated" means Freshdesk's documentation that we read doesn't say either way. Prices are monthly-billing list prices from this site's calculators.
+Prices are monthly-billing list prices from this site's calculators.
 
 Freshdesk's API rate limit is set per minute by plan; its API reference doesn't print the Growth figure on the page we read.
+
+Image: [Freshdesk API access by plan: Growth yes; Pro yes; Enterprise yes](https://stackcostmatrix.com/og/freshdesk-api-access.jpg)
 
 ## Two kinds of webhooks
 

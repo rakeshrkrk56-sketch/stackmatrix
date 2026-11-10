@@ -23,9 +23,11 @@ Monday.com API & Webhook Access by Plan (2026)
 | Standard | $14/seat/mo ($12 billed annually), min. 3 seats | Yes | 1,000 calls/day | Yes | 250 integration actions/mo |
 | Pro | $24/seat/mo ($19 billed annually), min. 3 seats | Yes | 10,000 calls/day | Yes | 25,000 integration actions/mo |
 
-"Not stated" means Monday.com's documentation that we read doesn't say either way. Prices are monthly-billing list prices from this site's calculators.
+Prices are monthly-billing list prices from this site's calculators.
 
 Free accounts get 200 API calls a day and Enterprise 25,000; the daily limit resets at midnight UTC and can be raised with an API add-on.
+
+Image: [Monday.com API access by plan: Basic yes; Standard yes; Pro yes](https://stackcostmatrix.com/og/monday-api-access.jpg)
 
 ## Two kinds of webhooks
 

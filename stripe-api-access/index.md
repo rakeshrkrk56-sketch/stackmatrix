@@ -21,7 +21,9 @@ Stripe API & Webhook Access by Plan (2026)
 | --- | --- | --- | --- | --- | --- |
 | Standard | Free | Yes Every account | Not published per plan | Yes | — |
 
-"Not stated" means Stripe's documentation that we read doesn't say either way. Prices are monthly-billing list prices from this site's calculators.
+Prices are monthly-billing list prices from this site's calculators.
+
+Image: [Stripe API access by plan: Standard yes](https://stackcostmatrix.com/og/stripe-api-access.jpg)
 
 ## Two kinds of webhooks
 

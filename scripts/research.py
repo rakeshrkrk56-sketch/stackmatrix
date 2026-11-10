@@ -116,6 +116,17 @@ def build():
         f"<strong>{S['free']} of {S['n']} integrations cost nothing extra.</strong> They work on each tool&#39;s cheapest plan with API access and need no connector, so connecting them is free on top of the plans you already pay for.",
     ]
     findings = f'{H2}Key findings</h2> ' + "".join(f"{P}{x}</p>" for x in find if x)
+    kinds = (f'{H2}Three kinds of integration cost</h2> '
+             f'{P}&ldquo;What does a SaaS integration cost?&rdquo; can mean three different bills. This report measures the first two, because they&#39;re the ones a buyer of these tools actually meets.</p>'
+             f'<ol class="scm-steps"> <li><strong>Plan upgrades (measured here).</strong> The integration only works on a higher plan of one of the tools. That&#39;s {S["up_share"]:.0f}% of the integration tax in this index, '
+             f'typically {m0(S["forced_q1"])} to {m0(round(S["forced_q3"]))} a month for 10 seats when an upgrade is forced.</li> '
+             f'<li><strong>Connector fees (measured here).</strong> There&#39;s no native app, so you pay for Make, Zapier or a similar service: {m0(S["conn_min"])} to {m0(S["conn_max"])} a month at list price, more at high volumes.</li> '
+             f'<li><strong>Building it yourself (not measured here).</strong> If no native app or connector fits, someone writes and maintains a custom integration against both APIs. We don&#39;t measure that. '
+             f'For scale, Albato, an integration-platform vendor and so not a neutral source, cites Chift&#39;s cost analysis for roughly $10,000 to $22,000 in the first year for one in-house API integration, development plus maintenance '
+             f'(<a href="https://albato.com/blog/publications/embedded-ipaas-roi" rel="noopener" {LINK}>Albato ↗</a>, read Nov 10, 2026).</li> </ol>')
+    figure = (f'<figure class="mt-6"> <img src="/og/integration-tax-2026.jpg" width="1200" height="630" loading="lazy" class="scm-fig" '
+              f'alt="Bar chart: the {min(8, len(rows))} most expensive SaaS integrations by monthly integration tax for a 10-seat team, led by {esc(rows[0]["label"])} at {m0(rows[0]["tax"])} a month"> '
+              f'<figcaption class="mt-2 text-xs text-slate-500">The most expensive integrations in the index, by monthly integration tax for 10 seats. Free to reuse with credit (CC BY 4.0).</figcaption> </figure>')
     # chart 1
     top = rows[:15]; vmax = max(r["tax"] for r in top)
     items = []
@@ -152,7 +163,7 @@ def build():
     unc = S["unconf_rows"]
     meth = (f'{H2}Methodology</h2> '
             f'{P}<strong>Integration tax</strong> = (each tool&#39;s minimum plan for the integration − that tool&#39;s cheapest plan with API access) + the connector fee, for a 10-seat team at monthly-billing list prices (ActiveCampaign, Pipedrive and Salesforce publish annual-billing rates only, so those rates are used). '
-            f'The report covers the {S["n"]} integrations in the index when it was published on Nov 3, 2026; pairs added since then aren&#39;t included, so the figures stay comparable. Minimum plans, connector fees and prices come from those pair calculators; every figure there links to the vendor&#39;s pricing page, help center or developer docs and was checked on Nov 3, 2026.</p>'
+            f'The report covers the {S["n"]} integrations in the index when it was published on Nov 3, 2026; pairs added since then aren&#39;t included, so the figures stay comparable. Minimum plans, connector fees and prices come from those pair calculators; every figure there links to the vendor&#39;s pricing page, help center or developer docs, with the date it was checked (Nov 3 to Nov 8, 2026).</p>'
             f'{P}<strong>Baseline plans</strong> (cheapest plan with API access, 10 seats): {esc(floors)}.</p>'
             f'{P}<strong>Limitations.</strong> HubSpot Professional is modeled as Smart CRM Professional ($50 per seat a month, $45 on annual billing), the cheapest subscription that unlocks the Salesforce connector and the Asana workflow action; other Professional Hubs cost more. Make Core&#39;s $10.59 monthly price comes from third-party pricing reviews, because make.com blocks automated checks. '
             f'Salesforce&#39;s baseline includes the $25/user API add-on that Professional needs. Stripe has no plan fee, so its baseline is $0. '
@@ -178,15 +189,15 @@ def build():
              'el.addEventListener("mouseleave",hide);el.addEventListener("focus",function(){show(null,el)});el.addEventListener("blur",hide);});})();</script>')
     body = (f'<section class="mx-auto max-w-4xl"> <p class="text-sm font-semibold uppercase tracking-widest text-indigo-600">Research · November 2026</p> '
             f'<h1 class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">\nThe Integration Tax 2026: What Connecting SaaS Tools Really Costs\n</h1> '
-            f'<p class="mt-3 text-sm text-slate-500">StackCostMatrix · Published Nov 3, 2026 · Data checked against vendor docs Nov 3, 2026 · Updated Nov 8, 2026: HubSpot Professional repriced per seat (Nov 5); ActiveCampaign + Stripe, Mailchimp + Calendly and Pipedrive + Xero corrected (Nov 8; see the About page changelog) · Edited by <a href="/about/#editor" class="font-medium text-indigo-600 hover:underline">Rakesh Kumar</a></p> '
-            f'{P}{lead}</p> {tiles} {findings} {chart1} {chart2} {table} {meth} {cite}{faq_html} </section> {tipjs} ')
+            f'<p class="mt-3 text-sm text-slate-500">StackCostMatrix · Published Nov 3, 2026 · Data checked against vendor docs Nov 3, 2026 · Updated Nov 10, 2026: HubSpot Professional repriced per seat (Nov 5); ActiveCampaign + Stripe, Mailchimp + Calendly and Pipedrive + Xero corrected (Nov 8); &ldquo;Three kinds of integration cost&rdquo; added (Nov 10). See the About page changelog · Edited by <a href="/about/#editor" class="font-medium text-indigo-600 hover:underline">Rakesh Kumar</a></p> '
+            f'{P}{lead}</p> {tiles} {figure} {findings} {kinds} {chart1} {chart2} {table} {meth} {cite}{faq_html} </section> {tipjs} ')
     ld = [
         {"@context": "https://schema.org", "@type": "Article", "headline": "The Integration Tax 2026: What Connecting SaaS Tools Really Costs", "description": desc,
          "author": {"@type": "Organization", "name": "StackCostMatrix", "url": f"{SITE}/"}, "publisher": {"@type": "Organization", "name": "StackCostMatrix", "url": f"{SITE}/", "logo": f"{SITE}/icon-512.png"},
-         "datePublished": "2026-11-03", "dateModified": "2026-11-08", "mainEntityOfPage": URL, "image": f"{SITE}/icon-512.png", "inLanguage": "en", "isBasedOn": f"{SITE}/data/integration-pairs.json"},
-        {"@context": "https://schema.org", "@type": "Dataset", "name": "StackCostMatrix Integration Tax 2026", "description": f"Monthly integration tax (forced plan upgrades plus connector fees) for {S['n']} B2B SaaS integrations at 10 seats, derived from vendor-verified plan requirements and prices checked 2026-11-03.",
+         "datePublished": "2026-11-03", "dateModified": "2026-11-10", "mainEntityOfPage": URL, "image": f"{SITE}/og/integration-tax-2026.jpg", "inLanguage": "en", "isBasedOn": {"@id": f"{SITE}/#dataset"}},
+        {"@context": "https://schema.org", "@type": "Dataset", "@id": f"{URL}#dataset", "isBasedOn": {"@id": f"{SITE}/#dataset"}, "isAccessibleForFree": True, "name": "StackCostMatrix Integration Tax 2026", "description": f"Monthly integration tax (forced plan upgrades plus connector fees) for {S['n']} B2B SaaS integrations at 10 seats, derived from vendor-verified plan requirements and prices checked 2026-11-03.",
          "url": URL, "license": "https://creativecommons.org/licenses/by/4.0/", "creator": {"@type": "Organization", "name": "StackCostMatrix", "url": f"{SITE}/"},
-         "dateModified": "2026-11-08", "keywords": ["SaaS pricing", "integration cost", "API access", "webhooks", "Zapier", "Make"],
+         "dateModified": "2026-11-10", "keywords": ["SaaS pricing", "integration cost", "API access", "webhooks", "Zapier", "Make"],
          "distribution": [{"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": f"{SITE}/data/integration-pairs.json"}]},
         {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faqs]},
         {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": f"{SITE}/"},
@@ -199,11 +210,22 @@ def build():
     json.dump({k: (v if not isinstance(v, list) or k == "mw_fees" else len(v)) for k, v in S.items() if k != "by_tool"}, sys.stdout, default=str); print()
 
 def update_home_card():
+    """Homepage: the research card and the first FAQ answer quote the report's current figures."""
     D, rows = dataset(); S = stats(rows)
-    new = f"Original research: {S['taxed']} of {S['n']} popular integrations add a hidden monthly cost, usually ${round(S['forced_q1']):,}–${round(S['forced_q3']):,} a month when a plan upgrade is forced."
+    rng = f"${round(S['forced_q1']):,}–${round(S['forced_q3']):,}"
+    new = (f"Original research: {S['taxed']} of {S['n']} popular integrations add a hidden monthly cost, usually {rng} a month when a plan upgrade is forced. "
+           f"It covers the {S['n']} pairs in the index when it was published; pairs added since aren&#39;t counted.")
     h = read("index.html")
-    h2, n = re.subn(r"Original research: \d+ of \d+ popular integrations add a hidden monthly cost[^<]*", new, h)
-    assert n == 1; open("index.html", "w", encoding="utf-8").write(h2)
+    h, n = re.subn(r"Original research: \d+ of \d+ popular integrations add a hidden monthly cost[^<]*", new, h)
+    assert n == 1
+    faq = (f"\nHidden API tier costs are the extra subscription fees you pay because an integration only works on a higher plan of one of the tools. "
+           f"In our 2026 research, {S['taxed']} of {S['n']} popular integrations add a hidden monthly cost, and forced plan upgrades make up {S['up_share']:.0f}% of it: "
+           f"typically {rng} a month for a 10-person team when an upgrade is forced, against ${S['conn_min']:.2f}–${S['conn_max']:.2f} for a connector such as Make or Zapier. "
+           f"The full figures are in The Integration Tax 2026 report on this site.\n")
+    h, n = re.subn(r'(<summary class="cursor-pointer font-semibold text-slate-900">What are hidden API tier costs\?</summary> <p class="mt-2 text-sm leading-relaxed text-slate-600">).*?(</p>)',
+                   lambda m: m.group(1) + faq + m.group(2), h, count=1, flags=re.S)
+    assert n == 1
+    open("index.html", "w", encoding="utf-8").write(h)
 
 if __name__ == "__main__":
     build()

@@ -23,13 +23,13 @@ A Make scenario watches one CRM and acts in the other, for example creating a Sa
 
 ### How to set it up
 
-**1.** Make sure your Salesforce org has API access: Enterprise or Unlimited include it, Professional needs the API add-on.
-
-**2.** In Make, create a scenario and connect your Pipedrive and Salesforce accounts.
-
-**3.** Pick a trigger in one tool and an action in the other, map the fields and turn the scenario on.
+1. Make sure your Salesforce org has API access: Enterprise or Unlimited include it, Professional needs the API add-on.
+2. In Make, create a scenario and connect your Pipedrive and Salesforce accounts.
+3. Pick a trigger in one tool and an action in the other, map the fields and turn the scenario on.
 
 **Limitations:** This calculator models Salesforce Professional with the $25/user API add-on; Enterprise includes API access without it. Pipedrive's API is available on every plan, with rate limits that rise with the plan. Real usage can push Make onto a bigger plan.
+
+[Setup guide: Make: Salesforce app ↗](https://apps.make.com/salesforce)
 
 Sources (checked Nov 4, 2026): [Make: Salesforce app ↗](https://apps.make.com/salesforce) · [Salesforce developers: Supported editions ↗](https://developer.salesforce.com/docs/platform/api-rest/guide/intro-rest-compatible-editions.html) · [Pipedrive developers: Rate limiting ↗](https://pipedrive.readme.io/docs/core-api-concepts-rate-limiting)
 
@@ -40,12 +40,13 @@ Sources (checked Nov 4, 2026): [Make: Salesforce app ↗](https://apps.make.com/
 **Middleware integration costs $1,400.59/mo ($16,807.08/yr)** for a 10-seat team —
 Pipedrive 'Lite' ($140.00/mo) + Salesforce Sales Cloud 'Professional' ($1,250.00/mo)
 + $10.59/mo middleware. No native connector exists for this pair.
+Salesforce's $1,250.00 is the Professional plan ($100/user) plus the API add-on, which Salesforce sells through an account executive; this page models it at $25/user ($250 at 10 seats).
+
+ 
 
 ## Native vs middleware for Pipedrive + Salesforce Sales Cloud
 
 No native connector exists for this pair, so middleware is not an alternative — it is the integration. The modeled middleware cost is $10.59/mo on top of both tools, for $1,400.59/mo all-in at 10 seats on the modeled tiers (Pipedrive 'Lite' + Salesforce Sales Cloud 'Professional'). Sync is 1-way (trigger → action). The middleware figure is the modeled cost for this pair; your actual middleware bill scales with task and operation volume, which is not verified here — check your expected volume against the middleware plan before budgeting.
-
-API access at the required tiers: Pipedrive Yes, Salesforce Sales Cloud Yes (see the spec matrix). That API access is what the middleware path runs on.
 
 Integration routes compared for a 10-seat team
 
@@ -54,7 +55,9 @@ Integration routes compared for a 10-seat team
 | Make Core (modeled here) | Pipedrive 'Lite' + Salesforce Sales Cloud 'Professional' | $1,400.59 | 1-way per automation |
 | Zapier Professional instead | Pipedrive 'Lite' + Salesforce Sales Cloud 'Professional' | $1,419.99 | 1-way per automation |
 
-Make Core's $10.59 monthly price comes from third-party pricing reviews, because make.com blocks automated checks; Zapier's is from zapier.com/pricing.
+Connector prices are monthly-billing list prices: Zapier Professional $29.99 (zapier.com/pricing) and Make Core $10.59 (from third-party pricing reviews, because make.com blocks automated checks). Both bill by usage, so high volumes cost more.
+
+Image: [Pipedrive + Salesforce Sales Cloud integration cost summary: $1,400.59 a month for 10 seats, $10.59 of it is the hidden cost to connect; plans needed: Pipedrive Lite and Salesforce Sales Cloud Professional](https://stackcostmatrix.com/og/pipedrive-and-salesforce.jpg)
 
 ## ✓ Verified Vendor Facts
 
@@ -64,14 +67,6 @@ Make Core's $10.59 monthly price comes from third-party pricing reviews, because
 - **Native app availability:** No native app — connected via middleware.
 
 Last checked: Nov 4, 2026 (exceptions listed at the top) · Sources linked below.
-
-## ◐ Model Estimates (your assumptions)
-
-- **Usage / task add-ons:** middleware overage costs you enter above.
-- **Setup & maintenance:** implementation hours and ongoing ops — adjust freely.
-- **Annual billing saving:** uses each vendor's published annual price where one exists, including the middleware or connector fee; otherwise no discount is applied.
-
-Estimates never change the verified facts — they only model your scenario.
 
 ## ! Hidden Cost Trap
 
@@ -114,7 +109,7 @@ Some outbound links may earn us a referral commission at no extra cost to you. [
 
 ### What are the minimum plan tiers required for the Pipedrive + Salesforce Sales Cloud integration?
 
-To unlock the integration, Pipedrive must be on the 'Lite' plan or higher and Salesforce Sales Cloud must be on the 'Professional' plan or higher. Neither plan is an upgrade over the cheapest plan with API access.
+To unlock the integration, Pipedrive must be on the 'Lite' plan or higher and Salesforce Sales Cloud must be on the 'Professional' plan or higher. Those are each tool's cheapest plan with API access (Pipedrive 'Lite' at $140/mo and Salesforce Sales Cloud 'Professional' at $1,250/mo for 10 seats), so the integration doesn't force an upgrade.
 
 ### How much does the Pipedrive + Salesforce Sales Cloud stack cost per month for a 10-person team?
 

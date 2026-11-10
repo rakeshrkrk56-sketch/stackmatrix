@@ -11,7 +11,7 @@ Tool guide
 
 # Stripe Integration Costs (2026): Minimum Plans, API Access & Hidden Fees
 
-Built from the 12 pair calculators below · integration requirements checked Nov 3, 2026; 2 with a plan still unconfirmed (Notion and Salesforce Sales Cloud). · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
+Built from the 12 pair calculators below · integration requirements checked Nov 3, 2026 to Nov 8, 2026; 2 with a plan still unconfirmed (Notion and Salesforce Sales Cloud). · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
 
 This page collects the 12 Stripe integrations in the StackCostMatrix index: which Stripe plan each one needs, whether it's native or runs through middleware, and what the whole stack costs for a 10-person team. 6 of the 12 connect natively and 6 need a connector such as Make or Zapier. By minimum Stripe plan, the count is Standard (12). Ten-seat totals run from $0.00/mo (HubSpot + Stripe) to $1,250.00/mo (Salesforce + Stripe).
 
@@ -25,7 +25,7 @@ Stripe Integration Costs (2026): Minimum Plans, API Access & Hidden Fees
 | Stripe + Mailchimp | Middleware Data Mapper for Mailchimp $15/mo | Standard | Free | $15.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/stripe-and-mailchimp/) |
 | Stripe + Xero | Native | Standard | Early | $27.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/stripe-and-xero/) |
 | Stripe + QuickBooks | Middleware Make Core $10.59/mo | Standard | Simple Start | $48.59 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/stripe-and-quickbooks/) |
-| ActiveCampaign + Stripe | Native | Standard | Plus | $49.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/activecampaign-and-stripe/) |
+| ActiveCampaign + Stripe | Native | Standard | Plus | $49.00 | Nov 8, 2026 | [Calculator →](https://stackcostmatrix.com/stack/activecampaign-and-stripe/) |
 | Notion + Stripe | Middleware Make Core $10.59/mo | Standard | Plus | $130.59 | Nov 3, 2026 (Notion plan unconfirmed) | [Calculator →](https://stackcostmatrix.com/stack/notion-and-stripe/) |
 | Airtable + Stripe | Middleware Make Core $10.59/mo | Standard | Team | $250.59 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/airtable-and-stripe/) |
 | Intercom + Stripe | Native | Standard | Essential | $390.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/intercom-and-stripe/) |
@@ -33,6 +33,8 @@ Stripe Integration Costs (2026): Minimum Plans, API Access & Hidden Fees
 | Salesforce + Stripe | Native | Standard | Professional | $1,250.00 | Nov 3, 2026 (Salesforce edition unconfirmed) | [Calculator →](https://stackcostmatrix.com/stack/salesforce-and-stripe/) |
 
 Totals are monthly-billing prices for 10 seats on the minimum plans, including any connector fee. Open a calculator to change team size, switch to annual billing or add usage costs.
+
+Image: [Stripe integration costs summary: 12 integrations priced, from $0 to $1,250 a month for 10 seats](https://stackcostmatrix.com/og/stripe-integrations-cost.jpg)
 
 ## Does Stripe force an upgrade?
 

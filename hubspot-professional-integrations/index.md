@@ -11,7 +11,7 @@ HubSpot plans
 
 # Which Integrations Need HubSpot Professional? (2026)
 
-Checked against HubSpot's pricing pages and knowledge base · Nov 5, 2026 · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
+Checked against HubSpot's pricing pages and knowledge base · Nov 5, 2026 · Salesforce requirements added Nov 10, 2026 · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
 
 **Short answer:** Only 2 of the 13 HubSpot integrations we track need Professional: HubSpot + Salesforce and HubSpot + Asana. Any Professional subscription HubSpot lists for them works, and the cheapest is Smart CRM Professional at $50 per seat a month ($45 on an annual commitment), about $500 a month for 10 people. The other 11 work on HubSpot's free CRM.
 
@@ -56,6 +56,14 @@ Prices from HubSpot's pricing pages, checked Nov 5, 2026. Annual-commitment pric
 
 **You may not need 10 paid seats.** HubSpot charges per Core Seat, and its product catalog says View-Only Seats are “available at no additional cost”. People who only look at records don't need a paid seat, so a team where a few people do the editing pays less than the 10-seat figure.
 
+## Do you need HubSpot Professional for the Salesforce integration?
+
+**Yes.** HubSpot's Salesforce connector isn't available on the free CRM or Starter: HubSpot lists it for Professional and Enterprise only, on any of the Hubs in the table above. The cheapest way in is Smart CRM Professional at $50 per seat a month.
+
+**What Salesforce needs.** HubSpot's requirements read “a Salesforce edition with API access, or Salesforce Professional”, and Group Edition isn't supported. Enterprise and Unlimited include API access; Professional normally needs a paid API add-on. Salesforce also says security-reviewed AppExchange apps can reach Professional orgs even if the customer doesn't have API access, so ask Salesforce whether your Professional org needs the add-on for HubSpot's connector. The Salesforce user who connects it also needs the API Enabled permission. Details by edition: [Salesforce API access by edition](https://stackcostmatrix.com/salesforce-api-access/).
+
+**One-time fees.** HubSpot adds a required Professional Onboarding fee on some Hubs ($1,500 for Sales Hub or Service Hub, $3,000 for Marketing Hub); its pricing page shows none for Smart CRM Professional. Full monthly cost with both tools: [HubSpot + Salesforce](https://stackcostmatrix.com/stack/hubspot-and-salesforce/).
+
 ## Is there a cheaper route than upgrading?
 
 Sometimes. HubSpot's API works on every plan, including the free CRM, so a connector like Make can link HubSpot to Salesforce or Asana without Professional. For [HubSpot + Salesforce](https://stackcostmatrix.com/stack/hubspot-and-salesforce/), the native route costs $1,750 a month for 10 people and the connector route about $1,260.59. For [HubSpot + Asana](https://stackcostmatrix.com/stack/hubspot-and-asana/), the native route costs $634.90 a month for 10 people and the connector route about $145.49. The trade-off is that you build and maintain the sync yourself, and the native Salesforce connector does more (two-way sync of contacts, companies, deals and activities) than a simple automation.
@@ -77,6 +85,7 @@ Checked Nov 5, 2026. Help-article quotes are copied from each article, with the 
 - [HubSpot pricing: Service Hub ↗](https://www.hubspot.com/pricing/service/enterprise) “Professional · $90/mo/seat · $100/mo/seat · one-time Professional Onboarding for a fee of $1,500”
 - [HubSpot pricing: Content Hub ↗](https://www.hubspot.com/pricing/content/enterprise) “Professional · $450/mo · $500/mo · Includes 3 Core Seats”
 - [HubSpot pricing: Data Hub ↗](https://www.hubspot.com/pricing/operations/enterprise) “Professional · $720/mo · $800/mo · Includes 1 Core Seat”
+- [Salesforce developers: API access in Group and Professional Editions ↗](https://developer.salesforce.com/docs/atlas.en-us.packagingGuide.meta/packagingGuide/dev_packages_api_access.htm) “after your app passes the security review … your app can make calls to Group and Professional Edition orgs … even if the customer doesn't have API access”
 - [HubSpot Product and Services Catalog ↗](https://legal.hubspot.com/hubspot-product-and-services-catalog) “Core Seat … Professional subscriptions $50/month per seat · View-Only Seat … Available at no additional cost”
 
 ## More on HubSpot
@@ -95,7 +104,7 @@ Smart CRM Professional, at $50 per seat a month on monthly billing or $45 with a
 
 ### Does the HubSpot Salesforce integration work on the free CRM?
 
-No. HubSpot's knowledge base says the Salesforce integration is available with Marketing Hub, Sales Hub, Service Hub, Data Hub, Content Hub or Smart CRM on Professional or Enterprise. For 10 people, HubSpot + Salesforce costs $1,750 a month on the plans it needs.
+No. HubSpot's knowledge base says the Salesforce integration is available with Marketing Hub, Sales Hub, Service Hub, Data Hub, Content Hub or Smart CRM on Professional or Enterprise. On the Salesforce side, HubSpot asks for an edition with API access or Salesforce Professional; Group Edition isn't supported. For 10 people, HubSpot + Salesforce costs $1,750 a month on the plans it needs.
 
 ### Do webhooks in HubSpot workflows need Professional?
 

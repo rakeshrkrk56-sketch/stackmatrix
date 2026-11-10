@@ -28,6 +28,8 @@ HubSpot API & Webhook Access by Plan (2026)
 
 Limits depend on the subscription of the account an app is installed in; an API limit increase add-on adds capacity. Apps can also receive events through HubSpot's developer webhooks API, which isn't covered by the workflow requirement.
 
+Image: [HubSpot API access by plan: Free yes; Starter yes; Professional yes; Enterprise yes](https://stackcostmatrix.com/og/hubspot-api-access.jpg)
+
 ## Two kinds of webhooks
 
 Vendors use "webhooks" for two different features. **Developer webhooks** let an app or a tool like Make or Zapier subscribe to events, and are usually available wherever the API is. A **webhook automation action** is a no-code step that sends data out from the tool's own automations, and is often limited to paid plans. The table lists them separately so you can see which one an integration actually needs.
@@ -58,7 +60,7 @@ Yes. The limit is 100 req/10 s · 250,000/day (private apps). HubSpot's API is a
 
 ### Which HubSpot plans include webhooks?
 
-HubSpot's documentation we read doesn't state developer-webhook availability by plan. Webhook automation action by plan — Free: Needs Data Hub Professional; Starter: Needs Data Hub Professional; Professional: Only with Data Hub Professional; Enterprise: Only with Data Hub Enterprise.
+Webhook actions in workflows need Data Hub Professional or Enterprise; no other Hub unlocks them. Developer webhooks, which apps subscribe to through HubSpot's Webhooks API, are a separate feature, and HubSpot's documentation doesn't tie them to a plan.
 
 ### What are HubSpot's API rate limits by plan?
 

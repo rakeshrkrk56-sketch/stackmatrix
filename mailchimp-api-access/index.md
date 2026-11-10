@@ -24,9 +24,11 @@ Mailchimp API & Webhook Access by Plan (2026)
 | Standard | $20/mo | Yes | Not published per plan | Yes | Yes |
 | Premium | $350/mo | Yes | Not published per plan | Yes | Yes |
 
-"Not stated" means Mailchimp's documentation that we read doesn't say either way. Prices are monthly-billing list prices from this site's calculators.
+Prices are monthly-billing list prices from this site's calculators.
 
 Mailchimp's classic audience webhooks are a separate feature; the help article we read covers the automation step.
+
+Image: [Mailchimp API access by plan: Free yes; Essentials yes; Standard yes; Premium yes](https://stackcostmatrix.com/og/mailchimp-api-access.jpg)
 
 ## Two kinds of webhooks
 

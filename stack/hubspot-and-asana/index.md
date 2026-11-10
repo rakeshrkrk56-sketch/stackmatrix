@@ -1,4 +1,4 @@
-# HubSpot + Asana Integration Cost (2026) | StackCostMatrix
+# HubSpot + Asana Integration Cost (2026): Plans & Setup
 
 > HubSpot + Asana needs HubSpot Professional and Asana Starter for the native integration: $634.90/mo for 10 seats, including a +$500/mo forced upgrade.
 
@@ -21,7 +21,11 @@ The native integration is a HubSpot workflow action: when a deal closes or a tic
 
 **Limitations:** It needs HubSpot workflows, so a Professional or Enterprise subscription. Tasks only go from HubSpot to Asana, private Asana projects don't appear in HubSpot, and the Asana user who connects the integration becomes a collaborator on every task it creates.
 
-Sources (checked Nov 3, 2026): [HubSpot: Create Asana tasks with workflows ↗](https://knowledge.hubspot.com/workflows/create-asana-tasks-with-workflows) · [HubSpot Marketplace: Asana ↗](https://ecosystem.hubspot.com/marketplace/listing/asana)
+**Before you budget:** HubSpot charges a required one-time Professional Onboarding fee on some Hubs ($1,500 for Sales Hub or Service Hub, $3,000 for Marketing Hub; its pricing page shows none for Smart CRM Professional). It isn't in the monthly totals here, so add it under one-time setup cost in the calculator.
+
+[Setup guide: HubSpot: Create Asana tasks with workflows ↗](https://knowledge.hubspot.com/workflows/create-asana-tasks-with-workflows)
+
+Sources (checked Nov 3, 2026): [HubSpot: Create Asana tasks with workflows ↗](https://knowledge.hubspot.com/workflows/create-asana-tasks-with-workflows) · [HubSpot Marketplace: Asana ↗](https://ecosystem.hubspot.com/marketplace/listing/asana) · [HubSpot pricing ↗](https://www.hubspot.com/pricing)
 
 *Interactive cost calculator: open the web page to change team size, billing and add-ons.*
 
@@ -32,20 +36,23 @@ HubSpot 'Professional' ($500.00/mo) + Asana 'Starter' ($134.90/mo),
 no middleware required.
 Alternative: skip the native tier upgrade and run via Make/Zapier middleware for ~$145.49/mo all-in (adds a third-party dependency).
 
+ 
+
 ## Native vs middleware for HubSpot + Asana
 
 The native path runs on the required tiers (HubSpot 'Professional' + Asana 'Starter') at $634.90/mo for a 10-seat team, with no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — comes to $145.49/mo all-in, which is cheaper on paper because it skips the $500.00/mo forced tier upgrade. The trade-off: you replace the native connector with a third-party dependency, sync stays 1-way (trigger → action), and Make Core's fee covers a fixed monthly allowance of credits — whether that covers your volume is not verified for this pair.
-
-API access at the required tiers: HubSpot Yes, Asana Yes (see the spec matrix). That API access is what the middleware path runs on.
 
 Integration routes compared for a 10-seat team
 
 | Route | Plans | 10 seats / month | Sync |
 | --- | --- | --- | --- |
-| Native HubSpot + Asana connector | HubSpot 'Professional' + Asana 'Starter' | $634.90 | As listed in the spec matrix |
+| Native HubSpot + Asana connector | HubSpot 'Professional' + Asana 'Starter' | $634.90 | 1-way (HubSpot → Asana) |
 | Make Core on the cheapest API plans | HubSpot 'Free' + Asana 'Starter' + Make | $145.49 | 1-way per scenario |
+| Zapier Professional on the cheapest API plans | HubSpot 'Free' + Asana 'Starter' + Zapier | $164.89 | 1-way per Zap |
 
-Make Core's $10.59 monthly price comes from third-party pricing reviews, because make.com blocks automated checks; Zapier's is from zapier.com/pricing.
+Connector prices are monthly-billing list prices: Zapier Professional $29.99 (zapier.com/pricing) and Make Core $10.59 (from third-party pricing reviews, because make.com blocks automated checks). Both bill by usage, so high volumes cost more.
+
+Image: [HubSpot + Asana integration cost summary: $634.90 a month for 10 seats, $500 of it is the hidden cost to connect; plans needed: HubSpot Professional and Asana Starter](https://stackcostmatrix.com/og/hubspot-and-asana.jpg)
 
 ## ✓ Verified Vendor Facts
 
@@ -55,14 +62,6 @@ Make Core's $10.59 monthly price comes from third-party pricing reviews, because
 - **Native app availability:** Native app available in vendor marketplace.
 
 Last checked: Nov 3, 2026 (exceptions listed at the top) · Sources linked below.
-
-## ◐ Model Estimates (your assumptions)
-
-- **Usage / task add-ons:** middleware overage costs you enter above.
-- **Setup & maintenance:** implementation hours and ongoing ops — adjust freely.
-- **Annual billing saving:** uses each vendor's published annual price where one exists; otherwise no discount is applied.
-
-Estimates never change the verified facts — they only model your scenario.
 
 ## ! Hidden Cost Trap
 

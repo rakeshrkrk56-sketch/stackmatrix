@@ -1,6 +1,6 @@
-# Mailchimp + Calendly Integration Cost (2026)
+# Mailchimp + Calendly Integration: Setup, Plans & Cost (2026)
 
-> Mailchimp + Calendly needs Mailchimp Free and Calendly Standard for the native integration: $120/mo for 10 seats, with no extra cost to connect them.
+> How the Mailchimp + Calendly integration works, how to set it up, and the plans it needs: Mailchimp Free + Calendly Standard, $120/mo for 10 seats.
 
 Source page: https://stackcostmatrix.com/stack/mailchimp-and-calendly/  
 Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (credit StackCostMatrix and link to https://stackcostmatrix.com)
@@ -9,7 +9,7 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 [Home](https://stackcostmatrix.com/) / Mailchimp + Calendly 
 
-# Mailchimp + Calendly Integration Cost (2026): Plans, Setup & True Price
+# Mailchimp + Calendly Integration (2026): How It Works, Setup & True Cost
 
 Calendly's Mailchimp integration adds invitees to a Mailchimp audience, with tags, when they book; it needs a paid Calendly plan, and any Mailchimp account works, including Free. Requires Mailchimp on the 'Free' plan and Calendly on the 'Standard' plan.
 
@@ -20,6 +20,8 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 In Calendly, go to Integrations & apps, connect Mailchimp, then create a rule per event type: pick the Mailchimp audience to add invitees to and, optionally, tags. When someone books, Calendly adds them to that audience and sends booked, canceled and rescheduled events to the contact's activity feed, which you can use to target campaigns or trigger automated emails.
 
 **Limitations:** Data flows from Calendly to Mailchimp only. Invitees in GDPR regions are added as non-marketing contacts unless they opt in, and disconnecting Mailchimp deletes the rules you set up.
+
+[Setup guide: Calendly help: Calendly + Mailchimp ↗](https://calendly.com/help/calendly-mailchimp)
 
 Sources (checked Nov 8, 2026): [Calendly help: Calendly + Mailchimp ↗](https://calendly.com/help/calendly-mailchimp)
 
@@ -32,20 +34,23 @@ Mailchimp 'Free' ($0.00/mo) + Calendly 'Standard' ($120.00/mo),
 no middleware required.
 Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capable tiers ($130.59/mo all-in) — the native path is cheaper.
 
+ 
+
 ## Native vs middleware for Mailchimp + Calendly
 
 The native path runs on the required tiers (Mailchimp 'Free' + Calendly 'Standard') at $120.00/mo for a 10-seat team, with no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — would cost $130.59/mo all-in, so on cost alone there is no reason to switch: middleware would only make sense if you already run other automations through it.
-
-API access at the required tiers: Mailchimp Yes, Calendly Yes (see the spec matrix). That API access is what the middleware path runs on.
 
 Integration routes compared for a 10-seat team
 
 | Route | Plans | 10 seats / month | Sync |
 | --- | --- | --- | --- |
-| Native Mailchimp + Calendly connector | Mailchimp 'Free' + Calendly 'Standard' | $120.00 | As listed in the spec matrix |
+| Native Mailchimp + Calendly connector | Mailchimp 'Free' + Calendly 'Standard' | $120.00 | 1-way (Calendly → Mailchimp) |
 | Make Core on the cheapest API plans | Mailchimp 'Free' + Calendly 'Standard' + Make | $130.59 | 1-way per scenario |
+| Zapier Professional on the cheapest API plans | Mailchimp 'Free' + Calendly 'Standard' + Zapier | $149.99 | 1-way per Zap |
 
-Make Core's $10.59 monthly price comes from third-party pricing reviews, because make.com blocks automated checks; Zapier's is from zapier.com/pricing.
+Connector prices are monthly-billing list prices: Zapier Professional $29.99 (zapier.com/pricing) and Make Core $10.59 (from third-party pricing reviews, because make.com blocks automated checks). Both bill by usage, so high volumes cost more.
+
+Image: [Mailchimp + Calendly integration cost summary: $120 a month for 10 seats, nothing extra to connect; plans needed: Mailchimp Free and Calendly Standard](https://stackcostmatrix.com/og/mailchimp-and-calendly.jpg)
 
 ## ✓ Verified Vendor Facts
 
@@ -54,15 +59,7 @@ Make Core's $10.59 monthly price comes from third-party pricing reviews, because
 - **API & webhook gates:** audited in official developer docs (see spec matrix).
 - **Native app availability:** Native app available in vendor marketplace.
 
-Last checked: Nov 3, 2026 · Sources linked below.
-
-## ◐ Model Estimates (your assumptions)
-
-- **Usage / task add-ons:** middleware overage costs you enter above.
-- **Setup & maintenance:** implementation hours and ongoing ops — adjust freely.
-- **Annual billing saving:** uses each vendor's published annual price where one exists; otherwise no discount is applied.
-
-Estimates never change the verified facts — they only model your scenario.
+Requirements checked: Nov 8, 2026; prices: Nov 3, 2026 · Sources linked below.
 
 ## ! Plan requirements
 
@@ -78,11 +75,6 @@ Middleware fee
 :   None
 
 No hidden cost: the native connector works on Mailchimp 'Free' and Calendly 'Standard', so connecting them adds nothing to what you already pay for the two tools.
-
-✓ Native is the cheapest path — $0 incremental integration cost
-
-The native Mailchimp + Calendly connector runs on the required tiers with no middleware fee
-and no forced tier upgrade — paying for middleware here would only add cost.
 
 ## Side-by-side spec matrix
 
@@ -106,7 +98,7 @@ Some outbound links may earn us a referral commission at no extra cost to you. [
 
 ### What are the minimum plan tiers required for the Mailchimp + Calendly integration?
 
-To unlock the native integration, Mailchimp must be on the 'Free' plan or higher and Calendly must be on the 'Standard' plan or higher. Neither plan is an upgrade over the cheapest plan with API access.
+To unlock the native integration, Mailchimp must be on the 'Free' plan or higher and Calendly must be on the 'Standard' plan or higher. Those are each tool's cheapest plan with API access (Mailchimp 'Free' at $0/mo and Calendly 'Standard' at $120/mo for 10 seats), so the integration doesn't force an upgrade.
 
 ### How much does the Mailchimp + Calendly stack cost per month for a 10-person team?
 

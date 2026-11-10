@@ -23,15 +23,14 @@ The HubSpot app for Slack sends HubSpot notifications such as reminders, mention
 
 ### How to set it up
 
-**1.** Make sure you're a Super Admin (or have App Marketplace permissions) in HubSpot and an admin of the Slack workspace.
-
-**2.** In HubSpot, click the Marketplace icon, open HubSpot Marketplace, search for Slack and click Install.
-
-**3.** Review the requested permissions in Slack and allow access.
-
-**4.** In Slack, the HubSpot app sends you a message: click Verify to map your HubSpot user to your Slack user.
+1. Make sure you're a Super Admin (or have App Marketplace permissions) in HubSpot and an admin of the Slack workspace.
+2. In HubSpot, click the Marketplace icon, open HubSpot Marketplace, search for Slack and click Install.
+3. Review the requested permissions in Slack and allow access.
+4. In Slack, the HubSpot app sends you a message: click Verify to map your HubSpot user to your Slack user.
 
 **Limitations:** One Slack workspace can connect per HubSpot account, private channels need the app added to each one, and custom Slack messages sent from HubSpot workflows need a Professional or Enterprise subscription because workflows do. Slack's free plan allows up to 10 app installations.
+
+[Setup guide: HubSpot: Connect HubSpot and Slack ↗](https://knowledge.hubspot.com/integrations/how-do-i-use-the-slack-integration)
 
 Sources (checked Nov 3, 2026): [HubSpot: Connect HubSpot and Slack ↗](https://knowledge.hubspot.com/integrations/how-do-i-use-the-slack-integration) · [HubSpot Marketplace: Slack ↗](https://ecosystem.hubspot.com/marketplace/listing/slack) · [Slack: Free plan limits ↗](https://slack.com/help/articles/27204752526611-Feature-limitations-on-the-free-version-of-Slack)
 
@@ -44,20 +43,23 @@ HubSpot 'Free' ($0.00/mo) + Slack 'Free' ($0.00/mo),
 no middleware required.
 Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capable tiers ($10.59/mo all-in) — the native path is cheaper.
 
+ 
+
 ## Native vs middleware for HubSpot + Slack
 
 The native path runs on the required tiers (HubSpot 'Free' + Slack 'Free') at $0.00/mo for a 10-seat team, with 2-way sync and no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — would cost $10.59/mo all-in, so on cost alone there is no reason to switch: middleware would only make sense if you already run other automations through it, and it would drop sync to 1-way (trigger → action).
-
-API access at the required tiers: HubSpot Yes, Slack Yes (see the spec matrix). That API access is what the middleware path runs on.
 
 Integration routes compared for a 10-seat team
 
 | Route | Plans | 10 seats / month | Sync |
 | --- | --- | --- | --- |
-| Native HubSpot + Slack connector | HubSpot 'Free' + Slack 'Free' | $0.00 | As listed in the spec matrix |
+| Native HubSpot + Slack connector | HubSpot 'Free' + Slack 'Free' | $0.00 | 2-way |
 | Make Core on the cheapest API plans | HubSpot 'Free' + Slack 'Free' + Make | $10.59 | 1-way per scenario |
+| Zapier Professional on the cheapest API plans | HubSpot 'Free' + Slack 'Free' + Zapier | $29.99 | 1-way per Zap |
 
-Make Core's $10.59 monthly price comes from third-party pricing reviews, because make.com blocks automated checks; Zapier's is from zapier.com/pricing.
+Connector prices are monthly-billing list prices: Zapier Professional $29.99 (zapier.com/pricing) and Make Core $10.59 (from third-party pricing reviews, because make.com blocks automated checks). Both bill by usage, so high volumes cost more.
+
+Image: [HubSpot + Slack integration cost summary: $0 a month for 10 seats, nothing extra to connect; plans needed: HubSpot Free and Slack Free](https://stackcostmatrix.com/og/hubspot-and-slack.jpg)
 
 ## ✓ Verified Vendor Facts
 
@@ -67,14 +69,6 @@ Make Core's $10.59 monthly price comes from third-party pricing reviews, because
 - **Native app availability:** Native app available in vendor marketplace.
 
 Last checked: Nov 3, 2026 · Sources linked below.
-
-## ◐ Model Estimates (your assumptions)
-
-- **Usage / task add-ons:** middleware overage costs you enter above.
-- **Setup & maintenance:** implementation hours and ongoing ops — adjust freely.
-- **Annual billing saving:** uses each vendor's published annual price where one exists; otherwise no discount is applied.
-
-Estimates never change the verified facts — they only model your scenario.
 
 ## ! Plan requirements
 
@@ -90,11 +84,6 @@ Middleware fee
 :   None
 
 No hidden cost: the native connector works on HubSpot 'Free' and Slack 'Free', so connecting them adds nothing to what you already pay for the two tools.
-
-✓ Native is the cheapest path — $0 incremental integration cost
-
-The native HubSpot + Slack connector runs on the required tiers with no middleware fee
-and no forced tier upgrade — paying for middleware here would only add cost.
 
 ## Side-by-side spec matrix
 
@@ -118,7 +107,7 @@ Some outbound links may earn us a referral commission at no extra cost to you. [
 
 ### What are the minimum plan tiers required for the HubSpot + Slack integration?
 
-To unlock the native integration, HubSpot must be on the 'Free' plan or higher and Slack must be on the 'Free' plan or higher. Neither plan is an upgrade over the cheapest plan with API access.
+To unlock the native integration, HubSpot must be on the 'Free' plan or higher and Slack must be on the 'Free' plan or higher. Those are each tool's cheapest plan with API access (HubSpot 'Free' at $0/mo and Slack 'Free' at $0/mo for 10 seats), so the integration doesn't force an upgrade.
 
 ### How much does the HubSpot + Slack stack cost per month for a 10-person team?
 

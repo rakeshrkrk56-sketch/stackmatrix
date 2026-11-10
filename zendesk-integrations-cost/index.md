@@ -29,6 +29,8 @@ Zendesk Integration Costs (2026): Minimum Plans, API Access & Hidden Fees
 
 Totals are monthly-billing prices for 10 seats on the minimum plans, including any connector fee. Open a calculator to change team size, switch to annual billing or add usage costs.
 
+Image: [Zendesk integration costs summary: 7 integrations priced, from $690 to $1,940 a month for 10 seats](https://stackcostmatrix.com/og/zendesk-integrations-cost.jpg)
+
 ## Does Zendesk force an upgrade?
 
 Not for any of the 7 integrations here: each one works on Zendesk's cheapest plan with API access, so the integration itself adds no Zendesk upgrade cost. Any extra cost comes from the other tool's plan or from a connector fee, shown in the table above.

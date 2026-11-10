@@ -23,9 +23,11 @@ Slack API & Webhook Access by Plan (2026)
 | Pro | $8.75/seat/mo | Yes | Not published per plan | Yes | Yes |
 | Business+ | $18/seat/mo | Yes | Not published per plan | Yes | Yes |
 
-"Not stated" means Slack's documentation that we read doesn't say either way. Prices are monthly-billing list prices from this site's calculators.
+Prices are monthly-billing list prices from this site's calculators.
 
 Third-party sites say the Free plan caps a workspace at 10 apps; Slack's developer docs we read don't mention it.
+
+Image: [Slack API access by plan: Free yes; Pro yes; Business+ yes](https://stackcostmatrix.com/og/slack-api-access.jpg)
 
 ## Two kinds of webhooks
 

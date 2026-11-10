@@ -23,9 +23,11 @@ Zendesk API & Webhook Access by Plan (2026)
 | Suite Growth | $115/seat/mo ($89 billed annually) | Yes | 400 requests/min | Yes | Via triggers |
 | Suite Professional | $149/seat/mo ($115 billed annually) | Yes | 400 requests/min | Yes | Via triggers |
 
-"Not stated" means Zendesk's documentation that we read doesn't say either way. Prices are monthly-billing list prices from this site's calculators.
+Prices are monthly-billing list prices from this site's calculators.
 
 Enterprise gets 700 requests a minute and Enterprise Plus 2,500; a High Volume API add-on (Growth and up, 10+ seats) raises the limit to 2,500.
+
+Image: [Zendesk API access by plan: Suite Team yes; Suite Growth yes; Suite Professional yes](https://stackcostmatrix.com/og/zendesk-api-access.jpg)
 
 ## Two kinds of webhooks
 

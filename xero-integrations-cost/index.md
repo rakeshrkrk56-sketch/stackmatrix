@@ -11,7 +11,7 @@ Tool guide
 
 # Xero Integration Costs (2026): Minimum Plans, API Access & Hidden Fees
 
-Built from the 4 pair calculators below · integration requirements checked Nov 3, 2026. · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
+Built from the 4 pair calculators below · integration requirements checked Nov 3, 2026 to Nov 8, 2026. · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
 
 This page collects the 4 Xero integrations in the StackCostMatrix index: which Xero plan each one needs, whether it's native or runs through middleware, and what the whole stack costs for a 10-person team. 1 of the 4 connects natively and 3 need a connector such as Make or Zapier. By minimum Xero plan, the count is Early (4). Ten-seat totals run from $27.00/mo (Stripe + Xero) to $177.59/mo (Pipedrive + Xero).
 
@@ -22,9 +22,11 @@ Xero Integration Costs (2026): Minimum Plans, API Access & Hidden Fees
 | Stripe + Xero | Native | Early | Standard | $27.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/stripe-and-xero/) |
 | Xero + ActiveCampaign | Middleware Make Core $10.59/mo | Early | Starter | $52.59 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/xero-and-activecampaign/) |
 | Xero + Calendly | Middleware Zapier Professional $29.99/mo | Early | Standard | $176.99 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/xero-and-calendly/) |
-| Pipedrive + Xero | Middleware Make Core $10.59/mo | Early | Lite | $177.59 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/pipedrive-and-xero/) |
+| Pipedrive + Xero | Middleware Make Core $10.59/mo | Early | Lite | $177.59 | Nov 8, 2026 | [Calculator →](https://stackcostmatrix.com/stack/pipedrive-and-xero/) |
 
 Totals are monthly-billing prices for 10 seats on the minimum plans, including any connector fee. Open a calculator to change team size, switch to annual billing or add usage costs.
+
+Image: [Xero integration costs summary: 4 integrations priced, from $27 to $177.59 a month for 10 seats](https://stackcostmatrix.com/og/xero-integrations-cost.jpg)
 
 ## Does Xero force an upgrade?
 

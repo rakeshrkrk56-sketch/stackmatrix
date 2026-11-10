@@ -21,6 +21,8 @@ ActiveCampaign's native Pipedrive integration has two sync options: an inbound s
 
 **Limitations:** Both first and last names are required, so contacts missing either won't sync. Only contacts who reach the Pipedrive action in an automation are pushed to Pipedrive. The Pipedrive plan shown is this calculator's assumption; ActiveCampaign doesn't state one.
 
+[Setup guide: ActiveCampaign: Use the Pipedrive integration ↗](https://help.activecampaign.com/hc/en-us/articles/360013357320-Use-the-ActiveCampaign-Pipedrive-integration)
+
 Sources (checked Nov 3, 2026): [ActiveCampaign: Use the Pipedrive integration ↗](https://help.activecampaign.com/hc/en-us/articles/360013357320-Use-the-ActiveCampaign-Pipedrive-integration)
 
 *Interactive cost calculator: open the web page to change team size, billing and add-ons.*
@@ -32,20 +34,23 @@ ActiveCampaign 'Starter' ($15.00/mo) + Pipedrive 'Growth' ($390.00/mo),
 no middleware required.
 Alternative: skip the native tier upgrade and run via Make/Zapier middleware for ~$165.59/mo all-in (adds a third-party dependency).
 
+ 
+
 ## Native vs middleware for ActiveCampaign + Pipedrive
 
 The native path runs on the required tiers (ActiveCampaign 'Starter' + Pipedrive 'Growth') at $405.00/mo for a 10-seat team, with 2-way sync and no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — comes to $165.59/mo all-in, which is cheaper on paper because it skips the $250.00/mo forced tier upgrade. The trade-off: you replace the native connector with a third-party dependency, sync becomes 1-way (trigger → action) instead of 2-way, and Make Core's fee covers a fixed monthly allowance of credits — whether that covers your volume is not verified for this pair.
-
-API access at the required tiers: ActiveCampaign Yes, Pipedrive Yes (see the spec matrix). That API access is what the middleware path runs on.
 
 Integration routes compared for a 10-seat team
 
 | Route | Plans | 10 seats / month | Sync |
 | --- | --- | --- | --- |
-| Native ActiveCampaign + Pipedrive connector | ActiveCampaign 'Starter' + Pipedrive 'Growth' | $405.00 | As listed in the spec matrix |
+| Native ActiveCampaign + Pipedrive connector | ActiveCampaign 'Starter' + Pipedrive 'Growth' | $405.00 | 2-way |
 | Make Core on the cheapest API plans | ActiveCampaign 'Starter' + Pipedrive 'Lite' + Make | $165.59 | 1-way per scenario |
+| Zapier Professional on the cheapest API plans | ActiveCampaign 'Starter' + Pipedrive 'Lite' + Zapier | $184.99 | 1-way per Zap |
 
-Make Core's $10.59 monthly price comes from third-party pricing reviews, because make.com blocks automated checks; Zapier's is from zapier.com/pricing.
+Connector prices are monthly-billing list prices: Zapier Professional $29.99 (zapier.com/pricing) and Make Core $10.59 (from third-party pricing reviews, because make.com blocks automated checks). Both bill by usage, so high volumes cost more.
+
+Image: [ActiveCampaign + Pipedrive integration cost summary: $405 a month for 10 seats, $250 of it is the hidden cost to connect; plans needed: ActiveCampaign Starter and Pipedrive Growth](https://stackcostmatrix.com/og/activecampaign-and-pipedrive.jpg)
 
 ## ✓ Verified Vendor Facts
 
@@ -55,14 +60,6 @@ Make Core's $10.59 monthly price comes from third-party pricing reviews, because
 - **Native app availability:** Native app available in vendor marketplace.
 
 Last checked: Nov 3, 2026 (exceptions listed at the top) · Sources linked below.
-
-## ◐ Model Estimates (your assumptions)
-
-- **Usage / task add-ons:** middleware overage costs you enter above.
-- **Setup & maintenance:** implementation hours and ongoing ops — adjust freely.
-- **Annual billing saving:** uses each vendor's published annual price where one exists; otherwise no discount is applied.
-
-Estimates never change the verified facts — they only model your scenario.
 
 ## ! Hidden Cost Trap
 

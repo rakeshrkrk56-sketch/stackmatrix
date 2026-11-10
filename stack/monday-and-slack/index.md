@@ -23,13 +23,13 @@ Board events go out to the Slack channels you choose as they happen, and from Sl
 
 ### How to set it up
 
-**1.** Open monday.com's Slack integration page and click Add to Slack.
-
-**2.** Authorize monday.com in your Slack workspace.
-
-**3.** Choose which monday.com board updates should notify which Slack channels.
+1. Open monday.com's Slack integration page and click Add to Slack.
+2. Authorize monday.com in your Slack workspace.
+3. Choose which monday.com board updates should notify which Slack channels.
 
 **Limitations:** monday.com includes integrations from its Standard plan, with 250 integration actions a month (Pro raises this to 25,000), so the Basic plan doesn't include it. Slack's free plan allows up to 10 app installations.
+
+[Setup guide: monday.com: Slack integration ↗](https://monday.com/integrations/slack)
 
 Sources (checked Nov 3, 2026): [monday.com: Slack integration ↗](https://monday.com/integrations/slack) · [monday.com: Automations and integrations pricing ↗](https://support.monday.com/hc/en-us/articles/360002826680) · [Slack: Free plan limits ↗](https://slack.com/help/articles/27204752526611-Feature-limitations-on-the-free-version-of-Slack)
 
@@ -42,20 +42,23 @@ Monday.com 'Standard' ($140.00/mo) + Slack 'Free' ($0.00/mo),
 no middleware required.
 Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capable tiers ($150.59/mo all-in) — the native path is cheaper.
 
+ 
+
 ## Native vs middleware for Monday.com + Slack
 
 The native path runs on the required tiers (Monday.com 'Standard' + Slack 'Free') at $140.00/mo for a 10-seat team, with 2-way sync and no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — would cost $150.59/mo all-in, so on cost alone there is no reason to switch: middleware would only make sense if you already run other automations through it, and it would drop sync to 1-way (trigger → action).
-
-API access at the required tiers: Monday.com Yes, Slack Yes (see the spec matrix). That API access is what the middleware path runs on.
 
 Integration routes compared for a 10-seat team
 
 | Route | Plans | 10 seats / month | Sync |
 | --- | --- | --- | --- |
-| Native Monday.com + Slack connector | Monday.com 'Standard' + Slack 'Free' | $140.00 | As listed in the spec matrix |
+| Native Monday.com + Slack connector | Monday.com 'Standard' + Slack 'Free' | $140.00 | 2-way |
 | Make Core on the cheapest API plans | Monday.com 'Standard' + Slack 'Free' + Make | $150.59 | 1-way per scenario |
+| Zapier Professional on the cheapest API plans | Monday.com 'Standard' + Slack 'Free' + Zapier | $169.99 | 1-way per Zap |
 
-Make Core's $10.59 monthly price comes from third-party pricing reviews, because make.com blocks automated checks; Zapier's is from zapier.com/pricing.
+Connector prices are monthly-billing list prices: Zapier Professional $29.99 (zapier.com/pricing) and Make Core $10.59 (from third-party pricing reviews, because make.com blocks automated checks). Both bill by usage, so high volumes cost more.
+
+Image: [Monday.com + Slack integration cost summary: $140 a month for 10 seats, nothing extra to connect; plans needed: Monday.com Standard and Slack Free](https://stackcostmatrix.com/og/monday-and-slack.jpg)
 
 ## ✓ Verified Vendor Facts
 
@@ -65,14 +68,6 @@ Make Core's $10.59 monthly price comes from third-party pricing reviews, because
 - **Native app availability:** Native app available in vendor marketplace.
 
 Last checked: Nov 3, 2026 · Sources linked below.
-
-## ◐ Model Estimates (your assumptions)
-
-- **Usage / task add-ons:** middleware overage costs you enter above.
-- **Setup & maintenance:** implementation hours and ongoing ops — adjust freely.
-- **Annual billing saving:** uses each vendor's published annual price where one exists; otherwise no discount is applied.
-
-Estimates never change the verified facts — they only model your scenario.
 
 ## ! Plan requirements
 
@@ -88,11 +83,6 @@ Middleware fee
 :   None
 
 No hidden cost: the native connector works on Monday.com 'Standard' and Slack 'Free', so connecting them adds nothing to what you already pay for the two tools.
-
-✓ Native is the cheapest path — $0 incremental integration cost
-
-The native Monday.com + Slack connector runs on the required tiers with no middleware fee
-and no forced tier upgrade — paying for middleware here would only add cost.
 
 ## Side-by-side spec matrix
 
@@ -116,7 +106,7 @@ Some outbound links may earn us a referral commission at no extra cost to you. [
 
 ### What are the minimum plan tiers required for the Monday.com + Slack integration?
 
-To unlock the native integration, Monday.com must be on the 'Standard' plan or higher and Slack must be on the 'Free' plan or higher. Neither plan is an upgrade over the cheapest plan with API access.
+To unlock the native integration, Monday.com must be on the 'Standard' plan or higher and Slack must be on the 'Free' plan or higher. Those are each tool's cheapest plan with API access (Monday.com 'Standard' at $140/mo and Slack 'Free' at $0/mo for 10 seats), so the integration doesn't force an upgrade.
 
 ### How much does the Monday.com + Slack stack cost per month for a 10-person team?
 

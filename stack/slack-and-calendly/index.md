@@ -1,6 +1,6 @@
-# Slack + Calendly Integration Cost (2026) | StackCostMatrix
+# Slack + Calendly Integration: Setup, Plans & Cost (2026)
 
-> Slack + Calendly needs Slack Free and Calendly Free for the native integration: $0/mo for 10 seats, with no extra cost to connect them.
+> How the Slack + Calendly integration works, how to set it up, and the plans it needs: Slack Free + Calendly Free, $0/mo for 10 seats.
 
 Source page: https://stackcostmatrix.com/stack/slack-and-calendly/  
 Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (credit StackCostMatrix and link to https://stackcostmatrix.com)
@@ -9,7 +9,7 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 [Home](https://stackcostmatrix.com/) / Slack + Calendly 
 
-# Slack + Calendly Integration Cost (2026): Plans, Setup & True Price
+# Slack + Calendly Integration (2026): How It Works, Setup & True Cost
 
 The Calendly app for Slack is available on all Calendly plans, including Free, and works with Slack's free plan. Requires Slack on the 'Free' plan and Calendly on the 'Free' plan.
 
@@ -20,6 +20,8 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 Install the Calendly app from the Slack App Directory and connect your Calendly account. You can share your scheduling links in channels and DMs with meeting previews, and the app messages you in Slack whenever a meeting is scheduled, rescheduled or cancelled.
 
 **Limitations:** Each person connects their own Calendly account after a workspace admin installs the app, and your company can block app installation. Notifications arrive in the Calendly app's Messages tab, not in a channel.
+
+[Setup guide: Calendly help: Calendly + Slack ↗](https://calendly.com/help/calendly-slack)
 
 Sources (checked Nov 8, 2026): [Calendly help: Calendly + Slack ↗](https://calendly.com/help/calendly-slack)
 
@@ -32,20 +34,23 @@ Slack 'Free' ($0.00/mo) + Calendly 'Free' ($0.00/mo),
 no middleware required.
 Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capable tiers ($10.59/mo all-in) — the native path is cheaper.
 
+ 
+
 ## Native vs middleware for Slack + Calendly
 
 The native path runs on the required tiers (Slack 'Free' + Calendly 'Free') at $0.00/mo for a 10-seat team, with no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — would cost $10.59/mo all-in, so on cost alone there is no reason to switch: middleware would only make sense if you already run other automations through it.
-
-API access at the required tiers: Slack Yes, Calendly Yes (see the spec matrix). That API access is what the middleware path runs on.
 
 Integration routes compared for a 10-seat team
 
 | Route | Plans | 10 seats / month | Sync |
 | --- | --- | --- | --- |
-| Native Slack + Calendly connector | Slack 'Free' + Calendly 'Free' | $0.00 | As listed in the spec matrix |
+| Native Slack + Calendly connector | Slack 'Free' + Calendly 'Free' | $0.00 | 1-way (Calendly → Slack) |
 | Make Core on the cheapest API plans | Slack 'Free' + Calendly 'Free' + Make | $10.59 | 1-way per scenario |
+| Zapier Professional on the cheapest API plans | Slack 'Free' + Calendly 'Free' + Zapier | $29.99 | 1-way per Zap |
 
-Make Core's $10.59 monthly price comes from third-party pricing reviews, because make.com blocks automated checks; Zapier's is from zapier.com/pricing.
+Connector prices are monthly-billing list prices: Zapier Professional $29.99 (zapier.com/pricing) and Make Core $10.59 (from third-party pricing reviews, because make.com blocks automated checks). Both bill by usage, so high volumes cost more.
+
+Image: [Slack + Calendly integration cost summary: $0 a month for 10 seats, nothing extra to connect; plans needed: Slack Free and Calendly Free](https://stackcostmatrix.com/og/slack-and-calendly.jpg)
 
 ## ✓ Verified Vendor Facts
 
@@ -55,14 +60,6 @@ Make Core's $10.59 monthly price comes from third-party pricing reviews, because
 - **Native app availability:** Native app available in vendor marketplace.
 
 Last checked: Nov 3, 2026 · Sources linked below.
-
-## ◐ Model Estimates (your assumptions)
-
-- **Usage / task add-ons:** middleware overage costs you enter above.
-- **Setup & maintenance:** implementation hours and ongoing ops — adjust freely.
-- **Annual billing saving:** uses each vendor's published annual price where one exists; otherwise no discount is applied.
-
-Estimates never change the verified facts — they only model your scenario.
 
 ## ! Plan requirements
 
@@ -78,11 +75,6 @@ Middleware fee
 :   None
 
 No hidden cost: the native connector works on Slack 'Free' and Calendly 'Free', so connecting them adds nothing to what you already pay for the two tools.
-
-✓ Native is the cheapest path — $0 incremental integration cost
-
-The native Slack + Calendly connector runs on the required tiers with no middleware fee
-and no forced tier upgrade — paying for middleware here would only add cost.
 
 ## Side-by-side spec matrix
 
@@ -106,7 +98,7 @@ Some outbound links may earn us a referral commission at no extra cost to you. [
 
 ### What are the minimum plan tiers required for the Slack + Calendly integration?
 
-To unlock the native integration, Slack must be on the 'Free' plan or higher and Calendly must be on the 'Free' plan or higher. Neither plan is an upgrade over the cheapest plan with API access.
+To unlock the native integration, Slack must be on the 'Free' plan or higher and Calendly must be on the 'Free' plan or higher. Those are each tool's cheapest plan with API access (Slack 'Free' at $0/mo and Calendly 'Free' at $0/mo for 10 seats), so the integration doesn't force an upgrade.
 
 ### How much does the Slack + Calendly stack cost per month for a 10-person team?
 

@@ -1,6 +1,6 @@
-# Stripe + Slack Integration Cost (2026) | StackCostMatrix
+# Stripe + Slack Integration: Setup, Plans & Cost (2026)
 
-> Stripe + Slack needs Stripe Standard and Slack Free for the native integration: $0/mo for 10 seats, with no extra cost to connect them.
+> How the Stripe + Slack integration works, how to set it up, and the plans it needs: Stripe Standard + Slack Free, $0/mo for 10 seats.
 
 Source page: https://stackcostmatrix.com/stack/stripe-and-slack/  
 Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (credit StackCostMatrix and link to https://stackcostmatrix.com)
@@ -9,7 +9,7 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 [Home](https://stackcostmatrix.com/) / Stripe + Slack 
 
-# Stripe + Slack Integration Cost (2026): Plans, Setup & True Price
+# Stripe + Slack Integration (2026): How It Works, Setup & True Cost
 
 Stripe's own Stripe Workflows for Slack app posts Slack notifications when events happen in Stripe; Slack's free plan is enough. Requires Stripe on the 'Standard' plan and Slack on the 'Free' plan.
 
@@ -17,11 +17,23 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 ## How the Stripe + Slack integration works
 
+**Does Stripe integrate with Slack?** Yes. Stripe builds its own Slack app, Stripe Workflows for Slack, which posts a Slack message when something happens in Stripe, such as a payment, a new subscription or a dispute. It works with Slack's free plan, so you don't need Zapier or Make for notifications.
+
 Stripe Workflows for Slack is built by Stripe: you connect your Slack workspace, invite the Stripe bot to a channel, then add a 'Send Slack notification' action to a Stripe workflow, for example when a customer subscribes.
+
+### How to set it up
+
+1. In the Stripe App Marketplace, open the Slack app page, pick your account and click Install.
+2. Open the app from Stripe's right sidebar, go to its settings page and click Add to Slack. Choose your workspace and click Allow.
+3. In Slack, type /invite @Stripe in each channel that should get notifications. Back in the app settings, click Test next to the channel to send a test message.
+4. In Stripe, open Workflows and click Create workflow. Add your trigger, then click Add a step, choose Add action and pick Send Slack Notification.
+5. Choose the Slack channel, write the message template (the + button inserts details from the event) and decide whether to include a Dashboard link. Click Publish.
 
 **Limitations:** Notifications only go to channels the Stripe bot has been invited to, and Slack's free plan allows up to 10 app installations.
 
-Sources (checked Nov 3, 2026): [Stripe: Stripe Workflows for Slack ↗](https://docs.stripe.com/use-stripe-apps/stripe-workflows-slack) · [Slack: Free plan limits ↗](https://slack.com/help/articles/27204752526611-Feature-limitations-on-the-free-version-of-Slack)
+[Set up Stripe Workflows for Slack ↗](https://docs.stripe.com/use-stripe-apps/stripe-workflows-slack)
+
+Sources (checked Nov 10, 2026): [Stripe: Stripe Workflows for Slack ↗](https://docs.stripe.com/use-stripe-apps/stripe-workflows-slack) · [Slack: Free plan limits ↗](https://slack.com/help/articles/27204752526611-Feature-limitations-on-the-free-version-of-Slack)
 
 *Interactive cost calculator: open the web page to change team size, billing and add-ons.*
 
@@ -32,20 +44,23 @@ Stripe 'Standard' ($0.00/mo) + Slack 'Free' ($0.00/mo),
 no middleware required.
 Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capable tiers ($10.59/mo all-in) — the native path is cheaper.
 
+ 
+
 ## Native vs middleware for Stripe + Slack
 
 The native path runs on the required tiers (Stripe 'Standard' + Slack 'Free') at $0.00/mo for a 10-seat team, with no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — would cost $10.59/mo all-in, so on cost alone there is no reason to switch: middleware would only make sense if you already run other automations through it.
-
-API access at the required tiers: Stripe Yes, Slack Yes (see the spec matrix). That API access is what the middleware path runs on.
 
 Integration routes compared for a 10-seat team
 
 | Route | Plans | 10 seats / month | Sync |
 | --- | --- | --- | --- |
-| Native Stripe + Slack connector | Stripe 'Standard' + Slack 'Free' | $0.00 | As listed in the spec matrix |
+| Native Stripe + Slack connector | Stripe 'Standard' + Slack 'Free' | $0.00 | 1-way (Stripe → Slack) |
 | Make Core on the cheapest API plans | Stripe 'Standard' + Slack 'Free' + Make | $10.59 | 1-way per scenario |
+| Zapier Professional on the cheapest API plans | Stripe 'Standard' + Slack 'Free' + Zapier | $29.99 | 1-way per Zap |
 
-Make Core's $10.59 monthly price comes from third-party pricing reviews, because make.com blocks automated checks; Zapier's is from zapier.com/pricing.
+Connector prices are monthly-billing list prices: Zapier Professional $29.99 (zapier.com/pricing) and Make Core $10.59 (from third-party pricing reviews, because make.com blocks automated checks). Both bill by usage, so high volumes cost more.
+
+Image: [Stripe + Slack integration cost summary: $0 a month for 10 seats, nothing extra to connect; plans needed: Stripe Standard and Slack Free](https://stackcostmatrix.com/og/stripe-and-slack.jpg)
 
 ## ✓ Verified Vendor Facts
 
@@ -55,14 +70,6 @@ Make Core's $10.59 monthly price comes from third-party pricing reviews, because
 - **Native app availability:** Native app available in vendor marketplace.
 
 Last checked: Nov 3, 2026 · Sources linked below.
-
-## ◐ Model Estimates (your assumptions)
-
-- **Usage / task add-ons:** middleware overage costs you enter above.
-- **Setup & maintenance:** implementation hours and ongoing ops — adjust freely.
-- **Annual billing saving:** uses each vendor's published annual price where one exists; otherwise no discount is applied.
-
-Estimates never change the verified facts — they only model your scenario.
 
 ## ! Plan requirements
 
@@ -78,11 +85,6 @@ Middleware fee
 :   None
 
 No hidden cost: the native connector works on Stripe 'Standard' and Slack 'Free', so connecting them adds nothing to what you already pay for the two tools. Stripe has no monthly plan fee; it charges per transaction, so it counts as $0/month here.
-
-✓ Native is the cheapest path — $0 incremental integration cost
-
-The native Stripe + Slack connector runs on the required tiers with no middleware fee
-and no forced tier upgrade — paying for middleware here would only add cost.
 
 ## Side-by-side spec matrix
 
@@ -106,7 +108,7 @@ Some outbound links may earn us a referral commission at no extra cost to you. [
 
 ### What are the minimum plan tiers required for the Stripe + Slack integration?
 
-To unlock the native integration, Stripe must be on the 'Standard' plan or higher and Slack must be on the 'Free' plan or higher. Neither plan is an upgrade over the cheapest plan with API access.
+To unlock the native integration, Stripe must be on the 'Standard' plan or higher and Slack must be on the 'Free' plan or higher. Those are each tool's cheapest plan with API access (Stripe 'Standard' at $0/mo and Slack 'Free' at $0/mo for 10 seats), so the integration doesn't force an upgrade.
 
 ### How much does the Stripe + Slack stack cost per month for a 10-person team?
 

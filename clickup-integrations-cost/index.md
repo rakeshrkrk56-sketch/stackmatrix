@@ -26,6 +26,8 @@ ClickUp Integration Costs (2026): Minimum Plans, API Access & Hidden Fees
 
 Totals are monthly-billing prices for 10 seats on the minimum plans, including any connector fee. Open a calculator to change team size, switch to annual billing or add usage costs.
 
+Image: [ClickUp integration costs summary: 4 integrations priced, from $0 to $690 a month for 10 seats](https://stackcostmatrix.com/og/clickup-integrations-cost.jpg)
+
 ## Where ClickUp forces an upgrade
 
 1 of the 4 integrations needs a more expensive ClickUp plan than Free, ClickUp's cheapest plan with API access. The extra ClickUp cost at 10 seats: HubSpot + ClickUp needs Core (+$120.00/mo). That gap is the hidden cost: you pay it every month even if you only wanted the integration. Each pair's "Hidden Cost Trap" box shows the full breakdown.

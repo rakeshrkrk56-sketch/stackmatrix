@@ -36,6 +36,8 @@ Slack Integration Costs (2026): Minimum Plans, API Access & Hidden Fees
 
 Totals are monthly-billing prices for 10 seats on the minimum plans, including any connector fee. Open a calculator to change team size, switch to annual billing or add usage costs.
 
+Image: [Slack integration costs summary: 14 integrations priced, from $0 to $1,737.50 a month for 10 seats](https://stackcostmatrix.com/og/slack-integrations-cost.jpg)
+
 ## Where Slack forces an upgrade
 
 1 of the 14 integrations needs a more expensive Slack plan than Free, Slack's cheapest plan with API access. The extra Slack cost at 10 seats: Salesforce + Slack needs Pro (+$87.50/mo). That gap is the hidden cost: you pay it every month even if you only wanted the integration. Each pair's "Hidden Cost Trap" box shows the full breakdown.

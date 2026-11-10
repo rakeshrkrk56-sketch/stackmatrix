@@ -23,15 +23,14 @@ When someone books a Calendly meeting, the integration creates or updates the co
 
 ### How to set it up
 
-**1.** In ActiveCampaign, click your profile icon at the bottom left and select Apps.
-
-**2.** Select Calendly, then Add an account and Connect.
-
-**3.** Under Choose an Event, pick the Calendly event type to sync and click Continue.
-
-**4.** Map Calendly fields to ActiveCampaign fields and click Finish.
+1. In ActiveCampaign, click your profile icon at the bottom left and select Apps.
+2. Select Calendly, then Add an account and Connect.
+3. Under Choose an Event, pick the Calendly event type to sync and click Continue.
+4. Map Calendly fields to ActiveCampaign fields and click Finish.
 
 **Limitations:** Calendly lists the integration for its Professional, Standard, Standard Plus, Teams, Teams Plus and Enterprise plans, so Calendly's free plan doesn't include it. Each connection syncs the event type you choose during setup.
+
+[Setup guide: Calendly: ActiveCampaign integration ↗](https://calendly.com/help/calendly-activecampaign)
 
 Sources (checked Nov 3, 2026): [Calendly: ActiveCampaign integration ↗](https://calendly.com/help/calendly-activecampaign) · [ActiveCampaign: Integrate Calendly ↗](https://help.activecampaign.com/hc/en-us/articles/360010946759)
 
@@ -44,20 +43,23 @@ ActiveCampaign 'Starter' ($15.00/mo) + Calendly 'Standard' ($120.00/mo),
 no middleware required.
 Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capable tiers ($145.59/mo all-in) — the native path is cheaper.
 
+ 
+
 ## Native vs middleware for ActiveCampaign + Calendly
 
 The native path runs on the required tiers (ActiveCampaign 'Starter' + Calendly 'Standard') at $135.00/mo for a 10-seat team, with no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — would cost $145.59/mo all-in, so on cost alone there is no reason to switch: middleware would only make sense if you already run other automations through it.
-
-API access at the required tiers: ActiveCampaign Yes, Calendly Yes (see the spec matrix). That API access is what the middleware path runs on.
 
 Integration routes compared for a 10-seat team
 
 | Route | Plans | 10 seats / month | Sync |
 | --- | --- | --- | --- |
-| Native ActiveCampaign + Calendly connector | ActiveCampaign 'Starter' + Calendly 'Standard' | $135.00 | As listed in the spec matrix |
+| Native ActiveCampaign + Calendly connector | ActiveCampaign 'Starter' + Calendly 'Standard' | $135.00 | 1-way (Calendly → ActiveCampaign) |
 | Make Core on the cheapest API plans | ActiveCampaign 'Starter' + Calendly 'Standard' + Make | $145.59 | 1-way per scenario |
+| Zapier Professional on the cheapest API plans | ActiveCampaign 'Starter' + Calendly 'Standard' + Zapier | $164.99 | 1-way per Zap |
 
-Make Core's $10.59 monthly price comes from third-party pricing reviews, because make.com blocks automated checks; Zapier's is from zapier.com/pricing.
+Connector prices are monthly-billing list prices: Zapier Professional $29.99 (zapier.com/pricing) and Make Core $10.59 (from third-party pricing reviews, because make.com blocks automated checks). Both bill by usage, so high volumes cost more.
+
+Image: [ActiveCampaign + Calendly integration cost summary: $135 a month for 10 seats, nothing extra to connect; plans needed: ActiveCampaign Starter and Calendly Standard](https://stackcostmatrix.com/og/activecampaign-and-calendly.jpg)
 
 ## ✓ Verified Vendor Facts
 
@@ -67,14 +69,6 @@ Make Core's $10.59 monthly price comes from third-party pricing reviews, because
 - **Native app availability:** Native app available in vendor marketplace.
 
 Last checked: Nov 3, 2026 · Sources linked below.
-
-## ◐ Model Estimates (your assumptions)
-
-- **Usage / task add-ons:** middleware overage costs you enter above.
-- **Setup & maintenance:** implementation hours and ongoing ops — adjust freely.
-- **Annual billing saving:** uses each vendor's published annual price where one exists; otherwise no discount is applied.
-
-Estimates never change the verified facts — they only model your scenario.
 
 ## ! Plan requirements
 
@@ -90,11 +84,6 @@ Middleware fee
 :   None
 
 No hidden cost: the native connector works on ActiveCampaign 'Starter' and Calendly 'Standard', so connecting them adds nothing to what you already pay for the two tools.
-
-✓ Native is the cheapest path — $0 incremental integration cost
-
-The native ActiveCampaign + Calendly connector runs on the required tiers with no middleware fee
-and no forced tier upgrade — paying for middleware here would only add cost.
 
 ## Side-by-side spec matrix
 
@@ -118,7 +107,7 @@ Some outbound links may earn us a referral commission at no extra cost to you. [
 
 ### What are the minimum plan tiers required for the ActiveCampaign + Calendly integration?
 
-To unlock the native integration, ActiveCampaign must be on the 'Starter' plan or higher and Calendly must be on the 'Standard' plan or higher. Neither plan is an upgrade over the cheapest plan with API access.
+To unlock the native integration, ActiveCampaign must be on the 'Starter' plan or higher and Calendly must be on the 'Standard' plan or higher. Those are each tool's cheapest plan with API access (ActiveCampaign 'Starter' at $15/mo and Calendly 'Standard' at $120/mo for 10 seats), so the integration doesn't force an upgrade.
 
 ### How much does the ActiveCampaign + Calendly stack cost per month for a 10-person team?
 

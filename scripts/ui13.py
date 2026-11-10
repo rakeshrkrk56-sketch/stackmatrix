@@ -31,6 +31,25 @@ STYLE = f"""<style id="{STYLE_ID}">
 .scm-finder-msg:empty{{display:none}}
 .scm-finder-msg a{{text-decoration:underline;font-weight:600}}
 output{{display:block}}
+.scm-steps{{margin-top:.5rem;padding-left:1.5rem;list-style:decimal}}
+.scm-steps li{{margin-top:.5rem;line-height:1.625;color:#334155}}
+.scm-cta{{display:inline-block;border-radius:.75rem;background:#4f46e5;color:#fff;font-weight:700;font-size:.95rem;padding:12px 18px}}
+.scm-cta:hover{{background:#4338ca}}
+.scm-fig{{display:block;width:100%;max-width:560px;height:auto;border-radius:12px;border:1px solid #e2e8f0}}
+.scm-jump{{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}}
+.scm-jump a{{display:inline-flex;align-items:center;min-height:44px;padding:0 14px;border-radius:999px;border:1px solid #c7d2fe;background:#eef2ff;color:#3730a3;font-size:.875rem;font-weight:600}}
+.scm-jump a:hover{{background:#e0e7ff}}
+.scm-anchor{{display:block;height:0;scroll-margin-top:16px}}
+h2[id]{{scroll-margin-top:16px}}
+.text-xs{{font-size:.8125rem;line-height:1.2rem}}
+.scm-nav a{{min-width:44px;text-align:center}}
+nav[aria-label="Breadcrumb"] a{{display:inline-block;padding:12px 4px 12px 0}}
+@media (max-width:639px){{
+footer a{{display:inline-block;padding:11px 0}}
+td a{{display:inline-block;padding:10px 0}}
+main h1{{font-size:1.5rem;line-height:2rem}}
+.overflow-x-auto:has(table[class*="min-w-"])::before{{content:"Swipe sideways to see the whole table \2192";position:sticky;left:0;display:block;padding:8px 12px;font-size:.8125rem;color:#475569;background:#f8fafc;border-bottom:1px solid #e2e8f0}}
+}}
 .sr-only{{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0}}
 [data-msg]::before{{content:attr(data-msg)}}
 .bg-emerald-700{{background-color:#047857}}

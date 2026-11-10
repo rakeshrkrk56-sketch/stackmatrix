@@ -26,6 +26,8 @@ Airtable Integration Costs (2026): Minimum Plans, API Access & Hidden Fees
 
 Totals are monthly-billing prices for 10 seats on the minimum plans, including any connector fee. Open a calculator to change team size, switch to annual billing or add usage costs.
 
+Image: [Airtable integration costs summary: 4 integrations priced, from $0 to $288.59 a month for 10 seats](https://stackcostmatrix.com/og/airtable-integrations-cost.jpg)
+
 ## Where Airtable forces an upgrade
 
 3 of the 4 integrations need a more expensive Airtable plan than Free, Airtable's cheapest plan with API access. The extra Airtable cost at 10 seats: Airtable + Stripe needs Team (+$240.00/mo); Mailchimp + Airtable needs Team (+$240.00/mo); Airtable + QuickBooks needs Team (+$240.00/mo). That gap is the hidden cost: you pay it every month even if you only wanted the integration. Each pair's "Hidden Cost Trap" box shows the full breakdown.

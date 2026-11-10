@@ -1,6 +1,6 @@
-# Slack + Intercom Integration Cost (2026) | StackCostMatrix
+# Slack + Intercom Integration: Setup, Plans & Cost (2026)
 
-> Slack + Intercom needs Slack Free and Intercom Essential for the native integration: $390/mo for 10 seats, with no extra cost to connect them.
+> How the Slack + Intercom integration works, how to set it up, and the plans it needs: Slack Free + Intercom Essential, $390/mo for 10 seats.
 
 Source page: https://stackcostmatrix.com/stack/slack-and-intercom/  
 Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (credit StackCostMatrix and link to https://stackcostmatrix.com)
@@ -9,7 +9,7 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 [Home](https://stackcostmatrix.com/) / Slack + Intercom 
 
-# Slack + Intercom Integration Cost (2026): Plans, Setup & True Price
+# Slack + Intercom Integration (2026): How It Works, Setup & True Cost
 
 Intercom's native Slack integration is on every Intercom plan and works with Slack's free plan, but automatic Slack alerts for new conversations need Intercom Advanced. Requires Slack on the 'Free' plan and Intercom on the 'Essential' plan.
 
@@ -20,6 +20,8 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 Intercom's native Slack integration lets you connect Slack as a channel in Intercom, so your team can handle conversations and tickets that start in Slack. Intercom says it's available on all of its helpdesk plans.
 
 **Limitations:** Automatic Slack notifications for new conversations rely on Workflows, which are only on Intercom's Advanced and Expert plans, not Essential. Slack's free plan allows only 10 apps, and the app can't be installed in the primary workspace of a Slack Enterprise Grid account.
+
+[Setup guide: Intercom: Connect your Slack channel ↗](https://www.intercom.com/help/en/articles/11534476-connect-your-slack-channel)
 
 Sources (checked Nov 3, 2026): [Intercom: Connect your Slack channel ↗](https://www.intercom.com/help/en/articles/11534476-connect-your-slack-channel) · [Slack: Free plan limits ↗](https://slack.com/help/articles/27204752526611-Feature-limitations-on-the-free-version-of-Slack)
 
@@ -32,20 +34,23 @@ Slack 'Free' ($0.00/mo) + Intercom 'Essential' ($390.00/mo),
 no middleware required.
 Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capable tiers ($400.59/mo all-in) — the native path is cheaper.
 
+ 
+
 ## Native vs middleware for Slack + Intercom
 
 The native path runs on the required tiers (Slack 'Free' + Intercom 'Essential') at $390.00/mo for a 10-seat team, with 2-way sync and no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — would cost $400.59/mo all-in, so on cost alone there is no reason to switch: middleware would only make sense if you already run other automations through it, and it would drop sync to 1-way (trigger → action).
-
-API access at the required tiers: Slack Yes, Intercom Yes (see the spec matrix). That API access is what the middleware path runs on.
 
 Integration routes compared for a 10-seat team
 
 | Route | Plans | 10 seats / month | Sync |
 | --- | --- | --- | --- |
-| Native Slack + Intercom connector | Slack 'Free' + Intercom 'Essential' | $390.00 | As listed in the spec matrix |
+| Native Slack + Intercom connector | Slack 'Free' + Intercom 'Essential' | $390.00 | 2-way |
 | Make Core on the cheapest API plans | Slack 'Free' + Intercom 'Essential' + Make | $400.59 | 1-way per scenario |
+| Zapier Professional on the cheapest API plans | Slack 'Free' + Intercom 'Essential' + Zapier | $419.99 | 1-way per Zap |
 
-Make Core's $10.59 monthly price comes from third-party pricing reviews, because make.com blocks automated checks; Zapier's is from zapier.com/pricing.
+Connector prices are monthly-billing list prices: Zapier Professional $29.99 (zapier.com/pricing) and Make Core $10.59 (from third-party pricing reviews, because make.com blocks automated checks). Both bill by usage, so high volumes cost more.
+
+Image: [Slack + Intercom integration cost summary: $390 a month for 10 seats, nothing extra to connect; plans needed: Slack Free and Intercom Essential](https://stackcostmatrix.com/og/slack-and-intercom.jpg)
 
 ## ✓ Verified Vendor Facts
 
@@ -55,14 +60,6 @@ Make Core's $10.59 monthly price comes from third-party pricing reviews, because
 - **Native app availability:** Native app available in vendor marketplace.
 
 Last checked: Nov 3, 2026 · Sources linked below.
-
-## ◐ Model Estimates (your assumptions)
-
-- **Usage / task add-ons:** middleware overage costs you enter above.
-- **Setup & maintenance:** implementation hours and ongoing ops — adjust freely.
-- **Annual billing saving:** uses each vendor's published annual price where one exists; otherwise no discount is applied.
-
-Estimates never change the verified facts — they only model your scenario.
 
 ## ! Plan requirements
 
@@ -78,11 +75,6 @@ Middleware fee
 :   None
 
 No hidden cost: the native connector works on Slack 'Free' and Intercom 'Essential', so connecting them adds nothing to what you already pay for the two tools.
-
-✓ Native is the cheapest path — $0 incremental integration cost
-
-The native Slack + Intercom connector runs on the required tiers with no middleware fee
-and no forced tier upgrade — paying for middleware here would only add cost.
 
 ## Side-by-side spec matrix
 
@@ -106,7 +98,7 @@ Some outbound links may earn us a referral commission at no extra cost to you. [
 
 ### What are the minimum plan tiers required for the Slack + Intercom integration?
 
-To unlock the native integration, Slack must be on the 'Free' plan or higher and Intercom must be on the 'Essential' plan or higher. Neither plan is an upgrade over the cheapest plan with API access.
+To unlock the native integration, Slack must be on the 'Free' plan or higher and Intercom must be on the 'Essential' plan or higher. Those are each tool's cheapest plan with API access (Slack 'Free' at $0/mo and Intercom 'Essential' at $390/mo for 10 seats), so the integration doesn't force an upgrade.
 
 ### How much does the Slack + Intercom stack cost per month for a 10-person team?
 

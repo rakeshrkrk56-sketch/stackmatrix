@@ -11,7 +11,7 @@ Tool guide
 
 # QuickBooks Integration Costs (2026): Minimum Plans, API Access & Hidden Fees
 
-Built from the 9 pair calculators below · integration requirements checked Nov 3, 2026. · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
+Built from the 9 pair calculators below · integration requirements checked Nov 3, 2026 to Nov 4, 2026. · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
 
 This page collects the 9 QuickBooks Online integrations in the StackCostMatrix index: which QuickBooks plan each one needs, whether it's native or runs through middleware, and what the whole stack costs for a 10-person team. 3 of the 9 connect natively and 6 need a connector such as Make or Zapier. By minimum QuickBooks plan, the count is Simple Start (9). Ten-seat totals run from $38.00/mo (HubSpot + QuickBooks) to $1,298.59/mo (Salesforce + QuickBooks).
 
@@ -19,17 +19,19 @@ QuickBooks Integration Costs (2026): Minimum Plans, API Access & Hidden Fees
 
 | Integration | Type | Min. QuickBooks plan | Other tool's plan | 10-seat total | Checked | Details |
 | --- | --- | --- | --- | --- | --- | --- |
-| HubSpot + QuickBooks | Native | Simple Start | Free | $38.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/hubspot-and-quickbooks/) |
+| HubSpot + QuickBooks | Native | Simple Start | Free | $38.00 | Nov 4, 2026 | [Calculator →](https://stackcostmatrix.com/stack/hubspot-and-quickbooks/) |
 | QuickBooks + Mailchimp | Native | Simple Start | Free | $38.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/quickbooks-and-mailchimp/) |
 | Stripe + QuickBooks | Middleware Make Core $10.59/mo | Simple Start | Standard | $48.59 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/stripe-and-quickbooks/) |
 | QuickBooks + Slack | Middleware Zapier Professional $29.99/mo | Simple Start | Free | $67.99 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/quickbooks-and-slack/) |
-| Pipedrive + QuickBooks | Native | Simple Start | Lite | $178.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/pipedrive-and-quickbooks/) |
+| Pipedrive + QuickBooks | Native | Simple Start | Lite | $178.00 | Nov 4, 2026 | [Calculator →](https://stackcostmatrix.com/stack/pipedrive-and-quickbooks/) |
 | Asana + QuickBooks | Middleware Make Core $10.59/mo | Simple Start | Starter | $183.49 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/asana-and-quickbooks/) |
 | Monday.com + QuickBooks | Middleware Make Core $10.59/mo | Simple Start | Standard | $188.59 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/monday-and-quickbooks/) |
 | Airtable + QuickBooks | Middleware Make Core $10.59/mo | Simple Start | Team | $288.59 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/airtable-and-quickbooks/) |
-| Salesforce + QuickBooks | Middleware Make Core $10.59/mo | Simple Start | Professional | $1,298.59 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/salesforce-and-quickbooks/) |
+| Salesforce + QuickBooks | Middleware Make Core $10.59/mo | Simple Start | Professional | $1,298.59 | Nov 4, 2026 | [Calculator →](https://stackcostmatrix.com/stack/salesforce-and-quickbooks/) |
 
 Totals are monthly-billing prices for 10 seats on the minimum plans, including any connector fee. Open a calculator to change team size, switch to annual billing or add usage costs.
+
+Image: [QuickBooks integration costs summary: 9 integrations priced, from $38 to $1,298.59 a month for 10 seats](https://stackcostmatrix.com/og/quickbooks-integrations-cost.jpg)
 
 ## Does QuickBooks force an upgrade?
 

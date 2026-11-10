@@ -23,9 +23,11 @@ Airtable API & Webhook Access by Plan (2026)
 | Team | $24/seat/mo ($20 billed annually) | Yes | 100,000 API calls a month | Yes | — |
 | Business | $54/seat/mo ($45 billed annually) | Yes | Not stated in the article we read | Yes | — |
 
-"Not stated" means Airtable's documentation that we read doesn't say either way. Prices are monthly-billing list prices from this site's calculators.
+Prices are monthly-billing list prices from this site's calculators.
 
 A Make or Zapier scenario that checks Airtable every 15 minutes uses about 2,880 calls a month, so Free only suits very low-volume syncs.
+
+Image: [Airtable API access by plan: Free yes; Team yes; Business yes](https://stackcostmatrix.com/og/airtable-api-access.jpg)
 
 ## Two kinds of webhooks
 

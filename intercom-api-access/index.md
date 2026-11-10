@@ -22,9 +22,11 @@ Intercom API & Webhook Access by Plan (2026)
 | Essential | $39/seat/mo ($29 billed annually) | Yes Paid workspaces | Not published per plan | Yes | — |
 | Advanced | $99/seat/mo ($85 billed annually) | Yes Paid workspaces | Not published per plan | Yes | — |
 
-"Not stated" means Intercom's documentation that we read doesn't say either way. Prices are monthly-billing list prices from this site's calculators.
+Prices are monthly-billing list prices from this site's calculators.
 
 Intercom's own workflows, which some integrations build on, are an Advanced feature.
+
+Image: [Intercom API access by plan: Essential yes; Advanced yes](https://stackcostmatrix.com/og/intercom-api-access.jpg)
 
 ## Two kinds of webhooks
 

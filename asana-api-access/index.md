@@ -26,6 +26,8 @@ Asana API & Webhook Access by Plan (2026)
 
 Asana's Rules automation is a separate feature on Starter and up; we found no Asana documentation of a Rules action that sends webhooks. Make and Zapier use the API instead.
 
+Image: [Asana API access by plan: Starter yes; Advanced yes](https://stackcostmatrix.com/og/asana-api-access.jpg)
+
 ## Two kinds of webhooks
 
 Vendors use "webhooks" for two different features. **Developer webhooks** let an app or a tool like Make or Zapier subscribe to events, and are usually available wherever the API is. A **webhook automation action** is a no-code step that sends data out from the tool's own automations, and is often limited to paid plans. The table lists them separately so you can see which one an integration actually needs.

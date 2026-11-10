@@ -42,4 +42,4 @@ def render_nvm(v, rule_b, sync2=True):
             p1 += f"would cost {money(v['MP'])}/mo all-in, so on cost alone there is no reason to switch: middleware would only make sense if you already run other automations through it" + (", and it would drop sync to 1-way (trigger → action)." if sync2 else ".")
     both = v["apia"] == "Yes" and v["apib"] == "Yes"
     p2 = f"API access at the required tiers: {v['na']} {v['apia']}, {v['nb']} {v['apib']} (see the spec matrix). " + ("That API access is what the middleware path runs on. " if both else "The middleware path uses the cheapest API-capable tiers instead. ")
-    return P + p1 + "\n</p>" + P + p2 + "</p> "
+    return P + p1 + "\n</p> "   # (the "API access at the required tiers" paragraph repeated the spec matrix; removed 2026-11-10)

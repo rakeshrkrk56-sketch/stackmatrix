@@ -25,6 +25,8 @@ Intercom Integration Costs (2026): Minimum Plans, API Access & Hidden Fees
 
 Totals are monthly-billing prices for 10 seats on the minimum plans, including any connector fee. Open a calculator to change team size, switch to annual billing or add usage costs.
 
+Image: [Intercom integration costs summary: 3 integrations priced, from $390 to $390 a month for 10 seats](https://stackcostmatrix.com/og/intercom-integrations-cost.jpg)
+
 ## Does Intercom force an upgrade?
 
 Not for any of the 3 integrations here: each one works on Intercom's cheapest plan with API access, so the integration itself adds no Intercom upgrade cost. Any extra cost comes from the other tool's plan or from a connector fee, shown in the table above.

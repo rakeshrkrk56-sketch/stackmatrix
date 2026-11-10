@@ -23,9 +23,11 @@ QuickBooks API & Webhook Access by Plan (2026)
 | Essentials | $75/mo | Yes Any paid plan (Zapier, Make and Mailchimp name no tier) | Not published per plan | Yes App-level webhooks | — |
 | Plus | $115/mo | Yes Any paid plan (Zapier, Make and Mailchimp name no tier) | Not published per plan | Yes App-level webhooks | — |
 
-"Not stated" means QuickBooks's documentation that we read doesn't say either way. Prices are monthly-billing list prices from this site's calculators.
+Prices are monthly-billing list prices from this site's calculators.
 
 QuickBooks limits its API to 500 requests per minute per company, per Zapier's QuickBooks Online guide. Every integration in this index now models Simple Start, the cheapest plan.
+
+Image: [QuickBooks API access by plan: Simple Start yes; Essentials yes; Plus yes](https://stackcostmatrix.com/og/quickbooks-api-access.jpg)
 
 ## Two kinds of webhooks
 

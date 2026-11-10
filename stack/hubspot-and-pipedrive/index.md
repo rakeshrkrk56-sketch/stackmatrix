@@ -1,4 +1,4 @@
-# HubSpot + Pipedrive Integration Cost (2026)
+# HubSpot + Pipedrive Integration Cost (2026): Plans & Setup
 
 > HubSpot + Pipedrive runs via middleware (+$10.59/mo) on HubSpot Free and Pipedrive Lite: $150.59/mo for 10 seats.
 
@@ -21,6 +21,8 @@ There's no first-party integration that keeps HubSpot and Pipedrive in sync. Hub
 
 **Limitations:** For ongoing sync you need middleware such as Make or Zapier, which works trigger by trigger; your real middleware bill depends on task volume.
 
+[Setup guide: HubSpot: Supported apps for Smart Transfer ↗](https://knowledge.hubspot.com/integrations/supported-apps-for-hubspot-smart-transfer)
+
 Sources (checked Nov 3, 2026): [HubSpot: Supported apps for Smart Transfer ↗](https://knowledge.hubspot.com/integrations/supported-apps-for-hubspot-smart-transfer)
 
 *Interactive cost calculator: open the web page to change team size, billing and add-ons.*
@@ -31,11 +33,11 @@ Sources (checked Nov 3, 2026): [HubSpot: Supported apps for Smart Transfer ↗](
 HubSpot 'Free' ($0.00/mo) + Pipedrive 'Lite' ($140.00/mo)
 + $10.59/mo middleware. No native connector exists for this pair.
 
+ 
+
 ## Native vs middleware for HubSpot + Pipedrive
 
 No native connector exists for this pair, so middleware is not an alternative — it is the integration. The modeled middleware cost is $10.59/mo on top of both tools, for $150.59/mo all-in at 10 seats on the modeled tiers (HubSpot 'Free' + Pipedrive 'Lite'). Sync is 1-way (trigger → action). The middleware figure is the modeled cost for this pair; your actual middleware bill scales with task and operation volume, which is not verified here — check your expected volume against the middleware plan before budgeting.
-
-API access at the required tiers: HubSpot Yes, Pipedrive Yes (see the spec matrix). That API access is what the middleware path runs on.
 
 Integration routes compared for a 10-seat team
 
@@ -44,7 +46,9 @@ Integration routes compared for a 10-seat team
 | Make Core (modeled here) | HubSpot 'Free' + Pipedrive 'Lite' | $150.59 | 1-way per automation |
 | Zapier Professional instead | HubSpot 'Free' + Pipedrive 'Lite' | $169.99 | 1-way per automation |
 
-Make Core's $10.59 monthly price comes from third-party pricing reviews, because make.com blocks automated checks; Zapier's is from zapier.com/pricing.
+Connector prices are monthly-billing list prices: Zapier Professional $29.99 (zapier.com/pricing) and Make Core $10.59 (from third-party pricing reviews, because make.com blocks automated checks). Both bill by usage, so high volumes cost more.
+
+Image: [HubSpot + Pipedrive integration cost summary: $150.59 a month for 10 seats, $10.59 of it is the hidden cost to connect; plans needed: HubSpot Free and Pipedrive Lite](https://stackcostmatrix.com/og/hubspot-and-pipedrive.jpg)
 
 ## ✓ Verified Vendor Facts
 
@@ -54,14 +58,6 @@ Make Core's $10.59 monthly price comes from third-party pricing reviews, because
 - **Native app availability:** No native app — connected via middleware.
 
 Last checked: Nov 3, 2026 (exceptions listed at the top) · Sources linked below.
-
-## ◐ Model Estimates (your assumptions)
-
-- **Usage / task add-ons:** middleware overage costs you enter above.
-- **Setup & maintenance:** implementation hours and ongoing ops — adjust freely.
-- **Annual billing saving:** uses each vendor's published annual price where one exists, including the middleware or connector fee; otherwise no discount is applied.
-
-Estimates never change the verified facts — they only model your scenario.
 
 ## ! Hidden Cost Trap
 
@@ -104,7 +100,7 @@ Some outbound links may earn us a referral commission at no extra cost to you. [
 
 ### What are the minimum plan tiers required for the HubSpot + Pipedrive integration?
 
-To unlock the integration, HubSpot must be on the 'Free' plan or higher and Pipedrive must be on the 'Lite' plan or higher. Neither plan is an upgrade over the cheapest plan with API access.
+To unlock the integration, HubSpot must be on the 'Free' plan or higher and Pipedrive must be on the 'Lite' plan or higher. Those are each tool's cheapest plan with API access (HubSpot 'Free' at $0/mo and Pipedrive 'Lite' at $140/mo for 10 seats), so the integration doesn't force an upgrade.
 
 ### How much does the HubSpot + Pipedrive stack cost per month for a 10-person team?
 

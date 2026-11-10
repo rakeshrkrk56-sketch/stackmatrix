@@ -1,4 +1,4 @@
-# Xero + ActiveCampaign Integration Cost (2026)
+# Xero + ActiveCampaign Integration Cost (2026): Plans & Setup
 
 > Xero + ActiveCampaign runs via middleware (+$10.59/mo) on Xero Early and ActiveCampaign Starter: $52.59/mo for 10 seats.
 
@@ -21,6 +21,8 @@ ActiveCampaign lists Xero as a middleware integration enabled by Zapier, not a n
 
 **Limitations:** Xero's Early plan allows 20 invoices and 5 bills a month; if you send more invoices than that you'll need Growing ($59/mo) regardless of the integration. Each Make or Zapier scenario runs one way. ActiveCampaign lists the integration for all of its plans, from Starter up.
 
+[Setup guide: ActiveCampaign: Xero integration ↗](https://www.activecampaign.com/apps/xero)
+
 Sources (checked Nov 3, 2026): [ActiveCampaign: Xero integration ↗](https://www.activecampaign.com/apps/xero) · [Make: Xero app ↗](https://apps.make.com/xero) · [Xero: US pricing plans ↗](https://www.xero.com/us/pricing-plans/)
 
 *Interactive cost calculator: open the web page to change team size, billing and add-ons.*
@@ -31,11 +33,11 @@ Sources (checked Nov 3, 2026): [ActiveCampaign: Xero integration ↗](https://ww
 Xero 'Early' ($27.00/mo) + ActiveCampaign 'Starter' ($15.00/mo)
 + $10.59/mo middleware. No native connector exists for this pair.
 
+ 
+
 ## Native vs middleware for Xero + ActiveCampaign
 
 No native connector exists for this pair, so middleware is not an alternative — it is the integration. The modeled middleware cost is $10.59/mo on top of both tools, for $52.59/mo all-in at 10 seats on the modeled tiers (Xero 'Early' + ActiveCampaign 'Starter'). Sync is 1-way (trigger → action). The middleware figure is the modeled cost for this pair; your actual middleware bill scales with task and operation volume, which is not verified here — check your expected volume against the middleware plan before budgeting.
-
-API access at the required tiers: Xero Yes, ActiveCampaign Yes (see the spec matrix). That API access is what the middleware path runs on.
 
 Integration routes compared for a 10-seat team
 
@@ -44,7 +46,9 @@ Integration routes compared for a 10-seat team
 | Make Core (modeled here) | Xero 'Early' + ActiveCampaign 'Starter' | $52.59 | 1-way per automation |
 | Zapier Professional instead | Xero 'Early' + ActiveCampaign 'Starter' | $71.99 | 1-way per automation |
 
-Make Core's $10.59 monthly price comes from third-party pricing reviews, because make.com blocks automated checks; Zapier's is from zapier.com/pricing.
+Connector prices are monthly-billing list prices: Zapier Professional $29.99 (zapier.com/pricing) and Make Core $10.59 (from third-party pricing reviews, because make.com blocks automated checks). Both bill by usage, so high volumes cost more.
+
+Image: [Xero + ActiveCampaign integration cost summary: $52.59 a month for 10 seats, $10.59 of it is the hidden cost to connect; plans needed: Xero Early and ActiveCampaign Starter](https://stackcostmatrix.com/og/xero-and-activecampaign.jpg)
 
 ## ✓ Verified Vendor Facts
 
@@ -54,14 +58,6 @@ Make Core's $10.59 monthly price comes from third-party pricing reviews, because
 - **Native app availability:** No native app — connected via middleware.
 
 Last checked: Nov 3, 2026 (exceptions listed at the top) · Sources linked below.
-
-## ◐ Model Estimates (your assumptions)
-
-- **Usage / task add-ons:** middleware overage costs you enter above.
-- **Setup & maintenance:** implementation hours and ongoing ops — adjust freely.
-- **Annual billing saving:** uses each vendor's published annual price where one exists, including the middleware or connector fee; otherwise no discount is applied.
-
-Estimates never change the verified facts — they only model your scenario.
 
 ## ! Hidden Cost Trap
 
@@ -104,7 +100,7 @@ Some outbound links may earn us a referral commission at no extra cost to you. [
 
 ### What are the minimum plan tiers required for the Xero + ActiveCampaign integration?
 
-To unlock the integration, Xero must be on the 'Early' plan or higher and ActiveCampaign must be on the 'Starter' plan or higher. Neither plan is an upgrade over the cheapest plan with API access.
+To unlock the integration, Xero must be on the 'Early' plan or higher and ActiveCampaign must be on the 'Starter' plan or higher. Those are each tool's cheapest plan with API access (Xero 'Early' at $27/mo and ActiveCampaign 'Starter' at $15/mo for 10 seats), so the integration doesn't force an upgrade.
 
 ### How much does the Xero + ActiveCampaign stack cost per month for a 10-person team?
 

@@ -21,6 +21,8 @@ There's no native link, so a Make scenario connects monday.com and QuickBooks th
 
 **Limitations:** Sync is one-way per scenario. monday.com's Standard plan includes 250 integration actions a month (Pro raises this to 25,000), and Make counts each run against its own monthly credits.
 
+[Setup guide: monday.com developers: API reference ↗](https://developer.monday.com/api-reference/docs)
+
 Sources (checked Nov 8, 2026): [monday.com developers: API reference ↗](https://developer.monday.com/api-reference/docs) · [Intuit developers: QuickBooks Online API ↗](https://developer.intuit.com/app/developer/qbo/docs/get-started)
 
 *Interactive cost calculator: open the web page to change team size, billing and add-ons.*
@@ -31,11 +33,11 @@ Sources (checked Nov 8, 2026): [monday.com developers: API reference ↗](https:
 Monday.com 'Standard' ($140.00/mo) + QuickBooks Online 'Simple Start' ($38.00/mo)
 + $10.59/mo middleware. No native connector exists for this pair.
 
+ 
+
 ## Native vs middleware for Monday.com + QuickBooks Online
 
 No native connector exists for this pair, so middleware is not an alternative — it is the integration. The modeled middleware cost is $10.59/mo on top of both tools, for $188.59/mo all-in at 10 seats on the modeled tiers (Monday.com 'Standard' + QuickBooks Online 'Simple Start'). Sync is 1-way (trigger → action). The middleware figure is the modeled cost for this pair; your actual middleware bill scales with task and operation volume, which is not verified here — check your expected volume against the middleware plan before budgeting.
-
-API access at the required tiers: Monday.com Yes, QuickBooks Online Yes (see the spec matrix). That API access is what the middleware path runs on.
 
 Integration routes compared for a 10-seat team
 
@@ -44,7 +46,9 @@ Integration routes compared for a 10-seat team
 | Make Core (modeled here) | Monday.com 'Standard' + QuickBooks Online 'Simple Start' | $188.59 | 1-way per automation |
 | Zapier Professional instead | Monday.com 'Standard' + QuickBooks Online 'Simple Start' | $207.99 | 1-way per automation |
 
-Make Core's $10.59 monthly price comes from third-party pricing reviews, because make.com blocks automated checks; Zapier's is from zapier.com/pricing.
+Connector prices are monthly-billing list prices: Zapier Professional $29.99 (zapier.com/pricing) and Make Core $10.59 (from third-party pricing reviews, because make.com blocks automated checks). Both bill by usage, so high volumes cost more.
+
+Image: [Monday.com + QuickBooks Online integration cost summary: $188.59 a month for 10 seats, $10.59 of it is the hidden cost to connect; plans needed: Monday.com Standard and QuickBooks Online Simple Start](https://stackcostmatrix.com/og/monday-and-quickbooks.jpg)
 
 ## ✓ Verified Vendor Facts
 
@@ -54,14 +58,6 @@ Make Core's $10.59 monthly price comes from third-party pricing reviews, because
 - **Native app availability:** No native app — connected via middleware.
 
 Last checked: Nov 3, 2026 (exceptions listed at the top) · Sources linked below.
-
-## ◐ Model Estimates (your assumptions)
-
-- **Usage / task add-ons:** middleware overage costs you enter above.
-- **Setup & maintenance:** implementation hours and ongoing ops — adjust freely.
-- **Annual billing saving:** uses each vendor's published annual price where one exists, including the middleware or connector fee; otherwise no discount is applied.
-
-Estimates never change the verified facts — they only model your scenario.
 
 ## ! Hidden Cost Trap
 
@@ -104,7 +100,7 @@ Some outbound links may earn us a referral commission at no extra cost to you. [
 
 ### What are the minimum plan tiers required for the Monday.com + QuickBooks Online integration?
 
-To unlock the integration, Monday.com must be on the 'Standard' plan or higher and QuickBooks Online must be on the 'Simple Start' plan or higher. Neither plan is an upgrade over the cheapest plan with API access.
+To unlock the integration, Monday.com must be on the 'Standard' plan or higher and QuickBooks Online must be on the 'Simple Start' plan or higher. Those are each tool's cheapest plan with API access (Monday.com 'Standard' at $140/mo and QuickBooks Online 'Simple Start' at $38/mo for 10 seats), so the integration doesn't force an upgrade.
 
 ### How much does the Monday.com + QuickBooks Online stack cost per month for a 10-person team?
 

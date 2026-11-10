@@ -47,7 +47,7 @@ Costs are for a 10-person team at monthly-billing list prices unless a page says
 - [Notion API & Webhook Access by Plan (2026)](https://stackcostmatrix.com/notion-api-access/)
 - [Pipedrive API & Webhook Access by Plan (2026)](https://stackcostmatrix.com/pipedrive-api-access/)
 - [QuickBooks API & Webhook Access by Plan (2026)](https://stackcostmatrix.com/quickbooks-api-access/)
-- [Salesforce API & Webhook Access by Plan (2026)](https://stackcostmatrix.com/salesforce-api-access/)
+- [Salesforce API Access by Edition (2026): Professional & Up](https://stackcostmatrix.com/salesforce-api-access/)
 - [Slack API & Webhook Access by Plan (2026)](https://stackcostmatrix.com/slack-api-access/)
 - [Stripe API & Webhook Access by Plan (2026)](https://stackcostmatrix.com/stripe-api-access/)
 - [Xero API & Webhook Access by Plan (2026)](https://stackcostmatrix.com/xero-api-access/)

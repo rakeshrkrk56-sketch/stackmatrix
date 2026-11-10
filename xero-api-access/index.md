@@ -23,9 +23,11 @@ Xero API & Webhook Access by Plan (2026)
 | Growing | $59/mo | Yes Limits set by the app's developer tier | Not published per plan | Yes No plan requirement in Xero's webhook docs | — |
 | Established | $97/mo | Yes Limits set by the app's developer tier | Not published per plan | Yes No plan requirement in Xero's webhook docs | — |
 
-"Not stated" means Xero's documentation that we read doesn't say either way. Prices are monthly-billing list prices from this site's calculators.
+Prices are monthly-billing list prices from this site's calculators.
 
 Xero's developer tiers (Starter, Core, Plus, Advanced, Enterprise) cap connections at 5, 50, 1,000, 10,000 and unlimited; app developers pay for these, not Xero subscribers. Make's Xero app asks only for a Xero account, and Zapier for a paid one. On Early, apps can enter up to 20 approved sales invoices and 5 bills a month through the API.
+
+Image: [Xero API access by plan: Early yes; Growing yes; Established yes](https://stackcostmatrix.com/og/xero-api-access.jpg)
 
 ## Two kinds of webhooks
 

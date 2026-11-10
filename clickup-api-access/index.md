@@ -27,6 +27,8 @@ ClickUp API & Webhook Access by Plan (2026)
 
 ClickUp also has a "Call webhook" automation action; its help center doesn't say which plans include it. Business Plus raises the API limit to 1,000 requests a minute.
 
+Image: [ClickUp API access by plan: Free yes; Core yes; Business yes](https://stackcostmatrix.com/og/clickup-api-access.jpg)
+
 ## Two kinds of webhooks
 
 Vendors use "webhooks" for two different features. **Developer webhooks** let an app or a tool like Make or Zapier subscribe to events, and are usually available wherever the API is. A **webhook automation action** is a no-code step that sends data out from the tool's own automations, and is often limited to paid plans. The table lists them separately so you can see which one an integration actually needs.

@@ -90,6 +90,13 @@ for _p, _c in COPY16.items():
     assert not (COPY.get(_p) or {}).get("how"), _p   # round 16 only fills pairs that had no copy
     COPY[_p] = _c
 MW7.update(MW16)
+from pairdata18 import PATCH18
+for _p, _t in PATCH18.items():
+    _c = dict(COPY[_p])
+    for _k, _v in _t.items():
+        if _k == "extra_sources": _c["sources"] = list(_c["sources"]) + [x for x in _v if x not in _c["sources"]]
+        else: _c[_k] = _v
+    COPY[_p] = _c
 FACTS16 = {("activecampaign", "Plus"): ("Yes", "Yes")}   # apidata: API and webhooks on every ActiveCampaign plan
 
 FACTS_EXTRA = {("salesforce", "Enterprise"): ("Yes", "Yes"), ("slack", "Free"): ("Yes", "Yes"),
@@ -167,14 +174,16 @@ def trap_text(v, d):
     return out
 
 TH_ = '<th class="px-4 py-3 font-semibold">'; TD_ = '<td class="px-4 py-3">'
-def nvm_table(v, d):
-    """Native (or modeled connector) route vs the alternative connector route, at 10 seats."""
+def nvm_table(v, d, sync="2-way"):
+    """Native (or modeled connector) route vs the connector alternatives, at 10 seats."""
     A, B = v["na"], v["nb"]
     ch = [cheapest_api(t)["tier_name"] for t in d["tools"]]
     rows = []
     if v["native"]:
-        rows.append((f"Native {html.escape(A)} + {html.escape(B)} connector", f"{html.escape(A)} &#39;{v['ta']}&#39; + {html.escape(B)} &#39;{v['tb']}&#39;", money(v["N"]), "As listed in the spec matrix"))
-        rows.append(("Make Core on the cheapest API plans", f"{html.escape(A)} &#39;{ch[0]}&#39; + {html.escape(B)} &#39;{ch[1]}&#39; + Make", money(v["MP"]), "1-way per scenario"))
+        chp = f"{html.escape(A)} &#39;{ch[0]}&#39; + {html.escape(B)} &#39;{ch[1]}&#39;"
+        rows.append((f"Native {html.escape(A)} + {html.escape(B)} connector", f"{html.escape(A)} &#39;{v['ta']}&#39; + {html.escape(B)} &#39;{v['tb']}&#39;", money(v["N"]), sync))
+        rows.append(("Make Core on the cheapest API plans", chp + " + Make", money(v["MP"]), "1-way per scenario"))
+        rows.append(("Zapier Professional on the cheapest API plans", chp + " + Zapier", money(v["MP"] - MAKE_MONTHLY + 29.99), "1-way per Zap"))
     else:
         conn = CONNECTOR.get(v["mw"], "Connector")
         alt, altfee = ("Zapier Professional", 29.99) if v["mw"] != 29.99 else ("Make Core", MAKE_MONTHLY)
@@ -185,7 +194,8 @@ def nvm_table(v, d):
     return (' <div class="mt-4 overflow-x-auto rounded-xl border border-slate-200"> <table class="spec-matrix w-full text-sm"> '
             '<caption class="sr-only">Integration routes compared for a 10-seat team</caption> <thead class="bg-slate-50"> <tr class="text-left"> '
             f'{TH_}Route</th> {TH_}Plans</th> {TH_}10 seats / month</th> {TH_}Sync</th> </tr> </thead> <tbody> {body} </tbody> </table> </div> '
-            + ('<p class="mt-2 text-xs text-slate-500">Make Core&#39;s $10.59 monthly price comes from third-party pricing reviews, because make.com blocks automated checks; Zapier&#39;s is from zapier.com/pricing.</p> ' if "Make" in body else ""))
+            '<p class="mt-2 text-xs text-slate-500">Connector prices are monthly-billing list prices: Zapier Professional $29.99 (zapier.com/pricing) and Make Core $10.59 '
+            '(from third-party pricing reviews, because make.com blocks automated checks). Both bill by usage, so high volumes cost more.</p> ')
 
 def meta_desc(v, d=None):
     A, B, ta, tb = v["na"], v["nb"], v["ta"], v["tb"]
@@ -220,7 +230,7 @@ def meta_desc_top(v):
 def faq_answers(v, d):
     A, B, ta, tb = v["na"], v["nb"], v["ta"], v["tb"]
     ups = upgrades(d)
-    why = (" " + " ".join(f"{n}'s cheapest plan with API access is '{ch}', so '{req}' is a {m0(x)}/mo upgrade at 10 seats." for n, req, ch, x in ups)) if ups else " Neither plan is an upgrade over the cheapest plan with API access."
+    why = (" " + " ".join(f"{n}'s cheapest plan with API access is '{ch}', so '{req}' is a {m0(x)}/mo upgrade at 10 seats." for n, req, ch, x in ups)) if ups else f" Those are each tool's cheapest plan with API access ({A} '{ta}' at {m0(v['ca'])}/mo and {B} '{tb}' at {m0(v['cb'])}/mo for 10 seats), so the integration doesn't force an upgrade."
     q3 = f"Is the {A} + {B} integration native, and would Make or Zapier be cheaper?" if v["native"] else f"Why does {A} + {B} need middleware, and what does it cost?"
     if v["native"]:
         alt = (f" Connecting through Make on the cheapest API plans would cost about {money(v['MP'])}/month in total instead of {money(v['N'])}, but you'd replace the native connector with a third-party automation."
@@ -233,6 +243,28 @@ def faq_answers(v, d):
             f"At 10 seats with the required tiers ({A} '{ta}' + {B} '{tb}' + {money(v['mw'])}/month middleware), the stack costs {money(v['N'])} per month.",
             f"The {A} + {B} connection runs through middleware: neither vendor offers a native app for this pair, so this page models {conn} at {money(v['mw'])} per month on top of both tools. Sync is one-way (a trigger in one tool runs an action in the other).", q3)
 
+def pair_figure(v, d, pair):
+    """The pair's summary card (og17.py) shown in the page, so the numbers are also available as an image."""
+    extra = (v["mw"] + max(0.0, v["UP"] - v["mw"])) if not v["native"] else v["UP"]
+    alt = (f"{v['na']} + {v['nb']} integration cost summary: {m0(v['N'])} a month for 10 seats, "
+           + (f"{m0(extra)} of it is the hidden cost to connect" if extra > 0.004 else "nothing extra to connect")
+           + f"; plans needed: {v['na']} {v['ta']} and {v['nb']} {v['tb']}")
+    return (f'<figure class="mt-6"> <img src="/og/{pair}.jpg" width="1200" height="630" loading="lazy" class="scm-fig" alt="{html.escape(alt, quote=True)}"> '
+            f'<figcaption class="mt-2 text-xs text-slate-500">{html.escape(v["na"])} + {html.escape(v["nb"])} at a glance. Free to reuse with credit (CC BY 4.0).</figcaption> </figure> ')
+
+def setup_led(v, copy):
+    """Pages whose searchers want "how do I connect these": the reworked top pages and every native pair with no extra cost."""
+    return bool((copy or {}).get("top")) or (v["native"] and v["UP"] <= 0.004)
+
+def sf_addon_note(v, d):
+    """Salesforce Professional's line bundles the API add-on; say so next to the total."""
+    for t, c in zip(d["tools"], (v["ca"], v["cb"])):
+        if t["slug"] == "salesforce" and t["required"] == "Professional":
+            seat = next(x["perSeat"] for x in t["tiers"] if x["tier_name"] == "Professional")
+            return (f"Salesforce&#39;s {money(c)} is the Professional plan (${seat:g}/user) plus the API add-on, which Salesforce sells through an account executive; "
+                    f"this page models it at $25/user (${25 * 10} at 10 seats). ")
+    return ""
+
 def trap_tail(v, pair, cta=True):
     end = "  </section>  "
     if not v["native"] and not cta:
@@ -241,14 +273,26 @@ def trap_tail(v, pair, cta=True):
         return (f'</p>   <a href="/go/make" target="_blank" rel="sponsored noopener" data-cta="tool" data-tool="make" data-pair="{pair}" class="mt-5 block rounded-xl bg-emerald-700 px-6 py-4 text-center font-bold text-white shadow-md ring-2 ring-emerald-300 transition hover:bg-emerald-800"> Connect {v["na"]} + {v["nb"]} via Make.com — the middleware this integration runs on </a> <p class="mt-2 text-center text-xs text-amber-800">\nAffiliate link — we may earn a commission at no extra cost to you.\n</p>' + end)
     if tco_b(v):
         return (f'</p>   <a href="/go/make" target="_blank" rel="sponsored noopener" data-cta="tool" data-tool="make" data-pair="{pair}" class="mt-5 block rounded-xl bg-emerald-700 px-6 py-4 text-center font-bold text-white shadow-md ring-2 ring-emerald-300 transition hover:bg-emerald-800"> Skip the native tier upgrade: connect {v["na"]} + {v["nb"]} via Make.com middleware instead </a> <p class="mt-2 text-center text-xs text-amber-800">\nAffiliate link — we may earn a commission at no extra cost to you.\n</p>' + end)
-    if v["UP"] > 0:
-        return '</p> ' + end
-    return (f'</p> <div class="mt-5 rounded-xl bg-emerald-50 px-6 py-4 ring-2 ring-emerald-300"> <p class="font-bold text-emerald-900">✓ Native is the cheapest path — $0 incremental integration cost</p> <p class="mt-1 text-sm text-emerald-800">\nThe native {v["na"]} + {v["nb"]} connector runs on the required tiers with no middleware fee\n          and no forced tier upgrade — paying for middleware here would only add cost.\n</p> </div>' + end)
+    return '</p> ' + end   # the green "native is the cheapest path" box repeated the sentence above it; removed 2026-11-10
 
 def render_page(s, pair, d, summary, sync, facts, date_modified=None, copy=None, cta=True):
     v = compute(d)
     A, B, ta, tb = v["na"], v["nb"], v["ta"], v["tb"]
     sync2 = sync == "2-way"
+    # title + H1 by search intent (hand-tuned "top" pages keep their title); the WebPage name follows the H1
+    cur_title = html.unescape(re.search(r"<title>(.*?)</title>", s, re.S).group(1)).strip()
+    a_, b_ = SHORT.get(A, A), SHORT.get(B, B)
+    if (copy or {}).get("top"):
+        title, h1 = cur_title, html.unescape(re.sub(r"\s+", " ", re.search(r"<h1[^>]*>(.*?)</h1>", s, re.S).group(1))).strip()
+    elif setup_led(v, copy):
+        title = next(t for t in (f"{a_} + {b_} Integration: Setup, Plans & Cost (2026)", f"{a_} + {b_} Integration: Setup & Cost (2026)", f"{a_} + {b_} Integration (2026)") if len(t) <= 60)
+        h1 = f"{A} + {B} Integration (2026): How It Works, Setup & True Cost"
+    else:
+        title = next(t for t in (f"{a_} + {b_} Integration Cost (2026): Plans & Setup", f"{a_} + {b_} Integration Cost (2026)") if len(t) <= 60)
+        h1 = f"{A} + {B} Integration Cost (2026): True Price, Minimum Plan & Hidden API Fees"
+    s = sub1(r"(<title>).*?(</title>)", lambda m: m.group(1) + html.escape(title, quote=False) + m.group(2), s, what="title")
+    s = sub1(r'(<meta property="og:title" content=")[^"]*(")', lambda m: m.group(1) + html.escape(title, quote=True) + m.group(2), s, what="og:title")
+    s = sub1(r'(<h1 class="text-3xl font-bold tracking-tight sm:text-4xl">).*?(</h1>)', lambda m: m.group(1) + html.escape(h1, quote=False) + m.group(2), s, what="h1")
     # calc data
     s = sub1(r'(<script type="application/json" id="calc-data">).*?(</script>)', lambda m: m.group(1) + json.dumps(d, separators=(",", ":"), ensure_ascii=False) + m.group(2), s, what="calc-data")
     # lede + trap summary
@@ -260,8 +304,8 @@ def render_page(s, pair, d, summary, sync, facts, date_modified=None, copy=None,
     for k, val in cells.items():
         s = sub1(r'(id="' + k + r'"(?: for="[^"]*")?>)[^<]*(<)', lambda m, val=val: m.group(1) + val + m.group(2), s, what=k)
     # TCO summary + native vs middleware
-    s = sub1(r'(aria-label="Default 10-seat TCO summary">.*?<p class="mt-2 text-sm leading-relaxed text-indigo-950">).*?(</p> </aside>)', lambda m: m.group(1) + render_tco(v, tco_b) + m.group(2), s, what="tco")
-    s = sub1(r'(aria-label="Native versus middleware"> <h2 class="text-xl font-bold">.*?</h2>).*?(</section>)', lambda m: m.group(1) + render_nvm(v, nvm_b, sync2) + nvm_table(v, d) + m.group(2), s, what="nvm")
+    s = sub1(r'(aria-label="Default 10-seat TCO summary">.*?<p class="mt-2 text-sm leading-relaxed text-indigo-950">).*?(</p> </aside>)', lambda m: m.group(1) + render_tco(v, tco_b) + sf_addon_note(v, d) + m.group(2), s, what="tco")
+    s = sub1(r'(aria-label="Native versus middleware"> <h2 class="text-xl font-bold">.*?</h2>).*?(</section>)', lambda m: m.group(1) + render_nvm(v, nvm_b, sync2) + nvm_table(v, d, sync) + pair_figure(v, d, pair) + m.group(2), s, what="nvm")
     # verified facts
     s = sub1(r"(<li><strong>Required tiers:</strong> ).*?( — the minimum plans)", lambda m: m.group(1) + f"'{ta}' / '{tb}'" + m.group(2), s, what="facts")
     s = sub1(r"(<li><strong>Native app availability:</strong>).*?(</li>)", lambda m: m.group(1) + (" Native app available in vendor marketplace." if v["native"] else " No native app — connected via middleware.") + m.group(2), s, what="avail")
@@ -306,33 +350,34 @@ def render_page(s, pair, d, summary, sync, facts, date_modified=None, copy=None,
             o["mainEntity"][2]["name"] = q3q
             if q4q: o["mainEntity"][3]["name"] = q4q; o["mainEntity"][3]["acceptedAnswer"]["text"] = q4
         if o.get("@type") == "WebPage":
-            o["description"] = meta_desc_top(v) if (copy or {}).get("top") else meta_desc(v, d)
+            o["name"] = h1
+            o["description"] = meta_desc_top(v) if setup_led(v, copy) else meta_desc(v, d)
             if date_modified: o["dateModified"] = date_modified
         return '<script type="application/ld+json">' + json.dumps(o, ensure_ascii=False, separators=(",", ":")) + "</script>"
     s = re.sub(r'<script type="application/ld\+json">(.*?)</script>', faqfix, s, flags=re.S)
     # meta + og descriptions
-    md = html.escape(meta_desc_top(v) if (copy or {}).get("top") else meta_desc(v, d), quote=True)
+    md = html.escape(meta_desc_top(v) if setup_led(v, copy) else meta_desc(v, d), quote=True)
     s = sub1(r'(<meta name="description" content=")[^"]*(")', lambda m: m.group(1) + md + m.group(2), s, what="meta")
     s = sub1(r'(<meta property="og:description" content=")[^"]*(")', lambda m: m.group(1) + md + m.group(2), s, what="og")
-    # pair-specific copy section (inserted after the native-vs-middleware section)
+    # pair-specific copy section, above the calculator: answer, how it works, numbered setup steps, limits, setup-guide button
     if copy:
+        P_ = '<p class="mt-3 leading-relaxed text-slate-700">'
         src = " · ".join(f'<a href="{html.escape(u, quote=True)}" rel="noopener" class="underline hover:text-indigo-600">{html.escape(l)} ↗</a>' for l, u in copy["sources"])
-        sec = (f' <section class="mt-10 rounded-xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8" aria-label="How the integration works"> '
-               f'<h2 class="text-xl font-bold">How the {html.escape(A)} + {html.escape(B)} integration works</h2> '
-               f'<p class="mt-3 leading-relaxed text-slate-700">{esc(copy["how"])}</p> '
-               f'<p class="mt-3 leading-relaxed text-slate-700"><strong>Limitations:</strong> {esc(copy["limits"])}</p> '
-               f'<p class="mt-3 text-xs text-slate-500">Sources (checked {copy.get("checked", "Nov 3, 2026")}): {src}</p> </section>')
-        if copy.get("top"):
-            steps = "".join(f'<p class="mt-2 leading-relaxed text-slate-700"><strong>{i}.</strong> {esc(x)}</p>' for i, x in enumerate(copy["setup"], 1))
-            sec = (f' <section class="mt-10 rounded-xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8" aria-label="How the integration works"> '
-                   f'<h2 class="text-xl font-bold">How the {html.escape(A)} + {html.escape(B)} integration works</h2> '
-                   f'<p class="mt-3 leading-relaxed text-slate-700"><strong>Does {html.escape(A)} integrate with {html.escape(B)}?</strong> {esc(copy["answer"])}</p> '
-                   f'<p class="mt-3 leading-relaxed text-slate-700">{esc(copy["how"])}</p> '
-                   f'<h3 class="mt-6 font-semibold text-slate-900">How to set it up</h3> {steps} '
-                   f'<p class="mt-4 leading-relaxed text-slate-700"><strong>Limitations:</strong> {esc(copy["limits"])}</p> '
-                   f'<p class="mt-3 text-xs text-slate-500">Sources (checked {copy.get("checked", "Nov 3, 2026")}): {src}</p> </section>')
-        s = re.sub(r' <section class="mt-10 rounded-xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8" aria-label="How the integration works">.*?</section>', "", s, flags=re.S)
-        # since 2026-11-08 every pair answers "how does it work" above the calculator (search-intent fit)
+        parts = [f'<h2 class="text-xl font-bold">How the {html.escape(A)} + {html.escape(B)} integration works</h2> ']
+        if copy.get("answer"): parts.append(f'{P_}<strong>Does {html.escape(A)} integrate with {html.escape(B)}?</strong> {esc(copy["answer"])}</p> ')
+        parts.append(f'{P_}{esc(copy["how"])}</p> ')
+        if copy.get("setup"):
+            parts.append('<h3 class="mt-6 font-semibold text-slate-900">How to set it up</h3> <ol class="scm-steps"> '
+                         + " ".join(f"<li>{esc(x)}</li>" for x in copy["setup"]) + " </ol> ")
+        parts.append(f'{P_}<strong>Limitations:</strong> {esc(copy["limits"])}</p> ')
+        if copy.get("note"): parts.append(f'{P_}<strong>Before you budget:</strong> {esc(copy["note"])}</p> ')
+        if copy["sources"]:
+            cl, cu = copy.get("cta") or ("Setup guide: " + copy["sources"][0][0], copy["sources"][0][1])
+            parts.append(f'<p class="mt-4"><a href="{html.escape(cu, quote=True)}" rel="noopener" class="scm-cta">{html.escape(cl)} ↗</a></p> ')
+        parts.append(f'<p class="mt-3 text-xs text-slate-500">Sources (checked {copy.get("checked", "Nov 3, 2026")}): {src}</p> ')
+        sec = (' <section class="mt-10 rounded-xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8" aria-label="How the integration works" id="how-it-works"> '
+               + "".join(parts) + '</section>')
+        s = re.sub(r' <section class="mt-10 rounded-xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8" aria-label="How the integration works"[^>]*>.*?</section>', "", s, flags=re.S)
         s = sub1(r'(Report a correction →</a> </div>)', lambda m: m.group(1) + sec, s, what="copy insert top")
     return s, v
 

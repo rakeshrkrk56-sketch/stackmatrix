@@ -23,13 +23,13 @@ Pipedrive and Calendly don't build a native integration with each other. Third-p
 
 ### How to set it up
 
-**1.** Pick a connector: a Pipedrive Marketplace app such as Outfunnel's Calendly Sync, or Make or Zapier.
-
-**2.** Connect your Calendly account (Standard plan or higher) and your Pipedrive account in that connector.
-
-**3.** Choose what a new booking should create in Pipedrive, such as a new person record.
+1. Pick a connector: a Pipedrive Marketplace app such as Outfunnel's Calendly Sync, or Make or Zapier.
+2. Connect your Calendly account (Standard plan or higher) and your Pipedrive account in that connector.
+3. Choose what a new booking should create in Pipedrive, such as a new person record.
 
 **Limitations:** These apps aren't made by Pipedrive or Calendly, so check each one's pricing and support before relying on it. Calendly's webhooks, which real-time automations use, need a paid Calendly plan from Standard up.
+
+[Setup guide: Calendly: Outfunnel integration ↗](https://calendly.com/integration/outfunnel)
 
 Sources (checked Nov 3, 2026): [Calendly: Outfunnel integration ↗](https://calendly.com/integration/outfunnel) · [Pipedrive Marketplace: Calendly Sync ↗](https://www.pipedrive.com/en/marketplace/app/calendly-sync/0356741bcb89ba03) · [Calendly: API overview ↗](https://calendly.com/help/calendly-api-overview)
 
@@ -41,11 +41,11 @@ Sources (checked Nov 3, 2026): [Calendly: Outfunnel integration ↗](https://cal
 Pipedrive 'Lite' ($140.00/mo) + Calendly 'Standard' ($120.00/mo)
 + $10.59/mo middleware. No native connector exists for this pair.
 
+ 
+
 ## Native vs middleware for Pipedrive + Calendly
 
 No native connector exists for this pair, so middleware is not an alternative — it is the integration. The modeled middleware cost is $10.59/mo on top of both tools, for $270.59/mo all-in at 10 seats on the modeled tiers (Pipedrive 'Lite' + Calendly 'Standard'). Sync is 1-way (trigger → action). The middleware figure is the modeled cost for this pair; your actual middleware bill scales with task and operation volume, which is not verified here — check your expected volume against the middleware plan before budgeting.
-
-API access at the required tiers: Pipedrive Yes, Calendly Yes (see the spec matrix). That API access is what the middleware path runs on.
 
 Integration routes compared for a 10-seat team
 
@@ -54,7 +54,9 @@ Integration routes compared for a 10-seat team
 | Make Core (modeled here) | Pipedrive 'Lite' + Calendly 'Standard' | $270.59 | 1-way per automation |
 | Zapier Professional instead | Pipedrive 'Lite' + Calendly 'Standard' | $289.99 | 1-way per automation |
 
-Make Core's $10.59 monthly price comes from third-party pricing reviews, because make.com blocks automated checks; Zapier's is from zapier.com/pricing.
+Connector prices are monthly-billing list prices: Zapier Professional $29.99 (zapier.com/pricing) and Make Core $10.59 (from third-party pricing reviews, because make.com blocks automated checks). Both bill by usage, so high volumes cost more.
+
+Image: [Pipedrive + Calendly integration cost summary: $270.59 a month for 10 seats, $10.59 of it is the hidden cost to connect; plans needed: Pipedrive Lite and Calendly Standard](https://stackcostmatrix.com/og/pipedrive-and-calendly.jpg)
 
 ## ✓ Verified Vendor Facts
 
@@ -64,14 +66,6 @@ Make Core's $10.59 monthly price comes from third-party pricing reviews, because
 - **Native app availability:** No native app — connected via middleware.
 
 Last checked: Nov 3, 2026 (exceptions listed at the top) · Sources linked below.
-
-## ◐ Model Estimates (your assumptions)
-
-- **Usage / task add-ons:** middleware overage costs you enter above.
-- **Setup & maintenance:** implementation hours and ongoing ops — adjust freely.
-- **Annual billing saving:** uses each vendor's published annual price where one exists, including the middleware or connector fee; otherwise no discount is applied.
-
-Estimates never change the verified facts — they only model your scenario.
 
 ## ! Hidden Cost Trap
 
@@ -114,7 +108,7 @@ Some outbound links may earn us a referral commission at no extra cost to you. [
 
 ### What are the minimum plan tiers required for the Pipedrive + Calendly integration?
 
-To unlock the integration, Pipedrive must be on the 'Lite' plan or higher and Calendly must be on the 'Standard' plan or higher. Neither plan is an upgrade over the cheapest plan with API access.
+To unlock the integration, Pipedrive must be on the 'Lite' plan or higher and Calendly must be on the 'Standard' plan or higher. Those are each tool's cheapest plan with API access (Pipedrive 'Lite' at $140/mo and Calendly 'Standard' at $120/mo for 10 seats), so the integration doesn't force an upgrade.
 
 ### How much does the Pipedrive + Calendly stack cost per month for a 10-person team?
 

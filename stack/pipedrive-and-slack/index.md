@@ -23,13 +23,13 @@ Pipedrive connects to Slack through its Automations feature: after you authorize
 
 ### How to set it up
 
-**1.** In Pipedrive, go to Tools and apps > Slack > Authorize Slack account.
-
-**2.** Create an automation, pick a trigger such as a deal being won, and add a Slack notification action.
-
-**3.** Choose a channel or a direct message, then pick the Pipedrive fields to include in the message.
+1. In Pipedrive, go to Tools and apps > Slack > Authorize Slack account.
+2. Create an automation, pick a trigger such as a deal being won, and add a Slack notification action.
+3. Choose a channel or a direct message, then pick the Pipedrive fields to include in the message.
 
 **Limitations:** Pipedrive says Automations are only available on Growth and higher plans (Advanced under its older plan names), so the cheapest Lite plan can't send Slack messages this way. Slack's free plan allows up to 10 app installations.
+
+[Setup guide: Pipedrive: Automations Slack notifications ↗](https://support.pipedrive.com/en/article/workflow-automation-slack-notifications)
 
 Sources (checked Nov 3, 2026): [Pipedrive: Automations Slack notifications ↗](https://support.pipedrive.com/en/article/workflow-automation-slack-notifications) · [Slack: Free plan limits ↗](https://slack.com/help/articles/27204752526611-Feature-limitations-on-the-free-version-of-Slack)
 
@@ -42,20 +42,23 @@ Pipedrive 'Growth' ($390.00/mo) + Slack 'Free' ($0.00/mo),
 no middleware required.
 Alternative: skip the native tier upgrade and run via Make/Zapier middleware for ~$150.59/mo all-in (adds a third-party dependency).
 
+ 
+
 ## Native vs middleware for Pipedrive + Slack
 
 The native path runs on the required tiers (Pipedrive 'Growth' + Slack 'Free') at $390.00/mo for a 10-seat team, with no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — comes to $150.59/mo all-in, which is cheaper on paper because it skips the $250.00/mo forced tier upgrade. The trade-off: you replace the native connector with a third-party dependency, sync stays 1-way (trigger → action), and Make Core's fee covers a fixed monthly allowance of credits — whether that covers your volume is not verified for this pair.
-
-API access at the required tiers: Pipedrive Yes, Slack Yes (see the spec matrix). That API access is what the middleware path runs on.
 
 Integration routes compared for a 10-seat team
 
 | Route | Plans | 10 seats / month | Sync |
 | --- | --- | --- | --- |
-| Native Pipedrive + Slack connector | Pipedrive 'Growth' + Slack 'Free' | $390.00 | As listed in the spec matrix |
+| Native Pipedrive + Slack connector | Pipedrive 'Growth' + Slack 'Free' | $390.00 | 1-way (Pipedrive → Slack) |
 | Make Core on the cheapest API plans | Pipedrive 'Lite' + Slack 'Free' + Make | $150.59 | 1-way per scenario |
+| Zapier Professional on the cheapest API plans | Pipedrive 'Lite' + Slack 'Free' + Zapier | $169.99 | 1-way per Zap |
 
-Make Core's $10.59 monthly price comes from third-party pricing reviews, because make.com blocks automated checks; Zapier's is from zapier.com/pricing.
+Connector prices are monthly-billing list prices: Zapier Professional $29.99 (zapier.com/pricing) and Make Core $10.59 (from third-party pricing reviews, because make.com blocks automated checks). Both bill by usage, so high volumes cost more.
+
+Image: [Pipedrive + Slack integration cost summary: $390 a month for 10 seats, $250 of it is the hidden cost to connect; plans needed: Pipedrive Growth and Slack Free](https://stackcostmatrix.com/og/pipedrive-and-slack.jpg)
 
 ## ✓ Verified Vendor Facts
 
@@ -65,14 +68,6 @@ Make Core's $10.59 monthly price comes from third-party pricing reviews, because
 - **Native app availability:** Native app available in vendor marketplace.
 
 Last checked: Nov 3, 2026 (exceptions listed at the top) · Sources linked below.
-
-## ◐ Model Estimates (your assumptions)
-
-- **Usage / task add-ons:** middleware overage costs you enter above.
-- **Setup & maintenance:** implementation hours and ongoing ops — adjust freely.
-- **Annual billing saving:** uses each vendor's published annual price where one exists; otherwise no discount is applied.
-
-Estimates never change the verified facts — they only model your scenario.
 
 ## ! Hidden Cost Trap
 

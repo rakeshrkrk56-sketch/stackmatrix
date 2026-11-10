@@ -26,6 +26,8 @@ Monday.com Integration Costs (2026): Minimum Plans, API Access & Hidden Fees
 
 Totals are monthly-billing prices for 10 seats on the minimum plans, including any connector fee. Open a calculator to change team size, switch to annual billing or add usage costs.
 
+Image: [Monday.com integration costs summary: 4 integrations priced, from $140 to $830 a month for 10 seats](https://stackcostmatrix.com/og/monday-integrations-cost.jpg)
+
 ## Does Monday.com force an upgrade?
 
 Not for any of the 4 integrations here: each one works on Monday.com's cheapest plan with API access, so the integration itself adds no Monday.com upgrade cost. Any extra cost comes from the other tool's plan or from a connector fee, shown in the table above.

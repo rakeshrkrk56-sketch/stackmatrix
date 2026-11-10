@@ -22,9 +22,11 @@ Notion API & Webhook Access by Plan (2026)
 | Plus | $12/seat/mo ($10 billed annually) | Yes | Not published per plan | Yes | Yes (paid plans) |
 | Business | $24/seat/mo ($20 billed annually) | Yes | Not published per plan | Yes | Yes (paid plans) |
 
-"Not stated" means Notion's documentation that we read doesn't say either way. Prices are monthly-billing list prices from this site's calculators.
+Prices are monthly-billing list prices from this site's calculators.
 
 Free workspaces can use the API too; this index only models Plus and Business because the pairs here assume a team workspace.
+
+Image: [Notion API access by plan: Plus yes; Business yes](https://stackcostmatrix.com/og/notion-api-access.jpg)
 
 ## Two kinds of webhooks
 

@@ -21,6 +21,8 @@ Mailchimp for Salesforce connects Salesforce contacts and leads with your Mailch
 
 **Limitations:** It supports Enterprise, Unlimited, Performance, Developer and Professional editions, but on Professional your Salesforce account executive must enable API access first. Field mapping is limited by Mailchimp plan; Premium accounts can map up to 80 fields.
 
+[Setup guide: Mailchimp: Connect Mailchimp for Salesforce ↗](https://mailchimp.com/help/connect-mailchimp-for-salesforce/)
+
 Sources (checked Nov 3, 2026): [Mailchimp: Connect Mailchimp for Salesforce ↗](https://mailchimp.com/help/connect-mailchimp-for-salesforce/) · [Mailchimp: About Mailchimp for Salesforce ↗](https://mailchimp.com/help/about-mailchimp-for-salesforce/)
 
 *Interactive cost calculator: open the web page to change team size, billing and add-ons.*
@@ -30,22 +32,25 @@ Sources (checked Nov 3, 2026): [Mailchimp: Connect Mailchimp for Salesforce ↗]
 **Native integration costs $1,270.00/mo ($15,240.00/yr)** for a 10-seat team —
 Salesforce Sales Cloud 'Professional' ($1,250.00/mo) + Mailchimp 'Standard' ($20.00/mo),
 no middleware required.
-Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capable tiers ($1,273.59/mo all-in) — the native path is cheaper.
+Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capable tiers ($1,273.59/mo all-in) — the native path is cheaper. Salesforce's $1,250.00 is the Professional plan ($100/user) plus the API add-on, which Salesforce sells through an account executive; this page models it at $25/user ($250 at 10 seats).
+
+ 
 
 ## Native vs middleware for Salesforce Sales Cloud + Mailchimp
 
 The native path runs on the required tiers (Salesforce Sales Cloud 'Professional' + Mailchimp 'Standard') at $1,270.00/mo for a 10-seat team, with 2-way sync and no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — would cost $1,273.59/mo all-in, so on cost alone there is no reason to switch: middleware would only make sense if you already run other automations through it, and it would drop sync to 1-way (trigger → action).
 
-API access at the required tiers: Salesforce Sales Cloud Yes, Mailchimp Yes (see the spec matrix). That API access is what the middleware path runs on.
-
 Integration routes compared for a 10-seat team
 
 | Route | Plans | 10 seats / month | Sync |
 | --- | --- | --- | --- |
-| Native Salesforce Sales Cloud + Mailchimp connector | Salesforce Sales Cloud 'Professional' + Mailchimp 'Standard' | $1,270.00 | As listed in the spec matrix |
+| Native Salesforce Sales Cloud + Mailchimp connector | Salesforce Sales Cloud 'Professional' + Mailchimp 'Standard' | $1,270.00 | 2-way |
 | Make Core on the cheapest API plans | Salesforce Sales Cloud 'Professional' + Mailchimp 'Essentials' + Make | $1,273.59 | 1-way per scenario |
+| Zapier Professional on the cheapest API plans | Salesforce Sales Cloud 'Professional' + Mailchimp 'Essentials' + Zapier | $1,292.99 | 1-way per Zap |
 
-Make Core's $10.59 monthly price comes from third-party pricing reviews, because make.com blocks automated checks; Zapier's is from zapier.com/pricing.
+Connector prices are monthly-billing list prices: Zapier Professional $29.99 (zapier.com/pricing) and Make Core $10.59 (from third-party pricing reviews, because make.com blocks automated checks). Both bill by usage, so high volumes cost more.
+
+Image: [Salesforce Sales Cloud + Mailchimp integration cost summary: $1,270 a month for 10 seats, $7 of it is the hidden cost to connect; plans needed: Salesforce Sales Cloud Professional and Mailchimp Standard](https://stackcostmatrix.com/og/salesforce-and-mailchimp.jpg)
 
 ## ✓ Verified Vendor Facts
 
@@ -55,14 +60,6 @@ Make Core's $10.59 monthly price comes from third-party pricing reviews, because
 - **Native app availability:** Native app available in vendor marketplace.
 
 Last checked: Nov 3, 2026 (exceptions listed at the top) · Sources linked below.
-
-## ◐ Model Estimates (your assumptions)
-
-- **Usage / task add-ons:** middleware overage costs you enter above.
-- **Setup & maintenance:** implementation hours and ongoing ops — adjust freely.
-- **Annual billing saving:** uses each vendor's published annual price where one exists; otherwise no discount is applied.
-
-Estimates never change the verified facts — they only model your scenario.
 
 ## ! Hidden Cost Trap
 

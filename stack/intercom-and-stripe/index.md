@@ -1,6 +1,6 @@
-# Intercom + Stripe Integration Cost (2026) | StackCostMatrix
+# Intercom + Stripe Integration: Setup, Plans & Cost (2026)
 
-> Intercom + Stripe needs Intercom Essential and Stripe Standard for the native integration: $390/mo for 10 seats, with no extra cost to connect them.
+> How the Intercom + Stripe integration works, how to set it up, and the plans it needs: Intercom Essential + Stripe Standard, $390/mo for 10 seats.
 
 Source page: https://stackcostmatrix.com/stack/intercom-and-stripe/  
 Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (credit StackCostMatrix and link to https://stackcostmatrix.com)
@@ -9,7 +9,7 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 [Home](https://stackcostmatrix.com/) / Intercom + Stripe 
 
-# Intercom + Stripe Integration Cost (2026): Plans, Setup & True Price
+# Intercom + Stripe Integration (2026): How It Works, Setup & True Cost
 
 Billing data enriches chat profiles on base plans. Requires Intercom on the 'Essential' plan and Stripe on the 'Standard' plan for full 2-way sync.
 
@@ -20,6 +20,8 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 Install Stripe from the Intercom App Store and turn on sync. Intercom imports each customer's Stripe data, such as plan, interval, account balance and delinquency, as custom attributes, so you can segment and message customers by billing status. Agents can see Stripe details in the inbox and add or link a customer to Stripe without leaving Intercom.
 
 **Limitations:** Customers are matched by email address. Only live-mode Stripe data syncs, not test mode, and extra Stripe accounts sync attributes only, not the inbox app. You need to be a Stripe admin to connect it.
+
+[Setup guide: Intercom help: Stripe app ↗](https://www.intercom.com/help/en/articles/1829591-stripe-app)
 
 Sources (checked Nov 8, 2026): [Intercom help: Stripe app ↗](https://www.intercom.com/help/en/articles/1829591-stripe-app)
 
@@ -32,20 +34,23 @@ Intercom 'Essential' ($390.00/mo) + Stripe 'Standard' ($0.00/mo),
 no middleware required.
 Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capable tiers ($400.59/mo all-in) — the native path is cheaper.
 
+ 
+
 ## Native vs middleware for Intercom + Stripe
 
 The native path runs on the required tiers (Intercom 'Essential' + Stripe 'Standard') at $390.00/mo for a 10-seat team, with 2-way sync and no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — would cost $400.59/mo all-in, so on cost alone there is no reason to switch: middleware would only make sense if you already run other automations through it, and it would drop sync to 1-way (trigger → action).
-
-API access at the required tiers: Intercom Yes, Stripe Yes (see the spec matrix). That API access is what the middleware path runs on.
 
 Integration routes compared for a 10-seat team
 
 | Route | Plans | 10 seats / month | Sync |
 | --- | --- | --- | --- |
-| Native Intercom + Stripe connector | Intercom 'Essential' + Stripe 'Standard' | $390.00 | As listed in the spec matrix |
+| Native Intercom + Stripe connector | Intercom 'Essential' + Stripe 'Standard' | $390.00 | 2-way |
 | Make Core on the cheapest API plans | Intercom 'Essential' + Stripe 'Standard' + Make | $400.59 | 1-way per scenario |
+| Zapier Professional on the cheapest API plans | Intercom 'Essential' + Stripe 'Standard' + Zapier | $419.99 | 1-way per Zap |
 
-Make Core's $10.59 monthly price comes from third-party pricing reviews, because make.com blocks automated checks; Zapier's is from zapier.com/pricing.
+Connector prices are monthly-billing list prices: Zapier Professional $29.99 (zapier.com/pricing) and Make Core $10.59 (from third-party pricing reviews, because make.com blocks automated checks). Both bill by usage, so high volumes cost more.
+
+Image: [Intercom + Stripe integration cost summary: $390 a month for 10 seats, nothing extra to connect; plans needed: Intercom Essential and Stripe Standard](https://stackcostmatrix.com/og/intercom-and-stripe.jpg)
 
 ## ✓ Verified Vendor Facts
 
@@ -55,14 +60,6 @@ Make Core's $10.59 monthly price comes from third-party pricing reviews, because
 - **Native app availability:** Native app available in vendor marketplace.
 
 Last checked: Nov 3, 2026 · Sources linked below.
-
-## ◐ Model Estimates (your assumptions)
-
-- **Usage / task add-ons:** middleware overage costs you enter above.
-- **Setup & maintenance:** implementation hours and ongoing ops — adjust freely.
-- **Annual billing saving:** uses each vendor's published annual price where one exists; otherwise no discount is applied.
-
-Estimates never change the verified facts — they only model your scenario.
 
 ## ! Plan requirements
 
@@ -78,11 +75,6 @@ Middleware fee
 :   None
 
 No hidden cost: the native connector works on Intercom 'Essential' and Stripe 'Standard', so connecting them adds nothing to what you already pay for the two tools. Stripe has no monthly plan fee; it charges per transaction, so it counts as $0/month here.
-
-✓ Native is the cheapest path — $0 incremental integration cost
-
-The native Intercom + Stripe connector runs on the required tiers with no middleware fee
-and no forced tier upgrade — paying for middleware here would only add cost.
 
 ## Side-by-side spec matrix
 
@@ -106,7 +98,7 @@ Some outbound links may earn us a referral commission at no extra cost to you. [
 
 ### What are the minimum plan tiers required for the Intercom + Stripe integration?
 
-To unlock the native integration, Intercom must be on the 'Essential' plan or higher and Stripe must be on the 'Standard' plan or higher. Neither plan is an upgrade over the cheapest plan with API access.
+To unlock the native integration, Intercom must be on the 'Essential' plan or higher and Stripe must be on the 'Standard' plan or higher. Those are each tool's cheapest plan with API access (Intercom 'Essential' at $390/mo and Stripe 'Standard' at $0/mo for 10 seats), so the integration doesn't force an upgrade.
 
 ### How much does the Intercom + Stripe stack cost per month for a 10-person team?
 

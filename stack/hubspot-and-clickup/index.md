@@ -1,6 +1,6 @@
-# HubSpot + ClickUp Integration Cost (2026) | StackCostMatrix
+# HubSpot + ClickUp Integration: Setup, Plans & Cost (2026)
 
-> HubSpot + ClickUp needs HubSpot Free and ClickUp Core for the native integration: $120/mo for 10 seats, with no extra cost to connect them.
+> How the HubSpot + ClickUp integration works, how to set it up, and the plans it needs: HubSpot Free + ClickUp Core, $120/mo for 10 seats.
 
 Source page: https://stackcostmatrix.com/stack/hubspot-and-clickup/  
 Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (credit StackCostMatrix and link to https://stackcostmatrix.com)
@@ -9,7 +9,7 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 [Home](https://stackcostmatrix.com/) / HubSpot + ClickUp 
 
-# HubSpot + ClickUp Integration Cost (2026): Plans, Setup & True Price
+# HubSpot + ClickUp Integration (2026): How It Works, Setup & True Cost
 
 ClickUp's native HubSpot integration runs on automations, such as creating a ClickUp task when a HubSpot deal closes. Requires HubSpot on the 'Free' plan and ClickUp on the 'Core' plan.
 
@@ -20,6 +20,8 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 ClickUp's native HubSpot integration works through automations, with over 20 ways to move work between the two, such as creating a ClickUp task or project when a HubSpot deal closes.
 
 **Limitations:** It's automation-based rather than a continuous field-level sync. HubSpot's listing names ClickUp's Free Forever plan as compatible, but this calculator assumes Core (ClickUp's former Unlimited plan), which ClickUp's help center lists for the integration.
+
+[Setup guide: HubSpot Marketplace: ClickUp ↗](https://ecosystem.hubspot.com/marketplace/listing/clickup)
 
 Sources (checked Nov 3, 2026): [HubSpot Marketplace: ClickUp ↗](https://ecosystem.hubspot.com/marketplace/listing/clickup)
 
@@ -32,20 +34,23 @@ HubSpot 'Free' ($0.00/mo) + ClickUp 'Core' ($120.00/mo),
 no middleware required.
 Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capable tiers ($130.59/mo all-in) — the native path is cheaper.
 
+ 
+
 ## Native vs middleware for HubSpot + ClickUp
 
 The native path runs on the required tiers (HubSpot 'Free' + ClickUp 'Core') at $120.00/mo for a 10-seat team, with no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — would cost $130.59/mo all-in, so on cost alone there is no reason to switch: middleware would only make sense if you already run other automations through it.
-
-API access at the required tiers: HubSpot Yes, ClickUp Yes (see the spec matrix). That API access is what the middleware path runs on.
 
 Integration routes compared for a 10-seat team
 
 | Route | Plans | 10 seats / month | Sync |
 | --- | --- | --- | --- |
-| Native HubSpot + ClickUp connector | HubSpot 'Free' + ClickUp 'Core' | $120.00 | As listed in the spec matrix |
+| Native HubSpot + ClickUp connector | HubSpot 'Free' + ClickUp 'Core' | $120.00 | 1-way (automation triggers) |
 | Make Core on the cheapest API plans | HubSpot 'Free' + ClickUp 'Core' + Make | $130.59 | 1-way per scenario |
+| Zapier Professional on the cheapest API plans | HubSpot 'Free' + ClickUp 'Core' + Zapier | $149.99 | 1-way per Zap |
 
-Make Core's $10.59 monthly price comes from third-party pricing reviews, because make.com blocks automated checks; Zapier's is from zapier.com/pricing.
+Connector prices are monthly-billing list prices: Zapier Professional $29.99 (zapier.com/pricing) and Make Core $10.59 (from third-party pricing reviews, because make.com blocks automated checks). Both bill by usage, so high volumes cost more.
+
+Image: [HubSpot + ClickUp integration cost summary: $120 a month for 10 seats, nothing extra to connect; plans needed: HubSpot Free and ClickUp Core](https://stackcostmatrix.com/og/hubspot-and-clickup.jpg)
 
 ## ✓ Verified Vendor Facts
 
@@ -55,14 +60,6 @@ Make Core's $10.59 monthly price comes from third-party pricing reviews, because
 - **Native app availability:** Native app available in vendor marketplace.
 
 Last checked: Nov 3, 2026 · Sources linked below.
-
-## ◐ Model Estimates (your assumptions)
-
-- **Usage / task add-ons:** middleware overage costs you enter above.
-- **Setup & maintenance:** implementation hours and ongoing ops — adjust freely.
-- **Annual billing saving:** uses each vendor's published annual price where one exists; otherwise no discount is applied.
-
-Estimates never change the verified facts — they only model your scenario.
 
 ## ! Plan requirements
 
@@ -78,11 +75,6 @@ Middleware fee
 :   None
 
 No hidden cost: the native connector works on HubSpot 'Free' and ClickUp 'Core', so connecting them adds nothing to what you already pay for the two tools.
-
-✓ Native is the cheapest path — $0 incremental integration cost
-
-The native HubSpot + ClickUp connector runs on the required tiers with no middleware fee
-and no forced tier upgrade — paying for middleware here would only add cost.
 
 ## Side-by-side spec matrix
 
@@ -106,7 +98,7 @@ Some outbound links may earn us a referral commission at no extra cost to you. [
 
 ### What are the minimum plan tiers required for the HubSpot + ClickUp integration?
 
-To unlock the native integration, HubSpot must be on the 'Free' plan or higher and ClickUp must be on the 'Core' plan or higher. Neither plan is an upgrade over the cheapest plan with API access.
+To unlock the native integration, HubSpot must be on the 'Free' plan or higher and ClickUp must be on the 'Core' plan or higher. Those are each tool's cheapest plan with API access (HubSpot 'Free' at $0/mo and ClickUp 'Core' at $120/mo for 10 seats), so the integration doesn't force an upgrade.
 
 ### How much does the HubSpot + ClickUp stack cost per month for a 10-person team?
 
