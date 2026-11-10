@@ -1,4 +1,4 @@
-# Intercom + HubSpot Integration: How It Works & Cost (2026)
+# Intercom + HubSpot Integration (2026): How It Works, Setup & True Cost
 
 > How the Intercom + HubSpot integration works, how to set it up, and the plans it needs: Intercom Essential + HubSpot Free, $390/mo for 10 seats.
 
@@ -8,8 +8,6 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 ---
 
 [Home](https://stackcostmatrix.com/) / Intercom + HubSpot 
-
-# Intercom + HubSpot Integration (2026): How It Works, Setup & True Cost
 
 Intercom's HubSpot app works on Intercom Essential and any HubSpot plan, but it only syncs one way, from Intercom into HubSpot. Requires Intercom on the 'Essential' plan and HubSpot on the 'Free' plan.
 
@@ -48,6 +46,12 @@ Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capab
 ## Native vs middleware for Intercom + HubSpot
 
 The native path runs on the required tiers (Intercom 'Essential' + HubSpot 'Free') at $390.00/mo for a 10-seat team, with no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — would cost $400.59/mo all-in, so on cost alone there is no reason to switch: middleware would only make sense if you already run other automations through it.
+
+Chart: Intercom + HubSpot: monthly cost for 10 seats by route: Native connector $390.00; Make Core route $400.59; Zapier Professional route $419.99
+
+Monthly cost for 10 seats by route, Intercom + HubSpot.
+
+ 
 
 Integration routes compared for a 10-seat team
 
@@ -103,7 +107,7 @@ Side-by-side spec matrix
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
 
-## Frequently asked questions
+## Intercom + HubSpot integration: frequently asked questions
 
 ### What are the minimum plan tiers required for the Intercom + HubSpot integration?
 
@@ -121,7 +125,7 @@ The Intercom + HubSpot connection is native — no third-party middleware subscr
 
 It only sends data one way, from Intercom to HubSpot. Customer replies sync in real time but teammate replies sync only once the conversation is closed, and company attributes other than the company name aren't sent. For HubSpot data in Intercom you need HubSpot's separate Data Sync app.
 
-## Related integrations
+## Integrations related to Intercom + HubSpot
 
 [All Intercom integrations →](https://stackcostmatrix.com/intercom-integrations-cost/) · [All HubSpot integrations →](https://stackcostmatrix.com/hubspot-integrations-cost/) · [Intercom API access by plan →](https://stackcostmatrix.com/intercom-api-access/) · [HubSpot API access by plan →](https://stackcostmatrix.com/hubspot-api-access/)
 

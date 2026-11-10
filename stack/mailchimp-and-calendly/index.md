@@ -1,4 +1,4 @@
-# Mailchimp + Calendly Integration: Setup, Plans & Cost (2026)
+# Mailchimp + Calendly Integration (2026): How It Works, Setup & True Cost
 
 > How the Mailchimp + Calendly integration works, how to set it up, and the plans it needs: Mailchimp Free + Calendly Standard, $120/mo for 10 seats.
 
@@ -8,8 +8,6 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 ---
 
 [Home](https://stackcostmatrix.com/) / Mailchimp + Calendly 
-
-# Mailchimp + Calendly Integration (2026): How It Works, Setup & True Cost
 
 Calendly's Mailchimp integration adds invitees to a Mailchimp audience, with tags, when they book; it needs a paid Calendly plan, and any Mailchimp account works, including Free. Requires Mailchimp on the 'Free' plan and Calendly on the 'Standard' plan.
 
@@ -39,6 +37,12 @@ Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capab
 ## Native vs middleware for Mailchimp + Calendly
 
 The native path runs on the required tiers (Mailchimp 'Free' + Calendly 'Standard') at $120.00/mo for a 10-seat team, with no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — would cost $130.59/mo all-in, so on cost alone there is no reason to switch: middleware would only make sense if you already run other automations through it.
+
+Chart: Mailchimp + Calendly: monthly cost for 10 seats by route: Native connector $120.00; Make Core route $130.59; Zapier Professional route $149.99
+
+Monthly cost for 10 seats by route, Mailchimp + Calendly.
+
+ 
 
 Integration routes compared for a 10-seat team
 
@@ -94,7 +98,7 @@ Side-by-side spec matrix
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
 
-## Frequently asked questions
+## Mailchimp + Calendly integration: frequently asked questions
 
 ### What are the minimum plan tiers required for the Mailchimp + Calendly integration?
 
@@ -112,7 +116,7 @@ The Mailchimp + Calendly connection is native — no third-party middleware subs
 
 Data flows from Calendly to Mailchimp only. Invitees in GDPR regions are added as non-marketing contacts unless they opt in, and disconnecting Mailchimp deletes the rules you set up.
 
-## Related integrations
+## Integrations related to Mailchimp + Calendly
 
 [All Mailchimp integrations →](https://stackcostmatrix.com/mailchimp-integrations-cost/) · [All Calendly integrations →](https://stackcostmatrix.com/calendly-integrations-cost/) · [Mailchimp API access by plan →](https://stackcostmatrix.com/mailchimp-api-access/) · [Calendly API access by plan →](https://stackcostmatrix.com/calendly-api-access/)
 

@@ -1,4 +1,4 @@
-# Slack + Notion Integration: Setup, Plans & Cost (2026)
+# Slack + Notion Integration (2026): How It Works, Setup & True Cost
 
 > How the Slack + Notion integration works, how to set it up, and the plans it needs: Slack Free + Notion Plus, $120/mo for 10 seats.
 
@@ -8,8 +8,6 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 ---
 
 [Home](https://stackcostmatrix.com/) / Slack + Notion 
-
-# Slack + Notion Integration (2026): How It Works, Setup & True Cost
 
 Notion posts Slack notifications from buttons and database automations on paid Notion plans; Slack's free plan is enough. Requires Slack on the 'Free' plan and Notion on the 'Plus' plan.
 
@@ -39,6 +37,12 @@ Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capab
 ## Native vs middleware for Slack + Notion
 
 The native path runs on the required tiers (Slack 'Free' + Notion 'Plus') at $120.00/mo for a 10-seat team, with no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — would cost $130.59/mo all-in, so on cost alone there is no reason to switch: middleware would only make sense if you already run other automations through it.
+
+Chart: Slack + Notion: monthly cost for 10 seats by route: Native connector $120.00; Make Core route $130.59; Zapier Professional route $149.99
+
+Monthly cost for 10 seats by route, Slack + Notion.
+
+ 
 
 Integration routes compared for a 10-seat team
 
@@ -94,7 +98,7 @@ Side-by-side spec matrix
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
 
-## Frequently asked questions
+## Slack + Notion integration: frequently asked questions
 
 ### What are the minimum plan tiers required for the Slack + Notion integration?
 
@@ -112,7 +116,7 @@ The Slack + Notion connection is native — no third-party middleware subscripti
 
 Notion says these Slack automation actions are only available on paid plans. Slack's free plan allows up to 10 app installations.
 
-## Related integrations
+## Integrations related to Slack + Notion
 
 [All Slack integrations →](https://stackcostmatrix.com/slack-integrations-cost/) · [All Notion integrations →](https://stackcostmatrix.com/notion-integrations-cost/) · [Slack API access by plan →](https://stackcostmatrix.com/slack-api-access/) · [Notion API access by plan →](https://stackcostmatrix.com/notion-api-access/)
 

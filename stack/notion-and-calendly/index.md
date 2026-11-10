@@ -1,4 +1,4 @@
-# Notion + Calendly Integration Cost (2026): Plans & Setup
+# Notion + Calendly Integration Cost (2026): True Price, Minimum Plan & Hidden API Fees
 
 > Notion + Calendly runs via middleware (+$10.59/mo) on Notion Plus and Calendly Standard: $250.59/mo for 10 seats.
 
@@ -8,8 +8,6 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 ---
 
 [Home](https://stackcostmatrix.com/) / Notion + Calendly 
-
-# Notion + Calendly Integration Cost (2026): True Price, Minimum Plan & Hidden API Fees
 
 Notion can embed Calendly booking pages, but there's no native sync; logging bookings in Notion needs Make or Zapier, and Calendly webhooks need its Standard plan. Requires Notion on the 'Plus' plan and Calendly on the 'Standard' plan. Route it through Make Core ($10.59/mo, or $9/mo billed annually).
 
@@ -38,6 +36,12 @@ Notion 'Plus' ($120.00/mo) + Calendly 'Standard' ($120.00/mo)
 ## Native vs middleware for Notion + Calendly
 
 No native connector exists for this pair, so middleware is not an alternative — it is the integration. The modeled middleware cost is $10.59/mo on top of both tools, for $250.59/mo all-in at 10 seats on the modeled tiers (Notion 'Plus' + Calendly 'Standard'). Sync is 1-way (trigger → action). The middleware figure is the modeled cost for this pair; your actual middleware bill scales with task and operation volume, which is not verified here — check your expected volume against the middleware plan before budgeting.
+
+Chart: Notion + Calendly: monthly cost for 10 seats by route: Make Core (modeled here) $250.59; Zapier Professional instead $269.99
+
+Monthly cost for 10 seats by route, Notion + Calendly.
+
+ 
 
 Integration routes compared for a 10-seat team
 
@@ -96,7 +100,7 @@ Side-by-side spec matrix
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
 
-## Frequently asked questions
+## Notion + Calendly integration: frequently asked questions
 
 ### What are the minimum plan tiers required for the Notion + Calendly integration?
 
@@ -114,7 +118,7 @@ The Notion + Calendly connection runs through middleware: neither vendor offers 
 
 Embedding doesn't sync bookings. Logging meetings in a Notion database needs Make or Zapier, and Calendly's webhooks need a paid Calendly plan from Standard up.
 
-## Related integrations
+## Integrations related to Notion + Calendly
 
 [All Notion integrations →](https://stackcostmatrix.com/notion-integrations-cost/) · [All Calendly integrations →](https://stackcostmatrix.com/calendly-integrations-cost/) · [Notion API access by plan →](https://stackcostmatrix.com/notion-api-access/) · [Calendly API access by plan →](https://stackcostmatrix.com/calendly-api-access/)
 

@@ -65,6 +65,13 @@ def cards():
     out["hubspot-professional-integrations"] = page("HubSpot plans · 2026", "Which integrations need HubSpot Professional?", boxes([
         (f"{len(pro)} of {len(hs)}", "HubSpot integrations need Professional", False), ("$50/seat", "cheapest Professional plan, a month", True),
         (f"{len(hs) - len(pro)}", "work on the free CRM", False)]), small=True)
+    # CRM guide
+    crm = set(re.findall(r'href="/stack/([^"/]+)/"', open("crm-integration-pricing-guide/index.html", encoding="utf-8").read()))
+    cv = [v for p, d, v in pairs if p in crm]
+    if cv:
+        out["crm-integration-pricing-guide"] = page("CRM integration costs · 2026", "HubSpot, Salesforce and Pipedrive integrations", boxes([
+            (str(len(cv)), "CRM integrations priced", False), (f"{m0(min(v['N'] for v in cv))} – {m0(max(v['N'] for v in cv))}", "a month for 10 seats, both tools", True),
+            (f"{sum(1 for v in cv if v['native'])} native · {sum(1 for v in cv if not v['native'])} via connector", "how they connect", False)]), small=True)
     # research report: bar chart of the most expensive integrations
     from research import dataset
     _, rows = dataset(); top = rows[:8]; vmax = top[0]["tax"]

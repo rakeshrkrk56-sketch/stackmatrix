@@ -9,7 +9,7 @@ STYLE = f"""<style id="{STYLE_ID}">
 .scm-nav{{display:flex;align-items:center;gap:12px;font-size:.875rem;font-weight:500;color:#475569}}
 .scm-nav a{{display:inline-block;padding:12px 2px}}
 @media (min-width:640px){{.scm-nav{{gap:18px}}}}
-@media (max-width:479px){{header .justify-between:has(.scm-nav){{flex-wrap:wrap}}.scm-nav{{width:100%;justify-content:space-between}}.scm-nav a{{padding:10px 2px}}}}
+@media (max-width:479px){{header .justify-between:has(.scm-nav){{flex-wrap:wrap}}.scm-nav{{width:100%;justify-content:space-between}}.scm-nav a{{padding:12px 2px}}}}
 .scm-nav a:hover{{color:#4f46e5}}
 .scm-nav .scm-wide{{display:none}}
 .scm-sep{{display:none}}
@@ -36,16 +36,22 @@ output{{display:block}}
 .scm-cta{{display:inline-block;border-radius:.75rem;background:#4f46e5;color:#fff;font-weight:700;font-size:.95rem;padding:12px 18px}}
 .scm-cta:hover{{background:#4338ca}}
 .scm-fig{{display:block;width:100%;max-width:560px;height:auto;border-radius:12px;border:1px solid #e2e8f0}}
-.scm-jump{{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}}
+.scm-chart{{display:block;width:100%;max-width:480px;height:auto;font-family:inherit}}
+.scm-jump{{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:16px}}
+.scm-jump-l{{font-size:.8125rem;font-weight:600;color:#475569;margin-right:2px}}
+.scm-jump a.scm-jump-p{{background:#4f46e5;border-color:#4f46e5;color:#fff}}
+.scm-jump a.scm-jump-p:hover{{background:#4338ca}}
 .scm-jump a{{display:inline-flex;align-items:center;min-height:44px;padding:0 14px;border-radius:999px;border:1px solid #c7d2fe;background:#eef2ff;color:#3730a3;font-size:.875rem;font-weight:600}}
 .scm-jump a:hover{{background:#e0e7ff}}
 .scm-anchor{{display:block;height:0;scroll-margin-top:16px}}
-h2[id]{{scroll-margin-top:16px}}
+h2[id],div[id=calculators]{{scroll-margin-top:16px}}
 .text-xs{{font-size:.8125rem;line-height:1.2rem}}
 .scm-nav a{{min-width:44px;text-align:center}}
 nav[aria-label="Breadcrumb"] a{{display:inline-block;padding:12px 4px 12px 0}}
-@media (max-width:639px){{
 footer a{{display:inline-block;padding:11px 0}}
+@media (max-width:639px){{
+.scm-jump{{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:6px;scrollbar-width:thin}}
+.scm-jump a,.scm-jump-l{{flex:0 0 auto;white-space:nowrap}}
 td a{{display:inline-block;padding:10px 0}}
 main h1{{font-size:1.5rem;line-height:2rem}}
 .overflow-x-auto:has(table[class*="min-w-"])::before{{content:"Swipe sideways to see the whole table \2192";position:sticky;left:0;display:block;padding:8px 12px;font-size:.8125rem;color:#475569;background:#f8fafc;border-bottom:1px solid #e2e8f0}}

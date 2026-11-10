@@ -1,4 +1,4 @@
-# About StackCostMatrix: Methodology & Sources
+# About StackCostMatrix
 
 > Who publishes StackCostMatrix, our 3-step pricing verification methodology, and the official vendor documentation index behind every cost figure.
 
@@ -6,8 +6,6 @@ Source page: https://stackcostmatrix.com/about/
 Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (credit StackCostMatrix and link to https://stackcostmatrix.com)
 
 ---
-
-# About StackCostMatrix
 
 StackCostMatrix is an independent B2B software cost index. We research what
 popular business tools *really* cost to connect — not the sticker

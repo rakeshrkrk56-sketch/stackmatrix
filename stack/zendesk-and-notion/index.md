@@ -1,4 +1,4 @@
-# Zendesk + Notion Integration Cost (2026): Plans & Setup
+# Zendesk + Notion Integration Cost (2026): True Price, Minimum Plan & Hidden API Fees
 
 > Zendesk + Notion runs via middleware (+$29.99/mo) on Zendesk Suite Team and Notion Plus: $839.99/mo for 10 seats.
 
@@ -8,8 +8,6 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 ---
 
 [Home](https://stackcostmatrix.com/) / Zendesk + Notion 
-
-# Zendesk + Notion Integration Cost (2026): True Price, Minimum Plan & Hidden API Fees
 
 No native docs link - Zapier Professional pushes resolved tickets to a Notion knowledge base; Zendesk's triggers and webhooks are on every Suite plan from Team up. Requires Zendesk on the 'Suite Team' plan and Notion on the 'Plus' plan. Route it through Zapier Professional ($29.99/mo, or $19.99/mo billed annually).
 
@@ -38,6 +36,12 @@ Zendesk 'Suite Team' ($690.00/mo) + Notion 'Plus' ($120.00/mo)
 ## Native vs middleware for Zendesk + Notion
 
 No native connector exists for this pair, so middleware is not an alternative — it is the integration. The modeled middleware cost is $29.99/mo on top of both tools, for $839.99/mo all-in at 10 seats on the modeled tiers (Zendesk 'Suite Team' + Notion 'Plus'). Sync is 1-way (trigger → action). The middleware figure is the modeled cost for this pair; your actual middleware bill scales with task and operation volume, which is not verified here — check your expected volume against the middleware plan before budgeting.
+
+Chart: Zendesk + Notion: monthly cost for 10 seats by route: Zapier Professional (modeled here) $839.99; Make Core instead $820.59
+
+Monthly cost for 10 seats by route, Zendesk + Notion.
+
+ 
 
 Integration routes compared for a 10-seat team
 
@@ -96,7 +100,7 @@ Side-by-side spec matrix
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
 
-## Frequently asked questions
+## Zendesk + Notion integration: frequently asked questions
 
 ### What are the minimum plan tiers required for the Zendesk + Notion integration?
 
@@ -114,7 +118,7 @@ The Zendesk + Notion connection runs through middleware: neither vendor offers a
 
 Each Zap is one-way, and every run counts toward your Zapier task allowance. The Notion integration must be shared with the database it writes to.
 
-## Related integrations
+## Integrations related to Zendesk + Notion
 
 [All Zendesk integrations →](https://stackcostmatrix.com/zendesk-integrations-cost/) · [All Notion integrations →](https://stackcostmatrix.com/notion-integrations-cost/) · [Zendesk API access by plan →](https://stackcostmatrix.com/zendesk-api-access/) · [Notion API access by plan →](https://stackcostmatrix.com/notion-api-access/)
 

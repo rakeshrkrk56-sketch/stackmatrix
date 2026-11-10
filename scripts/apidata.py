@@ -49,6 +49,7 @@ TOOLS = {
    sources=[("Freshdesk API reference", "https://developers.freshdesk.com/api/", "The number of API calls per minute is based on your plan."),
             ("Freshdesk: Using webhooks in automation rules", "https://support.freshdesk.com/en/support/solutions/articles/132589", "Applicable Plans Freshdesk Growth, Pro, Enterprise")]),
  "hubspot": dict(
+   modified="2026-11-10",   # webhook answer reworded (facts as checked on the dates shown)
    wh_answer="Webhook actions in workflows need Data Hub Professional or Enterprise; no other Hub unlocks them. Developer webhooks, which apps subscribe to through HubSpot's Webhooks API, are a separate feature, and HubSpot's documentation doesn't tie them to a plan.",
    answer="HubSpot's API is available on every plan, including the free CRM, with higher limits on Professional and Enterprise. Webhook actions in workflows need Data Hub Professional or Enterprise.",
    plans={"Free": P("Yes", "Not stated", "Needs Data Hub Professional", lim="100 req/10 s · 250,000/day (private apps)", wh_note="Developer webhooks via apps; plan not stated"),
@@ -104,7 +105,7 @@ TOOLS = {
             ("Mailchimp: QuickBooks Online integration", "https://mailchimp.com/integrations/quickbooksonline/", "You will need a QuickBooks Online account to use the features of this integration."),
             ("Intuit developers: Webhooks", "https://developer.intuit.com/app/developer/qbo/docs/develop/webhooks", "Webhooks automatically notify you whenever data changes in your end-user's QuickBooks Online company files.")]),
  "salesforce": dict(
-   checked="Nov 10, 2026",
+   checked="Nov 10, 2026", modified="2026-11-10",
    title="Salesforce API Access by Edition (2026): Professional & Up",
    h1="Salesforce API Access by Edition (2026): Professional, Enterprise & Unlimited",
    answer_first="No. Salesforce Starter doesn't support the API at all. API access starts with Professional plus the paid API add-on, and is included from Enterprise up.",

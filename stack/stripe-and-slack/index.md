@@ -1,4 +1,4 @@
-# Stripe + Slack Integration: Setup, Plans & Cost (2026)
+# Stripe + Slack Integration (2026): How It Works, Setup & True Cost
 
 > How the Stripe + Slack integration works, how to set it up, and the plans it needs: Stripe Standard + Slack Free, $0/mo for 10 seats.
 
@@ -8,8 +8,6 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 ---
 
 [Home](https://stackcostmatrix.com/) / Stripe + Slack 
-
-# Stripe + Slack Integration (2026): How It Works, Setup & True Cost
 
 Stripe's own Stripe Workflows for Slack app posts Slack notifications when events happen in Stripe; Slack's free plan is enough. Requires Stripe on the 'Standard' plan and Slack on the 'Free' plan.
 
@@ -49,6 +47,12 @@ Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capab
 ## Native vs middleware for Stripe + Slack
 
 The native path runs on the required tiers (Stripe 'Standard' + Slack 'Free') at $0.00/mo for a 10-seat team, with no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — would cost $10.59/mo all-in, so on cost alone there is no reason to switch: middleware would only make sense if you already run other automations through it.
+
+Chart: Stripe + Slack: monthly cost for 10 seats by route: Native connector $0.00; Make Core route $10.59; Zapier Professional route $29.99
+
+Monthly cost for 10 seats by route, Stripe + Slack.
+
+ 
 
 Integration routes compared for a 10-seat team
 
@@ -104,7 +108,7 @@ Side-by-side spec matrix
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
 
-## Frequently asked questions
+## Stripe + Slack integration: frequently asked questions
 
 ### What are the minimum plan tiers required for the Stripe + Slack integration?
 
@@ -122,7 +126,7 @@ The Stripe + Slack connection is native — no third-party middleware subscripti
 
 Notifications only go to channels the Stripe bot has been invited to, and Slack's free plan allows up to 10 app installations.
 
-## Related integrations
+## Integrations related to Stripe + Slack
 
 [All Stripe integrations →](https://stackcostmatrix.com/stripe-integrations-cost/) · [All Slack integrations →](https://stackcostmatrix.com/slack-integrations-cost/) · [Stripe API access by plan →](https://stackcostmatrix.com/stripe-api-access/) · [Slack API access by plan →](https://stackcostmatrix.com/slack-api-access/)
 

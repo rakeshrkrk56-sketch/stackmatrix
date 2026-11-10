@@ -1,4 +1,4 @@
-# Salesforce Integration Costs (2026): API Add-On & Tiers
+# Complete 2026 Salesforce Integration Cost & API Tier Matrix
 
 > Every Salesforce integration's true cost in 2026: the $25/user API add-on trap, minimum tiers, and native vs middleware totals.
 
@@ -8,8 +8,6 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 ---
 
 Pillar guide
-
-# Complete 2026 Salesforce Integration Cost & API Tier Matrix
 
 Salesforce Professional costs $100/user/month — but **API access costs
 an extra $25/user/month** on top. That add-on is the most common
@@ -28,6 +26,8 @@ Complete 2026 Salesforce Integration Cost & API Tier Matrix
 | Salesforce + HubSpot | Native | Yes — +$25/user/mo on Professional | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-salesforce/) |
 | Salesforce Sales Cloud + QuickBooks Online | Middleware | Yes — +$25/user/mo on Professional | [True-cost calculator →](https://stackcostmatrix.com/stack/salesforce-and-quickbooks/) |
 | Pipedrive + Salesforce Sales Cloud | Middleware | Yes — +$25/user/mo on Professional | [True-cost calculator →](https://stackcostmatrix.com/stack/pipedrive-and-salesforce/) |
+
+Image: [Salesforce integration costs summary: 7 integrations priced, from $1,250 to $1,940 a month for 10 seats](https://stackcostmatrix.com/og/salesforce-integrations-cost.jpg)
 
 ## The $25/user/month API trap, explained
 
@@ -53,7 +53,7 @@ Some outbound links may earn us a referral commission at no extra cost to you.
 
 [ActiveCampaign](https://stackcostmatrix.com/activecampaign-api-access/) · [Airtable](https://stackcostmatrix.com/airtable-api-access/) · [Asana](https://stackcostmatrix.com/asana-api-access/) · [Calendly](https://stackcostmatrix.com/calendly-api-access/) · [ClickUp](https://stackcostmatrix.com/clickup-api-access/) · [Freshdesk](https://stackcostmatrix.com/freshdesk-api-access/) · [HubSpot](https://stackcostmatrix.com/hubspot-api-access/) · [Intercom](https://stackcostmatrix.com/intercom-api-access/) · [Mailchimp](https://stackcostmatrix.com/mailchimp-api-access/) · [Monday.com](https://stackcostmatrix.com/monday-api-access/) · [Notion](https://stackcostmatrix.com/notion-api-access/) · [Pipedrive](https://stackcostmatrix.com/pipedrive-api-access/) · [QuickBooks](https://stackcostmatrix.com/quickbooks-api-access/) · [Salesforce](https://stackcostmatrix.com/salesforce-api-access/) · [Slack](https://stackcostmatrix.com/slack-api-access/) · [Stripe](https://stackcostmatrix.com/stripe-api-access/) · [Xero](https://stackcostmatrix.com/xero-api-access/) · [Zendesk](https://stackcostmatrix.com/zendesk-api-access/)
 
-## Frequently asked questions
+## Salesforce integration costs: frequently asked questions
 
 ### Does Salesforce charge extra for API access?
 

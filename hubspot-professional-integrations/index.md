@@ -9,8 +9,6 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 HubSpot plans
 
-# Which Integrations Need HubSpot Professional? (2026)
-
 Checked against HubSpot's pricing pages and knowledge base · Nov 5, 2026 · Salesforce requirements added Nov 10, 2026 · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
 
 **Short answer:** Only 2 of the 13 HubSpot integrations we track need Professional: HubSpot + Salesforce and HubSpot + Asana. Any Professional subscription HubSpot lists for them works, and the cheapest is Smart CRM Professional at $50 per seat a month ($45 on an annual commitment), about $500 a month for 10 people. The other 11 work on HubSpot's free CRM.
@@ -36,6 +34,8 @@ Which HubSpot plan each integration needs
 | [Intercom + HubSpot](https://stackcostmatrix.com/stack/intercom-and-hubspot/) | Free CRM | Intercom Essential | Native | $390/mo |
 
 Totals are both tools' required plans plus any connector fee, for 10 seats at monthly billing, from each integration's calculator. HubSpot Professional is priced as Smart CRM Professional, the cheapest Professional subscription.
+
+Image: [Summary: 2 of 13 HubSpot integrations need Professional; the cheapest Professional plan is $50 per seat a month; 11 work on the free CRM](https://stackcostmatrix.com/og/hubspot-professional-integrations.jpg)
 
 ## The cheapest way to get HubSpot Professional
 
@@ -92,7 +92,7 @@ Checked Nov 5, 2026. Help-article quotes are copied from each article, with the 
 
 [All HubSpot integration costs](https://stackcostmatrix.com/hubspot-integrations-cost/) · [HubSpot API access by plan](https://stackcostmatrix.com/hubspot-api-access/) · [The Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/)
 
-## Frequently asked questions
+## HubSpot Professional and integrations: frequently asked questions
 
 ### Which HubSpot integrations need Professional?
 

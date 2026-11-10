@@ -43,3 +43,20 @@ def render_nvm(v, rule_b, sync2=True):
     both = v["apia"] == "Yes" and v["apib"] == "Yes"
     p2 = f"API access at the required tiers: {v['na']} {v['apia']}, {v['nb']} {v['apib']} (see the spec matrix). " + ("That API access is what the middleware path runs on. " if both else "The middleware path uses the cheapest API-capable tiers instead. ")
     return P + p1 + "\n</p> "   # (the "API access at the required tiers" paragraph repeated the spec matrix; removed 2026-11-10)
+
+def svg_bars(rows, title, fmt=money):
+    """A small horizontal bar chart as inline SVG (label above each bar, so it stays readable on phones).
+    rows: [(label, value, colour)]. Screen readers get `title` plus every value through aria-label."""
+    import html as _h
+    w, bar_h, row_h, pad = 360, 16, 46, 4
+    vmax = max(v for _, v, _ in rows) or 1
+    label = title + ": " + "; ".join(f"{l} {fmt(v)}" for l, v, _ in rows)
+    out = [f'<svg class="scm-chart" viewBox="0 0 {w} {len(rows) * row_h + 4}" role="img" aria-label="{_h.escape(label, quote=True)}" xmlns="http://www.w3.org/2000/svg">']
+    for i, (l, v, c) in enumerate(rows):
+        y = i * row_h + pad
+        bw = max(3, round((w - 96) * v / vmax))
+        out.append(f'<text x="0" y="{y + 13}" font-size="13" fill="#334155">{_h.escape(l)}</text>'
+                   f'<rect x="0" y="{y + 20}" width="{bw}" height="{bar_h}" rx="3" fill="{c}"/>'
+                   f'<text x="{bw + 6}" y="{y + 33}" font-size="13" font-weight="700" fill="#0f172a">{_h.escape(fmt(v))}</text>')
+    out.append("</svg>")
+    return "".join(out)

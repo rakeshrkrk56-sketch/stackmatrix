@@ -6,7 +6,7 @@ Usage (run from repo root):
 """
 import re, json, glob, html, sys, os
 sys.path.insert(0, os.path.dirname(__file__))
-from model import compute, render_tco, render_nvm, money, cheapest_api, tiers, cost as tier_cost, MAKE_MONTHLY
+from model import compute, render_tco, render_nvm, money, cheapest_api, tiers, cost as tier_cost, MAKE_MONTHLY, svg_bars
 from pairdata import PAIRS, COPY
 from pairdata2 import PAIRS2, COPY2
 PAIRS.update(PAIRS2); COPY.update(COPY2)
@@ -191,7 +191,12 @@ def nvm_table(v, d, sync="2-way"):
         rows.append((f"{conn} (modeled here)", plans, money(v["N"]), "1-way per automation"))
         rows.append((f"{alt} instead", plans, money(v["N"] - v["mw"] + altfee), "1-way per automation"))
     body = "".join(f'<tr class="border-t border-slate-100"> <td class="px-4 py-3 font-medium">{r[0]}</td> {TD_}{r[1]}</td> {TD_}{r[2]}</td> {TD_}{r[3]}</td> </tr>' for r in rows)
-    return (' <div class="mt-4 overflow-x-auto rounded-xl border border-slate-200"> <table class="spec-matrix w-full text-sm"> '
+    cols = ["#4f46e5", "#0e7490", "#b45309"]
+    short = (["Native connector", "Make Core route", "Zapier Professional route"] if v["native"] else [html.unescape(re.sub(r"<[^>]+>", "", r[0])) for r in rows])
+    chart = (' <figure class="mt-5"> ' + svg_bars([(short[i], float(r[2].replace("$", "").replace(",", "")), cols[i]) for i, r in enumerate(rows)],
+                                                    f"{A} + {B}: monthly cost for 10 seats by route")
+             + f' <figcaption class="mt-1 text-xs text-slate-500">Monthly cost for 10 seats by route, {html.escape(A)} + {html.escape(B)}.</figcaption> </figure>')
+    return (chart + ' <div class="mt-4 overflow-x-auto rounded-xl border border-slate-200"> <table class="spec-matrix w-full text-sm"> '
             '<caption class="sr-only">Integration routes compared for a 10-seat team</caption> <thead class="bg-slate-50"> <tr class="text-left"> '
             f'{TH_}Route</th> {TH_}Plans</th> {TH_}10 seats / month</th> {TH_}Sync</th> </tr> </thead> <tbody> {body} </tbody> </table> </div> '
             '<p class="mt-2 text-xs text-slate-500">Connector prices are monthly-billing list prices: Zapier Professional $29.99 (zapier.com/pricing) and Make Core $10.59 '

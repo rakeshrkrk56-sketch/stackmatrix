@@ -1,7 +1,7 @@
 """Rebuild sitemap-0.xml from the pages on disk, with <lastmod> for each URL.
 lastmod = the page's JSON-LD dateModified when it has one, otherwise the date of the file's last git commit
 (or today for a file not committed yet). Run from the repo root after page changes: python3 scripts/sitemap16.py"""
-import datetime, glob, json, re, subprocess
+import datetime, glob, json, os, re, subprocess
 
 SITE = "https://stackcostmatrix.com"
 SKIP = ("site/", "scripts/", "agent_scripts/", "go/", "data/", "_astro/")
@@ -25,11 +25,13 @@ def main():
         s = open(f, encoding="utf-8").read()
         if 'name="robots" content="noindex' in s: continue
         path = "" if f == "index.html" else f[:-len("index.html")]
-        urls.append((f"{SITE}/{path}", lastmod(f)))
+        key = f.split("/")[-2] if "/" in f else ""
+        img = f"{SITE}/og/{key}.jpg" if key and os.path.exists(f"og/{key}.jpg") else ""
+        urls.append((f"{SITE}/{path}", lastmod(f), img))
     urls.sort()
-    xml = HEAD + "".join(f"<url><loc>{u}</loc><lastmod>{d}</lastmod></url>" for u, d in urls) + "</urlset>"
+    xml = HEAD + "".join(f"<url><loc>{u}</loc><lastmod>{d}</lastmod>" + (f"<image:image><image:loc>{i}</image:loc></image:image>" if i else "") + "</url>" for u, d, i in urls) + "</urlset>"
     open("sitemap-0.xml", "w", encoding="utf-8").write(xml)
-    print(f"sitemap-0.xml: {len(urls)} URLs with lastmod")
+    print(f"sitemap-0.xml: {len(urls)} URLs with lastmod, {sum(1 for u in urls if u[2])} with an image")
 
 if __name__ == "__main__":
     main()

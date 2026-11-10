@@ -2,7 +2,7 @@
 import json, re, glob, html, os, sys, statistics as st
 from collections import Counter
 sys.path.insert(0, os.path.dirname(__file__))
-from model import compute, cost, money
+from model import compute, cost, money, svg_bars
 from hubs import render, read, esc, attr, SHORT, SITE, P, H2, TH, TD, LINK, load_pairs
 
 # requirements flagged for a connector-by-connector re-check (see API-WEBHOOK-VERIFICATION.md)
@@ -124,6 +124,10 @@ def build():
              f'<li><strong>Building it yourself (not measured here).</strong> If no native app or connector fits, someone writes and maintains a custom integration against both APIs. We don&#39;t measure that. '
              f'For scale, Albato, an integration-platform vendor and so not a neutral source, cites Chift&#39;s cost analysis for roughly $10,000 to $22,000 in the first year for one in-house API integration, development plus maintenance '
              f'(<a href="https://albato.com/blog/publications/embedded-ipaas-roi" rel="noopener" {LINK}>Albato ↗</a>, read Nov 10, 2026).</li> </ol>')
+    tot_up, tot_mw = sum(r["up"] for r in rows), sum(r["mw"] for r in rows)
+    share_chart = ('<figure class="mt-6"> ' + svg_bars([("Forced plan upgrades", tot_up, BLUE), ("Connector fees (Make, Zapier, Data Mapper)", tot_mw, ORANGE)],
+                                                      f"Where the integration tax comes from across {S['n']} integrations, per month for 10 seats")
+                   + f' <figcaption class="mt-1 text-xs text-slate-500">Total monthly integration tax across all {S["n"]} integrations, by source: forced upgrades are {S["up_share"]:.0f}% of it.</figcaption> </figure>')
     figure = (f'<figure class="mt-6"> <img src="/og/integration-tax-2026.jpg" width="1200" height="630" loading="lazy" class="scm-fig" '
               f'alt="Bar chart: the {min(8, len(rows))} most expensive SaaS integrations by monthly integration tax for a 10-seat team, led by {esc(rows[0]["label"])} at {m0(rows[0]["tax"])} a month"> '
               f'<figcaption class="mt-2 text-xs text-slate-500">The most expensive integrations in the index, by monthly integration tax for 10 seats. Free to reuse with credit (CC BY 4.0).</figcaption> </figure>')
@@ -180,7 +184,7 @@ def build():
         ("How much does a SaaS integration cost per month?", f"It depends on whether the integration forces a plan upgrade. For a 10-person team, the {S['forced']} integrations here that force one usually add ${round(S['forced_q1']):,} to ${round(S['forced_q3']):,} a month (median {money(S['forced_median'])}), while the {S['conn_n']} that only need a connector add {money(S['conn_min'])} to {money(S['conn_max'])}. {S['free']} of {S['n']} integrations cost nothing extra, and the most expensive, {maxl}, cost {money(S['max_tax'])} a month."),
         ("Is it cheaper to use Zapier or Make than a native integration?", f"It can be. Connector fees in this index are {', '.join(m0(x) for x in S['mw_fees'])} a month, while forced plan upgrades make up {S['up_share']:.0f}% of the total integration tax, so when a native connector needs a higher plan and the middleware route works on a cheaper one, middleware usually wins. Each pair's calculator compares the native and middleware totals at your team size."),
     ]
-    faq_html = (' <section class="mt-12" aria-label="Frequently asked questions"> <h2 class="text-xl font-bold">Frequently asked questions</h2> <div class="mt-4 space-y-6"> ' +
+    faq_html = (' <section class="mt-12" aria-label="Frequently asked questions"> <h2 class="text-xl font-bold">Integration tax: frequently asked questions</h2> <div class="mt-4 space-y-6"> ' +
                 "".join(f'<div> <h3 class="font-semibold text-slate-900">{esc(q)}</h3> <p class="mt-1 leading-relaxed text-slate-700">{esc(a)}</p> </div>' for q, a in faqs) + ' </div> </section>')
     tipjs = ('<div id="tax-tip" role="tooltip" style="position:fixed;z-index:50;display:none;max-width:320px;padding:8px 10px;border-radius:8px;background:#0b0b0b;color:#fff;font-size:12px;line-height:1.4;pointer-events:none"></div>'
              '<script>(function(){var t=document.getElementById("tax-tip");function show(e,el){t.textContent=el.getAttribute("data-tip");t.style.display="block";var r=el.getBoundingClientRect();'
@@ -190,13 +194,13 @@ def build():
     body = (f'<section class="mx-auto max-w-4xl"> <p class="text-sm font-semibold uppercase tracking-widest text-indigo-600">Research · November 2026</p> '
             f'<h1 class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">\nThe Integration Tax 2026: What Connecting SaaS Tools Really Costs\n</h1> '
             f'<p class="mt-3 text-sm text-slate-500">StackCostMatrix · Published Nov 3, 2026 · Data checked against vendor docs Nov 3, 2026 · Updated Nov 10, 2026: HubSpot Professional repriced per seat (Nov 5); ActiveCampaign + Stripe, Mailchimp + Calendly and Pipedrive + Xero corrected (Nov 8); &ldquo;Three kinds of integration cost&rdquo; added (Nov 10). See the About page changelog · Edited by <a href="/about/#editor" class="font-medium text-indigo-600 hover:underline">Rakesh Kumar</a></p> '
-            f'{P}{lead}</p> {tiles} {figure} {findings} {kinds} {chart1} {chart2} {table} {meth} {cite}{faq_html} </section> {tipjs} ')
+            f'{P}{lead}</p> {tiles} {figure} {findings} {share_chart} {kinds} {chart1} {chart2} {table} {meth} {cite}{faq_html} </section> {tipjs} ')
     ld = [
         {"@context": "https://schema.org", "@type": "Article", "headline": "The Integration Tax 2026: What Connecting SaaS Tools Really Costs", "description": desc,
          "author": {"@type": "Organization", "name": "StackCostMatrix", "url": f"{SITE}/"}, "publisher": {"@type": "Organization", "name": "StackCostMatrix", "url": f"{SITE}/", "logo": f"{SITE}/icon-512.png"},
          "datePublished": "2026-11-03", "dateModified": "2026-11-10", "mainEntityOfPage": URL, "image": f"{SITE}/og/integration-tax-2026.jpg", "inLanguage": "en", "isBasedOn": {"@id": f"{SITE}/#dataset"}},
         {"@context": "https://schema.org", "@type": "Dataset", "@id": f"{URL}#dataset", "isBasedOn": {"@id": f"{SITE}/#dataset"}, "isAccessibleForFree": True, "name": "StackCostMatrix Integration Tax 2026", "description": f"Monthly integration tax (forced plan upgrades plus connector fees) for {S['n']} B2B SaaS integrations at 10 seats, derived from vendor-verified plan requirements and prices checked 2026-11-03.",
-         "url": URL, "license": "https://creativecommons.org/licenses/by/4.0/", "creator": {"@type": "Organization", "name": "StackCostMatrix", "url": f"{SITE}/"},
+         "url": URL, "license": "https://creativecommons.org/licenses/by/4.0/", "creator": {"@id": f"{SITE}/#organization"}, "publisher": {"@id": f"{SITE}/#organization"}, "temporalCoverage": "2026-11-03/2026-11-08",
          "dateModified": "2026-11-10", "keywords": ["SaaS pricing", "integration cost", "API access", "webhooks", "Zapier", "Make"],
          "distribution": [{"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": f"{SITE}/data/integration-pairs.json"}]},
         {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faqs]},

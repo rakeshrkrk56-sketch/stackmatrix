@@ -1,4 +1,4 @@
-# Terms of Service | StackCostMatrix
+# Terms of Service
 
 > StackCostMatrix terms of service and pricing accuracy disclaimer.
 
@@ -6,8 +6,6 @@ Source page: https://stackcostmatrix.com/terms/
 Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (credit StackCostMatrix and link to https://stackcostmatrix.com)
 
 ---
-
-# Terms of Service
 
 Last updated: October 2026
 

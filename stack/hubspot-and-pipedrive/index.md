@@ -1,4 +1,4 @@
-# HubSpot + Pipedrive Integration Cost (2026): Plans & Setup
+# HubSpot + Pipedrive Integration Cost (2026): True Price, Minimum Plan & Hidden API Fees
 
 > HubSpot + Pipedrive runs via middleware (+$10.59/mo) on HubSpot Free and Pipedrive Lite: $150.59/mo for 10 seats.
 
@@ -8,8 +8,6 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 ---
 
 [Home](https://stackcostmatrix.com/) / HubSpot + Pipedrive 
-
-# HubSpot + Pipedrive Integration Cost (2026): True Price, Minimum Plan & Hidden API Fees
 
 Pipedrive opens its REST API on every plan including Lite ($14/seat), and HubSpot Free includes API access — so middleware (Make or Zapier) syncs contacts and deals both ways without forcing a tier upgrade on either side. Minimum viable stack: HubSpot 'Free' + Pipedrive 'Lite' + ~$10.59/mo middleware ($9/mo billed annually).
 
@@ -38,6 +36,12 @@ HubSpot 'Free' ($0.00/mo) + Pipedrive 'Lite' ($140.00/mo)
 ## Native vs middleware for HubSpot + Pipedrive
 
 No native connector exists for this pair, so middleware is not an alternative — it is the integration. The modeled middleware cost is $10.59/mo on top of both tools, for $150.59/mo all-in at 10 seats on the modeled tiers (HubSpot 'Free' + Pipedrive 'Lite'). Sync is 1-way (trigger → action). The middleware figure is the modeled cost for this pair; your actual middleware bill scales with task and operation volume, which is not verified here — check your expected volume against the middleware plan before budgeting.
+
+Chart: HubSpot + Pipedrive: monthly cost for 10 seats by route: Make Core (modeled here) $150.59; Zapier Professional instead $169.99
+
+Monthly cost for 10 seats by route, HubSpot + Pipedrive.
+
+ 
 
 Integration routes compared for a 10-seat team
 
@@ -96,7 +100,7 @@ Side-by-side spec matrix
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
 
-## Frequently asked questions
+## HubSpot + Pipedrive integration: frequently asked questions
 
 ### What are the minimum plan tiers required for the HubSpot + Pipedrive integration?
 
@@ -114,7 +118,7 @@ The HubSpot + Pipedrive connection runs through middleware: neither vendor offer
 
 For ongoing sync you need middleware such as Make or Zapier, which works trigger by trigger; your real middleware bill depends on task volume.
 
-## Related integrations
+## Integrations related to HubSpot + Pipedrive
 
 [All HubSpot integrations →](https://stackcostmatrix.com/hubspot-integrations-cost/) · [All Pipedrive integrations →](https://stackcostmatrix.com/pipedrive-integrations-cost/) · [HubSpot API access by plan →](https://stackcostmatrix.com/hubspot-api-access/) · [Pipedrive API access by plan →](https://stackcostmatrix.com/pipedrive-api-access/)
 

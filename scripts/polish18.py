@@ -14,10 +14,19 @@ for f in sorted(glob.glob("stack/*/index.html")):
     # decorative "!" badge: keep it out of the heading's accessible name
     s = s.replace('<span class="grid h-8 w-8 place-items-center rounded-full bg-amber-400 text-lg font-black text-amber-950">!</span>',
                   '<span class="grid h-8 w-8 place-items-center rounded-full bg-amber-400 text-lg font-black text-amber-950" aria-hidden="true">!</span>')
+    names = re.search(r'<nav class="mb-6 text-sm text-slate-500" aria-label="Breadcrumb">.*?<span class="text-slate-700">(.*?)</span>', s, re.S).group(1)
+    s = s.replace('<h2 class="text-xl font-bold">Frequently asked questions</h2>', f'<h2 class="text-xl font-bold">{names} integration: frequently asked questions</h2>')
+    s = s.replace('<h2 class="text-xl font-bold">Related integrations</h2>', f'<h2 class="text-xl font-bold">Integrations related to {names}</h2>')
     if p in RECHECKED:
         s = re.sub(r"Last checked: Nov 3, 2026( \(exceptions listed at the top\))? · Sources linked below\.",
                    lambda m: "Requirements checked: Nov 8, 2026; prices: Nov 3, 2026" + (m.group(1) or "") + " · Sources linked below.", s)
     if s != s0: open(f, "w", encoding="utf-8").write(s); n += 1
+
+# hand-written guides: say what the FAQ is about
+for d, label in (("hubspot-integrations-cost", "HubSpot integration costs"), ("salesforce-integrations-cost", "Salesforce integration costs"), ("crm-integration-pricing-guide", "CRM integration costs")):
+    f = f"{d}/index.html"; s = open(f, encoding="utf-8").read()
+    s2 = re.sub(r"(<h2[^>]*>)\s*Frequently asked questions\s*(</h2>)", lambda m: m.group(1) + label + ": frequently asked questions" + m.group(2), s)
+    if s2 != s: open(f, "w", encoding="utf-8").write(s2); n += 1
 
 # About: one editor, not a "research team"; price-check dates
 f = "about/index.html"; s = open(f, encoding="utf-8").read(); s0 = s

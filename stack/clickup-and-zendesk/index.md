@@ -1,4 +1,4 @@
-# ClickUp + Zendesk Integration: Setup, Plans & Cost (2026)
+# ClickUp + Zendesk Integration (2026): How It Works, Setup & True Cost
 
 > How the ClickUp + Zendesk integration works, how to set it up, and the plans it needs: ClickUp Free + Zendesk Suite Team, $690/mo for 10 seats.
 
@@ -8,8 +8,6 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 ---
 
 [Home](https://stackcostmatrix.com/) / ClickUp + Zendesk 
-
-# ClickUp + Zendesk Integration (2026): How It Works, Setup & True Cost
 
 ClickUp's basic Zendesk integration (create and link tasks from tickets) is on every ClickUp plan; full two-way Zendesk Sync needs ClickUp Business Plus or Enterprise. Requires ClickUp on the 'Free' plan and Zendesk on the 'Suite Team' plan.
 
@@ -39,6 +37,12 @@ Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capab
 ## Native vs middleware for ClickUp + Zendesk
 
 The native path runs on the required tiers (ClickUp 'Free' + Zendesk 'Suite Team') at $690.00/mo for a 10-seat team, with no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — would cost $700.59/mo all-in, so on cost alone there is no reason to switch: middleware would only make sense if you already run other automations through it.
+
+Chart: ClickUp + Zendesk: monthly cost for 10 seats by route: Native connector $690.00; Make Core route $700.59; Zapier Professional route $719.99
+
+Monthly cost for 10 seats by route, ClickUp + Zendesk.
+
+ 
 
 Integration routes compared for a 10-seat team
 
@@ -94,7 +98,7 @@ Side-by-side spec matrix
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
 
-## Frequently asked questions
+## ClickUp + Zendesk integration: frequently asked questions
 
 ### What are the minimum plan tiers required for the ClickUp + Zendesk integration?
 
@@ -112,7 +116,7 @@ The ClickUp + Zendesk connection is native — no third-party middleware subscri
 
 Only Workspace owners and admins can install it. Keeping every ticket update in sync both ways needs ClickUp's separate Zendesk Sync, which is on Business Plus and Enterprise.
 
-## Related integrations
+## Integrations related to ClickUp + Zendesk
 
 [All ClickUp integrations →](https://stackcostmatrix.com/clickup-integrations-cost/) · [All Zendesk integrations →](https://stackcostmatrix.com/zendesk-integrations-cost/) · [ClickUp API access by plan →](https://stackcostmatrix.com/clickup-api-access/) · [Zendesk API access by plan →](https://stackcostmatrix.com/zendesk-api-access/)
 

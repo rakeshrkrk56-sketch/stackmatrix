@@ -24,13 +24,17 @@ WEBSITE = {"@type": "WebSite", "@id": SITE_ID, "url": f"{SITE}/", "name": "Stack
            "description": "What B2B software integrations really cost: plans, connector fees and API access by plan."}
 PERSON = {"@type": "Person", "@id": EDITOR_URL, "name": EDITOR_NAME, "url": EDITOR_URL, "jobTitle": "Founder and editor",
           "worksFor": {"@id": ORG_ID}, "sameAs": [EDITOR_LINKEDIN, EDITOR_PROFILE]}
-def graph(f, title):
+def graph(f, title, modified=None):
     """Organization + WebSite + Person, plus the page's own node (homepage WebPage / AboutPage)."""
     url = f"{SITE}/" + ("" if f == "index.html" else f[:-len("index.html")])
     page = {"@type": "AboutPage" if f.startswith("about/") else "WebPage", "@id": url + "#webpage", "url": url, "name": title, "inLanguage": "en",
             "isPartOf": {"@id": SITE_ID}, "about": {"@id": ORG_ID},
             "primaryImageOfPage": {"@type": "ImageObject", "url": f"{SITE}/og-image.png", "width": 1200, "height": 630}}
-    if f.startswith("about/"): page["mainEntity"] = {"@id": ORG_ID}
+    if f.startswith("about/"):
+        page["mainEntity"] = {"@id": ORG_ID}; page["breadcrumb"] = {"@id": url + "#breadcrumb"}
+    else:
+        page["mainEntity"] = {"@id": DATASET_ID}
+    if modified: page["dateModified"] = modified
     return {"@context": "https://schema.org", "@graph": [ORG, WEBSITE, PERSON, page]}
 BREADCRUMBS = {
     "hubspot-integrations-cost/index.html": [("HubSpot integration costs", f"{SITE}/hubspot-integrations-cost/")],
@@ -57,6 +61,14 @@ def _vendor_urls():
     return {html.unescape(n): "{0.scheme}://{0.netloc}/".format(urlparse(u)) for n, u in rows}
 VENDOR_URL = _vendor_urls()
 
+def _changelog_date(s):
+    """ISO date of the newest dated changelog entry on the page (homepage and /about/ keep one)."""
+    import datetime
+    ds = []
+    for mon, d, y in re.findall(r'<strong class="text-slate-800">(Oct|Nov|Dec|Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep) (\d{1,2}), (20\d\d)', s):
+        ds.append(datetime.date(int(y), ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"].index(mon) + 1, int(d)).isoformat())
+    return max(ds) if ds else None
+
 def fix_ld(o):
     """Point authors/reviewers/publishers at the shared entities."""
     if isinstance(o, list): return [fix_ld(x) for x in o]
@@ -65,6 +77,8 @@ def fix_ld(o):
     for k, v in o.items():
         if k in ("author", "reviewedBy") and isinstance(v, dict) and ((v.get("@type") == "Organization" and "StackCostMatrix" in v.get("name", "")) or v.get("@id") == EDITOR_URL):
             out[k] = EDITOR
+        elif k == "creator" and isinstance(v, dict) and v.get("name") == "StackCostMatrix":
+            out[k] = {"@id": ORG_ID}
         elif k == "publisher" and isinstance(v, dict) and v.get("name") == "StackCostMatrix":
             out[k] = PUBLISHER
         else:
@@ -103,6 +117,8 @@ def main():
                     if app.get("name") in VENDOR_URL: app["url"] = VENDOR_URL[app["name"]]
             if f.startswith("stack/") and o.get("@type") == "BreadcrumbList":
                 o["@id"] = f"{SITE}/stack/{f.split('/')[1]}/#breadcrumb"
+            if f == "about/index.html" and o.get("@type") == "BreadcrumbList":
+                o["@id"] = f"{SITE}/about/#breadcrumb"
             return '<script type="application/ld+json">' + json.dumps(fix_ld(o), ensure_ascii=False, separators=(",", ":")) + "</script>"
         s = re.sub(r'<script type="application/ld\+json">(.*?)</script>', rep, s, flags=re.S)
         crumbs = BREADCRUMBS.get(f)
@@ -112,7 +128,7 @@ def main():
             s = s.replace("</head>", '<script type="application/ld+json">' + json.dumps(bl, ensure_ascii=False, separators=(",", ":")) + "</script></head>", 1)
         if f in ("index.html", "about/index.html"):
             title = html.unescape(re.search(r"<title>(.*?)</title>", s, re.S).group(1)).strip()
-            s = s.replace("</head>", '<script type="application/ld+json">' + json.dumps(graph(f, title), ensure_ascii=False, separators=(",", ":")) + "</script></head>", 1)
+            s = s.replace("</head>", '<script type="application/ld+json">' + json.dumps(graph(f, title, _changelog_date(s)), ensure_ascii=False, separators=(",", ":")) + "</script></head>", 1)
         if f == "about/index.html" and ABOUT_OLD in s:
             s = s.replace(ABOUT_OLD, ABOUT_NEW, 1)
         if f == "about/index.html":   # keep the editor's profile links current
@@ -131,8 +147,10 @@ def main():
         t = re.search(r'<meta property="og:title" content="([^"]*)"', s)
         s = re.sub(r'<meta property="og:image:alt"[^>]*>', "", s)   # generated pages inherit their template's
         if t:
+            fa = re.search(r'<img src="/og/' + re.escape(key) + r'\.jpg"[^>]*alt="([^"]*)"', s) if key else None
+            alt = fa.group(1) if fa else ("StackCostMatrix: what connecting your SaaS tools really costs. 59 integrations, 20 tools, open data." if img.endswith("og-image.png") else t.group(1) + " — StackCostMatrix")
             s = re.sub(r'(<meta property="og:image" content="[^"]*">(?:<meta property="og:image:width"[^>]*><meta property="og:image:height"[^>]*>)?)',
-                       lambda m: m.group(1) + f'<meta property="og:image:alt" content="{t.group(1)} — StackCostMatrix">', s, count=1)
+                       lambda m: m.group(1) + f'<meta property="og:image:alt" content="{alt}">', s, count=1)
         if s != s0: open(f, "w", encoding="utf-8").write(s); n += 1
     # 404: send reversed pair URLs (/stack/b-and-a/) to the page that exists; drop the 404 page's canonical
     pairs = sorted(f.split("/")[1] for f in glob.glob("stack/*/index.html"))

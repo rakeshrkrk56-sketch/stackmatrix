@@ -1,4 +1,4 @@
-# Asana + Slack Integration: Setup, Plans & Cost (2026)
+# Asana + Slack Integration (2026): How It Works, Setup & True Cost
 
 > How the Asana + Slack integration works, how to set it up, and the plans it needs: Asana Starter + Slack Free, $134.90/mo for 10 seats.
 
@@ -8,8 +8,6 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 ---
 
 [Home](https://stackcostmatrix.com/) / Asana + Slack 
-
-# Asana + Slack Integration (2026): How It Works, Setup & True Cost
 
 Asana's Slack app works for any Slack user, including Slack's free plan (up to 10 app installs). Requires Asana on the 'Starter' plan and Slack on the 'Free' plan.
 
@@ -39,6 +37,12 @@ Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capab
 ## Native vs middleware for Asana + Slack
 
 The native path runs on the required tiers (Asana 'Starter' + Slack 'Free') at $134.90/mo for a 10-seat team, with 2-way sync and no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — would cost $145.49/mo all-in, so on cost alone there is no reason to switch: middleware would only make sense if you already run other automations through it, and it would drop sync to 1-way (trigger → action).
+
+Chart: Asana + Slack: monthly cost for 10 seats by route: Native connector $134.90; Make Core route $145.49; Zapier Professional route $164.89
+
+Monthly cost for 10 seats by route, Asana + Slack.
+
+ 
 
 Integration routes compared for a 10-seat team
 
@@ -94,7 +98,7 @@ Side-by-side spec matrix
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
 
-## Frequently asked questions
+## Asana + Slack integration: frequently asked questions
 
 ### What are the minimum plan tiers required for the Asana + Slack integration?
 
@@ -112,7 +116,7 @@ The Asana + Slack connection is native — no third-party middleware subscriptio
 
 Updates flow both ways but it isn't a full sync: Slack conversations aren't mirrored into Asana, only the message you turn into a task. Slack's free plan allows up to 10 app installations.
 
-## Related integrations
+## Integrations related to Asana + Slack
 
 [All Asana integrations →](https://stackcostmatrix.com/asana-integrations-cost/) · [All Slack integrations →](https://stackcostmatrix.com/slack-integrations-cost/) · [Asana API access by plan →](https://stackcostmatrix.com/asana-api-access/) · [Slack API access by plan →](https://stackcostmatrix.com/slack-api-access/)
 

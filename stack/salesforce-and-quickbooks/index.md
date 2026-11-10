@@ -1,4 +1,4 @@
-# Salesforce + QuickBooks Integration: Setup & Cost (2026)
+# Salesforce Sales Cloud + QuickBooks Online Integration (2026): How It Works, Setup & True Cost
 
 > How the Salesforce Sales Cloud + QuickBooks Online integration works and how to set it up, plus the plans it needs and the 10-seat cost ($1,298.59/mo).
 
@@ -8,8 +8,6 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 ---
 
 [Home](https://stackcostmatrix.com/) / Salesforce Sales Cloud + QuickBooks Online 
-
-# Salesforce Sales Cloud + QuickBooks Online Integration (2026): How It Works, Setup & True Cost
 
 Salesforce doesn't build a QuickBooks connector; AppExchange apps such as Breadwinner (from $310/mo) or Make Core link them through Salesforce's API, which Professional Edition gets only as a paid add-on. Requires Salesforce Sales Cloud on the 'Professional' plan and QuickBooks Online on the 'Simple Start' plan. Route it through Make Core ($10.59/mo, or $9/mo billed annually).
 
@@ -47,6 +45,12 @@ Salesforce's $1,250.00 is the Professional plan ($100/user) plus the API add-on,
 ## Native vs middleware for Salesforce Sales Cloud + QuickBooks Online
 
 No native connector exists for this pair, so middleware is not an alternative — it is the integration. The modeled middleware cost is $10.59/mo on top of both tools, for $1,298.59/mo all-in at 10 seats on the modeled tiers (Salesforce Sales Cloud 'Professional' + QuickBooks Online 'Simple Start'). Sync is 1-way (trigger → action). The middleware figure is the modeled cost for this pair; your actual middleware bill scales with task and operation volume, which is not verified here — check your expected volume against the middleware plan before budgeting.
+
+Chart: Salesforce Sales Cloud + QuickBooks Online: monthly cost for 10 seats by route: Make Core (modeled here) $1,298.59; Zapier Professional instead $1,317.99
+
+Monthly cost for 10 seats by route, Salesforce Sales Cloud + QuickBooks Online.
+
+ 
 
 Integration routes compared for a 10-seat team
 
@@ -105,7 +109,7 @@ Side-by-side spec matrix
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
 
-## Frequently asked questions
+## Salesforce Sales Cloud + QuickBooks Online integration: frequently asked questions
 
 ### What are the minimum plan tiers required for the Salesforce Sales Cloud + QuickBooks Online integration?
 
@@ -123,7 +127,7 @@ The Salesforce Sales Cloud + QuickBooks Online connection runs through middlewar
 
 This calculator models Salesforce Professional with the $25/user API add-on plus Make Core; Enterprise includes API access without the add-on. Breadwinner's own price, from $310 a month, isn't included. Each Make scenario runs one way.
 
-## Related integrations
+## Integrations related to Salesforce Sales Cloud + QuickBooks Online
 
 [All Salesforce integrations →](https://stackcostmatrix.com/salesforce-integrations-cost/) · [All QuickBooks integrations →](https://stackcostmatrix.com/quickbooks-integrations-cost/) · [Salesforce API access by plan →](https://stackcostmatrix.com/salesforce-api-access/) · [QuickBooks API access by plan →](https://stackcostmatrix.com/quickbooks-api-access/)
 

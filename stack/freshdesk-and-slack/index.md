@@ -1,4 +1,4 @@
-# Freshdesk + Slack Integration: Setup, Plans & Cost (2026)
+# Freshdesk + Slack Integration (2026): How It Works, Setup & True Cost
 
 > How the Freshdesk + Slack integration works, how to set it up, and the plans it needs: Freshdesk Growth + Slack Free, $230/mo for 10 seats.
 
@@ -8,8 +8,6 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 ---
 
 [Home](https://stackcostmatrix.com/) / Freshdesk + Slack 
-
-# Freshdesk + Slack Integration (2026): How It Works, Setup & True Cost
 
 Freshdesk lists its Slack integration on Growth and above; Slack's free plan is enough on the Slack side. Requires Freshdesk on the 'Growth' plan and Slack on the 'Free' plan.
 
@@ -39,6 +37,12 @@ Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capab
 ## Native vs middleware for Freshdesk + Slack
 
 The native path runs on the required tiers (Freshdesk 'Growth' + Slack 'Free') at $230.00/mo for a 10-seat team, with 2-way sync and no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — would cost $240.59/mo all-in, so on cost alone there is no reason to switch: middleware would only make sense if you already run other automations through it, and it would drop sync to 1-way (trigger → action).
+
+Chart: Freshdesk + Slack: monthly cost for 10 seats by route: Native connector $230.00; Make Core route $240.59; Zapier Professional route $259.99
+
+Monthly cost for 10 seats by route, Freshdesk + Slack.
+
+ 
 
 Integration routes compared for a 10-seat team
 
@@ -94,7 +98,7 @@ Side-by-side spec matrix
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
 
-## Frequently asked questions
+## Freshdesk + Slack integration: frequently asked questions
 
 ### What are the minimum plan tiers required for the Freshdesk + Slack integration?
 
@@ -112,7 +116,7 @@ The Freshdesk + Slack connection is native — no third-party middleware subscri
 
 Freshdesk lists Slack integration on Growth and above, and the installing admin needs a plan with API access. You can't map multiple Slack channels to one Freshdesk group, and only Freshdesk agents can invite other Slack members to collaborate on a ticket.
 
-## Related integrations
+## Integrations related to Freshdesk + Slack
 
 [All Slack integrations →](https://stackcostmatrix.com/slack-integrations-cost/) · [Freshdesk API access by plan →](https://stackcostmatrix.com/freshdesk-api-access/) · [Slack API access by plan →](https://stackcostmatrix.com/slack-api-access/)
 

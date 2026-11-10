@@ -144,8 +144,11 @@ def build():
         ("Do webhooks in HubSpot workflows need Professional?",
          "They need Data Hub Professional or Enterprise specifically. Developer webhooks for apps are a separate feature and aren't tied to that requirement."),
     ]
-    faq_html = (' <section class="mt-12" aria-label="Frequently asked questions"> <h2 class="text-xl font-bold">Frequently asked questions</h2> <div class="mt-4 space-y-6"> ' +
+    faq_html = (' <section class="mt-12" aria-label="Frequently asked questions"> <h2 class="text-xl font-bold">HubSpot Professional and integrations: frequently asked questions</h2> <div class="mt-4 space-y-6"> ' +
                 "".join(f'<div> <h3 class="font-semibold text-slate-900">{esc(q)}</h3> <p class="mt-1 leading-relaxed text-slate-700">{esc(a)}</p> </div>' for q, a in faqs) + ' </div> </section>')
+    fig = (f'<figure class="mt-6"> <img src="/og/{SLUG}.jpg" width="1200" height="630" loading="lazy" class="scm-fig" '
+           f'alt="Summary: {npro} of {n} HubSpot integrations need Professional; the cheapest Professional plan is ${cheapest["monthly"]} per seat a month; {nfree} work on the free CRM"> '
+           f'<figcaption class="mt-2 text-xs text-slate-500">HubSpot Professional and integrations at a glance. Free to reuse with credit (CC BY 4.0).</figcaption> </figure>')
     answer = (f"Only {npro} of the {n} HubSpot integrations we track need Professional: {pro_names}. Any Professional subscription HubSpot lists for them works, "
               f"and the cheapest is {cheapest['name']} at ${cheapest['monthly']} per seat a month (${cheapest['annual']} on an annual commitment), about {m0(c10)} a month for 10 people. "
               f"The other {nfree} work on HubSpot's free CRM.")
@@ -153,7 +156,7 @@ def build():
             f'<h1 class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">\n{esc(TITLE)}\n</h1> '
             f'<p class="mt-3 text-sm text-slate-500">Checked against HubSpot&#39;s pricing pages and knowledge base · {CHECKED_TXT} · Salesforce requirements added Nov 10, 2026 · Edited by <a href="/about/#editor" class="font-medium text-indigo-600 hover:underline">Rakesh Kumar</a></p> '
             f'{P}<strong>Short answer:</strong> {esc(answer)}</p> '
-            f'{H2}Which HubSpot plan each integration needs</h2> {t1} {sec_cheap} {sec_sf} {sec_alt} {sec_other} {sources} {more}{faq_html} </section> ')
+            f'{H2}Which HubSpot plan each integration needs</h2> {t1} {fig} {sec_cheap} {sec_sf} {sec_alt} {sec_other} {sources} {more}{faq_html} </section> ')
     ld = [
         {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faqs]},
         {"@context": "https://schema.org", "@type": "Article", "headline": TITLE, "description": DESC,

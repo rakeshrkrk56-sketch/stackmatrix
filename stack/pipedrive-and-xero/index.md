@@ -1,4 +1,4 @@
-# Pipedrive + Xero Integration Cost (2026): Plans & Setup
+# Pipedrive + Xero Integration Cost (2026): True Price, Minimum Plan & Hidden API Fees
 
 > Pipedrive + Xero runs via middleware (+$10.59/mo) on Pipedrive Lite and Xero Early: $177.59/mo for 10 seats.
 
@@ -8,8 +8,6 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 ---
 
 [Home](https://stackcostmatrix.com/) / Pipedrive + Xero 
-
-# Pipedrive + Xero Integration Cost (2026): True Price, Minimum Plan & Hidden API Fees
 
 Pipedrive's own Xero integration is no longer available; the Xero app in Pipedrive's Marketplace is a paid third-party app (Cloudify, free for the first 30 syncs), so this models Make Core turning won deals into Xero invoices. Requires Pipedrive on the 'Lite' plan and Xero on the 'Early' plan. Route it through Make Core ($10.59/mo, or $9/mo billed annually).
 
@@ -38,6 +36,12 @@ Pipedrive 'Lite' ($140.00/mo) + Xero 'Early' ($27.00/mo)
 ## Native vs middleware for Pipedrive + Xero
 
 No native connector exists for this pair, so middleware is not an alternative — it is the integration. The modeled middleware cost is $10.59/mo on top of both tools, for $177.59/mo all-in at 10 seats on the modeled tiers (Pipedrive 'Lite' + Xero 'Early'). Sync is 1-way (trigger → action). The middleware figure is the modeled cost for this pair; your actual middleware bill scales with task and operation volume, which is not verified here — check your expected volume against the middleware plan before budgeting.
+
+Chart: Pipedrive + Xero: monthly cost for 10 seats by route: Make Core (modeled here) $177.59; Zapier Professional instead $196.99
+
+Monthly cost for 10 seats by route, Pipedrive + Xero.
+
+ 
 
 Integration routes compared for a 10-seat team
 
@@ -96,7 +100,7 @@ Side-by-side spec matrix
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
 
-## Frequently asked questions
+## Pipedrive + Xero integration: frequently asked questions
 
 ### What are the minimum plan tiers required for the Pipedrive + Xero integration?
 
@@ -114,7 +118,7 @@ The Pipedrive + Xero connection runs through middleware: neither vendor offers a
 
 Cloudify's app is free for the first 30 syncs and paid after that (its price isn't listed in the Marketplace). The Make route is one-way and you build the field mapping yourself.
 
-## Related integrations
+## Integrations related to Pipedrive + Xero
 
 [All Pipedrive integrations →](https://stackcostmatrix.com/pipedrive-integrations-cost/) · [All Xero integrations →](https://stackcostmatrix.com/xero-integrations-cost/) · [Pipedrive API access by plan →](https://stackcostmatrix.com/pipedrive-api-access/) · [Xero API access by plan →](https://stackcostmatrix.com/xero-api-access/)
 

@@ -1,4 +1,4 @@
-# HubSpot + Salesforce Integration Cost (2026): Plans & Setup
+# HubSpot + Salesforce Sales Cloud Integration Cost (2026): True Price, Minimum Plan & Hidden API Fees
 
 > HubSpot + Salesforce needs HubSpot Professional and Salesforce Professional: $1,750/mo for 10 seats, including a +$500/mo forced upgrade.
 
@@ -8,8 +8,6 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 ---
 
 [Home](https://stackcostmatrix.com/) / HubSpot + Salesforce Sales Cloud 
-
-# HubSpot + Salesforce Sales Cloud Integration Cost (2026): True Price, Minimum Plan & Hidden API Fees
 
 Big trap: HubSpot's native Salesforce connector needs a HubSpot Professional or Enterprise subscription — the free CRM can't use it. The cheapest route is Smart CRM Professional at $50 per seat a month ($45 on annual billing). Requires HubSpot on the 'Professional' plan and Salesforce Sales Cloud on the 'Professional' plan for full 2-way sync.
 
@@ -41,6 +39,12 @@ Alternative: skip the native tier upgrade and run via Make/Zapier middleware for
 ## Native vs middleware for HubSpot + Salesforce Sales Cloud
 
 The native path runs on the required tiers (HubSpot 'Professional' + Salesforce Sales Cloud 'Professional') at $1,750.00/mo for a 10-seat team, with 2-way sync and no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — comes to $1,260.59/mo all-in, which is cheaper on paper because it skips the $500.00/mo forced tier upgrade. The trade-off: you replace the native connector with a third-party dependency, sync becomes 1-way (trigger → action) instead of 2-way, and Make Core's fee covers a fixed monthly allowance of credits — whether that covers your volume is not verified for this pair.
+
+Chart: HubSpot + Salesforce Sales Cloud: monthly cost for 10 seats by route: Native connector $1,750.00; Make Core route $1,260.59; Zapier Professional route $1,279.99
+
+Monthly cost for 10 seats by route, HubSpot + Salesforce Sales Cloud.
+
+ 
 
 Integration routes compared for a 10-seat team
 
@@ -100,7 +104,7 @@ Side-by-side spec matrix
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
 
-## Frequently asked questions
+## HubSpot + Salesforce Sales Cloud integration: frequently asked questions
 
 ### What are the minimum plan tiers required for the HubSpot + Salesforce Sales Cloud integration?
 
@@ -118,7 +122,7 @@ The HubSpot + Salesforce Sales Cloud connection is native — no third-party mid
 
 The connector is only available on HubSpot Professional or Enterprise subscriptions, every sync uses part of your Salesforce API call allowance, and the Salesforce user who connects it needs the API Enabled permission.
 
-## Related integrations
+## Integrations related to HubSpot + Salesforce Sales Cloud
 
 [All HubSpot integrations →](https://stackcostmatrix.com/hubspot-integrations-cost/) · [All Salesforce integrations →](https://stackcostmatrix.com/salesforce-integrations-cost/) · [HubSpot API access by plan →](https://stackcostmatrix.com/hubspot-api-access/) · [Salesforce API access by plan →](https://stackcostmatrix.com/salesforce-api-access/)
 

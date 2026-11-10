@@ -1,4 +1,4 @@
-# Notion + Stripe Integration Cost (2026): Plans & Setup
+# Notion + Stripe Integration Cost (2026): True Price, Minimum Plan & Hidden API Fees
 
 > Notion + Stripe runs via middleware (+$10.59/mo) on Notion Plus and Stripe Standard: $130.59/mo for 10 seats.
 
@@ -8,8 +8,6 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 ---
 
 [Home](https://stackcostmatrix.com/) / Notion + Stripe 
-
-# Notion + Stripe Integration Cost (2026): True Price, Minimum Plan & Hidden API Fees
 
 No native link - Make Core watches Stripe and logs payments to a Notion database through Notion's API, which isn't limited to a higher Notion plan; this models Plus, Notion's first paid team plan. Requires Notion on the 'Plus' plan and Stripe on the 'Standard' plan. Route it through Make Core ($10.59/mo, or $9/mo billed annually).
 
@@ -38,6 +36,12 @@ Notion 'Plus' ($120.00/mo) + Stripe 'Standard' ($0.00/mo)
 ## Native vs middleware for Notion + Stripe
 
 No native connector exists for this pair, so middleware is not an alternative — it is the integration. The modeled middleware cost is $10.59/mo on top of both tools, for $130.59/mo all-in at 10 seats on the modeled tiers (Notion 'Plus' + Stripe 'Standard'). Sync is 1-way (trigger → action). The middleware figure is the modeled cost for this pair; your actual middleware bill scales with task and operation volume, which is not verified here — check your expected volume against the middleware plan before budgeting.
+
+Chart: Notion + Stripe: monthly cost for 10 seats by route: Make Core (modeled here) $130.59; Zapier Professional instead $149.99
+
+Monthly cost for 10 seats by route, Notion + Stripe.
+
+ 
 
 Integration routes compared for a 10-seat team
 
@@ -96,7 +100,7 @@ Side-by-side spec matrix
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
 
-## Frequently asked questions
+## Notion + Stripe integration: frequently asked questions
 
 ### What are the minimum plan tiers required for the Notion + Stripe integration?
 
@@ -114,7 +118,7 @@ The Notion + Stripe connection runs through middleware: neither vendor offers a 
 
 It's one-way (Stripe → Notion). The Notion integration must be shared with the database it writes to, and you maintain the property mapping yourself.
 
-## Related integrations
+## Integrations related to Notion + Stripe
 
 [All Notion integrations →](https://stackcostmatrix.com/notion-integrations-cost/) · [All Stripe integrations →](https://stackcostmatrix.com/stripe-integrations-cost/) · [Notion API access by plan →](https://stackcostmatrix.com/notion-api-access/) · [Stripe API access by plan →](https://stackcostmatrix.com/stripe-api-access/)
 

@@ -1,4 +1,4 @@
-# Privacy Policy | StackCostMatrix
+# Privacy Policy
 
 > StackCostMatrix privacy policy: no cookies, no analytics, no tracking. What our hosting and outbound links can see, and how to contact us.
 
@@ -6,8 +6,6 @@ Source page: https://stackcostmatrix.com/privacy/
 Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (credit StackCostMatrix and link to https://stackcostmatrix.com)
 
 ---
-
-# Privacy Policy
 
 Last updated: November 8, 2026
 

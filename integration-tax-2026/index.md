@@ -1,4 +1,4 @@
-# The Integration Tax 2026: Hidden Costs of SaaS Integrations
+# The Integration Tax 2026: What Connecting SaaS Tools Really Costs
 
 > Original research: 31 of 55 SaaS integrations add a hidden monthly cost, usually $120–$251/mo when a plan upgrade is forced.
 
@@ -8,8 +8,6 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 ---
 
 Research · November 2026
-
-# The Integration Tax 2026: What Connecting SaaS Tools Really Costs
 
 StackCostMatrix · Published Nov 3, 2026 · Data checked against vendor docs Nov 3, 2026 · Updated Nov 10, 2026: HubSpot Professional repriced per seat (Nov 5); ActiveCampaign + Stripe, Mailchimp + Calendly and Pipedrive + Xero corrected (Nov 8); “Three kinds of integration cost” added (Nov 10). See the About page changelog · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
 
@@ -50,6 +48,12 @@ Image: [Bar chart: the 8 most expensive SaaS integrations by monthly integration
 **Calendly's webhook gate is the most common trigger.** 6 integrations need Calendly Standard, because Calendly's webhooks require a paid plan; that's $120 a month for 10 seats.
 
 **24 of 55 integrations cost nothing extra.** They work on each tool's cheapest plan with API access and need no connector, so connecting them is free on top of the plans you already pay for.
+
+Chart: Where the integration tax comes from across 55 integrations, per month for 10 seats: Forced plan upgrades $3,647.50; Connector fees (Make, Zapier, Data Mapper) $283.22
+
+Total monthly integration tax across all 55 integrations, by source: forced upgrades are 93% of it.
+
+ 
 
 ## Three kinds of integration cost
 
@@ -197,7 +201,7 @@ The data is open under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 
 **Suggested citation:** StackCostMatrix, “The Integration Tax 2026: Hidden Costs of SaaS Integrations,” November 3, 2026, https://stackcostmatrix.com/integration-tax-2026/
 
-## Frequently asked questions
+## Integration tax: frequently asked questions
 
 ### What is the integration tax?
 

@@ -1,4 +1,4 @@
-# HubSpot + Asana Integration Cost (2026): Plans & Setup
+# HubSpot + Asana Integration Cost (2026): True Price, Minimum Plan & Hidden API Fees
 
 > HubSpot + Asana needs HubSpot Professional and Asana Starter for the native integration: $634.90/mo for 10 seats, including a +$500/mo forced upgrade.
 
@@ -8,8 +8,6 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 ---
 
 [Home](https://stackcostmatrix.com/) / HubSpot + Asana 
-
-# HubSpot + Asana Integration Cost (2026): True Price, Minimum Plan & Hidden API Fees
 
 Trap: the native Asana action runs inside HubSpot workflows, which need a HubSpot Professional subscription (cheapest: Smart CRM Professional, $50 per seat a month), and tasks only flow one way. Requires HubSpot on the 'Professional' plan and Asana on the 'Starter' plan.
 
@@ -41,6 +39,12 @@ Alternative: skip the native tier upgrade and run via Make/Zapier middleware for
 ## Native vs middleware for HubSpot + Asana
 
 The native path runs on the required tiers (HubSpot 'Professional' + Asana 'Starter') at $634.90/mo for a 10-seat team, with no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — comes to $145.49/mo all-in, which is cheaper on paper because it skips the $500.00/mo forced tier upgrade. The trade-off: you replace the native connector with a third-party dependency, sync stays 1-way (trigger → action), and Make Core's fee covers a fixed monthly allowance of credits — whether that covers your volume is not verified for this pair.
+
+Chart: HubSpot + Asana: monthly cost for 10 seats by route: Native connector $634.90; Make Core route $145.49; Zapier Professional route $164.89
+
+Monthly cost for 10 seats by route, HubSpot + Asana.
+
+ 
 
 Integration routes compared for a 10-seat team
 
@@ -100,7 +104,7 @@ Side-by-side spec matrix
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
 
-## Frequently asked questions
+## HubSpot + Asana integration: frequently asked questions
 
 ### What are the minimum plan tiers required for the HubSpot + Asana integration?
 
@@ -118,7 +122,7 @@ The HubSpot + Asana connection is native — no third-party middleware subscript
 
 It needs HubSpot workflows, so a Professional or Enterprise subscription. Tasks only go from HubSpot to Asana, private Asana projects don't appear in HubSpot, and the Asana user who connects the integration becomes a collaborator on every task it creates.
 
-## Related integrations
+## Integrations related to HubSpot + Asana
 
 [All HubSpot integrations →](https://stackcostmatrix.com/hubspot-integrations-cost/) · [All Asana integrations →](https://stackcostmatrix.com/asana-integrations-cost/) · [HubSpot API access by plan →](https://stackcostmatrix.com/hubspot-api-access/) · [Asana API access by plan →](https://stackcostmatrix.com/asana-api-access/)
 

@@ -1,4 +1,4 @@
-# HubSpot + Zendesk Integration: How It Works & Cost (2026)
+# HubSpot + Zendesk Integration (2026): How It Works, Setup & True Cost
 
 > How the HubSpot + Zendesk integration works, how to set it up, and the plans it needs: HubSpot Free + Zendesk Suite Team, $690/mo for 10 seats.
 
@@ -8,8 +8,6 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 ---
 
 [Home](https://stackcostmatrix.com/) / HubSpot + Zendesk 
-
-# HubSpot + Zendesk Integration (2026): How It Works, Setup & True Cost
 
 Zendesk tickets show on HubSpot contact timelines on any HubSpot plan, but only on contacts and only one way. Requires HubSpot on the 'Free' plan and Zendesk on the 'Suite Team' plan.
 
@@ -48,6 +46,12 @@ Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capab
 ## Native vs middleware for HubSpot + Zendesk
 
 The native path runs on the required tiers (HubSpot 'Free' + Zendesk 'Suite Team') at $690.00/mo for a 10-seat team, with no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — would cost $700.59/mo all-in, so on cost alone there is no reason to switch: middleware would only make sense if you already run other automations through it.
+
+Chart: HubSpot + Zendesk: monthly cost for 10 seats by route: Native connector $690.00; Make Core route $700.59; Zapier Professional route $719.99
+
+Monthly cost for 10 seats by route, HubSpot + Zendesk.
+
+ 
 
 Integration routes compared for a 10-seat team
 
@@ -103,7 +107,7 @@ Side-by-side spec matrix
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
 
-## Frequently asked questions
+## HubSpot + Zendesk integration: frequently asked questions
 
 ### What are the minimum plan tiers required for the HubSpot + Zendesk integration?
 
@@ -121,7 +125,7 @@ The HubSpot + Zendesk connection is native — no third-party middleware subscri
 
 Tickets can only be shown on the contact timeline, not on companies or deals, and data only flows from Zendesk into HubSpot. You need a Zendesk Suite plan from Team up.
 
-## Related integrations
+## Integrations related to HubSpot + Zendesk
 
 [All HubSpot integrations →](https://stackcostmatrix.com/hubspot-integrations-cost/) · [All Zendesk integrations →](https://stackcostmatrix.com/zendesk-integrations-cost/) · [HubSpot API access by plan →](https://stackcostmatrix.com/hubspot-api-access/) · [Zendesk API access by plan →](https://stackcostmatrix.com/zendesk-api-access/)
 

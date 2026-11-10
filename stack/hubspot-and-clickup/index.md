@@ -1,4 +1,4 @@
-# HubSpot + ClickUp Integration: Setup, Plans & Cost (2026)
+# HubSpot + ClickUp Integration (2026): How It Works, Setup & True Cost
 
 > How the HubSpot + ClickUp integration works, how to set it up, and the plans it needs: HubSpot Free + ClickUp Core, $120/mo for 10 seats.
 
@@ -8,8 +8,6 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 ---
 
 [Home](https://stackcostmatrix.com/) / HubSpot + ClickUp 
-
-# HubSpot + ClickUp Integration (2026): How It Works, Setup & True Cost
 
 ClickUp's native HubSpot integration runs on automations, such as creating a ClickUp task when a HubSpot deal closes. Requires HubSpot on the 'Free' plan and ClickUp on the 'Core' plan.
 
@@ -39,6 +37,12 @@ Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capab
 ## Native vs middleware for HubSpot + ClickUp
 
 The native path runs on the required tiers (HubSpot 'Free' + ClickUp 'Core') at $120.00/mo for a 10-seat team, with no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — would cost $130.59/mo all-in, so on cost alone there is no reason to switch: middleware would only make sense if you already run other automations through it.
+
+Chart: HubSpot + ClickUp: monthly cost for 10 seats by route: Native connector $120.00; Make Core route $130.59; Zapier Professional route $149.99
+
+Monthly cost for 10 seats by route, HubSpot + ClickUp.
+
+ 
 
 Integration routes compared for a 10-seat team
 
@@ -94,7 +98,7 @@ Side-by-side spec matrix
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
 
-## Frequently asked questions
+## HubSpot + ClickUp integration: frequently asked questions
 
 ### What are the minimum plan tiers required for the HubSpot + ClickUp integration?
 
@@ -112,7 +116,7 @@ The HubSpot + ClickUp connection is native — no third-party middleware subscri
 
 It's automation-based rather than a continuous field-level sync. HubSpot's listing names ClickUp's Free Forever plan as compatible, but this calculator assumes Core (ClickUp's former Unlimited plan), which ClickUp's help center lists for the integration.
 
-## Related integrations
+## Integrations related to HubSpot + ClickUp
 
 [All HubSpot integrations →](https://stackcostmatrix.com/hubspot-integrations-cost/) · [All ClickUp integrations →](https://stackcostmatrix.com/clickup-integrations-cost/) · [HubSpot API access by plan →](https://stackcostmatrix.com/hubspot-api-access/) · [ClickUp API access by plan →](https://stackcostmatrix.com/clickup-api-access/)
 

@@ -1,4 +1,4 @@
-# Airtable Integration Costs (2026): Plans & Hidden Fees
+# Airtable Integration Costs (2026): Minimum Plans, API Access & Hidden Fees
 
 > Airtable integration costs in 2026: the minimum Airtable plan, native vs middleware and 10-seat totals for 4 connections, from $0 to $288.59/mo.
 
@@ -9,8 +9,6 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 Tool guide
 
-# Airtable Integration Costs (2026): Minimum Plans, API Access & Hidden Fees
-
 Built from the 4 pair calculators below · integration requirements checked Nov 3, 2026; 1 with a plan still unconfirmed (Mailchimp). · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
 
 This page collects the 4 Airtable integrations in the StackCostMatrix index: which Airtable plan each one needs, whether it's native or runs through middleware, and what the whole stack costs for a 10-person team. 1 of the 4 connects natively and 3 need a connector such as Make or Zapier. By minimum Airtable plan, the count is Team (3) and Free (1). Ten-seat totals run from $0.00/mo (Slack + Airtable) to $288.59/mo (Airtable + QuickBooks).
@@ -19,12 +17,18 @@ Airtable Integration Costs (2026): Minimum Plans, API Access & Hidden Fees
 
 | Integration | Type | Min. Airtable plan | Other tool's plan | 10-seat total | Checked | Details |
 | --- | --- | --- | --- | --- | --- | --- |
-| Slack + Airtable | Native | Free | Free | $0.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/slack-and-airtable/) |
-| Airtable + Stripe | Middleware Make Core $10.59/mo | Team | Standard | $250.59 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/airtable-and-stripe/) |
-| Mailchimp + Airtable | Middleware Make Core $10.59/mo | Team | Essentials | $263.59 | Nov 3, 2026 (Mailchimp plan unconfirmed) | [Calculator →](https://stackcostmatrix.com/stack/mailchimp-and-airtable/) |
-| Airtable + QuickBooks | Middleware Make Core $10.59/mo | Team | Simple Start | $288.59 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/airtable-and-quickbooks/) |
+| [Slack + Airtable](https://stackcostmatrix.com/stack/slack-and-airtable/) | Native | Free | Free | $0.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/slack-and-airtable/) |
+| [Airtable + Stripe](https://stackcostmatrix.com/stack/airtable-and-stripe/) | Middleware Make Core $10.59/mo | Team | Standard | $250.59 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/airtable-and-stripe/) |
+| [Mailchimp + Airtable](https://stackcostmatrix.com/stack/mailchimp-and-airtable/) | Middleware Make Core $10.59/mo | Team | Essentials | $263.59 | Nov 3, 2026 (Mailchimp plan unconfirmed) | [Calculator →](https://stackcostmatrix.com/stack/mailchimp-and-airtable/) |
+| [Airtable + QuickBooks](https://stackcostmatrix.com/stack/airtable-and-quickbooks/) | Middleware Make Core $10.59/mo | Team | Simple Start | $288.59 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/airtable-and-quickbooks/) |
 
 Totals are monthly-billing prices for 10 seats on the minimum plans, including any connector fee. Open a calculator to change team size, switch to annual billing or add usage costs.
+
+Chart: Airtable integrations: monthly cost for 10 seats on the plans each needs: Airtable + QuickBooks $288.59; Mailchimp + Airtable $263.59; Airtable + Stripe $250.59; Slack + Airtable $0.00
+
+Monthly cost for 10 seats, both tools plus any connector. Indigo bars are native integrations; teal bars need a connector.
+
+ 
 
 Image: [Airtable integration costs summary: 4 integrations priced, from $0 to $288.59 a month for 10 seats](https://stackcostmatrix.com/og/airtable-integrations-cost.jpg)
 
@@ -60,7 +64,7 @@ Full 20-tool source index: [About StackCostMatrix →](https://stackcostmatrix.c
 
 [ActiveCampaign](https://stackcostmatrix.com/activecampaign-integrations-cost/) · [Asana](https://stackcostmatrix.com/asana-integrations-cost/) · [Calendly](https://stackcostmatrix.com/calendly-integrations-cost/) · [ClickUp](https://stackcostmatrix.com/clickup-integrations-cost/) · [HubSpot](https://stackcostmatrix.com/hubspot-integrations-cost/) · [Intercom](https://stackcostmatrix.com/intercom-integrations-cost/) · [Mailchimp](https://stackcostmatrix.com/mailchimp-integrations-cost/) · [Monday.com](https://stackcostmatrix.com/monday-integrations-cost/) · [Notion](https://stackcostmatrix.com/notion-integrations-cost/) · [Pipedrive](https://stackcostmatrix.com/pipedrive-integrations-cost/) · [QuickBooks](https://stackcostmatrix.com/quickbooks-integrations-cost/) · [Salesforce](https://stackcostmatrix.com/salesforce-integrations-cost/) · [Slack](https://stackcostmatrix.com/slack-integrations-cost/) · [Stripe](https://stackcostmatrix.com/stripe-integrations-cost/) · [Xero](https://stackcostmatrix.com/xero-integrations-cost/) · [Zendesk](https://stackcostmatrix.com/zendesk-integrations-cost/)
 
-## Frequently asked questions
+## Airtable integration costs: frequently asked questions
 
 ### Which Airtable plan do I need for integrations?
 

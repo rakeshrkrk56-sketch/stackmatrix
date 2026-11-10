@@ -1,4 +1,4 @@
-# Which Plan Does Each SaaS Integration Need? (2026 Costs)
+# Which plan does each SaaS integration need — and what does it really cost?
 
 > See the plan each SaaS integration needs on both tools, any Make or Zapier fee and the 10-seat monthly cost, for 59 pairs checked against vendor docs.
 
@@ -8,8 +8,6 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 ---
 
 B2B software integration index
-
-# Which plan does each SaaS integration need — and what does it really cost?
 
 The sticker price is never the whole story. We track the minimum plan
 tiers, API and webhook gates, and middleware fees behind 59

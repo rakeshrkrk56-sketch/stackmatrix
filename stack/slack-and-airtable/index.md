@@ -1,4 +1,4 @@
-# Slack + Airtable Integration: Setup, Plans & Cost (2026)
+# Slack + Airtable Integration (2026): How It Works, Setup & True Cost
 
 > How the Slack + Airtable integration works, how to set it up, and the plans it needs: Slack Free + Airtable Free, $0/mo for 10 seats.
 
@@ -8,8 +8,6 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 ---
 
 [Home](https://stackcostmatrix.com/) / Slack + Airtable 
-
-# Slack + Airtable Integration (2026): How It Works, Setup & True Cost
 
 Airtable's Slack features work on all Airtable plan types, including Free, and on Slack's free plan. Requires Slack on the 'Free' plan and Airtable on the 'Free' plan.
 
@@ -39,6 +37,12 @@ Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capab
 ## Native vs middleware for Slack + Airtable
 
 The native path runs on the required tiers (Slack 'Free' + Airtable 'Free') at $0.00/mo for a 10-seat team, with no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — would cost $10.59/mo all-in, so on cost alone there is no reason to switch: middleware would only make sense if you already run other automations through it.
+
+Chart: Slack + Airtable: monthly cost for 10 seats by route: Native connector $0.00; Make Core route $10.59; Zapier Professional route $29.99
+
+Monthly cost for 10 seats by route, Slack + Airtable.
+
+ 
 
 Integration routes compared for a 10-seat team
 
@@ -94,7 +98,7 @@ Side-by-side spec matrix
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
 
-## Frequently asked questions
+## Slack + Airtable integration: frequently asked questions
 
 ### What are the minimum plan tiers required for the Slack + Airtable integration?
 
@@ -112,7 +116,7 @@ The Slack + Airtable connection is native — no third-party middleware subscrip
 
 It's one-way (Airtable → Slack) and only posts notifications. Your organization's admins can block the integration, and only the person who set up a rule can turn it off.
 
-## Related integrations
+## Integrations related to Slack + Airtable
 
 [All Slack integrations →](https://stackcostmatrix.com/slack-integrations-cost/) · [All Airtable integrations →](https://stackcostmatrix.com/airtable-integrations-cost/) · [Slack API access by plan →](https://stackcostmatrix.com/slack-api-access/) · [Airtable API access by plan →](https://stackcostmatrix.com/airtable-api-access/)
 

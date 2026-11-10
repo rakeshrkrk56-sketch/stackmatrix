@@ -1,4 +1,4 @@
-# ActiveCampaign + Pipedrive Integration Cost (2026)
+# ActiveCampaign + Pipedrive Integration Cost (2026): True Price, Minimum Plan & Hidden API Fees
 
 > ActiveCampaign + Pipedrive needs ActiveCampaign Starter and Pipedrive Growth: $405/mo for 10 seats, including a +$250/mo forced upgrade.
 
@@ -8,8 +8,6 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 ---
 
 [Home](https://stackcostmatrix.com/) / ActiveCampaign + Pipedrive 
-
-# ActiveCampaign + Pipedrive Integration Cost (2026): True Price, Minimum Plan & Hidden API Fees
 
 ActiveCampaign's native Pipedrive integration is included on every ActiveCampaign plan: it imports Pipedrive contacts and can push contacts to Pipedrive from an automation. Requires ActiveCampaign on the 'Starter' plan and Pipedrive on the 'Growth' plan.
 
@@ -39,6 +37,12 @@ Alternative: skip the native tier upgrade and run via Make/Zapier middleware for
 ## Native vs middleware for ActiveCampaign + Pipedrive
 
 The native path runs on the required tiers (ActiveCampaign 'Starter' + Pipedrive 'Growth') at $405.00/mo for a 10-seat team, with 2-way sync and no middleware fee. The middleware path — the cheapest API-capable tiers plus about $10.59/mo for Make Core — comes to $165.59/mo all-in, which is cheaper on paper because it skips the $250.00/mo forced tier upgrade. The trade-off: you replace the native connector with a third-party dependency, sync becomes 1-way (trigger → action) instead of 2-way, and Make Core's fee covers a fixed monthly allowance of credits — whether that covers your volume is not verified for this pair.
+
+Chart: ActiveCampaign + Pipedrive: monthly cost for 10 seats by route: Native connector $405.00; Make Core route $165.59; Zapier Professional route $184.99
+
+Monthly cost for 10 seats by route, ActiveCampaign + Pipedrive.
+
+ 
 
 Integration routes compared for a 10-seat team
 
@@ -98,7 +102,7 @@ Side-by-side spec matrix
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
 
-## Frequently asked questions
+## ActiveCampaign + Pipedrive integration: frequently asked questions
 
 ### What are the minimum plan tiers required for the ActiveCampaign + Pipedrive integration?
 
@@ -116,7 +120,7 @@ The ActiveCampaign + Pipedrive connection is native — no third-party middlewar
 
 Both first and last names are required, so contacts missing either won't sync. Only contacts who reach the Pipedrive action in an automation are pushed to Pipedrive. The Pipedrive plan shown is this calculator's assumption; ActiveCampaign doesn't state one.
 
-## Related integrations
+## Integrations related to ActiveCampaign + Pipedrive
 
 [All ActiveCampaign integrations →](https://stackcostmatrix.com/activecampaign-integrations-cost/) · [All Pipedrive integrations →](https://stackcostmatrix.com/pipedrive-integrations-cost/) · [ActiveCampaign API access by plan →](https://stackcostmatrix.com/activecampaign-api-access/) · [Pipedrive API access by plan →](https://stackcostmatrix.com/pipedrive-api-access/)
 

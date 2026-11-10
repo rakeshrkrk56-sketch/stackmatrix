@@ -83,7 +83,7 @@ def build(slug, tool, pairs, hubs, api_urls):
         a3 = ("In this index: " + "; ".join(f"{pl} for {len(need[pl])} integration{'s' if len(need[pl]) != 1 else ''}" for pl, _, _ in plans if pl in need) + "." if need
               else f"None of the integrations in this index requires a specific {short} plan.")
     faqs = [(q1, a1), (q2, a2), (q3, a3)] + list(T.get("faq_extra", []))
-    faq_html = (' <section class="mt-12" aria-label="Frequently asked questions"> <h2 class="text-xl font-bold">Frequently asked questions</h2> <div class="mt-4 space-y-6"> ' +
+    faq_html = (f' <section class="mt-12" aria-label="Frequently asked questions"> <h2 class="text-xl font-bold">{esc(short)} API access: frequently asked questions</h2> <div class="mt-4 space-y-6"> ' +
                 "".join(f'<div> <h3 class="font-semibold text-slate-900">{esc(q)}</h3> <p class="mt-1 leading-relaxed text-slate-700">{esc(a)}</p> </div>' for q, a in faqs) + ' </div> </section>')
     body = (f'<section class="mx-auto max-w-4xl"> <p class="text-sm font-semibold uppercase tracking-widest text-indigo-600">API &amp; webhooks</p> '
             f'<h1 class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">\n{esc(h1)}\n</h1> '
@@ -92,7 +92,7 @@ def build(slug, tool, pairs, hubs, api_urls):
     ld = [
         {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faqs]},
         {"@context": "https://schema.org", "@type": "TechArticle", "headline": title, "description": desc,
-         "author": {"@type": "Organization", "name": "StackCostMatrix", "url": f"{SITE}/", "email": "admin@stackcostmatrix.com"}, "datePublished": "2026-11-03", "dateModified": "2026-11-03",
+         "author": {"@type": "Organization", "name": "StackCostMatrix", "url": f"{SITE}/", "email": "admin@stackcostmatrix.com"}, "datePublished": "2026-11-03", "dateModified": T.get("modified", "2026-11-03"),
          "citation": [u for _, u, _ in T["sources"]], "mainEntityOfPage": url,
          "publisher": {"@type": "Organization", "name": "StackCostMatrix", "url": f"{SITE}/", "logo": f"{SITE}/icon-512.png"}, "image": f"{SITE}/icon-512.png", "inLanguage": "en"},
         {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [

@@ -1,4 +1,4 @@
-# Asana + Mailchimp Integration Cost (2026): Plans & Setup
+# Asana + Mailchimp Integration Cost (2026): True Price, Minimum Plan & Hidden API Fees
 
 > Asana + Mailchimp runs via middleware (+$29.99/mo) on Asana Starter and Mailchimp Essentials: $177.89/mo for 10 seats.
 
@@ -8,8 +8,6 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 ---
 
 [Home](https://stackcostmatrix.com/) / Asana + Mailchimp 
-
-# Asana + Mailchimp Integration Cost (2026): True Price, Minimum Plan & Hidden API Fees
 
 No native link - Zapier Professional ($29.99/mo, or $19.99/mo billed annually) bridges campaign events to tasks. Requires Asana on the 'Starter' plan and Mailchimp on the 'Essentials' plan for full 1-way (trigger → action) sync. Route it through Zapier Professional ($29.99/mo, or $19.99/mo billed annually).
 
@@ -38,6 +36,12 @@ Asana 'Starter' ($134.90/mo) + Mailchimp 'Essentials' ($13.00/mo)
 ## Native vs middleware for Asana + Mailchimp
 
 No native connector exists for this pair, so middleware is not an alternative — it is the integration. The modeled middleware cost is $29.99/mo on top of both tools, for $177.89/mo all-in at 10 seats on the modeled tiers (Asana 'Starter' + Mailchimp 'Essentials'). Sync is 1-way (trigger → action). The middleware figure is the modeled cost for this pair; your actual middleware bill scales with task and operation volume, which is not verified here — check your expected volume against the middleware plan before budgeting.
+
+Chart: Asana + Mailchimp: monthly cost for 10 seats by route: Zapier Professional (modeled here) $177.89; Make Core instead $158.49
+
+Monthly cost for 10 seats by route, Asana + Mailchimp.
+
+ 
 
 Integration routes compared for a 10-seat team
 
@@ -96,7 +100,7 @@ Side-by-side spec matrix
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
 
-## Frequently asked questions
+## Asana + Mailchimp integration: frequently asked questions
 
 ### What are the minimum plan tiers required for the Asana + Mailchimp integration?
 
@@ -114,7 +118,7 @@ The Asana + Mailchimp connection runs through middleware: neither vendor offers 
 
 Each run is one-way, from the trigger app to the action app, and every run counts toward your Zapier task allowance.
 
-## Related integrations
+## Integrations related to Asana + Mailchimp
 
 [All Asana integrations →](https://stackcostmatrix.com/asana-integrations-cost/) · [All Mailchimp integrations →](https://stackcostmatrix.com/mailchimp-integrations-cost/) · [Asana API access by plan →](https://stackcostmatrix.com/asana-api-access/) · [Mailchimp API access by plan →](https://stackcostmatrix.com/mailchimp-api-access/)
 
