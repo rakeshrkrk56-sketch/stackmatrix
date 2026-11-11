@@ -25,7 +25,7 @@ Diagram: how Mailchimp and Airtable connect, through Make Core, shown with the e
 
 ### How do you set up Mailchimp + Airtable?
 
-1. Log in to Make, create a scenario and add the Airtable module Watch Records as the trigger.
+1. Log in to Make, create a scenario and add the Airtable module Watch Records as the trigger. Choose the base and the table to watch, then the trigger field: Created Time for new records, Last Modified Time to include edits. The table needs one of those two fields.
 2. Connect Airtable: click Add next to Connection type and choose Airtable OAuth, click Save, then click Add a base, pick the base and click Grant access.
 3. Add the Mailchimp module Add/Update a Subscriber. Connect Mailchimp: click Create a connection, click Save and sign in to Mailchimp if prompted.
 4. Fill in the subscriber's email address and other fields with values from the Airtable record.

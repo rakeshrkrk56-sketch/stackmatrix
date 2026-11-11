@@ -29,7 +29,7 @@ Diagram: how Pipedrive and Calendly connect, through Make Core, shown with the e
 
 ### How do you set up Pipedrive + Calendly?
 
-1. Log in to Make, create a scenario and add the Calendly module Watch events as the trigger.
+1. Log in to Make, create a scenario and add the Calendly module Watch events as the trigger. It triggers when a Calendly event is created or canceled, and Make says it needs a paid Calendly subscription because webhooks aren't part of Calendly's free plans.
 2. Connect Calendly: click Create a connection, click Save and sign in to Calendly if prompted. If the module has an instant tag, click Create a webhook first.
 3. Add the Pipedrive CRM module Create a Person or Create an Activity. Connect Pipedrive: click Create a connection, click Save and sign in to Pipedrive if prompted.
 4. Fill in the person's or activity's fields with values from the Calendly event.

@@ -27,7 +27,7 @@ Diagram: how Pipedrive and Xero connect, through Make Core, shown with the examp
 
 1. Log in to Make, create a scenario and add the Pipedrive CRM module Watch Deals as the trigger.
 2. Connect Pipedrive: click Create a connection, click Save and sign in to Pipedrive if prompted.
-3. Add the Xero module Create an Invoice. Connect Xero: click Create a connection, click Save and sign in to Xero if prompted.
+3. Add the Xero module Create an Invoice. Connect Xero: click Create a connection, click Save and sign in to Xero if prompted. Create an Invoice needs the accounting.transactions, accounting.contacts and accounting.settings permissions. You can choose the connection's scopes under Show advanced settings.
 4. Fill in the invoice's fields with values from the deal.
 5. Click Run once in the toolbar to test it, then activate the scenario with the ON/OFF button on its details page. It runs every 15 minutes by default; click Every 15 minutes on the toolbar to change that.
 

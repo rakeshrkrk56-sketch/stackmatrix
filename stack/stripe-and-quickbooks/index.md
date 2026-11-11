@@ -27,8 +27,8 @@ Diagram: how Stripe and QuickBooks Online connect, through Make Core, shown with
 
 1. Log in to Make, create a scenario and add the Stripe module Watch Events as the trigger.
 2. Connect Stripe: click Create a connection, choose Stripe API Key or Stripe OAuth as the connection type, click Save and confirm access if prompted. If the module has an instant tag, click Create a webhook first.
-3. Add a QuickBooks module such as Create a Sales Receipt or Create a Payment. Connect QuickBooks: click Create a connection, click Save and sign in to QuickBooks if prompted.
-4. Fill in its fields with values from the Stripe event.
+3. Add a QuickBooks module: Create a Sales Receipt creates a sales receipt, Create a Payment creates a payment. Connect QuickBooks: click Create a connection, click Save and sign in to QuickBooks if prompted.
+4. Fill in the module you chose with values from the Stripe event.
 5. Click Run once in the toolbar to test it, then activate the scenario with the ON/OFF button on its details page. It runs every 15 minutes by default; click Every 15 minutes on the toolbar to change that.
 
 Steps follow [Make's setup guide ↗](https://apps.make.com/stripe), read Nov 11, 2026.

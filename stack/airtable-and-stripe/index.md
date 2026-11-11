@@ -28,7 +28,7 @@ Diagram: how Airtable and Stripe connect, through Make Core, shown with the exam
 1. Log in to Make, create a scenario and add the Stripe module Watch Events as the trigger.
 2. Connect Stripe: click Create a connection, choose Stripe API Key or Stripe OAuth as the connection type, click Save and confirm access if prompted. If the module has an instant tag, click Create a webhook first.
 3. Add the Airtable module Create a Record. Connect Airtable: click Add next to Connection type and choose Airtable OAuth, click Save, then click Add a base, pick the base and click Grant access.
-4. Fill in the record's fields with values from the Stripe event.
+4. In Create a Record, select the base and the table, then enter the values from the Stripe event into the record's fields.
 5. Click Run once in the toolbar to test it, then activate the scenario with the ON/OFF button on its details page. It runs every 15 minutes by default; click Every 15 minutes on the toolbar to change that.
 
 Steps follow [Make's setup guide ↗](https://apps.make.com/stripe), read Nov 11, 2026.

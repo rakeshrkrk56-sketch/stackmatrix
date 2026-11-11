@@ -25,11 +25,12 @@ Diagram: how Xero and ActiveCampaign connect, through Make Core, shown with the 
 
 ### How do you set up Xero + ActiveCampaign?
 
-1. Log in to Make, create a scenario and add the Xero module Watch Contacts or Watch Invoices as the trigger.
-2. Connect Xero: click Create a connection, click Save and sign in to Xero if prompted. If the module has an instant tag, click Create a webhook first.
-3. Add an ActiveCampaign module that creates or updates a contact. Connect ActiveCampaign: click Create a connection and enter your API key, account name and domain. The API URL and key are in ActiveCampaign under Settings > Developer.
-4. Fill in the contact's fields with values from Xero.
-5. Click Run once in the toolbar to test it, then activate the scenario with the ON/OFF button on its details page. It runs every 15 minutes by default; click Every 15 minutes on the toolbar to change that.
+1. In ActiveCampaign, go to Settings > Developer and copy the API URL and the API key shown under API Access.
+2. Log in to Make, create a scenario and add the Xero module Watch Contacts or Watch Invoices as the trigger. Watch Contacts needs the accounting.contacts and accounting.settings permissions. You can choose the connection's scopes under Show advanced settings.
+3. Connect Xero: click Create a connection, click Save and sign in to Xero if prompted. If the module has an instant tag, click Create a webhook first.
+4. Add an ActiveCampaign module that creates or updates a contact. Connect ActiveCampaign: click Create a connection and enter the API key, then the account name and domain from the API URL.
+5. Fill in the contact's fields with values from Xero.
+6. Click Run once in the toolbar to test it, then activate the scenario with the ON/OFF button on its details page. It runs every 15 minutes by default; click Every 15 minutes on the toolbar to change that.
 
 Steps follow [Make's setup guide ↗](https://apps.make.com/xero), read Nov 11, 2026.
 
