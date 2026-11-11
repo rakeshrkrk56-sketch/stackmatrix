@@ -9,7 +9,7 @@ from hubs import render, read, esc, attr, SHORT, SITE, P, H2, TH, TD, LINK, load
 RECHECK = set()  # Pipedrive Growth confirmed: "The Automations feature is only available on Advanced and higher plans"
 SLUG = "integration-tax-2026"
 URL = f"{SITE}/{SLUG}/"
-BLUE, ORANGE, TRACK = "#2a78d6", "#eb6834", "#e1e0d9"
+BLUE, ORANGE, TRACK = "#16223f", "#0e7490", "#e6eaf1"   # forced upgrade (ink), connector fee (teal), bar track
 INK2, MUTED = "#52514e", "#898781"
 def m0(x): return money(x).replace(".00", "")
 def name(slug, D): return SHORT.get(slug, D["tools"][slug]["name"])
@@ -191,7 +191,7 @@ def build():
              'var x=e&&e.clientX?e.clientX+12:r.left;var y=e&&e.clientY?e.clientY+14:r.bottom+6;x=Math.min(x,window.innerWidth-t.offsetWidth-8);t.style.left=x+"px";t.style.top=y+"px";}'
              'function hide(){t.style.display="none";}document.querySelectorAll("[data-tip]").forEach(function(el){el.addEventListener("mousemove",function(e){show(e,el)});'
              'el.addEventListener("mouseleave",hide);el.addEventListener("focus",function(){show(null,el)});el.addEventListener("blur",hide);});})();</script>')
-    body = (f'<section class="mx-auto max-w-4xl"> <p class="text-sm font-semibold uppercase tracking-widest text-indigo-600">Research · November 2026</p> '
+    body = (f'<section class="mx-auto max-w-4xl"> '
             f'<h1 class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">\nThe Integration Tax 2026: What Connecting SaaS Tools Really Costs\n</h1> '
             f'<p class="mt-3 text-sm text-slate-500">StackCostMatrix · Published Nov 3, 2026 · Data checked against vendor docs Nov 3 to Nov 8, 2026 · Updated Nov 10, 2026: HubSpot Professional repriced per seat (Nov 5); ActiveCampaign + Stripe, Mailchimp + Calendly and Pipedrive + Xero corrected (Nov 8); &ldquo;Three kinds of integration cost&rdquo; added (Nov 10). See the About page changelog · Edited by <a href="/about/#editor" class="font-medium text-indigo-600 hover:underline">Rakesh Kumar</a></p> '
             f'{P}{lead}</p> {tiles} {figure} {findings} {share_chart} {kinds} {chart1} {chart2} {table} {meth} {cite}{faq_html} </section> {tipjs} ')

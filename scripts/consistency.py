@@ -63,7 +63,7 @@ for p, s in allpages.items():
     avail = re.search(r"<li><strong>Native app availability:</strong>(.*?)</li>", s).group(1)
     if native != ("Native app available" in avail): add(p, "High", "verified facts", f"availability '{avail.strip()}' vs {typ}")
     # homepage card
-    i = home.find(f'href="/stack/{p}/"'); card = home[i:home.find("</a>", i)]
+    i = home.find(f'href="/stack/{p}/" data-search='); card = home[i:home.find("</a>", i)]   # the card, not the chart cell
     hb = re.search(r'<span class="shrink-0 rounded-full[^>]*>\s*(\w+)', card).group(1)
     if hb != typ: add(p, "High", "homepage card", f"homepage badge '{hb}' vs {typ}")
     ds = re.search(r'data-search="[^"]* (native|middleware)"', card).group(1)

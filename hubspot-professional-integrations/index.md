@@ -7,8 +7,6 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 ---
 
-HubSpot plans
-
 Checked against HubSpot's pricing pages and knowledge base · Nov 5, 2026 · Salesforce requirements added Nov 10, 2026 · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
 
 **Short answer:** Only 2 of the 13 HubSpot integrations we track need Professional: HubSpot + Salesforce and HubSpot + Asana. Any Professional subscription HubSpot lists for them works, and the cheapest is Smart CRM Professional at $50 per seat a month ($45 on an annual commitment), about $500 a month for 10 people. The other 11 work on HubSpot's free CRM.

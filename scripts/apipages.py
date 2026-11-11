@@ -97,7 +97,7 @@ def build(slug, tool, pairs, hubs, api_urls):
     faqs = [(q1, a1), (q2, a2), (q3, a3)] + list(T.get("faq_extra", []))
     faq_html = (f' <section class="mt-12" aria-label="Frequently asked questions"> <h2 class="text-xl font-bold">{esc(short)} API access: frequently asked questions</h2> <div class="mt-4 space-y-6"> ' +
                 "".join(f'<div> <h3 class="font-semibold text-slate-900">{esc(q)}</h3> <p class="mt-1 leading-relaxed text-slate-700">{esc(a)}</p> </div>' for q, a in faqs) + ' </div> </section>')
-    body = (f'<section class="mx-auto max-w-4xl"> <p class="text-sm font-semibold uppercase tracking-widest text-indigo-600">API &amp; webhooks</p> '
+    body = (f'<section class="mx-auto max-w-4xl"> '
             f'<h1 class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">\n{esc(h1)}\n</h1> '
             f'<p class="mt-3 text-sm text-slate-500">Checked against {esc(short)}&#39;s developer and help-center documentation · {T.get('checked', CHECKED)} · Edited by <a href="/about/#editor" class="font-medium text-indigo-600 hover:underline">Rakesh Kumar</a></p> '
             f'{h2q("API access by plan")}Which {esc(short)} plans include API access and webhooks?</h2> {P}<strong>Short answer:</strong> {esc(T["answer"])}</p> {table} {note} {chart} {fig} {extra} {kinds} {integ} {sources} {navh}{faq_html} </section> ')

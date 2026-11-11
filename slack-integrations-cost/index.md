@@ -7,8 +7,6 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 ---
 
-Tool guide
-
 Built from the 14 pair calculators below · integration requirements checked Nov 3, 2026; 2 with a plan still unconfirmed (Asana and Salesforce Sales Cloud). · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
 
 This page collects the 14 Slack integrations in the StackCostMatrix index: which Slack plan each one needs, whether it's native or runs through middleware, and what the whole stack costs for a 10-person team. 13 of the 14 connect natively and 1 needs a connector such as Make or Zapier. By minimum Slack plan, the count is Free (13) and Pro (1). Ten-seat totals run from $0.00/mo (Slack + Airtable) to $1,737.50/mo (Salesforce + Slack).
@@ -36,7 +34,7 @@ Totals are monthly-billing prices for 10 seats on the minimum plans, including a
 
 Chart: Slack integrations: monthly cost for 10 seats on the plans each needs: Salesforce + Slack $1,737.50; Slack + Zendesk $690.00; Slack + Intercom $390.00; Pipedrive + Slack $390.00; Freshdesk + Slack $230.00; Monday.com + Slack $140.00; Asana + Slack $134.90; Slack + Notion $120.00; QuickBooks + Slack $67.99; Slack + Airtable $0.00; Slack + Calendly $0.00; ClickUp + Slack $0.00; HubSpot + Slack $0.00; Stripe + Slack $0.00
 
-Monthly cost for 10 seats, both tools plus any connector. Indigo bars are native integrations; teal bars need a connector.
+Monthly cost for 10 seats, both tools plus any connector. Navy bars are native integrations; teal bars need a connector.
 
  
 

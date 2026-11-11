@@ -7,8 +7,6 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 ---
 
-Tool guide
-
 Built from the 4 pair calculators below · integration requirements checked Nov 3, 2026; 1 with a plan still unconfirmed (HubSpot). · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
 
 This page collects the 4 ClickUp integrations in the StackCostMatrix index: which ClickUp plan each one needs, whether it's native or runs through middleware, and what the whole stack costs for a 10-person team. 3 of the 4 connect natively and 1 needs a connector such as Make or Zapier. By minimum ClickUp plan, the count is Free (3) and Core (1). Ten-seat totals run from $0.00/mo (ClickUp + Slack) to $690.00/mo (ClickUp + Zendesk).
@@ -26,7 +24,7 @@ Totals are monthly-billing prices for 10 seats on the minimum plans, including a
 
 Chart: ClickUp integrations: monthly cost for 10 seats on the plans each needs: ClickUp + Zendesk $690.00; HubSpot + ClickUp $120.00; ClickUp + Stripe $10.59; ClickUp + Slack $0.00
 
-Monthly cost for 10 seats, both tools plus any connector. Indigo bars are native integrations; teal bars need a connector.
+Monthly cost for 10 seats, both tools plus any connector. Navy bars are native integrations; teal bars need a connector.
 
  
 

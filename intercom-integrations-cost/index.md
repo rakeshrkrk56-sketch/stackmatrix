@@ -7,8 +7,6 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 ---
 
-Tool guide
-
 Built from the 3 pair calculators below · integration requirements checked Nov 3, 2026. · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
 
 This page collects the 3 Intercom integrations in the StackCostMatrix index: which Intercom plan each one needs, whether it's native or runs through middleware, and what the whole stack costs for a 10-person team. 3 of the 3 connect natively and 0 need a connector such as Make or Zapier. By minimum Intercom plan, the count is Essential (3). Ten-seat totals run from $390.00/mo (Intercom + HubSpot) to $390.00/mo (Intercom + Stripe).
@@ -25,7 +23,7 @@ Totals are monthly-billing prices for 10 seats on the minimum plans, including a
 
 Chart: Intercom integrations: monthly cost for 10 seats on the plans each needs: Intercom + HubSpot $390.00; Slack + Intercom $390.00; Intercom + Stripe $390.00
 
-Monthly cost for 10 seats, both tools plus any connector. Indigo bars are native integrations; teal bars need a connector.
+Monthly cost for 10 seats, both tools plus any connector. Navy bars are native integrations; teal bars need a connector.
 
  
 
