@@ -11,7 +11,7 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 Notion can embed Calendly booking pages, but there's no native sync; logging bookings in Notion needs Make or Zapier, and Calendly webhooks need its Standard plan. Requires Notion on the 'Plus' plan and Calendly on the 'Standard' plan. Route it through Make Core ($10.59/mo, or $9/mo billed annually).
 
-Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks) | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
+Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks) · Setup steps: Nov 11, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
 
 ## How the Notion + Calendly integration works
 
@@ -23,11 +23,21 @@ Diagram: how Notion and Calendly connect, through Make Core, shown with the exam
 
  
 
+### How do you set up Notion + Calendly?
+
+1. Log in to Make, create a scenario and add the Calendly module Watch events as the trigger.
+2. Connect Calendly: click Create a connection, click Save and sign in to Calendly if prompted. If the module has an instant tag, click Create a webhook first.
+3. Add a Notion module that creates a database item. Connect Notion: click Create a connection, choose Notion Internal as the connection type, paste the internal integration token from your Notion account and click Save. In Notion, add the databases Make should see to that integration.
+4. Fill in the database item's properties with values from the Calendly event.
+5. Click Run once in the toolbar to test it, then activate the scenario with the ON/OFF button on its details page. It runs every 15 minutes by default; click Every 15 minutes on the toolbar to change that.
+
+Steps follow [Make's setup guide ↗](https://apps.make.com/calendly), read Nov 11, 2026.
+
 **Limitations:** Embedding doesn't sync bookings. Logging meetings in a Notion database needs Make or Zapier, and Calendly's webhooks need a paid Calendly plan from Standard up.
 
-[Setup guide: Notion: Calendly integration ↗](https://www.notion.com/integrations/calendly)
+[Setup guide: Make: Calendly app ↗](https://apps.make.com/calendly)
 
-Sources (checked Nov 3, 2026): [Notion: Calendly integration ↗](https://www.notion.com/integrations/calendly) · [Calendly: API overview ↗](https://calendly.com/help/calendly-api-overview)
+Sources (checked Nov 3, 2026; Make's guides for the steps read on Nov 11, 2026): [Notion: Calendly integration ↗](https://www.notion.com/integrations/calendly) · [Calendly: API overview ↗](https://calendly.com/help/calendly-api-overview) · [Make: Calendly app ↗](https://apps.make.com/calendly) · [Make: Notion app ↗](https://apps.make.com/notion) · [Make Help: Active and inactive scenarios ↗](https://help.make.com/active-and-inactive-scenarios) · [Make Help: Schedule a scenario ↗](https://help.make.com/schedule-a-scenario)
 
 *Interactive cost calculator: open the web page to change team size, billing and add-ons.*
 

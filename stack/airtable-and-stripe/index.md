@@ -11,7 +11,7 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 Airtable's Stripe integration runs through an iPaaS tool such as Make, not natively. Airtable's Free plan allows only 1,000 API calls a month, too few for an ongoing sync, so this models Airtable Team. Requires Airtable on the 'Team' plan and Stripe on the 'Standard' plan. Route it through Make Core ($10.59/mo, or $9/mo billed annually).
 
-Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks) | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
+Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks) · Setup steps: Nov 11, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
 
 ## How the Airtable + Stripe integration works
 
@@ -23,11 +23,21 @@ Diagram: how Airtable and Stripe connect, through Make Core, shown with the exam
 
  
 
+### How do you set up Airtable + Stripe?
+
+1. Log in to Make, create a scenario and add the Stripe module Watch Events as the trigger.
+2. Connect Stripe: click Create a connection, choose Stripe API Key or Stripe OAuth as the connection type, click Save and confirm access if prompted. If the module has an instant tag, click Create a webhook first.
+3. Add the Airtable module Create a Record. Connect Airtable: click Add next to Connection type and choose Airtable OAuth, click Save, then click Add a base, pick the base and click Grant access.
+4. Fill in the record's fields with values from the Stripe event.
+5. Click Run once in the toolbar to test it, then activate the scenario with the ON/OFF button on its details page. It runs every 15 minutes by default; click Every 15 minutes on the toolbar to change that.
+
+Steps follow [Make's setup guide ↗](https://apps.make.com/stripe), read Nov 11, 2026.
+
 **Limitations:** Each Make or Zapier scenario runs one way. Every Make run that reads or writes Airtable uses API calls. Airtable's Free plan allows 1,000 a month and Team 100,000; a scenario that checks Airtable every 15 minutes uses about 2,880 a month, so this calculator models Team ($24/seat billed monthly, $20 billed annually). Free works only for very low-volume syncs.
 
-[Setup guide: Airtable: Managing API call limits ↗](https://support.airtable.com/articles/7735693959-managing-api-call-limits-in-airtable)
+[Setup guide: Make: Stripe app ↗](https://apps.make.com/stripe)
 
-Sources (checked Nov 3, 2026): [Airtable: Managing API call limits ↗](https://support.airtable.com/articles/7735693959-managing-api-call-limits-in-airtable) · [Airtable: Create a webhook ↗](https://airtable.com/developers/web/api/create-a-webhook)
+Sources (checked Nov 3, 2026; Make's guides for the steps read on Nov 11, 2026): [Airtable: Managing API call limits ↗](https://support.airtable.com/articles/7735693959-managing-api-call-limits-in-airtable) · [Airtable: Create a webhook ↗](https://airtable.com/developers/web/api/create-a-webhook) · [Make: Stripe app ↗](https://apps.make.com/stripe) · [Make: Airtable app ↗](https://apps.make.com/airtable) · [Make Help: Active and inactive scenarios ↗](https://help.make.com/active-and-inactive-scenarios) · [Make Help: Schedule a scenario ↗](https://help.make.com/schedule-a-scenario)
 
 *Interactive cost calculator: open the web page to change team size, billing and add-ons.*
 

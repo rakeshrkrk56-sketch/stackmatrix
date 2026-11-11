@@ -11,7 +11,7 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 Mailchimp's Stripe connection runs through Data Mapper for Mailchimp, a third-party app whose Starter plan costs $15/mo billed monthly and works with any Mailchimp plan, including Free. Starter syncs customers only; purchase-data sync needs Data Mapper Pro ($30/mo). Requires Stripe on the 'Standard' plan and Mailchimp on the 'Free' plan. Route it through Data Mapper for Mailchimp ($15/mo).
 
-Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
+Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 · Setup steps: Nov 11, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
 
 ## How the Stripe + Mailchimp integration works
 
@@ -23,11 +23,22 @@ Diagram: how Stripe and Mailchimp connect, through Data Mapper for Mailchimp. Dr
 
  
 
+### How do you set up Stripe + Mailchimp?
+
+1. On the Stripe integration page in your Mailchimp account, click Connect. It's a paid integration: if you don't have a Data Mapper for Mailchimp account, you create one during the connection.
+2. On the Data Mapper for Mailchimp page in the Stripe App Marketplace, click Install app, confirm in the pop-up window and click Continue.
+3. Click Sign in to Mailchimp, log in, review the connection details and click Allow. If you're new to Data Mapper, choose a plan and pay for it at this point.
+4. Select the Mailchimp audience to sync with and the marketing permission to apply (Double opt-in, Transactional or Subscribed), then click Next.
+5. To sync product and purchase data too, enter a nickname for your store and click Next; to sync customers only, click Skip.
+6. Select the customer fields to sync (the email address is required), click Next, review the options and click Sync.
+
+Steps follow [Mailchimp's setup guide ↗](https://mailchimp.com/help/connect-disconnect-mailchimp-stripe/), read Nov 11, 2026.
+
 **Limitations:** Mailchimp calls it a paid integration: Data Mapper for Mailchimp costs $15/month billed monthly ($12.75/month billed annually) after a 30-day free trial, on top of your Mailchimp plan. The calculator includes it as the $15/month connector fee. Mailchimp lists any Mailchimp Marketing Platform plan as compatible. Data Mapper says its plans are tiered by the number of customer syncs but doesn't publish the limits, and Pro adds unlimited customer syncing. Purchase sync also needs a Mailchimp store and products created in Stripe.
 
 [Setup guide: Mailchimp: Connect Mailchimp for Stripe ↗](https://mailchimp.com/help/connect-disconnect-mailchimp-stripe/)
 
-Sources (checked Nov 3, 2026): [Mailchimp: Connect Mailchimp for Stripe ↗](https://mailchimp.com/help/connect-disconnect-mailchimp-stripe/) · [Mailchimp: Stripe integration ↗](https://mailchimp.com/integrations/stripe/) · [Data Mapper for Mailchimp: Pricing ↗](https://data-mapper-for-mailchimp.thisdot.co/pricing) · [Data Mapper: Sync your customer purchases ↗](https://thisdot.gitbook.io/data-mapper-for-mailchimp/e-commerce/sync-your-customer-purchases) · [Data Mapper: Choosing a plan ↗](https://thisdot.gitbook.io/data-mapper-for-mailchimp/getting-started/choosing-a-plan)
+Sources (checked Nov 3, 2026; setup guide read again for the steps on Nov 11, 2026): [Mailchimp: Connect Mailchimp for Stripe ↗](https://mailchimp.com/help/connect-disconnect-mailchimp-stripe/) · [Mailchimp: Stripe integration ↗](https://mailchimp.com/integrations/stripe/) · [Data Mapper for Mailchimp: Pricing ↗](https://data-mapper-for-mailchimp.thisdot.co/pricing) · [Data Mapper: Sync your customer purchases ↗](https://thisdot.gitbook.io/data-mapper-for-mailchimp/e-commerce/sync-your-customer-purchases) · [Data Mapper: Choosing a plan ↗](https://thisdot.gitbook.io/data-mapper-for-mailchimp/getting-started/choosing-a-plan)
 
 *Interactive cost calculator: open the web page to change team size, billing and add-ons.*
 

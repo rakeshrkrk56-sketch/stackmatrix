@@ -11,7 +11,7 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 No official QuickBooks Online app for Slack, so alerts run through Zapier Professional ($29.99/mo, or $19.99/mo billed annually), which needs a paid QuickBooks Online plan but no particular one; Slack's free plan is enough. Requires QuickBooks Online on the 'Simple Start' plan and Slack on the 'Free' plan. Route it through Zapier Professional ($29.99/mo, or $19.99/mo billed annually).
 
-Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (QuickBooks prices: Nov 4, 2026; Zapier Professional fee: Nov 3, 2026) | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
+Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (QuickBooks prices: Nov 4, 2026; Zapier Professional fee: Nov 3, 2026) · Setup steps: Nov 11, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
 
 ## How the QuickBooks Online + Slack integration works
 
@@ -23,11 +23,21 @@ Diagram: how QuickBooks Online and Slack connect, through Zapier Professional, s
 
  
 
+### How do you set up QuickBooks Online + Slack?
+
+1. In Zapier, click + Create in the left sidebar and select Zap workflows to open the Zap editor.
+2. Select the Trigger step, search for QuickBooks Online and choose the trigger event, for example New Customer. In the Account field, pick your QuickBooks Online account or click Connect a new account.
+3. Click the Test tab, click Test trigger and continue with one of the test records.
+4. Add the action: choose Slack, pick the event that posts a message to a channel, connect the account and map fields from the trigger into it.
+5. Test the action, then publish the Zap to turn it on. It only processes data created after it's published.
+
+Steps follow [Zapier's setup guide ↗](https://help.zapier.com/hc/en-us/articles/8496288188429), read Nov 11, 2026.
+
 **Limitations:** Zapier needs a paid QuickBooks Online subscription, admin permissions in QuickBooks and a paid Zapier plan, because QuickBooks Online is a premium app on Zapier. No specific QuickBooks plan is required, so this calculator models Simple Start. QuickBooks limits its API to 500 requests per minute per company.
 
 [Setup guide: Zapier: Get started with QuickBooks Online ↗](https://help.zapier.com/hc/en-us/articles/8495935103885)
 
-Sources (checked Nov 3, 2026): [Zapier: Get started with QuickBooks Online ↗](https://help.zapier.com/hc/en-us/articles/8495935103885)
+Sources (checked Nov 3, 2026; Zapier's guides for the steps read on Nov 11, 2026): [Zapier: Get started with QuickBooks Online ↗](https://help.zapier.com/hc/en-us/articles/8495935103885) · [Zapier Help: Set up your Zap trigger ↗](https://help.zapier.com/hc/en-us/articles/8496288188429) · [Zapier Help: What is a Zap? ↗](https://help.zapier.com/hc/en-us/articles/8496309697421-Create-Zaps)
 
 *Interactive cost calculator: open the web page to change team size, billing and add-ons.*
 

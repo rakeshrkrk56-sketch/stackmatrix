@@ -11,7 +11,7 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 There's no native Airtable–Mailchimp sync; Make Core or a third-party sync app connects them. Airtable's Free plan allows only 1,000 API calls a month, too few for an ongoing sync, so this models Airtable Team. Requires Mailchimp on the 'Essentials' plan and Airtable on the 'Team' plan. Route it through Make Core ($10.59/mo, or $9/mo billed annually).
 
-Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements checked · Nov 3, 2026 (Mailchimp plan unconfirmed) · Prices checked · Nov 3, 2026 (Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks) | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
+Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements checked · Nov 3, 2026 (Mailchimp plan unconfirmed) · Prices checked · Nov 3, 2026 (Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks) · Setup steps: Nov 11, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
 
 ## How the Mailchimp + Airtable integration works
 
@@ -23,11 +23,21 @@ Diagram: how Mailchimp and Airtable connect, through Make Core, shown with the e
 
  
 
+### How do you set up Mailchimp + Airtable?
+
+1. Log in to Make, create a scenario and add the Airtable module Watch Records as the trigger.
+2. Connect Airtable: click Add next to Connection type and choose Airtable OAuth, click Save, then click Add a base, pick the base and click Grant access.
+3. Add the Mailchimp module Add/Update a Subscriber. Connect Mailchimp: click Create a connection, click Save and sign in to Mailchimp if prompted.
+4. Fill in the subscriber's email address and other fields with values from the Airtable record.
+5. Click Run once in the toolbar to test it, then activate the scenario with the ON/OFF button on its details page. It runs every 15 minutes by default; click Every 15 minutes on the toolbar to change that.
+
+Steps follow [Make's setup guide ↗](https://apps.make.com/airtable), read Nov 11, 2026.
+
 **Limitations:** Each Make or Zapier scenario runs one way, so two-way sync needs a second automation or a dedicated sync app, which is a separate paid product. Airtable's webhooks are available on all plans, but every Make run that reads or writes Airtable uses API calls. Airtable's Free plan allows 1,000 a month and Team 100,000; a scenario that checks Airtable every 15 minutes uses about 2,880 a month, so this calculator models Team ($24/seat billed monthly, $20 billed annually). Free works only for very low-volume syncs. It also assumes Mailchimp's Essentials plan, whose $13/month starting price covers up to 500 contacts and rises with your contact count.
 
-[Setup guide: Mailchimp: Syncgrip integration ↗](https://mailchimp.com/integrations/syncgrip/)
+[Setup guide: Make: Airtable app ↗](https://apps.make.com/airtable)
 
-Sources (checked Nov 3, 2026): [Mailchimp: Syncgrip integration ↗](https://mailchimp.com/integrations/syncgrip/) · [Mailchimp: Unito integration ↗](https://mailchimp.com/integrations/unito/) · [Airtable: Create a webhook ↗](https://airtable.com/developers/web/api/create-a-webhook) · [Airtable: Managing API call limits ↗](https://support.airtable.com/articles/7735693959-managing-api-call-limits-in-airtable) · [Mailchimp: About pricing plans ↗](https://mailchimp.com/help/about-mailchimp-pricing-plans/)
+Sources (checked Nov 3, 2026; Make's guides for the steps read on Nov 11, 2026): [Mailchimp: Syncgrip integration ↗](https://mailchimp.com/integrations/syncgrip/) · [Mailchimp: Unito integration ↗](https://mailchimp.com/integrations/unito/) · [Airtable: Create a webhook ↗](https://airtable.com/developers/web/api/create-a-webhook) · [Airtable: Managing API call limits ↗](https://support.airtable.com/articles/7735693959-managing-api-call-limits-in-airtable) · [Mailchimp: About pricing plans ↗](https://mailchimp.com/help/about-mailchimp-pricing-plans/) · [Make: Airtable app ↗](https://apps.make.com/airtable) · [Make: Mailchimp app ↗](https://apps.make.com/mailchimp) · [Make Help: Active and inactive scenarios ↗](https://help.make.com/active-and-inactive-scenarios) · [Make Help: Schedule a scenario ↗](https://help.make.com/schedule-a-scenario)
 
 *Interactive cost calculator: open the web page to change team size, billing and add-ons.*
 

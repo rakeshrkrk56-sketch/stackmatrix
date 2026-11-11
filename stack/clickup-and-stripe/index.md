@@ -11,7 +11,7 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 No native ClickUp–Stripe link, but ClickUp's API is available on every plan, so Make Core can log Stripe events in ClickUp from the Free Forever plan. Requires ClickUp on the 'Free' plan and Stripe on the 'Standard' plan. Route it through Make Core ($10.59/mo, or $9/mo billed annually).
 
-Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks) | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
+Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks) · Setup steps: Nov 11, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
 
 ## How the ClickUp + Stripe integration works
 
@@ -23,11 +23,21 @@ Diagram: how ClickUp and Stripe connect, through Make Core, shown with the examp
 
  
 
+### How do you set up ClickUp + Stripe?
+
+1. Log in to Make, create a scenario and add the Stripe module Watch Events as the trigger.
+2. Connect Stripe: click Create a connection, choose Stripe API Key or Stripe OAuth as the connection type, click Save and confirm access if prompted. If the module has an instant tag, click Create a webhook first.
+3. Add a ClickUp module that creates or updates a task. Connect ClickUp: click Create a connection, click Save and sign in to ClickUp if prompted.
+4. Fill in the task's fields with values from the Stripe event.
+5. Click Run once in the toolbar to test it, then activate the scenario with the ON/OFF button on its details page. It runs every 15 minutes by default; click Every 15 minutes on the toolbar to change that.
+
+Steps follow [Make's setup guide ↗](https://apps.make.com/stripe), read Nov 11, 2026.
+
 **Limitations:** It's one-way (Stripe → ClickUp). Stripe sends events through webhooks, so failed deliveries are retried by Stripe, but the mapping and any duplicate checks are yours to build.
 
-[Setup guide: Stripe docs: Webhooks ↗](https://docs.stripe.com/webhooks)
+[Setup guide: Make: Stripe app ↗](https://apps.make.com/stripe)
 
-Sources (checked Nov 8, 2026): [Stripe docs: Webhooks ↗](https://docs.stripe.com/webhooks) · [ClickUp API: Create task ↗](https://developer.clickup.com/reference/createtask)
+Sources (checked Nov 8, 2026; Make's guides for the steps read on Nov 11, 2026): [Stripe docs: Webhooks ↗](https://docs.stripe.com/webhooks) · [ClickUp API: Create task ↗](https://developer.clickup.com/reference/createtask) · [Make: Stripe app ↗](https://apps.make.com/stripe) · [Make: ClickUp app ↗](https://apps.make.com/clickup) · [Make Help: Active and inactive scenarios ↗](https://help.make.com/active-and-inactive-scenarios) · [Make Help: Schedule a scenario ↗](https://help.make.com/schedule-a-scenario)
 
 *Interactive cost calculator: open the web page to change team size, billing and add-ons.*
 

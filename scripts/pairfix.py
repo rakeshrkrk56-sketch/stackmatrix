@@ -105,6 +105,17 @@ for _p, _t in SETUP19.items():
     _c.update(setup=_t["setup"], setup_src=_t["setup_src"], setup_checked=SETUP19_CHECKED)
     _c["sources"] = list(_c["sources"]) + [x for x in _t.get("extra_sources", []) if x not in _c["sources"]]
     COPY[_p] = _c
+# 2026-11-11: steps for the pairs that run through a connector, from the connector's own guides (pairdata21)
+from pairdata21 import SETUP21, SETUP21_CHECKED, REPLACE21
+for _p, _t in SETUP21.items():
+    _c = dict(COPY[_p])
+    assert not _c.get("setup") or _p in REPLACE21, _p
+    _known = [x[1] for x in _c["sources"]]
+    _c.update(setup=_t["setup"], setup_src=_t["setup_src"], setup_checked=SETUP21_CHECKED, setup_new=_t["setup_src"][1] not in _known)
+    if _t["setup_src"][0] == "Make":   # the button under the text points at the guide the steps follow, not at an API reference
+        _c["cta"] = ("Setup guide: " + _t["extra_sources"][0][0], _t["extra_sources"][0][1])
+    _c["sources"] = list(_c["sources"]) + [x for x in _t.get("extra_sources", []) if x not in _c["sources"]]
+    COPY[_p] = _c
 for _p, _src in RECHECK19.items():   # older step lists, compared with the guide again on the same day
     _c = dict(COPY[_p]); _steps = list(_c["setup"])
     for _i, _x in STEP_FIX19.get(_p, {}).items(): _steps[_i] = _x
@@ -460,8 +471,9 @@ def render_page(s, pair, d, summary, sync, facts, date_modified=None, copy=None,
         if copy.get("note"): parts.append(f'{P_}<strong>Before you budget:</strong> {esc(copy["note"])}</p> ')
         if not early: parts.append(cta_html)
         chk = copy.get("checked", "Nov 3, 2026")
-        if copy.get("setup_checked") and copy["setup_checked"] != chk:   # one guide, two dates: say which is which
-            chk += f"; setup guide read again for the steps on {copy['setup_checked']}"
+        if copy.get("setup_checked") and copy["setup_checked"] != chk:   # two dates on one line: say which is which
+            chk += (f"; {copy['setup_src'][0]}&#39;s guides for the steps read on {copy['setup_checked']}" if copy.get("setup_new")
+                    else f"; setup guide read again for the steps on {copy['setup_checked']}")
         parts.append(f'<p class="mt-3 text-xs text-slate-500">Sources (checked {chk}): {src}</p> ')
         sec = (' <section class="mt-10 rounded-xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8" aria-label="How the integration works" id="how-it-works"> '
                + "".join(parts) + '</section>')
