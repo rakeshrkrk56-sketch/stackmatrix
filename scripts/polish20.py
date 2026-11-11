@@ -11,6 +11,13 @@ if "Nov 11, 2026 — Connection diagrams" not in s:
     a = '<ul class="mt-4 space-y-3 text-sm leading-relaxed text-slate-600"> <li><strong class="text-slate-800">Nov 10, 2026'
     assert s.count(a) == 1
     s = s.replace(a, '<ul class="mt-4 space-y-3 text-sm leading-relaxed text-slate-600"> ' + ENTRY + '<li><strong class="text-slate-800">Nov 10, 2026', 1)
+# later on Nov 11: setup steps for the pairs that run through a connector (pairdata21)
+STEPS21 = (" The 19 integrations that run through a connector gained numbered setup steps from Make&#39;s, Zapier&#39;s and Mailchimp&#39;s own guides, "
+           "so 52 of the 59 integration pages now have steps.")
+if STEPS21 not in s:
+    a = "the About page now gives the editor&#39;s background."
+    assert s.count(a) == 1
+    s = s.replace(a, a + STEPS21, 1)
 if s != s0: open(f, "w", encoding="utf-8").write(s); n += 1
 
 f = "index.html"; s = open(f, encoding="utf-8").read(); s0 = s
@@ -21,5 +28,10 @@ if "Nov 11, 2026</strong>" not in s:
                   'Every integration page gained a diagram of how the two tools connect: what moves, in which direction and on which plans. '
                   'Hub and API page headings became questions. No prices changed.</li> '
                   '<li><strong class="text-slate-800">Nov 10, 2026</strong>', 1)
+HOME21 = " Connector-based integrations (Make, Zapier) gained numbered setup steps."
+if HOME21 not in s:
+    a = "Hub and API page headings became questions."
+    assert s.count(a) == 1
+    s = s.replace(a, a + HOME21, 1)
 if s != s0: open(f, "w", encoding="utf-8").write(s); n += 1
 print("pages changed:", n)

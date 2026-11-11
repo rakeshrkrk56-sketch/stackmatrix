@@ -70,7 +70,7 @@ FLOW20 = {
 VIA20 = {
  "airtable-and-quickbooks": ("airtable", "an Airtable record", "create an invoice"),
  "airtable-and-stripe": ("stripe", "payment succeeds or customer created", "add a record"),
- "asana-and-mailchimp": ("mailchimp", "new subscriber", "create a task"),
+ "asana-and-mailchimp": ("asana", "task created or tagged", "add or update a subscriber"),
  "asana-and-quickbooks": ("asana", "task reaches 'Ready to bill'", "create an invoice"),
  "clickup-and-stripe": ("stripe", "payment or new subscription", "create or update a task"),
  "hubspot-and-pipedrive": None,

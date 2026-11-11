@@ -11,7 +11,7 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 Neither Pipedrive nor Calendly builds a native integration; third-party Pipedrive Marketplace apps or Make connect them, and Calendly's webhooks need its Standard plan. Requires Pipedrive on the 'Lite' plan and Calendly on the 'Standard' plan. Route it through Make Core ($10.59/mo, or $9/mo billed annually).
 
-Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements checked · Nov 3, 2026 (Pipedrive plan unconfirmed) · Prices checked · Nov 3, 2026 (Pipedrive prices: from an indexed copy of its pricing page; Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks) | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
+Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements checked · Nov 3, 2026 (Pipedrive plan unconfirmed) · Prices checked · Nov 3, 2026 (Pipedrive prices: from an indexed copy of its pricing page; Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks) · Setup steps: Nov 11, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
 
 ## How the Pipedrive + Calendly integration works
 
@@ -19,7 +19,7 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 Pipedrive and Calendly don't build a native integration with each other. Third-party apps on the Pipedrive Marketplace, such as Outfunnel's Calendly Sync and Ulgebra's Calendly Events for Pipedrive, add Calendly bookings to Pipedrive, and Calendly's own integration directory lists Outfunnel for this. Make or Zapier can do the same.
 
-[Setup guide: Calendly: Outfunnel integration ↗](https://calendly.com/integration/outfunnel)
+[Setup guide: Make: Calendly app ↗](https://apps.make.com/calendly)
 
 Diagram of how Pipedrive and Calendly connect. Calendly: Standard plan · $120/mo for 10 seats. Pipedrive: Lite plan · $140/mo for 10 seats. Calendly sends a trigger (meeting booked) to Make Core ($10.59/mo), which performs an action in Pipedrive (add the booking to Pipedrive). Each automation runs one way.
 
@@ -29,13 +29,17 @@ Diagram: how Pipedrive and Calendly connect, through Make Core, shown with the e
 
 ### How do you set up Pipedrive + Calendly?
 
-1. Pick a connector: a Pipedrive Marketplace app such as Outfunnel's Calendly Sync, or Make or Zapier.
-2. Connect your Calendly account (Standard plan or higher) and your Pipedrive account in that connector.
-3. Choose what a new booking should create in Pipedrive, such as a new person record.
+1. Log in to Make, create a scenario and add the Calendly module Watch events as the trigger.
+2. Connect Calendly: click Create a connection, click Save and sign in to Calendly if prompted. If the module has an instant tag, click Create a webhook first.
+3. Add the Pipedrive CRM module Create a Person or Create an Activity. Connect Pipedrive: click Create a connection, click Save and sign in to Pipedrive if prompted.
+4. Fill in the person's or activity's fields with values from the Calendly event.
+5. Click Run once in the toolbar to test it, then activate the scenario with the ON/OFF button on its details page. It runs every 15 minutes by default; click Every 15 minutes on the toolbar to change that.
+
+Steps follow [Make's setup guide ↗](https://apps.make.com/calendly), read Nov 11, 2026.
 
 **Limitations:** These apps aren't made by Pipedrive or Calendly, so check each one's pricing and support before relying on it. Calendly's webhooks, which real-time automations use, need a paid Calendly plan from Standard up.
 
-Sources (checked Nov 3, 2026): [Calendly: Outfunnel integration ↗](https://calendly.com/integration/outfunnel) · [Pipedrive Marketplace: Calendly Sync ↗](https://www.pipedrive.com/en/marketplace/app/calendly-sync/0356741bcb89ba03) · [Calendly: API overview ↗](https://calendly.com/help/calendly-api-overview)
+Sources (checked Nov 3, 2026; Make's guides for the steps read on Nov 11, 2026): [Calendly: Outfunnel integration ↗](https://calendly.com/integration/outfunnel) · [Pipedrive Marketplace: Calendly Sync ↗](https://www.pipedrive.com/en/marketplace/app/calendly-sync/0356741bcb89ba03) · [Calendly: API overview ↗](https://calendly.com/help/calendly-api-overview) · [Make: Calendly app ↗](https://apps.make.com/calendly) · [Make: Pipedrive app ↗](https://apps.make.com/pipedrive) · [Make Help: Active and inactive scenarios ↗](https://help.make.com/active-and-inactive-scenarios) · [Make Help: Schedule a scenario ↗](https://help.make.com/schedule-a-scenario)
 
 *Interactive cost calculator: open the web page to change team size, billing and add-ons.*
 

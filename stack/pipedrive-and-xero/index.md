@@ -11,7 +11,7 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 Pipedrive's own Xero integration is no longer available; the Xero app in Pipedrive's Marketplace is a paid third-party app (Cloudify, free for the first 30 syncs), so this models Make Core turning won deals into Xero invoices. Requires Pipedrive on the 'Lite' plan and Xero on the 'Early' plan. Route it through Make Core ($10.59/mo, or $9/mo billed annually).
 
-Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements re-checked against the vendors' pages · Nov 8, 2026 (prices: Nov 3, 2026; Pipedrive prices: from an indexed copy of its pricing page; Make's monthly price: from third-party reviews) | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
+Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements re-checked against the vendors' pages · Nov 8, 2026 (prices: Nov 3, 2026; Pipedrive prices: from an indexed copy of its pricing page; Make's monthly price: from third-party reviews) · Setup steps: Nov 11, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
 
 ## How the Pipedrive + Xero integration works
 
@@ -23,11 +23,21 @@ Diagram: how Pipedrive and Xero connect, through Make Core, shown with the examp
 
  
 
+### How do you set up Pipedrive + Xero?
+
+1. Log in to Make, create a scenario and add the Pipedrive CRM module Watch Deals as the trigger.
+2. Connect Pipedrive: click Create a connection, click Save and sign in to Pipedrive if prompted.
+3. Add the Xero module Create an Invoice. Connect Xero: click Create a connection, click Save and sign in to Xero if prompted.
+4. Fill in the invoice's fields with values from the deal.
+5. Click Run once in the toolbar to test it, then activate the scenario with the ON/OFF button on its details page. It runs every 15 minutes by default; click Every 15 minutes on the toolbar to change that.
+
+Steps follow [Make's setup guide ↗](https://apps.make.com/pipedrive), read Nov 11, 2026.
+
 **Limitations:** Cloudify's app is free for the first 30 syncs and paid after that (its price isn't listed in the Marketplace). The Make route is one-way and you build the field mapping yourself.
 
-[Setup guide: Pipedrive Marketplace: Xero (by Cloudify) ↗](https://www.pipedrive.com/en/marketplace/app/xero/b217602d14d86f39)
+[Setup guide: Make: Pipedrive app ↗](https://apps.make.com/pipedrive)
 
-Sources (checked Nov 8, 2026): [Pipedrive Marketplace: Xero (by Cloudify) ↗](https://www.pipedrive.com/en/marketplace/app/xero/b217602d14d86f39) · [Xero developers ↗](https://developer.xero.com/)
+Sources (checked Nov 8, 2026; Make's guides for the steps read on Nov 11, 2026): [Pipedrive Marketplace: Xero (by Cloudify) ↗](https://www.pipedrive.com/en/marketplace/app/xero/b217602d14d86f39) · [Xero developers ↗](https://developer.xero.com/) · [Make: Pipedrive app ↗](https://apps.make.com/pipedrive) · [Make: Xero app ↗](https://apps.make.com/xero) · [Make Help: Active and inactive scenarios ↗](https://help.make.com/active-and-inactive-scenarios) · [Make Help: Schedule a scenario ↗](https://help.make.com/schedule-a-scenario)
 
 *Interactive cost calculator: open the web page to change team size, billing and add-ons.*
 

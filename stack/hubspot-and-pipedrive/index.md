@@ -11,7 +11,7 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 Pipedrive opens its REST API on every plan including Lite ($14/seat), and HubSpot Free includes API access — so middleware (Make or Zapier) syncs contacts and deals both ways without forcing a tier upgrade on either side. Minimum viable stack: HubSpot 'Free' + Pipedrive 'Lite' + ~$10.59/mo middleware ($9/mo billed annually).
 
-Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Pipedrive prices: from an indexed copy of its pricing page; Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks) | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
+Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Pipedrive prices: from an indexed copy of its pricing page; Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks) · Setup steps: Nov 11, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
 
 ## How the HubSpot + Pipedrive integration works
 
@@ -23,11 +23,21 @@ Diagram: how HubSpot and Pipedrive connect, through Make Core. Drawn from the fa
 
  
 
+### How do you set up HubSpot + Pipedrive?
+
+1. Log in to Make and create a scenario. Add a trigger module from the CRM you want to watch, for example the Pipedrive CRM module Watch Deals.
+2. Connect Pipedrive: click Create a connection, click Save and sign in to Pipedrive if prompted.
+3. Add a HubSpot CRM module for the action. Connect HubSpot: click Create a connection, click Save and sign in to HubSpot if prompted. A HubSpot Super Admin has to pre-approve the Make app first.
+4. Fill in the action module's fields with values from the trigger.
+5. Click Run once in the toolbar to test it, then activate the scenario with the ON/OFF button on its details page. It runs every 15 minutes by default; click Every 15 minutes on the toolbar to change that. Each scenario runs one way, so build a second one if you need the other direction.
+
+Steps follow [Make's setup guide ↗](https://apps.make.com/pipedrive), read Nov 11, 2026.
+
 **Limitations:** For ongoing sync you need middleware such as Make or Zapier, which works trigger by trigger; your real middleware bill depends on task volume.
 
-[Setup guide: HubSpot: Supported apps for Smart Transfer ↗](https://knowledge.hubspot.com/integrations/supported-apps-for-hubspot-smart-transfer)
+[Setup guide: Make: Pipedrive app ↗](https://apps.make.com/pipedrive)
 
-Sources (checked Nov 3, 2026): [HubSpot: Supported apps for Smart Transfer ↗](https://knowledge.hubspot.com/integrations/supported-apps-for-hubspot-smart-transfer)
+Sources (checked Nov 3, 2026; Make's guides for the steps read on Nov 11, 2026): [HubSpot: Supported apps for Smart Transfer ↗](https://knowledge.hubspot.com/integrations/supported-apps-for-hubspot-smart-transfer) · [Make: Pipedrive app ↗](https://apps.make.com/pipedrive) · [Make: HubSpot app ↗](https://apps.make.com/hubspotcrm) · [Make Help: Active and inactive scenarios ↗](https://help.make.com/active-and-inactive-scenarios) · [Make Help: Schedule a scenario ↗](https://help.make.com/schedule-a-scenario)
 
 *Interactive cost calculator: open the web page to change team size, billing and add-ons.*
 

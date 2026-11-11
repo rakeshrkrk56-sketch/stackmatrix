@@ -23,9 +23,10 @@ for f in sorted(glob.glob("stack/*/index.html")):
         s = s.replace("<span>Integration requirements and prices checked against official vendor docs · Nov 3, 2026</span>",
                       "<span>Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (setup steps: Nov 10, 2026)</span>")
     # pages whose setup steps were written or re-read on Nov 10 say so in the byline; the vendor-doc dates stay as they are
-    if "setup guide ↗</a>, read Nov 10, 2026." in s:
+    _read = re.search(r"setup guide ↗</a>, read (Nov \d+, 2026)\.", s)   # Nov 10 for the first rounds, Nov 11 for the connector pairs
+    if _read:
         s = re.sub(r"(<span>Integration requirements[^<]*)(</span>)",
-                   lambda m: m.group(0) if "etup steps: Nov 10, 2026" in m.group(1) else m.group(1) + " · Setup steps: Nov 10, 2026" + m.group(2), s, count=1)
+                   lambda m: m.group(0) if "etup steps: " in m.group(1) else m.group(1) + " · Setup steps: " + _read.group(1) + m.group(2), s, count=1)
     if p in RECHECKED:
         s = re.sub(r"Last checked: Nov 3, 2026( \(exceptions listed at the top\))? · Sources linked below\.",
                    lambda m: "Requirements checked: Nov 8, 2026; prices: Nov 3, 2026" + (m.group(1) or "") + " · Sources linked below.", s)

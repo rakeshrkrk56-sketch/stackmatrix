@@ -11,7 +11,7 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 There's no native Calendly–Xero integration, so Zapier Professional bridges bookings into Xero; Calendly's webhooks need its Standard plan, and Zapier needs only a paid Xero account. Requires Xero on the 'Early' plan and Calendly on the 'Standard' plan. Route it through Zapier Professional ($29.99/mo, or $19.99/mo billed annually).
 
-Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Zapier Professional fee: Nov 3, 2026) | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
+Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Zapier Professional fee: Nov 3, 2026) · Setup steps: Nov 11, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
 
 ## How the Xero + Calendly integration works
 
@@ -23,11 +23,21 @@ Diagram: how Xero and Calendly connect, through Zapier Professional, shown with 
 
  
 
+### How do you set up Xero + Calendly?
+
+1. In Zapier, click + Create in the left sidebar and select Zap workflows to open the Zap editor.
+2. Select the Trigger step, search for Calendly and choose the trigger event Invitee Created or Rescheduled. In the Account field, pick your Calendly account or click Connect a new account.
+3. Click the Test tab, click Test trigger and continue with one of the test records.
+4. Add the action: choose Xero, pick the event that creates a contact or a draft invoice, connect the account and map fields from the trigger into it.
+5. Test the action, then publish the Zap to turn it on. It only processes data created after it's published.
+
+Steps follow [Zapier's setup guide ↗](https://help.zapier.com/hc/en-us/articles/8496288188429), read Nov 11, 2026.
+
 **Limitations:** Calendly's webhooks need a paid plan from Standard up. Zapier needs a paid Xero account, Standard or Adviser permissions in Xero and a paid Zapier plan, because Xero is a premium app on Zapier. On Xero's Early plan you can enter up to 20 approved sales invoices and 5 bills a month through the API, so if each booking creates an invoice and you take more than 20 bookings a month, you'll need Growing ($59/mo).
 
 [Setup guide: Zapier: Get started with Xero ↗](https://help.zapier.com/hc/en-us/articles/38844152391821-How-to-get-started-with-Xero-on-Zapier)
 
-Sources (checked Nov 3, 2026): [Zapier: Get started with Xero ↗](https://help.zapier.com/hc/en-us/articles/38844152391821-How-to-get-started-with-Xero-on-Zapier) · [Calendly: API overview ↗](https://calendly.com/help/calendly-api-overview) · [Xero: US pricing plans ↗](https://www.xero.com/us/pricing-plans/)
+Sources (checked Nov 3, 2026; Zapier's guides for the steps read on Nov 11, 2026): [Zapier: Get started with Xero ↗](https://help.zapier.com/hc/en-us/articles/38844152391821-How-to-get-started-with-Xero-on-Zapier) · [Calendly: API overview ↗](https://calendly.com/help/calendly-api-overview) · [Xero: US pricing plans ↗](https://www.xero.com/us/pricing-plans/) · [Zapier Help: Set up your Zap trigger ↗](https://help.zapier.com/hc/en-us/articles/8496288188429) · [Zapier Help: What is a Zap? ↗](https://help.zapier.com/hc/en-us/articles/8496309697421-Create-Zaps)
 
 *Interactive cost calculator: open the web page to change team size, billing and add-ons.*
 

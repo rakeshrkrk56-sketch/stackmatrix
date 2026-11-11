@@ -11,7 +11,7 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 No native docs link - Zapier Professional pushes resolved tickets to a Notion knowledge base; Zendesk's triggers and webhooks are on every Suite plan from Team up. Requires Zendesk on the 'Suite Team' plan and Notion on the 'Plus' plan. Route it through Zapier Professional ($29.99/mo, or $19.99/mo billed annually).
 
-Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements checked · Nov 3, 2026 (Notion plan unconfirmed) · Prices checked · Nov 3, 2026 (Zapier Professional fee: Nov 3, 2026) | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
+Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements checked · Nov 3, 2026 (Notion plan unconfirmed) · Prices checked · Nov 3, 2026 (Zapier Professional fee: Nov 3, 2026) · Setup steps: Nov 11, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
 
 ## How the Zendesk + Notion integration works
 
@@ -23,11 +23,21 @@ Diagram: how Zendesk and Notion connect, through Zapier Professional, shown with
 
  
 
+### How do you set up Zendesk + Notion?
+
+1. In Zapier, click + Create in the left sidebar and select Zap workflows to open the Zap editor.
+2. Select the Trigger step, search for Zendesk and choose the trigger event for a new ticket. In the Account field, pick your Zendesk account or click Connect a new account.
+3. Click the Test tab, click Test trigger and continue with one of the test records.
+4. Add the action: choose Notion, pick the event that creates a database item or page, connect the account and map fields from the trigger into it.
+5. Test the action, then publish the Zap to turn it on. It only processes data created after it's published.
+
+Steps follow [Zapier's setup guide ↗](https://help.zapier.com/hc/en-us/articles/8496288188429), read Nov 11, 2026.
+
 **Limitations:** Each Zap is one-way, and every run counts toward your Zapier task allowance. The Notion integration must be shared with the database it writes to.
 
 [Setup guide: Zapier: Notion + Zendesk integrations ↗](https://zapier.com/apps/notion/integrations/zendesk)
 
-Sources (checked Nov 8, 2026): [Zapier: Notion + Zendesk integrations ↗](https://zapier.com/apps/notion/integrations/zendesk) · [Zendesk developers: Webhooks ↗](https://developer.zendesk.com/documentation/webhooks/)
+Sources (checked Nov 8, 2026; Zapier's guides for the steps read on Nov 11, 2026): [Zapier: Notion + Zendesk integrations ↗](https://zapier.com/apps/notion/integrations/zendesk) · [Zendesk developers: Webhooks ↗](https://developer.zendesk.com/documentation/webhooks/) · [Zapier Help: Set up your Zap trigger ↗](https://help.zapier.com/hc/en-us/articles/8496288188429) · [Zapier Help: What is a Zap? ↗](https://help.zapier.com/hc/en-us/articles/8496309697421-Create-Zaps)
 
 *Interactive cost calculator: open the web page to change team size, billing and add-ons.*
 

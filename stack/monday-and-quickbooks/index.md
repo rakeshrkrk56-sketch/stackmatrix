@@ -11,7 +11,7 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 No native connector; monday.com includes integrations from its Standard plan, with 250 integration actions a month (Pro raises this to 25,000), and Make works with any QuickBooks plan. Requires Monday.com on the 'Standard' plan and QuickBooks Online on the 'Simple Start' plan. Route it through Make Core ($10.59/mo, or $9/mo billed annually).
 
-Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (QuickBooks prices: Nov 4, 2026; Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks) | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
+Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (QuickBooks prices: Nov 4, 2026; Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks) · Setup steps: Nov 11, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
 
 ## How the Monday.com + QuickBooks Online integration works
 
@@ -23,11 +23,21 @@ Diagram: how Monday.com and QuickBooks Online connect, through Make Core, shown 
 
  
 
+### How do you set up Monday.com + QuickBooks Online?
+
+1. Log in to Make, create a scenario and add the monday.com module Watch Board's Column Values as the trigger.
+2. Connect monday.com: click Create a connection, choose monday.com as the connection type, paste your Personal API Token from monday.com into the API key field and click Save. If the module has an instant tag, click Create a webhook first.
+3. Add the QuickBooks module Create an Invoice. Connect QuickBooks: click Create a connection, click Save and sign in to QuickBooks if prompted.
+4. Fill in the invoice's fields with values from the monday.com item.
+5. Click Run once in the toolbar to test it, then activate the scenario with the ON/OFF button on its details page. It runs every 15 minutes by default; click Every 15 minutes on the toolbar to change that.
+
+Steps follow [Make's setup guide ↗](https://apps.make.com/monday), read Nov 11, 2026.
+
 **Limitations:** Sync is one-way per scenario. monday.com's Standard plan includes 250 integration actions a month (Pro raises this to 25,000), and Make counts each run against its own monthly credits.
 
-[Setup guide: monday.com developers: API reference ↗](https://developer.monday.com/api-reference/docs)
+[Setup guide: Make: monday.com app ↗](https://apps.make.com/monday)
 
-Sources (checked Nov 8, 2026): [monday.com developers: API reference ↗](https://developer.monday.com/api-reference/docs) · [Intuit developers: QuickBooks Online API ↗](https://developer.intuit.com/app/developer/qbo/docs/get-started)
+Sources (checked Nov 8, 2026; Make's guides for the steps read on Nov 11, 2026): [monday.com developers: API reference ↗](https://developer.monday.com/api-reference/docs) · [Intuit developers: QuickBooks Online API ↗](https://developer.intuit.com/app/developer/qbo/docs/get-started) · [Make: monday.com app ↗](https://apps.make.com/monday) · [Make: QuickBooks app ↗](https://apps.make.com/quickbooks) · [Make Help: Active and inactive scenarios ↗](https://help.make.com/active-and-inactive-scenarios) · [Make Help: Schedule a scenario ↗](https://help.make.com/schedule-a-scenario)
 
 *Interactive cost calculator: open the web page to change team size, billing and add-ons.*
 
