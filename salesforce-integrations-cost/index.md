@@ -35,7 +35,7 @@ Monthly cost for 10 seats, both tools plus any connector. Indigo bars are native
 
 Image: [Salesforce integration costs summary: 7 integrations priced, from $1,250 to $1,940 a month for 10 seats](https://stackcostmatrix.com/og/salesforce-integrations-cost.jpg)
 
-## The $25/user/month API trap, explained
+## Does Salesforce Professional need a paid API add-on?
 
 Salesforce gates its REST and Bulk APIs behind Enterprise — or a paid
 add-on on Professional. For a 40-person sales team, that's an extra
