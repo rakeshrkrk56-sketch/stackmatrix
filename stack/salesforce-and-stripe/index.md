@@ -11,7 +11,7 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 Big trap: Salesforce Starter has no API access - you must be on Professional ($100/user/mo, plus a $25/user/mo API add-on) before Stripe can talk to it at all. Requires Salesforce Sales Cloud on the 'Professional' plan and Stripe on the 'Standard' plan for full 2-way sync.
 
-Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements checked · Nov 3, 2026 (Salesforce edition unconfirmed) · Prices checked · Nov 3, 2026 (Salesforce prices: Oct 17, 2026) | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
+Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements checked · Nov 3, 2026 (Salesforce edition unconfirmed) · Prices checked · Nov 3, 2026 (Salesforce prices: Oct 17, 2026) · Setup steps: Nov 10, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
 
 ## How the Salesforce Sales Cloud + Stripe integration works
 
@@ -19,7 +19,7 @@ The Stripe app for Salesforce Platform lets you process and reconcile Stripe pay
 
 [Setup guide: Stripe: Stripe app for Salesforce Platform ↗](https://docs.stripe.com/connectors/stripe-connector-for-salesforce/overview)
 
-### How to set it up
+### How do you set up Salesforce Sales Cloud + Stripe?
 
 1. In Salesforce, make sure Lightning Web Security is enabled under Setup > Session Management > Session Settings.
 2. Open the app's Salesforce AppExchange listing, log in to the org where you want it and click Continue. Stripe recommends choosing Install for Admins Only.
@@ -32,7 +32,7 @@ Steps follow [Stripe's setup guide ↗](https://docs.stripe.com/plugins/stripe-c
 
 **Limitations:** Stripe says it works best on core clouds such as Sales Cloud, and the app now authenticates with a Stripe API key because OAuth sign-in was retired in version 1.17.
 
-Sources (checked Nov 3, 2026): [Stripe: Stripe app for Salesforce Platform ↗](https://docs.stripe.com/connectors/stripe-connector-for-salesforce/overview) · [Stripe: Installation guide ↗](https://docs.stripe.com/plugins/stripe-connector-for-salesforce/installation-guide)
+Sources (checked Nov 3, 2026; setup guide read again for the steps on Nov 10, 2026): [Stripe: Stripe app for Salesforce Platform ↗](https://docs.stripe.com/connectors/stripe-connector-for-salesforce/overview) · [Stripe: Installation guide ↗](https://docs.stripe.com/plugins/stripe-connector-for-salesforce/installation-guide)
 
 *Interactive cost calculator: open the web page to change team size, billing and add-ons.*
 

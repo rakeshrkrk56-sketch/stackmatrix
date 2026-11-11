@@ -36,15 +36,15 @@ Image: [Monday.com integration costs summary: 4 integrations priced, from $140 t
 
 Not for any of the 4 integrations here: each one works on Monday.com's cheapest plan with API access, so the integration itself adds no Monday.com upgrade cost. Any extra cost comes from the other tool's plan or from a connector fee, shown in the table above.
 
-## Which Monday.com integrations need middleware
+## Which Monday.com integrations need Make or Zapier?
 
 1 of the 4 has no native connector and runs through a third-party service: Monday.com + QuickBooks (Make Core, $10.59/mo). Connector fees are the monthly-billing price; the calculators use the lower annual-billing price (Make Core $9, Zapier Professional $19.99, Data Mapper $12.75) when you switch on annual billing. Real usage can push Make or Zapier onto a bigger plan, so check your expected volume.
 
-## Monday.com plans, API access and webhooks
+## Which Monday.com plans include API access and webhooks?
 
-API and webhook facts are listed for the plans that at least one integration below requires, with the date each was checked against Monday.com's documentation. Prices are monthly-billing list prices, re-checked on the vendor's pricing page on Nov 3, 2026; the annual-billing price is shown where the vendor publishes one. [Every Monday.com plan's API access, limits and webhooks →](https://stackcostmatrix.com/monday-api-access/)
+On the plans these integrations need: Standard (API access: yes; webhooks: yes). API and webhook facts are listed for the plans that at least one integration below requires, with the date each was checked against Monday.com's documentation. Prices are monthly-billing list prices, re-checked on the vendor's pricing page on Nov 3, 2026; the annual-billing price is shown where the vendor publishes one. [Every Monday.com plan's API access, limits and webhooks →](https://stackcostmatrix.com/monday-api-access/)
 
-Monday.com plans, API access and webhooks
+Which Monday.com plans include API access and webhooks?
 
 | Plan | Price | API access | Webhooks | Integrations that need it |
 | --- | --- | --- | --- | --- |

@@ -36,19 +36,19 @@ Monthly cost for 10 seats, both tools plus any connector. Indigo bars are native
 
 Image: [Mailchimp integration costs summary: 8 integrations priced, from $15 to $1,270 a month for 10 seats](https://stackcostmatrix.com/og/mailchimp-integrations-cost.jpg)
 
-## Where Mailchimp forces an upgrade
+## Which Mailchimp integrations force a plan upgrade?
 
 4 of the 8 integrations need a more expensive Mailchimp plan than Free, Mailchimp's cheapest plan with API access. The extra Mailchimp cost at 10 seats: HubSpot + Mailchimp needs Standard (+$20.00/mo); Salesforce + Mailchimp needs Standard (+$20.00/mo); Asana + Mailchimp needs Essentials (+$13.00/mo); Mailchimp + Airtable needs Essentials (+$13.00/mo). That gap is the hidden cost: you pay it every month even if you only wanted the integration. Each pair's "Hidden Cost Trap" box shows the full breakdown.
 
-## Which Mailchimp integrations need middleware
+## Which Mailchimp integrations need Make or Zapier?
 
 3 of the 8 have no native connector and run through a third-party service: Stripe + Mailchimp (Data Mapper for Mailchimp, $15.00/mo); Asana + Mailchimp (Zapier Professional, $29.99/mo); Mailchimp + Airtable (Make Core, $10.59/mo). Connector fees are the monthly-billing price; the calculators use the lower annual-billing price (Make Core $9, Zapier Professional $19.99, Data Mapper $12.75) when you switch on annual billing. Real usage can push Make or Zapier onto a bigger plan, so check your expected volume.
 
-## Mailchimp plans, API access and webhooks
+## Which Mailchimp plans include API access and webhooks?
 
-API and webhook facts are listed for the plans that at least one integration below requires, with the date each was checked against Mailchimp's documentation. Mailchimp prices are starting prices for up to 500 contacts; the price rises with your contact count, not seats. [Every Mailchimp plan's API access, limits and webhooks →](https://stackcostmatrix.com/mailchimp-api-access/)
+On the plans these integrations need: Essentials (API access: yes; webhooks: no); Standard (API access: yes; webhooks: yes); Free (API access: yes; webhooks: no). API and webhook facts are listed for the plans that at least one integration below requires, with the date each was checked against Mailchimp's documentation. Mailchimp prices are starting prices for up to 500 contacts; the price rises with your contact count, not seats. [Every Mailchimp plan's API access, limits and webhooks →](https://stackcostmatrix.com/mailchimp-api-access/)
 
-Mailchimp plans, API access and webhooks
+Which Mailchimp plans include API access and webhooks?
 
 | Plan | Price | API access | Webhooks | Integrations that need it |
 | --- | --- | --- | --- | --- |

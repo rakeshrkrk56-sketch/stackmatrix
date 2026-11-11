@@ -11,9 +11,11 @@ API & webhooks
 
 Checked against QuickBooks's developer and help-center documentation · Nov 3, 2026 · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
 
+## Which QuickBooks plans include API access and webhooks?
+
 **Short answer:** Every paid QuickBooks Online plan can connect apps: Intuit's developer docs set no plan requirement, and Zapier, Make and Mailchimp's QuickBooks integrations ask only for a QuickBooks Online account (Zapier says a paid one).
 
-QuickBooks API & Webhook Access by Plan (2026)
+Which QuickBooks plans include API access and webhooks?
 
 | Plan | Price | API access | API limit | Webhooks | Webhook automation action |
 | --- | --- | --- | --- | --- | --- |
@@ -33,11 +35,11 @@ QuickBooks monthly price for 10 seats by plan. Green: API included; amber: paid 
 
 Image: [QuickBooks API access by plan: Simple Start yes; Essentials yes; Plus yes](https://stackcostmatrix.com/og/quickbooks-api-access.jpg)
 
-## Two kinds of webhooks
+## What is the difference between developer webhooks and workflow webhooks?
 
 Vendors use "webhooks" for two different features. **Developer webhooks** let an app or a tool like Make or Zapier subscribe to events, and are usually available wherever the API is. A **webhook automation action** is a no-code step that sends data out from the tool's own automations, and is often limited to paid plans. The table lists them separately so you can see which one an integration actually needs.
 
-## Which QuickBooks plan the integrations here need
+## Which QuickBooks plan do the integrations here need?
 
 **Simple Start** (9): [Airtable + QuickBooks](https://stackcostmatrix.com/stack/airtable-and-quickbooks/), [Asana + QuickBooks](https://stackcostmatrix.com/stack/asana-and-quickbooks/), [HubSpot + QuickBooks](https://stackcostmatrix.com/stack/hubspot-and-quickbooks/), [Monday.com + QuickBooks](https://stackcostmatrix.com/stack/monday-and-quickbooks/), [Pipedrive + QuickBooks](https://stackcostmatrix.com/stack/pipedrive-and-quickbooks/), [QuickBooks + Mailchimp](https://stackcostmatrix.com/stack/quickbooks-and-mailchimp/), [QuickBooks + Slack](https://stackcostmatrix.com/stack/quickbooks-and-slack/), [Salesforce + QuickBooks](https://stackcostmatrix.com/stack/salesforce-and-quickbooks/), [Stripe + QuickBooks](https://stackcostmatrix.com/stack/stripe-and-quickbooks/)
 

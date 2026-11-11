@@ -11,9 +11,11 @@ API & webhooks
 
 Checked against Notion's developer and help-center documentation · Nov 3, 2026 · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
 
+## Which Notion plans include API access and webhooks?
+
 **Short answer:** Notion's API and connection webhooks work on every plan, including Free; the no-code "Send webhook" action in automations needs a paid plan.
 
-Notion API & Webhook Access by Plan (2026)
+Which Notion plans include API access and webhooks?
 
 | Plan | Price | API access | API limit | Webhooks | Webhook automation action |
 | --- | --- | --- | --- | --- | --- |
@@ -32,11 +34,11 @@ Notion monthly price for 10 seats by plan. Green: API included; amber: paid add-
 
 Image: [Notion API access by plan: Plus yes; Business yes](https://stackcostmatrix.com/og/notion-api-access.jpg)
 
-## Two kinds of webhooks
+## What is the difference between developer webhooks and workflow webhooks?
 
 Vendors use "webhooks" for two different features. **Developer webhooks** let an app or a tool like Make or Zapier subscribe to events, and are usually available wherever the API is. A **webhook automation action** is a no-code step that sends data out from the tool's own automations, and is often limited to paid plans. The table lists them separately so you can see which one an integration actually needs.
 
-## Which Notion plan the integrations here need
+## Which Notion plan do the integrations here need?
 
 **Plus** (4): [Notion + Calendly](https://stackcostmatrix.com/stack/notion-and-calendly/), [Notion + Stripe](https://stackcostmatrix.com/stack/notion-and-stripe/), [Slack + Notion](https://stackcostmatrix.com/stack/slack-and-notion/), [Zendesk + Notion](https://stackcostmatrix.com/stack/zendesk-and-notion/)
 

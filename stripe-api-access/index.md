@@ -11,9 +11,11 @@ API & webhooks
 
 Checked against Stripe's developer and help-center documentation · Nov 3, 2026 · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
 
+## Which Stripe plans include API access and webhooks?
+
 **Short answer:** Stripe has no plan tiers for the API: every account gets the full API and webhooks, and you pay per transaction.
 
-Stripe API & Webhook Access by Plan (2026)
+Which Stripe plans include API access and webhooks?
 
 | Plan | Price | API access | API limit | Webhooks | Webhook automation action |
 | --- | --- | --- | --- | --- | --- |
@@ -23,11 +25,11 @@ Prices are monthly-billing list prices from this site's calculators.
 
 Image: [Stripe API access by plan: Standard yes](https://stackcostmatrix.com/og/stripe-api-access.jpg)
 
-## Two kinds of webhooks
+## What is the difference between developer webhooks and workflow webhooks?
 
 Vendors use "webhooks" for two different features. **Developer webhooks** let an app or a tool like Make or Zapier subscribe to events, and are usually available wherever the API is. A **webhook automation action** is a no-code step that sends data out from the tool's own automations, and is often limited to paid plans. The table lists them separately so you can see which one an integration actually needs.
 
-## Which Stripe plan the integrations here need
+## Which Stripe plan do the integrations here need?
 
 **Standard** (12): [ActiveCampaign + Stripe](https://stackcostmatrix.com/stack/activecampaign-and-stripe/), [Airtable + Stripe](https://stackcostmatrix.com/stack/airtable-and-stripe/), [ClickUp + Stripe](https://stackcostmatrix.com/stack/clickup-and-stripe/), [HubSpot + Stripe](https://stackcostmatrix.com/stack/hubspot-and-stripe/), [Intercom + Stripe](https://stackcostmatrix.com/stack/intercom-and-stripe/), [Notion + Stripe](https://stackcostmatrix.com/stack/notion-and-stripe/), [Salesforce + Stripe](https://stackcostmatrix.com/stack/salesforce-and-stripe/), [Stripe + Mailchimp](https://stackcostmatrix.com/stack/stripe-and-mailchimp/), [Stripe + QuickBooks](https://stackcostmatrix.com/stack/stripe-and-quickbooks/), [Stripe + Slack](https://stackcostmatrix.com/stack/stripe-and-slack/), [Stripe + Xero](https://stackcostmatrix.com/stack/stripe-and-xero/), [Zendesk + Stripe](https://stackcostmatrix.com/stack/zendesk-and-stripe/)
 

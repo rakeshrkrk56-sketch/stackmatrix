@@ -11,7 +11,7 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 Bookings create or update HubSpot contacts and log meetings on any HubSpot plan; routing from HubSpot forms needs Calendly Teams ($20/seat). Requires HubSpot on the 'Free' plan and Calendly on the 'Standard' plan.
 
-Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
+Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 · Setup steps: Nov 10, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
 
 ## How the HubSpot + Calendly integration works
 
@@ -19,7 +19,7 @@ When someone books through Calendly, the integration creates a HubSpot contact i
 
 [Setup guide: Calendly: Calendly + HubSpot ↗](https://calendly.com/help/calendly-hubspot)
 
-### How to set it up
+### How do you set up HubSpot + Calendly?
 
 1. In Calendly, go to Automations → Integrations & apps. You need Calendly administrator privileges and HubSpot admin privileges.
 2. Find and select HubSpot, then select Connect HubSpot.
@@ -31,7 +31,7 @@ Steps follow [Calendly's setup guide ↗](https://calendly.com/help/calendly-hub
 
 **Limitations:** Routing from HubSpot forms needs Calendly Teams or Enterprise. Changing a meeting's length in HubSpot doesn't update Calendly, and using Calendly's and HubSpot's calendar sync together can create duplicate meetings.
 
-Sources (checked Nov 3, 2026): [Calendly: Calendly + HubSpot ↗](https://calendly.com/help/calendly-hubspot) · [HubSpot Marketplace: Calendly ↗](https://ecosystem.hubspot.com/marketplace/listing/calendly-199720)
+Sources (checked Nov 3, 2026; setup guide read again for the steps on Nov 10, 2026): [Calendly: Calendly + HubSpot ↗](https://calendly.com/help/calendly-hubspot) · [HubSpot Marketplace: Calendly ↗](https://ecosystem.hubspot.com/marketplace/listing/calendly-199720)
 
 *Interactive cost calculator: open the web page to change team size, billing and add-ons.*
 

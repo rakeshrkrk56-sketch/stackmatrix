@@ -11,7 +11,7 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 Mailchimp's own QuickBooks Online integration syncs QuickBooks customers into a Mailchimp audience, one way and with no middleware; it needs only a QuickBooks Online account and works on Mailchimp's free plan. Requires QuickBooks Online on the 'Simple Start' plan and Mailchimp on the 'Free' plan.
 
-Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (QuickBooks prices: Nov 4, 2026) | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
+Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (QuickBooks prices: Nov 4, 2026) · Setup steps: Nov 10, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
 
 ## How the QuickBooks Online + Mailchimp integration works
 
@@ -19,7 +19,7 @@ Mailchimp's QuickBooks Online integration, listed in Mailchimp's integrations di
 
 [Setup guide: Mailchimp: QuickBooks Online integration ↗](https://mailchimp.com/integrations/quickbooksonline/)
 
-### How to set it up
+### How do you set up QuickBooks Online + Mailchimp?
 
 1. In Mailchimp, open the integrations directory.
 2. Choose Mailchimp for QuickBooks Online.
@@ -31,7 +31,7 @@ Steps follow [Mailchimp's setup guide ↗](https://mailchimp.com/help/connect-di
 
 **Limitations:** Mailchimp's stated requirement is a QuickBooks Online account, with no particular QuickBooks plan, so this calculator models Simple Start, QuickBooks' cheapest plan. Mailchimp notes that features vary by Mailchimp plan.
 
-Sources (checked Nov 3, 2026): [Mailchimp: QuickBooks Online integration ↗](https://mailchimp.com/integrations/quickbooksonline/) · [Mailchimp help: Connect or disconnect Mailchimp for QuickBooks Online ↗](https://mailchimp.com/help/connect-disconnect-quickbooks-online/)
+Sources (checked Nov 3, 2026; setup guide read again for the steps on Nov 10, 2026): [Mailchimp: QuickBooks Online integration ↗](https://mailchimp.com/integrations/quickbooksonline/) · [Mailchimp help: Connect or disconnect Mailchimp for QuickBooks Online ↗](https://mailchimp.com/help/connect-disconnect-quickbooks-online/)
 
 *Interactive cost calculator: open the web page to change team size, billing and add-ons.*
 

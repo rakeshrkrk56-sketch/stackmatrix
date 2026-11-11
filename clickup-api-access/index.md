@@ -11,9 +11,11 @@ API & webhooks
 
 Checked against ClickUp's developer and help-center documentation · Nov 3, 2026 · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
 
+## Which ClickUp plans include API access and webhooks?
+
 **Short answer:** ClickUp's public API, including API webhooks, is available on every ClickUp plan; rate limits are 100 requests a minute per token until Business Plus.
 
-ClickUp API & Webhook Access by Plan (2026)
+Which ClickUp plans include API access and webhooks?
 
 | Plan | Price | API access | API limit | Webhooks | Webhook automation action |
 | --- | --- | --- | --- | --- | --- |
@@ -33,11 +35,11 @@ ClickUp monthly price for 10 seats by plan. Green: API included; amber: paid add
 
 Image: [ClickUp API access by plan: Free yes; Core yes; Business yes](https://stackcostmatrix.com/og/clickup-api-access.jpg)
 
-## Two kinds of webhooks
+## What is the difference between developer webhooks and workflow webhooks?
 
 Vendors use "webhooks" for two different features. **Developer webhooks** let an app or a tool like Make or Zapier subscribe to events, and are usually available wherever the API is. A **webhook automation action** is a no-code step that sends data out from the tool's own automations, and is often limited to paid plans. The table lists them separately so you can see which one an integration actually needs.
 
-## Which ClickUp plan the integrations here need
+## Which ClickUp plan do the integrations here need?
 
 **Free** (3): [ClickUp + Slack](https://stackcostmatrix.com/stack/clickup-and-slack/), [ClickUp + Stripe](https://stackcostmatrix.com/stack/clickup-and-stripe/), [ClickUp + Zendesk](https://stackcostmatrix.com/stack/clickup-and-zendesk/)  
 **Core** (1): [HubSpot + ClickUp](https://stackcostmatrix.com/stack/hubspot-and-clickup/)

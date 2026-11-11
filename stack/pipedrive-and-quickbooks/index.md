@@ -11,7 +11,7 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 Pipedrive's own QuickBooks integration creates QuickBooks invoices from Pipedrive deals and shows whether they're paid or overdue on the deal; it needs a paying or trial account in both tools, and it works with QuickBooks Online only. Requires Pipedrive on the 'Lite' plan and QuickBooks Online on the 'Simple Start' plan.
 
-Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements checked against official vendor docs · Nov 4, 2026 · Prices checked · Nov 3, 2026 (Pipedrive prices: from an indexed copy of its pricing page; QuickBooks prices: Nov 4, 2026) | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
+Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements checked against official vendor docs · Nov 4, 2026 · Prices checked · Nov 3, 2026 (Pipedrive prices: from an indexed copy of its pricing page; QuickBooks prices: Nov 4, 2026) · Setup steps: Nov 10, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
 
 ## How the Pipedrive + QuickBooks Online integration works
 
@@ -21,15 +21,17 @@ You create an invoice from the deal detail view in Pipedrive, using the deal's c
 
 [Setup guide: Pipedrive: QuickBooks integration ↗](https://support.pipedrive.com/en/article/pipedrive-integration-quickbooks)
 
-### How to set it up
+### How do you set up Pipedrive + QuickBooks Online?
 
 1. In Pipedrive, open the account menu, go to Tools and apps > Invoicing and click Install next to QuickBooks.
 2. Finish the installation in the Pipedrive Marketplace and grant access to your QuickBooks account.
 3. Open a deal and create an invoice from the deal detail view; if Pipedrive shows a warning on the To field, link the contact to a QuickBooks customer.
 
+Steps follow [Pipedrive's setup guide ↗](https://support.pipedrive.com/en/article/pipedrive-integration-quickbooks), read Nov 10, 2026.
+
 **Limitations:** It needs an active paying or trial account with both Pipedrive and QuickBooks, and it works with QuickBooks Online only. Pipedrive no longer supports it in France. Keep products up to date in both tools before creating invoices.
 
-Sources (checked Nov 4, 2026): [Pipedrive: QuickBooks integration ↗](https://support.pipedrive.com/en/article/pipedrive-integration-quickbooks) · [Pipedrive: Invoicing feature ↗](https://support.pipedrive.com/en/article/invoicing-feature-in-pipedrive)
+Sources (checked Nov 4, 2026; setup guide read again for the steps on Nov 10, 2026): [Pipedrive: QuickBooks integration ↗](https://support.pipedrive.com/en/article/pipedrive-integration-quickbooks) · [Pipedrive: Invoicing feature ↗](https://support.pipedrive.com/en/article/invoicing-feature-in-pipedrive)
 
 *Interactive cost calculator: open the web page to change team size, billing and add-ons.*
 

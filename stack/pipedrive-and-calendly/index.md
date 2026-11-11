@@ -21,7 +21,7 @@ Pipedrive and Calendly don't build a native integration with each other. Third-p
 
 [Setup guide: Calendly: Outfunnel integration ↗](https://calendly.com/integration/outfunnel)
 
-### How to set it up
+### How do you set up Pipedrive + Calendly?
 
 1. Pick a connector: a Pipedrive Marketplace app such as Outfunnel's Calendly Sync, or Make or Zapier.
 2. Connect your Calendly account (Standard plan or higher) and your Pipedrive account in that connector.

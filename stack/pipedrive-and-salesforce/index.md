@@ -11,7 +11,7 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 Pipedrive and Salesforce don't build an integration with each other; Make Core connects them through both APIs, and Salesforce Professional needs its paid API add-on for that. Requires Pipedrive on the 'Lite' plan and Salesforce Sales Cloud on the 'Professional' plan. Route it through Make Core ($10.59/mo, or $9/mo billed annually).
 
-Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements checked against official vendor docs · Nov 4, 2026 · Prices checked · Nov 3, 2026 (Pipedrive prices: from an indexed copy of its pricing page; Salesforce prices: Oct 17, 2026; Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks) | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
+Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements checked against official vendor docs · Nov 4, 2026 · Prices checked · Nov 3, 2026 (Pipedrive prices: from an indexed copy of its pricing page; Salesforce prices: Oct 17, 2026; Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks) · Setup steps: Nov 10, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
 
 ## How the Pipedrive + Salesforce Sales Cloud integration works
 
@@ -21,15 +21,17 @@ A Make scenario watches one CRM and acts in the other, for example creating a Sa
 
 [Setup guide: Make: Salesforce app ↗](https://apps.make.com/salesforce)
 
-### How to set it up
+### How do you set up Pipedrive + Salesforce Sales Cloud?
 
 1. Make sure your Salesforce org has API access: Enterprise or Unlimited include it, Professional needs the API add-on.
-2. In Make, create a scenario and connect your Pipedrive and Salesforce accounts.
+2. In Make, create a scenario, add a Salesforce module and click Create a connection. Choose the connection type, say whether it's a Salesforce sandbox and click Save. Connect your Pipedrive account the same way.
 3. Pick a trigger in one tool and an action in the other, map the fields and turn the scenario on.
+
+Steps follow [Make's setup guide ↗](https://apps.make.com/salesforce), read Nov 10, 2026.
 
 **Limitations:** This calculator models Salesforce Professional with the $25/user API add-on; Enterprise includes API access without it. Pipedrive's API is available on every plan, with rate limits that rise with the plan. Real usage can push Make onto a bigger plan.
 
-Sources (checked Nov 4, 2026): [Make: Salesforce app ↗](https://apps.make.com/salesforce) · [Salesforce developers: Supported editions ↗](https://developer.salesforce.com/docs/platform/api-rest/guide/intro-rest-compatible-editions.html) · [Pipedrive developers: Rate limiting ↗](https://pipedrive.readme.io/docs/core-api-concepts-rate-limiting)
+Sources (checked Nov 4, 2026; setup guide read again for the steps on Nov 10, 2026): [Make: Salesforce app ↗](https://apps.make.com/salesforce) · [Salesforce developers: Supported editions ↗](https://developer.salesforce.com/docs/platform/api-rest/guide/intro-rest-compatible-editions.html) · [Pipedrive developers: Rate limiting ↗](https://pipedrive.readme.io/docs/core-api-concepts-rate-limiting)
 
 *Interactive cost calculator: open the web page to change team size, billing and add-ons.*
 

@@ -11,13 +11,13 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 Trap: the native Asana action runs inside HubSpot workflows, which need a HubSpot Professional subscription (cheapest: Smart CRM Professional, $50 per seat a month), and tasks only flow one way. Requires HubSpot on the 'Professional' plan and Asana on the 'Starter' plan.
 
-Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (HubSpot prices: Nov 5, 2026) | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
+Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (HubSpot prices: Nov 5, 2026) · Setup steps: Nov 10, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
 
 ## How the HubSpot + Asana integration works
 
 The native integration is a HubSpot workflow action: when a deal closes or a ticket changes, HubSpot creates a task in an Asana project. It's useful for handing work from sales or support to delivery and onboarding teams.
 
-### How to set it up
+### How do you set up HubSpot + Asana?
 
 1. Connect Asana to your HubSpot account, either from the App Marketplace or from inside a workflow. You need Super Admin or Workflows permissions.
 2. In HubSpot, go to Automation > Workflows (it may sit under More) and open an existing workflow or create a new one.
@@ -33,7 +33,7 @@ Steps follow [HubSpot's setup guide ↗](https://knowledge.hubspot.com/workflows
 
 [Setup guide: HubSpot: Create Asana tasks with workflows ↗](https://knowledge.hubspot.com/workflows/create-asana-tasks-with-workflows)
 
-Sources (checked Nov 3, 2026): [HubSpot: Create Asana tasks with workflows ↗](https://knowledge.hubspot.com/workflows/create-asana-tasks-with-workflows) · [HubSpot Marketplace: Asana ↗](https://ecosystem.hubspot.com/marketplace/listing/asana) · [HubSpot pricing ↗](https://www.hubspot.com/pricing)
+Sources (checked Nov 3, 2026; setup guide read again for the steps on Nov 10, 2026): [HubSpot: Create Asana tasks with workflows ↗](https://knowledge.hubspot.com/workflows/create-asana-tasks-with-workflows) · [HubSpot Marketplace: Asana ↗](https://ecosystem.hubspot.com/marketplace/listing/asana) · [HubSpot pricing ↗](https://www.hubspot.com/pricing)
 
 *Interactive cost calculator: open the web page to change team size, billing and add-ons.*
 

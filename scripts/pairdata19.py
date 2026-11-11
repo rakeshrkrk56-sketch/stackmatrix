@@ -148,3 +148,31 @@ SETUP19 = {
           "Back in Xero, select the bank account for Stripe payouts and click Continue.",
           "Create an expense account for Stripe fees or pick an existing one, click Complete set up, then Save. Stripe is added to your invoice templates automatically."]),
 }
+
+# Later on Nov 10, 2026: the step lists written in earlier rounds were compared with that day's version of the guide
+# they came from. RECHECK19 names the guide for each list that matched; these pages get the same dated line under
+# their steps. Two lists are left out: monday-and-slack (monday.com's help centre can't be reached, and its
+# integration page has no steps) and pipedrive-and-calendly (an outline of the options, not one vendor's guide).
+RECHECK19 = {
+ "activecampaign-and-calendly": ("Calendly", "https://calendly.com/help/calendly-activecampaign"),
+ "hubspot-and-mailchimp": ("HubSpot", "https://knowledge.hubspot.com/forms/connect-non-hubspot-forms-to-mailchimp"),
+ "hubspot-and-quickbooks": ("HubSpot", "https://knowledge.hubspot.com/integrations/connect-hubspot-and-quickbooks-online"),
+ "hubspot-and-slack": ("HubSpot", "https://knowledge.hubspot.com/integrations/how-do-i-use-the-slack-integration"),
+ "hubspot-and-zendesk": ("Zendesk", "https://support.zendesk.com/hc/en-us/articles/4408884090650-Setting-up-the-Zendesk-Support-for-HubSpot-integration"),
+ "intercom-and-hubspot": ("Intercom", "https://www.intercom.com/help/en/articles/2128216-hubspot-app"),
+ "pipedrive-and-mailchimp": ("Pipedrive", "https://support.pipedrive.com/en/article/pipedrive-integration-mailchimp-sync"),
+ "pipedrive-and-quickbooks": ("Pipedrive", "https://support.pipedrive.com/en/article/pipedrive-integration-quickbooks"),
+ "pipedrive-and-salesforce": ("Make", "https://apps.make.com/salesforce"),
+ "pipedrive-and-slack": ("Pipedrive", "https://support.pipedrive.com/en/article/workflow-automation-slack-notifications"),
+ "salesforce-and-quickbooks": ("Make", "https://apps.make.com/salesforce"),
+ "slack-and-zendesk": ("Zendesk", "https://support.zendesk.com/hc/en-us/articles/4408833756698-Understanding-and-installing-the-Slack-for-Zendesk-Support-integration"),
+ "stripe-and-slack": ("Stripe", "https://docs.stripe.com/use-stripe-apps/stripe-workflows-slack"),
+}
+# Steps reworded where the guide is more specific than the old text (0-based index -> new text).
+MAKE_SF_CONNECT = ("add a Salesforce module and click Create a connection. Choose the connection type, say whether it's a Salesforce sandbox and click Save")
+STEP_FIX19 = {
+ # HubSpot only asks you to map emails when your HubSpot and Slack addresses differ
+ "hubspot-and-slack": {3: "If your HubSpot email differs from your Slack email, HubSpot asks you to map the two: enter your Slack email, click Verify in Slack, then click Verify in the message the HubSpot app sends you in Slack."},
+ "pipedrive-and-salesforce": {1: f"In Make, create a scenario, {MAKE_SF_CONNECT}. Connect your Pipedrive account the same way."},
+ "salesforce-and-quickbooks": {1: f"In Make, create a scenario, {MAKE_SF_CONNECT}. Connect your QuickBooks account the same way."},
+}

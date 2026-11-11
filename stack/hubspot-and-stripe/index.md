@@ -11,7 +11,7 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 Stripe connects as a payment processor on any HubSpot plan for quotes, invoices and payment links; Stripe's per-transaction fees still apply. Requires HubSpot on the 'Free' plan and Stripe on the 'Standard' plan.
 
-Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
+Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 · Setup steps: Nov 10, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
 
 ## How the HubSpot + Stripe integration works
 
@@ -19,7 +19,7 @@ You can connect Stripe as a payment processor in HubSpot and collect payments th
 
 [Setup guide: HubSpot: Connect Stripe as a payment processor ↗](https://knowledge.hubspot.com/payment-processing/connect-your-stripe-account-as-a-payment-processor-in-hubspot)
 
-### How to set it up
+### How do you set up HubSpot + Stripe?
 
 1. In HubSpot, go to Revenue > Payments (it may sit under More) and click Set up payments.
 2. Select Integrate with a Stripe payment processing account and click Next.
@@ -32,7 +32,7 @@ Steps follow [HubSpot's setup guide ↗](https://knowledge.hubspot.com/payment-p
 
 **Limitations:** Stripe's per-transaction processing fees still apply and aren't included in the cost above. Invoices and subscriptions you create in HubSpot aren't created in Stripe, the processor option isn't offered in every country (India is one exception), and custom field mappings in Data Sync need Operations Hub (now Data Hub) Starter.
 
-Sources (checked Nov 3, 2026): [HubSpot: Connect Stripe as a payment processor ↗](https://knowledge.hubspot.com/payment-processing/connect-your-stripe-account-as-a-payment-processor-in-hubspot) · [HubSpot Marketplace: Stripe Data Sync ↗](https://ecosystem.hubspot.com/marketplace/listing/stripe-data-sync)
+Sources (checked Nov 3, 2026; setup guide read again for the steps on Nov 10, 2026): [HubSpot: Connect Stripe as a payment processor ↗](https://knowledge.hubspot.com/payment-processing/connect-your-stripe-account-as-a-payment-processor-in-hubspot) · [HubSpot Marketplace: Stripe Data Sync ↗](https://ecosystem.hubspot.com/marketplace/listing/stripe-data-sync)
 
 *Interactive cost calculator: open the web page to change team size, billing and add-ons.*
 

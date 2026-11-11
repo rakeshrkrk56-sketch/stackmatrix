@@ -11,9 +11,11 @@ API & webhooks
 
 Checked against ActiveCampaign's developer and help-center documentation · Nov 3, 2026 · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
 
+## Which ActiveCampaign plans include API access and webhooks?
+
 **Short answer:** Every ActiveCampaign plan includes API access and webhooks: ActiveCampaign's help center lists Starter, Plus, Pro and Enterprise for both.
 
-ActiveCampaign API & Webhook Access by Plan (2026)
+Which ActiveCampaign plans include API access and webhooks?
 
 | Plan | Price | API access | API limit | Webhooks | Webhook automation action |
 | --- | --- | --- | --- | --- | --- |
@@ -33,11 +35,11 @@ ActiveCampaign monthly price for 10 seats by plan. Green: API included; amber: p
 
 Image: [ActiveCampaign API access by plan: Starter yes; Plus yes; Pro yes](https://stackcostmatrix.com/og/activecampaign-api-access.jpg)
 
-## Two kinds of webhooks
+## What is the difference between developer webhooks and workflow webhooks?
 
 Vendors use "webhooks" for two different features. **Developer webhooks** let an app or a tool like Make or Zapier subscribe to events, and are usually available wherever the API is. A **webhook automation action** is a no-code step that sends data out from the tool's own automations, and is often limited to paid plans. The table lists them separately so you can see which one an integration actually needs.
 
-## Which ActiveCampaign plan the integrations here need
+## Which ActiveCampaign plan do the integrations here need?
 
 **Starter** (3): [ActiveCampaign + Calendly](https://stackcostmatrix.com/stack/activecampaign-and-calendly/), [ActiveCampaign + Pipedrive](https://stackcostmatrix.com/stack/activecampaign-and-pipedrive/), [Xero + ActiveCampaign](https://stackcostmatrix.com/stack/xero-and-activecampaign/)  
 **Plus** (1): [ActiveCampaign + Stripe](https://stackcostmatrix.com/stack/activecampaign-and-stripe/)

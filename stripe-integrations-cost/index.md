@@ -44,15 +44,15 @@ Image: [Stripe integration costs summary: 12 integrations priced, from $0 to $1,
 
 Not for any of the 12 integrations here: each one works on Stripe's cheapest plan with API access, so the integration itself adds no Stripe upgrade cost. Any extra cost comes from the other tool's plan or from a connector fee, shown in the table above.
 
-## Which Stripe integrations need middleware
+## Which Stripe integrations need Make or Zapier?
 
 6 of the 12 have no native connector and run through a third-party service: ClickUp + Stripe (Make Core, $10.59/mo); Stripe + Mailchimp (Data Mapper for Mailchimp, $15.00/mo); Stripe + QuickBooks (Make Core, $10.59/mo); Notion + Stripe (Make Core, $10.59/mo); Airtable + Stripe (Make Core, $10.59/mo); Zendesk + Stripe (Make Core, $10.59/mo). Connector fees are the monthly-billing price; the calculators use the lower annual-billing price (Make Core $9, Zapier Professional $19.99, Data Mapper $12.75) when you switch on annual billing. Real usage can push Make or Zapier onto a bigger plan, so check your expected volume.
 
-## Stripe plans, API access and webhooks
+## Which Stripe plans include API access and webhooks?
 
-API and webhook facts are listed for the plans that at least one integration below requires, with the date each was checked against Stripe's documentation. Stripe has no monthly plan fee; it charges per transaction, so the calculators count it as $0/month. [Every Stripe plan's API access, limits and webhooks →](https://stackcostmatrix.com/stripe-api-access/)
+On the plans these integrations need: Standard (API access: yes; webhooks: yes). API and webhook facts are listed for the plans that at least one integration below requires, with the date each was checked against Stripe's documentation. Stripe has no monthly plan fee; it charges per transaction, so the calculators count it as $0/month. [Every Stripe plan's API access, limits and webhooks →](https://stackcostmatrix.com/stripe-api-access/)
 
-Stripe plans, API access and webhooks
+Which Stripe plans include API access and webhooks?
 
 | Plan | Price | API access | Webhooks | Integrations that need it |
 | --- | --- | --- | --- | --- |

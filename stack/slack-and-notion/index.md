@@ -11,7 +11,7 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 Notion posts Slack notifications from buttons and database automations on paid Notion plans; Slack's free plan is enough. Requires Slack on the 'Free' plan and Notion on the 'Plus' plan.
 
-Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
+Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 · Setup steps: Nov 10, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
 
 ## How the Slack + Notion integration works
 
@@ -19,7 +19,7 @@ In Notion, a button, database button or database automation can send a Slack not
 
 [Setup guide: Notion: Connect Slack to Notion ↗](https://www.notion.com/help/slack)
 
-### How to set it up
+### How do you set up Slack + Notion?
 
 1. In Notion, select ••• at the top of the database you want alerts from.
 2. Select Automations, then Add trigger.
@@ -30,7 +30,7 @@ Steps follow [Notion's setup guide ↗](https://www.notion.com/help/slack), read
 
 **Limitations:** Notion says these Slack automation actions are only available on paid plans. Slack's free plan allows up to 10 app installations.
 
-Sources (checked Nov 3, 2026): [Notion: Connect Slack to Notion ↗](https://www.notion.com/help/slack) · [Slack: Free plan limits ↗](https://slack.com/help/articles/27204752526611-Feature-limitations-on-the-free-version-of-Slack)
+Sources (checked Nov 3, 2026; setup guide read again for the steps on Nov 10, 2026): [Notion: Connect Slack to Notion ↗](https://www.notion.com/help/slack) · [Slack: Free plan limits ↗](https://slack.com/help/articles/27204752526611-Feature-limitations-on-the-free-version-of-Slack)
 
 *Interactive cost calculator: open the web page to change team size, billing and add-ons.*
 

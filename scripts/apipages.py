@@ -4,7 +4,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 from apidata import TOOLS, CHECKED
 from site16 import fix_ld
 from model import svg_bars
-from hubs import load_pairs, plan_price, render, read, esc, attr, SHORT, SITE, P, H2, TH, TD, LINK, join_names
+from hubs import load_pairs, plan_price, render, read, esc, attr, SHORT, SITE, P, H2, TH, TD, LINK, join_names, h2q
 
 QUOTE_OK = set()  # filled from the source check: (slug, index) whose quote was found on the page
 
@@ -36,7 +36,7 @@ def build(slug, tool, pairs, hubs, api_urls):
     table = (f'<div class="mt-8 overflow-x-auto rounded-xl border border-slate-200 bg-white shadow-sm"> <table class="spec-matrix w-full min-w-[640px] text-sm"> <thead class="bg-slate-50"> <tr class="text-left"> '
              f'{TH}Plan</th> {TH}Price</th> {TH}API access</th> {TH}API limit</th> {TH}Webhooks</th> {TH}Webhook automation action</th> </tr> </thead> <tbody> {"".join(rows)} </tbody> </table> </div>'
              f'<p class="mt-3 text-xs text-slate-500">' + (f'"Not stated" means {esc(short)}&#39;s documentation that we read doesn&#39;t say either way. ' if any("Not stated" in (f["api"], f["wh"], f["auto"]) for _, f, _ in plans) else "") + (f'{esc(short)} publishes annual-billing rates only, so prices are per month, billed annually.' if slug in ANNUAL_ONLY else 'Prices are monthly-billing list prices from this site&#39;s calculators.') + '</p>')
-    kinds = (f'{H2}Two kinds of webhooks</h2> {P}Vendors use "webhooks" for two different features. <strong>Developer webhooks</strong> let an app or a tool like Make or Zapier subscribe to events, '
+    kinds = (f'{h2q("Two kinds of webhooks")}What is the difference between developer webhooks and workflow webhooks?</h2> {P}Vendors use "webhooks" for two different features. <strong>Developer webhooks</strong> let an app or a tool like Make or Zapier subscribe to events, '
              f'and are usually available wherever the API is. A <strong>webhook automation action</strong> is a no-code step that sends data out from the tool&#39;s own automations, and is often limited to paid plans. '
              f'The table lists them separately so you can see which one an integration actually needs.</p>')
     note = f"{P}{esc(T['note'])}</p>" if T["note"] else ""
@@ -48,7 +48,7 @@ def build(slug, tool, pairs, hubs, api_urls):
         links = ", ".join(f'<a href="/stack/{p["slug"]}/" {LINK}>{esc(" + ".join(SHORT.get(t["slug"], t["name"]) for t in p["d"]["tools"]))}</a>' for p in ps)
         items.append(f"<strong>{esc(pl)}</strong> ({len(ps)}): {links}")
     hub = hubs.get(slug)
-    integ = (f'{H2}Which {esc(short)} plan the integrations here need</h2> {P}' + "<br>".join(items) + "</p>" +
+    integ = (f'{h2q("Plans integrations need")}Which {esc(short)} plan do the integrations here need?</h2> {P}' + "<br>".join(items) + "</p>" +
              (f' <p class="mt-3 text-sm text-slate-500">Full costs, including the other tool&#39;s plan and any connector fee: <a href="{hub["url"]}" {LINK}>{esc(short)} integration costs →</a></p>' if hub else "")) if items else ""
     src = []
     for i, (l, u, q) in enumerate(T["sources"]):
@@ -100,7 +100,7 @@ def build(slug, tool, pairs, hubs, api_urls):
     body = (f'<section class="mx-auto max-w-4xl"> <p class="text-sm font-semibold uppercase tracking-widest text-indigo-600">API &amp; webhooks</p> '
             f'<h1 class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">\n{esc(h1)}\n</h1> '
             f'<p class="mt-3 text-sm text-slate-500">Checked against {esc(short)}&#39;s developer and help-center documentation · {T.get('checked', CHECKED)} · Edited by <a href="/about/#editor" class="font-medium text-indigo-600 hover:underline">Rakesh Kumar</a></p> '
-            f'{P}<strong>Short answer:</strong> {esc(T["answer"])}</p> {table} {note} {chart} {fig} {extra} {kinds} {integ} {sources} {navh}{faq_html} </section> ')
+            f'{h2q("API access by plan")}Which {esc(short)} plans include API access and webhooks?</h2> {P}<strong>Short answer:</strong> {esc(T["answer"])}</p> {table} {note} {chart} {fig} {extra} {kinds} {integ} {sources} {navh}{faq_html} </section> ')
     ld = [
         {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faqs]},
         {"@context": "https://schema.org", "@type": "TechArticle", "headline": title, "description": desc,

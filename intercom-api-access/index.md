@@ -11,9 +11,11 @@ API & webhooks
 
 Checked against Intercom's developer and help-center documentation · Nov 3, 2026 · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
 
+## Which Intercom plans include API access and webhooks?
+
 **Short answer:** Intercom's webhooks and API apps work from any paid workspace (or a free development workspace), so Essential is enough.
 
-Intercom API & Webhook Access by Plan (2026)
+Which Intercom plans include API access and webhooks?
 
 | Plan | Price | API access | API limit | Webhooks | Webhook automation action |
 | --- | --- | --- | --- | --- | --- |
@@ -32,11 +34,11 @@ Intercom monthly price for 10 seats by plan. Green: API included; amber: paid ad
 
 Image: [Intercom API access by plan: Essential yes; Advanced yes](https://stackcostmatrix.com/og/intercom-api-access.jpg)
 
-## Two kinds of webhooks
+## What is the difference between developer webhooks and workflow webhooks?
 
 Vendors use "webhooks" for two different features. **Developer webhooks** let an app or a tool like Make or Zapier subscribe to events, and are usually available wherever the API is. A **webhook automation action** is a no-code step that sends data out from the tool's own automations, and is often limited to paid plans. The table lists them separately so you can see which one an integration actually needs.
 
-## Which Intercom plan the integrations here need
+## Which Intercom plan do the integrations here need?
 
 **Essential** (3): [Intercom + HubSpot](https://stackcostmatrix.com/stack/intercom-and-hubspot/), [Intercom + Stripe](https://stackcostmatrix.com/stack/intercom-and-stripe/), [Slack + Intercom](https://stackcostmatrix.com/stack/slack-and-intercom/)
 

@@ -11,9 +11,11 @@ API & webhooks
 
 Checked against Airtable's developer and help-center documentation · Nov 3, 2026 · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
 
+## Which Airtable plans include API access and webhooks?
+
 **Short answer:** Airtable's API and webhooks work on every plan, including Free, but the Free plan is capped at 1,000 API calls a month; Team raises that to 100,000.
 
-Airtable API & Webhook Access by Plan (2026)
+Which Airtable plans include API access and webhooks?
 
 | Plan | Price | API access | API limit | Webhooks | Webhook automation action |
 | --- | --- | --- | --- | --- | --- |
@@ -33,11 +35,11 @@ Airtable monthly price for 10 seats by plan. Green: API included; amber: paid ad
 
 Image: [Airtable API access by plan: Free yes; Team yes; Business yes](https://stackcostmatrix.com/og/airtable-api-access.jpg)
 
-## Two kinds of webhooks
+## What is the difference between developer webhooks and workflow webhooks?
 
 Vendors use "webhooks" for two different features. **Developer webhooks** let an app or a tool like Make or Zapier subscribe to events, and are usually available wherever the API is. A **webhook automation action** is a no-code step that sends data out from the tool's own automations, and is often limited to paid plans. The table lists them separately so you can see which one an integration actually needs.
 
-## Which Airtable plan the integrations here need
+## Which Airtable plan do the integrations here need?
 
 **Free** (1): [Slack + Airtable](https://stackcostmatrix.com/stack/slack-and-airtable/)  
 **Team** (3): [Airtable + QuickBooks](https://stackcostmatrix.com/stack/airtable-and-quickbooks/), [Airtable + Stripe](https://stackcostmatrix.com/stack/airtable-and-stripe/), [Mailchimp + Airtable](https://stackcostmatrix.com/stack/mailchimp-and-airtable/)

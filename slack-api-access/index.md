@@ -11,9 +11,11 @@ API & webhooks
 
 Checked against Slack's developer and help-center documentation · Nov 3, 2026 · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
 
+## Which Slack plans include API access and webhooks?
+
 **Short answer:** Slack's API and incoming webhooks work on the Free plan; webhook-triggered workflows in Workflow Builder need a paid plan.
 
-Slack API & Webhook Access by Plan (2026)
+Which Slack plans include API access and webhooks?
 
 | Plan | Price | API access | API limit | Webhooks | Webhook automation action |
 | --- | --- | --- | --- | --- | --- |
@@ -33,11 +35,11 @@ Slack monthly price for 10 seats by plan. Green: API included; amber: paid add-o
 
 Image: [Slack API access by plan: Free yes; Pro yes; Business+ yes](https://stackcostmatrix.com/og/slack-api-access.jpg)
 
-## Two kinds of webhooks
+## What is the difference between developer webhooks and workflow webhooks?
 
 Vendors use "webhooks" for two different features. **Developer webhooks** let an app or a tool like Make or Zapier subscribe to events, and are usually available wherever the API is. A **webhook automation action** is a no-code step that sends data out from the tool's own automations, and is often limited to paid plans. The table lists them separately so you can see which one an integration actually needs.
 
-## Which Slack plan the integrations here need
+## Which Slack plan do the integrations here need?
 
 **Free** (13): [Asana + Slack](https://stackcostmatrix.com/stack/asana-and-slack/), [ClickUp + Slack](https://stackcostmatrix.com/stack/clickup-and-slack/), [Freshdesk + Slack](https://stackcostmatrix.com/stack/freshdesk-and-slack/), [HubSpot + Slack](https://stackcostmatrix.com/stack/hubspot-and-slack/), [Monday.com + Slack](https://stackcostmatrix.com/stack/monday-and-slack/), [Pipedrive + Slack](https://stackcostmatrix.com/stack/pipedrive-and-slack/), [QuickBooks + Slack](https://stackcostmatrix.com/stack/quickbooks-and-slack/), [Slack + Airtable](https://stackcostmatrix.com/stack/slack-and-airtable/), [Slack + Calendly](https://stackcostmatrix.com/stack/slack-and-calendly/), [Slack + Intercom](https://stackcostmatrix.com/stack/slack-and-intercom/), [Slack + Notion](https://stackcostmatrix.com/stack/slack-and-notion/), [Slack + Zendesk](https://stackcostmatrix.com/stack/slack-and-zendesk/), [Stripe + Slack](https://stackcostmatrix.com/stack/stripe-and-slack/)  
 **Pro** (1): [Salesforce + Slack](https://stackcostmatrix.com/stack/salesforce-and-slack/)

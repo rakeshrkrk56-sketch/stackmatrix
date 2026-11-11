@@ -11,7 +11,7 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 Xero accepts online invoice payments through Stripe on its cheapest Early plan; multi-currency needs Xero's top Established plan ($97/mo). Requires Stripe on the 'Standard' plan and Xero on the 'Early' plan.
 
-Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
+Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 · Setup steps: Nov 10, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
 
 ## How the Stripe + Xero integration works
 
@@ -19,7 +19,7 @@ Stripe is a built-in payment service in Xero: you add Stripe to an invoice templ
 
 [Setup guide: Xero: Connect Stripe to Xero ↗](https://central.xero.com/0/article/Stripe-AU)
 
-### How to set it up
+### How do you set up Stripe + Xero?
 
 1. In Xero, open the Sales menu and select Online payments. You need the administrator or standard user role.
 2. Click Add a Stripe account. If online payments are already set up, use the Add a new service tab instead.
@@ -32,7 +32,7 @@ Steps follow [Xero's setup guide ↗](https://central.xero.com/0/article/Stripe-
 
 **Limitations:** Xero's cheapest Early plan ($27/mo) accepts online invoice payments but limits you to 20 invoices, and using multiple currencies needs the top Established plan ($97/mo). Stripe's processing fees apply and aren't included above.
 
-Sources (checked Nov 3, 2026): [Xero: Connect Stripe to Xero ↗](https://central.xero.com/0/article/Stripe-AU) · [Xero: US pricing plans ↗](https://www.xero.com/us/pricing-plans/)
+Sources (checked Nov 3, 2026; setup guide read again for the steps on Nov 10, 2026): [Xero: Connect Stripe to Xero ↗](https://central.xero.com/0/article/Stripe-AU) · [Xero: US pricing plans ↗](https://www.xero.com/us/pricing-plans/)
 
 *Interactive cost calculator: open the web page to change team size, billing and add-ons.*
 

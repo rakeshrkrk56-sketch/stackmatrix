@@ -11,7 +11,7 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 Calendly bookings sync contacts and event details into ActiveCampaign one way, and past bookings don't sync; Calendly needs its Standard plan. Requires ActiveCampaign on the 'Starter' plan and Calendly on the 'Standard' plan.
 
-Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
+Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 · Setup steps: Nov 10, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
 
 ## How the ActiveCampaign + Calendly integration works
 
@@ -21,16 +21,18 @@ When someone books a Calendly meeting, the integration creates or updates the co
 
 [Setup guide: Calendly: ActiveCampaign integration ↗](https://calendly.com/help/calendly-activecampaign)
 
-### How to set it up
+### How do you set up ActiveCampaign + Calendly?
 
 1. In ActiveCampaign, click your profile icon at the bottom left and select Apps.
 2. Select Calendly, then Add an account and Connect.
 3. Under Choose an Event, pick the Calendly event type to sync and click Continue.
 4. Map Calendly fields to ActiveCampaign fields and click Finish.
 
+Steps follow [Calendly's setup guide ↗](https://calendly.com/help/calendly-activecampaign), read Nov 10, 2026.
+
 **Limitations:** Calendly lists the integration for its Professional, Standard, Standard Plus, Teams, Teams Plus and Enterprise plans, so Calendly's free plan doesn't include it. Each connection syncs the event type you choose during setup.
 
-Sources (checked Nov 3, 2026): [Calendly: ActiveCampaign integration ↗](https://calendly.com/help/calendly-activecampaign) · [ActiveCampaign: Integrate Calendly ↗](https://help.activecampaign.com/hc/en-us/articles/360010946759)
+Sources (checked Nov 3, 2026; setup guide read again for the steps on Nov 10, 2026): [Calendly: ActiveCampaign integration ↗](https://calendly.com/help/calendly-activecampaign) · [ActiveCampaign: Integrate Calendly ↗](https://help.activecampaign.com/hc/en-us/articles/360010946759)
 
 *Interactive cost calculator: open the web page to change team size, billing and add-ons.*
 

@@ -35,15 +35,15 @@ Image: [Intercom integration costs summary: 3 integrations priced, from $390 to 
 
 Not for any of the 3 integrations here: each one works on Intercom's cheapest plan with API access, so the integration itself adds no Intercom upgrade cost. Any extra cost comes from the other tool's plan or from a connector fee, shown in the table above.
 
-## Which Intercom integrations need middleware
+## Which Intercom integrations need Make or Zapier?
 
 None of the 3: every Intercom integration here has a native connector, so there's no Make or Zapier fee unless you choose one.
 
-## Intercom plans, API access and webhooks
+## Which Intercom plans include API access and webhooks?
 
-API and webhook facts are listed for the plans that at least one integration below requires, with the date each was checked against Intercom's documentation. Prices are monthly-billing list prices, re-checked on the vendor's pricing page on Nov 3, 2026; the annual-billing price is shown where the vendor publishes one. [Every Intercom plan's API access, limits and webhooks →](https://stackcostmatrix.com/intercom-api-access/)
+On the plans these integrations need: Essential (API access: yes; webhooks: yes). API and webhook facts are listed for the plans that at least one integration below requires, with the date each was checked against Intercom's documentation. Prices are monthly-billing list prices, re-checked on the vendor's pricing page on Nov 3, 2026; the annual-billing price is shown where the vendor publishes one. [Every Intercom plan's API access, limits and webhooks →](https://stackcostmatrix.com/intercom-api-access/)
 
-Intercom plans, API access and webhooks
+Which Intercom plans include API access and webhooks?
 
 | Plan | Price | API access | Webhooks | Integrations that need it |
 | --- | --- | --- | --- | --- |

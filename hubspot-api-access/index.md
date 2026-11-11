@@ -11,9 +11,11 @@ API & webhooks
 
 Checked against HubSpot's developer and help-center documentation · Nov 3, 2026 · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
 
+## Which HubSpot plans include API access and webhooks?
+
 **Short answer:** HubSpot's API is available on every plan, including the free CRM, with higher limits on Professional and Enterprise. Webhook actions in workflows need Data Hub Professional or Enterprise.
 
-HubSpot API & Webhook Access by Plan (2026)
+Which HubSpot plans include API access and webhooks?
 
 | Plan | Price | API access | API limit | Webhooks | Webhook automation action |
 | --- | --- | --- | --- | --- | --- |
@@ -34,11 +36,11 @@ HubSpot monthly price for 10 seats by plan. Green: API included; amber: paid add
 
 Image: [HubSpot API access by plan: Free yes; Starter yes; Professional yes; Enterprise yes](https://stackcostmatrix.com/og/hubspot-api-access.jpg)
 
-## Two kinds of webhooks
+## What is the difference between developer webhooks and workflow webhooks?
 
 Vendors use "webhooks" for two different features. **Developer webhooks** let an app or a tool like Make or Zapier subscribe to events, and are usually available wherever the API is. A **webhook automation action** is a no-code step that sends data out from the tool's own automations, and is often limited to paid plans. The table lists them separately so you can see which one an integration actually needs.
 
-## Which HubSpot plan the integrations here need
+## Which HubSpot plan do the integrations here need?
 
 **Free** (11): [Freshdesk + HubSpot](https://stackcostmatrix.com/stack/freshdesk-and-hubspot/), [HubSpot + Calendly](https://stackcostmatrix.com/stack/hubspot-and-calendly/), [HubSpot + ClickUp](https://stackcostmatrix.com/stack/hubspot-and-clickup/), [HubSpot + Mailchimp](https://stackcostmatrix.com/stack/hubspot-and-mailchimp/), [HubSpot + Monday.com](https://stackcostmatrix.com/stack/hubspot-and-monday/), [HubSpot + Pipedrive](https://stackcostmatrix.com/stack/hubspot-and-pipedrive/), [HubSpot + QuickBooks](https://stackcostmatrix.com/stack/hubspot-and-quickbooks/), [HubSpot + Slack](https://stackcostmatrix.com/stack/hubspot-and-slack/), [HubSpot + Stripe](https://stackcostmatrix.com/stack/hubspot-and-stripe/), [HubSpot + Zendesk](https://stackcostmatrix.com/stack/hubspot-and-zendesk/), [Intercom + HubSpot](https://stackcostmatrix.com/stack/intercom-and-hubspot/)  
 **Professional** (2): [HubSpot + Asana](https://stackcostmatrix.com/stack/hubspot-and-asana/), [HubSpot + Salesforce](https://stackcostmatrix.com/stack/hubspot-and-salesforce/)

@@ -32,19 +32,19 @@ Monthly cost for 10 seats, both tools plus any connector. Indigo bars are native
 
 Image: [Airtable integration costs summary: 4 integrations priced, from $0 to $288.59 a month for 10 seats](https://stackcostmatrix.com/og/airtable-integrations-cost.jpg)
 
-## Where Airtable forces an upgrade
+## Which Airtable integrations force a plan upgrade?
 
 3 of the 4 integrations need a more expensive Airtable plan than Free, Airtable's cheapest plan with API access. The extra Airtable cost at 10 seats: Airtable + Stripe needs Team (+$240.00/mo); Mailchimp + Airtable needs Team (+$240.00/mo); Airtable + QuickBooks needs Team (+$240.00/mo). That gap is the hidden cost: you pay it every month even if you only wanted the integration. Each pair's "Hidden Cost Trap" box shows the full breakdown.
 
-## Which Airtable integrations need middleware
+## Which Airtable integrations need Make or Zapier?
 
 3 of the 4 have no native connector and run through a third-party service: Airtable + Stripe (Make Core, $10.59/mo); Mailchimp + Airtable (Make Core, $10.59/mo); Airtable + QuickBooks (Make Core, $10.59/mo). Connector fees are the monthly-billing price; the calculators use the lower annual-billing price (Make Core $9, Zapier Professional $19.99, Data Mapper $12.75) when you switch on annual billing. Real usage can push Make or Zapier onto a bigger plan, so check your expected volume.
 
-## Airtable plans, API access and webhooks
+## Which Airtable plans include API access and webhooks?
 
-API and webhook facts are listed for the plans that at least one integration below requires, with the date each was checked against Airtable's documentation. Prices are monthly-billing list prices, re-checked on the vendor's pricing page on Nov 3, 2026; the annual-billing price is shown where the vendor publishes one. [Every Airtable plan's API access, limits and webhooks →](https://stackcostmatrix.com/airtable-api-access/)
+On the plans these integrations need: Free (API access: yes; webhooks: yes); Team (API access: yes; webhooks: yes). API and webhook facts are listed for the plans that at least one integration below requires, with the date each was checked against Airtable's documentation. Prices are monthly-billing list prices, re-checked on the vendor's pricing page on Nov 3, 2026; the annual-billing price is shown where the vendor publishes one. [Every Airtable plan's API access, limits and webhooks →](https://stackcostmatrix.com/airtable-api-access/)
 
-Airtable plans, API access and webhooks
+Which Airtable plans include API access and webhooks?
 
 | Plan | Price | API access | Webhooks | Integrations that need it |
 | --- | --- | --- | --- | --- |

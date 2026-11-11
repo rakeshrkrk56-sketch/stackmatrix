@@ -48,6 +48,16 @@ B2B CRM hidden costs: native vs Zapier/Make middleware across HubSpot, Salesforc
 
 Read the guide →](https://stackcostmatrix.com/crm-integration-pricing-guide/)
 
+## What does a SaaS integration cost?
+
+It depends which of three bills you mean. Connecting two tools you already pay for is often free: 24 of the 55 integrations in our 2026 report add no cost at all. When there is a cost, it's one of these.
+
+1. **A plan upgrade.** The integration only works on a higher plan of one of the tools. That's 93% of the extra cost in this index, typically $120–$251 a month for 10 seats when an upgrade is forced.
+2. **A connector fee.** There's no native app, so you pay for a service such as Make or Zapier: $10.59–$29.99 a month at list price.
+3. **Building it yourself.** A custom integration written against both APIs. This index doesn't measure that; the report says why and quotes one outside estimate.
+
+[SaaS integration costs explained: The Integration Tax 2026 →](https://stackcostmatrix.com/integration-tax-2026/)
+
 ## Integration costs by tool
 
 Every integration for one tool on a single page: the minimum plan each needs, native vs middleware, and 10-seat totals.

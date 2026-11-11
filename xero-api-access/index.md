@@ -11,9 +11,11 @@ API & webhooks
 
 Checked against Xero's developer and help-center documentation · Nov 3, 2026 · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
 
+## Which Xero plans include API access and webhooks?
+
 **Short answer:** Every Xero subscription can connect apps through the API; since March 2026 the limits depend on the connecting app's developer tier, not your Xero plan.
 
-Xero API & Webhook Access by Plan (2026)
+Which Xero plans include API access and webhooks?
 
 | Plan | Price | API access | API limit | Webhooks | Webhook automation action |
 | --- | --- | --- | --- | --- | --- |
@@ -33,11 +35,11 @@ Xero monthly price for 10 seats by plan. Green: API included; amber: paid add-on
 
 Image: [Xero API access by plan: Early yes; Growing yes; Established yes](https://stackcostmatrix.com/og/xero-api-access.jpg)
 
-## Two kinds of webhooks
+## What is the difference between developer webhooks and workflow webhooks?
 
 Vendors use "webhooks" for two different features. **Developer webhooks** let an app or a tool like Make or Zapier subscribe to events, and are usually available wherever the API is. A **webhook automation action** is a no-code step that sends data out from the tool's own automations, and is often limited to paid plans. The table lists them separately so you can see which one an integration actually needs.
 
-## Which Xero plan the integrations here need
+## Which Xero plan do the integrations here need?
 
 **Early** (4): [Pipedrive + Xero](https://stackcostmatrix.com/stack/pipedrive-and-xero/), [Stripe + Xero](https://stackcostmatrix.com/stack/stripe-and-xero/), [Xero + ActiveCampaign](https://stackcostmatrix.com/stack/xero-and-activecampaign/), [Xero + Calendly](https://stackcostmatrix.com/stack/xero-and-calendly/)
 

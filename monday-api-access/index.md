@@ -11,9 +11,11 @@ API & webhooks
 
 Checked against Monday.com's developer and help-center documentation · Nov 3, 2026 · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
 
+## Which Monday.com plans include API access and webhooks?
+
 **Short answer:** monday.com's API works on every plan with a daily call limit by plan, but integrations (including webhooks) start on Standard.
 
-Monday.com API & Webhook Access by Plan (2026)
+Which Monday.com plans include API access and webhooks?
 
 | Plan | Price | API access | API limit | Webhooks | Webhook automation action |
 | --- | --- | --- | --- | --- | --- |
@@ -33,11 +35,11 @@ Monday.com monthly price for 10 seats by plan. Green: API included; amber: paid 
 
 Image: [Monday.com API access by plan: Basic yes; Standard yes; Pro yes](https://stackcostmatrix.com/og/monday-api-access.jpg)
 
-## Two kinds of webhooks
+## What is the difference between developer webhooks and workflow webhooks?
 
 Vendors use "webhooks" for two different features. **Developer webhooks** let an app or a tool like Make or Zapier subscribe to events, and are usually available wherever the API is. A **webhook automation action** is a no-code step that sends data out from the tool's own automations, and is often limited to paid plans. The table lists them separately so you can see which one an integration actually needs.
 
-## Which Monday.com plan the integrations here need
+## Which Monday.com plan do the integrations here need?
 
 **Standard** (4): [HubSpot + Monday.com](https://stackcostmatrix.com/stack/hubspot-and-monday/), [Monday.com + QuickBooks](https://stackcostmatrix.com/stack/monday-and-quickbooks/), [Monday.com + Slack](https://stackcostmatrix.com/stack/monday-and-slack/), [Monday.com + Zendesk](https://stackcostmatrix.com/stack/monday-and-zendesk/)
 

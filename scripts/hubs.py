@@ -70,6 +70,9 @@ BADGE = {True: '<span class="rounded-full px-2 py-0.5 text-xs font-medium ring-1
          False: '<span class="rounded-full px-2 py-0.5 text-xs font-medium ring-1 bg-sky-100 text-sky-800 ring-sky-200"> Middleware </span>'}
 P = '<p class="mt-4 leading-relaxed text-slate-600">'
 H2 = '<h2 class="mt-10 text-xl font-bold">'
+def h2q(chip):
+    """A question heading; data-chip is the short label ux18 uses for its "On this page" link."""
+    return f'<h2 class="mt-10 text-xl font-bold" data-chip="{chip}">'
 TH = '<th class="px-4 py-3 font-semibold">'
 TD = '<td class="px-4 py-3">'
 LINK = 'class="font-medium text-indigo-600 hover:underline"'
@@ -151,14 +154,17 @@ def build_tool(slug, name, plans, pairs, sources, hubs):
         api, wh = facts.get(pl, (None, None))
         f = lambda x: (f'{x[0]} <span class="block text-xs text-slate-500">{esc(x[1])}</span>' if x else '<span class="text-xs text-slate-500">Not checked here (no pair needs this plan)</span>')
         ptr.append(f'<tr class="border-t border-slate-100"> <td class="px-4 py-3 font-medium">{esc(pl)}</td> {TD}{esc(plan_price(pd))}</td> {TD}{f(api)}</td> {TD}{f(wh)}</td> {TD}{req_counts.get(pl, 0)}</td> </tr>')
-    plan_tbl = (f'{H2}{esc(short)} plans, API access and webhooks</h2> {P}API and webhook facts are listed for the plans that at least one integration below requires, with the date each was checked against {esc(short)}&#39;s documentation. {esc(PRICE_NOTE.get(slug, DEFAULT_NOTE))} <a href="/{slug}-api-access/" {LINK}>Every {esc(short)} plan&#39;s API access, limits and webhooks →</a></p> '
+    known = [(pl, facts[pl]) for pl in plans if pl in facts and facts[pl][0] and facts[pl][1]]
+    txt = lambda x: re.sub(r"<[^>]+>", "", x[0]).strip()
+    plan_answer = ("On the plans these integrations need: " + "; ".join(f"{esc(pl)} (API access: {esc(txt(a).lower())}; webhooks: {esc(txt(w).lower())})" for pl, (a, w) in known) + ". ") if known else ""
+    plan_tbl = (f'{h2q("Plans and API access")}Which {esc(short)} plans include API access and webhooks?</h2> {P}{plan_answer}API and webhook facts are listed for the plans that at least one integration below requires, with the date each was checked against {esc(short)}&#39;s documentation. {esc(PRICE_NOTE.get(slug, DEFAULT_NOTE))} <a href="/{slug}-api-access/" {LINK}>Every {esc(short)} plan&#39;s API access, limits and webhooks →</a></p> '
                 f'<div class="mt-6 overflow-x-auto rounded-xl border border-slate-200 bg-white shadow-sm"> <table class="spec-matrix w-full min-w-[640px] text-sm"> <thead class="bg-slate-50"> <tr class="text-left"> '
                 f'{TH}Plan</th> {TH}Price</th> {TH}API access</th> {TH}Webhooks</th> {TH}Integrations that need it</th> </tr> </thead> <tbody> {"".join(ptr)} </tbody> </table> </div>')
 
     # hidden cost section
     if forced:
         items = "; ".join(f"{esc(r['label'])} needs {esc(r['me']['required'])} (+{money(r['forced'])}/mo)" for r in forced)
-        trap = (f'{H2}Where {esc(short)} forces an upgrade</h2> {P}{cnt(len(forced), n, 'integrations needs', 'integrations need')} a more expensive {esc(short)} plan than {esc(floor_plan['tier_name'])}, {esc(short)}&#39;s cheapest plan with API access. The extra {esc(short)} cost at 10 seats: {items}. '
+        trap = (f'{h2q('Forced upgrades')}Which {esc(short)} integrations force a plan upgrade?</h2> {P}{cnt(len(forced), n, 'integrations needs', 'integrations need')} a more expensive {esc(short)} plan than {esc(floor_plan['tier_name'])}, {esc(short)}&#39;s cheapest plan with API access. The extra {esc(short)} cost at 10 seats: {items}. '
                 f'That gap is the hidden cost: you pay it every month even if you only wanted the integration. Each pair&#39;s "Hidden Cost Trap" box shows the full breakdown.</p>')
     else:
         trap = (f'{H2}Does {esc(short)} force an upgrade?</h2> {P}Not for any of the {n} integrations here: each one works on {esc(short)}&#39;s cheapest plan with API access, so the integration itself adds no {esc(short)} upgrade cost. '
@@ -166,11 +172,11 @@ def build_tool(slug, name, plans, pairs, sources, hubs):
     # middleware section
     if mid:
         mtxt = "; ".join(f"{esc(r['label'])} ({esc(r['p']['conn'])}, {money(r['p']['d']['middleware'])}/mo)" for r in mid)
-        mw = (f'{H2}Which {esc(short)} integrations need middleware</h2> {P}{cnt(len(mid), n, 'has', 'have')} no native connector and {'runs' if len(mid) == 1 else 'run'} through a third-party service: {mtxt}. '
+        mw = (f'{h2q('Make or Zapier')}Which {esc(short)} integrations need Make or Zapier?</h2> {P}{cnt(len(mid), n, 'has', 'have')} no native connector and {'runs' if len(mid) == 1 else 'run'} through a third-party service: {mtxt}. '
               f'Connector fees are the monthly-billing price; the calculators use the lower annual-billing price (Make Core $9, Zapier Professional $19.99, Data Mapper $12.75) when you switch on annual billing. '
               f'Real usage can push Make or Zapier onto a bigger plan, so check your expected volume.</p>')
     else:
-        mw = f'{H2}Which {esc(short)} integrations need middleware</h2> {P}None of the {n}: every {esc(short)} integration here has a native connector, so there&#39;s no Make or Zapier fee unless you choose one.</p>'
+        mw = f'{h2q('Make or Zapier')}Which {esc(short)} integrations need Make or Zapier?</h2> {P}None of the {n}: every {esc(short)} integration here has a native connector, so there&#39;s no Make or Zapier fee unless you choose one.</p>'
 
     # FAQ
     hi_req = [r for r in rows if entry and r["me"]["required"] != entry]

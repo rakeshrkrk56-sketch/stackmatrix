@@ -11,7 +11,7 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 Asana's Slack app works for any Slack user, including Slack's free plan (up to 10 app installs). Requires Asana on the 'Starter' plan and Slack on the 'Free' plan.
 
-Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements checked · Nov 3, 2026 (Asana plan unconfirmed) · Prices checked · Nov 3, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
+Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements checked · Nov 3, 2026 (Asana plan unconfirmed) · Prices checked · Nov 3, 2026 · Setup steps: Nov 10, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
 
 ## How the Asana + Slack integration works
 
@@ -19,7 +19,7 @@ Install the Asana app for Slack, then type /asana in Slack to list, create, comp
 
 [Setup guide: Asana: Slack + Asana ↗](https://asana.com/apps/slack)
 
-### How to set it up
+### How do you set up Asana + Slack?
 
 1. Sign up for a Slack account and an Asana account if you don't have both.
 2. Install the Asana app for Slack from Asana's Slack page and follow Slack's instructions to authenticate your Asana account.
@@ -30,7 +30,7 @@ Steps follow [Asana's setup guide ↗](https://asana.com/apps/slack), read Nov 1
 
 **Limitations:** Updates flow both ways but it isn't a full sync: Slack conversations aren't mirrored into Asana, only the message you turn into a task. Slack's free plan allows up to 10 app installations.
 
-Sources (checked Nov 8, 2026): [Asana: Slack + Asana ↗](https://asana.com/apps/slack) · [Asana help: Slack and Asana ↗](https://help.asana.com/s/article/slack-and-asana)
+Sources (checked Nov 8, 2026; setup guide read again for the steps on Nov 10, 2026): [Asana: Slack + Asana ↗](https://asana.com/apps/slack) · [Asana help: Slack and Asana ↗](https://help.asana.com/s/article/slack-and-asana)
 
 *Interactive cost calculator: open the web page to change team size, billing and add-ons.*
 

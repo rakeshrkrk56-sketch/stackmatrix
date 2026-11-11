@@ -39,15 +39,15 @@ Image: [Zendesk integration costs summary: 7 integrations priced, from $690 to $
 
 Not for any of the 7 integrations here: each one works on Zendesk's cheapest plan with API access, so the integration itself adds no Zendesk upgrade cost. Any extra cost comes from the other tool's plan or from a connector fee, shown in the table above.
 
-## Which Zendesk integrations need middleware
+## Which Zendesk integrations need Make or Zapier?
 
 2 of the 7 have no native connector and run through a third-party service: Zendesk + Stripe (Make Core, $10.59/mo); Zendesk + Notion (Zapier Professional, $29.99/mo). Connector fees are the monthly-billing price; the calculators use the lower annual-billing price (Make Core $9, Zapier Professional $19.99, Data Mapper $12.75) when you switch on annual billing. Real usage can push Make or Zapier onto a bigger plan, so check your expected volume.
 
-## Zendesk plans, API access and webhooks
+## Which Zendesk plans include API access and webhooks?
 
-API and webhook facts are listed for the plans that at least one integration below requires, with the date each was checked against Zendesk's documentation. Prices are monthly-billing list prices, re-checked on the vendor's pricing page on Nov 3, 2026; the annual-billing price is shown where the vendor publishes one. [Every Zendesk plan's API access, limits and webhooks →](https://stackcostmatrix.com/zendesk-api-access/)
+On the plans these integrations need: Suite Team (API access: yes; webhooks: yes). API and webhook facts are listed for the plans that at least one integration below requires, with the date each was checked against Zendesk's documentation. Prices are monthly-billing list prices, re-checked on the vendor's pricing page on Nov 3, 2026; the annual-billing price is shown where the vendor publishes one. [Every Zendesk plan's API access, limits and webhooks →](https://stackcostmatrix.com/zendesk-api-access/)
 
-Zendesk plans, API access and webhooks
+Which Zendesk plans include API access and webhooks?
 
 | Plan | Price | API access | Webhooks | Integrations that need it |
 | --- | --- | --- | --- | --- |

@@ -36,15 +36,15 @@ Image: [Asana integration costs summary: 4 integrations priced, from $134.90 to 
 
 Not for any of the 4 integrations here: each one works on Asana's cheapest plan with API access, so the integration itself adds no Asana upgrade cost. Any extra cost comes from the other tool's plan or from a connector fee, shown in the table above.
 
-## Which Asana integrations need middleware
+## Which Asana integrations need Make or Zapier?
 
 2 of the 4 have no native connector and run through a third-party service: Asana + Mailchimp (Zapier Professional, $29.99/mo); Asana + QuickBooks (Make Core, $10.59/mo). Connector fees are the monthly-billing price; the calculators use the lower annual-billing price (Make Core $9, Zapier Professional $19.99, Data Mapper $12.75) when you switch on annual billing. Real usage can push Make or Zapier onto a bigger plan, so check your expected volume.
 
-## Asana plans, API access and webhooks
+## Which Asana plans include API access and webhooks?
 
-API and webhook facts are listed for the plans that at least one integration below requires, with the date each was checked against Asana's documentation. Prices are monthly-billing list prices, re-checked on the vendor's pricing page on Nov 3, 2026; the annual-billing price is shown where the vendor publishes one. [Every Asana plan's API access, limits and webhooks →](https://stackcostmatrix.com/asana-api-access/)
+On the plans these integrations need: Starter (API access: yes; webhooks: yes). API and webhook facts are listed for the plans that at least one integration below requires, with the date each was checked against Asana's documentation. Prices are monthly-billing list prices, re-checked on the vendor's pricing page on Nov 3, 2026; the annual-billing price is shown where the vendor publishes one. [Every Asana plan's API access, limits and webhooks →](https://stackcostmatrix.com/asana-api-access/)
 
-Asana plans, API access and webhooks
+Which Asana plans include API access and webhooks?
 
 | Plan | Price | API access | Webhooks | Integrations that need it |
 | --- | --- | --- | --- | --- |

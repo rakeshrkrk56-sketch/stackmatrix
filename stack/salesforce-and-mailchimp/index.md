@@ -11,13 +11,13 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 Trap: deep campaign-member sync requires Salesforce Professional ($100/user/mo, plus a $25/user/mo API add-on); Starter plans are locked out. Requires Salesforce Sales Cloud on the 'Professional' plan and Mailchimp on the 'Standard' plan for full 2-way sync.
 
-Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Salesforce prices: Oct 17, 2026) | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
+Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (Salesforce prices: Oct 17, 2026) · Setup steps: Nov 10, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
 
 ## How the Salesforce Sales Cloud + Mailchimp integration works
 
 Mailchimp for Salesforce connects Salesforce contacts and leads with your Mailchimp audience and brings Mailchimp campaign activity into Salesforce.
 
-### How to set it up
+### How do you set up Salesforce Sales Cloud + Mailchimp?
 
 1. On Salesforce Professional, ask your Salesforce account executive to enable API access before you install.
 2. Follow the link on Mailchimp's integration page to the Salesforce AppExchange listing and click Get it Now.
@@ -32,7 +32,7 @@ Steps follow [Mailchimp's setup guide ↗](https://mailchimp.com/help/connect-ma
 
 [Setup guide: Mailchimp: Connect Mailchimp for Salesforce ↗](https://mailchimp.com/help/connect-mailchimp-for-salesforce/)
 
-Sources (checked Nov 3, 2026): [Mailchimp: Connect Mailchimp for Salesforce ↗](https://mailchimp.com/help/connect-mailchimp-for-salesforce/) · [Mailchimp: About Mailchimp for Salesforce ↗](https://mailchimp.com/help/about-mailchimp-for-salesforce/)
+Sources (checked Nov 3, 2026; setup guide read again for the steps on Nov 10, 2026): [Mailchimp: Connect Mailchimp for Salesforce ↗](https://mailchimp.com/help/connect-mailchimp-for-salesforce/) · [Mailchimp: About Mailchimp for Salesforce ↗](https://mailchimp.com/help/about-mailchimp-for-salesforce/)
 
 *Interactive cost calculator: open the web page to change team size, billing and add-ons.*
 

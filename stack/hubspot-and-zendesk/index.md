@@ -11,7 +11,7 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 Zendesk tickets show on HubSpot contact timelines on any HubSpot plan, but only on contacts and only one way. Requires HubSpot on the 'Free' plan and Zendesk on the 'Suite Team' plan.
 
-Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
+Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of StackCostMatrix | Integration requirements and prices checked against official vendor docs · Nov 3, 2026 · Setup steps: Nov 10, 2026 | [Spot an outdated price? Report a correction →](mailto:admin@stackcostmatrix.com?subject=Price%20Correction)
 
 ## How the HubSpot + Zendesk integration works
 
@@ -21,16 +21,18 @@ Zendesk's HubSpot integration adds Zendesk ticket events and chat transcripts to
 
 [Setup guide: Zendesk: Zendesk Support for HubSpot ↗](https://support.zendesk.com/hc/en-us/articles/4408884090650-Setting-up-the-Zendesk-Support-for-HubSpot-integration)
 
-### How to set it up
+### How do you set up HubSpot + Zendesk?
 
 1. Go to hubspot.zendesk-integrations.com/zendesk and enter your Zendesk subdomain.
 2. Authorize the Zendesk app, then allow access to HubSpot.
 3. In HubSpot, open any contact, go to the Activities tab, click Filter activity and tick Integrations > Zendesk.
 4. Zendesk creates three triggers (ticket created, solved and CSAT rated) that send tickets to HubSpot; edit their conditions to control which tickets sync.
 
+Steps follow [Zendesk's setup guide ↗](https://support.zendesk.com/hc/en-us/articles/4408884090650-Setting-up-the-Zendesk-Support-for-HubSpot-integration), read Nov 10, 2026.
+
 **Limitations:** Tickets can only be shown on the contact timeline, not on companies or deals, and data only flows from Zendesk into HubSpot. You need a Zendesk Suite plan from Team up.
 
-Sources (checked Nov 3, 2026): [Zendesk: Zendesk Support for HubSpot ↗](https://support.zendesk.com/hc/en-us/articles/4408884090650-Setting-up-the-Zendesk-Support-for-HubSpot-integration) · [HubSpot Marketplace: Zendesk ↗](https://ecosystem.hubspot.com/marketplace/listing/zendesk)
+Sources (checked Nov 3, 2026; setup guide read again for the steps on Nov 10, 2026): [Zendesk: Zendesk Support for HubSpot ↗](https://support.zendesk.com/hc/en-us/articles/4408884090650-Setting-up-the-Zendesk-Support-for-HubSpot-integration) · [HubSpot Marketplace: Zendesk ↗](https://ecosystem.hubspot.com/marketplace/listing/zendesk)
 
 *Interactive cost calculator: open the web page to change team size, billing and add-ons.*
 

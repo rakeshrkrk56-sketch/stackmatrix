@@ -22,6 +22,10 @@ for f in sorted(glob.glob("stack/*/index.html")):
     if p == "stripe-and-slack":
         s = s.replace("<span>Integration requirements and prices checked against official vendor docs · Nov 3, 2026</span>",
                       "<span>Integration requirements and prices checked against official vendor docs · Nov 3, 2026 (setup steps: Nov 10, 2026)</span>")
+    # pages whose setup steps were written or re-read on Nov 10 say so in the byline; the vendor-doc dates stay as they are
+    if "setup guide ↗</a>, read Nov 10, 2026." in s:
+        s = re.sub(r"(<span>Integration requirements[^<]*)(</span>)",
+                   lambda m: m.group(0) if "etup steps: Nov 10, 2026" in m.group(1) else m.group(1) + " · Setup steps: Nov 10, 2026" + m.group(2), s, count=1)
     if p in RECHECKED:
         s = re.sub(r"Last checked: Nov 3, 2026( \(exceptions listed at the top\))? · Sources linked below\.",
                    lambda m: "Requirements checked: Nov 8, 2026; prices: Nov 3, 2026" + (m.group(1) or "") + " · Sources linked below.", s)
@@ -42,9 +46,9 @@ s = s.replace("Pricing pages for 17 of the 20 tools below were re-checked on <st
               "Pricing pages for 17 of the 20 tools below were re-checked between <strong>Nov 3 and Nov 5, 2026</strong>;")
 ENTRY = ('<li><strong class="text-slate-800">Nov 10, 2026 — Setup guides, clearer Salesforce requirements, share images.</strong> '
          'Every integration page now opens with how the integration works and a link to the vendor&#39;s setup guide, and compares the native route with Make and Zapier in one table. '
-         'Twenty integrations gained numbered setup steps, each following the vendor&#39;s own guide (Stripe + Slack and 19 more). The Salesforce API page now explains how Professional gets API access and that some AppExchange apps work without the add-on, '
+         'Twenty integrations gained numbered setup steps, each following the vendor&#39;s own guide (Stripe + Slack and 19 more). Twelve older step lists were compared with their guides again the same day and three steps reworded; each list now names its guide and the date it was read. The Salesforce API page now explains how Professional gets API access and that some AppExchange apps work without the add-on, '
          'from Salesforce&#39;s developer docs; the HubSpot Professional guide covers the Salesforce side and HubSpot&#39;s one-time onboarding fees. '
-         'The Integration Tax report adds a section on the three kinds of integration cost and a chart image. No prices or plan requirements changed.</li> ')
+         'The Integration Tax report adds a section on the three kinds of integration cost and a chart image. The homepage gained a short section on the three kinds of integration cost. No prices or plan requirements changed.</li> ')
 if "Nov 10, 2026 — Setup guides" not in s:
     a = '<ul class="mt-4 space-y-3 text-sm leading-relaxed text-slate-600"> <li><strong class="text-slate-800">Nov 8, 2026'
     assert s.count(a) == 1
@@ -52,6 +56,12 @@ if "Nov 10, 2026 — Setup guides" not in s:
 # later on Nov 10: 19 more pairs gained steps (pairdata19)
 s = s.replace("Stripe + Slack gained step-by-step setup from Stripe&#39;s documentation.",
               "Twenty integrations gained numbered setup steps, each following the vendor&#39;s own guide (Stripe + Slack and 19 more).")
+STEPS_NOTE = " Twelve older step lists were compared with their guides again the same day and three steps reworded; each list now names its guide and the date it was read."
+if STEPS_NOTE not in s:
+    s = s.replace("(Stripe + Slack and 19 more).", "(Stripe + Slack and 19 more)." + STEPS_NOTE, 1)
+HOME_NOTE = " The homepage gained a short section on the three kinds of integration cost."
+if HOME_NOTE not in s:
+    s = s.replace("and a chart image. No prices or plan requirements changed.</li>", "and a chart image." + HOME_NOTE + " No prices or plan requirements changed.</li>", 1)
 if s != s0: open(f, "w", encoding="utf-8").write(s); n += 1
 
 # homepage changelog

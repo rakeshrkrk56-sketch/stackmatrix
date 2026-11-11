@@ -21,13 +21,15 @@ Stripe Workflows for Slack is built by Stripe: you connect your Slack workspace,
 
 [Set up Stripe Workflows for Slack ↗](https://docs.stripe.com/use-stripe-apps/stripe-workflows-slack)
 
-### How to set it up
+### How do you set up Stripe + Slack?
 
 1. In the Stripe App Marketplace, open the Slack app page, pick your account and click Install.
 2. Open the app from Stripe's right sidebar, go to its settings page and click Add to Slack. Choose your workspace and click Allow.
 3. In Slack, type /invite @Stripe in each channel that should get notifications. Back in the app settings, click Test next to the channel to send a test message.
 4. In Stripe, open Workflows and click Create workflow. Add your trigger, then click Add a step, choose Add action and pick Send Slack Notification.
 5. Choose the Slack channel, write the message template (the + button inserts details from the event) and decide whether to include a Dashboard link. Click Publish.
+
+Steps follow [Stripe's setup guide ↗](https://docs.stripe.com/use-stripe-apps/stripe-workflows-slack), read Nov 10, 2026.
 
 **Limitations:** Notifications only go to channels the Stripe bot has been invited to, and Slack's free plan allows up to 10 app installations.
 
