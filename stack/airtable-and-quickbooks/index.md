@@ -25,10 +25,10 @@ Diagram: how Airtable and QuickBooks Online connect, through Make Core, shown wi
 
 ### How do you set up Airtable + QuickBooks Online?
 
-1. Log in to Make, create a scenario and add the Airtable module Watch Records as the trigger.
+1. Log in to Make, create a scenario and add the Airtable module Watch Records as the trigger. Watch Records needs a Created Time or Last Modified Time field in the table. Pick Created Time as the trigger field to catch new records only.
 2. Connect Airtable: click Add next to Connection type and choose Airtable OAuth, click Save, then click Add a base, pick the base and click Grant access.
 3. Add the QuickBooks module Create an Invoice. Connect QuickBooks: click Create a connection, click Save and sign in to QuickBooks if prompted.
-4. Fill in the invoice's fields with values from the Airtable record.
+4. Fill in the customer and the other invoice fields with values from the Airtable record. Make points to QuickBooks' Invoice API reference for what each invoice field means.
 5. Click Run once in the toolbar to test it, then activate the scenario with the ON/OFF button on its details page. It runs every 15 minutes by default; click Every 15 minutes on the toolbar to change that.
 
 Steps follow [Make's setup guide ↗](https://apps.make.com/airtable), read Nov 11, 2026.

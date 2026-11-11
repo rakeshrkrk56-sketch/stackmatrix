@@ -25,11 +25,12 @@ Diagram: how Notion and Calendly connect, through Make Core, shown with the exam
 
 ### How do you set up Notion + Calendly?
 
-1. Log in to Make, create a scenario and add the Calendly module Watch events as the trigger.
-2. Connect Calendly: click Create a connection, click Save and sign in to Calendly if prompted. If the module has an instant tag, click Create a webhook first.
-3. Add a Notion module that creates a database item. Connect Notion: click Create a connection, choose Notion Internal as the connection type, paste the internal integration token from your Notion account and click Save. In Notion, add the databases Make should see to that integration.
-4. Fill in the database item's properties with values from the Calendly event.
-5. Click Run once in the toolbar to test it, then activate the scenario with the ON/OFF button on its details page. It runs every 15 minutes by default; click Every 15 minutes on the toolbar to change that.
+1. In Notion, create an internal integration: go to Settings & Members > Connections > Develop or manage integrations, click New Integration, then copy its token under Secrets. Add the databases Make should see to that integration.
+2. Log in to Make, create a scenario and add the Calendly module Watch events as the trigger. It triggers when a Calendly event is created or canceled, and Make says it needs a paid Calendly subscription because webhooks aren't part of Calendly's free plans.
+3. Connect Calendly: click Create a connection, click Save and sign in to Calendly if prompted. If the module has an instant tag, click Create a webhook first.
+4. Add a Notion module that creates a database item. Connect Notion: click Create a connection, choose Notion Internal as the connection type, paste the internal integration token and click Save.
+5. Fill in the database item's properties with values from the Calendly event.
+6. Click Run once in the toolbar to test it, then activate the scenario with the ON/OFF button on its details page. It runs every 15 minutes by default; click Every 15 minutes on the toolbar to change that.
 
 Steps follow [Make's setup guide ↗](https://apps.make.com/calendly), read Nov 11, 2026.
 

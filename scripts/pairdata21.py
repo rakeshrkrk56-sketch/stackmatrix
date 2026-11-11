@@ -28,10 +28,10 @@ APPS = {
  "pipedrive": ("Pipedrive", "pipedrive", "click Create a connection, click Save and sign in to Pipedrive if prompted"),
  "mailchimp": ("Mailchimp", "mailchimp", "click Create a connection, click Save and sign in to Mailchimp if prompted"),
  "monday": ("monday.com", "monday", "click Create a connection, choose monday.com as the connection type, paste your Personal API Token from monday.com into the API key field and click Save"),
- "notion": ("Notion", "notion", "click Create a connection, choose Notion Internal as the connection type, paste the internal integration token from your Notion account and click Save. In Notion, add the databases Make should see to that integration"),
+ "notion": ("Notion", "notion", "click Create a connection, choose Notion Internal as the connection type, paste the internal integration token and click Save"),
  "calendly": ("Calendly", "calendly", "click Create a connection, click Save and sign in to Calendly if prompted"),
  "xero": ("Xero", "xero", "click Create a connection, click Save and sign in to Xero if prompted"),
- "activecampaign": ("ActiveCampaign", "activecampaign", "click Create a connection and enter your API key, account name and domain. The API URL and key are in ActiveCampaign under Settings > Developer"),
+ "activecampaign": ("ActiveCampaign", "activecampaign", "click Create a connection and enter the API key, then the account name and domain from the API URL"),
  "zendesk": ("Zendesk", "zendesk", "click Create a connection, choose Zendesk as the connection type, enter your Zendesk subdomain, click Save and sign in if prompted"),
  "hubspot": ("HubSpot", "hubspotcrm", "click Create a connection, click Save and sign in to HubSpot if prompted. A HubSpot Super Admin has to pre-approve the Make app first"),
 }
@@ -42,12 +42,13 @@ RUN = ("Click Run once in the toolbar to test it, then activate the scenario wit
 
 def make_src(app): return (f"Make: {APPS[app][0]} app", f"https://apps.make.com/{APPS[app][1]}")
 
-def make(trig, trig_mod, act, act_mod, fill):
+def make(trig, trig_mod, act, act_mod, fill, trig_note="", act_note="", pre=()):
+    """trig_note / act_note: what the module's own guide says about it. pre: steps to do in the tool before opening Make."""
     tn, _, tc = APPS[trig]; an, _, ac = APPS[act]
     return dict(setup_src=("Make", make_src(trig)[1]), extra_sources=[make_src(trig), make_src(act), MAKE_ACTIVE, MAKE_SCHEDULE],
-                setup=[f"Log in to Make, create a scenario and add {trig_mod} as the trigger.",
+                setup=list(pre) + [f"Log in to Make, create a scenario and add {trig_mod} as the trigger." + (" " + trig_note if trig_note else ""),
                        f"Connect {tn}: {tc}." + (" " + INSTANT.strip() if trig in HAS_INSTANT_NOTE else ""),
-                       f"Add {act_mod}. Connect {an}: {ac}.",
+                       f"Add {act_mod}. Connect {an}: {ac}." + (" " + act_note if act_note else ""),
                        fill, RUN])
 
 def zap(trig_app, trig_event, act_app, act_what):
@@ -58,31 +59,47 @@ def zap(trig_app, trig_event, act_app, act_what):
                        f"Add the action: choose {act_app}, pick the event that {act_what}, connect the account and map fields from the trigger into it.",
                        "Test the action, then publish the Zap to turn it on. It only processes data created after it's published."])
 
+# What Make's guides say about the modules used below (read Nov 11, 2026).
+AIRTABLE_WATCH = "Watch Records needs a Created Time or Last Modified Time field in the table."
+CALENDLY_WATCH = ("It triggers when a Calendly event is created or canceled, and Make says it needs a paid Calendly subscription "
+                  "because webhooks aren't part of Calendly's free plans.")
+QBO_INVOICE = "Make points to QuickBooks' Invoice API reference for what each invoice field means."
+NOTION_TOKEN = ("In Notion, create an internal integration: go to Settings & Members > Connections > Develop or manage integrations, click New Integration, "
+                "then copy its token under Secrets. Add the databases Make should see to that integration.")
+XERO_SCOPES = "You can choose the connection's scopes under Show advanced settings."
+
 SETUP21 = {
  "airtable-and-quickbooks": make("airtable", "the Airtable module Watch Records", "quickbooks", "the QuickBooks module Create an Invoice",
-                                 "Fill in the invoice's fields with values from the Airtable record."),
+                                 "Fill in the customer and the other invoice fields with values from the Airtable record. " + QBO_INVOICE,
+                                 trig_note=AIRTABLE_WATCH + " Pick Created Time as the trigger field to catch new records only."),
  "airtable-and-stripe": make("stripe", "the Stripe module Watch Events", "airtable", "the Airtable module Create a Record",
-                             "Fill in the record's fields with values from the Stripe event."),
- "asana-and-quickbooks": make("asana", "an Asana trigger module such as Watch Tasks or Subtasks", "quickbooks", "the QuickBooks module Create an Invoice",
-                              "Fill in the invoice's fields with values from the Asana task."),
+                             "In Create a Record, select the base and the table, then enter the values from the Stripe event into the record's fields."),
+ "asana-and-quickbooks": make("asana", "the Asana module Watch Tasks or Subtasks", "quickbooks", "the QuickBooks module Create an Invoice",
+                              "Fill in the customer and the other invoice fields with values from the Asana task. " + QBO_INVOICE,
+                              trig_note="Choose the task type to watch (for example completed tasks) and the workspace. Make notes that this module is \"available only for users with a subscription plan\"."),
  "clickup-and-stripe": make("stripe", "the Stripe module Watch Events", "clickup", "a ClickUp module that creates or updates a task",
                             "Fill in the task's fields with values from the Stripe event."),
  "mailchimp-and-airtable": make("airtable", "the Airtable module Watch Records", "mailchimp", "the Mailchimp module Add/Update a Subscriber",
-                                "Fill in the subscriber's email address and other fields with values from the Airtable record."),
+                                "Fill in the subscriber's email address and other fields with values from the Airtable record.",
+                                trig_note="Choose the base and the table to watch, then the trigger field: Created Time for new records, Last Modified Time to include edits. The table needs one of those two fields."),
  "monday-and-quickbooks": make("monday", "the monday.com module Watch Board's Column Values", "quickbooks", "the QuickBooks module Create an Invoice",
-                               "Fill in the invoice's fields with values from the monday.com item."),
+                               "Fill in the customer and the other invoice fields with values from the monday.com item. " + QBO_INVOICE),
  "notion-and-calendly": make("calendly", "the Calendly module Watch events", "notion", "a Notion module that creates a database item",
-                             "Fill in the database item's properties with values from the Calendly event."),
+                             "Fill in the database item's properties with values from the Calendly event.",
+                             trig_note=CALENDLY_WATCH, pre=[NOTION_TOKEN]),
  "notion-and-stripe": make("stripe", "the Stripe module Watch Events", "notion", "a Notion module that creates a database item",
-                           "Fill in the database item's properties with values from the Stripe event."),
+                           "Fill in the database item's properties with values from the Stripe event.", pre=[NOTION_TOKEN]),
  "pipedrive-and-calendly": make("calendly", "the Calendly module Watch events", "pipedrive", "the Pipedrive CRM module Create a Person or Create an Activity",
-                                "Fill in the person's or activity's fields with values from the Calendly event."),
+                                "Fill in the person's or activity's fields with values from the Calendly event.", trig_note=CALENDLY_WATCH),
  "pipedrive-and-xero": make("pipedrive", "the Pipedrive CRM module Watch Deals", "xero", "the Xero module Create an Invoice",
-                            "Fill in the invoice's fields with values from the deal."),
- "stripe-and-quickbooks": make("stripe", "the Stripe module Watch Events", "quickbooks", "a QuickBooks module such as Create a Sales Receipt or Create a Payment",
-                               "Fill in its fields with values from the Stripe event."),
+                            "Fill in the invoice's fields with values from the deal.",
+                            act_note="Create an Invoice needs the accounting.transactions, accounting.contacts and accounting.settings permissions. " + XERO_SCOPES),
+ "stripe-and-quickbooks": make("stripe", "the Stripe module Watch Events", "quickbooks", "a QuickBooks module: Create a Sales Receipt creates a sales receipt, Create a Payment creates a payment",
+                               "Fill in the module you chose with values from the Stripe event."),
  "xero-and-activecampaign": make("xero", "the Xero module Watch Contacts or Watch Invoices", "activecampaign", "an ActiveCampaign module that creates or updates a contact",
-                                 "Fill in the contact's fields with values from Xero."),
+                                 "Fill in the contact's fields with values from Xero.",
+                                 trig_note="Watch Contacts needs the accounting.contacts and accounting.settings permissions. " + XERO_SCOPES,
+                                 pre=["In ActiveCampaign, go to Settings > Developer and copy the API URL and the API key shown under API Access."]),
  "zendesk-and-stripe": make("stripe", "the Stripe module Watch Events", "zendesk", "a Zendesk module that creates or updates a ticket",
                             "Fill in the ticket's fields with values from the Stripe event."),
  # no example automation on this page, so the steps name one direction only as an example

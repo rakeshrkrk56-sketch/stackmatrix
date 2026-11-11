@@ -28,7 +28,7 @@ Diagram: how Monday.com and QuickBooks Online connect, through Make Core, shown 
 1. Log in to Make, create a scenario and add the monday.com module Watch Board's Column Values as the trigger.
 2. Connect monday.com: click Create a connection, choose monday.com as the connection type, paste your Personal API Token from monday.com into the API key field and click Save. If the module has an instant tag, click Create a webhook first.
 3. Add the QuickBooks module Create an Invoice. Connect QuickBooks: click Create a connection, click Save and sign in to QuickBooks if prompted.
-4. Fill in the invoice's fields with values from the monday.com item.
+4. Fill in the customer and the other invoice fields with values from the monday.com item. Make points to QuickBooks' Invoice API reference for what each invoice field means.
 5. Click Run once in the toolbar to test it, then activate the scenario with the ON/OFF button on its details page. It runs every 15 minutes by default; click Every 15 minutes on the toolbar to change that.
 
 Steps follow [Make's setup guide ↗](https://apps.make.com/monday), read Nov 11, 2026.

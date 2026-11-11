@@ -25,10 +25,10 @@ Diagram: how Asana and QuickBooks Online connect, through Make Core, shown with 
 
 ### How do you set up Asana + QuickBooks Online?
 
-1. Log in to Make, create a scenario and add an Asana trigger module such as Watch Tasks or Subtasks as the trigger.
+1. Log in to Make, create a scenario and add the Asana module Watch Tasks or Subtasks as the trigger. Choose the task type to watch (for example completed tasks) and the workspace. Make notes that this module is "available only for users with a subscription plan".
 2. Connect Asana: click Create a connection and continue to Asana; if you're already logged in to Asana, the connection is made straight away.
 3. Add the QuickBooks module Create an Invoice. Connect QuickBooks: click Create a connection, click Save and sign in to QuickBooks if prompted.
-4. Fill in the invoice's fields with values from the Asana task.
+4. Fill in the customer and the other invoice fields with values from the Asana task. Make points to QuickBooks' Invoice API reference for what each invoice field means.
 5. Click Run once in the toolbar to test it, then activate the scenario with the ON/OFF button on its details page. It runs every 15 minutes by default; click Every 15 minutes on the toolbar to change that.
 
 Steps follow [Make's setup guide ↗](https://apps.make.com/asana), read Nov 11, 2026.

@@ -25,11 +25,12 @@ Diagram: how Notion and Stripe connect, through Make Core, shown with the exampl
 
 ### How do you set up Notion + Stripe?
 
-1. Log in to Make, create a scenario and add the Stripe module Watch Events as the trigger.
-2. Connect Stripe: click Create a connection, choose Stripe API Key or Stripe OAuth as the connection type, click Save and confirm access if prompted. If the module has an instant tag, click Create a webhook first.
-3. Add a Notion module that creates a database item. Connect Notion: click Create a connection, choose Notion Internal as the connection type, paste the internal integration token from your Notion account and click Save. In Notion, add the databases Make should see to that integration.
-4. Fill in the database item's properties with values from the Stripe event.
-5. Click Run once in the toolbar to test it, then activate the scenario with the ON/OFF button on its details page. It runs every 15 minutes by default; click Every 15 minutes on the toolbar to change that.
+1. In Notion, create an internal integration: go to Settings & Members > Connections > Develop or manage integrations, click New Integration, then copy its token under Secrets. Add the databases Make should see to that integration.
+2. Log in to Make, create a scenario and add the Stripe module Watch Events as the trigger.
+3. Connect Stripe: click Create a connection, choose Stripe API Key or Stripe OAuth as the connection type, click Save and confirm access if prompted. If the module has an instant tag, click Create a webhook first.
+4. Add a Notion module that creates a database item. Connect Notion: click Create a connection, choose Notion Internal as the connection type, paste the internal integration token and click Save.
+5. Fill in the database item's properties with values from the Stripe event.
+6. Click Run once in the toolbar to test it, then activate the scenario with the ON/OFF button on its details page. It runs every 15 minutes by default; click Every 15 minutes on the toolbar to change that.
 
 Steps follow [Make's setup guide ↗](https://apps.make.com/stripe), read Nov 11, 2026.
 
