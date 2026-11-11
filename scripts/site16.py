@@ -22,7 +22,11 @@ ORG = {"@type": "Organization", "@id": ORG_ID, "name": "StackCostMatrix", "url":
        "sameAs": ["https://github.com/rakeshrkrk56-sketch/stackmatrix", "https://www.saashub.com/stackcostmatrix", "https://startupfa.me/s/stackcostmatrix"]}
 WEBSITE = {"@type": "WebSite", "@id": SITE_ID, "url": f"{SITE}/", "name": "StackCostMatrix", "publisher": {"@id": ORG_ID}, "inLanguage": "en",
            "description": "What B2B software integrations really cost: plans, connector fees and API access by plan."}
+# The editor's background, in the editor's own words (given Nov 11, 2026). Don't add to it without asking.
+EDITOR_AREAS = "SaaS tools, sales and marketing operations, digital marketing and SEO, and web development"
 PERSON = {"@type": "Person", "@id": EDITOR_URL, "name": EDITOR_NAME, "url": EDITOR_URL, "jobTitle": "Founder and editor",
+          "description": f"Founder and editor of StackCostMatrix, with five years of experience across {EDITOR_AREAS}.",
+          "knowsAbout": ["SaaS tools", "Sales and marketing operations", "Digital marketing and SEO", "Web development"],
           "worksFor": {"@id": ORG_ID}, "sameAs": [EDITOR_LINKEDIN, EDITOR_PROFILE]}
 def graph(f, title, modified=None):
     """Organization + WebSite + Person, plus the page's own node (homepage WebPage / AboutPage)."""
@@ -49,7 +53,8 @@ PROFILE_HTML = (f'Profiles: <a href="{EDITOR_LINKEDIN}" rel="noopener me" {LINK}
                 f'<a href="{EDITOR_PROFILE}" rel="noopener me" {LINK}>GitHub ↗</a>')
 ABOUT_OLD = '<p class="leading-relaxed text-slate-600">\nStackCostMatrix is published as an independent research project. Our dataset'
 ABOUT_NEW = ('<p class="leading-relaxed text-slate-600" id="editor">\n<strong class="text-slate-800">Editor: ' + EDITOR_NAME + '.</strong> '
-             'StackCostMatrix is built and run by ' + EDITOR_NAME + ', who checks each price and plan requirement against the vendor&#39;s own pricing '
+             'StackCostMatrix is built and run by ' + EDITOR_NAME + ', who has five years of experience across ' + EDITOR_AREAS + '. '
+             'Rakesh checks each price and plan requirement against the vendor&#39;s own pricing '
              'pages and documentation and reviews every change before it&#39;s published. Corrections go to the email below and are logged in the changelog. '
              f'{PROFILE_HTML}.\n</p> <p class="mt-3 leading-relaxed text-slate-600">\n'
              'StackCostMatrix is published as an independent research project. Our dataset')
@@ -131,6 +136,9 @@ def main():
             s = s.replace("</head>", '<script type="application/ld+json">' + json.dumps(graph(f, title, _changelog_date(s)), ensure_ascii=False, separators=(",", ":")) + "</script></head>", 1)
         if f == "about/index.html" and ABOUT_OLD in s:
             s = s.replace(ABOUT_OLD, ABOUT_NEW, 1)
+        if f == "about/index.html":   # the editor's background sentence (added Nov 11, 2026)
+            s = s.replace("is built and run by " + EDITOR_NAME + ", who checks each price",
+                          "is built and run by " + EDITOR_NAME + ", who has five years of experience across " + EDITOR_AREAS + ". Rakesh checks each price", 1)
         if f == "about/index.html":   # keep the editor's profile links current
             s = re.sub(r'Profiles?: <a href="[^"]*"[^>]*>(?:LinkedIn|GitHub) ↗</a>(?: · <a href="[^"]*"[^>]*>GitHub ↗</a>)?', lambda m: PROFILE_HTML, s, count=1)
         # 1200x630 share image for link previews (was the 512px square logo)

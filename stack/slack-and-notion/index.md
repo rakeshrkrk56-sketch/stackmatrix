@@ -19,6 +19,12 @@ In Notion, a button, database button or database automation can send a Slack not
 
 [Setup guide: Notion: Connect Slack to Notion ↗](https://www.notion.com/help/slack)
 
+Diagram of how Slack and Notion connect. Notion: Plus plan · $120/mo for 10 seats. Slack: Free plan · $0/mo for 10 seats. Notion to Slack: database automation notifications. Native app, 1-way, no connector fee.
+
+Diagram: how Slack and Notion connect, a native app. Drawn from the facts on this page.
+
+ 
+
 ### How do you set up Slack + Notion?
 
 1. In Notion, select ••• at the top of the database you want alerts from.

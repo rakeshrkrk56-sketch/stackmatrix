@@ -19,6 +19,12 @@ In an Airtable base, open the base menu and choose Slack notifications, then cre
 
 [Setup guide: Airtable support: Base activity notifications in Slack ↗](https://support.airtable.com/docs/receiving-base-activity-notifications-in-slack)
 
+Diagram of how Slack and Airtable connect. Airtable: Free plan · $0/mo for 10 seats. Slack: Free plan · $0/mo for 10 seats. Airtable to Slack: base and record changes. Native app, 1-way, no connector fee.
+
+Diagram: how Slack and Airtable connect, a native app. Drawn from the facts on this page.
+
+ 
+
 ### How do you set up Slack + Airtable?
 
 1. Open the Airtable base you want notifications from.

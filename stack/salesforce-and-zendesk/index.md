@@ -19,6 +19,12 @@ Zendesk's Salesforce integration creates and updates Zendesk organizations from 
 
 [Setup guide: Zendesk: Connecting Salesforce to Zendesk ↗](https://support.zendesk.com/hc/en-us/articles/4408821555482-Connecting-your-Salesforce-organization-to-Zendesk)
 
+Diagram of how Salesforce Sales Cloud and Zendesk connect. Salesforce Sales Cloud: Professional + API add-on · $1,250/mo for 10 seats. Zendesk: Suite Team plan · $690/mo for 10 seats. Salesforce Sales Cloud to Zendesk: accounts become organizations. Zendesk to Salesforce Sales Cloud: tickets sync to Cases. Native app, 1-way per object, no connector fee.
+
+Diagram: how Salesforce Sales Cloud and Zendesk connect, a native app. Drawn from the facts on this page.
+
+ 
+
 ### How do you set up Salesforce Sales Cloud + Zendesk?
 
 1. In Salesforce Setup, open Security > Session Settings and clear the Lock sessions to the IP address from which they originated checkbox. Otherwise the integration disconnects when a session expires.

@@ -19,6 +19,12 @@ Install the Asana app for Slack, then type /asana in Slack to list, create, comp
 
 [Setup guide: Asana: Slack + Asana ↗](https://asana.com/apps/slack)
 
+Diagram of how Asana and Slack connect. Asana: Starter plan · $134.90/mo for 10 seats. Slack: Free plan · $0/mo for 10 seats. Slack to Asana: messages become tasks, /asana commands. Asana to Slack: project updates, rule messages. Native app, 2-way, no connector fee.
+
+Diagram: how Asana and Slack connect, a native app. Drawn from the facts on this page.
+
+ 
+
 ### How do you set up Asana + Slack?
 
 1. Sign up for a Slack account and an Asana account if you don't have both.

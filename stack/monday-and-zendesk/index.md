@@ -19,6 +19,12 @@ monday.com's Zendesk integration creates board items from Zendesk tickets, with 
 
 [Setup guide: monday.com: Zendesk integration ↗](https://support.monday.com/hc/en-us/articles/360001938339-Zendesk-Integration)
 
+Diagram of how Monday.com and Zendesk connect. Zendesk: Suite Team plan · $690/mo for 10 seats. Monday.com: Standard plan · $140/mo for 10 seats. Zendesk to Monday.com: tickets become board items. Native app, 1-way, no connector fee.
+
+Diagram: how Monday.com and Zendesk connect, a native app. Drawn from the facts on this page.
+
+ 
+
 **Limitations:** Only the ticket's initial comment is pulled into the item's updates, and that section doesn't keep syncing. You need to be a Zendesk admin on a Zendesk plan of Team or higher.
 
 Sources (checked Nov 3, 2026): [monday.com: Zendesk integration ↗](https://support.monday.com/hc/en-us/articles/360001938339-Zendesk-Integration)

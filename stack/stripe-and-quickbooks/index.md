@@ -17,6 +17,12 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 Stripe doesn't build a native QuickBooks Online connector. Stripe's documentation says its QuickBooks Online integrations are Stripe Apps built by third-party developers, such as QuickBooks Sync by Acodei, which syncs Stripe transactions, fees, payouts and customers into QuickBooks. Make or Zapier can connect them too.
 
+Diagram of how Stripe and QuickBooks Online connect. Stripe: Standard plan · $0/mo for 10 seats. QuickBooks Online: Simple Start plan · $38/mo for 10 seats. Stripe sends a trigger (a Stripe event) to Make Core ($10.59/mo), which performs an action in QuickBooks Online (add it to QuickBooks). Each automation runs one way.
+
+Diagram: how Stripe and QuickBooks Online connect, through Make Core, shown with the example automation described above. Drawn from the facts on this page.
+
+ 
+
 **Limitations:** Third-party sync apps have their own pricing, which isn't included here; this calculator models Make Core instead. Make only requires a QuickBooks account, so QuickBooks Simple Start is enough. Data flows one way, from Stripe into QuickBooks.
 
 [Setup guide: Stripe: Accounting integrations ↗](https://docs.stripe.com/stripe-apps/embedded-apps/accounting-integrations)

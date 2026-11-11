@@ -19,6 +19,12 @@ You can connect Stripe as a payment processor in HubSpot and collect payments th
 
 [Setup guide: HubSpot: Connect Stripe as a payment processor ↗](https://knowledge.hubspot.com/payment-processing/connect-your-stripe-account-as-a-payment-processor-in-hubspot)
 
+Diagram of how HubSpot and Stripe connect. HubSpot: Free plan · $0/mo for 10 seats. Stripe: Standard plan · $0/mo for 10 seats. HubSpot to Stripe: payments from quotes, invoices, links. Both ways: customers and contacts (Data Sync app). Native app, 2-way, no connector fee.
+
+Diagram: how HubSpot and Stripe connect, a native app. Drawn from the facts on this page.
+
+ 
+
 ### How do you set up HubSpot + Stripe?
 
 1. In HubSpot, go to Revenue > Payments (it may sit under More) and click Set up payments.

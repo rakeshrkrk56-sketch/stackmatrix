@@ -19,6 +19,12 @@ monday.com's HubSpot integration offers recipes that create monday.com board ite
 
 [Setup guide: HubSpot Marketplace: monday.com ↗](https://ecosystem.hubspot.com/marketplace/listing/monday-com-203938)
 
+Diagram of how HubSpot and Monday.com connect. HubSpot: Free plan · $0/mo for 10 seats. Monday.com: Standard plan · $140/mo for 10 seats. HubSpot to Monday.com: companies, deals, contacts become items. Native app, 1-way, no connector fee.
+
+Diagram: how HubSpot and Monday.com connect, a native app. Drawn from the facts on this page.
+
+ 
+
 **Limitations:** It needs monday.com Standard or Pro. HubSpot's separate monday.com Data Sync app adds two-way sync, but activating it needs Data Hub Starter.
 
 Sources (checked Nov 3, 2026): [HubSpot Marketplace: monday.com ↗](https://ecosystem.hubspot.com/marketplace/listing/monday-com-203938) · [HubSpot Marketplace: monday.com Data Sync ↗](https://ecosystem.hubspot.com/marketplace/listing/mondaycom-data-sync)

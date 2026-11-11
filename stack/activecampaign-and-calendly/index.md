@@ -21,6 +21,12 @@ When someone books a Calendly meeting, the integration creates or updates the co
 
 [Setup guide: Calendly: ActiveCampaign integration ↗](https://calendly.com/help/calendly-activecampaign)
 
+Diagram of how ActiveCampaign and Calendly connect. Calendly: Standard plan · $120/mo for 10 seats. ActiveCampaign: Starter plan · $15/mo for 10 seats. Calendly to ActiveCampaign: bookings create or update contacts. Native app, 1-way, no connector fee.
+
+Diagram: how ActiveCampaign and Calendly connect, a native app. Drawn from the facts on this page.
+
+ 
+
 ### How do you set up ActiveCampaign + Calendly?
 
 1. In ActiveCampaign, click your profile icon at the bottom left and select Apps.

@@ -19,6 +19,12 @@ ClickUp's Slack integration lets you create tasks from Slack channels or direct 
 
 [Setup guide: ClickUp: Intro to the integration with Slack ↗](https://help.clickup.com/hc/en-us/articles/6304922742295-Intro-to-the-integration-with-Slack)
 
+Diagram of how ClickUp and Slack connect. ClickUp: Free plan · $0/mo for 10 seats. Slack: Free plan · $0/mo for 10 seats. Slack to ClickUp: tasks and comments from messages. ClickUp to Slack: activity from Spaces, Folders, Lists. Native app, 2-way, no connector fee.
+
+Diagram: how ClickUp and Slack connect, a native app. Drawn from the facts on this page.
+
+ 
+
 **Limitations:** Guests and limited members can't use it. With a Workspace connection, activity can only sync to public Slack channels (a personal connection can also use private ones), and Slack's free plan allows up to 10 app installations.
 
 Sources (checked Nov 3, 2026): [ClickUp: Intro to the integration with Slack ↗](https://help.clickup.com/hc/en-us/articles/6304922742295-Intro-to-the-integration-with-Slack) · [Slack: Free plan limits ↗](https://slack.com/help/articles/27204752526611-Feature-limitations-on-the-free-version-of-Slack)

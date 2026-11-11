@@ -17,6 +17,12 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 There's no native link, so a Make scenario listens for Stripe events, such as a successful payment or a new subscription, and creates or updates a ClickUp task through ClickUp's API, for example an onboarding task for each new customer.
 
+Diagram of how ClickUp and Stripe connect. Stripe: Standard plan · $0/mo for 10 seats. ClickUp: Free plan · $0/mo for 10 seats. Stripe sends a trigger (payment or new subscription) to Make Core ($10.59/mo), which performs an action in ClickUp (create or update a task). Each automation runs one way.
+
+Diagram: how ClickUp and Stripe connect, through Make Core, shown with the example automation described above. Drawn from the facts on this page.
+
+ 
+
 **Limitations:** It's one-way (Stripe → ClickUp). Stripe sends events through webhooks, so failed deliveries are retried by Stripe, but the mapping and any duplicate checks are yours to build.
 
 [Setup guide: Stripe docs: Webhooks ↗](https://docs.stripe.com/webhooks)

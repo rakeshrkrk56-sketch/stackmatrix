@@ -60,3 +60,41 @@ def svg_bars(rows, title, fmt=money):
                    f'<text x="{bw + 6}" y="{y + 33}" font-size="13" font-weight="700" fill="#0f172a">{_h.escape(fmt(v))}</text>')
     out.append("</svg>")
     return "".join(out)
+
+def svg_flow(top, bottom, label, flows=(), link=None, mid=None, segs=None, hue="#4f46e5"):
+    """A connection diagram as inline SVG: two tool boxes stacked top to bottom (so the text stays readable on phones)
+    with labelled arrows between them, or a connector box in the middle when the link runs through one.
+    top, bottom, mid: (name, detail). flows: [("down" | "up" | "both", text)] for a direct link; link: one line under them.
+    segs: (text above the connector, text below it, "down" | "both") when mid is given. label: the aria-label sentence.
+    340 units wide: on a phone the drawing is about 0.9 of that, so 12-unit text still renders near 11px."""
+    import html as _h
+    e = _h.escape
+    W, NH, MH, X, TX, ROW, SEG = 340, 50, 46, 24, 44, 22, 34
+    out = []
+    def node(y, name, detail, h=NH, fill="#fff", stroke="#cbd5e1", ink="#0f172a", ink2="#475569"):
+        out.append(f'<rect x="1" y="{y}" width="{W - 2}" height="{h}" rx="8" fill="{fill}" stroke="{stroke}" stroke-width="1.25"/>'
+                   f'<text x="14" y="{y + 21}" font-size="14" font-weight="700" fill="{ink}">{e(name)}</text>'
+                   f'<text x="14" y="{y + h - 11}" font-size="12" fill="{ink2}">{e(detail)}</text>')
+    def arrow(y1, y2, d, c):
+        a, b = y1 + (3 if d in ("up", "both") else 0), y2 - (3 if d in ("down", "both") else 0)
+        out.append(f'<line x1="{X}" y1="{a}" x2="{X}" y2="{b}" stroke="{c}" stroke-width="1.5"/>')
+        if d in ("down", "both"): out.append(f'<polygon points="{X - 4},{y2 - 6} {X + 4},{y2 - 6} {X},{y2}" fill="{c}"/>')
+        if d in ("up", "both"): out.append(f'<polygon points="{X - 4},{y1 + 6} {X + 4},{y1 + 6} {X},{y1}" fill="{c}"/>')
+    def note(y, text, size=12.5, fill="#0f172a", weight="400"):
+        out.append(f'<text x="{TX}" y="{y}" font-size="{size}" font-weight="{weight}" fill="{fill}">{e(text)}</text>')
+    node(0, *top)
+    if mid:
+        up, down, d = segs
+        arrow(NH + 3, NH + SEG - 3, d, hue); note(NH + SEG // 2 + 4, up)
+        node(NH + SEG, *mid, h=MH, fill="#ecfeff", stroke=hue, ink="#155e75", ink2="#155e75")
+        arrow(NH + SEG + MH + 3, NH + 2 * SEG + MH - 3, d, hue); note(NH + SEG + MH + SEG // 2 + 4, down)
+        y = NH + 2 * SEG + MH
+    else:
+        y = NH + 8
+        for d, text in flows:
+            arrow(y + 1, y + ROW - 5, d, hue); note(y + 14, text); y += ROW
+        if link: note(y + 13, link, size=11.5, fill="#4338ca", weight="600"); y += 20
+        y += 6
+    node(y, *bottom)
+    return (f'<svg class="scm-diagram" viewBox="0 0 {W} {y + NH + 1}" role="img" aria-label="{e(label, quote=True)}" xmlns="http://www.w3.org/2000/svg">'
+            + "".join(out) + "</svg>")

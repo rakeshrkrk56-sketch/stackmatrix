@@ -19,6 +19,12 @@ In Calendly, go to Integrations & apps, connect Mailchimp, then create a rule pe
 
 [Setup guide: Calendly help: Calendly + Mailchimp ↗](https://calendly.com/help/calendly-mailchimp)
 
+Diagram of how Mailchimp and Calendly connect. Calendly: Standard plan · $120/mo for 10 seats. Mailchimp: Free plan · $0/mo for 10 seats. Calendly to Mailchimp: invitees join an audience, with tags. Native app, 1-way, no connector fee.
+
+Diagram: how Mailchimp and Calendly connect, a native app. Drawn from the facts on this page.
+
+ 
+
 ### How do you set up Mailchimp + Calendly?
 
 1. In Calendly, go to Automations → Integrations & apps.

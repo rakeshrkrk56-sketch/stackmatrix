@@ -37,6 +37,7 @@ output{{display:block}}
 .scm-cta:hover{{background:#4338ca}}
 .scm-fig{{display:block;width:100%;max-width:560px;height:auto;border-radius:12px;border:1px solid #e2e8f0}}
 .scm-chart{{display:block;width:100%;max-width:480px;height:auto;font-family:inherit}}
+.scm-diagram{{display:block;width:100%;max-width:400px;height:auto;font-family:inherit}}
 .scm-jump{{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:16px}}
 .scm-jump-l{{font-size:.8125rem;font-weight:600;color:#475569;margin-right:2px}}
 .scm-jump a.scm-jump-p{{background:#4f46e5;border-color:#4f46e5;color:#fff}}

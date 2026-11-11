@@ -17,6 +17,12 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 The native integration is a HubSpot workflow action: when a deal closes or a ticket changes, HubSpot creates a task in an Asana project. It's useful for handing work from sales or support to delivery and onboarding teams.
 
+Diagram of how HubSpot and Asana connect. HubSpot: Professional plan · $500/mo for 10 seats. Asana: Starter plan · $134.90/mo for 10 seats. HubSpot to Asana: a workflow action creates tasks. Native app, 1-way, no connector fee.
+
+Diagram: how HubSpot and Asana connect, a native app. Drawn from the facts on this page.
+
+ 
+
 ### How do you set up HubSpot + Asana?
 
 1. Connect Asana to your HubSpot account, either from the App Marketplace or from inside a workflow. You need Super Admin or Workflows permissions.

@@ -21,6 +21,12 @@ The HubSpot app for Slack sends HubSpot notifications such as reminders, mention
 
 [Setup guide: HubSpot: Connect HubSpot and Slack ↗](https://knowledge.hubspot.com/integrations/how-do-i-use-the-slack-integration)
 
+Diagram of how HubSpot and Slack connect. HubSpot: Free plan · $0/mo for 10 seats. Slack: Free plan · $0/mo for 10 seats. HubSpot to Slack: notifications. Slack to HubSpot: messages become tasks, tickets, notes. Native app, 2-way, no connector fee.
+
+Diagram: how HubSpot and Slack connect, a native app. Drawn from the facts on this page.
+
+ 
+
 ### How do you set up HubSpot + Slack?
 
 1. Make sure you're a Super Admin (or have App Marketplace permissions) in HubSpot and an admin of the Slack workspace.

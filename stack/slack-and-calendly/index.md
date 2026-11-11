@@ -19,6 +19,12 @@ Install the Calendly app from the Slack App Directory and connect your Calendly 
 
 [Setup guide: Calendly help: Calendly + Slack ↗](https://calendly.com/help/calendly-slack)
 
+Diagram of how Slack and Calendly connect. Calendly: Free plan · $0/mo for 10 seats. Slack: Free plan · $0/mo for 10 seats. Calendly to Slack: meeting scheduled, moved, cancelled alerts. Native app, 1-way, no connector fee.
+
+Diagram: how Slack and Calendly connect, a native app. Drawn from the facts on this page.
+
+ 
+
 ### How do you set up Slack + Calendly?
 
 1. Sign in to Slack and open the Slack app directory.

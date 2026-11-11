@@ -17,6 +17,12 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 There's no official QuickBooks Online app for Slack. Zapier connects them, for example posting a Slack message when a new invoice or customer is added in QuickBooks.
 
+Diagram of how QuickBooks Online and Slack connect. QuickBooks Online: Simple Start plan · $38/mo for 10 seats. Slack: Free plan · $0/mo for 10 seats. QuickBooks Online sends a trigger (new invoice or customer) to Zapier Professional ($29.99/mo), which performs an action in Slack (post a message). Each automation runs one way.
+
+Diagram: how QuickBooks Online and Slack connect, through Zapier Professional, shown with the example automation described above. Drawn from the facts on this page.
+
+ 
+
 **Limitations:** Zapier needs a paid QuickBooks Online subscription, admin permissions in QuickBooks and a paid Zapier plan, because QuickBooks Online is a premium app on Zapier. No specific QuickBooks plan is required, so this calculator models Simple Start. QuickBooks limits its API to 500 requests per minute per company.
 
 [Setup guide: Zapier: Get started with QuickBooks Online ↗](https://help.zapier.com/hc/en-us/articles/8495935103885)

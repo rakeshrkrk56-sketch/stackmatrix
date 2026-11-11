@@ -17,6 +17,12 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 Calendly and Xero don't have a native integration. Zapier, Make and similar tools connect them, for example creating a Xero contact or a draft invoice when someone books a Calendly meeting.
 
+Diagram of how Xero and Calendly connect. Calendly: Standard plan · $120/mo for 10 seats. Xero: Early plan · $27/mo for 10 seats. Calendly sends a trigger (meeting booked) to Zapier Professional ($29.99/mo), which performs an action in Xero (create a contact or draft invoice). Each automation runs one way.
+
+Diagram: how Xero and Calendly connect, through Zapier Professional, shown with the example automation described above. Drawn from the facts on this page.
+
+ 
+
 **Limitations:** Calendly's webhooks need a paid plan from Standard up. Zapier needs a paid Xero account, Standard or Adviser permissions in Xero and a paid Zapier plan, because Xero is a premium app on Zapier. On Xero's Early plan you can enter up to 20 approved sales invoices and 5 bills a month through the API, so if each booking creates an invoice and you take more than 20 bookings a month, you'll need Growing ($59/mo).
 
 [Setup guide: Zapier: Get started with Xero ↗](https://help.zapier.com/hc/en-us/articles/38844152391821-How-to-get-started-with-Xero-on-Zapier)

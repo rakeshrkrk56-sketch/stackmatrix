@@ -21,6 +21,12 @@ HubSpot's built-in Mailchimp integration, available on every HubSpot plan, adds 
 
 [Setup guide: HubSpot: Use HubSpot's integration with Mailchimp ↗](https://knowledge.hubspot.com/forms/connect-non-hubspot-forms-to-mailchimp)
 
+Diagram of how HubSpot and Mailchimp connect. HubSpot: Free plan · $0/mo for 10 seats. Mailchimp: Standard plan · $20/mo for 10 seats. HubSpot to Mailchimp: contacts from non-HubSpot forms. Native app, 1-way, no connector fee.
+
+Diagram: how HubSpot and Mailchimp connect, a native app. Drawn from the facts on this page.
+
+ 
+
 ### How do you set up HubSpot + Mailchimp?
 
 1. Make sure you have App Marketplace access in HubSpot.

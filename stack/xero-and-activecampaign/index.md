@@ -17,6 +17,12 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 ActiveCampaign lists Xero as a middleware integration enabled by Zapier, not a native connector. Make or Zapier watches Xero, for example for a new contact or a paid invoice, and adds the contact to ActiveCampaign or starts an automation.
 
+Diagram of how Xero and ActiveCampaign connect. Xero: Early plan · $27/mo for 10 seats. ActiveCampaign: Starter plan · $15/mo for 10 seats. Xero sends a trigger (new contact or paid invoice) to Make Core ($10.59/mo), which performs an action in ActiveCampaign (add the contact, start an automation). Each automation runs one way.
+
+Diagram: how Xero and ActiveCampaign connect, through Make Core, shown with the example automation described above. Drawn from the facts on this page.
+
+ 
+
 **Limitations:** Xero's Early plan allows 20 invoices and 5 bills a month; if you send more invoices than that you'll need Growing ($59/mo) regardless of the integration. Each Make or Zapier scenario runs one way. ActiveCampaign lists the integration for all of its plans, from Starter up.
 
 [Setup guide: ActiveCampaign: Xero integration ↗](https://www.activecampaign.com/apps/xero)

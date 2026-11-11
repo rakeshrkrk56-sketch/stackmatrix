@@ -17,6 +17,12 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 Salesforce builds its own suite of Slack integrations that bring Salesforce records and notifications into Slack. The original Slack-built Salesforce app is no longer supported.
 
+Diagram of how Salesforce Sales Cloud and Slack connect. Salesforce Sales Cloud: Enterprise plan · $1,650/mo for 10 seats. Slack: Pro plan · $87.50/mo for 10 seats. Salesforce Sales Cloud to Slack: records and alerts. Slack to Salesforce Sales Cloud: messages added to records. Native app, 2-way, no connector fee.
+
+Diagram: how Salesforce Sales Cloud and Slack connect, a native app. Drawn from the facts on this page.
+
+ 
+
 ### How do you set up Salesforce Sales Cloud + Slack?
 
 1. A Salesforce System Administrator first installs and configures the Slack app in Salesforce.

@@ -21,6 +21,12 @@ Intercom's HubSpot app sends leads captured in Intercom to HubSpot as contacts a
 
 [Setup guide: Intercom: HubSpot app ↗](https://www.intercom.com/help/en/articles/2128216-hubspot-app)
 
+Diagram of how Intercom and HubSpot connect. Intercom: Essential plan · $390/mo for 10 seats. HubSpot: Free plan · $0/mo for 10 seats. Intercom to HubSpot: leads as contacts, conversations logged. Native app, 1-way, no connector fee.
+
+Diagram: how Intercom and HubSpot connect, a native app. Drawn from the facts on this page.
+
+ 
+
 ### How do you set up Intercom + HubSpot?
 
 1. Make sure you have admin access in HubSpot.

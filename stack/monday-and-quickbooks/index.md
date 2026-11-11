@@ -17,6 +17,12 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 There's no native link, so a Make scenario connects monday.com and QuickBooks through their APIs, for example creating a QuickBooks invoice when a monday.com item moves to 'Done', or adding a payment status column update when an invoice is paid.
 
+Diagram of how Monday.com and QuickBooks Online connect. Monday.com: Standard plan · $140/mo for 10 seats. QuickBooks Online: Simple Start plan · $38/mo for 10 seats. Monday.com sends a trigger (item moves to 'Done') to Make Core ($10.59/mo), which performs an action in QuickBooks Online (create an invoice). Each automation runs one way.
+
+Diagram: how Monday.com and QuickBooks Online connect, through Make Core, shown with the example automation described above. Drawn from the facts on this page.
+
+ 
+
 **Limitations:** Sync is one-way per scenario. monday.com's Standard plan includes 250 integration actions a month (Pro raises this to 25,000), and Make counts each run against its own monthly credits.
 
 [Setup guide: monday.com developers: API reference ↗](https://developer.monday.com/api-reference/docs)

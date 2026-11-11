@@ -21,6 +21,12 @@ Pipedrive's Mailchimp sync works through flows. Each flow has its own trigger an
 
 [Setup guide: Pipedrive: Mailchimp sync ↗](https://support.pipedrive.com/en/article/pipedrive-integration-mailchimp-sync)
 
+Diagram of how Pipedrive and Mailchimp connect. Pipedrive: Lite plan · $140/mo for 10 seats. Mailchimp: Free plan · $0/mo for 10 seats. Pipedrive to Mailchimp: contacts that match your filters. Mailchimp to Pipedrive: contacts by segment or tag. Native app, 2-way, no connector fee.
+
+Diagram: how Pipedrive and Mailchimp connect, a native app. Drawn from the facts on this page.
+
+ 
+
 ### How do you set up Pipedrive + Mailchimp?
 
 1. In Pipedrive, go to Tools and apps > Integrations > Mailchimp sync and click Get started.

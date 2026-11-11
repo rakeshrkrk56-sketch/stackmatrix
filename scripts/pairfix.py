@@ -6,7 +6,7 @@ Usage (run from repo root):
 """
 import re, json, glob, html, sys, os
 sys.path.insert(0, os.path.dirname(__file__))
-from model import compute, render_tco, render_nvm, money, cheapest_api, tiers, cost as tier_cost, MAKE_MONTHLY, svg_bars
+from model import compute, render_tco, render_nvm, money, cheapest_api, tiers, cost as tier_cost, MAKE_MONTHLY, svg_bars, svg_flow
 from pairdata import PAIRS, COPY
 from pairdata2 import PAIRS2, COPY2
 PAIRS.update(PAIRS2); COPY.update(COPY2)
@@ -121,7 +121,7 @@ FACTS_EXTRA = {("salesforce", "Enterprise"): ("Yes", "Yes"), ("slack", "Free"): 
                ("mailchimp", "Free"): ("Yes", "No")}  # webhook value copied from Essentials
 SHORT = {"Salesforce Sales Cloud": "Salesforce", "QuickBooks Online": "QuickBooks"}
 TODAY = "2026-11-03"
-ROUND_DATE = "2026-11-08"  # last full re-render of every pair page (trap text, FAQ, descriptions)
+ROUND_DATE = "2026-11-11"  # last change to every pair page (Nov 11: connection diagram; Nov 8: trap text, FAQ, descriptions)
 
 def esc(s):  # matches the site's escaping of summaries/FAQ text
     return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace("'", "&#39;")
@@ -272,6 +272,57 @@ def pair_figure(v, d, pair):
     return (f'<figure class="mt-6"> <img src="/og/{pair}.jpg" width="1200" height="630" loading="lazy" class="scm-fig" alt="{html.escape(alt, quote=True)}"> '
             f'<figcaption class="mt-2 text-xs text-slate-500">{html.escape(v["na"])} + {html.escape(v["nb"])} at a glance. Free to reuse with credit (CC BY 4.0).</figcaption> </figure> ')
 
+from pairdata20 import FLOW20, VIA20
+def flow_figure(v, d, pair, sync):
+    """The connection diagram under "How it works": which tool sends what to which, through what, on which plans."""
+    A, B = d["tools"]; names = {A["slug"]: v["na"], B["slug"]: v["nb"]}; sync = html.unescape(sync)
+    def detail(t, tier, c):
+        plan = "Professional + API add-on" if t["slug"] == "salesforce" and tier == "Professional" else f"{tier} plan"
+        return f"{plan} · {m0(c)}/mo for 10 seats"
+    box = {A["slug"]: (v["na"], detail(A, v["ta"], v["ca"])), B["slug"]: (v["nb"], detail(B, v["tb"], v["cb"]))}
+    one_way = re.match(r"1-way \((.+?) → (.+?)\)$", sync)   # e.g. "1-way (Stripe → Slack)"
+    def check(src, dst):   # an arrow must not contradict the page's sync cell
+        if one_way and one_way.group(1) != "trigger":
+            want = (one_way.group(1).lower(), one_way.group(2).lower())
+            got = (names[src].lower(), names[dst].lower())
+            assert got[0].startswith(want[0].split()[0]) and got[1].startswith(want[1].split()[0]), (pair, sync, src, dst)
+    if v["native"]:
+        flows = FLOW20[pair]
+        for fl in flows:
+            if fl[0] == "both": assert sync.startswith("2-way"), (pair, sync)
+            else: assert fl[0] in box and fl[1] in box, (pair, fl); check(fl[0], fl[1])
+        srcs = {fl[0] for fl in flows}
+        top = flows[0][0] if len(srcs) == 1 and "both" not in srcs else A["slug"]   # one direction: the sender goes on top
+        bot = B["slug"] if top == A["slug"] else A["slug"]
+        rows = [("both" if fl[0] == "both" else "down" if fl[0] == top else "up", fl[-1]) for fl in flows]
+        short = sync.split(" (")[0]
+        link = f"Native app · {short} · no connector fee"
+        said = " ".join((f"Both ways: {fl[1]}." if fl[0] == "both" else f"{names[fl[0]]} to {names[fl[1]]}: {fl[2]}.") for fl in flows)
+        label = (f"Diagram of how {v['na']} and {v['nb']} connect. {box[top][0]}: {box[top][1]}. {box[bot][0]}: {box[bot][1]}. {said} {link.replace(' · ', ', ')}.")
+        svg = svg_flow(box[top], box[bot], label, flows=rows, link=link)
+        how = "a native app"
+    else:
+        via = VIA20[pair]; conn = CONNECTOR.get(d["middleware"], "Middleware"); fee = f"{money(d['middleware'])}/mo"
+        mid = (conn, f"connector · {fee} · runs the automation")
+        if via and via[-1] == "sync":   # a sync app in the middle: no trigger/action wording
+            top = via[0]; assert top in box, (pair, via); bot = B["slug"] if top == A["slug"] else A["slug"]; check(top, bot)
+            mid = (conn, f"connector app · {fee}")
+            segs = (via[1], via[2], "down")
+            said = f"{conn} ({fee}) copies {via[1]} from {names[top]} into {names[bot]} as {via[2]}. Data flows one way."
+        elif via:
+            top = via[0]; assert top in box, (pair, via); bot = B["slug"] if top == A["slug"] else A["slug"]; check(top, bot)
+            segs = (f"trigger: {via[1]}", f"action: {via[2]}", "down")
+            said = f"{names[top]} sends a trigger ({via[1]}) to {conn} ({fee}), which performs an action in {names[bot]} ({via[2]}). Each automation runs one way."
+        else:
+            top, bot = A["slug"], B["slug"]
+            segs = ("a trigger in one tool", "an action in the other", "both")
+            said = f"{conn} ({fee}) watches for a trigger in one tool and performs an action in the other. Each automation runs one way."
+        label = f"Diagram of how {v['na']} and {v['nb']} connect. {box[top][0]}: {box[top][1]}. {box[bot][0]}: {box[bot][1]}. {said}"
+        svg = svg_flow(box[top], box[bot], label, mid=mid, segs=segs, hue="#0e7490")
+        how = f"through {conn}" + (", shown with the example automation described above" if via and via[-1] != "sync" else "")
+    return (f'<figure class="mt-6"> {svg} <figcaption class="mt-2 text-xs text-slate-500">Diagram: how {html.escape(v["na"])} and {html.escape(v["nb"])} connect, {html.escape(how)}. '
+            f'Drawn from the facts on this page.</figcaption> </figure> ')
+
 def setup_led(v, copy):
     """Pages whose searchers want "how do I connect these": the reworked top pages and every native pair with no extra cost."""
     return bool((copy or {}).get("top")) or (v["native"] and v["UP"] <= 0.004)
@@ -397,6 +448,7 @@ def render_page(s, pair, d, summary, sync, facts, date_modified=None, copy=None,
             cta_html = f'<p class="mt-4"><a href="{html.escape(cu, quote=True)}" rel="noopener" class="scm-cta">{html.escape(cl)} ↗</a></p> '
         early = setup_led(v, copy)   # searchers on these pages want to connect the tools: the button goes right under the answer
         if early: parts.append(cta_html)
+        parts.append(flow_figure(v, d, pair, sync))
         if copy.get("setup"):
             parts.append(f'<h3 class="mt-6 font-semibold text-slate-900">How do you set up {html.escape(A)} + {html.escape(B)}?</h3> <ol class="scm-steps"> '
                          + " ".join(f"<li>{esc(x)}</li>" for x in copy["setup"]) + " </ol> ")
@@ -507,7 +559,7 @@ def main(mode):
             else: d["middleware"], d["middlewareLabel"] = (fix.get("mw") or d["middleware"] or 9), "Middleware"
             if p in MW7: d["middleware"], d["middlewareAnnual"] = MW7[p]
             summ, sync = fix["summary"], fix["sync"]
-        s2, v = render_page(s, p, d, summ, sync, facts, date_modified=MODIFIED.get(p, ROUND_DATE), copy=cp, cta=(fix or {}).get('cta', True))
+        s2, v = render_page(s, p, d, summ, sync, facts, date_modified=max(MODIFIED.get(p, ROUND_DATE), ROUND_DATE), copy=cp, cta=(fix or {}).get('cta', True))
         out[f] = s2
         if fix:
             home2 = render_home_card(home2, p, v, summ, limit)

@@ -21,6 +21,12 @@ Once connected, contacts, products and invoices sync between HubSpot and QuickBo
 
 [Setup guide: HubSpot: Connect HubSpot and QuickBooks Online ↗](https://knowledge.hubspot.com/integrations/connect-hubspot-and-quickbooks-online)
 
+Diagram of how HubSpot and QuickBooks Online connect. HubSpot: Free plan · $0/mo for 10 seats. QuickBooks Online: Simple Start plan · $38/mo for 10 seats. Both ways: contacts, products, invoices. Native app, 2-way, no connector fee.
+
+Diagram: how HubSpot and QuickBooks Online connect, a native app. Drawn from the facts on this page.
+
+ 
+
 ### How do you set up HubSpot + QuickBooks Online?
 
 1. Make sure you're a Super Admin or have App Marketplace permissions in HubSpot.

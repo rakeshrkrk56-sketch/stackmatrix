@@ -17,6 +17,12 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 There's no native link, so a Make scenario connects them through both APIs. Typical uses are creating a QuickBooks invoice when an Asana task reaches a 'Ready to bill' section, or creating an Asana task when a QuickBooks invoice becomes overdue. Asana's webhooks let Make react to task changes as they happen.
 
+Diagram of how Asana and QuickBooks Online connect. Asana: Starter plan · $134.90/mo for 10 seats. QuickBooks Online: Simple Start plan · $38/mo for 10 seats. Asana sends a trigger (task reaches 'Ready to bill') to Make Core ($10.59/mo), which performs an action in QuickBooks Online (create an invoice). Each automation runs one way.
+
+Diagram: how Asana and QuickBooks Online connect, through Make Core, shown with the example automation described above. Drawn from the facts on this page.
+
+ 
+
 **Limitations:** Sync is one-way per scenario, and you build and maintain the field mapping yourself. Make counts every run against your plan's monthly credits.
 
 [Setup guide: Asana developers: Webhooks ↗](https://developers.asana.com/docs/webhooks-guide)
