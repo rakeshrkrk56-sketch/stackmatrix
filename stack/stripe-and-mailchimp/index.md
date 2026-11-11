@@ -17,6 +17,12 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 Mailchimp's current Stripe connection installs the Data Mapper for Mailchimp app from the Stripe App Marketplace and syncs Stripe customers into the Mailchimp audience you choose, with the marketing permission you pick. Data Mapper's Starter plan ($15/month) syncs Stripe customers and tags charge, invoice and quote events; syncing purchase data into a Mailchimp store, for purchase-based journeys and segments, needs its Pro ($30/month) or Ultimate ($60/month) plan.
 
+Diagram of how Stripe and Mailchimp connect. Stripe: Standard plan · $0/mo for 10 seats. Mailchimp: Free plan · $0/mo for 10 seats. Data Mapper for Mailchimp ($15.00/mo) copies Stripe customers from Stripe into Mailchimp as audience contacts, event tags. Data flows one way.
+
+Diagram: how Stripe and Mailchimp connect, through Data Mapper for Mailchimp. Drawn from the facts on this page.
+
+ 
+
 **Limitations:** Mailchimp calls it a paid integration: Data Mapper for Mailchimp costs $15/month billed monthly ($12.75/month billed annually) after a 30-day free trial, on top of your Mailchimp plan. The calculator includes it as the $15/month connector fee. Mailchimp lists any Mailchimp Marketing Platform plan as compatible. Data Mapper says its plans are tiered by the number of customer syncs but doesn't publish the limits, and Pro adds unlimited customer syncing. Purchase sync also needs a Mailchimp store and products created in Stripe.
 
 [Setup guide: Mailchimp: Connect Mailchimp for Stripe ↗](https://mailchimp.com/help/connect-disconnect-mailchimp-stripe/)

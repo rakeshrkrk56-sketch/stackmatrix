@@ -19,6 +19,12 @@ Freshdesk's Slack app posts new-ticket and ticket-update notifications to the Sl
 
 [Setup guide: Freshdesk: The latest Slack app ↗](https://support.freshdesk.com/support/solutions/articles/50000001687-simplifying-collaboration-using-the-latest-slack-app)
 
+Diagram of how Freshdesk and Slack connect. Freshdesk: Growth plan · $230/mo for 10 seats. Slack: Free plan · $0/mo for 10 seats. Freshdesk to Slack: ticket notifications. Slack to Freshdesk: tickets from messages, thread replies. Native app, 2-way, no connector fee.
+
+Diagram: how Freshdesk and Slack connect, a native app. Drawn from the facts on this page.
+
+ 
+
 ### How do you set up Freshdesk + Slack?
 
 1. A Freshdesk admin installs the app first. Freshdesk says the admin must be on a Freshdesk plan that provides API access.

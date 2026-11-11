@@ -21,6 +21,12 @@ Zendesk's HubSpot integration adds Zendesk ticket events and chat transcripts to
 
 [Setup guide: Zendesk: Zendesk Support for HubSpot ↗](https://support.zendesk.com/hc/en-us/articles/4408884090650-Setting-up-the-Zendesk-Support-for-HubSpot-integration)
 
+Diagram of how HubSpot and Zendesk connect. Zendesk: Suite Team plan · $690/mo for 10 seats. HubSpot: Free plan · $0/mo for 10 seats. Zendesk to HubSpot: ticket events, chat transcripts, contacts. Native app, 1-way, no connector fee.
+
+Diagram: how HubSpot and Zendesk connect, a native app. Drawn from the facts on this page.
+
+ 
+
 ### How do you set up HubSpot + Zendesk?
 
 1. Go to hubspot.zendesk-integrations.com/zendesk and enter your Zendesk subdomain.

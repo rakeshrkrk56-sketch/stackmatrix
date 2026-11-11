@@ -19,6 +19,12 @@ When someone books through Calendly, the integration creates a HubSpot contact i
 
 [Setup guide: Calendly: Calendly + HubSpot ↗](https://calendly.com/help/calendly-hubspot)
 
+Diagram of how HubSpot and Calendly connect. Calendly: Standard plan · $120/mo for 10 seats. HubSpot: Free plan · $0/mo for 10 seats. Calendly to HubSpot: bookings become contacts and meetings. Native app, 1-way, no connector fee.
+
+Diagram: how HubSpot and Calendly connect, a native app. Drawn from the facts on this page.
+
+ 
+
 ### How do you set up HubSpot + Calendly?
 
 1. In Calendly, go to Automations → Integrations & apps. You need Calendly administrator privileges and HubSpot admin privileges.

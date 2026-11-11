@@ -17,6 +17,12 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 Notion's Calendly integration lets you paste a Calendly booking page link into Notion and embed it, so teammates or clients can book time from a Notion page.
 
+Diagram of how Notion and Calendly connect. Calendly: Standard plan · $120/mo for 10 seats. Notion: Plus plan · $120/mo for 10 seats. Calendly sends a trigger (meeting booked) to Make Core ($10.59/mo), which performs an action in Notion (log it in a database). Each automation runs one way.
+
+Diagram: how Notion and Calendly connect, through Make Core, shown with the example automation described above. Drawn from the facts on this page.
+
+ 
+
 **Limitations:** Embedding doesn't sync bookings. Logging meetings in a Notion database needs Make or Zapier, and Calendly's webhooks need a paid Calendly plan from Standard up.
 
 [Setup guide: Notion: Calendly integration ↗](https://www.notion.com/integrations/calendly)

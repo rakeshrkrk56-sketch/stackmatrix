@@ -17,6 +17,12 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 HubSpot's own Salesforce connector syncs leads, contacts, accounts, opportunities and custom objects between the two CRMs, and can embed HubSpot contact, company and deal insights inside Salesforce. It suits teams that run marketing in HubSpot and sales in Salesforce.
 
+Diagram of how HubSpot and Salesforce Sales Cloud connect. HubSpot: Professional plan · $500/mo for 10 seats. Salesforce Sales Cloud: Professional + API add-on · $1,250/mo for 10 seats. Both ways: leads, contacts, accounts, opportunities. Native app, 2-way, no connector fee.
+
+Diagram: how HubSpot and Salesforce Sales Cloud connect, a native app. Drawn from the facts on this page.
+
+ 
+
 ### How do you set up HubSpot + Salesforce Sales Cloud?
 
 1. Check the Salesforce user who will connect it: HubSpot asks for a Salesforce system administrator with the API Enabled, View Setup and Configuration and Download AppExchange Packages permissions, and Modify All on the objects you want to sync.

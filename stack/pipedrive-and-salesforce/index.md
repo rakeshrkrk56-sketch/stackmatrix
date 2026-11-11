@@ -21,6 +21,12 @@ A Make scenario watches one CRM and acts in the other, for example creating a Sa
 
 [Setup guide: Make: Salesforce app ↗](https://apps.make.com/salesforce)
 
+Diagram of how Pipedrive and Salesforce Sales Cloud connect. Pipedrive: Lite plan · $140/mo for 10 seats. Salesforce Sales Cloud: Professional + API add-on · $1,250/mo for 10 seats. Pipedrive sends a trigger (deal or person added) to Make Core ($10.59/mo), which performs an action in Salesforce Sales Cloud (create a lead or contact). Each automation runs one way.
+
+Diagram: how Pipedrive and Salesforce Sales Cloud connect, through Make Core, shown with the example automation described above. Drawn from the facts on this page.
+
+ 
+
 ### How do you set up Pipedrive + Salesforce Sales Cloud?
 
 1. Make sure your Salesforce org has API access: Enterprise or Unlimited include it, Professional needs the API add-on.

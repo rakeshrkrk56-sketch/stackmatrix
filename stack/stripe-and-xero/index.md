@@ -19,6 +19,12 @@ Stripe is a built-in payment service in Xero: you add Stripe to an invoice templ
 
 [Setup guide: Xero: Connect Stripe to Xero ↗](https://central.xero.com/0/article/Stripe-AU)
 
+Diagram of how Stripe and Xero connect. Stripe: Standard plan · $0/mo for 10 seats. Xero: Early plan · $27/mo for 10 seats. Xero to Stripe: invoices, to be paid by card. Stripe to Xero: payments, to reconcile. Native app, 2-way, no connector fee.
+
+Diagram: how Stripe and Xero connect, a native app. Drawn from the facts on this page.
+
+ 
+
 ### How do you set up Stripe + Xero?
 
 1. In Xero, open the Sales menu and select Online payments. You need the administrator or standard user role.

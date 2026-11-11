@@ -19,6 +19,12 @@ Install the ClickUp app from the Zendesk Marketplace, open a ticket and launch C
 
 [Setup guide: ClickUp help: Zendesk integration ↗](https://help.clickup.com/hc/en-us/articles/6304890522135-Zendesk-integration)
 
+Diagram of how ClickUp and Zendesk connect. ClickUp: Free plan · $0/mo for 10 seats. Zendesk: Suite Team plan · $690/mo for 10 seats. Zendesk to ClickUp: tickets create or link tasks. ClickUp to Zendesk: task status shown on the ticket. Native app, Linked tasks, no connector fee.
+
+Diagram: how ClickUp and Zendesk connect, a native app. Drawn from the facts on this page.
+
+ 
+
 **Limitations:** Only Workspace owners and admins can install it. Keeping every ticket update in sync both ways needs ClickUp's separate Zendesk Sync, which is on Business Plus and Enterprise.
 
 Sources (checked Nov 8, 2026): [ClickUp help: Zendesk integration ↗](https://help.clickup.com/hc/en-us/articles/6304890522135-Zendesk-integration) · [ClickUp: Zendesk integration ↗](https://clickup.com/integrations/zendesk)

@@ -21,6 +21,12 @@ Board events go out to the Slack channels you choose as they happen, and from Sl
 
 [Setup guide: monday.com: Slack integration ↗](https://monday.com/integrations/slack)
 
+Diagram of how Monday.com and Slack connect. Monday.com: Standard plan · $140/mo for 10 seats. Slack: Free plan · $0/mo for 10 seats. Monday.com to Slack: board events. Slack to Monday.com: @monday questions, new tasks. Native app, 2-way, no connector fee.
+
+Diagram: how Monday.com and Slack connect, a native app. Drawn from the facts on this page.
+
+ 
+
 ### How do you set up Monday.com + Slack?
 
 1. Open monday.com's Slack integration page and click Add to Slack.

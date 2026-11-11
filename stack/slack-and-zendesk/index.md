@@ -21,6 +21,12 @@ The Slack for Zendesk Support integration connects one Zendesk account to one Sl
 
 [Setup guide: Zendesk: Slack for Zendesk Support ↗](https://support.zendesk.com/hc/en-us/articles/4408833756698-Understanding-and-installing-the-Slack-for-Zendesk-Support-integration)
 
+Diagram of how Slack and Zendesk connect. Slack: Free plan · $0/mo for 10 seats. Zendesk: Suite Team plan · $690/mo for 10 seats. Slack to Zendesk: tickets created from Slack. Zendesk to Slack: ticket notifications. Native app, 2-way, no connector fee.
+
+Diagram: how Slack and Zendesk connect, a native app. Drawn from the facts on this page.
+
+ 
+
 ### How do you set up Slack + Zendesk?
 
 1. Make sure you have admin rights in Zendesk and permission to install apps in the Slack workspace.

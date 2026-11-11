@@ -17,6 +17,12 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 Airtable and QuickBooks Online don't have a native integration. An automation tool such as Make or Zapier connects them, for example creating a QuickBooks invoice from an Airtable record or logging paid invoices back in Airtable.
 
+Diagram of how Airtable and QuickBooks Online connect. Airtable: Team plan · $240/mo for 10 seats. QuickBooks Online: Simple Start plan · $38/mo for 10 seats. Airtable sends a trigger (an Airtable record) to Make Core ($10.59/mo), which performs an action in QuickBooks Online (create an invoice). Each automation runs one way.
+
+Diagram: how Airtable and QuickBooks Online connect, through Make Core, shown with the example automation described above. Drawn from the facts on this page.
+
+ 
+
 **Limitations:** Each Make or Zapier scenario runs one way. Every Make run that reads or writes Airtable uses API calls. Airtable's Free plan allows 1,000 a month and Team 100,000; a scenario that checks Airtable every 15 minutes uses about 2,880 a month, so this calculator models Team ($24/seat billed monthly, $20 billed annually). Free works only for very low-volume syncs.
 
 [Setup guide: Airtable: Managing API call limits ↗](https://support.airtable.com/articles/7735693959-managing-api-call-limits-in-airtable)

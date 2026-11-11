@@ -21,6 +21,12 @@ You create an invoice from the deal detail view in Pipedrive, using the deal's c
 
 [Setup guide: Pipedrive: QuickBooks integration ↗](https://support.pipedrive.com/en/article/pipedrive-integration-quickbooks)
 
+Diagram of how Pipedrive and QuickBooks Online connect. Pipedrive: Lite plan · $140/mo for 10 seats. QuickBooks Online: Simple Start plan · $38/mo for 10 seats. Pipedrive to QuickBooks Online: invoices created from deals. QuickBooks Online to Pipedrive: invoice status (paid, overdue). Native app, 2-way, no connector fee.
+
+Diagram: how Pipedrive and QuickBooks Online connect, a native app. Drawn from the facts on this page.
+
+ 
+
 ### How do you set up Pipedrive + QuickBooks Online?
 
 1. In Pipedrive, open the account menu, go to Tools and apps > Invoicing and click Install next to QuickBooks.

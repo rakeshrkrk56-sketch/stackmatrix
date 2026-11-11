@@ -19,6 +19,12 @@ HubSpot's Data Sync app for Freshdesk syncs companies, contacts and tickets betw
 
 [Setup guide: HubSpot Marketplace: Freshdesk Data Sync ↗](https://ecosystem.hubspot.com/marketplace/listing/freshdesk-data-sync)
 
+Diagram of how Freshdesk and HubSpot connect. Freshdesk: Growth plan · $230/mo for 10 seats. HubSpot: Free plan · $0/mo for 10 seats. Both ways: companies, contacts, tickets. Native app, 2-way, no connector fee.
+
+Diagram: how Freshdesk and HubSpot connect, a native app. Drawn from the facts on this page.
+
+ 
+
 ### How do you set up Freshdesk + HubSpot?
 
 1. In HubSpot, click the Marketplace icon in the top navigation bar and select HubSpot Marketplace. You need to be a Super Admin or have App Marketplace permissions.

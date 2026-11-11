@@ -17,6 +17,12 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 There's no native link, so a Zapier Zap connects them. Common Zaps create a Notion database item or page for each new Zendesk ticket (or each ticket in a view), or add a Zendesk ticket comment when a Notion database item is added.
 
+Diagram of how Zendesk and Notion connect. Zendesk: Suite Team plan · $690/mo for 10 seats. Notion: Plus plan · $120/mo for 10 seats. Zendesk sends a trigger (new ticket) to Zapier Professional ($29.99/mo), which performs an action in Notion (create a database item or page). Each automation runs one way.
+
+Diagram: how Zendesk and Notion connect, through Zapier Professional, shown with the example automation described above. Drawn from the facts on this page.
+
+ 
+
 **Limitations:** Each Zap is one-way, and every run counts toward your Zapier task allowance. The Notion integration must be shared with the database it writes to.
 
 [Setup guide: Zapier: Notion + Zendesk integrations ↗](https://zapier.com/apps/notion/integrations/zendesk)

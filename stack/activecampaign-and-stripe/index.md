@@ -17,6 +17,12 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 You connect Stripe from ActiveCampaign's apps page and choose which Stripe resource to sync. Customers, orders and subscriptions from Stripe arrive in ActiveCampaign as contacts and e-commerce data, tagged by the Stripe event, and Stripe-based automation triggers become available, for example a welcome series for new subscribers or a win-back for a failed payment.
 
+Diagram of how ActiveCampaign and Stripe connect. Stripe: Standard plan · $0/mo for 10 seats. ActiveCampaign: Plus plan · $49/mo for 10 seats. Stripe to ActiveCampaign: customers, orders, subscriptions. Native app, 1-way, no connector fee.
+
+Diagram: how ActiveCampaign and Stripe connect, a native app. Drawn from the facts on this page.
+
+ 
+
 **Limitations:** Data flows from Stripe into ActiveCampaign, not back. The integration doesn't add contacts to a list on its own (use an automation for that), and it can only map Stripe fields to fields that already exist in ActiveCampaign.
 
 [Setup guide: ActiveCampaign: Stripe integration (app directory) ↗](https://www.activecampaign.com/apps/stripe)

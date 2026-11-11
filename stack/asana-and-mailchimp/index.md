@@ -17,6 +17,12 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 There's no native Asana–Mailchimp app, so a Zapier Zap links them. Common Zaps create an Asana task for each new Mailchimp subscriber or unsubscriber, or add or update a Mailchimp subscriber when a task is created or tagged in an Asana project.
 
+Diagram of how Asana and Mailchimp connect. Mailchimp: Essentials plan · $13/mo for 10 seats. Asana: Starter plan · $134.90/mo for 10 seats. Mailchimp sends a trigger (new subscriber) to Zapier Professional ($29.99/mo), which performs an action in Asana (create a task). Each automation runs one way.
+
+Diagram: how Asana and Mailchimp connect, through Zapier Professional, shown with the example automation described above. Drawn from the facts on this page.
+
+ 
+
 **Limitations:** Each run is one-way, from the trigger app to the action app, and every run counts toward your Zapier task allowance.
 
 [Setup guide: Zapier: Asana + Mailchimp integrations ↗](https://zapier.com/apps/asana/integrations/mailchimp)

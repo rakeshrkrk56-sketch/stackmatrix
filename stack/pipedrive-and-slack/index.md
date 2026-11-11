@@ -21,6 +21,12 @@ Pipedrive connects to Slack through its Automations feature: after you authorize
 
 [Setup guide: Pipedrive: Automations Slack notifications ↗](https://support.pipedrive.com/en/article/workflow-automation-slack-notifications)
 
+Diagram of how Pipedrive and Slack connect. Pipedrive: Growth plan · $390/mo for 10 seats. Slack: Free plan · $0/mo for 10 seats. Pipedrive to Slack: automation posts, e.g. new or won deals. Native app, 1-way, no connector fee.
+
+Diagram: how Pipedrive and Slack connect, a native app. Drawn from the facts on this page.
+
+ 
+
 ### How do you set up Pipedrive + Slack?
 
 1. In Pipedrive, go to Tools and apps > Slack > Authorize Slack account.

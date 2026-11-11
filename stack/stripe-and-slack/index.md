@@ -21,6 +21,12 @@ Stripe Workflows for Slack is built by Stripe: you connect your Slack workspace,
 
 [Set up Stripe Workflows for Slack ↗](https://docs.stripe.com/use-stripe-apps/stripe-workflows-slack)
 
+Diagram of how Stripe and Slack connect. Stripe: Standard plan · $0/mo for 10 seats. Slack: Free plan · $0/mo for 10 seats. Stripe to Slack: workflow events, as channel messages. Native app, 1-way, no connector fee.
+
+Diagram: how Stripe and Slack connect, a native app. Drawn from the facts on this page.
+
+ 
+
 ### How do you set up Stripe + Slack?
 
 1. In the Stripe App Marketplace, open the Slack app page, pick your account and click Install.

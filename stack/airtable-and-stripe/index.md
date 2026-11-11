@@ -17,6 +17,12 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 Airtable and Stripe don't have a native integration. An automation tool such as Make or Zapier connects them, for example adding an Airtable record when a Stripe payment succeeds or a customer is created.
 
+Diagram of how Airtable and Stripe connect. Stripe: Standard plan · $0/mo for 10 seats. Airtable: Team plan · $240/mo for 10 seats. Stripe sends a trigger (payment succeeds or customer created) to Make Core ($10.59/mo), which performs an action in Airtable (add a record). Each automation runs one way.
+
+Diagram: how Airtable and Stripe connect, through Make Core, shown with the example automation described above. Drawn from the facts on this page.
+
+ 
+
 **Limitations:** Each Make or Zapier scenario runs one way. Every Make run that reads or writes Airtable uses API calls. Airtable's Free plan allows 1,000 a month and Team 100,000; a scenario that checks Airtable every 15 minutes uses about 2,880 a month, so this calculator models Team ($24/seat billed monthly, $20 billed annually). Free works only for very low-volume syncs.
 
 [Setup guide: Airtable: Managing API call limits ↗](https://support.airtable.com/articles/7735693959-managing-api-call-limits-in-airtable)

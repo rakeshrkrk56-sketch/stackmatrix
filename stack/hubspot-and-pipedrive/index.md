@@ -17,6 +17,12 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 There's no first-party integration that keeps HubSpot and Pipedrive in sync. HubSpot Smart Transfer can import Pipedrive data into HubSpot, which suits a one-time move rather than running both CRMs side by side.
 
+Diagram of how HubSpot and Pipedrive connect. HubSpot: Free plan · $0/mo for 10 seats. Pipedrive: Lite plan · $140/mo for 10 seats. Make Core ($10.59/mo) watches for a trigger in one tool and performs an action in the other. Each automation runs one way.
+
+Diagram: how HubSpot and Pipedrive connect, through Make Core. Drawn from the facts on this page.
+
+ 
+
 **Limitations:** For ongoing sync you need middleware such as Make or Zapier, which works trigger by trigger; your real middleware bill depends on task volume.
 
 [Setup guide: HubSpot: Supported apps for Smart Transfer ↗](https://knowledge.hubspot.com/integrations/supported-apps-for-hubspot-smart-transfer)

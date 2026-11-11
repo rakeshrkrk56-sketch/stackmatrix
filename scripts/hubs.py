@@ -7,6 +7,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 from model import compute, tiers, cost, cheapest_api, money, svg_bars
 
 TODAY = "2026-11-03"
+MODIFIED = "2026-11-11"   # charts (Nov 10) and question headings (Nov 11) changed every generated hub
 ED = ' · Edited by <a href="/about/#editor" class="font-medium text-indigo-600 hover:underline">Rakesh Kumar</a>'
 SITE = "https://stackcostmatrix.com"
 EXISTING = {"hubspot": "/hubspot-integrations-cost/", "salesforce": "/salesforce-integrations-cost/"}
@@ -215,7 +216,7 @@ def build_tool(slug, name, plans, pairs, sources, hubs):
     ld = [
         {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faqs]},
         {"@context": "https://schema.org", "@type": "TechArticle", "headline": f"{short} Integration Costs (2026): Minimum Plans, API Access & Hidden Fees", "description": desc,
-         "author": {"@type": "Organization", "name": "StackCostMatrix", "url": f"{SITE}/", "email": "admin@stackcostmatrix.com"}, "datePublished": TODAY, "dateModified": TODAY,
+         "author": {"@type": "Organization", "name": "StackCostMatrix", "url": f"{SITE}/", "email": "admin@stackcostmatrix.com"}, "datePublished": TODAY, "dateModified": MODIFIED,
          "citation": [sources[name][0], sources[name][1]] if name in sources else [], "mainEntityOfPage": url,
          "publisher": {"@type": "Organization", "name": "StackCostMatrix", "url": f"{SITE}/", "logo": f"{SITE}/icon-512.png"}, "image": f"{SITE}/icon-512.png", "inLanguage": "en"},
         {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [

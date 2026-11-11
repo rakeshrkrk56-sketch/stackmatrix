@@ -17,6 +17,12 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 There's no native link, so a Make scenario receives Stripe events, such as a failed payment or a dispute, and creates or updates a Zendesk ticket for the customer, so support sees billing problems as they happen.
 
+Diagram of how Zendesk and Stripe connect. Stripe: Standard plan · $0/mo for 10 seats. Zendesk: Suite Team plan · $690/mo for 10 seats. Stripe sends a trigger (failed payment or dispute) to Make Core ($10.59/mo), which performs an action in Zendesk (create or update a ticket). Each automation runs one way.
+
+Diagram: how Zendesk and Stripe connect, through Make Core, shown with the example automation described above. Drawn from the facts on this page.
+
+ 
+
 **Limitations:** It's one-way (Stripe → Zendesk). Zendesk's webhooks and triggers are on every Suite plan from Team up, but you build the ticket mapping and duplicate checks yourself.
 
 [Setup guide: Stripe docs: Webhooks ↗](https://docs.stripe.com/webhooks)

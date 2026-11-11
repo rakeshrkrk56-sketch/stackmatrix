@@ -19,6 +19,12 @@ Install Stripe from the Intercom App Store and turn on sync. Intercom imports ea
 
 [Setup guide: Intercom help: Stripe app ↗](https://www.intercom.com/help/en/articles/1829591-stripe-app)
 
+Diagram of how Intercom and Stripe connect. Intercom: Essential plan · $390/mo for 10 seats. Stripe: Standard plan · $0/mo for 10 seats. Stripe to Intercom: plan, balance, delinquency attributes. Intercom to Stripe: customers added or linked from the inbox. Native app, 2-way, no connector fee.
+
+Diagram: how Intercom and Stripe connect, a native app. Drawn from the facts on this page.
+
+ 
+
 ### How do you set up Intercom + Stripe?
 
 1. Find Stripe in the Intercom App Store and click Install now. You need to be an admin in Stripe; a Stripe developer account can't connect third-party apps.

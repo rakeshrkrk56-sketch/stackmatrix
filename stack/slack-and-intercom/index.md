@@ -19,6 +19,12 @@ Intercom's native Slack integration lets you connect Slack as a channel in Inter
 
 [Setup guide: Intercom: Connect your Slack channel ↗](https://www.intercom.com/help/en/articles/11534476-connect-your-slack-channel)
 
+Diagram of how Slack and Intercom connect. Slack: Free plan · $0/mo for 10 seats. Intercom: Essential plan · $390/mo for 10 seats. Slack to Intercom: conversations and tickets. Intercom to Slack: replies from your team. Native app, 2-way, no connector fee.
+
+Diagram: how Slack and Intercom connect, a native app. Drawn from the facts on this page.
+
+ 
+
 ### How do you set up Slack + Intercom?
 
 1. In Intercom, go to Settings > Channels > Slack.

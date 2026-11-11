@@ -104,7 +104,7 @@ def build(slug, tool, pairs, hubs, api_urls):
     ld = [
         {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faqs]},
         {"@context": "https://schema.org", "@type": "TechArticle", "headline": title, "description": desc,
-         "author": {"@type": "Organization", "name": "StackCostMatrix", "url": f"{SITE}/", "email": "admin@stackcostmatrix.com"}, "datePublished": "2026-11-03", "dateModified": T.get("modified", "2026-11-03"),
+         "author": {"@type": "Organization", "name": "StackCostMatrix", "url": f"{SITE}/", "email": "admin@stackcostmatrix.com"}, "datePublished": "2026-11-03", "dateModified": max(T.get("modified", "2026-11-03"), "2026-11-11"),   # plan chart and question headings changed every API page
          "citation": [u for _, u, _ in T["sources"]], "mainEntityOfPage": url,
          "publisher": {"@type": "Organization", "name": "StackCostMatrix", "url": f"{SITE}/", "logo": f"{SITE}/icon-512.png"}, "image": f"{SITE}/icon-512.png", "inLanguage": "en"},
         {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [

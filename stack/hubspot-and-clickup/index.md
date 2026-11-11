@@ -19,6 +19,12 @@ ClickUp's native HubSpot integration works through automations, with over 20 way
 
 [Setup guide: HubSpot Marketplace: ClickUp ↗](https://ecosystem.hubspot.com/marketplace/listing/clickup)
 
+Diagram of how HubSpot and ClickUp connect. HubSpot: Free plan · $0/mo for 10 seats. ClickUp: Core plan · $120/mo for 10 seats. HubSpot to ClickUp: deal events create tasks or projects. Native app, 1-way, no connector fee.
+
+Diagram: how HubSpot and ClickUp connect, a native app. Drawn from the facts on this page.
+
+ 
+
 **Limitations:** It's automation-based rather than a continuous field-level sync. HubSpot's listing names ClickUp's Free Forever plan as compatible, but this calculator assumes Core (ClickUp's former Unlimited plan), which ClickUp's help center lists for the integration.
 
 Sources (checked Nov 3, 2026): [HubSpot Marketplace: ClickUp ↗](https://ecosystem.hubspot.com/marketplace/listing/clickup)

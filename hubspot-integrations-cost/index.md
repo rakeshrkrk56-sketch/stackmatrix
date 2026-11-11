@@ -41,7 +41,7 @@ Monthly cost for 10 seats, both tools plus any connector. Indigo bars are native
 
 Image: [HubSpot integration costs summary: 13 integrations priced, from $0 to $1,750 a month for 10 seats](https://stackcostmatrix.com/og/hubspot-integrations-cost.jpg)
 
-## The HubSpot API tier trap
+## Which HubSpot integrations need a Professional plan?
 
 The most common HubSpot hidden cost is a **Professional subscription**:
 the Salesforce connector and the Asana workflow action need one, and webhook actions in

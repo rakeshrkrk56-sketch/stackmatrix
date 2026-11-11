@@ -17,6 +17,12 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 There's no native link, so a Make scenario receives Stripe events, such as a successful payment, and creates a page in a Notion database for each one through Notion's API, giving you a payments log or customer list inside Notion.
 
+Diagram of how Notion and Stripe connect. Stripe: Standard plan · $0/mo for 10 seats. Notion: Plus plan · $120/mo for 10 seats. Stripe sends a trigger (payment succeeds) to Make Core ($10.59/mo), which performs an action in Notion (create a database page). Each automation runs one way.
+
+Diagram: how Notion and Stripe connect, through Make Core, shown with the example automation described above. Drawn from the facts on this page.
+
+ 
+
 **Limitations:** It's one-way (Stripe → Notion). The Notion integration must be shared with the database it writes to, and you maintain the property mapping yourself.
 
 [Setup guide: Stripe docs: Webhooks ↗](https://docs.stripe.com/webhooks)

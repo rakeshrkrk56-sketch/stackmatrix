@@ -19,6 +19,12 @@ Mailchimp's QuickBooks Online integration, listed in Mailchimp's integrations di
 
 [Setup guide: Mailchimp: QuickBooks Online integration ↗](https://mailchimp.com/integrations/quickbooksonline/)
 
+Diagram of how QuickBooks Online and Mailchimp connect. QuickBooks Online: Simple Start plan · $38/mo for 10 seats. Mailchimp: Free plan · $0/mo for 10 seats. QuickBooks Online to Mailchimp: customers and purchase data. Native app, 1-way, no connector fee.
+
+Diagram: how QuickBooks Online and Mailchimp connect, a native app. Drawn from the facts on this page.
+
+ 
+
 ### How do you set up QuickBooks Online + Mailchimp?
 
 1. In Mailchimp, open the integrations directory.

@@ -17,6 +17,12 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 Mailchimp for Salesforce connects Salesforce contacts and leads with your Mailchimp audience and brings Mailchimp campaign activity into Salesforce.
 
+Diagram of how Salesforce Sales Cloud and Mailchimp connect. Salesforce Sales Cloud: Professional + API add-on · $1,250/mo for 10 seats. Mailchimp: Standard plan · $20/mo for 10 seats. Salesforce Sales Cloud to Mailchimp: contacts and leads. Mailchimp to Salesforce Sales Cloud: campaign activity. Native app, 2-way, no connector fee.
+
+Diagram: how Salesforce Sales Cloud and Mailchimp connect, a native app. Drawn from the facts on this page.
+
+ 
+
 ### How do you set up Salesforce Sales Cloud + Mailchimp?
 
 1. On Salesforce Professional, ask your Salesforce account executive to enable API access before you install.

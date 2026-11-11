@@ -17,6 +17,12 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 Airtable and Mailchimp don't have a native integration. Teams connect them with an automation tool such as Make or Zapier, for example adding a Mailchimp contact when an Airtable record is created, or with a dedicated sync app such as Syncgrip or Unito, which Mailchimp lists in its integrations directory.
 
+Diagram of how Mailchimp and Airtable connect. Airtable: Team plan · $240/mo for 10 seats. Mailchimp: Essentials plan · $13/mo for 10 seats. Airtable sends a trigger (record created) to Make Core ($10.59/mo), which performs an action in Mailchimp (add a contact). Each automation runs one way.
+
+Diagram: how Mailchimp and Airtable connect, through Make Core, shown with the example automation described above. Drawn from the facts on this page.
+
+ 
+
 **Limitations:** Each Make or Zapier scenario runs one way, so two-way sync needs a second automation or a dedicated sync app, which is a separate paid product. Airtable's webhooks are available on all plans, but every Make run that reads or writes Airtable uses API calls. Airtable's Free plan allows 1,000 a month and Team 100,000; a scenario that checks Airtable every 15 minutes uses about 2,880 a month, so this calculator models Team ($24/seat billed monthly, $20 billed annually). Free works only for very low-volume syncs. It also assumes Mailchimp's Essentials plan, whose $13/month starting price covers up to 500 contacts and rises with your contact count.
 
 [Setup guide: Mailchimp: Syncgrip integration ↗](https://mailchimp.com/integrations/syncgrip/)

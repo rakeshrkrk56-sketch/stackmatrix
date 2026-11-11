@@ -19,6 +19,12 @@ The Stripe app for Salesforce Platform lets you process and reconcile Stripe pay
 
 [Setup guide: Stripe: Stripe app for Salesforce Platform ↗](https://docs.stripe.com/connectors/stripe-connector-for-salesforce/overview)
 
+Diagram of how Salesforce Sales Cloud and Stripe connect. Salesforce Sales Cloud: Professional + API add-on · $1,250/mo for 10 seats. Stripe: Standard plan · $0/mo for 10 seats. Salesforce Sales Cloud to Stripe: Flow and Apex calls, e.g. subscriptions. Stripe to Salesforce Sales Cloud: payments, to reconcile. Native app, 2-way, no connector fee.
+
+Diagram: how Salesforce Sales Cloud and Stripe connect, a native app. Drawn from the facts on this page.
+
+ 
+
 ### How do you set up Salesforce Sales Cloud + Stripe?
 
 1. In Salesforce, make sure Lightning Web Security is enabled under Setup > Session Management > Session Settings.

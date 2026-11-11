@@ -17,6 +17,12 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 Pipedrive's own Xero integration is no longer offered. The Xero app in Pipedrive's Marketplace is built by Cloudify: it creates Xero invoices or quotes when a deal reaches a pipeline stage you choose and shows the invoice status (draft, awaiting payment or paid) on the deal. This page models the cheaper connector route, a Make scenario that creates a Xero invoice for each won deal.
 
+Diagram of how Pipedrive and Xero connect. Pipedrive: Lite plan · $140/mo for 10 seats. Xero: Early plan · $27/mo for 10 seats. Pipedrive sends a trigger (deal won) to Make Core ($10.59/mo), which performs an action in Xero (create an invoice). Each automation runs one way.
+
+Diagram: how Pipedrive and Xero connect, through Make Core, shown with the example automation described above. Drawn from the facts on this page.
+
+ 
+
 **Limitations:** Cloudify's app is free for the first 30 syncs and paid after that (its price isn't listed in the Marketplace). The Make route is one-way and you build the field mapping yourself.
 
 [Setup guide: Pipedrive Marketplace: Xero (by Cloudify) ↗](https://www.pipedrive.com/en/marketplace/app/xero/b217602d14d86f39)

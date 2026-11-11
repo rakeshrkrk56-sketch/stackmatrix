@@ -17,6 +17,12 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 
 ActiveCampaign's native Pipedrive integration has two sync options: an inbound sync that imports Pipedrive contacts into ActiveCampaign, and an automation action that creates or updates people in Pipedrive.
 
+Diagram of how ActiveCampaign and Pipedrive connect. ActiveCampaign: Starter plan · $15/mo for 10 seats. Pipedrive: Growth plan · $390/mo for 10 seats. Pipedrive to ActiveCampaign: contacts (inbound sync). ActiveCampaign to Pipedrive: people (automation action). Native app, 2-way, no connector fee.
+
+Diagram: how ActiveCampaign and Pipedrive connect, a native app. Drawn from the facts on this page.
+
+ 
+
 **Limitations:** Both first and last names are required, so contacts missing either won't sync. Only contacts who reach the Pipedrive action in an automation are pushed to Pipedrive. The Pipedrive plan shown is this calculator's assumption; ActiveCampaign doesn't state one.
 
 [Setup guide: ActiveCampaign: Use the Pipedrive integration ↗](https://help.activecampaign.com/hc/en-us/articles/360013357320-Use-the-ActiveCampaign-Pipedrive-integration)

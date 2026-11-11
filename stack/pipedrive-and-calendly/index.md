@@ -21,6 +21,12 @@ Pipedrive and Calendly don't build a native integration with each other. Third-p
 
 [Setup guide: Calendly: Outfunnel integration ↗](https://calendly.com/integration/outfunnel)
 
+Diagram of how Pipedrive and Calendly connect. Calendly: Standard plan · $120/mo for 10 seats. Pipedrive: Lite plan · $140/mo for 10 seats. Calendly sends a trigger (meeting booked) to Make Core ($10.59/mo), which performs an action in Pipedrive (add the booking to Pipedrive). Each automation runs one way.
+
+Diagram: how Pipedrive and Calendly connect, through Make Core, shown with the example automation described above. Drawn from the facts on this page.
+
+ 
+
 ### How do you set up Pipedrive + Calendly?
 
 1. Pick a connector: a Pipedrive Marketplace app such as Outfunnel's Calendly Sync, or Make or Zapier.

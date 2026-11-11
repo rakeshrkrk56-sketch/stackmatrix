@@ -21,6 +21,12 @@ With Make, a scenario watches Salesforce, for example for a won opportunity, and
 
 [Setup guide: Make: Salesforce app ↗](https://apps.make.com/salesforce)
 
+Diagram of how Salesforce Sales Cloud and QuickBooks Online connect. Salesforce Sales Cloud: Professional + API add-on · $1,250/mo for 10 seats. QuickBooks Online: Simple Start plan · $38/mo for 10 seats. Salesforce Sales Cloud sends a trigger (opportunity won) to Make Core ($10.59/mo), which performs an action in QuickBooks Online (create the customer or invoice). Each automation runs one way.
+
+Diagram: how Salesforce Sales Cloud and QuickBooks Online connect, through Make Core, shown with the example automation described above. Drawn from the facts on this page.
+
+ 
+
 ### How do you set up Salesforce Sales Cloud + QuickBooks Online?
 
 1. Make sure your Salesforce org has API access: Enterprise or Unlimited include it, Professional needs the API add-on.
