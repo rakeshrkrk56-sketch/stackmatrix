@@ -7,8 +7,6 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 ---
 
-Pillar guide
-
 Salesforce Professional costs $100/user/month — but **API access costs
 an extra $25/user/month** on top. That add-on is the most common
 hidden cost in Salesforce integrations, and it applies to most connections
@@ -29,7 +27,7 @@ Complete 2026 Salesforce Integration Cost & API Tier Matrix
 
 Chart: Salesforce integration costs: monthly cost for 10 seats on the plans each integration needs: Salesforce Sales Cloud + Zendesk $1,940.00; HubSpot + Salesforce Sales Cloud $1,750.00; Salesforce Sales Cloud + Slack $1,737.50; Pipedrive + Salesforce Sales Cloud $1,400.59; Salesforce Sales Cloud + QuickBooks Online $1,298.59; Salesforce Sales Cloud + Mailchimp $1,270.00; Salesforce Sales Cloud + Stripe $1,250.00
 
-Monthly cost for 10 seats, both tools plus any connector. Indigo bars are native integrations; teal bars need a connector.
+Monthly cost for 10 seats, both tools plus any connector. Navy bars are native integrations; teal bars need a connector.
 
  
 

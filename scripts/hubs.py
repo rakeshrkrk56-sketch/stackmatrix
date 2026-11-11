@@ -139,9 +139,9 @@ def build_tool(slug, name, plans, pairs, sources, hubs):
              f'{TH}Integration</th> {TH}Type</th> {TH}Min. {esc(short)} plan</th> {TH}Other tool&#39;s plan</th> {TH}10-seat total</th> {TH}Checked</th> {TH}Details</th> </tr> </thead> <tbody> {"".join(trs)} </tbody> </table> </div>'
              f'<p class="mt-3 text-xs text-slate-500">Totals are monthly-billing prices for 10 seats on the minimum plans, including any connector fee. Open a calculator to change team size, switch to annual billing or add usage costs.</p>')
 
-    chart = ('<figure class="mt-6"> ' + svg_bars([(r["label"], r["N"], "#4f46e5" if r["p"]["v"]["native"] else "#0e7490") for r in sorted(rows, key=lambda r: -r["N"])],
+    chart = ('<figure class="mt-6"> ' + svg_bars([(r["label"], r["N"], "#16223f" if r["p"]["v"]["native"] else "#0e7490") for r in sorted(rows, key=lambda r: -r["N"])],
                                                 f"{short} integrations: monthly cost for 10 seats on the plans each needs")
-             + f' <figcaption class="mt-1 text-xs text-slate-500">Monthly cost for 10 seats, both tools plus any connector. Indigo bars are native integrations; teal bars need a connector.</figcaption> </figure>')
+             + f' <figcaption class="mt-1 text-xs text-slate-500">Monthly cost for 10 seats, both tools plus any connector. Navy bars are native integrations; teal bars need a connector.</figcaption> </figure>')
     fig = (f'<figure class="mt-6"> <img src="/og/{slug}-integrations-cost.jpg" width="1200" height="630" loading="lazy" class="scm-fig" '
            f'alt="{attr(short)} integration costs summary: {n} integrations priced, from {m0(lo["N"])} to {m0(hi["N"])} a month for 10 seats"> '
            f'<figcaption class="mt-2 text-xs text-slate-500">{esc(short)} integration costs at a glance. Free to reuse with credit (CC BY 4.0).</figcaption> </figure>') if os.path.exists(f"og/{slug}-integrations-cost.jpg") else ""
@@ -209,7 +209,7 @@ def build_tool(slug, name, plans, pairs, sources, hubs):
     others = " · ".join(f'<a href="{u}" {LINK}>{esc(nm)}</a>' for s2, (nm, u) in sorted(hubs.items(), key=lambda kv: kv[1][0].lower()) if s2 != slug)
     nav = f'{H2}Integration costs by tool</h2> <p class="mt-3 leading-relaxed text-slate-600">{others}</p>'
 
-    body = (f'<section class="mx-auto max-w-4xl"> <p class="text-sm font-semibold uppercase tracking-widest text-indigo-600">Tool guide</p> '
+    body = (f'<section class="mx-auto max-w-4xl"> '
             f'<h1 class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">\n{esc(short)} Integration Costs (2026): Minimum Plans, API Access &amp; Hidden Fees\n</h1> '
             f'<p class="mt-3 text-sm text-slate-500">{by_html}</p> {P}\n{intro}\n</p> {table} {chart} {fig} {trap} {mw} {plan_tbl} {sources_html} {nav}{faq_html} </section> ')
 

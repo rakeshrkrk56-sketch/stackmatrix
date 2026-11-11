@@ -7,8 +7,6 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 ---
 
-Research · November 2026
-
 StackCostMatrix · Published Nov 3, 2026 · Data checked against vendor docs Nov 3 to Nov 8, 2026 · Updated Nov 10, 2026: HubSpot Professional repriced per seat (Nov 5); ActiveCampaign + Stripe, Mailchimp + Calendly and Pipedrive + Xero corrected (Nov 8); “Three kinds of integration cost” added (Nov 10). See the About page changelog · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
 
 We priced 55 of the most common B2B software integrations at the plans each one actually requires, then compared that with the cheapest plans that still include API access. The difference, plus any connector fee for Make or Zapier, is the **integration tax**: what you pay every month only because two tools need to talk to each other.

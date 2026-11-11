@@ -7,8 +7,6 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 ---
 
-Tool guide
-
 Built from the 4 pair calculators below · integration requirements checked Nov 3, 2026; 2 with a plan still unconfirmed (Stripe and Zendesk). · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
 
 This page collects the 4 Notion integrations in the StackCostMatrix index: which Notion plan each one needs, whether it's native or runs through middleware, and what the whole stack costs for a 10-person team. 1 of the 4 connects natively and 3 need a connector such as Make or Zapier. By minimum Notion plan, the count is Plus (4). Ten-seat totals run from $120.00/mo (Slack + Notion) to $839.99/mo (Zendesk + Notion).
@@ -26,7 +24,7 @@ Totals are monthly-billing prices for 10 seats on the minimum plans, including a
 
 Chart: Notion integrations: monthly cost for 10 seats on the plans each needs: Zendesk + Notion $839.99; Notion + Calendly $250.59; Notion + Stripe $130.59; Slack + Notion $120.00
 
-Monthly cost for 10 seats, both tools plus any connector. Indigo bars are native integrations; teal bars need a connector.
+Monthly cost for 10 seats, both tools plus any connector. Navy bars are native integrations; teal bars need a connector.
 
  
 

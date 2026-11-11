@@ -25,6 +25,11 @@ def to_markdown(f, s):
                   "<p><em>Interactive cost calculator: open the web page to change team size, billing and add-ons.</em></p>", main, flags=re.S)
     main = re.sub(r"<(script|style|form|template)[^>]*>.*?</\1>", "", main, flags=re.S)
     main = re.sub(r'<nav class="scm-jump"[^>]*>.*?</nav>', "", main, flags=re.S)   # in-page jump links mean nothing in Markdown
+    main = re.sub(r'<a class="scm-skip"[^>]*>.*?</a>', "", main, flags=re.S)
+    def chart_list(m):   # the homepage chart is a triangle of cells; in Markdown it reads better as one line per pair
+        items = re.findall(r'<a href="(/stack/[^"]+)" aria-label="([^"]*)"', m.group(0))
+        return "<ul>" + "".join(f'<li><a href="{u}">{t}</a></li>' for u, t in items) + "</ul>"
+    main = re.sub(r'<div class="scm-fare-wrap"[^>]*>.*?</table></div>', chart_list, main, flags=re.S)
     main = re.sub(r'<svg class="scm-chart"[^>]*aria-label="([^"]*)"[^>]*>.*?</svg>', lambda m: f"<p>Chart: {m.group(1)}</p>", main, flags=re.S)
     main = re.sub(r'<svg class="scm-diagram"[^>]*aria-label="([^"]*)"[^>]*>.*?</svg>', lambda m: f"<p>{m.group(1)}</p>", main, flags=re.S)   # the label already starts "Diagram of how..."
     h1 = re.search(r"<h1[^>]*>(.*?)</h1>", main, re.S)
@@ -62,6 +67,7 @@ def add_captions(s):
     out, pos = [], 0
     for m in re.finditer(r"<table\b[^>]*>", s):
         out.append(s[pos:m.end()]); pos = m.end()
+        if 'role="presentation"' in m.group(0): continue   # a layout table (the homepage chart) takes no caption
         if s[pos:pos + 40].lstrip().startswith("<caption"): continue
         hs = re.findall(r"<h[123][^>]*>(.*?)</h[123]>", s[:m.start()], re.S)
         if not hs: continue

@@ -4,6 +4,8 @@ These scripts generate and check stackcostmatrix.com. The site itself is plain H
 
 Run everything **from the repo root**. Needs `python3`, plus `node` with Playwright for the browser checks.
 
+**Shortcut:** `bash scripts/build_all.sh` runs every generator in the right order, twice, and fails if the second run changes anything. Then run `bash scripts/check_all.sh`. The step-by-step lists below show what it runs. `CLAUDE.md` at the repo root holds the short working notes.
+
 ## Golden rules
 1. **Every fact comes from the vendor's own page,** read on the day you change it. If a page can't be read (make.com, quickbooks.intuit.com/pricing and pipedrive.com/pricing block automated reads), leave the fact and its date unchanged and say so in the PR.
 2. **Never change a "checked" date unless you actually re-read that fact.** Dates are part of the site's credibility.
@@ -31,6 +33,14 @@ Run everything **from the repo root**. Needs `python3`, plus `node` with Playwri
 | Share images | `og/<pair>.jpg`, `og-image.png` | `og17.py` renders a 1200x630 card per pair (cost, extra cost, plans); `site16.py` points each page at it. |
 | Security tags | every page | `security.py` writes a Content-Security-Policy `<meta>` (with hashes of the page's inline scripts) and a referrer policy. **Run it last, after any script that changes a page's scripts** (`check_all.sh` fails until you do). If you add an image or script from a new outside site, add its host in `security.py`. |
 | Open data | `data/integration-pairs.json` | Keep it in sync with the pages; see `wire13.py` for the field format. |
+
+## Theme (how the site looks)
+The look lives in one place: the `CSS` string in `ui13.py`, written into every page as `<style id="scm-ui">`.
+- **Idea:** a printed fare chart. White paper, navy ink (`--ink`), thin rules, and one yellow highlighter (`--hl`). The yellow means exactly one thing everywhere: money the sticker price doesn't show (a forced plan upgrade or a connector fee). Don't use it as decoration.
+- **How it reaches every page:** the pages' base CSS exposes design tokens (`--font-sans`, `--color-indigo-*`, `--color-amber-*`, `--radius-*`). The theme re-points them, so class names such as `bg-indigo-600` now render navy. Change a colour in `ui13.py`, not in the pages.
+- **Fonts:** Barlow and Barlow Semi Condensed (SIL Open Font License, `fonts/OFL.txt`), self-hosted in `fonts/` and preloaded. The "fallback" faces are Arial scaled to Barlow's width (95.8% for text, 82% for headings, measured in Chromium), so the page doesn't jump when the web font loads.
+- **Homepage chart:** `ui13.py` `fare_chart()` rebuilds it from the pair pages on every run. `PRICE_NOTE` under it repeats the price-check dates from `/about/`; update both together.
+- **Charts, diagrams, share images, icons:** bar colours are set where each chart is built (`model.py`, `pairfix.py`, `hubs.py`, `research.py`, `ux18.py`); share images in `og17.py` (it also writes `/og-image.png`); icons come from `logo.svg` and `favicon.svg` through `icons.py`.
 
 ## Common jobs
 

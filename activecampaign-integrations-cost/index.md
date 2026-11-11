@@ -7,8 +7,6 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 ---
 
-Tool guide
-
 Built from the 4 pair calculators below · integration requirements checked Nov 3, 2026 to Nov 8, 2026; 1 with a plan still unconfirmed (Pipedrive). · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
 
 This page collects the 4 ActiveCampaign integrations in the StackCostMatrix index: which ActiveCampaign plan each one needs, whether it's native or runs through middleware, and what the whole stack costs for a 10-person team. 3 of the 4 connect natively and 1 needs a connector such as Make or Zapier. By minimum ActiveCampaign plan, the count is Starter (3) and Plus (1). Ten-seat totals run from $49.00/mo (ActiveCampaign + Stripe) to $405.00/mo (ActiveCampaign + Pipedrive).
@@ -26,7 +24,7 @@ Totals are monthly-billing prices for 10 seats on the minimum plans, including a
 
 Chart: ActiveCampaign integrations: monthly cost for 10 seats on the plans each needs: ActiveCampaign + Pipedrive $405.00; ActiveCampaign + Calendly $135.00; Xero + ActiveCampaign $52.59; ActiveCampaign + Stripe $49.00
 
-Monthly cost for 10 seats, both tools plus any connector. Indigo bars are native integrations; teal bars need a connector.
+Monthly cost for 10 seats, both tools plus any connector. Navy bars are native integrations; teal bars need a connector.
 
  
 

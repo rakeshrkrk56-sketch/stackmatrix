@@ -152,7 +152,7 @@ def build():
     answer = (f"Only {npro} of the {n} HubSpot integrations we track need Professional: {pro_names}. Any Professional subscription HubSpot lists for them works, "
               f"and the cheapest is {cheapest['name']} at ${cheapest['monthly']} per seat a month (${cheapest['annual']} on an annual commitment), about {m0(c10)} a month for 10 people. "
               f"The other {nfree} work on HubSpot's free CRM.")
-    body = (f'<section class="mx-auto max-w-4xl"> <p class="text-sm font-semibold uppercase tracking-widest text-indigo-600">HubSpot plans</p> '
+    body = (f'<section class="mx-auto max-w-4xl"> '
             f'<h1 class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">\n{esc(TITLE)}\n</h1> '
             f'<p class="mt-3 text-sm text-slate-500">Checked against HubSpot&#39;s pricing pages and knowledge base · {CHECKED_TXT} · Salesforce requirements added Nov 10, 2026 · Edited by <a href="/about/#editor" class="font-medium text-indigo-600 hover:underline">Rakesh Kumar</a></p> '
             f'{P}<strong>Short answer:</strong> {esc(answer)}</p> '

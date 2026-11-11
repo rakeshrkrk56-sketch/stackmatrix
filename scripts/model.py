@@ -61,7 +61,7 @@ def svg_bars(rows, title, fmt=money):
     out.append("</svg>")
     return "".join(out)
 
-def svg_flow(top, bottom, label, flows=(), link=None, mid=None, segs=None, hue="#4f46e5"):
+def svg_flow(top, bottom, label, flows=(), link=None, mid=None, segs=None, hue="#16223f"):
     """A connection diagram as inline SVG: two tool boxes stacked top to bottom (so the text stays readable on phones)
     with labelled arrows between them, or a connector box in the middle when the link runs through one.
     top, bottom, mid: (name, detail). flows: [("down" | "up" | "both", text)] for a direct link; link: one line under them.
@@ -93,7 +93,7 @@ def svg_flow(top, bottom, label, flows=(), link=None, mid=None, segs=None, hue="
         y = NH + 8
         for d, text in flows:
             arrow(y + 1, y + ROW - 5, d, hue); note(y + 14, text); y += ROW
-        if link: note(y + 13, link, size=11.5, fill="#4338ca", weight="600"); y += 20
+        if link: note(y + 13, link, size=11.5, fill="#16223f", weight="600"); y += 20
         y += 6
     node(y, *bottom)
     return (f'<svg class="scm-diagram" viewBox="0 0 {W} {y + NH + 1}" role="img" aria-label="{e(label, quote=True)}" xmlns="http://www.w3.org/2000/svg">'

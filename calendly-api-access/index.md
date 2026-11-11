@@ -7,8 +7,6 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 ---
 
-API & webhooks
-
 Checked against Calendly's developer and help-center documentation · Nov 3, 2026 · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
 
 ## Which Calendly plans include API access and webhooks?

@@ -7,8 +7,6 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 ---
 
-Tool guide
-
 Built from the 8 pair calculators below · integration requirements checked Nov 3, 2026 to Nov 8, 2026; 2 with a plan still unconfirmed (Calendly and ActiveCampaign). · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
 
 This page collects the 8 Pipedrive integrations in the StackCostMatrix index: which Pipedrive plan each one needs, whether it's native or runs through middleware, and what the whole stack costs for a 10-person team. 4 of the 8 connect natively and 4 need a connector such as Make or Zapier. By minimum Pipedrive plan, the count is Lite (6) and Growth (2). Ten-seat totals run from $140.00/mo (Pipedrive + Mailchimp) to $1,400.59/mo (Pipedrive + Salesforce).
@@ -30,7 +28,7 @@ Totals are monthly-billing prices for 10 seats on the minimum plans, including a
 
 Chart: Pipedrive integrations: monthly cost for 10 seats on the plans each needs: Pipedrive + Salesforce $1,400.59; ActiveCampaign + Pipedrive $405.00; Pipedrive + Slack $390.00; Pipedrive + Calendly $270.59; Pipedrive + QuickBooks $178.00; Pipedrive + Xero $177.59; HubSpot + Pipedrive $150.59; Pipedrive + Mailchimp $140.00
 
-Monthly cost for 10 seats, both tools plus any connector. Indigo bars are native integrations; teal bars need a connector.
+Monthly cost for 10 seats, both tools plus any connector. Navy bars are native integrations; teal bars need a connector.
 
  
 

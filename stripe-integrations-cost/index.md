@@ -7,8 +7,6 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 ---
 
-Tool guide
-
 Built from the 12 pair calculators below · integration requirements checked Nov 3, 2026 to Nov 8, 2026; 2 with a plan still unconfirmed (Notion and Salesforce Sales Cloud). · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
 
 This page collects the 12 Stripe integrations in the StackCostMatrix index: which Stripe plan each one needs, whether it's native or runs through middleware, and what the whole stack costs for a 10-person team. 6 of the 12 connect natively and 6 need a connector such as Make or Zapier. By minimum Stripe plan, the count is Standard (12). Ten-seat totals run from $0.00/mo (HubSpot + Stripe) to $1,250.00/mo (Salesforce + Stripe).
@@ -34,7 +32,7 @@ Totals are monthly-billing prices for 10 seats on the minimum plans, including a
 
 Chart: Stripe integrations: monthly cost for 10 seats on the plans each needs: Salesforce + Stripe $1,250.00; Zendesk + Stripe $700.59; Intercom + Stripe $390.00; Airtable + Stripe $250.59; Notion + Stripe $130.59; ActiveCampaign + Stripe $49.00; Stripe + QuickBooks $48.59; Stripe + Xero $27.00; Stripe + Mailchimp $15.00; ClickUp + Stripe $10.59; HubSpot + Stripe $0.00; Stripe + Slack $0.00
 
-Monthly cost for 10 seats, both tools plus any connector. Indigo bars are native integrations; teal bars need a connector.
+Monthly cost for 10 seats, both tools plus any connector. Navy bars are native integrations; teal bars need a connector.
 
  
 

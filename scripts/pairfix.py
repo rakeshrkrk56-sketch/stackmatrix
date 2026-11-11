@@ -217,7 +217,7 @@ def nvm_table(v, d, sync="2-way"):
         rows.append((f"{conn} (modeled here)", plans, money(v["N"]), "1-way per automation"))
         rows.append((f"{alt} instead", plans, money(v["N"] - v["mw"] + altfee), "1-way per automation"))
     body = "".join(f'<tr class="border-t border-slate-100"> <td class="px-4 py-3 font-medium">{r[0]}</td> {TD_}{r[1]}</td> {TD_}{r[2]}</td> {TD_}{r[3]}</td> </tr>' for r in rows)
-    cols = ["#4f46e5", "#0e7490", "#b45309"]
+    cols = ["#16223f", "#0e7490", "#b45309"]   # native (ink), Make, Zapier
     short = (["Native connector", "Make Core route", "Zapier Professional route"] if v["native"] else [html.unescape(re.sub(r"<[^>]+>", "", r[0])) for r in rows])
     chart = (' <figure class="mt-5"> ' + svg_bars([(short[i], float(r[2].replace("$", "").replace(",", "")), cols[i]) for i, r in enumerate(rows)],
                                                     f"{A} + {B}: monthly cost for 10 seats by route")
@@ -486,7 +486,7 @@ def excerpt(summary, limit):
     return cut[:cut.rfind(" ")] + "…"
 
 def render_home_card(home, pair, v, summary, limit):
-    i = home.index(f'href="/stack/{pair}/"'); j = home.index("</a>", i)
+    i = home.index(f'href="/stack/{pair}/" data-search='); j = home.index("</a>", i)   # the pair's card, not its cell in the homepage chart
     card = home[i:j]
     card = sub1(r'(data-search="[^"]*) (?:native|middleware)(")', lambda m: m.group(1) + (" native" if v["native"] else " middleware") + m.group(2), card, what="data-search")
     badge = ('<span class="shrink-0 rounded-full px-2.5 py-0.5 text-xs font-medium ring-1 bg-emerald-100 text-emerald-800 ring-emerald-200"> Native </span>' if v["native"]
@@ -523,7 +523,7 @@ def main(mode):
         ok = True
         for f in pages:
             p = f.split("/")[1]; summ, _ = current_state(read(f))
-            i = home.index(f'href="/stack/{p}/"')
+            i = home.index(f'href="/stack/{p}/" data-search=')
             ex = html.unescape(re.search(r'<p class="mt-2 flex-1 text-sm leading-relaxed text-slate-600">(.*?)</p>', home[i:], re.S).group(1)).strip()
             if excerpt(summ, lim) != ex: ok = False; break
         if ok: limit = lim; break

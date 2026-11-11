@@ -115,9 +115,9 @@ def guide_figures():
         allrows = sorted(((pairs[x]["v"], x) for x in set(re.findall(r'href="/stack/([^"/]+)/"', s[s.index("<main"):s.index("</main>")])) if x in pairs), key=lambda t: (-t[0]["N"], t[1]))   # slug breaks ties, so the order is the same on every run
         rows = allrows[:14]
         scope = f"the {len(rows)} most expensive of {len(allrows)} integrations, " if len(rows) < len(allrows) else ""
-        chart = (' <figure class="mt-6" data-guide="1"> ' + svg_bars([(f"{v['na']} + {v['nb']}", v["N"], "#4f46e5" if v["native"] else "#0e7490") for v, _ in rows],
+        chart = (' <figure class="mt-6" data-guide="1"> ' + svg_bars([(f"{v['na']} + {v['nb']}", v["N"], "#16223f" if v["native"] else "#0e7490") for v, _ in rows],
                                                                     f"{label}: {scope}monthly cost for 10 seats on the plans each integration needs")
-                 + f' <figcaption class="mt-1 text-xs text-slate-500">{("The " + scope[4:-2] + ". ") if scope else ""}Monthly cost for 10 seats, both tools plus any connector. Indigo bars are native integrations; teal bars need a connector.</figcaption> </figure>')
+                 + f' <figcaption class="mt-1 text-xs text-slate-500">{("The " + scope[4:-2] + ". ") if scope else ""}Monthly cost for 10 seats, both tools plus any connector. Navy bars are native integrations; teal bars need a connector.</figcaption> </figure>')
         a = s.index("</table> </div>", s.index("<main")) + len("</table> </div>")
         s = s[:a] + chart + fig + s[a:]
         if s != s0: open(f, "w", encoding="utf-8").write(s); done += 1

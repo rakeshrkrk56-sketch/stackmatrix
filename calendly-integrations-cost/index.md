@@ -7,8 +7,6 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 ---
 
-Tool guide
-
 Built from the 7 pair calculators below · integration requirements checked Nov 3, 2026 to Nov 8, 2026; 1 with a plan still unconfirmed (Pipedrive). · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
 
 This page collects the 7 Calendly integrations in the StackCostMatrix index: which Calendly plan each one needs, whether it's native or runs through middleware, and what the whole stack costs for a 10-person team. 4 of the 7 connect natively and 3 need a connector such as Make or Zapier. By minimum Calendly plan, the count is Standard (6) and Free (1). Ten-seat totals run from $0.00/mo (Slack + Calendly) to $270.59/mo (Pipedrive + Calendly).
@@ -29,7 +27,7 @@ Totals are monthly-billing prices for 10 seats on the minimum plans, including a
 
 Chart: Calendly integrations: monthly cost for 10 seats on the plans each needs: Pipedrive + Calendly $270.59; Notion + Calendly $250.59; Xero + Calendly $176.99; ActiveCampaign + Calendly $135.00; HubSpot + Calendly $120.00; Mailchimp + Calendly $120.00; Slack + Calendly $0.00
 
-Monthly cost for 10 seats, both tools plus any connector. Indigo bars are native integrations; teal bars need a connector.
+Monthly cost for 10 seats, both tools plus any connector. Navy bars are native integrations; teal bars need a connector.
 
  
 
