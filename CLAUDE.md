@@ -90,7 +90,10 @@ rediscover it. Details live in `scripts/README.md`. Update the "State" section a
 - A monthly price-check task is scheduled for Dec 1.
 
 ## State (update this)
-- Nov 11, 2026: PRs #24 to #28 merged and live (setup steps on 52 of 59 pairs, diagrams, editor background,
-  question headings). The redesign (theme, homepage chart, share images, icons, this file, `build_all.sh`) is
-  pushed on the work branch as PR #29, waiting for the owner's "merge PR #29". After the merge: reset the branch,
-  check the live site, and look at the homepage on a real phone.
+- Nov 11, 2026: PRs #24 to #29 are merged and live. #24 to #28: setup steps on 52 of 59 pairs, diagrams, editor
+  background, question headings. #29: the redesign (theme, homepage chart, share images, icons, `build_all.sh`, this file).
+- Checked after #29 went live: 20 of 20 sampled files match the repo, fonts load, no console errors, Lighthouse
+  100 / 100 / 100 / 100 with CLS 0 on the homepage, a pair page and a hub.
+- Nothing is in progress. The work branch equals `main` except for this note. Next work starts from "Still open".
+- Not re-audited since the redesign: the claude-seo "Visual" category (was 90). Worth one run when the owner asks
+  for scores again; the other categories were not touched by the redesign.
