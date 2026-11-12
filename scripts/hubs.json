@@ -19,6 +19,10 @@
   "name": "ClickUp",
   "url": "/clickup-integrations-cost/"
  },
+ "freshdesk": {
+  "name": "Freshdesk",
+  "url": "/freshdesk-integrations-cost/"
+ },
  "hubspot": {
   "name": "HubSpot",
   "url": "/hubspot-integrations-cost/"

@@ -6,8 +6,8 @@ rediscover it. Details live in `scripts/README.md`. Update the "State" section a
 ## What this is
 - https://stackcostmatrix.com: an independent index of what B2B software integrations really cost.
 - Static HTML, served by GitHub Pages straight from `main`. No build step, no framework.
-- 76 pair pages (`stack/<a>-and-<b>/`), 17 tool hubs, 18 API pages, a research report, guides. 119 pages in all.
-- 18 tools, so 153 possible pairs; 76 are covered. The plan (owner agreed Nov 12, 2026): fill the grid in batches of
+- 90 pair pages (`stack/<a>-and-<b>/`), 17 tool hubs, 18 API pages, a research report, guides. 134 pages in all.
+- 18 tools, so 153 possible pairs; 90 are covered. The plan (owner agreed Nov 12, 2026): fill the grid in batches of
   15 to 25 verified pairs, one PR each, then add tools a few at a time (35 to 40 tools at most, not hundreds).
 
 ## The owner's standing rules
@@ -31,7 +31,7 @@ rediscover it. Details live in `scripts/README.md`. Update the "State" section a
 | Pair page rendering | `scripts/pairfix.py` (data in `pairdata*.py`, later files override earlier ones) |
 | Cost model | `scripts/model.py` (also the SVG bar chart and connection diagram) |
 | Setup steps | `pairdata19.py` (native pairs), `pairdata21.py` (Make, Zapier, Data Mapper pairs) |
-| New pairs, batch 1 (all their facts, steps and diagram labels) | `pairdata22.py`; pages built once by `newpairs22.py`, wired by `wire22.py` |
+| New pairs, batches 1 and 2 (all their facts, steps and diagram labels) | `pairdata22.py`, `pairdata23.py`; pages built once by `newpairs22/23.py`, wired by `wire22/23.py` |
 | Diagram labels | `pairdata20.py` |
 | Hubs, API pages, HubSpot guide, report | `hubs.py`, `apipages.py` + `apidata.py`, `hspro.py`, `research.py` |
 | Theme, navigation, homepage chart and finder | `ui13.py` (see "Theme" in `scripts/README.md`) |
@@ -52,6 +52,7 @@ rediscover it. Details live in `scripts/README.md`. Update the "State" section a
   put it where pairfix's patterns don't reach (see `ux18.py`).
 - New pairs: `hspro.py` asserts every HubSpot pair needs Free, Starter or Professional, and a tool's Free tier must be in
   the calculator data whenever the tool's other pages list it (Airtable, HubSpot), or the forced-upgrade amount is wrong.
+  Likewise a tier's API flag must match the tool's other pages (monday.com Basic has none), which `newpairs23.py` copies.
 
 ## Reading vendor pages
 - `node scripts/docread.js <outdir> name=https://...` saves a page's text (Playwright).
@@ -122,7 +123,13 @@ rediscover it. Details live in `scripts/README.md`. Update the "State" section a
 - Design choices are left to Claude's judgment.
 
 ## Still open
-- Batch 2 candidates: the 77 empty cells. Left out of batch 1 for a reason: Zendesk + QuickBooks and Airtable + Calendly
+- Batch 3 candidates: the 63 empty cells. Readable directories that settle a pair: activecampaign.com/apps/<app> (who built it,
+  which plans include it), notion.com/integrations/<app>, Airtable's sync articles, mailchimp.com/integrations/<app>,
+  apps.xero.com search, monday.com/integrations/mailchimp and monday.com/pricing. clickup.com/integrations/<app> answers a
+  few requests, then returns 403: don't push it. Left out of batch 2: Xero + Mailchimp (Mailchimp lists a Xero-built app
+  that Xero's App Store doesn't show), Intercom + Notion (Fin per-resolution pricing), ClickUp + Intercom and ClickUp +
+  Calendly (route and plan not stated), monday.com + Salesforce and ActiveCampaign + Salesforce or Zendesk (Enterprise only).
+  Left out of batch 1 for a reason: Zendesk + QuickBooks and Airtable + Calendly
   (no readable vendor page says whether a native integration exists; zendesk.com/marketplace has a bot check),
   Pipedrive + Stripe (third-party Marketplace apps, pricing not read), Asana + Intercom (asana.com/apps/intercom is 404),
   Notion + Salesforce (needs Notion Enterprise, which the site doesn't price). help.asana.com doesn't render here.
@@ -151,6 +158,7 @@ rediscover it. Details live in `scripts/README.md`. Update the "State" section a
 - Nov 12, 2026: batch 1 of the grid expansion: 17 new pairs (15 native, 2 through Make), each read on the vendors' pages
   that day; pages say so where a vendor names no plan. Merged with the Search Console setup as PR #30 and live: 25 of 25
   sampled files match the repo, every new page returns 200, no console errors, fonts load, no overflow at phone width.
+- Nov 12, 2026, later: batch 2: 14 more pairs (5 native, 9 through Make), read the same day; 90 pairs in all. PR after #30.
 - `robots.txt` now also keeps crawlers away from `/CLAUDE.md` and `/.mcp.json`. GitHub Pages serves every file in
   the repository, so working files that sit in the root need a Disallow line (`/scripts/` already had one).
 - Not re-audited since the redesign: the claude-seo "Visual" category (was 90). Worth one run when the owner asks

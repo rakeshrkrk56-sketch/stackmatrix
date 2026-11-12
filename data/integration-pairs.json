@@ -954,6 +954,31 @@
    ]
   },
   {
+   "pair": "activecampaign-and-slack",
+   "url": "https://stackcostmatrix.com/stack/activecampaign-and-slack/",
+   "tools": [
+    "ActiveCampaign",
+    "Slack"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "ActiveCampaign": "Plus",
+    "Slack": "Free"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "1-way (ActiveCampaign → Slack)",
+   "ten_seat_monthly_cost_usd": 49,
+   "verification": "Integration requirements checked against official vendor docs · Nov 12, 2026 · Prices checked · Nov 3, 2026",
+   "last_reviewed": "2026-11-12",
+   "date_modified": "2026-11-12",
+   "sources": [
+    {
+     "title": "ActiveCampaign: Slack integration",
+     "url": "https://www.activecampaign.com/apps/slack"
+    }
+   ]
+  },
+  {
    "pair": "activecampaign-and-stripe",
    "url": "https://stackcostmatrix.com/stack/activecampaign-and-stripe/",
    "tools": [
@@ -1047,6 +1072,48 @@
    ]
   },
   {
+   "pair": "asana-and-activecampaign",
+   "url": "https://stackcostmatrix.com/stack/asana-and-activecampaign/",
+   "tools": [
+    "Asana",
+    "ActiveCampaign"
+   ],
+   "connection_type": "middleware",
+   "minimum_plans": {
+    "Asana": "Starter",
+    "ActiveCampaign": "Starter"
+   },
+   "middleware_monthly_usd": 10.59,
+   "middleware_annual_billing_usd_per_month": 9,
+   "sync_direction": "1-way (trigger → action)",
+   "ten_seat_monthly_cost_usd": 160.49,
+   "verification": "Integration requirements checked against official vendor docs · Nov 12, 2026 · Prices checked · Nov 3, 2026 (Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks)",
+   "last_reviewed": "2026-11-12",
+   "date_modified": "2026-11-12",
+   "sources": [
+    {
+     "title": "ActiveCampaign: Asana integration",
+     "url": "https://www.activecampaign.com/apps/asana"
+    },
+    {
+     "title": "Make: Asana app",
+     "url": "https://apps.make.com/asana"
+    },
+    {
+     "title": "Make: ActiveCampaign app",
+     "url": "https://apps.make.com/activecampaign"
+    },
+    {
+     "title": "Make Help: Active and inactive scenarios",
+     "url": "https://help.make.com/active-and-inactive-scenarios"
+    },
+    {
+     "title": "Make Help: Schedule a scenario",
+     "url": "https://help.make.com/schedule-a-scenario"
+    }
+   ]
+  },
+  {
    "pair": "asana-and-mailchimp",
    "url": "https://stackcostmatrix.com/stack/asana-and-mailchimp/",
    "tools": [
@@ -1073,6 +1140,31 @@
     {
      "title": "Asana developers: Webhooks",
      "url": "https://developers.asana.com/docs/webhooks-guide"
+    }
+   ]
+  },
+  {
+   "pair": "asana-and-notion",
+   "url": "https://stackcostmatrix.com/stack/asana-and-notion/",
+   "tools": [
+    "Asana",
+    "Notion"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "Asana": "Starter",
+    "Notion": "Plus"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "1-way (Asana → Notion)",
+   "ten_seat_monthly_cost_usd": 254.9,
+   "verification": "Integration requirements checked against official vendor docs · Nov 12, 2026 · Prices checked · Nov 3, 2026",
+   "last_reviewed": "2026-11-12",
+   "date_modified": "2026-11-12",
+   "sources": [
+    {
+     "title": "Notion: Asana connection",
+     "url": "https://www.notion.com/integrations/asana"
     }
    ]
   },
@@ -1161,6 +1253,115 @@
    ]
   },
   {
+   "pair": "clickup-and-activecampaign",
+   "url": "https://stackcostmatrix.com/stack/clickup-and-activecampaign/",
+   "tools": [
+    "ClickUp",
+    "ActiveCampaign"
+   ],
+   "connection_type": "middleware",
+   "minimum_plans": {
+    "ClickUp": "Free",
+    "ActiveCampaign": "Starter"
+   },
+   "middleware_monthly_usd": 10.59,
+   "middleware_annual_billing_usd_per_month": 9,
+   "sync_direction": "1-way (trigger → action)",
+   "ten_seat_monthly_cost_usd": 25.59,
+   "verification": "Integration requirements checked against official vendor docs · Nov 12, 2026 · Prices checked · Nov 3, 2026 (Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks)",
+   "last_reviewed": "2026-11-12",
+   "date_modified": "2026-11-12",
+   "sources": [
+    {
+     "title": "ActiveCampaign: ClickUp integration",
+     "url": "https://www.activecampaign.com/apps/clickup"
+    },
+    {
+     "title": "Make: ClickUp app",
+     "url": "https://apps.make.com/clickup"
+    },
+    {
+     "title": "Make: ActiveCampaign app",
+     "url": "https://apps.make.com/activecampaign"
+    },
+    {
+     "title": "Make Help: Active and inactive scenarios",
+     "url": "https://help.make.com/active-and-inactive-scenarios"
+    },
+    {
+     "title": "Make Help: Schedule a scenario",
+     "url": "https://help.make.com/schedule-a-scenario"
+    }
+   ]
+  },
+  {
+   "pair": "clickup-and-notion",
+   "url": "https://stackcostmatrix.com/stack/clickup-and-notion/",
+   "tools": [
+    "ClickUp",
+    "Notion"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "ClickUp": "Free",
+    "Notion": "Plus"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "1-way (ClickUp → Notion)",
+   "ten_seat_monthly_cost_usd": 120,
+   "verification": "Integration requirements checked against official vendor docs · Nov 12, 2026 · Prices checked · Nov 3, 2026",
+   "last_reviewed": "2026-11-12",
+   "date_modified": "2026-11-12",
+   "sources": [
+    {
+     "title": "Notion: ClickUp connection",
+     "url": "https://www.notion.com/integrations/clickup"
+    }
+   ]
+  },
+  {
+   "pair": "clickup-and-salesforce",
+   "url": "https://stackcostmatrix.com/stack/clickup-and-salesforce/",
+   "tools": [
+    "ClickUp",
+    "Salesforce Sales Cloud"
+   ],
+   "connection_type": "middleware",
+   "minimum_plans": {
+    "ClickUp": "Free",
+    "Salesforce Sales Cloud": "Professional"
+   },
+   "middleware_monthly_usd": 10.59,
+   "middleware_annual_billing_usd_per_month": 9,
+   "sync_direction": "1-way (trigger → action)",
+   "ten_seat_monthly_cost_usd": 1260.59,
+   "verification": "Integration requirements checked against official vendor docs · Nov 12, 2026 · Prices checked · Nov 3, 2026 (Salesforce prices: Oct 17, 2026; Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks)",
+   "last_reviewed": "2026-11-12",
+   "date_modified": "2026-11-12",
+   "sources": [
+    {
+     "title": "ClickUp: Salesforce integration",
+     "url": "https://clickup.com/integrations/salesforce"
+    },
+    {
+     "title": "Make: Salesforce app",
+     "url": "https://apps.make.com/salesforce"
+    },
+    {
+     "title": "Make: ClickUp app",
+     "url": "https://apps.make.com/clickup"
+    },
+    {
+     "title": "Make Help: Active and inactive scenarios",
+     "url": "https://help.make.com/active-and-inactive-scenarios"
+    },
+    {
+     "title": "Make Help: Schedule a scenario",
+     "url": "https://help.make.com/schedule-a-scenario"
+    }
+   ]
+  },
+  {
    "pair": "clickup-and-slack",
    "url": "https://stackcostmatrix.com/stack/clickup-and-slack/",
    "tools": [
@@ -1245,6 +1446,48 @@
     {
      "title": "ClickUp: Zendesk integration",
      "url": "https://clickup.com/integrations/zendesk"
+    }
+   ]
+  },
+  {
+   "pair": "freshdesk-and-activecampaign",
+   "url": "https://stackcostmatrix.com/stack/freshdesk-and-activecampaign/",
+   "tools": [
+    "Freshdesk",
+    "ActiveCampaign"
+   ],
+   "connection_type": "middleware",
+   "minimum_plans": {
+    "Freshdesk": "Growth",
+    "ActiveCampaign": "Starter"
+   },
+   "middleware_monthly_usd": 10.59,
+   "middleware_annual_billing_usd_per_month": 9,
+   "sync_direction": "1-way (trigger → action)",
+   "ten_seat_monthly_cost_usd": 255.59,
+   "verification": "Integration requirements checked against official vendor docs · Nov 12, 2026 · Prices checked · Nov 3, 2026 (Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks)",
+   "last_reviewed": "2026-11-12",
+   "date_modified": "2026-11-12",
+   "sources": [
+    {
+     "title": "ActiveCampaign: Freshdesk integration",
+     "url": "https://www.activecampaign.com/apps/freshdesk"
+    },
+    {
+     "title": "Make: Freshdesk app",
+     "url": "https://apps.make.com/freshdesk"
+    },
+    {
+     "title": "Make: ActiveCampaign app",
+     "url": "https://apps.make.com/activecampaign"
+    },
+    {
+     "title": "Make Help: Active and inactive scenarios",
+     "url": "https://help.make.com/active-and-inactive-scenarios"
+    },
+    {
+     "title": "Make Help: Schedule a scenario",
+     "url": "https://help.make.com/schedule-a-scenario"
     }
    ]
   },
@@ -1706,6 +1949,48 @@
    ]
   },
   {
+   "pair": "intercom-and-activecampaign",
+   "url": "https://stackcostmatrix.com/stack/intercom-and-activecampaign/",
+   "tools": [
+    "Intercom",
+    "ActiveCampaign"
+   ],
+   "connection_type": "middleware",
+   "minimum_plans": {
+    "Intercom": "Essential",
+    "ActiveCampaign": "Starter"
+   },
+   "middleware_monthly_usd": 10.59,
+   "middleware_annual_billing_usd_per_month": 9,
+   "sync_direction": "1-way (trigger → action)",
+   "ten_seat_monthly_cost_usd": 415.59,
+   "verification": "Integration requirements checked against official vendor docs · Nov 12, 2026 · Prices checked · Nov 3, 2026 (Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks)",
+   "last_reviewed": "2026-11-12",
+   "date_modified": "2026-11-12",
+   "sources": [
+    {
+     "title": "ActiveCampaign: Intercom integration",
+     "url": "https://www.activecampaign.com/apps/intercom"
+    },
+    {
+     "title": "Make: Intercom app",
+     "url": "https://apps.make.com/intercom"
+    },
+    {
+     "title": "Make: ActiveCampaign app",
+     "url": "https://apps.make.com/activecampaign"
+    },
+    {
+     "title": "Make Help: Active and inactive scenarios",
+     "url": "https://help.make.com/active-and-inactive-scenarios"
+    },
+    {
+     "title": "Make Help: Schedule a scenario",
+     "url": "https://help.make.com/schedule-a-scenario"
+    }
+   ]
+  },
+  {
    "pair": "intercom-and-calendly",
    "url": "https://stackcostmatrix.com/stack/intercom-and-calendly/",
    "tools": [
@@ -1935,6 +2220,85 @@
     {
      "title": "Slack Help: Create a workflow in Slack",
      "url": "https://slack.com/help/articles/17542172840595-Build-a-workflow--Create-a-workflow-in-Slack"
+    }
+   ]
+  },
+  {
+   "pair": "monday-and-activecampaign",
+   "url": "https://stackcostmatrix.com/stack/monday-and-activecampaign/",
+   "tools": [
+    "Monday.com",
+    "ActiveCampaign"
+   ],
+   "connection_type": "middleware",
+   "minimum_plans": {
+    "Monday.com": "Standard",
+    "ActiveCampaign": "Starter"
+   },
+   "middleware_monthly_usd": 10.59,
+   "middleware_annual_billing_usd_per_month": 9,
+   "sync_direction": "1-way (trigger → action)",
+   "ten_seat_monthly_cost_usd": 165.59,
+   "verification": "Integration requirements checked against official vendor docs · Nov 12, 2026 · Prices checked · Nov 3, 2026 (Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks)",
+   "last_reviewed": "2026-11-12",
+   "date_modified": "2026-11-12",
+   "sources": [
+    {
+     "title": "ActiveCampaign: monday.com integration",
+     "url": "https://www.activecampaign.com/apps/monday"
+    },
+    {
+     "title": "Make: monday.com app",
+     "url": "https://apps.make.com/monday"
+    },
+    {
+     "title": "monday.com: Pricing",
+     "url": "https://monday.com/pricing"
+    },
+    {
+     "title": "Make: ActiveCampaign app",
+     "url": "https://apps.make.com/activecampaign"
+    },
+    {
+     "title": "Make Help: Active and inactive scenarios",
+     "url": "https://help.make.com/active-and-inactive-scenarios"
+    },
+    {
+     "title": "Make Help: Schedule a scenario",
+     "url": "https://help.make.com/schedule-a-scenario"
+    }
+   ]
+  },
+  {
+   "pair": "monday-and-mailchimp",
+   "url": "https://stackcostmatrix.com/stack/monday-and-mailchimp/",
+   "tools": [
+    "Monday.com",
+    "Mailchimp"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "Monday.com": "Standard",
+    "Mailchimp": "Free"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "2-way",
+   "ten_seat_monthly_cost_usd": 140,
+   "verification": "Integration requirements checked against official vendor docs · Nov 12, 2026 · Prices checked · Nov 3, 2026",
+   "last_reviewed": "2026-11-12",
+   "date_modified": "2026-11-12",
+   "sources": [
+    {
+     "title": "monday.com: Mailchimp integration",
+     "url": "https://monday.com/integrations/mailchimp"
+    },
+    {
+     "title": "Mailchimp: monday.com integration",
+     "url": "https://mailchimp.com/integrations/monday/"
+    },
+    {
+     "title": "monday.com: Pricing",
+     "url": "https://monday.com/pricing"
     }
    ]
   },
@@ -2986,6 +3350,94 @@
    ]
   },
   {
+   "pair": "xero-and-airtable",
+   "url": "https://stackcostmatrix.com/stack/xero-and-airtable/",
+   "tools": [
+    "Xero",
+    "Airtable"
+   ],
+   "connection_type": "middleware",
+   "minimum_plans": {
+    "Xero": "Early",
+    "Airtable": "Free"
+   },
+   "middleware_monthly_usd": 10.59,
+   "middleware_annual_billing_usd_per_month": 9,
+   "sync_direction": "1-way (trigger → action)",
+   "ten_seat_monthly_cost_usd": 37.59,
+   "verification": "Integration requirements checked against official vendor docs · Nov 12, 2026 · Prices checked · Nov 3, 2026 (Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks)",
+   "last_reviewed": "2026-11-12",
+   "date_modified": "2026-11-12",
+   "sources": [
+    {
+     "title": "Xero App Store: search for Airtable",
+     "url": "https://apps.xero.com/us/search?q=airtable"
+    },
+    {
+     "title": "Airtable: Sync integrations overview",
+     "url": "https://support.airtable.com/docs/airtable-sync-integrations-overview"
+    },
+    {
+     "title": "Make: Xero app",
+     "url": "https://apps.make.com/xero"
+    },
+    {
+     "title": "Make: Airtable app",
+     "url": "https://apps.make.com/airtable"
+    },
+    {
+     "title": "Make Help: Active and inactive scenarios",
+     "url": "https://help.make.com/active-and-inactive-scenarios"
+    },
+    {
+     "title": "Make Help: Schedule a scenario",
+     "url": "https://help.make.com/schedule-a-scenario"
+    }
+   ]
+  },
+  {
+   "pair": "xero-and-asana",
+   "url": "https://stackcostmatrix.com/stack/xero-and-asana/",
+   "tools": [
+    "Xero",
+    "Asana"
+   ],
+   "connection_type": "middleware",
+   "minimum_plans": {
+    "Xero": "Early",
+    "Asana": "Starter"
+   },
+   "middleware_monthly_usd": 10.59,
+   "middleware_annual_billing_usd_per_month": 9,
+   "sync_direction": "1-way (trigger → action)",
+   "ten_seat_monthly_cost_usd": 172.49,
+   "verification": "Integration requirements checked against official vendor docs · Nov 12, 2026 · Prices checked · Nov 3, 2026 (Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks)",
+   "last_reviewed": "2026-11-12",
+   "date_modified": "2026-11-12",
+   "sources": [
+    {
+     "title": "Xero App Store: search for Asana",
+     "url": "https://apps.xero.com/us/search?q=asana"
+    },
+    {
+     "title": "Make: Xero app",
+     "url": "https://apps.make.com/xero"
+    },
+    {
+     "title": "Make: Asana app",
+     "url": "https://apps.make.com/asana"
+    },
+    {
+     "title": "Make Help: Active and inactive scenarios",
+     "url": "https://help.make.com/active-and-inactive-scenarios"
+    },
+    {
+     "title": "Make Help: Schedule a scenario",
+     "url": "https://help.make.com/schedule-a-scenario"
+    }
+   ]
+  },
+  {
    "pair": "xero-and-calendly",
    "url": "https://stackcostmatrix.com/stack/xero-and-calendly/",
    "tools": [
@@ -3058,6 +3510,77 @@
     {
      "title": "Make Help: Schedule a scenario",
      "url": "https://help.make.com/schedule-a-scenario"
+    }
+   ]
+  },
+  {
+   "pair": "xero-and-zendesk",
+   "url": "https://stackcostmatrix.com/stack/xero-and-zendesk/",
+   "tools": [
+    "Xero",
+    "Zendesk"
+   ],
+   "connection_type": "middleware",
+   "minimum_plans": {
+    "Xero": "Early",
+    "Zendesk": "Suite Team"
+   },
+   "middleware_monthly_usd": 10.59,
+   "middleware_annual_billing_usd_per_month": 9,
+   "sync_direction": "1-way (trigger → action)",
+   "ten_seat_monthly_cost_usd": 727.59,
+   "verification": "Integration requirements checked against official vendor docs · Nov 12, 2026 · Prices checked · Nov 3, 2026 (Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks)",
+   "last_reviewed": "2026-11-12",
+   "date_modified": "2026-11-12",
+   "sources": [
+    {
+     "title": "Xero App Store: search for Zendesk",
+     "url": "https://apps.xero.com/us/search?q=zendesk"
+    },
+    {
+     "title": "Make: Xero app",
+     "url": "https://apps.make.com/xero"
+    },
+    {
+     "title": "Make: Zendesk app",
+     "url": "https://apps.make.com/zendesk"
+    },
+    {
+     "title": "Make Help: Active and inactive scenarios",
+     "url": "https://help.make.com/active-and-inactive-scenarios"
+    },
+    {
+     "title": "Make Help: Schedule a scenario",
+     "url": "https://help.make.com/schedule-a-scenario"
+    }
+   ]
+  },
+  {
+   "pair": "zendesk-and-airtable",
+   "url": "https://stackcostmatrix.com/stack/zendesk-and-airtable/",
+   "tools": [
+    "Zendesk",
+    "Airtable"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "Zendesk": "Suite Team",
+    "Airtable": "Business"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "1-way (Zendesk → Airtable)",
+   "ten_seat_monthly_cost_usd": 1230,
+   "verification": "Integration requirements checked against official vendor docs · Nov 12, 2026 · Prices checked · Nov 3, 2026",
+   "last_reviewed": "2026-11-12",
+   "date_modified": "2026-11-12",
+   "sources": [
+    {
+     "title": "Airtable: Sync integration: Zendesk",
+     "url": "https://support.airtable.com/docs/airtable-sync-integration-zendesk"
+    },
+    {
+     "title": "Airtable: Sync integrations overview",
+     "url": "https://support.airtable.com/docs/airtable-sync-integrations-overview"
     }
    ]
   },

@@ -39,9 +39,9 @@ Vendors use "webhooks" for two different features. **Developer webhooks** let an
 
 ## Which Airtable plan do the integrations here need?
 
-**Free** (2): [HubSpot + Airtable](https://stackcostmatrix.com/stack/hubspot-and-airtable/), [Slack + Airtable](https://stackcostmatrix.com/stack/slack-and-airtable/)  
+**Free** (3): [HubSpot + Airtable](https://stackcostmatrix.com/stack/hubspot-and-airtable/), [Slack + Airtable](https://stackcostmatrix.com/stack/slack-and-airtable/), [Xero + Airtable](https://stackcostmatrix.com/stack/xero-and-airtable/)  
 **Team** (3): [Airtable + QuickBooks](https://stackcostmatrix.com/stack/airtable-and-quickbooks/), [Airtable + Stripe](https://stackcostmatrix.com/stack/airtable-and-stripe/), [Mailchimp + Airtable](https://stackcostmatrix.com/stack/mailchimp-and-airtable/)  
-**Business** (1): [Salesforce + Airtable](https://stackcostmatrix.com/stack/salesforce-and-airtable/)
+**Business** (2): [Salesforce + Airtable](https://stackcostmatrix.com/stack/salesforce-and-airtable/), [Zendesk + Airtable](https://stackcostmatrix.com/stack/zendesk-and-airtable/)
 
 Full costs, including the other tool's plan and any connector fee: [Airtable integration costs →](https://stackcostmatrix.com/airtable-integrations-cost/)
 

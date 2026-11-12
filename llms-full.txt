@@ -8,16 +8,23 @@ Source: https://stackcostmatrix.com · Editor: Rakesh Kumar · Licence: CC BY 4.
 |---|---|---|---|---|---|---|---|
 | ActiveCampaign + Calendly | native | ActiveCampaign: Starter; Calendly: Standard | 0 | 135 | 1-way (Calendly → ActiveCampaign) | 2026-11-03 | https://stackcostmatrix.com/stack/activecampaign-and-calendly/ |
 | ActiveCampaign + Pipedrive | native | ActiveCampaign: Starter; Pipedrive: Growth | 0 | 405 | 2-way | 2026-11-03 | https://stackcostmatrix.com/stack/activecampaign-and-pipedrive/ |
+| ActiveCampaign + Slack | native | ActiveCampaign: Plus; Slack: Free | 0 | 49 | 1-way (ActiveCampaign → Slack) | 2026-11-12 | https://stackcostmatrix.com/stack/activecampaign-and-slack/ |
 | ActiveCampaign + Stripe | native | ActiveCampaign: Plus; Stripe: Standard | 0 | 49 | 1-way (Stripe → ActiveCampaign) | 2026-11-08 | https://stackcostmatrix.com/stack/activecampaign-and-stripe/ |
 | Airtable + QuickBooks Online | middleware | Airtable: Team; QuickBooks Online: Simple Start | 10.59 | 288.59 | 1-way (trigger → action) | 2026-11-03 | https://stackcostmatrix.com/stack/airtable-and-quickbooks/ |
 | Airtable + Stripe | middleware | Airtable: Team; Stripe: Standard | 10.59 | 250.59 | 1-way (trigger → action) | 2026-11-03 | https://stackcostmatrix.com/stack/airtable-and-stripe/ |
+| Asana + ActiveCampaign | middleware | Asana: Starter; ActiveCampaign: Starter | 10.59 | 160.49 | 1-way (trigger → action) | 2026-11-12 | https://stackcostmatrix.com/stack/asana-and-activecampaign/ |
 | Asana + Mailchimp | middleware | Asana: Starter; Mailchimp: Essentials | 29.99 | 177.89 | 1-way (trigger → action) | 2026-11-03 | https://stackcostmatrix.com/stack/asana-and-mailchimp/ |
+| Asana + Notion | native | Asana: Starter; Notion: Plus | 0 | 254.9 | 1-way (Asana → Notion) | 2026-11-12 | https://stackcostmatrix.com/stack/asana-and-notion/ |
 | Asana + QuickBooks Online | middleware | Asana: Starter; QuickBooks Online: Simple Start | 10.59 | 183.49 | 1-way (trigger → action) | 2026-11-03 | https://stackcostmatrix.com/stack/asana-and-quickbooks/ |
 | Asana + Salesforce Sales Cloud | native | Asana: Advanced; Salesforce Sales Cloud: Professional | 0 | 1554.9 | 1-way (Salesforce → Asana) | 2026-11-12 | https://stackcostmatrix.com/stack/asana-and-salesforce/ |
 | Asana + Slack | native | Asana: Starter; Slack: Free | 0 | 134.9 | 2-way | 2026-11-03 | https://stackcostmatrix.com/stack/asana-and-slack/ |
+| ClickUp + ActiveCampaign | middleware | ClickUp: Free; ActiveCampaign: Starter | 10.59 | 25.59 | 1-way (trigger → action) | 2026-11-12 | https://stackcostmatrix.com/stack/clickup-and-activecampaign/ |
+| ClickUp + Notion | native | ClickUp: Free; Notion: Plus | 0 | 120 | 1-way (ClickUp → Notion) | 2026-11-12 | https://stackcostmatrix.com/stack/clickup-and-notion/ |
+| ClickUp + Salesforce Sales Cloud | middleware | ClickUp: Free; Salesforce Sales Cloud: Professional | 10.59 | 1260.59 | 1-way (trigger → action) | 2026-11-12 | https://stackcostmatrix.com/stack/clickup-and-salesforce/ |
 | ClickUp + Slack | native | ClickUp: Free; Slack: Free | 0 | 0 | 2-way | 2026-11-03 | https://stackcostmatrix.com/stack/clickup-and-slack/ |
 | ClickUp + Stripe | middleware | ClickUp: Free; Stripe: Standard | 10.59 | 10.59 | 1-way (trigger → action) | 2026-11-03 | https://stackcostmatrix.com/stack/clickup-and-stripe/ |
 | ClickUp + Zendesk | native | ClickUp: Free; Zendesk: Suite Team | 0 | 690 | Linked tasks (2-way sync needs ClickUp Business Plus) | 2026-11-03 | https://stackcostmatrix.com/stack/clickup-and-zendesk/ |
+| Freshdesk + ActiveCampaign | middleware | Freshdesk: Growth; ActiveCampaign: Starter | 10.59 | 255.59 | 1-way (trigger → action) | 2026-11-12 | https://stackcostmatrix.com/stack/freshdesk-and-activecampaign/ |
 | Freshdesk + HubSpot | native | Freshdesk: Growth; HubSpot: Free | 0 | 230 | 2-way | 2026-11-03 | https://stackcostmatrix.com/stack/freshdesk-and-hubspot/ |
 | Freshdesk + Slack | native | Freshdesk: Growth; Slack: Free | 0 | 230 | 2-way | 2026-11-03 | https://stackcostmatrix.com/stack/freshdesk-and-slack/ |
 | HubSpot + Airtable | native | HubSpot: Starter; Airtable: Free | 0 | 200 | 2-way | 2026-11-12 | https://stackcostmatrix.com/stack/hubspot-and-airtable/ |
@@ -34,6 +41,7 @@ Source: https://stackcostmatrix.com · Editor: Rakesh Kumar · Licence: CC BY 4.
 | HubSpot + Stripe | native | HubSpot: Free; Stripe: Standard | 0 | 0 | 2-way | 2026-11-03 | https://stackcostmatrix.com/stack/hubspot-and-stripe/ |
 | HubSpot + Xero | native | HubSpot: Free; Xero: Early | 0 | 27 | 2-way | 2026-11-12 | https://stackcostmatrix.com/stack/hubspot-and-xero/ |
 | HubSpot + Zendesk | native | HubSpot: Free; Zendesk: Suite Team | 0 | 690 | 1-way (Zendesk → HubSpot) | 2026-11-03 | https://stackcostmatrix.com/stack/hubspot-and-zendesk/ |
+| Intercom + ActiveCampaign | middleware | Intercom: Essential; ActiveCampaign: Starter | 10.59 | 415.59 | 1-way (trigger → action) | 2026-11-12 | https://stackcostmatrix.com/stack/intercom-and-activecampaign/ |
 | Intercom + Calendly | native | Intercom: Essential; Calendly: Free | 0 | 390 | 1-way (Calendly → Intercom) | 2026-11-12 | https://stackcostmatrix.com/stack/intercom-and-calendly/ |
 | Intercom + HubSpot | native | Intercom: Essential; HubSpot: Free | 0 | 390 | 1-way (Intercom → HubSpot) | 2026-11-03 | https://stackcostmatrix.com/stack/intercom-and-hubspot/ |
 | Intercom + Mailchimp | native | Intercom: Essential; Mailchimp: Free | 0 | 390 | 2-way | 2026-11-12 | https://stackcostmatrix.com/stack/intercom-and-mailchimp/ |
@@ -42,6 +50,8 @@ Source: https://stackcostmatrix.com · Editor: Rakesh Kumar · Licence: CC BY 4.
 | Mailchimp + Airtable | middleware | Mailchimp: Essentials; Airtable: Team | 10.59 | 263.59 | 1-way (trigger → action) | 2026-11-03 | https://stackcostmatrix.com/stack/mailchimp-and-airtable/ |
 | Mailchimp + Calendly | native | Mailchimp: Free; Calendly: Standard | 0 | 120 | 1-way (Calendly → Mailchimp) | 2026-11-08 | https://stackcostmatrix.com/stack/mailchimp-and-calendly/ |
 | Mailchimp + Slack | native | Mailchimp: Free; Slack: Free | 0 | 0 | 1-way (Mailchimp → Slack) | 2026-11-12 | https://stackcostmatrix.com/stack/mailchimp-and-slack/ |
+| Monday.com + ActiveCampaign | middleware | Monday.com: Standard; ActiveCampaign: Starter | 10.59 | 165.59 | 1-way (trigger → action) | 2026-11-12 | https://stackcostmatrix.com/stack/monday-and-activecampaign/ |
+| Monday.com + Mailchimp | native | Monday.com: Standard; Mailchimp: Free | 0 | 140 | 2-way | 2026-11-12 | https://stackcostmatrix.com/stack/monday-and-mailchimp/ |
 | Monday.com + QuickBooks Online | middleware | Monday.com: Standard; QuickBooks Online: Simple Start | 10.59 | 188.59 | 1-way (trigger → action) | 2026-11-03 | https://stackcostmatrix.com/stack/monday-and-quickbooks/ |
 | Monday.com + Slack | native | Monday.com: Standard; Slack: Free | 0 | 140 | 2-way | 2026-11-03 | https://stackcostmatrix.com/stack/monday-and-slack/ |
 | Monday.com + Zendesk | native | Monday.com: Standard; Zendesk: Suite Team | 0 | 830 | 1-way (Zendesk → monday.com) | 2026-11-03 | https://stackcostmatrix.com/stack/monday-and-zendesk/ |
@@ -77,8 +87,12 @@ Source: https://stackcostmatrix.com · Editor: Rakesh Kumar · Licence: CC BY 4.
 | Stripe + Slack | native | Stripe: Standard; Slack: Free | 0 | 0 | 1-way (Stripe → Slack) | 2026-11-03 | https://stackcostmatrix.com/stack/stripe-and-slack/ |
 | Stripe + Xero | native | Stripe: Standard; Xero: Early | 0 | 27 | 2-way | 2026-11-03 | https://stackcostmatrix.com/stack/stripe-and-xero/ |
 | Xero + ActiveCampaign | middleware | Xero: Early; ActiveCampaign: Starter | 10.59 | 52.59 | 1-way (trigger → action) | 2026-11-03 | https://stackcostmatrix.com/stack/xero-and-activecampaign/ |
+| Xero + Airtable | middleware | Xero: Early; Airtable: Free | 10.59 | 37.59 | 1-way (trigger → action) | 2026-11-12 | https://stackcostmatrix.com/stack/xero-and-airtable/ |
+| Xero + Asana | middleware | Xero: Early; Asana: Starter | 10.59 | 172.49 | 1-way (trigger → action) | 2026-11-12 | https://stackcostmatrix.com/stack/xero-and-asana/ |
 | Xero + Calendly | middleware | Xero: Early; Calendly: Standard | 29.99 | 176.99 | 1-way (trigger → action) | 2026-11-03 | https://stackcostmatrix.com/stack/xero-and-calendly/ |
 | Xero + Slack | middleware | Xero: Early; Slack: Free | 10.59 | 37.59 | 1-way (trigger → action) | 2026-11-12 | https://stackcostmatrix.com/stack/xero-and-slack/ |
+| Xero + Zendesk | middleware | Xero: Early; Zendesk: Suite Team | 10.59 | 727.59 | 1-way (trigger → action) | 2026-11-12 | https://stackcostmatrix.com/stack/xero-and-zendesk/ |
+| Zendesk + Airtable | native | Zendesk: Suite Team; Airtable: Business | 0 | 1230 | 1-way (Zendesk → Airtable) | 2026-11-12 | https://stackcostmatrix.com/stack/zendesk-and-airtable/ |
 | Zendesk + Asana | native | Zendesk: Suite Team; Asana: Starter | 0 | 824.9 | 2-way | 2026-11-12 | https://stackcostmatrix.com/stack/zendesk-and-asana/ |
 | Zendesk + Notion | middleware | Zendesk: Suite Team; Notion: Plus | 29.99 | 839.99 | 1-way (trigger → action) | 2026-11-03 | https://stackcostmatrix.com/stack/zendesk-and-notion/ |
 | Zendesk + Stripe | middleware | Zendesk: Suite Team; Stripe: Standard | 10.59 | 700.59 | 1-way (trigger → action) | 2026-11-03 | https://stackcostmatrix.com/stack/zendesk-and-stripe/ |
@@ -438,7 +452,7 @@ required plan tiers, API and webhook access gates, and middleware fees.
 **Editor: Rakesh Kumar.** StackCostMatrix is built and run by Rakesh Kumar, who has five years of experience across SaaS tools, sales and marketing operations, digital marketing and SEO, and web development. Rakesh checks each price and plan requirement against the vendor's own pricing pages and documentation and reviews every change before it's published. Corrections go to the email below and are logged in the changelog. Profiles: [LinkedIn ↗](https://www.linkedin.com/in/rakesh-kumar-23960a204/) · [GitHub ↗](https://github.com/rakeshrkrk56-sketch).
 
 StackCostMatrix is published as an independent research project. Our dataset
-— 18 tools plus 2 middleware services (Zapier and Make), 53 pricing plans, 76 integration pairs — is open and
+— 18 tools plus 2 middleware services (Zapier and Make), 53 pricing plans, 90 integration pairs — is open and
 auditable:
 
 - **Contact:** [admin@stackcostmatrix.com](mailto:admin@stackcostmatrix.com)
@@ -508,6 +522,7 @@ Official vendor documentation index
 Every change to our pricing data and cost models is logged here with a
 date.
 
+- **Nov 12, 2026 — 14 more integration pairs.** Native: ActiveCampaign + Slack, Zendesk + Airtable, Asana + Notion, ClickUp + Notion and monday.com + Mailchimp. Through Make: Intercom, Asana, ClickUp, monday.com and Freshdesk with ActiveCampaign (ActiveCampaign's app directory lists each as a middleware app), ClickUp + Salesforce (ClickUp's own page points to Zapier), and Xero with Zendesk, Asana and Airtable (Xero's App Store has no app from either vendor). Every requirement and step was read on the vendors' own pages that day; pages say so where a vendor names no plan, and the one whose setup guide can't be read has no step list. The index now covers 90 pairs. No prices changed.
 - **Nov 12, 2026 — 17 new integration pairs.** Calendly + Salesforce, Calendly + Stripe, Calendly + Intercom, HubSpot + Xero, HubSpot + Airtable, HubSpot + Notion, Intercom + Salesforce, Intercom + Mailchimp, Asana + Salesforce, Zendesk + Asana, Salesforce + Airtable, Pipedrive + Intercom, Pipedrive + Zendesk, Pipedrive + Asana, Mailchimp + Slack, Salesforce + Xero (through Make) and Xero + Slack (through Make). Each one's plan requirements, how it works, limits and setup steps were read on the vendors' own help pages and app listings that day. Where a vendor names no plan, the page says so and uses each tool's cheapest plan with API access. Three more candidates were left out because a fact they needed couldn't be read. The index now covers 76 pairs; the Integration Tax report still covers the 55 pairs it was published with. No prices changed.
 - **Nov 11, 2026 — Connection diagrams, question headings, editor background.** Every integration page gained a diagram of how the two tools connect: what moves, in which direction, through which connector and on which plans. Each diagram is drawn from the facts already on its page; none is a screenshot. Section headings on the tool hubs and API pages became questions answered in their first sentence, and the About page now gives the editor's background. The 19 integrations that run through a connector gained numbered setup steps from Make's, Zapier's and Mailchimp's own guides, so 52 of the 59 integration pages now have steps. The site also has a new design: the homepage opens with a chart of every integration's cost, the typeface is Barlow, and yellow is used only to mark costs a pricing page doesn't show up front. No prices or plan requirements changed.
 - **Nov 10, 2026 — Setup guides, clearer Salesforce requirements, share images.** Every integration page now opens with how the integration works and a link to the vendor's setup guide, and compares the native route with Make and Zapier in one table. Twenty integrations gained numbered setup steps, each following the vendor's own guide (Stripe + Slack and 19 more). Twelve older step lists were compared with their guides again the same day and three steps reworded; each list now names its guide and the date it was read. The Salesforce API page now explains how Professional gets API access and that some AppExchange apps work without the add-on, from Salesforce's developer docs; the HubSpot Professional guide covers the Salesforce side and HubSpot's one-time onboarding fees. The Integration Tax report adds a section on the three kinds of integration cost and a chart image. The homepage gained a short section on the three kinds of integration cost. No prices or plan requirements changed.

@@ -38,7 +38,7 @@ Vendors use "webhooks" for two different features. **Developer webhooks** let an
 
 ## Which Notion plan do the integrations here need?
 
-**Plus** (5): [HubSpot + Notion](https://stackcostmatrix.com/stack/hubspot-and-notion/), [Notion + Calendly](https://stackcostmatrix.com/stack/notion-and-calendly/), [Notion + Stripe](https://stackcostmatrix.com/stack/notion-and-stripe/), [Slack + Notion](https://stackcostmatrix.com/stack/slack-and-notion/), [Zendesk + Notion](https://stackcostmatrix.com/stack/zendesk-and-notion/)
+**Plus** (7): [Asana + Notion](https://stackcostmatrix.com/stack/asana-and-notion/), [ClickUp + Notion](https://stackcostmatrix.com/stack/clickup-and-notion/), [HubSpot + Notion](https://stackcostmatrix.com/stack/hubspot-and-notion/), [Notion + Calendly](https://stackcostmatrix.com/stack/notion-and-calendly/), [Notion + Stripe](https://stackcostmatrix.com/stack/notion-and-stripe/), [Slack + Notion](https://stackcostmatrix.com/stack/slack-and-notion/), [Zendesk + Notion](https://stackcostmatrix.com/stack/zendesk-and-notion/)
 
 Full costs, including the other tool's plan and any connector fee: [Notion integration costs â†’](https://stackcostmatrix.com/notion-integrations-cost/)
 
@@ -66,4 +66,4 @@ Webhooks are available on Plus and Business. Webhook automation action by plan â
 
 ### Which Notion plan do integrations need?
 
-In this index: Plus for 5 integrations.
+In this index: Plus for 7 integrations.

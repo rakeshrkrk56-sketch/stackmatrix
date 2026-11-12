@@ -39,7 +39,7 @@ Vendors use "webhooks" for two different features. **Developer webhooks** let an
 
 ## Which Monday.com plan do the integrations here need?
 
-**Standard** (4): [HubSpot + Monday.com](https://stackcostmatrix.com/stack/hubspot-and-monday/), [Monday.com + QuickBooks](https://stackcostmatrix.com/stack/monday-and-quickbooks/), [Monday.com + Slack](https://stackcostmatrix.com/stack/monday-and-slack/), [Monday.com + Zendesk](https://stackcostmatrix.com/stack/monday-and-zendesk/)
+**Standard** (6): [HubSpot + Monday.com](https://stackcostmatrix.com/stack/hubspot-and-monday/), [Monday.com + ActiveCampaign](https://stackcostmatrix.com/stack/monday-and-activecampaign/), [Monday.com + Mailchimp](https://stackcostmatrix.com/stack/monday-and-mailchimp/), [Monday.com + QuickBooks](https://stackcostmatrix.com/stack/monday-and-quickbooks/), [Monday.com + Slack](https://stackcostmatrix.com/stack/monday-and-slack/), [Monday.com + Zendesk](https://stackcostmatrix.com/stack/monday-and-zendesk/)
 
 Full costs, including the other tool's plan and any connector fee: [Monday.com integration costs →](https://stackcostmatrix.com/monday-integrations-cost/)
 

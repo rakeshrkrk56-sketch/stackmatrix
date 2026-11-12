@@ -1,90 +1,104 @@
 # What a SaaS integration really costs
 
-> See the plan each SaaS integration needs on both tools, any Make or Zapier fee and the 10-seat monthly cost, for 76 pairs checked against vendor docs.
+> See the plan each SaaS integration needs on both tools, any Make or Zapier fee and the 10-seat monthly cost, for 90 pairs checked against vendor docs.
 
 Source page: https://stackcostmatrix.com/  
 Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (credit StackCostMatrix and link to https://stackcostmatrix.com)
 
 ---
 
-76 integrations between 18 business tools, priced for a 10-person team from each vendor's own pages, with the plan each one needs. Yellow marks the 37 that include a cost the pricing page doesn't show up front: a forced plan upgrade or a connector fee.
+90 integrations between 18 business tools, priced for a 10-person team from each vendor's own pages, with the plan each one needs. Yellow marks the 48 that include a cost the pricing page doesn't show up front: a forced plan upgrade or a connector fee.
 
 - [HubSpot + Slack: $0 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/hubspot-and-slack/)
-- [HubSpot + Stripe: $0 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/hubspot-and-stripe/)
-- [Stripe + Slack: $0 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/stripe-and-slack/)
-- [HubSpot + Salesforce Sales Cloud: $1,750 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/hubspot-and-salesforce/)
 - [Salesforce Sales Cloud + Slack: $1,738 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/salesforce-and-slack/)
+- [HubSpot + Salesforce Sales Cloud: $1,750 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/hubspot-and-salesforce/)
+- [Stripe + Slack: $0 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/stripe-and-slack/)
+- [HubSpot + Stripe: $0 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/hubspot-and-stripe/)
 - [Salesforce Sales Cloud + Stripe: $1,250 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/salesforce-and-stripe/)
-- [HubSpot + Pipedrive: $151 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/hubspot-and-pipedrive/)
-- [Pipedrive + Slack: $390 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/pipedrive-and-slack/)
-- [Pipedrive + Salesforce Sales Cloud: $1,401 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/pipedrive-and-salesforce/)
-- [HubSpot + Calendly: $120 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/hubspot-and-calendly/)
-- [Slack + Calendly: $0 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/slack-and-calendly/)
-- [Stripe + Calendly: $120 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/stripe-and-calendly/)
-- [Salesforce Sales Cloud + Calendly: $1,850 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/salesforce-and-calendly/)
-- [Pipedrive + Calendly: $271 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/pipedrive-and-calendly/)
-- [HubSpot + Mailchimp: $20 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/hubspot-and-mailchimp/)
 - [Mailchimp + Slack: $0 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/mailchimp-and-slack/)
-- [Stripe + Mailchimp: $15 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/stripe-and-mailchimp/)
+- [HubSpot + Mailchimp: $20 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/hubspot-and-mailchimp/)
 - [Salesforce Sales Cloud + Mailchimp: $1,270 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/salesforce-and-mailchimp/)
+- [Stripe + Mailchimp: $15 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/stripe-and-mailchimp/)
+- [Pipedrive + Slack: $390 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/pipedrive-and-slack/)
+- [HubSpot + Pipedrive: $151 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/hubspot-and-pipedrive/)
+- [Pipedrive + Salesforce Sales Cloud: $1,401 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/pipedrive-and-salesforce/)
 - [Pipedrive + Mailchimp: $140 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/pipedrive-and-mailchimp/)
-- [Mailchimp + Calendly: $120 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/mailchimp-and-calendly/)
-- [HubSpot + QuickBooks Online: $38 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/hubspot-and-quickbooks/)
-- [QuickBooks Online + Slack: $68 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/quickbooks-and-slack/)
-- [Stripe + QuickBooks Online: $49 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/stripe-and-quickbooks/)
-- [Salesforce Sales Cloud + QuickBooks Online: $1,299 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/salesforce-and-quickbooks/)
-- [Pipedrive + QuickBooks Online: $178 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/pipedrive-and-quickbooks/)
-- [QuickBooks Online + Mailchimp: $38 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/quickbooks-and-mailchimp/)
-- [HubSpot + Zendesk: $690 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/hubspot-and-zendesk/)
 - [Slack + Zendesk: $690 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/slack-and-zendesk/)
-- [Zendesk + Stripe: $701 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/zendesk-and-stripe/)
+- [HubSpot + Zendesk: $690 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/hubspot-and-zendesk/)
 - [Salesforce Sales Cloud + Zendesk: $1,940 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/salesforce-and-zendesk/)
+- [Zendesk + Stripe: $701 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/zendesk-and-stripe/)
 - [Pipedrive + Zendesk: $830 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/pipedrive-and-zendesk/)
-- [HubSpot + Asana: $635 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/hubspot-and-asana/)
-- [Asana + Slack: $135 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/asana-and-slack/)
-- [Asana + Salesforce Sales Cloud: $1,555 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/asana-and-salesforce/)
-- [Pipedrive + Asana: $275 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/pipedrive-and-asana/)
-- [Asana + Mailchimp: $178 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/asana-and-mailchimp/)
-- [Asana + QuickBooks Online: $183 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/asana-and-quickbooks/)
-- [Zendesk + Asana: $825 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/zendesk-and-asana/)
-- [Intercom + HubSpot: $390 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/intercom-and-hubspot/)
-- [Slack + Intercom: $390 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/slack-and-intercom/)
-- [Intercom + Stripe: $390 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/intercom-and-stripe/)
-- [Intercom + Salesforce Sales Cloud: $2,240 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/intercom-and-salesforce/)
-- [Pipedrive + Intercom: $530 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/pipedrive-and-intercom/)
-- [Intercom + Calendly: $390 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/intercom-and-calendly/)
-- [Intercom + Mailchimp: $390 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/intercom-and-mailchimp/)
-- [HubSpot + Xero: $27 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/hubspot-and-xero/)
-- [Xero + Slack: $38 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/xero-and-slack/)
-- [Stripe + Xero: $27 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/stripe-and-xero/)
-- [Salesforce Sales Cloud + Xero: $1,288 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/salesforce-and-xero/)
-- [Pipedrive + Xero: $178 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/pipedrive-and-xero/)
-- [Xero + Calendly: $177 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/xero-and-calendly/)
-- [HubSpot + Airtable: $200 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/hubspot-and-airtable/)
-- [Slack + Airtable: $0 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/slack-and-airtable/)
-- [Airtable + Stripe: $251 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/airtable-and-stripe/)
-- [Salesforce Sales Cloud + Airtable: $1,790 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/salesforce-and-airtable/)
-- [Mailchimp + Airtable: $264 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/mailchimp-and-airtable/)
-- [Airtable + QuickBooks Online: $289 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/airtable-and-quickbooks/)
-- [HubSpot + Notion: $320 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/hubspot-and-notion/)
-- [Slack + Notion: $120 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/slack-and-notion/)
-- [Notion + Stripe: $131 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/notion-and-stripe/)
-- [Notion + Calendly: $251 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/notion-and-calendly/)
-- [Zendesk + Notion: $840 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/zendesk-and-notion/)
+- [ActiveCampaign + Slack: $49 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/activecampaign-and-slack/)
 - [ActiveCampaign + Stripe: $49 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/activecampaign-and-stripe/)
 - [ActiveCampaign + Pipedrive: $405 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/activecampaign-and-pipedrive/)
+- [Asana + Slack: $135 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/asana-and-slack/)
+- [HubSpot + Asana: $635 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/hubspot-and-asana/)
+- [Asana + Salesforce Sales Cloud: $1,555 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/asana-and-salesforce/)
+- [Asana + Mailchimp: $178 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/asana-and-mailchimp/)
+- [Pipedrive + Asana: $275 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/pipedrive-and-asana/)
+- [Zendesk + Asana: $825 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/zendesk-and-asana/)
+- [Asana + ActiveCampaign: $160 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/asana-and-activecampaign/)
+- [Slack + Calendly: $0 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/slack-and-calendly/)
+- [HubSpot + Calendly: $120 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/hubspot-and-calendly/)
+- [Salesforce Sales Cloud + Calendly: $1,850 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/salesforce-and-calendly/)
+- [Stripe + Calendly: $120 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/stripe-and-calendly/)
+- [Mailchimp + Calendly: $120 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/mailchimp-and-calendly/)
+- [Pipedrive + Calendly: $271 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/pipedrive-and-calendly/)
 - [ActiveCampaign + Calendly: $135 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/activecampaign-and-calendly/)
+- [Xero + Slack: $38 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/xero-and-slack/)
+- [HubSpot + Xero: $27 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/hubspot-and-xero/)
+- [Salesforce Sales Cloud + Xero: $1,288 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/salesforce-and-xero/)
+- [Stripe + Xero: $27 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/stripe-and-xero/)
+- [Pipedrive + Xero: $178 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/pipedrive-and-xero/)
+- [Xero + Zendesk: $728 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/xero-and-zendesk/)
 - [Xero + ActiveCampaign: $53 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/xero-and-activecampaign/)
-- [HubSpot + ClickUp: $120 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/hubspot-and-clickup/)
+- [Xero + Asana: $172 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/xero-and-asana/)
+- [Xero + Calendly: $177 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/xero-and-calendly/)
+- [QuickBooks Online + Slack: $68 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/quickbooks-and-slack/)
+- [HubSpot + QuickBooks Online: $38 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/hubspot-and-quickbooks/)
+- [Salesforce Sales Cloud + QuickBooks Online: $1,299 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/salesforce-and-quickbooks/)
+- [Stripe + QuickBooks Online: $49 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/stripe-and-quickbooks/)
+- [QuickBooks Online + Mailchimp: $38 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/quickbooks-and-mailchimp/)
+- [Pipedrive + QuickBooks Online: $178 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/pipedrive-and-quickbooks/)
+- [Asana + QuickBooks Online: $183 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/asana-and-quickbooks/)
+- [Slack + Airtable: $0 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/slack-and-airtable/)
+- [HubSpot + Airtable: $200 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/hubspot-and-airtable/)
+- [Salesforce Sales Cloud + Airtable: $1,790 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/salesforce-and-airtable/)
+- [Airtable + Stripe: $251 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/airtable-and-stripe/)
+- [Mailchimp + Airtable: $264 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/mailchimp-and-airtable/)
+- [Zendesk + Airtable: $1,230 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/zendesk-and-airtable/)
+- [Xero + Airtable: $38 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/xero-and-airtable/)
+- [Airtable + QuickBooks Online: $289 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/airtable-and-quickbooks/)
+- [Slack + Intercom: $390 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/slack-and-intercom/)
+- [Intercom + HubSpot: $390 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/intercom-and-hubspot/)
+- [Intercom + Salesforce Sales Cloud: $2,240 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/intercom-and-salesforce/)
+- [Intercom + Stripe: $390 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/intercom-and-stripe/)
+- [Intercom + Mailchimp: $390 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/intercom-and-mailchimp/)
+- [Pipedrive + Intercom: $530 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/pipedrive-and-intercom/)
+- [Intercom + ActiveCampaign: $416 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/intercom-and-activecampaign/)
+- [Intercom + Calendly: $390 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/intercom-and-calendly/)
 - [ClickUp + Slack: $0 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/clickup-and-slack/)
+- [HubSpot + ClickUp: $120 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/hubspot-and-clickup/)
+- [ClickUp + Salesforce Sales Cloud: $1,261 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/clickup-and-salesforce/)
 - [ClickUp + Stripe: $11 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/clickup-and-stripe/)
 - [ClickUp + Zendesk: $690 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/clickup-and-zendesk/)
-- [HubSpot + Monday.com: $140 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/hubspot-and-monday/)
+- [ClickUp + ActiveCampaign: $26 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/clickup-and-activecampaign/)
+- [Slack + Notion: $120 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/slack-and-notion/)
+- [HubSpot + Notion: $320 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/hubspot-and-notion/)
+- [Notion + Stripe: $131 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/notion-and-stripe/)
+- [Zendesk + Notion: $840 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/zendesk-and-notion/)
+- [Asana + Notion: $255 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/asana-and-notion/)
+- [Notion + Calendly: $251 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/notion-and-calendly/)
+- [ClickUp + Notion: $120 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/clickup-and-notion/)
 - [Monday.com + Slack: $140 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/monday-and-slack/)
-- [Monday.com + QuickBooks Online: $189 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/monday-and-quickbooks/)
+- [HubSpot + Monday.com: $140 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/hubspot-and-monday/)
+- [Monday.com + Mailchimp: $140 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/monday-and-mailchimp/)
 - [Monday.com + Zendesk: $830 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/monday-and-zendesk/)
-- [Freshdesk + HubSpot: $230 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/freshdesk-and-hubspot/)
+- [Monday.com + ActiveCampaign: $166 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/monday-and-activecampaign/)
+- [Monday.com + QuickBooks Online: $189 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/monday-and-quickbooks/)
 - [Freshdesk + Slack: $230 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/freshdesk-and-slack/)
+- [Freshdesk + HubSpot: $230 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/freshdesk-and-hubspot/)
+- [Freshdesk + ActiveCampaign: $256 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/freshdesk-and-activecampaign/)
 
 Includes a forced upgrade or a connector feeNo extra cost to connectNot priced in this index
 
@@ -137,7 +151,7 @@ breakdown, and setup guide.
 
 All  CRM  Payments  Email Marketing  Helpdesk  Accounting  Project Management  Communication  Productivity  Automation  Scheduling
 
-Showing 76 of 76 integrations
+Showing 90 of 90 integrations
 
 [### HubSpot + Slack
 
@@ -289,7 +303,19 @@ See true cost & setup guide →](https://stackcostmatrix.com/stack/monday-and-ze
 
 No native connector; monday.com includes integrations from its Standard plan, with 250…
 
-See true cost & setup guide →](https://stackcostmatrix.com/stack/monday-and-quickbooks/)[### ClickUp + Slack
+See true cost & setup guide →](https://stackcostmatrix.com/stack/monday-and-quickbooks/)[### Monday.com + Mailchimp
+
+ Native
+
+monday.com's own Mailchimp integration adds Mailchimp subscribers to boards, turns board…
+
+See true cost & setup guide →](https://stackcostmatrix.com/stack/monday-and-mailchimp/)[### Monday.com + ActiveCampaign
+
+ Middleware
+
+There's no native monday.com–ActiveCampaign link: ActiveCampaign's app directory lists…
+
+See true cost & setup guide →](https://stackcostmatrix.com/stack/monday-and-activecampaign/)[### ClickUp + Slack
 
  Native
 
@@ -307,7 +333,25 @@ See true cost & setup guide →](https://stackcostmatrix.com/stack/clickup-and-z
 
 No native ClickUp–Stripe link, but ClickUp's API is available on every plan, so Make Core…
 
-See true cost & setup guide →](https://stackcostmatrix.com/stack/clickup-and-stripe/)[### Asana + Slack
+See true cost & setup guide →](https://stackcostmatrix.com/stack/clickup-and-stripe/)[### ClickUp + Notion
+
+ Native
+
+Notion's own ClickUp connection turns pasted ClickUp links into live previews inside…
+
+See true cost & setup guide →](https://stackcostmatrix.com/stack/clickup-and-notion/)[### ClickUp + ActiveCampaign
+
+ Middleware
+
+There's no native ClickUp–ActiveCampaign link: ActiveCampaign's app directory lists…
+
+See true cost & setup guide →](https://stackcostmatrix.com/stack/clickup-and-activecampaign/)[### ClickUp + Salesforce Sales Cloud
+
+ Middleware
+
+There's no native ClickUp–Salesforce connector: ClickUp's own Salesforce page points to…
+
+See true cost & setup guide →](https://stackcostmatrix.com/stack/clickup-and-salesforce/)[### Asana + Slack
 
  Native
 
@@ -331,7 +375,19 @@ See true cost & setup guide →](https://stackcostmatrix.com/stack/asana-and-qui
 
 Asana's own Salesforce integration lets Asana rules create or update tasks when something…
 
-See true cost & setup guide →](https://stackcostmatrix.com/stack/asana-and-salesforce/)[### Slack + Zendesk
+See true cost & setup guide →](https://stackcostmatrix.com/stack/asana-and-salesforce/)[### Asana + Notion
+
+ Native
+
+Notion's own Asana connection shows live previews of Asana tasks in Notion pages and can…
+
+See true cost & setup guide →](https://stackcostmatrix.com/stack/asana-and-notion/)[### Asana + ActiveCampaign
+
+ Middleware
+
+There's no native Asana–ActiveCampaign link: ActiveCampaign's app directory lists Asana…
+
+See true cost & setup guide →](https://stackcostmatrix.com/stack/asana-and-activecampaign/)[### Slack + Zendesk
 
  Native
 
@@ -409,7 +465,13 @@ See true cost & setup guide →](https://stackcostmatrix.com/stack/activecampaig
 
 Calendly bookings sync contacts and event details into ActiveCampaign one way, and past…
 
-See true cost & setup guide →](https://stackcostmatrix.com/stack/activecampaign-and-calendly/)[### Mailchimp + Airtable
+See true cost & setup guide →](https://stackcostmatrix.com/stack/activecampaign-and-calendly/)[### ActiveCampaign + Slack
+
+ Native
+
+ActiveCampaign's own Slack integration posts real-time alerts from its automations to…
+
+See true cost & setup guide →](https://stackcostmatrix.com/stack/activecampaign-and-slack/)[### Mailchimp + Airtable
 
  Middleware
 
@@ -445,7 +507,13 @@ See true cost & setup guide →](https://stackcostmatrix.com/stack/zendesk-and-s
 
 Asana's own Zendesk integration lets agents create or link Asana tasks from a ticket and…
 
-See true cost & setup guide →](https://stackcostmatrix.com/stack/zendesk-and-asana/)[### Freshdesk + Slack
+See true cost & setup guide →](https://stackcostmatrix.com/stack/zendesk-and-asana/)[### Zendesk + Airtable
+
+ Native
+
+Airtable's own Zendesk sync copies the tickets in a Zendesk view into an Airtable table,…
+
+See true cost & setup guide →](https://stackcostmatrix.com/stack/zendesk-and-airtable/)[### Freshdesk + Slack
 
  Native
 
@@ -457,7 +525,13 @@ See true cost & setup guide →](https://stackcostmatrix.com/stack/freshdesk-and
 
 HubSpot's Data Sync app syncs Freshdesk companies, contacts and tickets two ways on any…
 
-See true cost & setup guide →](https://stackcostmatrix.com/stack/freshdesk-and-hubspot/)[### Intercom + HubSpot
+See true cost & setup guide →](https://stackcostmatrix.com/stack/freshdesk-and-hubspot/)[### Freshdesk + ActiveCampaign
+
+ Middleware
+
+There's no native Freshdesk–ActiveCampaign link: ActiveCampaign's app directory lists…
+
+See true cost & setup guide →](https://stackcostmatrix.com/stack/freshdesk-and-activecampaign/)[### Intercom + HubSpot
 
  Native
 
@@ -487,7 +561,13 @@ See true cost & setup guide →](https://stackcostmatrix.com/stack/intercom-and-
 
 Intercom's Mailchimp apps add Messenger and chat sign-ups to a Mailchimp audience, show…
 
-See true cost & setup guide →](https://stackcostmatrix.com/stack/intercom-and-mailchimp/)[### Notion + Calendly
+See true cost & setup guide →](https://stackcostmatrix.com/stack/intercom-and-mailchimp/)[### Intercom + ActiveCampaign
+
+ Middleware
+
+There's no native Intercom–ActiveCampaign link: ActiveCampaign's app directory lists…
+
+See true cost & setup guide →](https://stackcostmatrix.com/stack/intercom-and-activecampaign/)[### Notion + Calendly
 
  Middleware
 
@@ -541,7 +621,25 @@ See true cost & setup guide →](https://stackcostmatrix.com/stack/xero-and-cale
 
 There's no native Xero–Slack app: Xero's App Store shows third-party apps for Slack, such…
 
-See true cost & setup guide →](https://stackcostmatrix.com/stack/xero-and-slack/)[### HubSpot + Salesforce Sales Cloud
+See true cost & setup guide →](https://stackcostmatrix.com/stack/xero-and-slack/)[### Xero + Zendesk
+
+ Middleware
+
+There's no native Xero–Zendesk link: a search of Xero's App Store for Zendesk finds no…
+
+See true cost & setup guide →](https://stackcostmatrix.com/stack/xero-and-zendesk/)[### Xero + Asana
+
+ Middleware
+
+There's no native Xero–Asana link: a search of Xero's App Store for Asana finds only Appy…
+
+See true cost & setup guide →](https://stackcostmatrix.com/stack/xero-and-asana/)[### Xero + Airtable
+
+ Middleware
+
+There's no native Xero–Airtable link: Airtable's sync integrations don't include Xero,…
+
+See true cost & setup guide →](https://stackcostmatrix.com/stack/xero-and-airtable/)[### HubSpot + Salesforce Sales Cloud
 
  Native
 
@@ -642,6 +740,7 @@ Full 20-tool source index with audit timestamps: [About StackCostMatrix →](htt
 
 Recent verification activity:
 
+- **Nov 12, 2026** — 14 more integrations, later the same day: ActiveCampaign with Slack, Airtable with Zendesk, Notion with Asana and ClickUp, monday.com with Mailchimp, and nine that run through Make. The index now covers 90 pairs. No prices changed.
 - **Nov 12, 2026** — 17 new integrations, each checked on the vendors' own pages: Calendly with Salesforce, Stripe and Intercom; HubSpot with Xero, Airtable and Notion; Intercom with Salesforce and Mailchimp; and nine more. The index now covers 76 pairs. No prices changed.
 - **Nov 11, 2026** — Every integration page gained a diagram of how the two tools connect: what moves, in which direction and on which plans. Hub and API page headings became questions. Connector-based integrations (Make, Zapier) gained numbered setup steps. New design: the homepage opens with a cost chart of every pair. No prices changed.
 - **Nov 10, 2026** — Every integration page now starts with how it works and the vendor's setup guide, and compares the native route with Make and Zapier. Twenty integrations gained numbered setup steps from the vendor's own guide. New: how Salesforce Professional gets API access, and a chart of the most expensive integrations. No prices changed.
