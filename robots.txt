@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
 Disallow: /scripts/
+Disallow: /CLAUDE.md
+Disallow: /.mcp.json
 
 Sitemap: https://stackcostmatrix.com/sitemap.xml

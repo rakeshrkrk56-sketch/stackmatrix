@@ -69,13 +69,20 @@ rediscover it. Details live in `scripts/README.md`. Update the "State" section a
 ## Search Console access
 - `.mcp.json` starts a Search Console MCP server through `scripts/gsc_mcp.sh` (PyPI `mcp-search-console`, pinned to
   0.4.2, code reviewed Nov 11, 2026: it only talks to Google's APIs). Its tools appear as `mcp__search-console__*`.
-- It works only when the owner has set `GSC_SERVICE_ACCOUNT_JSON` in the cloud environment's settings (the whole
-  service-account key file as text) and added that service account as a user on the Search Console property.
-  Never ask for the key in chat. Environment variables are read when a session starts.
-- If the tools are missing or fail, the key isn't set yet. Fall back to asking for a Search Console export
-  (Performance report as CSV, and the Pages indexing report).
-- Reading data needs no confirmation. Ask the owner before submitting a sitemap or anything else that changes
-  the property. Add-site, delete-site and delete-sitemap are switched off.
+- It works only when the owner has saved a Google service-account key in the cloud environment's settings, under
+  Environment variables, as `GSC_SERVICE_ACCOUNT_JSON='<the whole key file>'` (the single quotes keep its line
+  breaks), and has added that service account as a user on the Search Console property.
+- The key is a secret. Never ask for it in chat and never print it: no `env`, `printenv` or `set` output. To see
+  whether it is there: `[ -n "${GSC_SERVICE_ACCOUNT_JSON:-}" ] && echo set`.
+- A session reads environment variables when its VM starts: a new value shows up in a new session, or in an old one
+  after it has sat idle for a few minutes.
+- Tools missing? Run `bash scripts/gsc_mcp.sh < /dev/null`. It prints the reason (variable not set, key cut off at
+  the first line break because the quotes were left out, key incomplete) and exits with 0 when the key is fine.
+  If the owner can't get past it, ask for a Search Console export instead (Performance report as CSV, and the Pages
+  indexing report).
+- The connection is read-only: the server asks Google for the read-only scope, so it can't submit a sitemap or
+  change the property. Writing needs `GSC_ALLOW_DESTRUCTIVE=true`, which also switches on the delete tools. Don't
+  set it unless the owner asks.
 
 ## Design (since Nov 11, 2026)
 - Idea: a printed fare chart. White paper, navy ink, Barlow type, thin rules. The homepage opens with a chart of
@@ -106,9 +113,11 @@ rediscover it. Details live in `scripts/README.md`. Update the "State" section a
 - Checked after #29 went live: 20 of 20 sampled files match the repo, fonts load, no console errors, Lighthouse
   100 / 100 / 100 / 100 with CLS 0 on the homepage, a pair page and a hub.
 - Nov 12, 2026: the owner asked for Search Console access through github.com/AminForou/mcp-gsc. The repo side is
-  done (`.mcp.json`, `scripts/gsc_mcp.sh`, tested with a fake key: the server starts and lists 21 tools). Waiting on
-  the owner to create a Google service-account key, add it to Search Console as a user, and save it as
-  `GSC_SERVICE_ACCOUNT_JSON` in the Default cloud environment. Until then the server shows "failed to connect":
-  that is expected, not a bug.
+  done in PR #30 (`.mcp.json`, `scripts/gsc_mcp.sh`; tested with a throwaway key in nine saved shapes, and the real
+  server starts through the script and lists 21 tools). Waiting on the owner to create the Google service-account
+  key, add it to Search Console as a user, and save it in the Default cloud environment. Until then the server
+  shows "failed to connect": that is expected, not a bug.
+- `robots.txt` now also keeps crawlers away from `/CLAUDE.md` and `/.mcp.json`. GitHub Pages serves every file in
+  the repository, so working files that sit in the root need a Disallow line (`/scripts/` already had one).
 - Not re-audited since the redesign: the claude-seo "Visual" category (was 90). Worth one run when the owner asks
   for scores again; the other categories were not touched by the redesign.
