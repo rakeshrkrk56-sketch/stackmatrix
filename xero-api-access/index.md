@@ -39,7 +39,7 @@ Vendors use "webhooks" for two different features. **Developer webhooks** let an
 
 ## Which Xero plan do the integrations here need?
 
-**Early** (4): [Pipedrive + Xero](https://stackcostmatrix.com/stack/pipedrive-and-xero/), [Stripe + Xero](https://stackcostmatrix.com/stack/stripe-and-xero/), [Xero + ActiveCampaign](https://stackcostmatrix.com/stack/xero-and-activecampaign/), [Xero + Calendly](https://stackcostmatrix.com/stack/xero-and-calendly/)
+**Early** (7): [HubSpot + Xero](https://stackcostmatrix.com/stack/hubspot-and-xero/), [Pipedrive + Xero](https://stackcostmatrix.com/stack/pipedrive-and-xero/), [Salesforce + Xero](https://stackcostmatrix.com/stack/salesforce-and-xero/), [Stripe + Xero](https://stackcostmatrix.com/stack/stripe-and-xero/), [Xero + ActiveCampaign](https://stackcostmatrix.com/stack/xero-and-activecampaign/), [Xero + Calendly](https://stackcostmatrix.com/stack/xero-and-calendly/), [Xero + Slack](https://stackcostmatrix.com/stack/xero-and-slack/)
 
 Full costs, including the other tool's plan and any connector fee: [Xero integration costs →](https://stackcostmatrix.com/xero-integrations-cost/)
 
@@ -69,4 +69,4 @@ Webhooks are available on Early, Growing and Established.
 
 ### Which Xero plan do integrations need?
 
-In this index: Early for 4 integrations.
+In this index: Early for 7 integrations.

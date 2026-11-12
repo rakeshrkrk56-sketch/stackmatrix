@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "search-console": {
+      "command": "bash",
+      "args": ["scripts/gsc_mcp.sh"]
+    }
+  }
+}

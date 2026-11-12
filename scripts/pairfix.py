@@ -123,6 +123,14 @@ for _p, _src in RECHECK19.items():   # older step lists, compared with the guide
     COPY[_p] = _c
 STEPS_DATE = "2026-11-10"   # pages whose setup steps were written or re-read that day carry it as dateModified
 MODIFIED = {_p: STEPS_DATE for _p in list(SETUP19) + list(RECHECK19)}
+# 2026-11-12: batch 1 of new pairs (pairdata22). newpairs22.py built their pages once; from here on they're rendered
+# like every other pair.
+from pairdata22 import PAIRS22, COPY22, NEW22, DATE22
+for _p in PAIRS22: assert _p not in PAIRS and _p not in COPY, _p
+PAIRS.update(PAIRS22); COPY.update(COPY22)
+for _p, _c in NEW22.items():
+    if _c["mw"]: MW7[_p] = tuple(_c["mw"])
+MODIFIED.update({_p: DATE22 for _p in PAIRS22})
 FACTS16 = {("activecampaign", "Plus"): ("Yes", "Yes")}   # apidata: API and webhooks on every ActiveCampaign plan
 
 FACTS_EXTRA = {("salesforce", "Enterprise"): ("Yes", "Yes"), ("slack", "Free"): ("Yes", "Yes"),
@@ -284,6 +292,8 @@ def pair_figure(v, d, pair):
             f'<figcaption class="mt-2 text-xs text-slate-500">{html.escape(v["na"])} + {html.escape(v["nb"])} at a glance. Free to reuse with credit (CC BY 4.0).</figcaption> </figure> ')
 
 from pairdata20 import FLOW20, VIA20
+from pairdata22 import FLOW22, VIA22
+FLOW20.update(FLOW22); VIA20.update(VIA22)
 def flow_figure(v, d, pair, sync):
     """The connection diagram under "How it works": which tool sends what to which, through what, on which plans."""
     A, B = d["tools"]; names = {A["slug"]: v["na"], B["slug"]: v["nb"]}; sync = html.unescape(sync)

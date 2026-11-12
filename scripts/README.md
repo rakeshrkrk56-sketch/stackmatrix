@@ -16,7 +16,7 @@ Run everything **from the repo root**. Needs `python3`, plus `node` with Playwri
 ## How the site is put together
 | Thing | Where it lives | How it's produced |
 |---|---|---|
-| 59 pair pages | `stack/<a>-and-<b>/index.html` | Each has a `calc-data` JSON block (plans, prices, required plan, connector fee). `pairfix.py` renders the rest of the page from it: summary, TCO box, FAQ, meta, spec matrix, "How it works". |
+| 76 pair pages | `stack/<a>-and-<b>/index.html` | Each has a `calc-data` JSON block (plans, prices, required plan, connector fee). `pairfix.py` renders the rest of the page from it: summary, TCO box, FAQ, meta, spec matrix, "How it works". |
 | Pair content | `pairdata*.py` | Each file is one dated round of verified changes. Later files override earlier ones; `pairfix.py` imports them in order. |
 | Tool plan prices | `pairdata5.py` `TOOL_TIERS5` (Airtable, Asana, Calendly, ClickUp, Freshdesk, Intercom, monday.com, Notion, Slack, Zendesk), `pairdata4.py` (ActiveCampaign), `pairdata3.py` (Pipedrive, Xero) | For HubSpot, Mailchimp, QuickBooks, Salesforce and Stripe, prices live only in the pages' `calc-data`. To change one, add its tiers to a new `pairdataN.py` `TOOL_TIERS` entry in the same format and hook it into `pairfix.py` like the others. |
 | Connector fees | `pairdata7.py` `MW7` (monthly, annual) and `model.py` `MAKE_MONTHLY` | |
@@ -63,6 +63,8 @@ bash scripts/check_all.sh
 Then update `data/integration-pairs.json` (that tool's plan prices and each affected pair's `ten_seat_monthly_cost_usd`), and add a dated entry to the changelog on `about/index.html`.
 
 **Change which plan an integration needs:** add a new dated `pairdataN.py` with a `PAIRS` entry (`native`, `req`, `sync`, `summary`) and, if needed, `COPY` text with its sources. See `pairdata8.py` to `pairdata13.py` for examples. Then run the same commands as above.
+
+**Add new pairs (between tools the site already prices):** write a dated `pairdataN.py` like `pairdata22.py` (per pair: a template page of the same connection type that shares one tool, the plans each tool needs, summary, answer, how it works, limits, setup steps, sources, diagram labels), hook it into `pairfix.py` next to `pairdata22`, then run a copy of `newpairs22.py` (builds the pages once from their templates) and of `wire22.py` (open data, homepage cards, counts, guide rows, changelogs, READMEs), then `build_all.sh` and `check_all.sh`. `research.py` keeps the report to its original 55 pairs, so add the new round's pairs to its exclusion. A tool tier no page used before gets its spec cells from another tier with the same facts in `apidata.py`; `newpairs22.py` prints each case.
 
 **Read a vendor page the way the checks did:** `node scripts/docread.js <outdir> name=https://vendor.com/pricing` saves the page text to `<outdir>/name.txt` and prints plan-related sentences.
 

@@ -29,7 +29,7 @@ Vendors use "webhooks" for two different features. **Developer webhooks** let an
 
 ## Which Stripe plan do the integrations here need?
 
-**Standard** (12): [ActiveCampaign + Stripe](https://stackcostmatrix.com/stack/activecampaign-and-stripe/), [Airtable + Stripe](https://stackcostmatrix.com/stack/airtable-and-stripe/), [ClickUp + Stripe](https://stackcostmatrix.com/stack/clickup-and-stripe/), [HubSpot + Stripe](https://stackcostmatrix.com/stack/hubspot-and-stripe/), [Intercom + Stripe](https://stackcostmatrix.com/stack/intercom-and-stripe/), [Notion + Stripe](https://stackcostmatrix.com/stack/notion-and-stripe/), [Salesforce + Stripe](https://stackcostmatrix.com/stack/salesforce-and-stripe/), [Stripe + Mailchimp](https://stackcostmatrix.com/stack/stripe-and-mailchimp/), [Stripe + QuickBooks](https://stackcostmatrix.com/stack/stripe-and-quickbooks/), [Stripe + Slack](https://stackcostmatrix.com/stack/stripe-and-slack/), [Stripe + Xero](https://stackcostmatrix.com/stack/stripe-and-xero/), [Zendesk + Stripe](https://stackcostmatrix.com/stack/zendesk-and-stripe/)
+**Standard** (13): [ActiveCampaign + Stripe](https://stackcostmatrix.com/stack/activecampaign-and-stripe/), [Airtable + Stripe](https://stackcostmatrix.com/stack/airtable-and-stripe/), [ClickUp + Stripe](https://stackcostmatrix.com/stack/clickup-and-stripe/), [HubSpot + Stripe](https://stackcostmatrix.com/stack/hubspot-and-stripe/), [Intercom + Stripe](https://stackcostmatrix.com/stack/intercom-and-stripe/), [Notion + Stripe](https://stackcostmatrix.com/stack/notion-and-stripe/), [Salesforce + Stripe](https://stackcostmatrix.com/stack/salesforce-and-stripe/), [Stripe + Calendly](https://stackcostmatrix.com/stack/stripe-and-calendly/), [Stripe + Mailchimp](https://stackcostmatrix.com/stack/stripe-and-mailchimp/), [Stripe + QuickBooks](https://stackcostmatrix.com/stack/stripe-and-quickbooks/), [Stripe + Slack](https://stackcostmatrix.com/stack/stripe-and-slack/), [Stripe + Xero](https://stackcostmatrix.com/stack/stripe-and-xero/), [Zendesk + Stripe](https://stackcostmatrix.com/stack/zendesk-and-stripe/)
 
 Full costs, including the other tool's plan and any connector fee: [Stripe integration costs →](https://stackcostmatrix.com/stripe-integrations-cost/)
 
@@ -56,4 +56,4 @@ Webhooks are available on Standard.
 
 ### Which Stripe plan do integrations need?
 
-In this index: Standard for 12 integrations.
+In this index: Standard for 13 integrations.

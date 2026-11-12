@@ -39,7 +39,7 @@ Vendors use "webhooks" for two different features. **Developer webhooks** let an
 
 ## Which Zendesk plan do the integrations here need?
 
-**Suite Team** (7): [ClickUp + Zendesk](https://stackcostmatrix.com/stack/clickup-and-zendesk/), [HubSpot + Zendesk](https://stackcostmatrix.com/stack/hubspot-and-zendesk/), [Monday.com + Zendesk](https://stackcostmatrix.com/stack/monday-and-zendesk/), [Salesforce + Zendesk](https://stackcostmatrix.com/stack/salesforce-and-zendesk/), [Slack + Zendesk](https://stackcostmatrix.com/stack/slack-and-zendesk/), [Zendesk + Notion](https://stackcostmatrix.com/stack/zendesk-and-notion/), [Zendesk + Stripe](https://stackcostmatrix.com/stack/zendesk-and-stripe/)
+**Suite Team** (9): [ClickUp + Zendesk](https://stackcostmatrix.com/stack/clickup-and-zendesk/), [HubSpot + Zendesk](https://stackcostmatrix.com/stack/hubspot-and-zendesk/), [Monday.com + Zendesk](https://stackcostmatrix.com/stack/monday-and-zendesk/), [Pipedrive + Zendesk](https://stackcostmatrix.com/stack/pipedrive-and-zendesk/), [Salesforce + Zendesk](https://stackcostmatrix.com/stack/salesforce-and-zendesk/), [Slack + Zendesk](https://stackcostmatrix.com/stack/slack-and-zendesk/), [Zendesk + Asana](https://stackcostmatrix.com/stack/zendesk-and-asana/), [Zendesk + Notion](https://stackcostmatrix.com/stack/zendesk-and-notion/), [Zendesk + Stripe](https://stackcostmatrix.com/stack/zendesk-and-stripe/)
 
 Full costs, including the other tool's plan and any connector fee: [Zendesk integration costs →](https://stackcostmatrix.com/zendesk-integrations-cost/)
 

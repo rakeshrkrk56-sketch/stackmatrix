@@ -38,7 +38,8 @@ Vendors use "webhooks" for two different features. **Developer webhooks** let an
 
 ## Which Asana plan do the integrations here need?
 
-**Starter** (4): [Asana + Mailchimp](https://stackcostmatrix.com/stack/asana-and-mailchimp/), [Asana + QuickBooks](https://stackcostmatrix.com/stack/asana-and-quickbooks/), [Asana + Slack](https://stackcostmatrix.com/stack/asana-and-slack/), [HubSpot + Asana](https://stackcostmatrix.com/stack/hubspot-and-asana/)
+**Starter** (6): [Asana + Mailchimp](https://stackcostmatrix.com/stack/asana-and-mailchimp/), [Asana + QuickBooks](https://stackcostmatrix.com/stack/asana-and-quickbooks/), [Asana + Slack](https://stackcostmatrix.com/stack/asana-and-slack/), [HubSpot + Asana](https://stackcostmatrix.com/stack/hubspot-and-asana/), [Pipedrive + Asana](https://stackcostmatrix.com/stack/pipedrive-and-asana/), [Zendesk + Asana](https://stackcostmatrix.com/stack/zendesk-and-asana/)  
+**Advanced** (1): [Asana + Salesforce](https://stackcostmatrix.com/stack/asana-and-salesforce/)
 
 Full costs, including the other tool's plan and any connector fee: [Asana integration costs →](https://stackcostmatrix.com/asana-integrations-cost/)
 
@@ -66,4 +67,4 @@ Webhooks are available on Starter and Advanced. Webhook automation action by pla
 
 ### Which Asana plan do integrations need?
 
-In this index: Starter for 4 integrations.
+In this index: Starter for 6 integrations; Advanced for 1 integration.

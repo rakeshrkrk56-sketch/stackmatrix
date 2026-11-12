@@ -50,8 +50,8 @@ Vendors use "webhooks" for two different features. **Developer webhooks** let an
 
 ## Which Salesforce plan do the integrations here need?
 
-**Professional** (6): [HubSpot + Salesforce](https://stackcostmatrix.com/stack/hubspot-and-salesforce/), [Pipedrive + Salesforce](https://stackcostmatrix.com/stack/pipedrive-and-salesforce/), [Salesforce + Mailchimp](https://stackcostmatrix.com/stack/salesforce-and-mailchimp/), [Salesforce + QuickBooks](https://stackcostmatrix.com/stack/salesforce-and-quickbooks/), [Salesforce + Stripe](https://stackcostmatrix.com/stack/salesforce-and-stripe/), [Salesforce + Zendesk](https://stackcostmatrix.com/stack/salesforce-and-zendesk/)  
-**Enterprise** (1): [Salesforce + Slack](https://stackcostmatrix.com/stack/salesforce-and-slack/)
+**Professional** (10): [Asana + Salesforce](https://stackcostmatrix.com/stack/asana-and-salesforce/), [HubSpot + Salesforce](https://stackcostmatrix.com/stack/hubspot-and-salesforce/), [Intercom + Salesforce](https://stackcostmatrix.com/stack/intercom-and-salesforce/), [Pipedrive + Salesforce](https://stackcostmatrix.com/stack/pipedrive-and-salesforce/), [Salesforce + Airtable](https://stackcostmatrix.com/stack/salesforce-and-airtable/), [Salesforce + Mailchimp](https://stackcostmatrix.com/stack/salesforce-and-mailchimp/), [Salesforce + QuickBooks](https://stackcostmatrix.com/stack/salesforce-and-quickbooks/), [Salesforce + Stripe](https://stackcostmatrix.com/stack/salesforce-and-stripe/), [Salesforce + Xero](https://stackcostmatrix.com/stack/salesforce-and-xero/), [Salesforce + Zendesk](https://stackcostmatrix.com/stack/salesforce-and-zendesk/)  
+**Enterprise** (2): [Salesforce + Calendly](https://stackcostmatrix.com/stack/salesforce-and-calendly/), [Salesforce + Slack](https://stackcostmatrix.com/stack/salesforce-and-slack/)
 
 Full costs, including the other tool's plan and any connector fee: [Salesforce integration costs →](https://stackcostmatrix.com/salesforce-integrations-cost/)
 

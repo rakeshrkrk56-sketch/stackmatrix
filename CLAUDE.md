@@ -6,7 +6,9 @@ rediscover it. Details live in `scripts/README.md`. Update the "State" section a
 ## What this is
 - https://stackcostmatrix.com: an independent index of what B2B software integrations really cost.
 - Static HTML, served by GitHub Pages straight from `main`. No build step, no framework.
-- 59 pair pages (`stack/<a>-and-<b>/`), 17 tool hubs, 18 API pages, a research report, guides. 102 pages in all.
+- 76 pair pages (`stack/<a>-and-<b>/`), 17 tool hubs, 18 API pages, a research report, guides. 119 pages in all.
+- 18 tools, so 153 possible pairs; 76 are covered. The plan (owner agreed Nov 12, 2026): fill the grid in batches of
+  15 to 25 verified pairs, one PR each, then add tools a few at a time (35 to 40 tools at most, not hundreds).
 
 ## The owner's standing rules
 - Reply to the owner in the language they write in: short, direct, no jargon. Commits, PRs and site text stay in plain English.
@@ -29,6 +31,7 @@ rediscover it. Details live in `scripts/README.md`. Update the "State" section a
 | Pair page rendering | `scripts/pairfix.py` (data in `pairdata*.py`, later files override earlier ones) |
 | Cost model | `scripts/model.py` (also the SVG bar chart and connection diagram) |
 | Setup steps | `pairdata19.py` (native pairs), `pairdata21.py` (Make, Zapier, Data Mapper pairs) |
+| New pairs, batch 1 (all their facts, steps and diagram labels) | `pairdata22.py`; pages built once by `newpairs22.py`, wired by `wire22.py` |
 | Diagram labels | `pairdata20.py` |
 | Hubs, API pages, HubSpot guide, report | `hubs.py`, `apipages.py` + `apidata.py`, `hspro.py`, `research.py` |
 | Theme, navigation, homepage chart and finder | `ui13.py` (see "Theme" in `scripts/README.md`) |
@@ -47,6 +50,8 @@ rediscover it. Details live in `scripts/README.md`. Update the "State" section a
 - `security.py` must run last after any change to a page's scripts.
 - `pairfix.py selftest` must reproduce every pair page byte for byte. If a later script adds markup to pair pages,
   put it where pairfix's patterns don't reach (see `ux18.py`).
+- New pairs: `hspro.py` asserts every HubSpot pair needs Free, Starter or Professional, and a tool's Free tier must be in
+  the calculator data whenever the tool's other pages list it (Airtable, HubSpot), or the forced-upgrade amount is wrong.
 
 ## Reading vendor pages
 - `node scripts/docread.js <outdir> name=https://...` saves a page's text (Playwright).
@@ -66,6 +71,42 @@ rediscover it. Details live in `scripts/README.md`. Update the "State" section a
   HubSpot + Stripe.
 - SXO can't reach 90 from on-site work: it leans on authority and on the homepage's search intent.
 
+## Search Console access
+- `.mcp.json` starts a Search Console MCP server through `scripts/gsc_mcp.sh` (PyPI `mcp-search-console`, pinned to
+  0.4.2, code reviewed Nov 11, 2026: it only talks to Google's APIs). Its tools appear as `mcp__search-console__*`.
+- It works only when the owner has saved a Google service-account key in the cloud environment's settings, under
+  Environment variables, as `GSC_SERVICE_ACCOUNT_JSON='<the whole key file>'` (the single quotes keep its line
+  breaks), and has added that service account as a user on the Search Console property.
+- The key is a secret. Never ask for it in chat and never print it: no `env`, `printenv` or `set` output. To see
+  whether it is there: `[ -n "${GSC_SERVICE_ACCOUNT_JSON:-}" ] && echo set`.
+- A session reads environment variables when its VM starts: a new value shows up in a new session, or in an old one
+  after it has sat idle for a few minutes.
+- Tools missing? Run `bash scripts/gsc_mcp.sh < /dev/null`. It prints the reason (variable not set, key cut off at
+  the first line break because the quotes were left out, key incomplete) and exits with 0 when the key is fine.
+  If the owner can't get past it, ask for a Search Console export instead (Performance report as CSV, and the Pages
+  indexing report).
+- The connection is read-only: the server asks Google for the read-only scope, so it can't submit a sitemap or
+  change the property. Writing needs `GSC_ALLOW_DESTRUCTIVE=true`, which also switches on the delete tools. Don't
+  set it unless the owner asks.
+
+## What Search Console showed (export of Nov 12, 2026: Oct 17 to Nov 10)
+- No figures are kept here: this file is public. For the next comparison ask the owner for a Performance export
+  with the date range "Last 3 months"; its Chart sheet lists every day, so the trend can be read from it.
+- Indexing is not the problem. 98 of 101 sitemap pages had impressions. The three without: `/stack/asana-and-slack/`
+  and `/stack/salesforce-and-zendesk/` (live since Oct 19) and `/pipedrive-integrations-cost/` (new on Nov 3).
+- Ranking is the limit. The average position sits around page 6 and did not move in three weeks, so clicks are
+  negligible. Nearly nine in ten impressions come from "<tool> <tool> integration" searches, where the vendors'
+  own pages hold page 1. Titles and headings already match those searches: more on-page work won't change this.
+  The domain's age (first seen Oct 18) and the lack of links will.
+- Where the site already sits on pages 2 to 4: pairs with little competition (Xero + ActiveCampaign, Intercom +
+  Stripe, Zendesk + Stripe, ActiveCampaign + Stripe, Stripe + Mailchimp, Slack + Calendly, ActiveCampaign +
+  Calendly, monday.com + Slack), the Salesforce hub and the CRM guide. Question-style cost searches and a few API
+  pages reach page 1, with very few searches behind them.
+- Impressions from page 6 and deeper are mostly not people (rank-checking tools page that deep). Judge progress by
+  position and clicks, not by the impression count.
+- Of the seven pairs without setup steps, ActiveCampaign + Stripe and ClickUp + Slack are the closest to page 1:
+  ask for those two help texts first.
+
 ## Design (since Nov 11, 2026)
 - Idea: a printed fare chart. White paper, navy ink, Barlow type, thin rules. The homepage opens with a chart of
   every pair's 10-seat cost.
@@ -81,16 +122,34 @@ rediscover it. Details live in `scripts/README.md`. Update the "State" section a
 - Design choices are left to Claude's judgment.
 
 ## Still open
+- Batch 2 candidates: the 77 empty cells. Left out of batch 1 for a reason: Zendesk + QuickBooks and Airtable + Calendly
+  (no readable vendor page says whether a native integration exists; zendesk.com/marketplace has a bot check),
+  Pipedrive + Stripe (third-party Marketplace apps, pricing not read), Asana + Intercom (asana.com/apps/intercom is 404),
+  Notion + Salesforce (needs Notion Enterprise, which the site doesn't price). help.asana.com doesn't render here.
 - Seven native pairs have no setup steps because their help centres can't be read: activecampaign-and-pipedrive,
   activecampaign-and-stripe, clickup-and-slack, clickup-and-zendesk, hubspot-and-clickup, hubspot-and-monday,
   monday-and-zendesk. The owner can paste the help text.
-- Owner tasks: GitHub repo description, website and topics; real screenshots from the free pairs; a Search Console
-  export in late November.
+- Owner tasks: GitHub repo description, website and topics; real screenshots from the free pairs; a fresh Search
+  Console export in about a month ("Last 3 months"). The Google key only if the owner wants live access later.
 - Optional, only if the owner asks: a short captioned video for the Integration Tax report.
 - A monthly price-check task is scheduled for Dec 1.
 
 ## State (update this)
-- Nov 11, 2026: PRs #24 to #28 merged and live (setup steps on 52 of 59 pairs, diagrams, editor background,
-  question headings). The redesign (theme, homepage chart, share images, icons, this file, `build_all.sh`) is
-  pushed on the work branch as PR #29, waiting for the owner's "merge PR #29". After the merge: reset the branch,
-  check the live site, and look at the homepage on a real phone.
+- Nov 11, 2026: PRs #24 to #29 are merged and live. #24 to #28: setup steps on 52 of 59 pairs, diagrams, editor
+  background, question headings. #29: the redesign (theme, homepage chart, share images, icons, `build_all.sh`, this file).
+- Checked after #29 went live: 20 of 20 sampled files match the repo, fonts load, no console errors, Lighthouse
+  100 / 100 / 100 / 100 with CLS 0 on the homepage, a pair page and a hub.
+- Nov 12, 2026: the owner asked for Search Console access through github.com/AminForou/mcp-gsc. The repo side is
+  done in PR #30 (`.mcp.json`, `scripts/gsc_mcp.sh`; tested with a throwaway key in nine saved shapes, and the real
+  server starts through the script and lists 21 tools). The owner then chose to skip the key ("leave it") and
+  uploaded a Performance export instead, so the connection stays inactive: the server shows "failed to connect",
+  which is expected, not a bug. The owner's steps for the key are in PR #30's description if it is wanted later.
+- Nov 12, 2026: read the owner's Search Console export; the findings are in "What Search Console showed". No site
+  change came out of it. Suggested to the owner: URL Inspection on the three pages without impressions, and
+  getting the Integration Tax report mentioned on other sites, which is the lever the data points to.
+- Nov 12, 2026: batch 1 of the grid expansion: 17 new pairs (15 native, 2 through Make), each read on the vendors' pages
+  that day. Same branch as the Search Console setup, so both are in PR #30. Pages say so where a vendor names no plan.
+- `robots.txt` now also keeps crawlers away from `/CLAUDE.md` and `/.mcp.json`. GitHub Pages serves every file in
+  the repository, so working files that sit in the root need a Disallow line (`/scripts/` already had one).
+- Not re-audited since the redesign: the claude-seo "Visual" category (was 90). Worth one run when the owner asks
+  for scores again; the other categories were not touched by the redesign.
