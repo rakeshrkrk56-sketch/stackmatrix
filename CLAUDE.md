@@ -66,6 +66,17 @@ rediscover it. Details live in `scripts/README.md`. Update the "State" section a
   HubSpot + Stripe.
 - SXO can't reach 90 from on-site work: it leans on authority and on the homepage's search intent.
 
+## Search Console access
+- `.mcp.json` starts a Search Console MCP server through `scripts/gsc_mcp.sh` (PyPI `mcp-search-console`, pinned to
+  0.4.2, code reviewed Nov 11, 2026: it only talks to Google's APIs). Its tools appear as `mcp__search-console__*`.
+- It works only when the owner has set `GSC_SERVICE_ACCOUNT_JSON` in the cloud environment's settings (the whole
+  service-account key file as text) and added that service account as a user on the Search Console property.
+  Never ask for the key in chat. Environment variables are read when a session starts.
+- If the tools are missing or fail, the key isn't set yet. Fall back to asking for a Search Console export
+  (Performance report as CSV, and the Pages indexing report).
+- Reading data needs no confirmation. Ask the owner before submitting a sitemap or anything else that changes
+  the property. Add-site, delete-site and delete-sitemap are switched off.
+
 ## Design (since Nov 11, 2026)
 - Idea: a printed fare chart. White paper, navy ink, Barlow type, thin rules. The homepage opens with a chart of
   every pair's 10-seat cost.
@@ -84,8 +95,8 @@ rediscover it. Details live in `scripts/README.md`. Update the "State" section a
 - Seven native pairs have no setup steps because their help centres can't be read: activecampaign-and-pipedrive,
   activecampaign-and-stripe, clickup-and-slack, clickup-and-zendesk, hubspot-and-clickup, hubspot-and-monday,
   monday-and-zendesk. The owner can paste the help text.
-- Owner tasks: GitHub repo description, website and topics; real screenshots from the free pairs; a Search Console
-  export in late November.
+- Owner tasks: GitHub repo description, website and topics; real screenshots from the free pairs; the Google key
+  for Search Console access (or, failing that, a Search Console export in late November).
 - Optional, only if the owner asks: a short captioned video for the Integration Tax report.
 - A monthly price-check task is scheduled for Dec 1.
 
@@ -94,6 +105,10 @@ rediscover it. Details live in `scripts/README.md`. Update the "State" section a
   background, question headings. #29: the redesign (theme, homepage chart, share images, icons, `build_all.sh`, this file).
 - Checked after #29 went live: 20 of 20 sampled files match the repo, fonts load, no console errors, Lighthouse
   100 / 100 / 100 / 100 with CLS 0 on the homepage, a pair page and a hub.
-- Nothing is in progress. The work branch equals `main` except for this note. Next work starts from "Still open".
+- Nov 12, 2026: the owner asked for Search Console access through github.com/AminForou/mcp-gsc. The repo side is
+  done (`.mcp.json`, `scripts/gsc_mcp.sh`, tested with a fake key: the server starts and lists 21 tools). Waiting on
+  the owner to create a Google service-account key, add it to Search Console as a user, and save it as
+  `GSC_SERVICE_ACCOUNT_JSON` in the Default cloud environment. Until then the server shows "failed to connect":
+  that is expected, not a bug.
 - Not re-audited since the redesign: the claude-seo "Visual" category (was 90). Worth one run when the owner asks
   for scores again; the other categories were not touched by the redesign.
