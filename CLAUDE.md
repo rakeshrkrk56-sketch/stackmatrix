@@ -129,7 +129,8 @@ rediscover it. Details live in `scripts/README.md`. Update the "State" section a
 - Seven native pairs have no setup steps because their help centres can't be read: activecampaign-and-pipedrive,
   activecampaign-and-stripe, clickup-and-slack, clickup-and-zendesk, hubspot-and-clickup, hubspot-and-monday,
   monday-and-zendesk. The owner can paste the help text.
-- Owner tasks: GitHub repo description, website and topics; real screenshots from the free pairs; a fresh Search
+- Owner tasks: the GitHub repo description still says 59 integrations (now 76; update it after each batch); real
+  screenshots from the free pairs; a fresh Search
   Console export in about a month ("Last 3 months"). The Google key only if the owner wants live access later.
 - Optional, only if the owner asks: a short captioned video for the Integration Tax report.
 - A monthly price-check task is scheduled for Dec 1.
@@ -148,7 +149,8 @@ rediscover it. Details live in `scripts/README.md`. Update the "State" section a
   change came out of it. Suggested to the owner: URL Inspection on the three pages without impressions, and
   getting the Integration Tax report mentioned on other sites, which is the lever the data points to.
 - Nov 12, 2026: batch 1 of the grid expansion: 17 new pairs (15 native, 2 through Make), each read on the vendors' pages
-  that day. Same branch as the Search Console setup, so both are in PR #30. Pages say so where a vendor names no plan.
+  that day; pages say so where a vendor names no plan. Merged with the Search Console setup as PR #30 and live: 25 of 25
+  sampled files match the repo, every new page returns 200, no console errors, fonts load, no overflow at phone width.
 - `robots.txt` now also keeps crawlers away from `/CLAUDE.md` and `/.mcp.json`. GitHub Pages serves every file in
   the repository, so working files that sit in the root need a Disallow line (`/scripts/` already had one).
 - Not re-audited since the redesign: the claude-seo "Visual" category (was 90). Worth one run when the owner asks
