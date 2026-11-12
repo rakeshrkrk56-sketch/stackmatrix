@@ -1,6 +1,6 @@
 # Complete 2026 HubSpot Integration Cost & API Tier Matrix
 
-> Every HubSpot integration's true cost in 2026: minimum plan tiers, hidden API gates, and native vs middleware totals across 13 popular connections.
+> Every HubSpot integration's true cost in 2026: minimum plan tiers, hidden API gates, and native vs middleware totals across 16 popular connections.
 
 Source page: https://stackcostmatrix.com/hubspot-integrations-cost/  
 Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (credit StackCostMatrix and link to https://stackcostmatrix.com)
@@ -9,7 +9,7 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 Most HubSpot integrations work on the free CRM, but a few need a paid Professional
 subscription. This matrix compares the
- **true monthly cost** of 13 popular HubSpot
+ **true monthly cost** of 16 popular HubSpot
 integrations, including minimum tier requirements and middleware
 alternatives. Integration requirements and prices re-checked 2026-11-03, except Salesforce and Pipedrive prices. HubSpot prices re-checked 2026-11-05. Only two of them need HubSpot Professional: see [which integrations need HubSpot Professional, and the cheapest way to get it](https://stackcostmatrix.com/hubspot-professional-integrations/).
 
@@ -30,14 +30,17 @@ Complete 2026 HubSpot Integration Cost & API Tier Matrix
 | HubSpot + ClickUp | Native | Free | $120.00 | Nov 3, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-clickup/) |
 | HubSpot + Asana | Native | Professional | $634.90 | Nov 3, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-asana/) |
 | HubSpot + QuickBooks Online | Native | Free | $38.00 | Nov 4, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-quickbooks/) |
+| HubSpot + Xero | Native | Free | $27.00 | Nov 12, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-xero/) |
+| HubSpot + Airtable | Native | Starter | $200.00 | Nov 12, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-airtable/) |
+| HubSpot + Notion | Native | Starter | $320.00 | Nov 12, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-notion/) |
 
-Chart: HubSpot integration costs: monthly cost for 10 seats on the plans each integration needs: HubSpot + Salesforce Sales Cloud $1,750.00; HubSpot + Zendesk $690.00; HubSpot + Asana $634.90; Intercom + HubSpot $390.00; Freshdesk + HubSpot $230.00; HubSpot + Pipedrive $150.59; HubSpot + Monday.com $140.00; HubSpot + Calendly $120.00; HubSpot + ClickUp $120.00; HubSpot + QuickBooks Online $38.00; HubSpot + Mailchimp $20.00; HubSpot + Slack $0.00; HubSpot + Stripe $0.00
+Chart: HubSpot integration costs: the 14 most expensive of 16 integrations, monthly cost for 10 seats on the plans each integration needs: HubSpot + Salesforce Sales Cloud $1,750.00; HubSpot + Zendesk $690.00; HubSpot + Asana $634.90; Intercom + HubSpot $390.00; HubSpot + Notion $320.00; Freshdesk + HubSpot $230.00; HubSpot + Airtable $200.00; HubSpot + Pipedrive $150.59; HubSpot + Monday.com $140.00; HubSpot + Calendly $120.00; HubSpot + ClickUp $120.00; HubSpot + QuickBooks Online $38.00; HubSpot + Xero $27.00; HubSpot + Mailchimp $20.00
 
-Monthly cost for 10 seats, both tools plus any connector. Navy bars are native integrations; teal bars need a connector.
+The 14 most expensive of 16 integrations. Monthly cost for 10 seats, both tools plus any connector. Navy bars are native integrations; teal bars need a connector.
 
  
 
-Image: [HubSpot integration costs summary: 13 integrations priced, from $0 to $1,750 a month for 10 seats](https://stackcostmatrix.com/og/hubspot-integrations-cost.jpg)
+Image: [HubSpot integration costs summary: 16 integrations priced, from $0 to $1,750 a month for 10 seats](https://stackcostmatrix.com/og/hubspot-integrations-cost.jpg)
 
 ## Which HubSpot integrations need a Professional plan?
 

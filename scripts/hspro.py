@@ -67,17 +67,22 @@ def build():
     def hs_req(p): return next(t["required"] for t in p["d"]["tools"] if t["slug"] == "hubspot")
     pro = sorted([p for p in pairs if hs_req(p) == "Professional"], key=lambda p: -p["v"]["N"])
     free = sorted([p for p in pairs if hs_req(p) == "Free"], key=name_of)
-    other = [p for p in pairs if hs_req(p) not in ("Professional", "Free")]
+    # 2026-11-12: HubSpot's Airtable and Notion data sync apps need a paid Data Hub Starter subscription (pairdata22)
+    starter = sorted([p for p in pairs if hs_req(p) == "Starter"], key=name_of)
+    other = [p for p in pairs if hs_req(p) not in ("Professional", "Starter", "Free")]
     assert not other, [p["slug"] for p in other]
-    n, npro, nfree = len(pairs), len(pro), len(free)
+    n, npro, nfree, nst = len(pairs), len(pro), len(free), len(starter)
+    st_names = " and ".join(name_of(p) for p in starter)
+    st_txt = f" {nst} need Data Hub Starter: {st_names}." if nst else ""
     cheapest = PRO[0]; c10 = ten(cheapest)
     pro_names = " and ".join(name_of(p) for p in pro)
 
     # 1. integrations table
     rows = []
-    for p in pro + free:
+    for p in pro + starter + free:
         hs = hs_req(p); other_t = next(t for t in p["d"]["tools"] if t["slug"] != "hubspot")
         badge = ('<span class="rounded-full px-2 py-0.5 text-xs font-medium ring-1 bg-amber-50 text-amber-800 ring-amber-200"> Professional </span>' if hs == "Professional"
+                 else '<span class="rounded-full px-2 py-0.5 text-xs font-medium ring-1 bg-amber-50 text-amber-800 ring-amber-200"> Data Hub Starter </span>' if hs == "Starter"
                  else '<span class="rounded-full px-2 py-0.5 text-xs font-medium ring-1 bg-emerald-100 text-emerald-800 ring-emerald-200"> Free CRM </span>')
         conn = "Native" if p["d"]["middleware"] == 0 else (p["conn"] or "Middleware")
         rows.append(f'<tr class="border-t border-slate-100"> <td class="px-4 py-3 font-medium"><a href="/stack/{p["slug"]}/" {LINK}>{esc(name_of(p))}</a></td> '
@@ -134,7 +139,7 @@ def build():
     free_names = ", ".join(name_of(p).replace("HubSpot + ", "").replace(" + HubSpot", "") for p in free)
     faqs = [
         ("Which HubSpot integrations need Professional?",
-         f"Of the {n} HubSpot integrations on this site, {npro} need a Professional subscription: {pro_names}. The other {nfree} ({free_names}) work on HubSpot's free CRM."),
+         f"Of the {n} HubSpot integrations on this site, {npro} need a Professional subscription: {pro_names}.{st_txt} The other {nfree} ({free_names}) work on HubSpot's free CRM."),
         ("What is the cheapest HubSpot Professional plan?",
          f"{cheapest['name']}, at ${cheapest['monthly']} per seat a month on monthly billing or ${cheapest['annual']} with an annual commitment, with no onboarding fee shown on HubSpot's pricing page. "
          f"HubSpot's help articles list it among the subscriptions that unlock both the Salesforce connector and the Asana workflow action."),
@@ -147,11 +152,11 @@ def build():
     faq_html = (' <section class="mt-12" aria-label="Frequently asked questions"> <h2 class="text-xl font-bold">HubSpot Professional and integrations: frequently asked questions</h2> <div class="mt-4 space-y-6"> ' +
                 "".join(f'<div> <h3 class="font-semibold text-slate-900">{esc(q)}</h3> <p class="mt-1 leading-relaxed text-slate-700">{esc(a)}</p> </div>' for q, a in faqs) + ' </div> </section>')
     fig = (f'<figure class="mt-6"> <img src="/og/{SLUG}.jpg" width="1200" height="630" loading="lazy" class="scm-fig" '
-           f'alt="Summary: {npro} of {n} HubSpot integrations need Professional; the cheapest Professional plan is ${cheapest["monthly"]} per seat a month; {nfree} work on the free CRM"> '
+           f'alt="Summary: {npro} of {n} HubSpot integrations need Professional; the cheapest Professional plan is ${cheapest["monthly"]} per seat a month; {nst} need Data Hub Starter; {nfree} work on the free CRM"> '
            f'<figcaption class="mt-2 text-xs text-slate-500">HubSpot Professional and integrations at a glance. Free to reuse with credit (CC BY 4.0).</figcaption> </figure>')
     answer = (f"Only {npro} of the {n} HubSpot integrations we track need Professional: {pro_names}. Any Professional subscription HubSpot lists for them works, "
               f"and the cheapest is {cheapest['name']} at ${cheapest['monthly']} per seat a month (${cheapest['annual']} on an annual commitment), about {m0(c10)} a month for 10 people. "
-              f"The other {nfree} work on HubSpot's free CRM.")
+              f"{st_txt.strip()} The other {nfree} work on HubSpot's free CRM.".strip())
     body = (f'<section class="mx-auto max-w-4xl"> '
             f'<h1 class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">\n{esc(TITLE)}\n</h1> '
             f'<p class="mt-3 text-sm text-slate-500">Checked against HubSpot&#39;s pricing pages and knowledge base · {CHECKED_TXT} · Salesforce requirements added Nov 10, 2026 · Edited by <a href="/about/#editor" class="font-medium text-indigo-600 hover:underline">Rakesh Kumar</a></p> '

@@ -58,14 +58,25 @@ All CRM integration cost guides
 | Pipedrive + QuickBooks Online | Native | $178.00 | Nov 4, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/pipedrive-and-quickbooks/) |
 | Salesforce Sales Cloud + QuickBooks Online | Middleware | $1,298.59 | Nov 4, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/salesforce-and-quickbooks/) |
 | Pipedrive + Salesforce Sales Cloud | Middleware | $1,400.59 | Nov 4, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/pipedrive-and-salesforce/) |
+| Salesforce Sales Cloud + Calendly | Native | $1,850.00 | Nov 12, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/salesforce-and-calendly/) |
+| HubSpot + Xero | Native | $27.00 | Nov 12, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-xero/) |
+| HubSpot + Airtable | Native | $200.00 | Nov 12, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-airtable/) |
+| HubSpot + Notion | Native | $320.00 | Nov 12, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-notion/) |
+| Intercom + Salesforce Sales Cloud | Native | $2,240.00 | Nov 12, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/intercom-and-salesforce/) |
+| Asana + Salesforce Sales Cloud | Native | $1,554.90 | Nov 12, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/asana-and-salesforce/) |
+| Salesforce Sales Cloud + Airtable | Native | $1,790.00 | Nov 12, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/salesforce-and-airtable/) |
+| Pipedrive + Intercom | Native | $530.00 | Nov 12, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/pipedrive-and-intercom/) |
+| Pipedrive + Zendesk | Native | $830.00 | Nov 12, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/pipedrive-and-zendesk/) |
+| Pipedrive + Asana | Native | $274.90 | Nov 12, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/pipedrive-and-asana/) |
+| Salesforce Sales Cloud + Xero | Middleware | $1,287.59 | Nov 12, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/salesforce-and-xero/) |
 
-Chart: CRM integration costs for HubSpot, Salesforce and Pipedrive: the 14 most expensive of 25 integrations, monthly cost for 10 seats on the plans each integration needs: Salesforce Sales Cloud + Zendesk $1,940.00; HubSpot + Salesforce Sales Cloud $1,750.00; Salesforce Sales Cloud + Slack $1,737.50; Pipedrive + Salesforce Sales Cloud $1,400.59; Salesforce Sales Cloud + QuickBooks Online $1,298.59; Salesforce Sales Cloud + Mailchimp $1,270.00; Salesforce Sales Cloud + Stripe $1,250.00; HubSpot + Zendesk $690.00; HubSpot + Asana $634.90; ActiveCampaign + Pipedrive $405.00; Intercom + HubSpot $390.00; Pipedrive + Slack $390.00; Pipedrive + Calendly $270.59; Freshdesk + HubSpot $230.00
+Chart: CRM integration costs for HubSpot, Salesforce and Pipedrive: the 14 most expensive of 36 integrations, monthly cost for 10 seats on the plans each integration needs: Intercom + Salesforce Sales Cloud $2,240.00; Salesforce Sales Cloud + Zendesk $1,940.00; Salesforce Sales Cloud + Calendly $1,850.00; Salesforce Sales Cloud + Airtable $1,790.00; HubSpot + Salesforce Sales Cloud $1,750.00; Salesforce Sales Cloud + Slack $1,737.50; Asana + Salesforce Sales Cloud $1,554.90; Pipedrive + Salesforce Sales Cloud $1,400.59; Salesforce Sales Cloud + QuickBooks Online $1,298.59; Salesforce Sales Cloud + Xero $1,287.59; Salesforce Sales Cloud + Mailchimp $1,270.00; Salesforce Sales Cloud + Stripe $1,250.00; Pipedrive + Zendesk $830.00; HubSpot + Zendesk $690.00
 
-The 14 most expensive of 25 integrations. Monthly cost for 10 seats, both tools plus any connector. Navy bars are native integrations; teal bars need a connector.
+The 14 most expensive of 36 integrations. Monthly cost for 10 seats, both tools plus any connector. Navy bars are native integrations; teal bars need a connector.
 
  
 
-Image: [CRM integration costs for HubSpot, Salesforce and Pipedrive summary: 25 integrations priced, from $0 to $1,940 a month for 10 seats](https://stackcostmatrix.com/og/crm-integration-pricing-guide.jpg)
+Image: [CRM integration costs for HubSpot, Salesforce and Pipedrive summary: 36 integrations priced, from $0 to $2,240 a month for 10 seats](https://stackcostmatrix.com/og/crm-integration-pricing-guide.jpg)
 
 ## Verified pricing & API documentation sources
 

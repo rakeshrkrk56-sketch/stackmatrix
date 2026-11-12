@@ -39,8 +39,9 @@ Vendors use "webhooks" for two different features. **Developer webhooks** let an
 
 ## Which Calendly plan do the integrations here need?
 
-**Free** (1): [Slack + Calendly](https://stackcostmatrix.com/stack/slack-and-calendly/)  
-**Standard** (6): [ActiveCampaign + Calendly](https://stackcostmatrix.com/stack/activecampaign-and-calendly/), [HubSpot + Calendly](https://stackcostmatrix.com/stack/hubspot-and-calendly/), [Mailchimp + Calendly](https://stackcostmatrix.com/stack/mailchimp-and-calendly/), [Notion + Calendly](https://stackcostmatrix.com/stack/notion-and-calendly/), [Pipedrive + Calendly](https://stackcostmatrix.com/stack/pipedrive-and-calendly/), [Xero + Calendly](https://stackcostmatrix.com/stack/xero-and-calendly/)
+**Free** (2): [Intercom + Calendly](https://stackcostmatrix.com/stack/intercom-and-calendly/), [Slack + Calendly](https://stackcostmatrix.com/stack/slack-and-calendly/)  
+**Standard** (7): [ActiveCampaign + Calendly](https://stackcostmatrix.com/stack/activecampaign-and-calendly/), [HubSpot + Calendly](https://stackcostmatrix.com/stack/hubspot-and-calendly/), [Mailchimp + Calendly](https://stackcostmatrix.com/stack/mailchimp-and-calendly/), [Notion + Calendly](https://stackcostmatrix.com/stack/notion-and-calendly/), [Pipedrive + Calendly](https://stackcostmatrix.com/stack/pipedrive-and-calendly/), [Stripe + Calendly](https://stackcostmatrix.com/stack/stripe-and-calendly/), [Xero + Calendly](https://stackcostmatrix.com/stack/xero-and-calendly/)  
+**Teams** (1): [Salesforce + Calendly](https://stackcostmatrix.com/stack/salesforce-and-calendly/)
 
 Full costs, including the other tool's plan and any connector fee: [Calendly integration costs →](https://stackcostmatrix.com/calendly-integrations-cost/)
 
@@ -66,4 +67,4 @@ Webhooks are available on Standard and Teams, but not on Free.
 
 ### Which Calendly plan do integrations need?
 
-In this index: Free for 1 integration; Standard for 6 integrations.
+In this index: Free for 2 integrations; Standard for 7 integrations; Teams for 1 integration.

@@ -40,7 +40,7 @@ Vendors use "webhooks" for two different features. **Developer webhooks** let an
 
 ## Which Pipedrive plan do the integrations here need?
 
-**Lite** (6): [HubSpot + Pipedrive](https://stackcostmatrix.com/stack/hubspot-and-pipedrive/), [Pipedrive + Calendly](https://stackcostmatrix.com/stack/pipedrive-and-calendly/), [Pipedrive + Mailchimp](https://stackcostmatrix.com/stack/pipedrive-and-mailchimp/), [Pipedrive + QuickBooks](https://stackcostmatrix.com/stack/pipedrive-and-quickbooks/), [Pipedrive + Salesforce](https://stackcostmatrix.com/stack/pipedrive-and-salesforce/), [Pipedrive + Xero](https://stackcostmatrix.com/stack/pipedrive-and-xero/)  
+**Lite** (9): [HubSpot + Pipedrive](https://stackcostmatrix.com/stack/hubspot-and-pipedrive/), [Pipedrive + Asana](https://stackcostmatrix.com/stack/pipedrive-and-asana/), [Pipedrive + Calendly](https://stackcostmatrix.com/stack/pipedrive-and-calendly/), [Pipedrive + Intercom](https://stackcostmatrix.com/stack/pipedrive-and-intercom/), [Pipedrive + Mailchimp](https://stackcostmatrix.com/stack/pipedrive-and-mailchimp/), [Pipedrive + QuickBooks](https://stackcostmatrix.com/stack/pipedrive-and-quickbooks/), [Pipedrive + Salesforce](https://stackcostmatrix.com/stack/pipedrive-and-salesforce/), [Pipedrive + Xero](https://stackcostmatrix.com/stack/pipedrive-and-xero/), [Pipedrive + Zendesk](https://stackcostmatrix.com/stack/pipedrive-and-zendesk/)  
 **Growth** (2): [ActiveCampaign + Pipedrive](https://stackcostmatrix.com/stack/activecampaign-and-pipedrive/), [Pipedrive + Slack](https://stackcostmatrix.com/stack/pipedrive-and-slack/)
 
 Full costs, including the other tool's plan and any connector fee: [Pipedrive integration costs →](https://stackcostmatrix.com/pipedrive-integrations-cost/)

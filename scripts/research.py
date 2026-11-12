@@ -24,8 +24,9 @@ def dataset():
     pairs = {p["slug"]: p for p in load_pairs()}
     rows = []
     from pairdata13 import NEW13
+    from pairdata22 import NEW22
     for slug, p in pairs.items():
-        if slug in NEW13: continue   # report scope: the 55 pairs indexed when it was published (Nov 3, 2026)
+        if slug in NEW13 or slug in NEW22: continue   # report scope: the 55 pairs indexed when it was published (Nov 3, 2026)
         d, v = p["d"], p["v"]
         st_ = p["status"]; unconf = st_.split(": ", 1)[1].split(" ")[0] if st_.startswith("partial") else None
         parts = []

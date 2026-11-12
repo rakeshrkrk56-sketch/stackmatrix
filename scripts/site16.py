@@ -6,6 +6,7 @@ hand-written pages and the pair pages' static JSON-LD."""
 import glob, html, json, re, os, sys
 
 SITE = "https://stackcostmatrix.com"
+N_PAIRS = len(glob.glob("stack/*/index.html"))   # integration pairs on the site (was a fixed 59)
 EDITOR_NAME = "Rakesh Kumar"
 EDITOR_URL = f"{SITE}/about/#editor"
 EDITOR_PROFILE = "https://github.com/rakeshrkrk56-sketch"
@@ -103,7 +104,7 @@ def main():
             if f in ("index.html", "about/index.html") and (o.get("@type") in ("Organization", "WebSite") or "@graph" in o):
                 return ""          # replaced by GRAPH below (the old WebSite SearchAction pointed at a search URL the site doesn't support)
             if f == "index.html" and o.get("@type") == "Dataset":
-                o["description"] = ("Open dataset of what 59 B2B software integrations cost across 18 tools plus 2 connectors (Zapier and Make): per-seat prices per plan, "
+                o["description"] = (f"Open dataset of what {N_PAIRS} B2B software integrations cost across 18 tools plus 2 connectors (Zapier and Make): per-seat prices per plan, "
                                     "the plan each integration needs, API and webhook access by plan, and connector fees. Every figure links to the vendor's pricing page or documentation, "
                                     "with the date it was checked; exceptions are flagged on each page.")
                 o["creator"] = {"@id": ORG_ID}; o["publisher"] = {"@id": ORG_ID}
@@ -156,7 +157,7 @@ def main():
         s = re.sub(r'<meta property="og:image:alt"[^>]*>', "", s)   # generated pages inherit their template's
         if t:
             fa = re.search(r'<img src="/og/' + re.escape(key) + r'\.jpg"[^>]*alt="([^"]*)"', s) if key else None
-            alt = fa.group(1) if fa else ("StackCostMatrix: what connecting your SaaS tools really costs. 59 integrations, 20 tools, open data." if img.endswith("og-image.png") else t.group(1) + " — StackCostMatrix")
+            alt = fa.group(1) if fa else (f"StackCostMatrix: what connecting your SaaS tools really costs. {N_PAIRS} integrations, 20 tools, open data." if img.endswith("og-image.png") else t.group(1) + " — StackCostMatrix")
             s = re.sub(r'(<meta property="og:image" content="[^"]*">(?:<meta property="og:image:width"[^>]*><meta property="og:image:height"[^>]*>)?)',
                        lambda m: m.group(1) + f'<meta property="og:image:alt" content="{alt}">', s, count=1)
         if s != s0: open(f, "w", encoding="utf-8").write(s); n += 1

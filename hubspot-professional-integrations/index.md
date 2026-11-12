@@ -9,7 +9,7 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 Checked against HubSpot's pricing pages and knowledge base · Nov 5, 2026 · Salesforce requirements added Nov 10, 2026 · Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor)
 
-**Short answer:** Only 2 of the 13 HubSpot integrations we track need Professional: HubSpot + Salesforce and HubSpot + Asana. Any Professional subscription HubSpot lists for them works, and the cheapest is Smart CRM Professional at $50 per seat a month ($45 on an annual commitment), about $500 a month for 10 people. The other 11 work on HubSpot's free CRM.
+**Short answer:** Only 2 of the 16 HubSpot integrations we track need Professional: HubSpot + Salesforce and HubSpot + Asana. Any Professional subscription HubSpot lists for them works, and the cheapest is Smart CRM Professional at $50 per seat a month ($45 on an annual commitment), about $500 a month for 10 people. 2 need Data Hub Starter: HubSpot + Airtable and HubSpot + Notion. The other 12 work on HubSpot's free CRM.
 
 ## Which HubSpot plan each integration needs
 
@@ -19,6 +19,8 @@ Which HubSpot plan each integration needs
 | --- | --- | --- | --- | --- |
 | [HubSpot + Salesforce](https://stackcostmatrix.com/stack/hubspot-and-salesforce/) | Professional | Salesforce Professional | Native | $1,750/mo |
 | [HubSpot + Asana](https://stackcostmatrix.com/stack/hubspot-and-asana/) | Professional | Asana Starter | Native | $634.90/mo |
+| [HubSpot + Airtable](https://stackcostmatrix.com/stack/hubspot-and-airtable/) | Data Hub Starter | Airtable Free | Native | $200/mo |
+| [HubSpot + Notion](https://stackcostmatrix.com/stack/hubspot-and-notion/) | Data Hub Starter | Notion Plus | Native | $320/mo |
 | [Freshdesk + HubSpot](https://stackcostmatrix.com/stack/freshdesk-and-hubspot/) | Free CRM | Freshdesk Growth | Native | $230/mo |
 | [HubSpot + Calendly](https://stackcostmatrix.com/stack/hubspot-and-calendly/) | Free CRM | Calendly Standard | Native | $120/mo |
 | [HubSpot + ClickUp](https://stackcostmatrix.com/stack/hubspot-and-clickup/) | Free CRM | ClickUp Core | Native | $120/mo |
@@ -28,12 +30,13 @@ Which HubSpot plan each integration needs
 | [HubSpot + QuickBooks](https://stackcostmatrix.com/stack/hubspot-and-quickbooks/) | Free CRM | QuickBooks Simple Start | Native | $38/mo |
 | [HubSpot + Slack](https://stackcostmatrix.com/stack/hubspot-and-slack/) | Free CRM | Slack Free | Native | $0/mo |
 | [HubSpot + Stripe](https://stackcostmatrix.com/stack/hubspot-and-stripe/) | Free CRM | Stripe Standard | Native | $0/mo |
+| [HubSpot + Xero](https://stackcostmatrix.com/stack/hubspot-and-xero/) | Free CRM | Xero Early | Native | $27/mo |
 | [HubSpot + Zendesk](https://stackcostmatrix.com/stack/hubspot-and-zendesk/) | Free CRM | Zendesk Suite Team | Native | $690/mo |
 | [Intercom + HubSpot](https://stackcostmatrix.com/stack/intercom-and-hubspot/) | Free CRM | Intercom Essential | Native | $390/mo |
 
 Totals are both tools' required plans plus any connector fee, for 10 seats at monthly billing, from each integration's calculator. HubSpot Professional is priced as Smart CRM Professional, the cheapest Professional subscription.
 
-Image: [Summary: 2 of 13 HubSpot integrations need Professional; the cheapest Professional plan is $50 per seat a month; 11 work on the free CRM](https://stackcostmatrix.com/og/hubspot-professional-integrations.jpg)
+Image: [Summary: 2 of 16 HubSpot integrations need Professional; the cheapest Professional plan is $50 per seat a month; 2 need Data Hub Starter; 12 work on the free CRM](https://stackcostmatrix.com/og/hubspot-professional-integrations.jpg)
 
 ## The cheapest way to get HubSpot Professional
 
@@ -94,7 +97,7 @@ Checked Nov 5, 2026. Help-article quotes are copied from each article, with the 
 
 ### Which HubSpot integrations need Professional?
 
-Of the 13 HubSpot integrations on this site, 2 need a Professional subscription: HubSpot + Salesforce and HubSpot + Asana. The other 11 (Freshdesk, Calendly, ClickUp, Mailchimp, Monday.com, Pipedrive, QuickBooks, Slack, Stripe, Zendesk, Intercom) work on HubSpot's free CRM.
+Of the 16 HubSpot integrations on this site, 2 need a Professional subscription: HubSpot + Salesforce and HubSpot + Asana. 2 need Data Hub Starter: HubSpot + Airtable and HubSpot + Notion. The other 12 (Freshdesk, Calendly, ClickUp, Mailchimp, Monday.com, Pipedrive, QuickBooks, Slack, Stripe, Xero, Zendesk, Intercom) work on HubSpot's free CRM.
 
 ### What is the cheapest HubSpot Professional plan?
 

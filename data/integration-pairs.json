@@ -1107,6 +1107,31 @@
    ]
   },
   {
+   "pair": "asana-and-salesforce",
+   "url": "https://stackcostmatrix.com/stack/asana-and-salesforce/",
+   "tools": [
+    "Asana",
+    "Salesforce Sales Cloud"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "Asana": "Advanced",
+    "Salesforce Sales Cloud": "Professional"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "1-way (Salesforce → Asana)",
+   "ten_seat_monthly_cost_usd": 1554.9,
+   "verification": "Integration requirements checked against official vendor docs · Nov 12, 2026 · Prices checked · Nov 3, 2026 (Salesforce prices: Oct 17, 2026)",
+   "last_reviewed": "2026-11-12",
+   "date_modified": "2026-11-12",
+   "sources": [
+    {
+     "title": "Asana: Salesforce + Asana",
+     "url": "https://asana.com/apps/salesforce"
+    }
+   ]
+  },
+  {
    "pair": "asana-and-slack",
    "url": "https://stackcostmatrix.com/stack/asana-and-slack/",
    "tools": [
@@ -1278,6 +1303,39 @@
    ]
   },
   {
+   "pair": "hubspot-and-airtable",
+   "url": "https://stackcostmatrix.com/stack/hubspot-and-airtable/",
+   "tools": [
+    "HubSpot",
+    "Airtable"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "HubSpot": "Starter",
+    "Airtable": "Free"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "2-way",
+   "ten_seat_monthly_cost_usd": 200,
+   "verification": "Integration requirements checked against official vendor docs · Nov 12, 2026 · Prices checked · Nov 3, 2026",
+   "last_reviewed": "2026-11-12",
+   "date_modified": "2026-11-12",
+   "sources": [
+    {
+     "title": "HubSpot Marketplace: Airtable (Data Sync)",
+     "url": "https://ecosystem.hubspot.com/marketplace/apps/airtable-data-sync4"
+    },
+    {
+     "title": "HubSpot: Connect and use HubSpot data sync",
+     "url": "https://knowledge.hubspot.com/integrations/connect-and-use-hubspot-data-sync"
+    },
+    {
+     "title": "Airtable: Integrating HubSpot with Airtable",
+     "url": "https://support.airtable.com/docs/integrating-hubspot-with-airtable"
+    }
+   ]
+  },
+  {
    "pair": "hubspot-and-asana",
    "url": "https://stackcostmatrix.com/stack/hubspot-and-asana/",
    "tools": [
@@ -1415,6 +1473,35 @@
     {
      "title": "HubSpot Marketplace: monday.com Data Sync",
      "url": "https://ecosystem.hubspot.com/marketplace/listing/mondaycom-data-sync"
+    }
+   ]
+  },
+  {
+   "pair": "hubspot-and-notion",
+   "url": "https://stackcostmatrix.com/stack/hubspot-and-notion/",
+   "tools": [
+    "HubSpot",
+    "Notion"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "HubSpot": "Starter",
+    "Notion": "Plus"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "2-way",
+   "ten_seat_monthly_cost_usd": 320,
+   "verification": "Integration requirements checked against official vendor docs · Nov 12, 2026 · Prices checked · Nov 3, 2026",
+   "last_reviewed": "2026-11-12",
+   "date_modified": "2026-11-12",
+   "sources": [
+    {
+     "title": "HubSpot Marketplace: Notion (Data Sync)",
+     "url": "https://ecosystem.hubspot.com/marketplace/listing/notion-data-sync"
+    },
+    {
+     "title": "HubSpot: Connect and use HubSpot data sync",
+     "url": "https://knowledge.hubspot.com/integrations/connect-and-use-hubspot-data-sync"
     }
    ]
   },
@@ -1561,6 +1648,35 @@
    ]
   },
   {
+   "pair": "hubspot-and-xero",
+   "url": "https://stackcostmatrix.com/stack/hubspot-and-xero/",
+   "tools": [
+    "HubSpot",
+    "Xero"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "HubSpot": "Free",
+    "Xero": "Early"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "2-way",
+   "ten_seat_monthly_cost_usd": 27,
+   "verification": "Integration requirements checked against official vendor docs · Nov 12, 2026 · Prices checked · Nov 3, 2026",
+   "last_reviewed": "2026-11-12",
+   "date_modified": "2026-11-12",
+   "sources": [
+    {
+     "title": "HubSpot: Connect HubSpot and Xero (Data Sync)",
+     "url": "https://knowledge.hubspot.com/integrations/connect-hubspot-and-xero-data-sync"
+    },
+    {
+     "title": "HubSpot Marketplace: Xero",
+     "url": "https://ecosystem.hubspot.com/marketplace/listing/xero-data-sync"
+    }
+   ]
+  },
+  {
    "pair": "hubspot-and-zendesk",
    "url": "https://stackcostmatrix.com/stack/hubspot-and-zendesk/",
    "tools": [
@@ -1590,6 +1706,31 @@
    ]
   },
   {
+   "pair": "intercom-and-calendly",
+   "url": "https://stackcostmatrix.com/stack/intercom-and-calendly/",
+   "tools": [
+    "Intercom",
+    "Calendly"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "Intercom": "Essential",
+    "Calendly": "Free"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "1-way (Calendly → Intercom)",
+   "ten_seat_monthly_cost_usd": 390,
+   "verification": "Integration requirements checked against official vendor docs · Nov 12, 2026 · Prices checked · Nov 3, 2026",
+   "last_reviewed": "2026-11-12",
+   "date_modified": "2026-11-12",
+   "sources": [
+    {
+     "title": "Calendly: Calendly + Intercom",
+     "url": "https://calendly.com/help/calendly-intercom"
+    }
+   ]
+  },
+  {
    "pair": "intercom-and-hubspot",
    "url": "https://stackcostmatrix.com/stack/intercom-and-hubspot/",
    "tools": [
@@ -1615,6 +1756,60 @@
     {
      "title": "HubSpot Marketplace: Intercom",
      "url": "https://ecosystem.hubspot.com/marketplace/listing/intercom"
+    }
+   ]
+  },
+  {
+   "pair": "intercom-and-mailchimp",
+   "url": "https://stackcostmatrix.com/stack/intercom-and-mailchimp/",
+   "tools": [
+    "Intercom",
+    "Mailchimp"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "Intercom": "Essential",
+    "Mailchimp": "Free"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "2-way",
+   "ten_seat_monthly_cost_usd": 390,
+   "verification": "Integration requirements checked against official vendor docs · Nov 12, 2026 · Prices checked · Nov 3, 2026",
+   "last_reviewed": "2026-11-12",
+   "date_modified": "2026-11-12",
+   "sources": [
+    {
+     "title": "Intercom: Mailchimp Subscribe app",
+     "url": "https://www.intercom.com/help/en/articles/1829462-mailchimp-subscribe-app-capture-new-subscribers"
+    },
+    {
+     "title": "Intercom: Sync unsubscribed users with the Mailchimp app",
+     "url": "https://www.intercom.com/help/en/articles/255-sync-unsubscribed-users-with-the-mailchimp-app"
+    }
+   ]
+  },
+  {
+   "pair": "intercom-and-salesforce",
+   "url": "https://stackcostmatrix.com/stack/intercom-and-salesforce/",
+   "tools": [
+    "Intercom",
+    "Salesforce Sales Cloud"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "Intercom": "Advanced",
+    "Salesforce Sales Cloud": "Professional"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "2-way",
+   "ten_seat_monthly_cost_usd": 2240,
+   "verification": "Integration requirements checked against official vendor docs · Nov 12, 2026 · Prices checked · Nov 3, 2026 (Salesforce prices: Oct 17, 2026)",
+   "last_reviewed": "2026-11-12",
+   "date_modified": "2026-11-12",
+   "sources": [
+    {
+     "title": "Intercom: Install Salesforce integration",
+     "url": "https://www.intercom.com/help/en/articles/4497943-install-salesforce-integration"
     }
    ]
   },
@@ -1707,6 +1902,39 @@
     {
      "title": "Calendly help: Calendly + Mailchimp",
      "url": "https://calendly.com/help/calendly-mailchimp"
+    }
+   ]
+  },
+  {
+   "pair": "mailchimp-and-slack",
+   "url": "https://stackcostmatrix.com/stack/mailchimp-and-slack/",
+   "tools": [
+    "Mailchimp",
+    "Slack"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "Mailchimp": "Free",
+    "Slack": "Free"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "1-way (Mailchimp → Slack)",
+   "ten_seat_monthly_cost_usd": 0,
+   "verification": "Integration requirements checked against official vendor docs · Nov 12, 2026 · Prices checked · Nov 3, 2026",
+   "last_reviewed": "2026-11-12",
+   "date_modified": "2026-11-12",
+   "sources": [
+    {
+     "title": "Mailchimp: Slack integration",
+     "url": "https://mailchimp.com/integrations/slack/"
+    },
+    {
+     "title": "Slack developers: Mailchimp connector",
+     "url": "https://api.slack.com/automation/connectors/mailchimp"
+    },
+    {
+     "title": "Slack Help: Create a workflow in Slack",
+     "url": "https://slack.com/help/articles/17542172840595-Build-a-workflow--Create-a-workflow-in-Slack"
     }
    ]
   },
@@ -1859,6 +2087,31 @@
    ]
   },
   {
+   "pair": "pipedrive-and-asana",
+   "url": "https://stackcostmatrix.com/stack/pipedrive-and-asana/",
+   "tools": [
+    "Pipedrive",
+    "Asana"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "Pipedrive": "Lite",
+    "Asana": "Starter"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "1-way (Pipedrive → Asana)",
+   "ten_seat_monthly_cost_usd": 274.9,
+   "verification": "Integration requirements checked against official vendor docs · Nov 12, 2026 · Prices checked · Nov 3, 2026 (Pipedrive prices: from an indexed copy of its pricing page)",
+   "last_reviewed": "2026-11-12",
+   "date_modified": "2026-11-12",
+   "sources": [
+    {
+     "title": "Pipedrive: Asana integration",
+     "url": "https://support.pipedrive.com/en/article/pipedrive-integration-asana"
+    }
+   ]
+  },
+  {
    "pair": "pipedrive-and-calendly",
    "url": "https://stackcostmatrix.com/stack/pipedrive-and-calendly/",
    "tools": [
@@ -1889,6 +2142,31 @@
     {
      "title": "Calendly: API overview",
      "url": "https://calendly.com/help/calendly-api-overview"
+    }
+   ]
+  },
+  {
+   "pair": "pipedrive-and-intercom",
+   "url": "https://stackcostmatrix.com/stack/pipedrive-and-intercom/",
+   "tools": [
+    "Pipedrive",
+    "Intercom"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "Pipedrive": "Lite",
+    "Intercom": "Essential"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "2-way",
+   "ten_seat_monthly_cost_usd": 530,
+   "verification": "Integration requirements checked against official vendor docs · Nov 12, 2026 · Prices checked · Nov 3, 2026 (Pipedrive prices: from an indexed copy of its pricing page)",
+   "last_reviewed": "2026-11-12",
+   "date_modified": "2026-11-12",
+   "sources": [
+    {
+     "title": "Intercom: Pipedrive app",
+     "url": "https://www.intercom.com/help/en/articles/2535853-pipedrive-app"
     }
    ]
   },
@@ -2040,6 +2318,35 @@
    "middleware_annual_billing_usd_per_month": 9
   },
   {
+   "pair": "pipedrive-and-zendesk",
+   "url": "https://stackcostmatrix.com/stack/pipedrive-and-zendesk/",
+   "tools": [
+    "Pipedrive",
+    "Zendesk"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "Pipedrive": "Lite",
+    "Zendesk": "Suite Team"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "2-way",
+   "ten_seat_monthly_cost_usd": 830,
+   "verification": "Integration requirements checked against official vendor docs · Nov 12, 2026 · Prices checked · Nov 3, 2026 (Pipedrive prices: from an indexed copy of its pricing page)",
+   "last_reviewed": "2026-11-12",
+   "date_modified": "2026-11-12",
+   "sources": [
+    {
+     "title": "Pipedrive: Zendesk integration",
+     "url": "https://support.pipedrive.com/en/article/pipedrive-integration-zendesk"
+    },
+    {
+     "title": "Pipedrive: Zendesk FAQ",
+     "url": "https://support.pipedrive.com/en/article/zendesk-integration-faq"
+    }
+   ]
+  },
+  {
    "pair": "quickbooks-and-mailchimp",
    "url": "https://stackcostmatrix.com/stack/quickbooks-and-mailchimp/",
    "tools": [
@@ -2087,6 +2394,60 @@
     {
      "title": "Zapier: Get started with QuickBooks Online",
      "url": "https://help.zapier.com/hc/en-us/articles/8495935103885"
+    }
+   ]
+  },
+  {
+   "pair": "salesforce-and-airtable",
+   "url": "https://stackcostmatrix.com/stack/salesforce-and-airtable/",
+   "tools": [
+    "Salesforce Sales Cloud",
+    "Airtable"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "Salesforce Sales Cloud": "Professional",
+    "Airtable": "Business"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "1-way (Salesforce → Airtable)",
+   "ten_seat_monthly_cost_usd": 1790,
+   "verification": "Integration requirements checked against official vendor docs · Nov 12, 2026 · Prices checked · Nov 3, 2026 (Salesforce prices: Oct 17, 2026)",
+   "last_reviewed": "2026-11-12",
+   "date_modified": "2026-11-12",
+   "sources": [
+    {
+     "title": "Airtable: Sync integration: Salesforce",
+     "url": "https://support.airtable.com/docs/airtable-sync-integration-salesforce"
+    }
+   ]
+  },
+  {
+   "pair": "salesforce-and-calendly",
+   "url": "https://stackcostmatrix.com/stack/salesforce-and-calendly/",
+   "tools": [
+    "Salesforce Sales Cloud",
+    "Calendly"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "Salesforce Sales Cloud": "Enterprise",
+    "Calendly": "Teams"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "1-way (Calendly → Salesforce)",
+   "ten_seat_monthly_cost_usd": 1850,
+   "verification": "Integration requirements checked against official vendor docs · Nov 12, 2026 · Prices checked · Nov 3, 2026 (Salesforce prices: Oct 17, 2026)",
+   "last_reviewed": "2026-11-12",
+   "date_modified": "2026-11-12",
+   "sources": [
+    {
+     "title": "Calendly: How to integrate Calendly with Salesforce",
+     "url": "https://calendly.com/help/how-to-integrate-calendly-with-salesforce"
+    },
+    {
+     "title": "Calendly: Troubleshooting Salesforce integration",
+     "url": "https://calendly.com/help/troubleshooting-salesforce-integration"
     }
    ]
   },
@@ -2212,6 +2573,48 @@
     {
      "title": "Stripe: Installation guide",
      "url": "https://docs.stripe.com/plugins/stripe-connector-for-salesforce/installation-guide"
+    }
+   ]
+  },
+  {
+   "pair": "salesforce-and-xero",
+   "url": "https://stackcostmatrix.com/stack/salesforce-and-xero/",
+   "tools": [
+    "Salesforce Sales Cloud",
+    "Xero"
+   ],
+   "connection_type": "middleware",
+   "minimum_plans": {
+    "Salesforce Sales Cloud": "Professional",
+    "Xero": "Early"
+   },
+   "middleware_monthly_usd": 10.59,
+   "middleware_annual_billing_usd_per_month": 9,
+   "sync_direction": "1-way (trigger → action)",
+   "ten_seat_monthly_cost_usd": 1287.59,
+   "verification": "Integration requirements checked against official vendor docs · Nov 12, 2026 · Prices checked · Nov 3, 2026 (Salesforce prices: Oct 17, 2026; Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks)",
+   "last_reviewed": "2026-11-12",
+   "date_modified": "2026-11-12",
+   "sources": [
+    {
+     "title": "Xero App Store: Integrate Xero with Salesforce",
+     "url": "https://apps.xero.com/us/collection/integrate-xero-with-salesforce"
+    },
+    {
+     "title": "Make: Salesforce app",
+     "url": "https://apps.make.com/salesforce"
+    },
+    {
+     "title": "Make: Xero app",
+     "url": "https://apps.make.com/xero"
+    },
+    {
+     "title": "Make Help: Active and inactive scenarios",
+     "url": "https://help.make.com/active-and-inactive-scenarios"
+    },
+    {
+     "title": "Make Help: Schedule a scenario",
+     "url": "https://help.make.com/schedule-a-scenario"
     }
    ]
   },
@@ -2382,6 +2785,35 @@
     {
      "title": "Slack: Free plan limits",
      "url": "https://slack.com/help/articles/27204752526611-Feature-limitations-on-the-free-version-of-Slack"
+    }
+   ]
+  },
+  {
+   "pair": "stripe-and-calendly",
+   "url": "https://stackcostmatrix.com/stack/stripe-and-calendly/",
+   "tools": [
+    "Stripe",
+    "Calendly"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "Stripe": "Standard",
+    "Calendly": "Standard"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "1-way (Calendly → Stripe)",
+   "ten_seat_monthly_cost_usd": 120,
+   "verification": "Integration requirements checked against official vendor docs · Nov 12, 2026 · Prices checked · Nov 3, 2026",
+   "last_reviewed": "2026-11-12",
+   "date_modified": "2026-11-12",
+   "sources": [
+    {
+     "title": "Calendly: Calendly + Stripe",
+     "url": "https://calendly.com/help/calendly-stripe"
+    },
+    {
+     "title": "Calendly: Payments FAQs",
+     "url": "https://calendly.com/help/payments-faq"
     }
    ]
   },
@@ -2584,6 +3016,77 @@
     {
      "title": "Xero: US pricing plans",
      "url": "https://www.xero.com/us/pricing-plans/"
+    }
+   ]
+  },
+  {
+   "pair": "xero-and-slack",
+   "url": "https://stackcostmatrix.com/stack/xero-and-slack/",
+   "tools": [
+    "Xero",
+    "Slack"
+   ],
+   "connection_type": "middleware",
+   "minimum_plans": {
+    "Xero": "Early",
+    "Slack": "Free"
+   },
+   "middleware_monthly_usd": 10.59,
+   "middleware_annual_billing_usd_per_month": 9,
+   "sync_direction": "1-way (trigger → action)",
+   "ten_seat_monthly_cost_usd": 37.59,
+   "verification": "Integration requirements checked against official vendor docs · Nov 12, 2026 · Prices checked · Nov 3, 2026 (Make fee: $9 annual price Oct 17, 2026; $10.59 monthly price from third-party pricing reviews, Nov 3, 2026, as make.com blocks automated checks)",
+   "last_reviewed": "2026-11-12",
+   "date_modified": "2026-11-12",
+   "sources": [
+    {
+     "title": "Xero App Store: apps for Slack",
+     "url": "https://apps.xero.com/us/search?q=slack"
+    },
+    {
+     "title": "Make: Xero app",
+     "url": "https://apps.make.com/xero"
+    },
+    {
+     "title": "Make: Slack app",
+     "url": "https://apps.make.com/slack"
+    },
+    {
+     "title": "Make Help: Active and inactive scenarios",
+     "url": "https://help.make.com/active-and-inactive-scenarios"
+    },
+    {
+     "title": "Make Help: Schedule a scenario",
+     "url": "https://help.make.com/schedule-a-scenario"
+    }
+   ]
+  },
+  {
+   "pair": "zendesk-and-asana",
+   "url": "https://stackcostmatrix.com/stack/zendesk-and-asana/",
+   "tools": [
+    "Zendesk",
+    "Asana"
+   ],
+   "connection_type": "native",
+   "minimum_plans": {
+    "Zendesk": "Suite Team",
+    "Asana": "Starter"
+   },
+   "middleware_monthly_usd": 0,
+   "sync_direction": "2-way",
+   "ten_seat_monthly_cost_usd": 824.9,
+   "verification": "Integration requirements checked against official vendor docs · Nov 12, 2026 · Prices checked · Nov 3, 2026",
+   "last_reviewed": "2026-11-12",
+   "date_modified": "2026-11-12",
+   "sources": [
+    {
+     "title": "Asana: Zendesk + Asana",
+     "url": "https://asana.com/apps/zendesk"
+    },
+    {
+     "title": "Asana: Asana for Zendesk",
+     "url": "https://asana.com/inside-asana/asana-for-zendesk"
     }
    ]
   },
