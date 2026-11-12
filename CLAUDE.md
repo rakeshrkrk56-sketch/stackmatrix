@@ -84,6 +84,24 @@ rediscover it. Details live in `scripts/README.md`. Update the "State" section a
   change the property. Writing needs `GSC_ALLOW_DESTRUCTIVE=true`, which also switches on the delete tools. Don't
   set it unless the owner asks.
 
+## What Search Console showed (export of Nov 12, 2026: Oct 17 to Nov 10)
+- No figures are kept here: this file is public. For the next comparison ask the owner for a Performance export
+  with the date range "Last 3 months"; its Chart sheet lists every day, so the trend can be read from it.
+- Indexing is not the problem. 98 of 101 sitemap pages had impressions. The three without: `/stack/asana-and-slack/`
+  and `/stack/salesforce-and-zendesk/` (live since Oct 19) and `/pipedrive-integrations-cost/` (new on Nov 3).
+- Ranking is the limit. The average position sits around page 6 and did not move in three weeks, so clicks are
+  negligible. Nearly nine in ten impressions come from "<tool> <tool> integration" searches, where the vendors'
+  own pages hold page 1. Titles and headings already match those searches: more on-page work won't change this.
+  The domain's age (first seen Oct 18) and the lack of links will.
+- Where the site already sits on pages 2 to 4: pairs with little competition (Xero + ActiveCampaign, Intercom +
+  Stripe, Zendesk + Stripe, ActiveCampaign + Stripe, Stripe + Mailchimp, Slack + Calendly, ActiveCampaign +
+  Calendly, monday.com + Slack), the Salesforce hub and the CRM guide. Question-style cost searches and a few API
+  pages reach page 1, with very few searches behind them.
+- Impressions from page 6 and deeper are mostly not people (rank-checking tools page that deep). Judge progress by
+  position and clicks, not by the impression count.
+- Of the seven pairs without setup steps, ActiveCampaign + Stripe and ClickUp + Slack are the closest to page 1:
+  ask for those two help texts first.
+
 ## Design (since Nov 11, 2026)
 - Idea: a printed fare chart. White paper, navy ink, Barlow type, thin rules. The homepage opens with a chart of
   every pair's 10-seat cost.
@@ -102,8 +120,8 @@ rediscover it. Details live in `scripts/README.md`. Update the "State" section a
 - Seven native pairs have no setup steps because their help centres can't be read: activecampaign-and-pipedrive,
   activecampaign-and-stripe, clickup-and-slack, clickup-and-zendesk, hubspot-and-clickup, hubspot-and-monday,
   monday-and-zendesk. The owner can paste the help text.
-- Owner tasks: GitHub repo description, website and topics; real screenshots from the free pairs; the Google key
-  for Search Console access (or, failing that, a Search Console export in late November).
+- Owner tasks: GitHub repo description, website and topics; real screenshots from the free pairs; a fresh Search
+  Console export in about a month ("Last 3 months"). The Google key only if the owner wants live access later.
 - Optional, only if the owner asks: a short captioned video for the Integration Tax report.
 - A monthly price-check task is scheduled for Dec 1.
 
@@ -114,9 +132,12 @@ rediscover it. Details live in `scripts/README.md`. Update the "State" section a
   100 / 100 / 100 / 100 with CLS 0 on the homepage, a pair page and a hub.
 - Nov 12, 2026: the owner asked for Search Console access through github.com/AminForou/mcp-gsc. The repo side is
   done in PR #30 (`.mcp.json`, `scripts/gsc_mcp.sh`; tested with a throwaway key in nine saved shapes, and the real
-  server starts through the script and lists 21 tools). Waiting on the owner to create the Google service-account
-  key, add it to Search Console as a user, and save it in the Default cloud environment. Until then the server
-  shows "failed to connect": that is expected, not a bug.
+  server starts through the script and lists 21 tools). The owner then chose to skip the key ("leave it") and
+  uploaded a Performance export instead, so the connection stays inactive: the server shows "failed to connect",
+  which is expected, not a bug. The owner's steps for the key are in PR #30's description if it is wanted later.
+- Nov 12, 2026: read the owner's Search Console export; the findings are in "What Search Console showed". No site
+  change came out of it. Suggested to the owner: URL Inspection on the three pages without impressions, and
+  getting the Integration Tax report mentioned on other sites, which is the lever the data points to.
 - `robots.txt` now also keeps crawlers away from `/CLAUDE.md` and `/.mcp.json`. GitHub Pages serves every file in
   the repository, so working files that sit in the root need a Disallow line (`/scripts/` already had one).
 - Not re-audited since the redesign: the claude-seo "Visual" category (was 90). Worth one run when the owner asks
