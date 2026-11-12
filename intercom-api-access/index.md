@@ -38,7 +38,7 @@ Vendors use "webhooks" for two different features. **Developer webhooks** let an
 
 ## Which Intercom plan do the integrations here need?
 
-**Essential** (6): [Intercom + Calendly](https://stackcostmatrix.com/stack/intercom-and-calendly/), [Intercom + HubSpot](https://stackcostmatrix.com/stack/intercom-and-hubspot/), [Intercom + Mailchimp](https://stackcostmatrix.com/stack/intercom-and-mailchimp/), [Intercom + Stripe](https://stackcostmatrix.com/stack/intercom-and-stripe/), [Pipedrive + Intercom](https://stackcostmatrix.com/stack/pipedrive-and-intercom/), [Slack + Intercom](https://stackcostmatrix.com/stack/slack-and-intercom/)  
+**Essential** (7): [Intercom + ActiveCampaign](https://stackcostmatrix.com/stack/intercom-and-activecampaign/), [Intercom + Calendly](https://stackcostmatrix.com/stack/intercom-and-calendly/), [Intercom + HubSpot](https://stackcostmatrix.com/stack/intercom-and-hubspot/), [Intercom + Mailchimp](https://stackcostmatrix.com/stack/intercom-and-mailchimp/), [Intercom + Stripe](https://stackcostmatrix.com/stack/intercom-and-stripe/), [Pipedrive + Intercom](https://stackcostmatrix.com/stack/pipedrive-and-intercom/), [Slack + Intercom](https://stackcostmatrix.com/stack/slack-and-intercom/)  
 **Advanced** (1): [Intercom + Salesforce](https://stackcostmatrix.com/stack/intercom-and-salesforce/)
 
 Full costs, including the other tool's plan and any connector fee: [Intercom integration costs →](https://stackcostmatrix.com/intercom-integrations-cost/)
@@ -65,4 +65,4 @@ Webhooks are available on Essential and Advanced.
 
 ### Which Intercom plan do integrations need?
 
-In this index: Essential for 6 integrations; Advanced for 1 integration.
+In this index: Essential for 7 integrations; Advanced for 1 integration.

@@ -39,8 +39,8 @@ Vendors use "webhooks" for two different features. **Developer webhooks** let an
 
 ## Which ActiveCampaign plan do the integrations here need?
 
-**Starter** (3): [ActiveCampaign + Calendly](https://stackcostmatrix.com/stack/activecampaign-and-calendly/), [ActiveCampaign + Pipedrive](https://stackcostmatrix.com/stack/activecampaign-and-pipedrive/), [Xero + ActiveCampaign](https://stackcostmatrix.com/stack/xero-and-activecampaign/)  
-**Plus** (1): [ActiveCampaign + Stripe](https://stackcostmatrix.com/stack/activecampaign-and-stripe/)
+**Starter** (8): [ActiveCampaign + Calendly](https://stackcostmatrix.com/stack/activecampaign-and-calendly/), [ActiveCampaign + Pipedrive](https://stackcostmatrix.com/stack/activecampaign-and-pipedrive/), [Asana + ActiveCampaign](https://stackcostmatrix.com/stack/asana-and-activecampaign/), [ClickUp + ActiveCampaign](https://stackcostmatrix.com/stack/clickup-and-activecampaign/), [Freshdesk + ActiveCampaign](https://stackcostmatrix.com/stack/freshdesk-and-activecampaign/), [Intercom + ActiveCampaign](https://stackcostmatrix.com/stack/intercom-and-activecampaign/), [Monday.com + ActiveCampaign](https://stackcostmatrix.com/stack/monday-and-activecampaign/), [Xero + ActiveCampaign](https://stackcostmatrix.com/stack/xero-and-activecampaign/)  
+**Plus** (2): [ActiveCampaign + Slack](https://stackcostmatrix.com/stack/activecampaign-and-slack/), [ActiveCampaign + Stripe](https://stackcostmatrix.com/stack/activecampaign-and-stripe/)
 
 Full costs, including the other tool's plan and any connector fee: [ActiveCampaign integration costs →](https://stackcostmatrix.com/activecampaign-integrations-cost/)
 
@@ -68,4 +68,4 @@ Webhooks are available on Starter, Plus and Pro. Webhook automation action by pl
 
 ### Which ActiveCampaign plan do integrations need?
 
-In this index: Starter for 3 integrations; Plus for 1 integration.
+In this index: Starter for 8 integrations; Plus for 2 integrations.

@@ -37,9 +37,12 @@ def row_re(row):
 
 # what existing pages say, per tool: homepage URL (schema "about") and spec cells per tier
 HOME, CELLS, HAS_FREE = {}, collections.defaultdict(collections.Counter), collections.defaultdict(set)
+API_FLAG = collections.defaultdict(collections.Counter)   # (tool, tier) -> how existing pages flag that tier's API access
 for f in OLD_PAGES:
     s = read(f); d = calc_data(s)
-    for t in d["tools"]: HAS_FREE[t["slug"]].add(any(x["tier_name"] == "Free" for x in t["tiers"]))
+    for t in d["tools"]:
+        HAS_FREE[t["slug"]].add(any(x["tier_name"] == "Free" for x in t["tiers"]))
+        for x in t["tiers"]: API_FLAG[(t["slug"], x["tier_name"])][x.get("api", True)] += 1
     for blk in re.findall(r'<script type="application/ld\+json">(.*?)</script>', s, re.S):
         o = json.loads(blk)
         if o.get("@type") == "WebPage":
@@ -82,7 +85,8 @@ def tiers_for(slug, req):
         d = calc_data(read(f"stack/{TIER_SOURCE[slug]}/index.html"))
         tiers = copy.deepcopy(next(t for t in d["tools"] if t["slug"] == slug)["tiers"])
     for x in tiers:
-        if x.get("api") is None: x["api"] = True   # as pairfix does when a page has no flag for that tier
+        if x.get("api") is None:   # as pairfix does: keep the flag the tool's existing pages use (monday.com Basic has no API)
+            x["api"] = API_FLAG[(slug, x["tier_name"])].most_common(1)[0][0] if API_FLAG.get((slug, x["tier_name"])) else True
     always_free = HAS_FREE[slug] == {True}   # every existing page of this tool lists its Free tier (Airtable, HubSpot, Slack...)
     if req != "Free" and not always_free: tiers = [x for x in tiers if x["tier_name"] != "Free"]   # Calendly, Mailchimp: only when required
     if (req == "Free" or always_free) and not any(x["tier_name"] == "Free" for x in tiers): tiers.insert(0, dict(FREE))

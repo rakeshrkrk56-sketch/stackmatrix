@@ -1,6 +1,6 @@
 # StackCostMatrix
 
-> Independent index of what B2B software integrations really cost: the plan each integration needs on both tools, any connector fee (Make, Zapier), and API and webhook access by plan, for 76 integration pairs across 20 tools. Every figure links to the vendor's own pricing page or documentation, with the date it was checked. Edited by Rakesh Kumar. Data is free to reuse under CC BY 4.0.
+> Independent index of what B2B software integrations really cost: the plan each integration needs on both tools, any connector fee (Make, Zapier), and API and webhook access by plan, for 90 integration pairs across 20 tools. Every figure links to the vendor's own pricing page or documentation, with the date it was checked. Edited by Rakesh Kumar. Data is free to reuse under CC BY 4.0.
 
 Costs are for a 10-person team at monthly-billing list prices unless a page says otherwise. Exceptions (prices that come from somewhere other than the vendor's page, or annual-only rates) are flagged on each page and on the About page. Every page also has a Markdown copy at <page>/index.md.
 
@@ -18,6 +18,7 @@ Costs are for a 10-person team at monthly-billing list prices unless a page says
 - [Asana Integration Costs (2026): Plans & Hidden Fees](https://stackcostmatrix.com/asana-integrations-cost/)
 - [Calendly Integration Costs (2026): Plans & Hidden Fees](https://stackcostmatrix.com/calendly-integrations-cost/)
 - [ClickUp Integration Costs (2026): Plans & Hidden Fees](https://stackcostmatrix.com/clickup-integrations-cost/)
+- [Freshdesk Integration Costs (2026): Plans & Hidden Fees](https://stackcostmatrix.com/freshdesk-integrations-cost/)
 - [HubSpot Integration Costs (2026): API Tiers & Hidden Fees](https://stackcostmatrix.com/hubspot-integrations-cost/)
 - [Intercom Integration Costs (2026): Plans & Hidden Fees](https://stackcostmatrix.com/intercom-integrations-cost/)
 - [Mailchimp Integration Costs (2026): Plans & Hidden Fees](https://stackcostmatrix.com/mailchimp-integrations-cost/)
@@ -57,16 +58,23 @@ Costs are for a 10-person team at monthly-billing list prices unless a page says
 
 - [ActiveCampaign + Calendly](https://stackcostmatrix.com/stack/activecampaign-and-calendly/): native, needs ActiveCampaign Starter + Calendly Standard, $135/mo for 10 seats
 - [ActiveCampaign + Pipedrive](https://stackcostmatrix.com/stack/activecampaign-and-pipedrive/): native, needs ActiveCampaign Starter + Pipedrive Growth, $405/mo for 10 seats
+- [ActiveCampaign + Slack](https://stackcostmatrix.com/stack/activecampaign-and-slack/): native, needs ActiveCampaign Plus + Slack Free, $49/mo for 10 seats
 - [ActiveCampaign + Stripe](https://stackcostmatrix.com/stack/activecampaign-and-stripe/): native, needs ActiveCampaign Plus + Stripe Standard, $49/mo for 10 seats
 - [Airtable + QuickBooks Online](https://stackcostmatrix.com/stack/airtable-and-quickbooks/): middleware, needs Airtable Team + QuickBooks Online Simple Start, $288.59/mo for 10 seats
 - [Airtable + Stripe](https://stackcostmatrix.com/stack/airtable-and-stripe/): middleware, needs Airtable Team + Stripe Standard, $250.59/mo for 10 seats
+- [Asana + ActiveCampaign](https://stackcostmatrix.com/stack/asana-and-activecampaign/): middleware, needs Asana Starter + ActiveCampaign Starter, $160.49/mo for 10 seats
 - [Asana + Mailchimp](https://stackcostmatrix.com/stack/asana-and-mailchimp/): middleware, needs Asana Starter + Mailchimp Essentials, $177.89/mo for 10 seats
+- [Asana + Notion](https://stackcostmatrix.com/stack/asana-and-notion/): native, needs Asana Starter + Notion Plus, $254.9/mo for 10 seats
 - [Asana + QuickBooks Online](https://stackcostmatrix.com/stack/asana-and-quickbooks/): middleware, needs Asana Starter + QuickBooks Online Simple Start, $183.49/mo for 10 seats
 - [Asana + Salesforce Sales Cloud](https://stackcostmatrix.com/stack/asana-and-salesforce/): native, needs Asana Advanced + Salesforce Sales Cloud Professional, $1,554.9/mo for 10 seats
 - [Asana + Slack](https://stackcostmatrix.com/stack/asana-and-slack/): native, needs Asana Starter + Slack Free, $134.9/mo for 10 seats
+- [ClickUp + ActiveCampaign](https://stackcostmatrix.com/stack/clickup-and-activecampaign/): middleware, needs ClickUp Free + ActiveCampaign Starter, $25.59/mo for 10 seats
+- [ClickUp + Notion](https://stackcostmatrix.com/stack/clickup-and-notion/): native, needs ClickUp Free + Notion Plus, $120/mo for 10 seats
+- [ClickUp + Salesforce Sales Cloud](https://stackcostmatrix.com/stack/clickup-and-salesforce/): middleware, needs ClickUp Free + Salesforce Sales Cloud Professional, $1,260.59/mo for 10 seats
 - [ClickUp + Slack](https://stackcostmatrix.com/stack/clickup-and-slack/): native, needs ClickUp Free + Slack Free, $0/mo for 10 seats
 - [ClickUp + Stripe](https://stackcostmatrix.com/stack/clickup-and-stripe/): middleware, needs ClickUp Free + Stripe Standard, $10.59/mo for 10 seats
 - [ClickUp + Zendesk](https://stackcostmatrix.com/stack/clickup-and-zendesk/): native, needs ClickUp Free + Zendesk Suite Team, $690/mo for 10 seats
+- [Freshdesk + ActiveCampaign](https://stackcostmatrix.com/stack/freshdesk-and-activecampaign/): middleware, needs Freshdesk Growth + ActiveCampaign Starter, $255.59/mo for 10 seats
 - [Freshdesk + HubSpot](https://stackcostmatrix.com/stack/freshdesk-and-hubspot/): native, needs Freshdesk Growth + HubSpot Free, $230/mo for 10 seats
 - [Freshdesk + Slack](https://stackcostmatrix.com/stack/freshdesk-and-slack/): native, needs Freshdesk Growth + Slack Free, $230/mo for 10 seats
 - [HubSpot + Airtable](https://stackcostmatrix.com/stack/hubspot-and-airtable/): native, needs HubSpot Starter + Airtable Free, $200/mo for 10 seats
@@ -83,6 +91,7 @@ Costs are for a 10-person team at monthly-billing list prices unless a page says
 - [HubSpot + Stripe](https://stackcostmatrix.com/stack/hubspot-and-stripe/): native, needs HubSpot Free + Stripe Standard, $0/mo for 10 seats
 - [HubSpot + Xero](https://stackcostmatrix.com/stack/hubspot-and-xero/): native, needs HubSpot Free + Xero Early, $27/mo for 10 seats
 - [HubSpot + Zendesk](https://stackcostmatrix.com/stack/hubspot-and-zendesk/): native, needs HubSpot Free + Zendesk Suite Team, $690/mo for 10 seats
+- [Intercom + ActiveCampaign](https://stackcostmatrix.com/stack/intercom-and-activecampaign/): middleware, needs Intercom Essential + ActiveCampaign Starter, $415.59/mo for 10 seats
 - [Intercom + Calendly](https://stackcostmatrix.com/stack/intercom-and-calendly/): native, needs Intercom Essential + Calendly Free, $390/mo for 10 seats
 - [Intercom + HubSpot](https://stackcostmatrix.com/stack/intercom-and-hubspot/): native, needs Intercom Essential + HubSpot Free, $390/mo for 10 seats
 - [Intercom + Mailchimp](https://stackcostmatrix.com/stack/intercom-and-mailchimp/): native, needs Intercom Essential + Mailchimp Free, $390/mo for 10 seats
@@ -91,6 +100,8 @@ Costs are for a 10-person team at monthly-billing list prices unless a page says
 - [Mailchimp + Airtable](https://stackcostmatrix.com/stack/mailchimp-and-airtable/): middleware, needs Mailchimp Essentials + Airtable Team, $263.59/mo for 10 seats
 - [Mailchimp + Calendly](https://stackcostmatrix.com/stack/mailchimp-and-calendly/): native, needs Mailchimp Free + Calendly Standard, $120/mo for 10 seats
 - [Mailchimp + Slack](https://stackcostmatrix.com/stack/mailchimp-and-slack/): native, needs Mailchimp Free + Slack Free, $0/mo for 10 seats
+- [Monday.com + ActiveCampaign](https://stackcostmatrix.com/stack/monday-and-activecampaign/): middleware, needs Monday.com Standard + ActiveCampaign Starter, $165.59/mo for 10 seats
+- [Monday.com + Mailchimp](https://stackcostmatrix.com/stack/monday-and-mailchimp/): native, needs Monday.com Standard + Mailchimp Free, $140/mo for 10 seats
 - [Monday.com + QuickBooks Online](https://stackcostmatrix.com/stack/monday-and-quickbooks/): middleware, needs Monday.com Standard + QuickBooks Online Simple Start, $188.59/mo for 10 seats
 - [Monday.com + Slack](https://stackcostmatrix.com/stack/monday-and-slack/): native, needs Monday.com Standard + Slack Free, $140/mo for 10 seats
 - [Monday.com + Zendesk](https://stackcostmatrix.com/stack/monday-and-zendesk/): native, needs Monday.com Standard + Zendesk Suite Team, $830/mo for 10 seats
@@ -126,8 +137,12 @@ Costs are for a 10-person team at monthly-billing list prices unless a page says
 - [Stripe + Slack](https://stackcostmatrix.com/stack/stripe-and-slack/): native, needs Stripe Standard + Slack Free, $0/mo for 10 seats
 - [Stripe + Xero](https://stackcostmatrix.com/stack/stripe-and-xero/): native, needs Stripe Standard + Xero Early, $27/mo for 10 seats
 - [Xero + ActiveCampaign](https://stackcostmatrix.com/stack/xero-and-activecampaign/): middleware, needs Xero Early + ActiveCampaign Starter, $52.59/mo for 10 seats
+- [Xero + Airtable](https://stackcostmatrix.com/stack/xero-and-airtable/): middleware, needs Xero Early + Airtable Free, $37.59/mo for 10 seats
+- [Xero + Asana](https://stackcostmatrix.com/stack/xero-and-asana/): middleware, needs Xero Early + Asana Starter, $172.49/mo for 10 seats
 - [Xero + Calendly](https://stackcostmatrix.com/stack/xero-and-calendly/): middleware, needs Xero Early + Calendly Standard, $176.99/mo for 10 seats
 - [Xero + Slack](https://stackcostmatrix.com/stack/xero-and-slack/): middleware, needs Xero Early + Slack Free, $37.59/mo for 10 seats
+- [Xero + Zendesk](https://stackcostmatrix.com/stack/xero-and-zendesk/): middleware, needs Xero Early + Zendesk Suite Team, $727.59/mo for 10 seats
+- [Zendesk + Airtable](https://stackcostmatrix.com/stack/zendesk-and-airtable/): native, needs Zendesk Suite Team + Airtable Business, $1,230/mo for 10 seats
 - [Zendesk + Asana](https://stackcostmatrix.com/stack/zendesk-and-asana/): native, needs Zendesk Suite Team + Asana Starter, $824.9/mo for 10 seats
 - [Zendesk + Notion](https://stackcostmatrix.com/stack/zendesk-and-notion/): middleware, needs Zendesk Suite Team + Notion Plus, $839.99/mo for 10 seats
 - [Zendesk + Stripe](https://stackcostmatrix.com/stack/zendesk-and-stripe/): middleware, needs Zendesk Suite Team + Stripe Standard, $700.59/mo for 10 seats

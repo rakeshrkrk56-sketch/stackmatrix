@@ -39,7 +39,7 @@ Vendors use "webhooks" for two different features. **Developer webhooks** let an
 
 ## Which ClickUp plan do the integrations here need?
 
-**Free** (3): [ClickUp + Slack](https://stackcostmatrix.com/stack/clickup-and-slack/), [ClickUp + Stripe](https://stackcostmatrix.com/stack/clickup-and-stripe/), [ClickUp + Zendesk](https://stackcostmatrix.com/stack/clickup-and-zendesk/)  
+**Free** (6): [ClickUp + ActiveCampaign](https://stackcostmatrix.com/stack/clickup-and-activecampaign/), [ClickUp + Notion](https://stackcostmatrix.com/stack/clickup-and-notion/), [ClickUp + Salesforce](https://stackcostmatrix.com/stack/clickup-and-salesforce/), [ClickUp + Slack](https://stackcostmatrix.com/stack/clickup-and-slack/), [ClickUp + Stripe](https://stackcostmatrix.com/stack/clickup-and-stripe/), [ClickUp + Zendesk](https://stackcostmatrix.com/stack/clickup-and-zendesk/)  
 **Core** (1): [HubSpot + ClickUp](https://stackcostmatrix.com/stack/hubspot-and-clickup/)
 
 Full costs, including the other tool's plan and any connector fee: [ClickUp integration costs →](https://stackcostmatrix.com/clickup-integrations-cost/)

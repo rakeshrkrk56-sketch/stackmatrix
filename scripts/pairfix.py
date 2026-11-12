@@ -131,6 +131,13 @@ PAIRS.update(PAIRS22); COPY.update(COPY22)
 for _p, _c in NEW22.items():
     if _c["mw"]: MW7[_p] = tuple(_c["mw"])
 MODIFIED.update({_p: DATE22 for _p in PAIRS22})
+# 2026-11-12, later the same day: batch 2 (pairdata23), built once by newpairs23.py
+from pairdata23 import PAIRS23, COPY23, NEW23, DATE23
+for _p in PAIRS23: assert _p not in PAIRS and _p not in COPY, _p
+PAIRS.update(PAIRS23); COPY.update(COPY23)
+for _p, _c in NEW23.items():
+    if _c["mw"]: MW7[_p] = tuple(_c["mw"])
+MODIFIED.update({_p: DATE23 for _p in PAIRS23})
 FACTS16 = {("activecampaign", "Plus"): ("Yes", "Yes")}   # apidata: API and webhooks on every ActiveCampaign plan
 
 FACTS_EXTRA = {("salesforce", "Enterprise"): ("Yes", "Yes"), ("slack", "Free"): ("Yes", "Yes"),
@@ -294,6 +301,8 @@ def pair_figure(v, d, pair):
 from pairdata20 import FLOW20, VIA20
 from pairdata22 import FLOW22, VIA22
 FLOW20.update(FLOW22); VIA20.update(VIA22)
+from pairdata23 import FLOW23, VIA23
+FLOW20.update(FLOW23); VIA20.update(VIA23)
 def flow_figure(v, d, pair, sync):
     """The connection diagram under "How it works": which tool sends what to which, through what, on which plans."""
     A, B = d["tools"]; names = {A["slug"]: v["na"], B["slug"]: v["nb"]}; sync = html.unescape(sync)

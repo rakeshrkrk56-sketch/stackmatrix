@@ -40,7 +40,7 @@ Vendors use "webhooks" for two different features. **Developer webhooks** let an
 
 ## Which Mailchimp plan do the integrations here need?
 
-**Free** (6): [Intercom + Mailchimp](https://stackcostmatrix.com/stack/intercom-and-mailchimp/), [Mailchimp + Calendly](https://stackcostmatrix.com/stack/mailchimp-and-calendly/), [Mailchimp + Slack](https://stackcostmatrix.com/stack/mailchimp-and-slack/), [Pipedrive + Mailchimp](https://stackcostmatrix.com/stack/pipedrive-and-mailchimp/), [QuickBooks + Mailchimp](https://stackcostmatrix.com/stack/quickbooks-and-mailchimp/), [Stripe + Mailchimp](https://stackcostmatrix.com/stack/stripe-and-mailchimp/)  
+**Free** (7): [Intercom + Mailchimp](https://stackcostmatrix.com/stack/intercom-and-mailchimp/), [Mailchimp + Calendly](https://stackcostmatrix.com/stack/mailchimp-and-calendly/), [Mailchimp + Slack](https://stackcostmatrix.com/stack/mailchimp-and-slack/), [Monday.com + Mailchimp](https://stackcostmatrix.com/stack/monday-and-mailchimp/), [Pipedrive + Mailchimp](https://stackcostmatrix.com/stack/pipedrive-and-mailchimp/), [QuickBooks + Mailchimp](https://stackcostmatrix.com/stack/quickbooks-and-mailchimp/), [Stripe + Mailchimp](https://stackcostmatrix.com/stack/stripe-and-mailchimp/)  
 **Essentials** (2): [Asana + Mailchimp](https://stackcostmatrix.com/stack/asana-and-mailchimp/), [Mailchimp + Airtable](https://stackcostmatrix.com/stack/mailchimp-and-airtable/)  
 **Standard** (2): [HubSpot + Mailchimp](https://stackcostmatrix.com/stack/hubspot-and-mailchimp/), [Salesforce + Mailchimp](https://stackcostmatrix.com/stack/salesforce-and-mailchimp/)
 
@@ -69,4 +69,4 @@ Webhooks are available on Standard and Premium, but not on Free and Essentials. 
 
 ### Which Mailchimp plan do integrations need?
 
-In this index: Free for 6 integrations; Essentials for 2 integrations; Standard for 2 integrations.
+In this index: Free for 7 integrations; Essentials for 2 integrations; Standard for 2 integrations.

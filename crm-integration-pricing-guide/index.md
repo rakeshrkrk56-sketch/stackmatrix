@@ -69,14 +69,15 @@ All CRM integration cost guides
 | Pipedrive + Zendesk | Native | $830.00 | Nov 12, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/pipedrive-and-zendesk/) |
 | Pipedrive + Asana | Native | $274.90 | Nov 12, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/pipedrive-and-asana/) |
 | Salesforce Sales Cloud + Xero | Middleware | $1,287.59 | Nov 12, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/salesforce-and-xero/) |
+| ClickUp + Salesforce Sales Cloud | Middleware | $1,260.59 | Nov 12, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/clickup-and-salesforce/) |
 
-Chart: CRM integration costs for HubSpot, Salesforce and Pipedrive: the 14 most expensive of 36 integrations, monthly cost for 10 seats on the plans each integration needs: Intercom + Salesforce Sales Cloud $2,240.00; Salesforce Sales Cloud + Zendesk $1,940.00; Salesforce Sales Cloud + Calendly $1,850.00; Salesforce Sales Cloud + Airtable $1,790.00; HubSpot + Salesforce Sales Cloud $1,750.00; Salesforce Sales Cloud + Slack $1,737.50; Asana + Salesforce Sales Cloud $1,554.90; Pipedrive + Salesforce Sales Cloud $1,400.59; Salesforce Sales Cloud + QuickBooks Online $1,298.59; Salesforce Sales Cloud + Xero $1,287.59; Salesforce Sales Cloud + Mailchimp $1,270.00; Salesforce Sales Cloud + Stripe $1,250.00; Pipedrive + Zendesk $830.00; HubSpot + Zendesk $690.00
+Chart: CRM integration costs for HubSpot, Salesforce and Pipedrive: the 14 most expensive of 37 integrations, monthly cost for 10 seats on the plans each integration needs: Intercom + Salesforce Sales Cloud $2,240.00; Salesforce Sales Cloud + Zendesk $1,940.00; Salesforce Sales Cloud + Calendly $1,850.00; Salesforce Sales Cloud + Airtable $1,790.00; HubSpot + Salesforce Sales Cloud $1,750.00; Salesforce Sales Cloud + Slack $1,737.50; Asana + Salesforce Sales Cloud $1,554.90; Pipedrive + Salesforce Sales Cloud $1,400.59; Salesforce Sales Cloud + QuickBooks Online $1,298.59; Salesforce Sales Cloud + Xero $1,287.59; Salesforce Sales Cloud + Mailchimp $1,270.00; ClickUp + Salesforce Sales Cloud $1,260.59; Salesforce Sales Cloud + Stripe $1,250.00; Pipedrive + Zendesk $830.00
 
-The 14 most expensive of 36 integrations. Monthly cost for 10 seats, both tools plus any connector. Navy bars are native integrations; teal bars need a connector.
+The 14 most expensive of 37 integrations. Monthly cost for 10 seats, both tools plus any connector. Navy bars are native integrations; teal bars need a connector.
 
  
 
-Image: [CRM integration costs for HubSpot, Salesforce and Pipedrive summary: 36 integrations priced, from $0 to $2,240 a month for 10 seats](https://stackcostmatrix.com/og/crm-integration-pricing-guide.jpg)
+Image: [CRM integration costs for HubSpot, Salesforce and Pipedrive summary: 37 integrations priced, from $0 to $2,240 a month for 10 seats](https://stackcostmatrix.com/og/crm-integration-pricing-guide.jpg)
 
 ## Verified pricing & API documentation sources
 

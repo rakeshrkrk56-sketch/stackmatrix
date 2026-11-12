@@ -39,7 +39,9 @@ Vendors use "webhooks" for two different features. **Developer webhooks** let an
 
 ## Which Freshdesk plan do the integrations here need?
 
-**Growth** (2): [Freshdesk + HubSpot](https://stackcostmatrix.com/stack/freshdesk-and-hubspot/), [Freshdesk + Slack](https://stackcostmatrix.com/stack/freshdesk-and-slack/)
+**Growth** (3): [Freshdesk + ActiveCampaign](https://stackcostmatrix.com/stack/freshdesk-and-activecampaign/), [Freshdesk + HubSpot](https://stackcostmatrix.com/stack/freshdesk-and-hubspot/), [Freshdesk + Slack](https://stackcostmatrix.com/stack/freshdesk-and-slack/)
+
+Full costs, including the other tool's plan and any connector fee: [Freshdesk integration costs →](https://stackcostmatrix.com/freshdesk-integrations-cost/)
 
 ## Sources
 
@@ -64,4 +66,4 @@ Webhooks are available on Growth, Pro and Enterprise. Webhook automation action 
 
 ### Which Freshdesk plan do integrations need?
 
-In this index: Growth for 2 integrations.
+In this index: Growth for 3 integrations.
