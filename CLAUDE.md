@@ -39,7 +39,7 @@ rediscover it. Details live in `scripts/README.md`. Update the "State" section a
 | Editor, schema graph, share-image tags | `site16.py` |
 | Markdown copies, llms.txt | `agent17.py` |
 | Share images, icons | `og17.py`, `icons.py` |
-| One-time text edits | `polish18.py` to `polish21.py` (all idempotent; keep them in the build) |
+| One-time text edits | `polish18.py` to `polish22.py` (all idempotent; keep them in the build) |
 | Security policy (always last) | `security.py` |
 
 ## Things that went wrong before (don't repeat)
@@ -162,5 +162,10 @@ rediscover it. Details live in `scripts/README.md`. Update the "State" section a
   PR #31 and live: 26 of 26 sampled files match the repo, every new page returns 200, no console errors, no overflow.
 - `robots.txt` now also keeps crawlers away from `/CLAUDE.md` and `/.mcp.json`. GitHub Pages serves every file in
   the repository, so working files that sit in the root need a Disallow line (`/scripts/` already had one).
+- Nov 14, 2026: the owner asked for the Integration Tax report to cover all 90 pairs (AI search still quoted the old
+  counts). `research.py` no longer excludes later pairs; the report follows the index. New headline: 53 of 90 carry a
+  hidden cost, max $600. Known gap, not fixed: 14 pair pages show a lower extra cost than the report, because their
+  calculators leave out the free plan of Calendly, Mailchimp, ClickUp or Slack; the report says so in its limitations.
+  Fixing the pages would turn about 10 more cells yellow, so ask the owner first.
 - Not re-audited since the redesign: the claude-seo "Visual" category (was 90). Worth one run when the owner asks
   for scores again; the other categories were not touched by the redesign.

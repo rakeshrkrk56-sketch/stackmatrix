@@ -6,7 +6,7 @@ Costs are for a 10-person team at monthly-billing list prices unless a page says
 
 ## Research and data
 
-- [The Integration Tax 2026](https://stackcostmatrix.com/integration-tax-2026/): original research on the extra monthly cost of connecting 55 popular SaaS integrations, with method, figures and a suggested citation
+- [The Integration Tax 2026](https://stackcostmatrix.com/integration-tax-2026/): original research on the extra monthly cost of connecting 90 SaaS integrations, with method, figures and a suggested citation
 - [Open dataset (JSON)](https://stackcostmatrix.com/data/integration-pairs.json): every pair, plan price, minimum plan, connector fee and source, CC BY 4.0
 - [Which integrations need HubSpot Professional](https://stackcostmatrix.com/hubspot-professional-integrations/): the plan each HubSpot integration needs and the cheapest way to get Professional
 - [Full text for LLMs](https://stackcostmatrix.com/llms-full.txt): every pair in one table plus the key pages

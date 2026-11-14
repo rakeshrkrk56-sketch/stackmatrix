@@ -23,11 +23,9 @@ def dataset():
     D = json.load(open("data/integration-pairs.json", encoding="utf-8"))
     pairs = {p["slug"]: p for p in load_pairs()}
     rows = []
-    from pairdata13 import NEW13
-    from pairdata22 import NEW22
-    from pairdata23 import NEW23
+    # Scope: every pair in the index. Until the Nov 14, 2026 update the report covered only the 55 pairs it was
+    # published with (pairdata13, 22 and 23 were excluded); the owner asked for it to follow the index from then on.
     for slug, p in pairs.items():
-        if slug in NEW13 or slug in NEW22 or slug in NEW23: continue   # report scope: the 55 pairs indexed when it was published (Nov 3, 2026)
         d, v = p["d"], p["v"]
         st_ = p["status"]; unconf = st_.split(": ", 1)[1].split(" ")[0] if st_.startswith("partial") else None
         parts = []
@@ -36,10 +34,12 @@ def dataset():
             tname = name(t["slug"], D)
             confirmed = st_ == "verified" or (unconf is not None and not tname.startswith(unconf) and not t["name"].startswith(unconf))
             if (t["slug"], t["required"]) in RECHECK: confirmed = False
-            parts.append(dict(slug=t["slug"], name=tname, req=t["required"], floor=fn, up=up, confirmed=confirmed and st_ != "pending"))
+            parts.append(dict(slug=t["slug"], name=tname, req=t["required"], floor=fn, up=up, confirmed=confirmed and st_ != "pending",
+                              floor_listed=any(x["tier_name"] == fn for x in t["tiers"])))   # does the pair's calculator list the baseline plan?
         up = round(sum(x["up"] for x in parts), 2); mw = d["middleware"]; tax = round(up + mw, 2)
         rows.append(dict(slug=slug, label=" + ".join(x["name"] for x in parts), native=v["native"], parts=parts, up=up, mw=mw, tax=tax,
-                         total=v["N"], conn=p["conn"], status=st_, unconfirmed_up=round(sum(x["up"] for x in parts if not x["confirmed"]), 2)))
+                         total=v["N"], conn=p["conn"], status=st_, unconfirmed_up=round(sum(x["up"] for x in parts if not x["confirmed"]), 2),
+                         page_extra=round(v["UP"], 2)))   # what the pair's own page shows as its extra cost
     rows.sort(key=lambda r: (-r["tax"], r["label"]))
     return D, rows
 
@@ -108,13 +108,22 @@ def build():
     top_tool = S["by_tool"][0]
     cal = next((x for x in S["by_tool"] if x[0] == "calendly"), None)
     hs = next((x for x in S["by_tool"] if x[0] == "hubspot"), None)
+    hs_pro = next((x["up"] for x in (hs[2] if hs else []) if x["req"] == "Professional"), 0)
+    cal_plans = sorted({x["req"] for x in cal[2]}) if cal else []
+    max_why = "; ".join(f"{r['label']} needs {' and '.join(x['name'] + ' ' + x['req'] for x in r['parts'] if x['up'] > 0.005)}" for r in S["max_rows"])
+    lower = [r for r in rows if r["tax"] - r["page_extra"] > 0.01]   # pair pages that start from a paid plan the report doesn't
+    lower_tools = sorted({x["name"] for r in lower for x in r["parts"] if x["up"] > 0.005 and not x["floor_listed"]})
+    assert lower_tools and all(any(x["up"] > 0.005 and not x["floor_listed"] for x in r["parts"]) for r in lower), "a page differs from the report for another reason"
+    n_new = S["n"] - 55
     find = [
         f"<strong>Plan upgrades, not connectors, are the real cost.</strong> Forced upgrades make up {S['up_share']:.0f}% of the total integration tax, and across all {S['n']} stacks the integration tax is {S['share']:.0f}% of what they cost in total. Connector fees are small by comparison: "
         f"{', '.join(m0(x) for x in S['mw_fees'])} a month at monthly billing.",
         f"<strong>The tax is concentrated.</strong> The three most expensive integrations account for {S['top3_share']:.0f}% of all the integration tax in the index. "
-        f"{maxl} each cost {m0(S['max_tax'])} a month extra because they need a HubSpot Professional subscription: Smart CRM Professional, the cheapest one, is $50 per seat a month (<a href=\"/hubspot-professional-integrations/\" class=\"font-medium text-indigo-600 hover:underline\">compare the Professional plans</a>)." if hs else "",
-        (f"<strong>Calendly&#39;s webhook gate is the most common trigger.</strong> {cal[1]} integrations need Calendly Standard, because Calendly&#39;s webhooks require a paid plan; "
-         f"that&#39;s {m0(cal[2][0]['up'])} a month for 10 seats.") if cal else "",
+        f"{maxl} {'each cost' if len(S['max_rows']) > 1 else 'costs'} {m0(S['max_tax'])} a month extra: {max_why}."
+        + (f" The integrations that need a HubSpot Professional subscription add {m0(hs_pro)}: Smart CRM Professional, the cheapest one, is $50 per seat a month (<a href=\"/hubspot-professional-integrations/\" class=\"font-medium text-indigo-600 hover:underline\">compare the Professional plans</a>)." if hs_pro else ""),
+        (f"<strong>Calendly&#39;s paid plans are the most common trigger.</strong> {cal[1]} integrations need a paid Calendly plan ({' or '.join(cal_plans)}), "
+         f"because Calendly&#39;s webhooks, which connectors rely on, and several of its own integrations aren&#39;t on the free plan; "
+         f"that&#39;s at least {m0(min(x['up'] for x in cal[2]))} a month for 10 seats.") if cal and top_tool[0] == "calendly" else "",
         f"<strong>{S['free']} of {S['n']} integrations cost nothing extra.</strong> They work on each tool&#39;s cheapest plan with API access and need no connector, so connecting them is free on top of the plans you already pay for.",
     ]
     findings = f'{H2}Key findings</h2> ' + "".join(f"{P}{x}</p>" for x in find if x)
@@ -169,17 +178,18 @@ def build():
     unc = S["unconf_rows"]
     meth = (f'{H2}Methodology</h2> '
             f'{P}<strong>Integration tax</strong> = (each tool&#39;s minimum plan for the integration − that tool&#39;s cheapest plan with API access) + the connector fee, for a 10-seat team at monthly-billing list prices (ActiveCampaign, Pipedrive and Salesforce publish annual-billing rates only, so those rates are used). '
-            f'The report covers the {S["n"]} integrations in the index when it was published on Nov 3, 2026; pairs added since then aren&#39;t included, so the figures stay comparable. Minimum plans, connector fees and prices come from those pair calculators; every figure there links to the vendor&#39;s pricing page, help center or developer docs, with the date it was checked (Nov 3 to Nov 8, 2026).</p>'
+            f'The report covers all {S["n"]} integrations in the index on Nov 14, 2026: the 55 it was published with on Nov 3 and the {n_new} added between Nov 4 and Nov 12. Minimum plans, connector fees and prices come from the pair calculators; every figure there links to the vendor&#39;s pricing page, help center or developer docs, with the date it was checked (prices Nov 3 to Nov 8, 2026; the added pairs&#39; requirements on Nov 4 and Nov 12).</p>'
             f'{P}<strong>Baseline plans</strong> (cheapest plan with API access, 10 seats): {esc(floors)}.</p>'
             f'{P}<strong>Limitations.</strong> HubSpot Professional is modeled as Smart CRM Professional ($50 per seat a month, $45 on annual billing), the cheapest subscription that unlocks the Salesforce connector and the Asana workflow action; other Professional Hubs cost more. Make Core&#39;s $10.59 monthly price comes from third-party pricing reviews, because make.com blocks automated checks. '
             f'Salesforce&#39;s baseline includes the $25/user API add-on that Professional needs. Stripe has no plan fee, so its baseline is $0. '
             f'{len(unc)} integrations include an upgrade that rests on a plan requirement we haven&#39;t confirmed yet ({esc(", ".join(r["label"] for r in unc))}), worth {m0(sum(r["unconfirmed_up"] for r in unc))} a month in total; '
-            f'counting only confirmed requirements, {S["conf_forced"]} of {S["n"]} integrations force an upgrade instead of {S["forced"]}. Usage-based charges (Zapier tasks, Make credits, API overages) aren&#39;t included.</p>'
+            f'counting only confirmed requirements, {S["conf_forced"]} of {S["n"]} integrations force an upgrade instead of {S["forced"]}. Usage-based charges (Zapier tasks, Make credits, API overages) aren&#39;t included. '
+            f'On {len(lower)} pair pages the extra cost shown is lower than in this table: a pair&#39;s calculator starts from the cheapest plan it lists for each tool, and for {esc(", ".join(lower_tools[:-1]) + " and " + lower_tools[-1])} that is a paid plan unless the integration works on the free one, while this report always starts from the free plan.</p>'
             f'{P}<strong>Why the headline is split.</strong> Integrations that force a plan upgrade and those that only need a connector differ by an order of magnitude, so a single median across both swings between the two groups whenever one row changes. The figures are therefore reported per group: the range covers the middle half of the integrations in each group.</p>')
     cite = (f'<div class="mt-10 rounded-xl border border-indigo-200 bg-indigo-50 p-6"> <h2 class="text-lg font-bold">Use this research</h2> '
             f'<p class="mt-2 text-sm leading-relaxed text-slate-700">The data is open under <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener" {LINK}>CC BY 4.0</a>: reuse it, including commercially, with a credit and a link. '
             f'Download the full dataset: <a href="/data/integration-pairs.json" {LINK}>integration-pairs.json</a>.</p> '
-            f'<p class="mt-3 text-sm text-slate-700"><strong>Suggested citation:</strong> StackCostMatrix, &ldquo;The Integration Tax 2026: Hidden Costs of SaaS Integrations,&rdquo; November 3, 2026, {URL}</p> </div>')
+            f'<p class="mt-3 text-sm text-slate-700"><strong>Suggested citation:</strong> StackCostMatrix, &ldquo;The Integration Tax 2026: Hidden Costs of SaaS Integrations,&rdquo; November 3, 2026 (updated November 14, 2026), {URL}</p> </div>')
     # FAQ
     faqs = [
         ("What is the integration tax?", f"It's the extra monthly cost of connecting two SaaS tools: any plan upgrade an integration forces above each tool's cheapest plan with API access, plus any connector fee for a service such as Make or Zapier. Across {S['n']} popular integrations, {S['taxed']} have one."),
@@ -195,15 +205,15 @@ def build():
              'el.addEventListener("mouseleave",hide);el.addEventListener("focus",function(){show(null,el)});el.addEventListener("blur",hide);});})();</script>')
     body = (f'<section class="mx-auto max-w-4xl"> '
             f'<h1 class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">\nThe Integration Tax 2026: What Connecting SaaS Tools Really Costs\n</h1> '
-            f'<p class="mt-3 text-sm text-slate-500">StackCostMatrix · Published Nov 3, 2026 · Data checked against vendor docs Nov 3 to Nov 8, 2026 · Updated Nov 10, 2026: HubSpot Professional repriced per seat (Nov 5); ActiveCampaign + Stripe, Mailchimp + Calendly and Pipedrive + Xero corrected (Nov 8); &ldquo;Three kinds of integration cost&rdquo; added (Nov 10). See the About page changelog · Edited by <a href="/about/#editor" class="font-medium text-indigo-600 hover:underline">Rakesh Kumar</a></p> '
+            f'<p class="mt-3 text-sm text-slate-500">StackCostMatrix · Published Nov 3, 2026 · Updated Nov 14, 2026: now covers all {S["n"]} integrations in the index ({n_new} added since publication), so every figure changed; the earlier figures are in the About page changelog · Prices checked against vendor docs Nov 3 to Nov 8, 2026; the added pairs&#39; requirements Nov 4 and Nov 12 · Edited by <a href="/about/#editor" class="font-medium text-indigo-600 hover:underline">Rakesh Kumar</a></p> '
             f'{P}{lead}</p> {tiles} {figure} {findings} {share_chart} {kinds} {chart1} {chart2} {table} {meth} {cite}{faq_html} </section> {tipjs} ')
     ld = [
         {"@context": "https://schema.org", "@type": "Article", "headline": "The Integration Tax 2026: What Connecting SaaS Tools Really Costs", "description": desc,
          "author": {"@type": "Organization", "name": "StackCostMatrix", "url": f"{SITE}/"}, "publisher": {"@type": "Organization", "name": "StackCostMatrix", "url": f"{SITE}/", "logo": f"{SITE}/icon-512.png"},
-         "datePublished": "2026-11-03", "dateModified": "2026-11-10", "mainEntityOfPage": URL, "image": f"{SITE}/og/integration-tax-2026.jpg", "inLanguage": "en", "isBasedOn": {"@id": f"{SITE}/#dataset"}},
+         "datePublished": "2026-11-03", "dateModified": "2026-11-14", "mainEntityOfPage": URL, "image": f"{SITE}/og/integration-tax-2026.jpg", "inLanguage": "en", "isBasedOn": {"@id": f"{SITE}/#dataset"}},
         {"@context": "https://schema.org", "@type": "Dataset", "@id": f"{URL}#dataset", "isBasedOn": {"@id": f"{SITE}/#dataset"}, "isAccessibleForFree": True, "name": "StackCostMatrix Integration Tax 2026", "description": f"Monthly integration tax (forced plan upgrades plus connector fees) for {S['n']} B2B SaaS integrations at 10 seats, derived from vendor-verified plan requirements and prices checked 2026-11-03.",
-         "url": URL, "license": "https://creativecommons.org/licenses/by/4.0/", "creator": {"@id": f"{SITE}/#organization"}, "publisher": {"@id": f"{SITE}/#organization"}, "temporalCoverage": "2026-11-03/2026-11-08",
-         "dateModified": "2026-11-10", "keywords": ["SaaS pricing", "integration cost", "API access", "webhooks", "Zapier", "Make"],
+         "url": URL, "license": "https://creativecommons.org/licenses/by/4.0/", "creator": {"@id": f"{SITE}/#organization"}, "publisher": {"@id": f"{SITE}/#organization"}, "temporalCoverage": "2026-11-03/2026-11-12",
+         "dateModified": "2026-11-14", "keywords": ["SaaS pricing", "integration cost", "API access", "webhooks", "Zapier", "Make"],
          "distribution": [{"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": f"{SITE}/data/integration-pairs.json"}]},
         {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faqs]},
         {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": f"{SITE}/"},
@@ -220,7 +230,7 @@ def update_home_card():
     D, rows = dataset(); S = stats(rows)
     rng = f"${round(S['forced_q1']):,}–${round(S['forced_q3']):,}"
     new = (f"Original research: {S['taxed']} of {S['n']} popular integrations add a hidden monthly cost, usually {rng} a month when a plan upgrade is forced. "
-           f"It covers the {S['n']} pairs in the index when it was published; pairs added since aren&#39;t counted.")
+           f"Updated Nov 14, 2026 to cover all {S['n']} pairs in the index.")
     h = read("index.html")
     h, n = re.subn(r"Original research: \d+ of \d+ popular integrations add a hidden monthly cost[^<]*", new, h)
     assert n == 1

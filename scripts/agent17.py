@@ -104,7 +104,7 @@ def main():
          f"for {len(pairs)} integration pairs across 20 tools. Every figure links to the vendor's own pricing page or documentation, with the date it was checked. Edited by Rakesh Kumar. Data is free to reuse under CC BY 4.0.",
          "", "Costs are for a 10-person team at monthly-billing list prices unless a page says otherwise. Exceptions (prices that come from somewhere other than the vendor's page, or annual-only rates) are flagged on each page and on the About page. Every page also has a Markdown copy at <page>/index.md.",
          "", "## Research and data", "",
-         f"- [The Integration Tax 2026]({SITE}/integration-tax-2026/): original research on the extra monthly cost of connecting 55 popular SaaS integrations, with method, figures and a suggested citation",
+         f"- [The Integration Tax 2026]({SITE}/integration-tax-2026/): original research on the extra monthly cost of connecting {len(pairs)} SaaS integrations, with method, figures and a suggested citation",
          f"- [Open dataset (JSON)]({SITE}/data/integration-pairs.json): every pair, plan price, minimum plan, connector fee and source, CC BY 4.0",
          f"- [Which integrations need HubSpot Professional]({SITE}/hubspot-professional-integrations/): the plan each HubSpot integration needs and the cheapest way to get Professional",
          f"- [Full text for LLMs]({SITE}/llms-full.txt): every pair in one table plus the key pages",

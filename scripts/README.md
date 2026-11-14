@@ -11,7 +11,7 @@ Run everything **from the repo root**. Needs `python3`, plus `node` with Playwri
 2. **Never change a "checked" date unless you actually re-read that fact.** Dates are part of the site's credibility.
 3. **Never merge.** Open a pull request describing exactly what changed and why, with links to the evidence. The owner reviews and merges.
 4. **Run `bash scripts/check_all.sh` before every commit.** It must end with `ALL CHECKS PASSED`.
-5. **The Integration Tax report** (`/integration-tax-2026/`) is scoped to the 55 pairs it was published with (pairs added later are excluded in `research.py`). Regenerate it after *corrections*, not just because new pairs were added.
+5. **The Integration Tax report** (`/integration-tax-2026/`) covers every pair in the index (since Nov 14, 2026; before that, only the 55 it was published with). When new pairs change its figures, add a dated changelog entry with the old and new headline numbers (see `polish22.py`) and update the "Updated" date and `dateModified` in `research.py`.
 
 ## How the site is put together
 | Thing | Where it lives | How it's produced |
@@ -64,7 +64,7 @@ Then update `data/integration-pairs.json` (that tool's plan prices and each affe
 
 **Change which plan an integration needs:** add a new dated `pairdataN.py` with a `PAIRS` entry (`native`, `req`, `sync`, `summary`) and, if needed, `COPY` text with its sources. See `pairdata8.py` to `pairdata13.py` for examples. Then run the same commands as above.
 
-**Add new pairs (between tools the site already prices):** write a dated `pairdataN.py` like `pairdata22.py` (per pair: a template page of the same connection type that shares one tool, the plans each tool needs, summary, answer, how it works, limits, setup steps, sources, diagram labels), hook it into `pairfix.py` next to `pairdata22`, then run a copy of `newpairs22.py` (builds the pages once from their templates) and of `wire22.py` (open data, homepage cards, counts, guide rows, changelogs, READMEs), then `build_all.sh` and `check_all.sh`. `research.py` keeps the report to its original 55 pairs, so add the new round's pairs to its exclusion. Batch 2 (`pairdata23.py`, `newpairs23.py`, `wire23.py`) is the latest worked example. A tool tier no page used before gets its spec cells from another tier with the same facts in `apidata.py`; `newpairs22.py` prints each case.
+**Add new pairs (between tools the site already prices):** write a dated `pairdataN.py` like `pairdata22.py` (per pair: a template page of the same connection type that shares one tool, the plans each tool needs, summary, answer, how it works, limits, setup steps, sources, diagram labels), hook it into `pairfix.py` next to `pairdata22`, then run a copy of `newpairs22.py` (builds the pages once from their templates) and of `wire22.py` (open data, homepage cards, counts, guide rows, changelogs, READMEs), then `build_all.sh` and `check_all.sh`. `research.py` picks up new pairs by itself; log the report's changed figures (see rule 5). Batch 2 (`pairdata23.py`, `newpairs23.py`, `wire23.py`) is the latest worked example. A tool tier no page used before gets its spec cells from another tier with the same facts in `apidata.py`; `newpairs22.py` prints each case.
 
 **Read a vendor page the way the checks did:** `node scripts/docread.js <outdir> name=https://vendor.com/pricing` saves the page text to `<outdir>/name.txt` and prints plan-related sentences.
 
