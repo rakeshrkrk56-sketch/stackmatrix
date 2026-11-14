@@ -164,7 +164,7 @@ rediscover it. Details live in `scripts/README.md`. Update the "State" section a
   the repository, so working files that sit in the root need a Disallow line (`/scripts/` already had one).
 - Nov 14, 2026: the owner asked for the Integration Tax report to cover all 90 pairs (AI search still quoted the old
   counts). `research.py` no longer excludes later pairs; the report follows the index. New headline: 53 of 90 carry a
-  hidden cost, max $600. Known gap, not fixed: 14 pair pages show a lower extra cost than the report, because their
+  hidden cost, max $600. Merged as PR #32 and live (10 of 10 files match, no console errors). Known gap, not fixed: 14 pair pages show a lower extra cost than the report, because their
   calculators leave out the free plan of Calendly, Mailchimp, ClickUp or Slack; the report says so in its limitations.
   Fixing the pages would turn about 10 more cells yellow, so ask the owner first.
 - Not re-audited since the redesign: the claude-seo "Visual" category (was 90). Worth one run when the owner asks
