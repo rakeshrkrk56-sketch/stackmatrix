@@ -172,5 +172,7 @@ rediscover it. Details live in `scripts/README.md`. Update the "State" section a
   Lighthouse 100/100/100/100 on the homepage, two new pair pages and the report. New pages are as unique as the older
   ones (about 23% of 5-word runs appear on no other pair page; closest page pair shares 59%). The Make-route pages are
   the most alike: don't add many more of that kind without something specific to say on each.
+- Nov 14, 2026: the owner set up Bing Webmaster Tools; `BingSiteAuth.xml` in the root is its verification file (keep it,
+  like the `google*.html` one). Bing's Backlinks and Keyword Research reports are the free source for that data.
 - Not re-audited since the redesign: the claude-seo "Visual" category (was 90). Worth one run when the owner asks
   for scores again; the other categories were not touched by the redesign.
