@@ -164,8 +164,15 @@ rediscover it. Details live in `scripts/README.md`. Update the "State" section a
   the repository, so working files that sit in the root need a Disallow line (`/scripts/` already had one).
 - Nov 14, 2026: the owner asked for the Integration Tax report to cover all 90 pairs (AI search still quoted the old
   counts). `research.py` no longer excludes later pairs; the report follows the index. New headline: 53 of 90 carry a
-  hidden cost, max $600. Known gap, not fixed: 14 pair pages show a lower extra cost than the report, because their
+  hidden cost, max $600. Merged as PR #32 and live (10 of 10 files match, no console errors). Known gap, not fixed: 14 pair pages show a lower extra cost than the report, because their
   calculators leave out the free plan of Calendly, Mailchimp, ClickUp or Slack; the report says so in its limitations.
   Fixing the pages would turn about 10 more cells yellow, so ask the owner first.
+- Nov 14, 2026: health check after the 31 new pairs (scripted, not the claude-seo auditors, so no new category scores):
+  133 sitemap URLs all 200, self-canonical, unique titles/descriptions/H1s, schema parses, no broken links or orphans;
+  Lighthouse 100/100/100/100 on the homepage, two new pair pages and the report. New pages are as unique as the older
+  ones (about 23% of 5-word runs appear on no other pair page; closest page pair shares 59%). The Make-route pages are
+  the most alike: don't add many more of that kind without something specific to say on each.
+- Nov 14, 2026: the owner set up Bing Webmaster Tools; `BingSiteAuth.xml` in the root is its verification file (keep it,
+  like the `google*.html` one). Bing's Backlinks and Keyword Research reports are the free source for that data.
 - Not re-audited since the redesign: the claude-seo "Visual" category (was 90). Worth one run when the owner asks
   for scores again; the other categories were not touched by the redesign.
