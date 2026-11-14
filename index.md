@@ -110,7 +110,7 @@ Deep-dive cost matrices for the most-searched B2B ecosystems.
 
 [### The Integration Tax 2026
 
-Original research: 31 of 55 popular integrations add a hidden monthly cost, usually $120–$251 a month when a plan upgrade is forced. It covers the 55 pairs in the index when it was published; pairs added since aren't counted.
+Original research: 53 of 90 popular integrations add a hidden monthly cost, usually $120–$320 a month when a plan upgrade is forced. Updated Nov 14, 2026 to cover all 90 pairs in the index.
 
 Read the research →](https://stackcostmatrix.com/integration-tax-2026/) [### HubSpot integration costs
 
@@ -128,9 +128,9 @@ Read the guide →](https://stackcostmatrix.com/crm-integration-pricing-guide/)
 
 ## What does a SaaS integration cost?
 
-It depends which of three bills you mean. Connecting two tools you already pay for is often free: 24 of the 55 integrations in our 2026 report add no cost at all. When there is a cost, it's one of these.
+It depends which of three bills you mean. Connecting two tools you already pay for is often free: 37 of the 90 integrations in our 2026 report add no cost at all. When there is a cost, it's one of these.
 
-1. **A plan upgrade.** The integration only works on a higher plan of one of the tools. That's 93% of the extra cost in this index, typically $120–$251 a month for 10 seats when an upgrade is forced.
+1. **A plan upgrade.** The integration only works on a higher plan of one of the tools. That's 94% of the extra cost in this index, typically $120–$320 a month for 10 seats when an upgrade is forced.
 2. **A connector fee.** There's no native app, so you pay for a service such as Make or Zapier: $10.59–$29.99 a month at list price.
 3. **Building it yourself.** A custom integration written against both APIs. This index doesn't measure that; the report says why and quotes one outside estimate.
 
@@ -704,7 +704,7 @@ plans. Below are the hidden-cost patterns we see most often.
 
 What are hidden API tier costs?
 
-Hidden API tier costs are the extra subscription fees you pay because an integration only works on a higher plan of one of the tools. In our 2026 research, 31 of 55 popular integrations add a hidden monthly cost, and forced plan upgrades make up 93% of it: typically $120–$251 a month for a 10-person team when an upgrade is forced, against $10.59–$29.99 for a connector such as Make or Zapier. The full figures are in The Integration Tax 2026 report on this site.
+Hidden API tier costs are the extra subscription fees you pay because an integration only works on a higher plan of one of the tools. In our 2026 research, 53 of 90 popular integrations add a hidden monthly cost, and forced plan upgrades make up 94% of it: typically $120–$320 a month for a 10-person team when an upgrade is forced, against $10.59–$29.99 for a connector such as Make or Zapier. The full figures are in The Integration Tax 2026 report on this site.
 
   What is a webhook paywall?
 
@@ -740,6 +740,7 @@ Full 20-tool source index with audit timestamps: [About StackCostMatrix →](htt
 
 Recent verification activity:
 
+- **Nov 14, 2026** — The Integration Tax report now covers all 90 integrations, not only the 55 it was published with: 53 of 90 carry a hidden cost. No prices changed.
 - **Nov 12, 2026** — 14 more integrations, later the same day: ActiveCampaign with Slack, Airtable with Zendesk, Notion with Asana and ClickUp, monday.com with Mailchimp, and nine that run through Make. The index now covers 90 pairs. No prices changed.
 - **Nov 12, 2026** — 17 new integrations, each checked on the vendors' own pages: Calendly with Salesforce, Stripe and Intercom; HubSpot with Xero, Airtable and Notion; Intercom with Salesforce and Mailchimp; and nine more. The index now covers 76 pairs. No prices changed.
 - **Nov 11, 2026** — Every integration page gained a diagram of how the two tools connect: what moves, in which direction and on which plans. Hub and API page headings became questions. Connector-based integrations (Make, Zapier) gained numbered setup steps. New design: the homepage opens with a cost chart of every pair. No prices changed.

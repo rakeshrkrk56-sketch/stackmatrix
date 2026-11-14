@@ -5,7 +5,7 @@
 # After it prints BUILD OK, run: bash scripts/check_all.sh
 set -u
 cd "$(dirname "$0")/.."
-STEPS=("pairfix.py apply" hubs.py apipages.py hspro.py research.py ui13.py homefaq.py polish18.py polish19.py polish20.py polish21.py og17.py ux18.py site16.py agent17.py sitemap16.py security.py)
+STEPS=("pairfix.py apply" hubs.py apipages.py hspro.py research.py ui13.py homefaq.py polish18.py polish19.py polish20.py polish21.py polish22.py og17.py ux18.py site16.py agent17.py sitemap16.py security.py)
 run() {
   for c in "${STEPS[@]}"; do
     out=$(python3 scripts/$c 2>&1) || { echo "FAILED: $c"; echo "$out" | tail -15; return 1; }
