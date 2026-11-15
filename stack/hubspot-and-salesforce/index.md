@@ -117,6 +117,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Professional') 190 req/10 s · 625,000/day (private apps) Source: [HubSpot developers: Usage guidelines ↗](https://developers.hubspot.com/docs/developer-tooling/platform/usage-guidelines) · Verified Nov 3, 2026 | Yes  ('Professional') Web Services API add-on (modeled at $25/user) Source: [Salesforce developers: Supported editions ↗](https://developer.salesforce.com/docs/platform/api-rest/guide/intro-rest-compatible-editions.html) · Verified Nov 3, 2026 |
 | Webhook support at required tier | No  ('Professional') Only with Data Hub Professional Source: [HubSpot KB: Webhooks in workflows ↗](https://knowledge.hubspot.com/workflows/how-do-i-use-webhooks-with-hubspot-workflows) · Verified Nov 3, 2026 | No  ('Professional') Change Data Capture (Salesforce's change-event feed) isn't available on Professional, so sync runs through the REST API. Source: [Salesforce developers: Change Data Capture ↗](https://developer.salesforce.com/docs/atlas.en-us.change_data_capture.meta/change_data_capture/cdc_intro.htm) · Verified Nov 8, 2026 |
 
+API and webhook access can change with the plan you are on: see [HubSpot API access by plan](https://stackcostmatrix.com/hubspot-api-access/) and [Salesforce API access by plan](https://stackcostmatrix.com/salesforce-api-access/).
+
 [Visit HubSpot](https://stackcostmatrix.com/go/hubspot)  [Visit Salesforce Sales Cloud](https://stackcostmatrix.com/go/salesforce)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -141,23 +143,16 @@ The connector is only available on HubSpot Professional or Enterprise subscripti
 
 ## Integrations related to HubSpot + Salesforce Sales Cloud
 
-[All HubSpot integrations →](https://stackcostmatrix.com/hubspot-integrations-cost/) · [All Salesforce integrations →](https://stackcostmatrix.com/salesforce-integrations-cost/) · [HubSpot API access by plan →](https://stackcostmatrix.com/hubspot-api-access/) · [Salesforce API access by plan →](https://stackcostmatrix.com/salesforce-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 16 HubSpot integrations](https://stackcostmatrix.com/hubspot-integrations-cost/) and [all 13 Salesforce integrations](https://stackcostmatrix.com/salesforce-integrations-cost/).
 
-Part of our [HubSpot integration cost guide](https://stackcostmatrix.com/hubspot-integrations-cost/), [Salesforce integration cost guide](https://stackcostmatrix.com/salesforce-integrations-cost/) and [CRM integration hidden-costs guide](https://stackcostmatrix.com/crm-integration-pricing-guide/).
+- [HubSpot + Pipedrive](https://stackcostmatrix.com/stack/hubspot-and-pipedrive/): Middleware, $150.59 a month for 10 seats
+- [HubSpot + Mailchimp](https://stackcostmatrix.com/stack/hubspot-and-mailchimp/): Native, $20.00 a month for 10 seats
+- [Freshdesk + HubSpot](https://stackcostmatrix.com/stack/freshdesk-and-hubspot/): Native, $230.00 a month for 10 seats
+- [Pipedrive + Salesforce Sales Cloud](https://stackcostmatrix.com/stack/pipedrive-and-salesforce/): Middleware, $1,400.59 a month for 10 seats
+- [Salesforce Sales Cloud + Stripe](https://stackcostmatrix.com/stack/salesforce-and-stripe/): Native, $1,250.00 a month for 10 seats
+- [Salesforce Sales Cloud + Mailchimp](https://stackcostmatrix.com/stack/salesforce-and-mailchimp/): Native, $1,270.00 a month for 10 seats
 
-[### HubSpot + Calendly
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-calendly/)[### HubSpot + Mailchimp
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-mailchimp/)[### HubSpot + Slack
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-slack/)[### HubSpot + Stripe
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-stripe/)[### Salesforce Sales Cloud + Slack
-
-Native](https://stackcostmatrix.com/stack/salesforce-and-slack/)[### Salesforce Sales Cloud + Zendesk
-
-Native](https://stackcostmatrix.com/stack/salesforce-and-zendesk/)
+HubSpot + Salesforce Sales Cloud is also covered in the [CRM integration hidden-costs guide](https://stackcostmatrix.com/crm-integration-pricing-guide/), the guide to [which HubSpot integrations need Professional](https://stackcostmatrix.com/hubspot-professional-integrations/) and the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Last checked: Nov 3, 2026 (exceptions listed at the top)
 

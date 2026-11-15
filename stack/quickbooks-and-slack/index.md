@@ -112,6 +112,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Simple Start') Any paid plan (Zapier, Make and Mailchimp name no tier) Source: [Zapier help: QuickBooks Online API prerequisites ↗](https://help.zapier.com/hc/en-us/articles/8495935103885) · Verified Nov 3, 2026 | Yes  ('Free') Source: [Slack developers: Incoming webhooks ↗](https://api.slack.com/messaging/webhooks) · Verified Nov 3, 2026 |
 | Webhook support at required tier | Yes  ('Simple Start') App-level webhooks Source: [Intuit developers: Webhooks ↗](https://developer.intuit.com/app/developer/qbo/docs/develop/webhooks) · Verified Nov 3, 2026 | Yes  ('Free') Incoming webhooks Source: [Slack developers: Incoming webhooks ↗](https://api.slack.com/messaging/webhooks) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [QuickBooks API access by plan](https://stackcostmatrix.com/quickbooks-api-access/) and [Slack API access by plan](https://stackcostmatrix.com/slack-api-access/).
+
 [Visit QuickBooks Online](https://stackcostmatrix.com/go/quickbooks)  [Visit Slack](https://stackcostmatrix.com/go/slack)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -136,21 +138,16 @@ Zapier needs a paid QuickBooks Online subscription, admin permissions in QuickBo
 
 ## Integrations related to QuickBooks Online + Slack
 
-[All QuickBooks integrations →](https://stackcostmatrix.com/quickbooks-integrations-cost/) · [All Slack integrations →](https://stackcostmatrix.com/slack-integrations-cost/) · [QuickBooks API access by plan →](https://stackcostmatrix.com/quickbooks-api-access/) · [Slack API access by plan →](https://stackcostmatrix.com/slack-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 9 QuickBooks integrations](https://stackcostmatrix.com/quickbooks-integrations-cost/) and [all 17 Slack integrations](https://stackcostmatrix.com/slack-integrations-cost/).
 
-[### Monday.com + QuickBooks Online
+- [Asana + QuickBooks Online](https://stackcostmatrix.com/stack/asana-and-quickbooks/): Middleware, $183.49 a month for 10 seats
+- [QuickBooks Online + Mailchimp](https://stackcostmatrix.com/stack/quickbooks-and-mailchimp/): Native, $38.00 a month for 10 seats
+- [Monday.com + QuickBooks Online](https://stackcostmatrix.com/stack/monday-and-quickbooks/): Middleware, $188.59 a month for 10 seats
+- [Xero + Slack](https://stackcostmatrix.com/stack/xero-and-slack/): Middleware, $37.59 a month for 10 seats
+- [Slack + Notion](https://stackcostmatrix.com/stack/slack-and-notion/): Native, $120.00 a month for 10 seats
+- [Stripe + Slack](https://stackcostmatrix.com/stack/stripe-and-slack/): Native, $0.00 a month for 10 seats
 
-Middleware](https://stackcostmatrix.com/stack/monday-and-quickbooks/)[### Airtable + QuickBooks Online
-
-Middleware](https://stackcostmatrix.com/stack/airtable-and-quickbooks/)[### Asana + QuickBooks Online
-
-Middleware](https://stackcostmatrix.com/stack/asana-and-quickbooks/)[### Freshdesk + Slack
-
-Native](https://stackcostmatrix.com/stack/freshdesk-and-slack/)[### QuickBooks Online + Mailchimp
-
-Native](https://stackcostmatrix.com/stack/quickbooks-and-mailchimp/)[### Slack + Airtable
-
-Native](https://stackcostmatrix.com/stack/slack-and-airtable/)
+QuickBooks Online + Slack is also covered in the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Last checked: Nov 3, 2026 (exceptions listed at the top)
 

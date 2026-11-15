@@ -15,24 +15,24 @@ alternatives. Integration requirements and prices re-checked 2026-11-03, except 
 
 Complete 2026 HubSpot Integration Cost & API Tier Matrix
 
-| Integration | Type | Min. HubSpot tier | 10-seat total | Checked | Guide |
-| --- | --- | --- | --- | --- | --- |
-| HubSpot + Slack | Native | Free | $0.00 | Nov 3, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-slack/) |
-| HubSpot + Stripe | Native | Free | $0.00 | Nov 3, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-stripe/) |
-| HubSpot + Mailchimp | Native | Free | $20.00 | Nov 3, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-mailchimp/) |
-| HubSpot + Zendesk | Native | Free | $690.00 | Nov 3, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-zendesk/) |
-| HubSpot + Calendly | Native | Free | $120.00 | Nov 3, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-calendly/) |
-| HubSpot + Freshdesk | Native | Free | $230.00 | Nov 3, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/freshdesk-and-hubspot/) |
-| HubSpot + Intercom | Native | Free | $390.00 | Nov 3, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/intercom-and-hubspot/) |
-| HubSpot + Salesforce Sales Cloud | Native | Professional | $1,750.00 | Nov 3, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-salesforce/) |
-| HubSpot + Pipedrive | Middleware | Free | $150.59 | Nov 3, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-pipedrive/) |
-| HubSpot + Monday.com | Native | Free | $140.00 | Nov 3, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-monday/) |
-| HubSpot + ClickUp | Native | Free | $120.00 | Nov 3, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-clickup/) |
-| HubSpot + Asana | Native | Professional | $634.90 | Nov 3, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-asana/) |
-| HubSpot + QuickBooks Online | Native | Free | $38.00 | Nov 4, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-quickbooks/) |
-| HubSpot + Xero | Native | Free | $27.00 | Nov 12, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-xero/) |
-| HubSpot + Airtable | Native | Starter | $200.00 | Nov 12, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-airtable/) |
-| HubSpot + Notion | Native | Starter | $320.00 | Nov 12, 2026 | [True-cost calculator →](https://stackcostmatrix.com/stack/hubspot-and-notion/) |
+| Integration | Type | Min. HubSpot tier | 10-seat total | Checked |
+| --- | --- | --- | --- | --- |
+| [HubSpot + Slack](https://stackcostmatrix.com/stack/hubspot-and-slack/) | Native | Free | $0.00 | Nov 3, 2026 |
+| [HubSpot + Stripe](https://stackcostmatrix.com/stack/hubspot-and-stripe/) | Native | Free | $0.00 | Nov 3, 2026 |
+| [HubSpot + Mailchimp](https://stackcostmatrix.com/stack/hubspot-and-mailchimp/) | Native | Free | $20.00 | Nov 3, 2026 |
+| [HubSpot + Zendesk](https://stackcostmatrix.com/stack/hubspot-and-zendesk/) | Native | Free | $690.00 | Nov 3, 2026 |
+| [HubSpot + Calendly](https://stackcostmatrix.com/stack/hubspot-and-calendly/) | Native | Free | $120.00 | Nov 3, 2026 |
+| [HubSpot + Freshdesk](https://stackcostmatrix.com/stack/freshdesk-and-hubspot/) | Native | Free | $230.00 | Nov 3, 2026 |
+| [HubSpot + Intercom](https://stackcostmatrix.com/stack/intercom-and-hubspot/) | Native | Free | $390.00 | Nov 3, 2026 |
+| [HubSpot + Salesforce Sales Cloud](https://stackcostmatrix.com/stack/hubspot-and-salesforce/) | Native | Professional | $1,750.00 | Nov 3, 2026 |
+| [HubSpot + Pipedrive](https://stackcostmatrix.com/stack/hubspot-and-pipedrive/) | Middleware | Free | $150.59 | Nov 3, 2026 |
+| [HubSpot + Monday.com](https://stackcostmatrix.com/stack/hubspot-and-monday/) | Native | Free | $140.00 | Nov 3, 2026 |
+| [HubSpot + ClickUp](https://stackcostmatrix.com/stack/hubspot-and-clickup/) | Native | Free | $120.00 | Nov 3, 2026 |
+| [HubSpot + Asana](https://stackcostmatrix.com/stack/hubspot-and-asana/) | Native | Professional | $634.90 | Nov 3, 2026 |
+| [HubSpot + QuickBooks Online](https://stackcostmatrix.com/stack/hubspot-and-quickbooks/) | Native | Free | $38.00 | Nov 4, 2026 |
+| [HubSpot + Xero](https://stackcostmatrix.com/stack/hubspot-and-xero/) | Native | Free | $27.00 | Nov 12, 2026 |
+| [HubSpot + Airtable](https://stackcostmatrix.com/stack/hubspot-and-airtable/) | Native | Starter | $200.00 | Nov 12, 2026 |
+| [HubSpot + Notion](https://stackcostmatrix.com/stack/hubspot-and-notion/) | Native | Starter | $320.00 | Nov 12, 2026 |
 
 Chart: HubSpot integration costs: the 14 most expensive of 16 integrations, monthly cost for 10 seats on the plans each integration needs: HubSpot + Salesforce Sales Cloud $1,750.00; HubSpot + Zendesk $690.00; HubSpot + Asana $634.90; Intercom + HubSpot $390.00; HubSpot + Notion $320.00; Freshdesk + HubSpot $230.00; HubSpot + Airtable $200.00; HubSpot + Pipedrive $150.59; HubSpot + Monday.com $140.00; HubSpot + Calendly $120.00; HubSpot + ClickUp $120.00; HubSpot + QuickBooks Online $38.00; HubSpot + Xero $27.00; HubSpot + Mailchimp $20.00
 
@@ -41,6 +41,8 @@ The 14 most expensive of 16 integrations. Monthly cost for 10 seats, both tools 
  
 
 Image: [HubSpot integration costs summary: 16 integrations priced, from $0 to $1,750 a month for 10 seats](https://stackcostmatrix.com/og/hubspot-integrations-cost.jpg)
+
+Related research: the [CRM integration hidden-costs guide](https://stackcostmatrix.com/crm-integration-pricing-guide/), which sets HubSpot, Salesforce and Pipedrive side by side and the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs in the index.
 
 ## Which HubSpot integrations need a Professional plan?
 
@@ -60,11 +62,44 @@ Some outbound links may earn us a referral commission at no extra cost to you.
 
 ## Integration costs by tool
 
-[ActiveCampaign](https://stackcostmatrix.com/activecampaign-integrations-cost/) · [Airtable](https://stackcostmatrix.com/airtable-integrations-cost/) · [Asana](https://stackcostmatrix.com/asana-integrations-cost/) · [Calendly](https://stackcostmatrix.com/calendly-integrations-cost/) · [ClickUp](https://stackcostmatrix.com/clickup-integrations-cost/) · [Intercom](https://stackcostmatrix.com/intercom-integrations-cost/) · [Mailchimp](https://stackcostmatrix.com/mailchimp-integrations-cost/) · [Monday.com](https://stackcostmatrix.com/monday-integrations-cost/) · [Notion](https://stackcostmatrix.com/notion-integrations-cost/) · [Pipedrive](https://stackcostmatrix.com/pipedrive-integrations-cost/) · [QuickBooks](https://stackcostmatrix.com/quickbooks-integrations-cost/) · [Salesforce](https://stackcostmatrix.com/salesforce-integrations-cost/) · [Slack](https://stackcostmatrix.com/slack-integrations-cost/) · [Stripe](https://stackcostmatrix.com/stripe-integrations-cost/) · [Xero](https://stackcostmatrix.com/xero-integrations-cost/) · [Zendesk](https://stackcostmatrix.com/zendesk-integrations-cost/)
+- [ActiveCampaign integrations](https://stackcostmatrix.com/activecampaign-integrations-cost/)
+- [Airtable integrations](https://stackcostmatrix.com/airtable-integrations-cost/)
+- [Asana integrations](https://stackcostmatrix.com/asana-integrations-cost/)
+- [Calendly integrations](https://stackcostmatrix.com/calendly-integrations-cost/)
+- [ClickUp integrations](https://stackcostmatrix.com/clickup-integrations-cost/)
+- [Freshdesk integrations](https://stackcostmatrix.com/freshdesk-integrations-cost/)
+- [Intercom integrations](https://stackcostmatrix.com/intercom-integrations-cost/)
+- [Mailchimp integrations](https://stackcostmatrix.com/mailchimp-integrations-cost/)
+- [Monday.com integrations](https://stackcostmatrix.com/monday-integrations-cost/)
+- [Notion integrations](https://stackcostmatrix.com/notion-integrations-cost/)
+- [Pipedrive integrations](https://stackcostmatrix.com/pipedrive-integrations-cost/)
+- [QuickBooks integrations](https://stackcostmatrix.com/quickbooks-integrations-cost/)
+- [Salesforce integrations](https://stackcostmatrix.com/salesforce-integrations-cost/)
+- [Slack integrations](https://stackcostmatrix.com/slack-integrations-cost/)
+- [Stripe integrations](https://stackcostmatrix.com/stripe-integrations-cost/)
+- [Xero integrations](https://stackcostmatrix.com/xero-integrations-cost/)
+- [Zendesk integrations](https://stackcostmatrix.com/zendesk-integrations-cost/)
 
 ## API & webhook access by plan
 
-[ActiveCampaign](https://stackcostmatrix.com/activecampaign-api-access/) · [Airtable](https://stackcostmatrix.com/airtable-api-access/) · [Asana](https://stackcostmatrix.com/asana-api-access/) · [Calendly](https://stackcostmatrix.com/calendly-api-access/) · [ClickUp](https://stackcostmatrix.com/clickup-api-access/) · [Freshdesk](https://stackcostmatrix.com/freshdesk-api-access/) · [HubSpot](https://stackcostmatrix.com/hubspot-api-access/) · [Intercom](https://stackcostmatrix.com/intercom-api-access/) · [Mailchimp](https://stackcostmatrix.com/mailchimp-api-access/) · [Monday.com](https://stackcostmatrix.com/monday-api-access/) · [Notion](https://stackcostmatrix.com/notion-api-access/) · [Pipedrive](https://stackcostmatrix.com/pipedrive-api-access/) · [QuickBooks](https://stackcostmatrix.com/quickbooks-api-access/) · [Salesforce](https://stackcostmatrix.com/salesforce-api-access/) · [Slack](https://stackcostmatrix.com/slack-api-access/) · [Stripe](https://stackcostmatrix.com/stripe-api-access/) · [Xero](https://stackcostmatrix.com/xero-api-access/) · [Zendesk](https://stackcostmatrix.com/zendesk-api-access/)
+- [ActiveCampaign API access](https://stackcostmatrix.com/activecampaign-api-access/)
+- [Airtable API access](https://stackcostmatrix.com/airtable-api-access/)
+- [Asana API access](https://stackcostmatrix.com/asana-api-access/)
+- [Calendly API access](https://stackcostmatrix.com/calendly-api-access/)
+- [ClickUp API access](https://stackcostmatrix.com/clickup-api-access/)
+- [Freshdesk API access](https://stackcostmatrix.com/freshdesk-api-access/)
+- [HubSpot API access](https://stackcostmatrix.com/hubspot-api-access/)
+- [Intercom API access](https://stackcostmatrix.com/intercom-api-access/)
+- [Mailchimp API access](https://stackcostmatrix.com/mailchimp-api-access/)
+- [Monday.com API access](https://stackcostmatrix.com/monday-api-access/)
+- [Notion API access](https://stackcostmatrix.com/notion-api-access/)
+- [Pipedrive API access](https://stackcostmatrix.com/pipedrive-api-access/)
+- [QuickBooks API access](https://stackcostmatrix.com/quickbooks-api-access/)
+- [Salesforce API access](https://stackcostmatrix.com/salesforce-api-access/)
+- [Slack API access](https://stackcostmatrix.com/slack-api-access/)
+- [Stripe API access](https://stackcostmatrix.com/stripe-api-access/)
+- [Xero API access](https://stackcostmatrix.com/xero-api-access/)
+- [Zendesk API access](https://stackcostmatrix.com/zendesk-api-access/)
 
 ## HubSpot integration costs: frequently asked questions
 

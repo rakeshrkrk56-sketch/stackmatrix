@@ -109,6 +109,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Essential') Paid workspaces Source: [Intercom developers: Webhooks ↗](https://developers.intercom.com/docs/webhooks) · Verified Nov 3, 2026 | Yes  ('Standard') Source: [Stripe pricing ↗](https://stripe.com/pricing) · Verified Oct 17, 2026 |
 | Webhook support at required tier | Yes  ('Essential') Source: [Intercom developers: Webhooks ↗](https://developers.intercom.com/docs/webhooks) · Verified Nov 3, 2026 | Yes  ('Standard') Source: [Stripe API docs ↗](https://docs.stripe.com/api) · Verified Oct 17, 2026 |
 
+API and webhook access can change with the plan you are on: see [Intercom API access by plan](https://stackcostmatrix.com/intercom-api-access/) and [Stripe API access by plan](https://stackcostmatrix.com/stripe-api-access/).
+
 [Visit Intercom](https://stackcostmatrix.com/go/intercom)  [Visit Stripe](https://stackcostmatrix.com/go/stripe)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -133,21 +135,16 @@ Customers are matched by email address. Only live-mode Stripe data syncs, not te
 
 ## Integrations related to Intercom + Stripe
 
-[All Intercom integrations →](https://stackcostmatrix.com/intercom-integrations-cost/) · [All Stripe integrations →](https://stackcostmatrix.com/stripe-integrations-cost/) · [Intercom API access by plan →](https://stackcostmatrix.com/intercom-api-access/) · [Stripe API access by plan →](https://stackcostmatrix.com/stripe-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 8 Intercom integrations](https://stackcostmatrix.com/intercom-integrations-cost/) and [all 13 Stripe integrations](https://stackcostmatrix.com/stripe-integrations-cost/).
 
-[### ClickUp + Stripe
+- [Intercom + HubSpot](https://stackcostmatrix.com/stack/intercom-and-hubspot/): Native, $390.00 a month for 10 seats
+- [Intercom + Calendly](https://stackcostmatrix.com/stack/intercom-and-calendly/): Native, $390.00 a month for 10 seats
+- [Pipedrive + Intercom](https://stackcostmatrix.com/stack/pipedrive-and-intercom/): Native, $530.00 a month for 10 seats
+- [Zendesk + Stripe](https://stackcostmatrix.com/stack/zendesk-and-stripe/): Middleware, $700.59 a month for 10 seats
+- [Stripe + Mailchimp](https://stackcostmatrix.com/stack/stripe-and-mailchimp/): Middleware, $15.00 a month for 10 seats
+- [Stripe + Slack](https://stackcostmatrix.com/stack/stripe-and-slack/): Native, $0.00 a month for 10 seats
 
-Middleware](https://stackcostmatrix.com/stack/clickup-and-stripe/)[### HubSpot + Stripe
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-stripe/)[### Salesforce Sales Cloud + Stripe
-
-Native](https://stackcostmatrix.com/stack/salesforce-and-stripe/)[### Slack + Intercom
-
-Native](https://stackcostmatrix.com/stack/slack-and-intercom/)[### Intercom + HubSpot
-
-Native](https://stackcostmatrix.com/stack/intercom-and-hubspot/)[### Stripe + Slack
-
-Native](https://stackcostmatrix.com/stack/stripe-and-slack/)
+Intercom + Stripe is also covered in the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Last checked: Nov 3, 2026
 

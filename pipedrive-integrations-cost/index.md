@@ -13,21 +13,21 @@ This page collects the 11 Pipedrive integrations in the StackCostMatrix index: w
 
 Pipedrive Integration Costs (2026): Minimum Plans, API Access & Hidden Fees
 
-| Integration | Type | Min. Pipedrive plan | Other tool's plan | 10-seat total | Checked | Details |
-| --- | --- | --- | --- | --- | --- | --- |
-| [Pipedrive + Mailchimp](https://stackcostmatrix.com/stack/pipedrive-and-mailchimp/) | Native | Lite | Free | $140.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/pipedrive-and-mailchimp/) |
-| [HubSpot + Pipedrive](https://stackcostmatrix.com/stack/hubspot-and-pipedrive/) | Middleware Make Core $10.59/mo | Lite | Free | $150.59 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/hubspot-and-pipedrive/) |
-| [Pipedrive + Xero](https://stackcostmatrix.com/stack/pipedrive-and-xero/) | Middleware Make Core $10.59/mo | Lite | Early | $177.59 | Nov 8, 2026 | [Calculator →](https://stackcostmatrix.com/stack/pipedrive-and-xero/) |
-| [Pipedrive + QuickBooks](https://stackcostmatrix.com/stack/pipedrive-and-quickbooks/) | Native | Lite | Simple Start | $178.00 | Nov 4, 2026 | [Calculator →](https://stackcostmatrix.com/stack/pipedrive-and-quickbooks/) |
-| [Pipedrive + Calendly](https://stackcostmatrix.com/stack/pipedrive-and-calendly/) | Middleware Make Core $10.59/mo | Lite | Standard | $270.59 | Nov 3, 2026 (Pipedrive plan unconfirmed) | [Calculator →](https://stackcostmatrix.com/stack/pipedrive-and-calendly/) |
-| [Pipedrive + Asana](https://stackcostmatrix.com/stack/pipedrive-and-asana/) | Native | Lite | Starter | $274.90 | Nov 12, 2026 | [Calculator →](https://stackcostmatrix.com/stack/pipedrive-and-asana/) |
-| [Pipedrive + Slack](https://stackcostmatrix.com/stack/pipedrive-and-slack/) | Native | Growth | Free | $390.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/pipedrive-and-slack/) |
-| [ActiveCampaign + Pipedrive](https://stackcostmatrix.com/stack/activecampaign-and-pipedrive/) | Native | Growth | Starter | $405.00 | Nov 3, 2026 (Pipedrive plan unconfirmed) | [Calculator →](https://stackcostmatrix.com/stack/activecampaign-and-pipedrive/) |
-| [Pipedrive + Intercom](https://stackcostmatrix.com/stack/pipedrive-and-intercom/) | Native | Lite | Essential | $530.00 | Nov 12, 2026 | [Calculator →](https://stackcostmatrix.com/stack/pipedrive-and-intercom/) |
-| [Pipedrive + Zendesk](https://stackcostmatrix.com/stack/pipedrive-and-zendesk/) | Native | Lite | Suite Team | $830.00 | Nov 12, 2026 | [Calculator →](https://stackcostmatrix.com/stack/pipedrive-and-zendesk/) |
-| [Pipedrive + Salesforce](https://stackcostmatrix.com/stack/pipedrive-and-salesforce/) | Middleware Make Core $10.59/mo | Lite | Professional | $1,400.59 | Nov 4, 2026 | [Calculator →](https://stackcostmatrix.com/stack/pipedrive-and-salesforce/) |
+| Integration | Type | Min. Pipedrive plan | Other tool's plan | 10-seat total | Checked |
+| --- | --- | --- | --- | --- | --- |
+| [Pipedrive + Mailchimp](https://stackcostmatrix.com/stack/pipedrive-and-mailchimp/) | Native | Lite | Free | $140.00 | Nov 3, 2026 |
+| [HubSpot + Pipedrive](https://stackcostmatrix.com/stack/hubspot-and-pipedrive/) | Middleware Make Core $10.59/mo | Lite | Free | $150.59 | Nov 3, 2026 |
+| [Pipedrive + Xero](https://stackcostmatrix.com/stack/pipedrive-and-xero/) | Middleware Make Core $10.59/mo | Lite | Early | $177.59 | Nov 8, 2026 |
+| [Pipedrive + QuickBooks](https://stackcostmatrix.com/stack/pipedrive-and-quickbooks/) | Native | Lite | Simple Start | $178.00 | Nov 4, 2026 |
+| [Pipedrive + Calendly](https://stackcostmatrix.com/stack/pipedrive-and-calendly/) | Middleware Make Core $10.59/mo | Lite | Standard | $270.59 | Nov 3, 2026 (Pipedrive plan unconfirmed) |
+| [Pipedrive + Asana](https://stackcostmatrix.com/stack/pipedrive-and-asana/) | Native | Lite | Starter | $274.90 | Nov 12, 2026 |
+| [Pipedrive + Slack](https://stackcostmatrix.com/stack/pipedrive-and-slack/) | Native | Growth | Free | $390.00 | Nov 3, 2026 |
+| [ActiveCampaign + Pipedrive](https://stackcostmatrix.com/stack/activecampaign-and-pipedrive/) | Native | Growth | Starter | $405.00 | Nov 3, 2026 (Pipedrive plan unconfirmed) |
+| [Pipedrive + Intercom](https://stackcostmatrix.com/stack/pipedrive-and-intercom/) | Native | Lite | Essential | $530.00 | Nov 12, 2026 |
+| [Pipedrive + Zendesk](https://stackcostmatrix.com/stack/pipedrive-and-zendesk/) | Native | Lite | Suite Team | $830.00 | Nov 12, 2026 |
+| [Pipedrive + Salesforce](https://stackcostmatrix.com/stack/pipedrive-and-salesforce/) | Middleware Make Core $10.59/mo | Lite | Professional | $1,400.59 | Nov 4, 2026 |
 
-Totals are monthly-billing prices for 10 seats on the minimum plans, including any connector fee. Open a calculator to change team size, switch to annual billing or add usage costs.
+Totals are monthly-billing prices for 10 seats on the minimum plans, including any connector fee. Each integration's name opens its page, where a calculator lets you change team size, switch to annual billing or add usage costs.
 
 Chart: Pipedrive integrations: monthly cost for 10 seats on the plans each needs: Pipedrive + Salesforce $1,400.59; Pipedrive + Zendesk $830.00; Pipedrive + Intercom $530.00; ActiveCampaign + Pipedrive $405.00; Pipedrive + Slack $390.00; Pipedrive + Asana $274.90; Pipedrive + Calendly $270.59; Pipedrive + QuickBooks $178.00; Pipedrive + Xero $177.59; HubSpot + Pipedrive $150.59; Pipedrive + Mailchimp $140.00
 
@@ -39,7 +39,7 @@ Image: [Pipedrive integration costs summary: 11 integrations priced, from $140 t
 
 ## Which Pipedrive integrations force a plan upgrade?
 
-2 of the 11 integrations need a more expensive Pipedrive plan than Lite, Pipedrive's cheapest plan with API access. The extra Pipedrive cost at 10 seats: Pipedrive + Slack needs Growth (+$250.00/mo); ActiveCampaign + Pipedrive needs Growth (+$250.00/mo). That gap is the hidden cost: you pay it every month even if you only wanted the integration. Each pair's "Hidden Cost Trap" box shows the full breakdown.
+2 of the 11 integrations need a more expensive Pipedrive plan than Lite, Pipedrive's cheapest plan with API access. The extra Pipedrive cost at 10 seats: Pipedrive + Slack needs Growth (+$250.00/mo); ActiveCampaign + Pipedrive needs Growth (+$250.00/mo). That gap is the hidden cost: you pay it every month even if you only wanted the integration. Each pair's "Hidden Cost Trap" box shows the full breakdown. The [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/) adds these costs up across all 90 pairs in the index.
 
 ## Which Pipedrive integrations need Make or Zapier?
 
@@ -68,7 +68,23 @@ Full 20-tool source index: [About StackCostMatrix →](https://stackcostmatrix.c
 
 ## Integration costs by tool
 
-[ActiveCampaign](https://stackcostmatrix.com/activecampaign-integrations-cost/) · [Airtable](https://stackcostmatrix.com/airtable-integrations-cost/) · [Asana](https://stackcostmatrix.com/asana-integrations-cost/) · [Calendly](https://stackcostmatrix.com/calendly-integrations-cost/) · [ClickUp](https://stackcostmatrix.com/clickup-integrations-cost/) · [Freshdesk](https://stackcostmatrix.com/freshdesk-integrations-cost/) · [HubSpot](https://stackcostmatrix.com/hubspot-integrations-cost/) · [Intercom](https://stackcostmatrix.com/intercom-integrations-cost/) · [Mailchimp](https://stackcostmatrix.com/mailchimp-integrations-cost/) · [Monday.com](https://stackcostmatrix.com/monday-integrations-cost/) · [Notion](https://stackcostmatrix.com/notion-integrations-cost/) · [QuickBooks](https://stackcostmatrix.com/quickbooks-integrations-cost/) · [Salesforce](https://stackcostmatrix.com/salesforce-integrations-cost/) · [Slack](https://stackcostmatrix.com/slack-integrations-cost/) · [Stripe](https://stackcostmatrix.com/stripe-integrations-cost/) · [Xero](https://stackcostmatrix.com/xero-integrations-cost/) · [Zendesk](https://stackcostmatrix.com/zendesk-integrations-cost/)
+- [ActiveCampaign integrations](https://stackcostmatrix.com/activecampaign-integrations-cost/)
+- [Airtable integrations](https://stackcostmatrix.com/airtable-integrations-cost/)
+- [Asana integrations](https://stackcostmatrix.com/asana-integrations-cost/)
+- [Calendly integrations](https://stackcostmatrix.com/calendly-integrations-cost/)
+- [ClickUp integrations](https://stackcostmatrix.com/clickup-integrations-cost/)
+- [Freshdesk integrations](https://stackcostmatrix.com/freshdesk-integrations-cost/)
+- [HubSpot integrations](https://stackcostmatrix.com/hubspot-integrations-cost/)
+- [Intercom integrations](https://stackcostmatrix.com/intercom-integrations-cost/)
+- [Mailchimp integrations](https://stackcostmatrix.com/mailchimp-integrations-cost/)
+- [Monday.com integrations](https://stackcostmatrix.com/monday-integrations-cost/)
+- [Notion integrations](https://stackcostmatrix.com/notion-integrations-cost/)
+- [QuickBooks integrations](https://stackcostmatrix.com/quickbooks-integrations-cost/)
+- [Salesforce integrations](https://stackcostmatrix.com/salesforce-integrations-cost/)
+- [Slack integrations](https://stackcostmatrix.com/slack-integrations-cost/)
+- [Stripe integrations](https://stackcostmatrix.com/stripe-integrations-cost/)
+- [Xero integrations](https://stackcostmatrix.com/xero-integrations-cost/)
+- [Zendesk integrations](https://stackcostmatrix.com/zendesk-integrations-cost/)
 
 ## Pipedrive integration costs: frequently asked questions
 

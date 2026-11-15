@@ -113,6 +113,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Plus') Source: [Notion developers: Webhooks ↗](https://developers.notion.com/reference/webhooks) · Verified Nov 3, 2026 | Yes  ('Standard') Source: [Calendly: API overview ↗](https://calendly.com/help/calendly-api-overview) · Verified Nov 3, 2026 |
 | Webhook support at required tier | Yes  ('Plus') Source: [Notion developers: Webhooks ↗](https://developers.notion.com/reference/webhooks) · Verified Nov 3, 2026 | Yes  ('Standard') Source: [Calendly: API overview ↗](https://calendly.com/help/calendly-api-overview) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [Notion API access by plan](https://stackcostmatrix.com/notion-api-access/) and [Calendly API access by plan](https://stackcostmatrix.com/calendly-api-access/).
+
 [Visit Notion](https://stackcostmatrix.com/go/notion)  [Visit Calendly](https://stackcostmatrix.com/go/calendly)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -137,21 +139,16 @@ Embedding doesn't sync bookings. Logging meetings in a Notion database needs Mak
 
 ## Integrations related to Notion + Calendly
 
-[All Notion integrations →](https://stackcostmatrix.com/notion-integrations-cost/) · [All Calendly integrations →](https://stackcostmatrix.com/calendly-integrations-cost/) · [Notion API access by plan →](https://stackcostmatrix.com/notion-api-access/) · [Calendly API access by plan →](https://stackcostmatrix.com/calendly-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 7 Notion integrations](https://stackcostmatrix.com/notion-integrations-cost/) and [all 10 Calendly integrations](https://stackcostmatrix.com/calendly-integrations-cost/).
 
-[### HubSpot + Calendly
+- [Asana + Notion](https://stackcostmatrix.com/stack/asana-and-notion/): Native, $254.90 a month for 10 seats
+- [Slack + Notion](https://stackcostmatrix.com/stack/slack-and-notion/): Native, $120.00 a month for 10 seats
+- [ClickUp + Notion](https://stackcostmatrix.com/stack/clickup-and-notion/): Native, $120.00 a month for 10 seats
+- [Xero + Calendly](https://stackcostmatrix.com/stack/xero-and-calendly/): Middleware, $176.99 a month for 10 seats
+- [Slack + Calendly](https://stackcostmatrix.com/stack/slack-and-calendly/): Native, $0.00 a month for 10 seats
+- [Stripe + Calendly](https://stackcostmatrix.com/stack/stripe-and-calendly/): Native, $120.00 a month for 10 seats
 
-Native](https://stackcostmatrix.com/stack/hubspot-and-calendly/)[### Mailchimp + Calendly
-
-Native](https://stackcostmatrix.com/stack/mailchimp-and-calendly/)[### Slack + Calendly
-
-Native](https://stackcostmatrix.com/stack/slack-and-calendly/)[### Slack + Notion
-
-Native](https://stackcostmatrix.com/stack/slack-and-notion/)[### Notion + Stripe
-
-Middleware](https://stackcostmatrix.com/stack/notion-and-stripe/)[### Zendesk + Notion
-
-Middleware](https://stackcostmatrix.com/stack/zendesk-and-notion/)
+Notion + Calendly is also covered in the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Last checked: Nov 3, 2026 (exceptions listed at the top)
 

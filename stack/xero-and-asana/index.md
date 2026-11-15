@@ -114,6 +114,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Early') Limits set by the app's developer tier Source: [Xero developers: Pricing and tiers ↗](https://developer.xero.com/pricing) · Verified Nov 3, 2026 | Yes  ('Starter') Source: [Asana pricing ↗](https://asana.com/pricing) · Verified Oct 17, 2026 |
 | Webhook support at required tier | Yes  ('Early') No plan requirement in Xero's webhook docs Source: [Xero developers: Webhooks ↗](https://developer.xero.com/documentation/guides/webhooks/overview) · Verified Nov 3, 2026 | Yes  ('Starter') API webhooks; no plan requirement stated Source: [Asana developers: Webhooks guide ↗](https://developers.asana.com/docs/webhooks-guide) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [Xero API access by plan](https://stackcostmatrix.com/xero-api-access/) and [Asana API access by plan](https://stackcostmatrix.com/asana-api-access/).
+
 [Visit Xero](https://stackcostmatrix.com/go/xero)  [Visit Asana](https://stackcostmatrix.com/go/asana)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -138,21 +140,16 @@ Each Make scenario runs one way, and you build the task mapping yourself. Appy P
 
 ## Integrations related to Xero + Asana
 
-[All Xero integrations →](https://stackcostmatrix.com/xero-integrations-cost/) · [All Asana integrations →](https://stackcostmatrix.com/asana-integrations-cost/) · [Xero API access by plan →](https://stackcostmatrix.com/xero-api-access/) · [Asana API access by plan →](https://stackcostmatrix.com/asana-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 10 Xero integrations](https://stackcostmatrix.com/xero-integrations-cost/) and [all 10 Asana integrations](https://stackcostmatrix.com/asana-integrations-cost/).
 
-[### HubSpot + Xero
+- [Xero + Airtable](https://stackcostmatrix.com/stack/xero-and-airtable/): Middleware, $37.59 a month for 10 seats
+- [Xero + Calendly](https://stackcostmatrix.com/stack/xero-and-calendly/): Middleware, $176.99 a month for 10 seats
+- [Stripe + Xero](https://stackcostmatrix.com/stack/stripe-and-xero/): Native, $27.00 a month for 10 seats
+- [Asana + QuickBooks Online](https://stackcostmatrix.com/stack/asana-and-quickbooks/): Middleware, $183.49 a month for 10 seats
+- [HubSpot + Asana](https://stackcostmatrix.com/stack/hubspot-and-asana/): Native, $634.90 a month for 10 seats
+- [Pipedrive + Asana](https://stackcostmatrix.com/stack/pipedrive-and-asana/): Native, $274.90 a month for 10 seats
 
-Native](https://stackcostmatrix.com/stack/hubspot-and-xero/)[### Pipedrive + Xero
-
-Middleware](https://stackcostmatrix.com/stack/pipedrive-and-xero/)[### Salesforce + Xero
-
-Middleware](https://stackcostmatrix.com/stack/salesforce-and-xero/)[### Stripe + Xero
-
-Native](https://stackcostmatrix.com/stack/stripe-and-xero/)[### Xero + ActiveCampaign
-
-Middleware](https://stackcostmatrix.com/stack/xero-and-activecampaign/)[### Xero + Airtable
-
-Middleware](https://stackcostmatrix.com/stack/xero-and-airtable/)
+Xero + Asana is also covered in the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Requirements checked: Nov 12, 2026; prices: Nov 3, 2026 (exceptions listed at the top)
 

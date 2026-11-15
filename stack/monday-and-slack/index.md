@@ -108,6 +108,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Standard') 1,000 calls/day Source: [monday.com developers: Rate limits ↗](https://developer.monday.com/api-reference/docs/rate-limits) · Verified Nov 3, 2026 | Yes  ('Free') Source: [Slack developers: Incoming webhooks ↗](https://api.slack.com/messaging/webhooks) · Verified Nov 3, 2026 |
 | Webhook support at required tier | Yes  ('Standard') Source: [monday.com developers: Rate limits ↗](https://developer.monday.com/api-reference/docs/rate-limits) · Verified Nov 3, 2026 | Yes  ('Free') Incoming webhooks Source: [Slack developers: Incoming webhooks ↗](https://api.slack.com/messaging/webhooks) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [Monday.com API access by plan](https://stackcostmatrix.com/monday-api-access/) and [Slack API access by plan](https://stackcostmatrix.com/slack-api-access/).
+
 [Visit Monday.com](https://stackcostmatrix.com/go/monday)  [Visit Slack](https://stackcostmatrix.com/go/slack)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -132,21 +134,16 @@ monday.com includes integrations from its Standard plan, with 250 integration ac
 
 ## Integrations related to Monday.com + Slack
 
-[All Monday.com integrations →](https://stackcostmatrix.com/monday-integrations-cost/) · [All Slack integrations →](https://stackcostmatrix.com/slack-integrations-cost/) · [Monday.com API access by plan →](https://stackcostmatrix.com/monday-api-access/) · [Slack API access by plan →](https://stackcostmatrix.com/slack-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 6 Monday.com integrations](https://stackcostmatrix.com/monday-integrations-cost/) and [all 17 Slack integrations](https://stackcostmatrix.com/slack-integrations-cost/).
 
-[### ClickUp + Slack
+- [Monday.com + QuickBooks Online](https://stackcostmatrix.com/stack/monday-and-quickbooks/): Middleware, $188.59 a month for 10 seats
+- [Monday.com + Zendesk](https://stackcostmatrix.com/stack/monday-and-zendesk/): Native, $830.00 a month for 10 seats
+- [HubSpot + Monday.com](https://stackcostmatrix.com/stack/hubspot-and-monday/): Native, $140.00 a month for 10 seats
+- [ClickUp + Slack](https://stackcostmatrix.com/stack/clickup-and-slack/): Native, $0.00 a month for 10 seats
+- [Slack + Airtable](https://stackcostmatrix.com/stack/slack-and-airtable/): Native, $0.00 a month for 10 seats
+- [Slack + Notion](https://stackcostmatrix.com/stack/slack-and-notion/): Native, $120.00 a month for 10 seats
 
-Native](https://stackcostmatrix.com/stack/clickup-and-slack/)[### Monday.com + QuickBooks Online
-
-Middleware](https://stackcostmatrix.com/stack/monday-and-quickbooks/)[### Monday.com + Zendesk
-
-Native](https://stackcostmatrix.com/stack/monday-and-zendesk/)[### Freshdesk + Slack
-
-Native](https://stackcostmatrix.com/stack/freshdesk-and-slack/)[### QuickBooks Online + Slack
-
-Middleware](https://stackcostmatrix.com/stack/quickbooks-and-slack/)[### Slack + Airtable
-
-Native](https://stackcostmatrix.com/stack/slack-and-airtable/)
+Monday.com + Slack is also covered in the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Last checked: Nov 3, 2026
 

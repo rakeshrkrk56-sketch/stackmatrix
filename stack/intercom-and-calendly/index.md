@@ -111,6 +111,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Essential') Paid workspaces Source: [Intercom developers: Webhooks ↗](https://developers.intercom.com/docs/webhooks) · Verified Nov 3, 2026 | Yes  ('Free') Source: [Calendly: API overview ↗](https://calendly.com/help/calendly-api-overview) · Verified Nov 3, 2026 |
 | Webhook support at required tier | Yes  ('Essential') Source: [Intercom developers: Webhooks ↗](https://developers.intercom.com/docs/webhooks) · Verified Nov 3, 2026 | No  ('Free') Webhooks need a paid plan Source: [Calendly: API overview ↗](https://calendly.com/help/calendly-api-overview) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [Intercom API access by plan](https://stackcostmatrix.com/intercom-api-access/) and [Calendly API access by plan](https://stackcostmatrix.com/calendly-api-access/).
+
 [Visit Intercom](https://stackcostmatrix.com/go/intercom)  [Visit Calendly](https://stackcostmatrix.com/go/calendly)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -135,21 +137,16 @@ It shares scheduling links and shows booked meetings in the conversation; it doe
 
 ## Integrations related to Intercom + Calendly
 
-[All Intercom integrations →](https://stackcostmatrix.com/intercom-integrations-cost/) · [All Calendly integrations →](https://stackcostmatrix.com/calendly-integrations-cost/) · [Intercom API access by plan →](https://stackcostmatrix.com/intercom-api-access/) · [Calendly API access by plan →](https://stackcostmatrix.com/calendly-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 8 Intercom integrations](https://stackcostmatrix.com/intercom-integrations-cost/) and [all 10 Calendly integrations](https://stackcostmatrix.com/calendly-integrations-cost/).
 
-[### Intercom + HubSpot
+- [Intercom + Stripe](https://stackcostmatrix.com/stack/intercom-and-stripe/): Native, $390.00 a month for 10 seats
+- [Slack + Intercom](https://stackcostmatrix.com/stack/slack-and-intercom/): Native, $390.00 a month for 10 seats
+- [Intercom + HubSpot](https://stackcostmatrix.com/stack/intercom-and-hubspot/): Native, $390.00 a month for 10 seats
+- [Slack + Calendly](https://stackcostmatrix.com/stack/slack-and-calendly/): Native, $0.00 a month for 10 seats
+- [Mailchimp + Calendly](https://stackcostmatrix.com/stack/mailchimp-and-calendly/): Native, $120.00 a month for 10 seats
+- [Notion + Calendly](https://stackcostmatrix.com/stack/notion-and-calendly/): Middleware, $250.59 a month for 10 seats
 
-Native](https://stackcostmatrix.com/stack/intercom-and-hubspot/)[### Intercom + Mailchimp
-
-Native](https://stackcostmatrix.com/stack/intercom-and-mailchimp/)[### Intercom + Salesforce
-
-Native](https://stackcostmatrix.com/stack/intercom-and-salesforce/)[### Intercom + Stripe
-
-Native](https://stackcostmatrix.com/stack/intercom-and-stripe/)[### Pipedrive + Intercom
-
-Native](https://stackcostmatrix.com/stack/pipedrive-and-intercom/)[### Slack + Intercom
-
-Native](https://stackcostmatrix.com/stack/slack-and-intercom/)
+Intercom + Calendly is also covered in the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Requirements checked: Nov 12, 2026; prices: Nov 3, 2026
 

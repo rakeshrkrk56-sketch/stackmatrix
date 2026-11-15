@@ -115,6 +115,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Starter') 100 req/10 s · 250,000/day (private apps) Source: [HubSpot developers: Usage guidelines ↗](https://developers.hubspot.com/docs/developer-tooling/platform/usage-guidelines) · Verified Nov 3, 2026 | Yes  ('Free') 1,000 API calls a month Source: [Airtable: Managing API call limits ↗](https://support.airtable.com/articles/7735693959-managing-api-call-limits-in-airtable) · Verified Nov 3, 2026 |
 | Webhook support at required tier | No  ('Starter') Workflow webhooks need Data Hub Professional Source: [HubSpot KB: Webhooks in workflows ↗](https://knowledge.hubspot.com/workflows/how-do-i-use-webhooks-with-hubspot-workflows) · Verified Nov 3, 2026 | Yes  ('Free') Source: [Airtable: Create a webhook ↗](https://airtable.com/developers/web/api/create-a-webhook) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [HubSpot API access by plan](https://stackcostmatrix.com/hubspot-api-access/) and [Airtable API access by plan](https://stackcostmatrix.com/airtable-api-access/).
+
 [Visit HubSpot](https://stackcostmatrix.com/go/hubspot)  [Visit Airtable](https://stackcostmatrix.com/go/airtable)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -139,23 +141,16 @@ Activating the sync needs Data Hub Starter; this page models it at HubSpot's Sta
 
 ## Integrations related to HubSpot + Airtable
 
-[All HubSpot integrations →](https://stackcostmatrix.com/hubspot-integrations-cost/) · [All Airtable integrations →](https://stackcostmatrix.com/airtable-integrations-cost/) · [HubSpot API access by plan →](https://stackcostmatrix.com/hubspot-api-access/) · [Airtable API access by plan →](https://stackcostmatrix.com/airtable-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 16 HubSpot integrations](https://stackcostmatrix.com/hubspot-integrations-cost/) and [all 8 Airtable integrations](https://stackcostmatrix.com/airtable-integrations-cost/).
 
-Part of our [CRM integration hidden-costs guide](https://stackcostmatrix.com/crm-integration-pricing-guide/).
+- [HubSpot + Notion](https://stackcostmatrix.com/stack/hubspot-and-notion/): Native, $320.00 a month for 10 seats
+- [HubSpot + Monday.com](https://stackcostmatrix.com/stack/hubspot-and-monday/): Native, $140.00 a month for 10 seats
+- [HubSpot + QuickBooks Online](https://stackcostmatrix.com/stack/hubspot-and-quickbooks/): Native, $38.00 a month for 10 seats
+- [Salesforce Sales Cloud + Airtable](https://stackcostmatrix.com/stack/salesforce-and-airtable/): Native, $1,790.00 a month for 10 seats
+- [Airtable + Stripe](https://stackcostmatrix.com/stack/airtable-and-stripe/): Middleware, $250.59 a month for 10 seats
+- [Mailchimp + Airtable](https://stackcostmatrix.com/stack/mailchimp-and-airtable/): Middleware, $263.59 a month for 10 seats
 
-[### Freshdesk + HubSpot
-
-Native](https://stackcostmatrix.com/stack/freshdesk-and-hubspot/)[### HubSpot + Asana
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-asana/)[### HubSpot + Calendly
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-calendly/)[### HubSpot + ClickUp
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-clickup/)[### HubSpot + Mailchimp
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-mailchimp/)[### HubSpot + Monday.com
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-monday/)
+HubSpot + Airtable is also covered in the [CRM integration hidden-costs guide](https://stackcostmatrix.com/crm-integration-pricing-guide/), the guide to [which HubSpot integrations need Professional](https://stackcostmatrix.com/hubspot-professional-integrations/) and the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Requirements checked: Nov 12, 2026; prices: Nov 3, 2026
 

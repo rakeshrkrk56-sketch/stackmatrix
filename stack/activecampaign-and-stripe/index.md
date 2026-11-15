@@ -104,6 +104,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Plus') Source: [ActiveCampaign: Getting started with the API ↗](https://help.activecampaign.com/hc/en-us/articles/207317590) · Verified Nov 3, 2026 | Yes  ('Standard') Source: [Stripe pricing ↗](https://stripe.com/pricing) · Verified Oct 17, 2026 |
 | Webhook support at required tier | Yes  ('Plus') Source: [ActiveCampaign: Use webhooks ↗](https://help.activecampaign.com/hc/en-us/articles/115001403484) · Verified Nov 3, 2026 | Yes  ('Standard') Source: [Stripe API docs ↗](https://docs.stripe.com/api) · Verified Oct 17, 2026 |
 
+API and webhook access can change with the plan you are on: see [ActiveCampaign API access by plan](https://stackcostmatrix.com/activecampaign-api-access/) and [Stripe API access by plan](https://stackcostmatrix.com/stripe-api-access/).
+
 [Visit ActiveCampaign](https://stackcostmatrix.com/go/activecampaign)  [Visit Stripe](https://stackcostmatrix.com/go/stripe)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -128,21 +130,16 @@ Data flows from Stripe into ActiveCampaign, not back. The integration doesn't ad
 
 ## Integrations related to ActiveCampaign + Stripe
 
-[All ActiveCampaign integrations →](https://stackcostmatrix.com/activecampaign-integrations-cost/) · [All Stripe integrations →](https://stackcostmatrix.com/stripe-integrations-cost/) · [ActiveCampaign API access by plan →](https://stackcostmatrix.com/activecampaign-api-access/) · [Stripe API access by plan →](https://stackcostmatrix.com/stripe-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 10 ActiveCampaign integrations](https://stackcostmatrix.com/activecampaign-integrations-cost/) and [all 13 Stripe integrations](https://stackcostmatrix.com/stripe-integrations-cost/).
 
-[### ClickUp + Stripe
+- [ActiveCampaign + Pipedrive](https://stackcostmatrix.com/stack/activecampaign-and-pipedrive/): Native, $405.00 a month for 10 seats
+- [Xero + ActiveCampaign](https://stackcostmatrix.com/stack/xero-and-activecampaign/): Middleware, $52.59 a month for 10 seats
+- [Freshdesk + ActiveCampaign](https://stackcostmatrix.com/stack/freshdesk-and-activecampaign/): Middleware, $255.59 a month for 10 seats
+- [Stripe + Mailchimp](https://stackcostmatrix.com/stack/stripe-and-mailchimp/): Middleware, $15.00 a month for 10 seats
+- [Salesforce Sales Cloud + Stripe](https://stackcostmatrix.com/stack/salesforce-and-stripe/): Native, $1,250.00 a month for 10 seats
+- [Intercom + Stripe](https://stackcostmatrix.com/stack/intercom-and-stripe/): Native, $390.00 a month for 10 seats
 
-Middleware](https://stackcostmatrix.com/stack/clickup-and-stripe/)[### Stripe + QuickBooks Online
-
-Middleware](https://stackcostmatrix.com/stack/stripe-and-quickbooks/)[### Stripe + Slack
-
-Native](https://stackcostmatrix.com/stack/stripe-and-slack/)[### Stripe + Xero
-
-Native](https://stackcostmatrix.com/stack/stripe-and-xero/)[### Intercom + Stripe
-
-Native](https://stackcostmatrix.com/stack/intercom-and-stripe/)[### Xero + ActiveCampaign
-
-Middleware](https://stackcostmatrix.com/stack/xero-and-activecampaign/)
+ActiveCampaign + Stripe is also covered in the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Last checked: Nov 3, 2026
 

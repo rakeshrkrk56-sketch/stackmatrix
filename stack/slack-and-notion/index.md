@@ -109,6 +109,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Free') Source: [Slack developers: Incoming webhooks ↗](https://api.slack.com/messaging/webhooks) · Verified Nov 3, 2026 | Yes  ('Plus') Source: [Notion developers: Webhooks ↗](https://developers.notion.com/reference/webhooks) · Verified Nov 3, 2026 |
 | Webhook support at required tier | Yes  ('Free') Incoming webhooks Source: [Slack developers: Incoming webhooks ↗](https://api.slack.com/messaging/webhooks) · Verified Nov 3, 2026 | Yes  ('Plus') Source: [Notion developers: Webhooks ↗](https://developers.notion.com/reference/webhooks) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [Slack API access by plan](https://stackcostmatrix.com/slack-api-access/) and [Notion API access by plan](https://stackcostmatrix.com/notion-api-access/).
+
 [Visit Slack](https://stackcostmatrix.com/go/slack)  [Visit Notion](https://stackcostmatrix.com/go/notion)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -133,21 +135,16 @@ Notion says these Slack automation actions are only available on paid plans. Sla
 
 ## Integrations related to Slack + Notion
 
-[All Slack integrations →](https://stackcostmatrix.com/slack-integrations-cost/) · [All Notion integrations →](https://stackcostmatrix.com/notion-integrations-cost/) · [Slack API access by plan →](https://stackcostmatrix.com/slack-api-access/) · [Notion API access by plan →](https://stackcostmatrix.com/notion-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 17 Slack integrations](https://stackcostmatrix.com/slack-integrations-cost/) and [all 7 Notion integrations](https://stackcostmatrix.com/notion-integrations-cost/).
 
-[### Asana + Slack
+- [Slack + Airtable](https://stackcostmatrix.com/stack/slack-and-airtable/): Native, $0.00 a month for 10 seats
+- [QuickBooks Online + Slack](https://stackcostmatrix.com/stack/quickbooks-and-slack/): Middleware, $67.99 a month for 10 seats
+- [Xero + Slack](https://stackcostmatrix.com/stack/xero-and-slack/): Middleware, $37.59 a month for 10 seats
+- [Notion + Calendly](https://stackcostmatrix.com/stack/notion-and-calendly/): Middleware, $250.59 a month for 10 seats
+- [Zendesk + Notion](https://stackcostmatrix.com/stack/zendesk-and-notion/): Middleware, $839.99 a month for 10 seats
+- [Asana + Notion](https://stackcostmatrix.com/stack/asana-and-notion/): Native, $254.90 a month for 10 seats
 
-Native](https://stackcostmatrix.com/stack/asana-and-slack/)[### Notion + Calendly
-
-Middleware](https://stackcostmatrix.com/stack/notion-and-calendly/)[### Notion + Stripe
-
-Middleware](https://stackcostmatrix.com/stack/notion-and-stripe/)[### Slack + Zendesk
-
-Native](https://stackcostmatrix.com/stack/slack-and-zendesk/)[### Stripe + Slack
-
-Native](https://stackcostmatrix.com/stack/stripe-and-slack/)[### Zendesk + Notion
-
-Middleware](https://stackcostmatrix.com/stack/zendesk-and-notion/)
+Slack + Notion is also covered in the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Last checked: Nov 3, 2026
 

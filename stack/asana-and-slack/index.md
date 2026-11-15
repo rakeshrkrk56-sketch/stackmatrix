@@ -109,6 +109,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Starter') Source: [Asana pricing ↗](https://asana.com/pricing) · Verified Oct 17, 2026 | Yes  ('Free') Source: [Slack developers: Incoming webhooks ↗](https://api.slack.com/messaging/webhooks) · Verified Nov 3, 2026 |
 | Webhook support at required tier | Yes  ('Starter') API webhooks; no plan requirement stated Source: [Asana developers: Webhooks guide ↗](https://developers.asana.com/docs/webhooks-guide) · Verified Nov 3, 2026 | Yes  ('Free') Incoming webhooks Source: [Slack developers: Incoming webhooks ↗](https://api.slack.com/messaging/webhooks) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [Asana API access by plan](https://stackcostmatrix.com/asana-api-access/) and [Slack API access by plan](https://stackcostmatrix.com/slack-api-access/).
+
 [Visit Asana](https://stackcostmatrix.com/go/asana)  [Visit Slack](https://stackcostmatrix.com/go/slack)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -133,21 +135,16 @@ Updates flow both ways but it isn't a full sync: Slack conversations aren't mirr
 
 ## Integrations related to Asana + Slack
 
-[All Asana integrations →](https://stackcostmatrix.com/asana-integrations-cost/) · [All Slack integrations →](https://stackcostmatrix.com/slack-integrations-cost/) · [Asana API access by plan →](https://stackcostmatrix.com/asana-api-access/) · [Slack API access by plan →](https://stackcostmatrix.com/slack-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 10 Asana integrations](https://stackcostmatrix.com/asana-integrations-cost/) and [all 17 Slack integrations](https://stackcostmatrix.com/slack-integrations-cost/).
 
-[### Asana + Mailchimp
+- [Asana + Notion](https://stackcostmatrix.com/stack/asana-and-notion/): Native, $254.90 a month for 10 seats
+- [Zendesk + Asana](https://stackcostmatrix.com/stack/zendesk-and-asana/): Native, $824.90 a month for 10 seats
+- [Asana + QuickBooks Online](https://stackcostmatrix.com/stack/asana-and-quickbooks/): Middleware, $183.49 a month for 10 seats
+- [ClickUp + Slack](https://stackcostmatrix.com/stack/clickup-and-slack/): Native, $0.00 a month for 10 seats
+- [Monday.com + Slack](https://stackcostmatrix.com/stack/monday-and-slack/): Native, $140.00 a month for 10 seats
+- [Slack + Calendly](https://stackcostmatrix.com/stack/slack-and-calendly/): Native, $0.00 a month for 10 seats
 
-Middleware](https://stackcostmatrix.com/stack/asana-and-mailchimp/)[### Asana + QuickBooks Online
-
-Middleware](https://stackcostmatrix.com/stack/asana-and-quickbooks/)[### Freshdesk + Slack
-
-Native](https://stackcostmatrix.com/stack/freshdesk-and-slack/)[### Slack + Intercom
-
-Native](https://stackcostmatrix.com/stack/slack-and-intercom/)[### Slack + Notion
-
-Native](https://stackcostmatrix.com/stack/slack-and-notion/)[### Slack + Zendesk
-
-Native](https://stackcostmatrix.com/stack/slack-and-zendesk/)
+Asana + Slack is also covered in the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Last checked: Nov 3, 2026
 

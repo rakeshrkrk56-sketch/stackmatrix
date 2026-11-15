@@ -112,6 +112,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Standard') 1,000 calls/day Source: [monday.com developers: Rate limits ↗](https://developer.monday.com/api-reference/docs/rate-limits) · Verified Nov 3, 2026 | Yes  ('Simple Start') Any paid plan (Zapier, Make and Mailchimp name no tier) Source: [Zapier help: QuickBooks Online API prerequisites ↗](https://help.zapier.com/hc/en-us/articles/8495935103885) · Verified Nov 3, 2026 |
 | Webhook support at required tier | Yes  ('Standard') Source: [monday.com developers: Rate limits ↗](https://developer.monday.com/api-reference/docs/rate-limits) · Verified Nov 3, 2026 | Yes  ('Simple Start') App-level webhooks Source: [Intuit developers: Webhooks ↗](https://developer.intuit.com/app/developer/qbo/docs/develop/webhooks) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [Monday.com API access by plan](https://stackcostmatrix.com/monday-api-access/) and [QuickBooks API access by plan](https://stackcostmatrix.com/quickbooks-api-access/).
+
 [Visit Monday.com](https://stackcostmatrix.com/go/monday)  [Visit QuickBooks Online](https://stackcostmatrix.com/go/quickbooks)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -136,21 +138,16 @@ Sync is one-way per scenario. monday.com's Standard plan includes 250 integratio
 
 ## Integrations related to Monday.com + QuickBooks Online
 
-[All Monday.com integrations →](https://stackcostmatrix.com/monday-integrations-cost/) · [All QuickBooks integrations →](https://stackcostmatrix.com/quickbooks-integrations-cost/) · [Monday.com API access by plan →](https://stackcostmatrix.com/monday-api-access/) · [QuickBooks API access by plan →](https://stackcostmatrix.com/quickbooks-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 6 Monday.com integrations](https://stackcostmatrix.com/monday-integrations-cost/) and [all 9 QuickBooks integrations](https://stackcostmatrix.com/quickbooks-integrations-cost/).
 
-[### Airtable + QuickBooks Online
+- [HubSpot + Monday.com](https://stackcostmatrix.com/stack/hubspot-and-monday/): Native, $140.00 a month for 10 seats
+- [Monday.com + Slack](https://stackcostmatrix.com/stack/monday-and-slack/): Native, $140.00 a month for 10 seats
+- [Monday.com + ActiveCampaign](https://stackcostmatrix.com/stack/monday-and-activecampaign/): Middleware, $165.59 a month for 10 seats
+- [Asana + QuickBooks Online](https://stackcostmatrix.com/stack/asana-and-quickbooks/): Middleware, $183.49 a month for 10 seats
+- [Airtable + QuickBooks Online](https://stackcostmatrix.com/stack/airtable-and-quickbooks/): Middleware, $288.59 a month for 10 seats
+- [Stripe + QuickBooks Online](https://stackcostmatrix.com/stack/stripe-and-quickbooks/): Middleware, $48.59 a month for 10 seats
 
-Middleware](https://stackcostmatrix.com/stack/airtable-and-quickbooks/)[### Asana + QuickBooks Online
-
-Middleware](https://stackcostmatrix.com/stack/asana-and-quickbooks/)[### Monday.com + Slack
-
-Native](https://stackcostmatrix.com/stack/monday-and-slack/)[### Monday.com + Zendesk
-
-Native](https://stackcostmatrix.com/stack/monday-and-zendesk/)[### QuickBooks Online + Slack
-
-Middleware](https://stackcostmatrix.com/stack/quickbooks-and-slack/)[### HubSpot + Monday.com
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-monday/)
+Monday.com + QuickBooks Online is also covered in the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Last checked: Nov 3, 2026 (exceptions listed at the top)
 

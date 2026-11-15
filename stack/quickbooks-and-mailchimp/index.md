@@ -110,6 +110,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Simple Start') Any paid plan (Zapier, Make and Mailchimp name no tier) Source: [Zapier help: QuickBooks Online API prerequisites ↗](https://help.zapier.com/hc/en-us/articles/8495935103885) · Verified Nov 3, 2026 | Yes  ('Free') No plan requirement in Mailchimp's API key article Source: [Mailchimp: About API keys ↗](https://mailchimp.com/help/about-api-keys/) · Verified Nov 3, 2026 |
 | Webhook support at required tier | Yes  ('Simple Start') App-level webhooks Source: [Intuit developers: Webhooks ↗](https://developer.intuit.com/app/developer/qbo/docs/develop/webhooks) · Verified Nov 3, 2026 | No  ('Free') Webhook automation step needs Standard Source: [Mailchimp: About webhooks ↗](https://mailchimp.com/help/about-webhooks/) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [QuickBooks API access by plan](https://stackcostmatrix.com/quickbooks-api-access/) and [Mailchimp API access by plan](https://stackcostmatrix.com/mailchimp-api-access/).
+
 [Visit QuickBooks Online](https://stackcostmatrix.com/go/quickbooks)  [Visit Mailchimp](https://stackcostmatrix.com/go/mailchimp)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -134,21 +136,16 @@ Mailchimp's stated requirement is a QuickBooks Online account, with no particula
 
 ## Integrations related to QuickBooks Online + Mailchimp
 
-[All QuickBooks integrations →](https://stackcostmatrix.com/quickbooks-integrations-cost/) · [All Mailchimp integrations →](https://stackcostmatrix.com/mailchimp-integrations-cost/) · [QuickBooks API access by plan →](https://stackcostmatrix.com/quickbooks-api-access/) · [Mailchimp API access by plan →](https://stackcostmatrix.com/mailchimp-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 9 QuickBooks integrations](https://stackcostmatrix.com/quickbooks-integrations-cost/) and [all 11 Mailchimp integrations](https://stackcostmatrix.com/mailchimp-integrations-cost/).
 
-[### Asana + QuickBooks Online
+- [QuickBooks Online + Slack](https://stackcostmatrix.com/stack/quickbooks-and-slack/): Middleware, $67.99 a month for 10 seats
+- [Salesforce Sales Cloud + QuickBooks Online](https://stackcostmatrix.com/stack/salesforce-and-quickbooks/): Middleware, $1,298.59 a month for 10 seats
+- [Asana + QuickBooks Online](https://stackcostmatrix.com/stack/asana-and-quickbooks/): Middleware, $183.49 a month for 10 seats
+- [Stripe + Mailchimp](https://stackcostmatrix.com/stack/stripe-and-mailchimp/): Middleware, $15.00 a month for 10 seats
+- [Mailchimp + Airtable](https://stackcostmatrix.com/stack/mailchimp-and-airtable/): Middleware, $263.59 a month for 10 seats
+- [HubSpot + Mailchimp](https://stackcostmatrix.com/stack/hubspot-and-mailchimp/): Native, $20.00 a month for 10 seats
 
-Middleware](https://stackcostmatrix.com/stack/asana-and-quickbooks/)[### HubSpot + Mailchimp
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-mailchimp/)[### Monday.com + QuickBooks Online
-
-Middleware](https://stackcostmatrix.com/stack/monday-and-quickbooks/)[### Airtable + QuickBooks Online
-
-Middleware](https://stackcostmatrix.com/stack/airtable-and-quickbooks/)[### QuickBooks Online + Slack
-
-Middleware](https://stackcostmatrix.com/stack/quickbooks-and-slack/)[### Stripe + QuickBooks Online
-
-Middleware](https://stackcostmatrix.com/stack/stripe-and-quickbooks/)
+QuickBooks Online + Mailchimp is also covered in the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Last checked: Nov 3, 2026 (exceptions listed at the top)
 

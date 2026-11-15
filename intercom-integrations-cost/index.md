@@ -13,18 +13,18 @@ This page collects the 8 Intercom integrations in the StackCostMatrix index: whi
 
 Intercom Integration Costs (2026): Minimum Plans, API Access & Hidden Fees
 
-| Integration | Type | Min. Intercom plan | Other tool's plan | 10-seat total | Checked | Details |
-| --- | --- | --- | --- | --- | --- | --- |
-| [Intercom + Calendly](https://stackcostmatrix.com/stack/intercom-and-calendly/) | Native | Essential | Free | $390.00 | Nov 12, 2026 | [Calculator →](https://stackcostmatrix.com/stack/intercom-and-calendly/) |
-| [Intercom + HubSpot](https://stackcostmatrix.com/stack/intercom-and-hubspot/) | Native | Essential | Free | $390.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/intercom-and-hubspot/) |
-| [Intercom + Mailchimp](https://stackcostmatrix.com/stack/intercom-and-mailchimp/) | Native | Essential | Free | $390.00 | Nov 12, 2026 | [Calculator →](https://stackcostmatrix.com/stack/intercom-and-mailchimp/) |
-| [Slack + Intercom](https://stackcostmatrix.com/stack/slack-and-intercom/) | Native | Essential | Free | $390.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/slack-and-intercom/) |
-| [Intercom + Stripe](https://stackcostmatrix.com/stack/intercom-and-stripe/) | Native | Essential | Standard | $390.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/intercom-and-stripe/) |
-| [Intercom + ActiveCampaign](https://stackcostmatrix.com/stack/intercom-and-activecampaign/) | Middleware Make Core $10.59/mo | Essential | Starter | $415.59 | Nov 12, 2026 | [Calculator →](https://stackcostmatrix.com/stack/intercom-and-activecampaign/) |
-| [Pipedrive + Intercom](https://stackcostmatrix.com/stack/pipedrive-and-intercom/) | Native | Essential | Lite | $530.00 | Nov 12, 2026 | [Calculator →](https://stackcostmatrix.com/stack/pipedrive-and-intercom/) |
-| [Intercom + Salesforce](https://stackcostmatrix.com/stack/intercom-and-salesforce/) | Native | Advanced | Professional | $2,240.00 | Nov 12, 2026 | [Calculator →](https://stackcostmatrix.com/stack/intercom-and-salesforce/) |
+| Integration | Type | Min. Intercom plan | Other tool's plan | 10-seat total | Checked |
+| --- | --- | --- | --- | --- | --- |
+| [Intercom + Calendly](https://stackcostmatrix.com/stack/intercom-and-calendly/) | Native | Essential | Free | $390.00 | Nov 12, 2026 |
+| [Intercom + HubSpot](https://stackcostmatrix.com/stack/intercom-and-hubspot/) | Native | Essential | Free | $390.00 | Nov 3, 2026 |
+| [Intercom + Mailchimp](https://stackcostmatrix.com/stack/intercom-and-mailchimp/) | Native | Essential | Free | $390.00 | Nov 12, 2026 |
+| [Slack + Intercom](https://stackcostmatrix.com/stack/slack-and-intercom/) | Native | Essential | Free | $390.00 | Nov 3, 2026 |
+| [Intercom + Stripe](https://stackcostmatrix.com/stack/intercom-and-stripe/) | Native | Essential | Standard | $390.00 | Nov 3, 2026 |
+| [Intercom + ActiveCampaign](https://stackcostmatrix.com/stack/intercom-and-activecampaign/) | Middleware Make Core $10.59/mo | Essential | Starter | $415.59 | Nov 12, 2026 |
+| [Pipedrive + Intercom](https://stackcostmatrix.com/stack/pipedrive-and-intercom/) | Native | Essential | Lite | $530.00 | Nov 12, 2026 |
+| [Intercom + Salesforce](https://stackcostmatrix.com/stack/intercom-and-salesforce/) | Native | Advanced | Professional | $2,240.00 | Nov 12, 2026 |
 
-Totals are monthly-billing prices for 10 seats on the minimum plans, including any connector fee. Open a calculator to change team size, switch to annual billing or add usage costs.
+Totals are monthly-billing prices for 10 seats on the minimum plans, including any connector fee. Each integration's name opens its page, where a calculator lets you change team size, switch to annual billing or add usage costs.
 
 Chart: Intercom integrations: monthly cost for 10 seats on the plans each needs: Intercom + Salesforce $2,240.00; Pipedrive + Intercom $530.00; Intercom + ActiveCampaign $415.59; Intercom + Calendly $390.00; Intercom + HubSpot $390.00; Intercom + Mailchimp $390.00; Slack + Intercom $390.00; Intercom + Stripe $390.00
 
@@ -36,7 +36,7 @@ Image: [Intercom integration costs summary: 8 integrations priced, from $390 to 
 
 ## Which Intercom integrations force a plan upgrade?
 
-1 of the 8 integrations needs a more expensive Intercom plan than Essential, Intercom's cheapest plan with API access. The extra Intercom cost at 10 seats: Intercom + Salesforce needs Advanced (+$600.00/mo). That gap is the hidden cost: you pay it every month even if you only wanted the integration. Each pair's "Hidden Cost Trap" box shows the full breakdown.
+1 of the 8 integrations needs a more expensive Intercom plan than Essential, Intercom's cheapest plan with API access. The extra Intercom cost at 10 seats: Intercom + Salesforce needs Advanced (+$600.00/mo). That gap is the hidden cost: you pay it every month even if you only wanted the integration. Each pair's "Hidden Cost Trap" box shows the full breakdown. The [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/) adds these costs up across all 90 pairs in the index.
 
 ## Which Intercom integrations need Make or Zapier?
 
@@ -63,7 +63,23 @@ Full 20-tool source index: [About StackCostMatrix →](https://stackcostmatrix.c
 
 ## Integration costs by tool
 
-[ActiveCampaign](https://stackcostmatrix.com/activecampaign-integrations-cost/) · [Airtable](https://stackcostmatrix.com/airtable-integrations-cost/) · [Asana](https://stackcostmatrix.com/asana-integrations-cost/) · [Calendly](https://stackcostmatrix.com/calendly-integrations-cost/) · [ClickUp](https://stackcostmatrix.com/clickup-integrations-cost/) · [Freshdesk](https://stackcostmatrix.com/freshdesk-integrations-cost/) · [HubSpot](https://stackcostmatrix.com/hubspot-integrations-cost/) · [Mailchimp](https://stackcostmatrix.com/mailchimp-integrations-cost/) · [Monday.com](https://stackcostmatrix.com/monday-integrations-cost/) · [Notion](https://stackcostmatrix.com/notion-integrations-cost/) · [Pipedrive](https://stackcostmatrix.com/pipedrive-integrations-cost/) · [QuickBooks](https://stackcostmatrix.com/quickbooks-integrations-cost/) · [Salesforce](https://stackcostmatrix.com/salesforce-integrations-cost/) · [Slack](https://stackcostmatrix.com/slack-integrations-cost/) · [Stripe](https://stackcostmatrix.com/stripe-integrations-cost/) · [Xero](https://stackcostmatrix.com/xero-integrations-cost/) · [Zendesk](https://stackcostmatrix.com/zendesk-integrations-cost/)
+- [ActiveCampaign integrations](https://stackcostmatrix.com/activecampaign-integrations-cost/)
+- [Airtable integrations](https://stackcostmatrix.com/airtable-integrations-cost/)
+- [Asana integrations](https://stackcostmatrix.com/asana-integrations-cost/)
+- [Calendly integrations](https://stackcostmatrix.com/calendly-integrations-cost/)
+- [ClickUp integrations](https://stackcostmatrix.com/clickup-integrations-cost/)
+- [Freshdesk integrations](https://stackcostmatrix.com/freshdesk-integrations-cost/)
+- [HubSpot integrations](https://stackcostmatrix.com/hubspot-integrations-cost/)
+- [Mailchimp integrations](https://stackcostmatrix.com/mailchimp-integrations-cost/)
+- [Monday.com integrations](https://stackcostmatrix.com/monday-integrations-cost/)
+- [Notion integrations](https://stackcostmatrix.com/notion-integrations-cost/)
+- [Pipedrive integrations](https://stackcostmatrix.com/pipedrive-integrations-cost/)
+- [QuickBooks integrations](https://stackcostmatrix.com/quickbooks-integrations-cost/)
+- [Salesforce integrations](https://stackcostmatrix.com/salesforce-integrations-cost/)
+- [Slack integrations](https://stackcostmatrix.com/slack-integrations-cost/)
+- [Stripe integrations](https://stackcostmatrix.com/stripe-integrations-cost/)
+- [Xero integrations](https://stackcostmatrix.com/xero-integrations-cost/)
+- [Zendesk integrations](https://stackcostmatrix.com/zendesk-integrations-cost/)
 
 ## Intercom integration costs: frequently asked questions
 

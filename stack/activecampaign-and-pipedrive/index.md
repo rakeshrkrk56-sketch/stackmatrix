@@ -104,6 +104,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Starter') Source: [ActiveCampaign: Getting started with the API ↗](https://help.activecampaign.com/hc/en-us/articles/207317590) · Verified Nov 3, 2026 | Yes  ('Growth') 40 req/2 s · daily budget ×2 Source: [Pipedrive developers: Rate limiting ↗](https://pipedrive.readme.io/docs/core-api-concepts-rate-limiting) · Verified Nov 3, 2026 |
 | Webhook support at required tier | Yes  ('Starter') Source: [ActiveCampaign: Use webhooks ↗](https://help.activecampaign.com/hc/en-us/articles/115001403484) · Verified Nov 3, 2026 | Yes  ('Growth') Source: [Pipedrive: Automations webhook requests ↗](https://support.pipedrive.com/en/article/automations-webhook-requests) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [ActiveCampaign API access by plan](https://stackcostmatrix.com/activecampaign-api-access/) and [Pipedrive API access by plan](https://stackcostmatrix.com/pipedrive-api-access/).
+
 [Visit ActiveCampaign](https://stackcostmatrix.com/go/activecampaign)  [Visit Pipedrive](https://stackcostmatrix.com/go/pipedrive)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -128,23 +130,16 @@ Both first and last names are required, so contacts missing either won't sync. O
 
 ## Integrations related to ActiveCampaign + Pipedrive
 
-[All ActiveCampaign integrations →](https://stackcostmatrix.com/activecampaign-integrations-cost/) · [All Pipedrive integrations →](https://stackcostmatrix.com/pipedrive-integrations-cost/) · [ActiveCampaign API access by plan →](https://stackcostmatrix.com/activecampaign-api-access/) · [Pipedrive API access by plan →](https://stackcostmatrix.com/pipedrive-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 10 ActiveCampaign integrations](https://stackcostmatrix.com/activecampaign-integrations-cost/) and [all 11 Pipedrive integrations](https://stackcostmatrix.com/pipedrive-integrations-cost/).
 
-Part of our [CRM integration hidden-costs guide](https://stackcostmatrix.com/crm-integration-pricing-guide/).
+- [Freshdesk + ActiveCampaign](https://stackcostmatrix.com/stack/freshdesk-and-activecampaign/): Middleware, $255.59 a month for 10 seats
+- [ActiveCampaign + Stripe](https://stackcostmatrix.com/stack/activecampaign-and-stripe/): Native, $49.00 a month for 10 seats
+- [Intercom + ActiveCampaign](https://stackcostmatrix.com/stack/intercom-and-activecampaign/): Middleware, $415.59 a month for 10 seats
+- [Pipedrive + Mailchimp](https://stackcostmatrix.com/stack/pipedrive-and-mailchimp/): Native, $140.00 a month for 10 seats
+- [Pipedrive + Salesforce Sales Cloud](https://stackcostmatrix.com/stack/pipedrive-and-salesforce/): Middleware, $1,400.59 a month for 10 seats
+- [Pipedrive + Intercom](https://stackcostmatrix.com/stack/pipedrive-and-intercom/): Native, $530.00 a month for 10 seats
 
-[### ActiveCampaign + Calendly
-
-Native](https://stackcostmatrix.com/stack/activecampaign-and-calendly/)[### Pipedrive + Calendly
-
-Middleware](https://stackcostmatrix.com/stack/pipedrive-and-calendly/)[### Pipedrive + Mailchimp
-
-Native](https://stackcostmatrix.com/stack/pipedrive-and-mailchimp/)[### Pipedrive + Slack
-
-Native](https://stackcostmatrix.com/stack/pipedrive-and-slack/)[### HubSpot + Pipedrive
-
-Middleware](https://stackcostmatrix.com/stack/hubspot-and-pipedrive/)[### Xero + ActiveCampaign
-
-Middleware](https://stackcostmatrix.com/stack/xero-and-activecampaign/)
+ActiveCampaign + Pipedrive is also covered in the [CRM integration hidden-costs guide](https://stackcostmatrix.com/crm-integration-pricing-guide/) and the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Last checked: Nov 3, 2026 (exceptions listed at the top)
 

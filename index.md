@@ -140,9 +140,28 @@ It depends which of three bills you mean. Connecting two tools you already pay f
 
 Every integration for one tool on a single page: the minimum plan each needs, native vs middleware, and 10-seat totals.
 
-[ActiveCampaign integrations](https://stackcostmatrix.com/activecampaign-integrations-cost/) [Airtable integrations](https://stackcostmatrix.com/airtable-integrations-cost/) [Asana integrations](https://stackcostmatrix.com/asana-integrations-cost/) [Calendly integrations](https://stackcostmatrix.com/calendly-integrations-cost/) [ClickUp integrations](https://stackcostmatrix.com/clickup-integrations-cost/) [HubSpot integrations](https://stackcostmatrix.com/hubspot-integrations-cost/) [Intercom integrations](https://stackcostmatrix.com/intercom-integrations-cost/) [Mailchimp integrations](https://stackcostmatrix.com/mailchimp-integrations-cost/) [Monday.com integrations](https://stackcostmatrix.com/monday-integrations-cost/) [Notion integrations](https://stackcostmatrix.com/notion-integrations-cost/) [Pipedrive integrations](https://stackcostmatrix.com/pipedrive-integrations-cost/) [QuickBooks integrations](https://stackcostmatrix.com/quickbooks-integrations-cost/) [Salesforce integrations](https://stackcostmatrix.com/salesforce-integrations-cost/) [Slack integrations](https://stackcostmatrix.com/slack-integrations-cost/) [Stripe integrations](https://stackcostmatrix.com/stripe-integrations-cost/) [Xero integrations](https://stackcostmatrix.com/xero-integrations-cost/) [Zendesk integrations](https://stackcostmatrix.com/zendesk-integrations-cost/)
+[ActiveCampaign integrations](https://stackcostmatrix.com/activecampaign-integrations-cost/) [Airtable integrations](https://stackcostmatrix.com/airtable-integrations-cost/) [Asana integrations](https://stackcostmatrix.com/asana-integrations-cost/) [Calendly integrations](https://stackcostmatrix.com/calendly-integrations-cost/) [ClickUp integrations](https://stackcostmatrix.com/clickup-integrations-cost/) [Freshdesk integrations](https://stackcostmatrix.com/freshdesk-integrations-cost/) [HubSpot integrations](https://stackcostmatrix.com/hubspot-integrations-cost/) [Intercom integrations](https://stackcostmatrix.com/intercom-integrations-cost/) [Mailchimp integrations](https://stackcostmatrix.com/mailchimp-integrations-cost/) [Monday.com integrations](https://stackcostmatrix.com/monday-integrations-cost/) [Notion integrations](https://stackcostmatrix.com/notion-integrations-cost/) [Pipedrive integrations](https://stackcostmatrix.com/pipedrive-integrations-cost/) [QuickBooks integrations](https://stackcostmatrix.com/quickbooks-integrations-cost/) [Salesforce integrations](https://stackcostmatrix.com/salesforce-integrations-cost/) [Slack integrations](https://stackcostmatrix.com/slack-integrations-cost/) [Stripe integrations](https://stackcostmatrix.com/stripe-integrations-cost/) [Xero integrations](https://stackcostmatrix.com/xero-integrations-cost/) [Zendesk integrations](https://stackcostmatrix.com/zendesk-integrations-cost/)
 
-**API & webhook access by plan:** [ActiveCampaign](https://stackcostmatrix.com/activecampaign-api-access/) · [Airtable](https://stackcostmatrix.com/airtable-api-access/) · [Asana](https://stackcostmatrix.com/asana-api-access/) · [Calendly](https://stackcostmatrix.com/calendly-api-access/) · [ClickUp](https://stackcostmatrix.com/clickup-api-access/) · [Freshdesk](https://stackcostmatrix.com/freshdesk-api-access/) · [HubSpot](https://stackcostmatrix.com/hubspot-api-access/) · [Intercom](https://stackcostmatrix.com/intercom-api-access/) · [Mailchimp](https://stackcostmatrix.com/mailchimp-api-access/) · [Monday.com](https://stackcostmatrix.com/monday-api-access/) · [Notion](https://stackcostmatrix.com/notion-api-access/) · [Pipedrive](https://stackcostmatrix.com/pipedrive-api-access/) · [QuickBooks](https://stackcostmatrix.com/quickbooks-api-access/) · [Salesforce](https://stackcostmatrix.com/salesforce-api-access/) · [Slack](https://stackcostmatrix.com/slack-api-access/) · [Stripe](https://stackcostmatrix.com/stripe-api-access/) · [Xero](https://stackcostmatrix.com/xero-api-access/) · [Zendesk](https://stackcostmatrix.com/zendesk-api-access/)
+### API & webhook access by plan
+
+- [ActiveCampaign API access](https://stackcostmatrix.com/activecampaign-api-access/)
+- [Airtable API access](https://stackcostmatrix.com/airtable-api-access/)
+- [Asana API access](https://stackcostmatrix.com/asana-api-access/)
+- [Calendly API access](https://stackcostmatrix.com/calendly-api-access/)
+- [ClickUp API access](https://stackcostmatrix.com/clickup-api-access/)
+- [Freshdesk API access](https://stackcostmatrix.com/freshdesk-api-access/)
+- [HubSpot API access](https://stackcostmatrix.com/hubspot-api-access/)
+- [Intercom API access](https://stackcostmatrix.com/intercom-api-access/)
+- [Mailchimp API access](https://stackcostmatrix.com/mailchimp-api-access/)
+- [Monday.com API access](https://stackcostmatrix.com/monday-api-access/)
+- [Notion API access](https://stackcostmatrix.com/notion-api-access/)
+- [Pipedrive API access](https://stackcostmatrix.com/pipedrive-api-access/)
+- [QuickBooks API access](https://stackcostmatrix.com/quickbooks-api-access/)
+- [Salesforce API access](https://stackcostmatrix.com/salesforce-api-access/)
+- [Slack API access](https://stackcostmatrix.com/slack-api-access/)
+- [Stripe API access](https://stackcostmatrix.com/stripe-api-access/)
+- [Xero API access](https://stackcostmatrix.com/xero-api-access/)
+- [Zendesk API access](https://stackcostmatrix.com/zendesk-api-access/)
 
 ## All integration pairs
 
@@ -740,6 +759,7 @@ Full 20-tool source index with audit timestamps: [About StackCostMatrix →](htt
 
 Recent verification activity:
 
+- **Nov 15, 2026** — Links between pages rebuilt: every integration page now links to related integrations for both of its tools, with each one's cost for 10 seats. No prices changed.
 - **Nov 14, 2026** — The Integration Tax report now covers all 90 integrations, not only the 55 it was published with: 53 of 90 carry a hidden cost. No prices changed.
 - **Nov 12, 2026** — 14 more integrations, later the same day: ActiveCampaign with Slack, Airtable with Zendesk, Notion with Asana and ClickUp, monday.com with Mailchimp, and nine that run through Make. The index now covers 90 pairs. No prices changed.
 - **Nov 12, 2026** — 17 new integrations, each checked on the vendors' own pages: Calendly with Salesforce, Stripe and Intercom; HubSpot with Xero, Airtable and Notion; Intercom with Salesforce and Mailchimp; and nine more. The index now covers 76 pairs. No prices changed.

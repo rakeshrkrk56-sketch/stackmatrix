@@ -13,21 +13,21 @@ This page collects the 11 Zendesk integrations in the StackCostMatrix index: whi
 
 Zendesk Integration Costs (2026): Minimum Plans, API Access & Hidden Fees
 
-| Integration | Type | Min. Zendesk plan | Other tool's plan | 10-seat total | Checked | Details |
-| --- | --- | --- | --- | --- | --- | --- |
-| [ClickUp + Zendesk](https://stackcostmatrix.com/stack/clickup-and-zendesk/) | Native | Suite Team | Free | $690.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/clickup-and-zendesk/) |
-| [HubSpot + Zendesk](https://stackcostmatrix.com/stack/hubspot-and-zendesk/) | Native | Suite Team | Free | $690.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/hubspot-and-zendesk/) |
-| [Slack + Zendesk](https://stackcostmatrix.com/stack/slack-and-zendesk/) | Native | Suite Team | Free | $690.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/slack-and-zendesk/) |
-| [Zendesk + Stripe](https://stackcostmatrix.com/stack/zendesk-and-stripe/) | Middleware Make Core $10.59/mo | Suite Team | Standard | $700.59 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/zendesk-and-stripe/) |
-| [Xero + Zendesk](https://stackcostmatrix.com/stack/xero-and-zendesk/) | Middleware Make Core $10.59/mo | Suite Team | Early | $727.59 | Nov 12, 2026 | [Calculator →](https://stackcostmatrix.com/stack/xero-and-zendesk/) |
-| [Zendesk + Asana](https://stackcostmatrix.com/stack/zendesk-and-asana/) | Native | Suite Team | Starter | $824.90 | Nov 12, 2026 | [Calculator →](https://stackcostmatrix.com/stack/zendesk-and-asana/) |
-| [Monday.com + Zendesk](https://stackcostmatrix.com/stack/monday-and-zendesk/) | Native | Suite Team | Standard | $830.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/monday-and-zendesk/) |
-| [Pipedrive + Zendesk](https://stackcostmatrix.com/stack/pipedrive-and-zendesk/) | Native | Suite Team | Lite | $830.00 | Nov 12, 2026 | [Calculator →](https://stackcostmatrix.com/stack/pipedrive-and-zendesk/) |
-| [Zendesk + Notion](https://stackcostmatrix.com/stack/zendesk-and-notion/) | Middleware Zapier Professional $29.99/mo | Suite Team | Plus | $839.99 | Nov 3, 2026 (Notion plan unconfirmed) | [Calculator →](https://stackcostmatrix.com/stack/zendesk-and-notion/) |
-| [Zendesk + Airtable](https://stackcostmatrix.com/stack/zendesk-and-airtable/) | Native | Suite Team | Business | $1,230.00 | Nov 12, 2026 | [Calculator →](https://stackcostmatrix.com/stack/zendesk-and-airtable/) |
-| [Salesforce + Zendesk](https://stackcostmatrix.com/stack/salesforce-and-zendesk/) | Native | Suite Team | Professional | $1,940.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/salesforce-and-zendesk/) |
+| Integration | Type | Min. Zendesk plan | Other tool's plan | 10-seat total | Checked |
+| --- | --- | --- | --- | --- | --- |
+| [ClickUp + Zendesk](https://stackcostmatrix.com/stack/clickup-and-zendesk/) | Native | Suite Team | Free | $690.00 | Nov 3, 2026 |
+| [HubSpot + Zendesk](https://stackcostmatrix.com/stack/hubspot-and-zendesk/) | Native | Suite Team | Free | $690.00 | Nov 3, 2026 |
+| [Slack + Zendesk](https://stackcostmatrix.com/stack/slack-and-zendesk/) | Native | Suite Team | Free | $690.00 | Nov 3, 2026 |
+| [Zendesk + Stripe](https://stackcostmatrix.com/stack/zendesk-and-stripe/) | Middleware Make Core $10.59/mo | Suite Team | Standard | $700.59 | Nov 3, 2026 |
+| [Xero + Zendesk](https://stackcostmatrix.com/stack/xero-and-zendesk/) | Middleware Make Core $10.59/mo | Suite Team | Early | $727.59 | Nov 12, 2026 |
+| [Zendesk + Asana](https://stackcostmatrix.com/stack/zendesk-and-asana/) | Native | Suite Team | Starter | $824.90 | Nov 12, 2026 |
+| [Monday.com + Zendesk](https://stackcostmatrix.com/stack/monday-and-zendesk/) | Native | Suite Team | Standard | $830.00 | Nov 3, 2026 |
+| [Pipedrive + Zendesk](https://stackcostmatrix.com/stack/pipedrive-and-zendesk/) | Native | Suite Team | Lite | $830.00 | Nov 12, 2026 |
+| [Zendesk + Notion](https://stackcostmatrix.com/stack/zendesk-and-notion/) | Middleware Zapier Professional $29.99/mo | Suite Team | Plus | $839.99 | Nov 3, 2026 (Notion plan unconfirmed) |
+| [Zendesk + Airtable](https://stackcostmatrix.com/stack/zendesk-and-airtable/) | Native | Suite Team | Business | $1,230.00 | Nov 12, 2026 |
+| [Salesforce + Zendesk](https://stackcostmatrix.com/stack/salesforce-and-zendesk/) | Native | Suite Team | Professional | $1,940.00 | Nov 3, 2026 |
 
-Totals are monthly-billing prices for 10 seats on the minimum plans, including any connector fee. Open a calculator to change team size, switch to annual billing or add usage costs.
+Totals are monthly-billing prices for 10 seats on the minimum plans, including any connector fee. Each integration's name opens its page, where a calculator lets you change team size, switch to annual billing or add usage costs.
 
 Chart: Zendesk integrations: monthly cost for 10 seats on the plans each needs: Salesforce + Zendesk $1,940.00; Zendesk + Airtable $1,230.00; Zendesk + Notion $839.99; Monday.com + Zendesk $830.00; Pipedrive + Zendesk $830.00; Zendesk + Asana $824.90; Xero + Zendesk $727.59; Zendesk + Stripe $700.59; ClickUp + Zendesk $690.00; HubSpot + Zendesk $690.00; Slack + Zendesk $690.00
 
@@ -39,7 +39,7 @@ Image: [Zendesk integration costs summary: 11 integrations priced, from $690 to 
 
 ## Does Zendesk force an upgrade?
 
-Not for any of the 11 integrations here: each one works on Zendesk's cheapest plan with API access, so the integration itself adds no Zendesk upgrade cost. Any extra cost comes from the other tool's plan or from a connector fee, shown in the table above.
+Not for any of the 11 integrations here: each one works on Zendesk's cheapest plan with API access, so the integration itself adds no Zendesk upgrade cost. Any extra cost comes from the other tool's plan or from a connector fee, shown in the table above. The [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/) adds these costs up across all 90 pairs in the index.
 
 ## Which Zendesk integrations need Make or Zapier?
 
@@ -67,7 +67,23 @@ Full 20-tool source index: [About StackCostMatrix →](https://stackcostmatrix.c
 
 ## Integration costs by tool
 
-[ActiveCampaign](https://stackcostmatrix.com/activecampaign-integrations-cost/) · [Airtable](https://stackcostmatrix.com/airtable-integrations-cost/) · [Asana](https://stackcostmatrix.com/asana-integrations-cost/) · [Calendly](https://stackcostmatrix.com/calendly-integrations-cost/) · [ClickUp](https://stackcostmatrix.com/clickup-integrations-cost/) · [Freshdesk](https://stackcostmatrix.com/freshdesk-integrations-cost/) · [HubSpot](https://stackcostmatrix.com/hubspot-integrations-cost/) · [Intercom](https://stackcostmatrix.com/intercom-integrations-cost/) · [Mailchimp](https://stackcostmatrix.com/mailchimp-integrations-cost/) · [Monday.com](https://stackcostmatrix.com/monday-integrations-cost/) · [Notion](https://stackcostmatrix.com/notion-integrations-cost/) · [Pipedrive](https://stackcostmatrix.com/pipedrive-integrations-cost/) · [QuickBooks](https://stackcostmatrix.com/quickbooks-integrations-cost/) · [Salesforce](https://stackcostmatrix.com/salesforce-integrations-cost/) · [Slack](https://stackcostmatrix.com/slack-integrations-cost/) · [Stripe](https://stackcostmatrix.com/stripe-integrations-cost/) · [Xero](https://stackcostmatrix.com/xero-integrations-cost/)
+- [ActiveCampaign integrations](https://stackcostmatrix.com/activecampaign-integrations-cost/)
+- [Airtable integrations](https://stackcostmatrix.com/airtable-integrations-cost/)
+- [Asana integrations](https://stackcostmatrix.com/asana-integrations-cost/)
+- [Calendly integrations](https://stackcostmatrix.com/calendly-integrations-cost/)
+- [ClickUp integrations](https://stackcostmatrix.com/clickup-integrations-cost/)
+- [Freshdesk integrations](https://stackcostmatrix.com/freshdesk-integrations-cost/)
+- [HubSpot integrations](https://stackcostmatrix.com/hubspot-integrations-cost/)
+- [Intercom integrations](https://stackcostmatrix.com/intercom-integrations-cost/)
+- [Mailchimp integrations](https://stackcostmatrix.com/mailchimp-integrations-cost/)
+- [Monday.com integrations](https://stackcostmatrix.com/monday-integrations-cost/)
+- [Notion integrations](https://stackcostmatrix.com/notion-integrations-cost/)
+- [Pipedrive integrations](https://stackcostmatrix.com/pipedrive-integrations-cost/)
+- [QuickBooks integrations](https://stackcostmatrix.com/quickbooks-integrations-cost/)
+- [Salesforce integrations](https://stackcostmatrix.com/salesforce-integrations-cost/)
+- [Slack integrations](https://stackcostmatrix.com/slack-integrations-cost/)
+- [Stripe integrations](https://stackcostmatrix.com/stripe-integrations-cost/)
+- [Xero integrations](https://stackcostmatrix.com/xero-integrations-cost/)
 
 ## Zendesk integration costs: frequently asked questions
 

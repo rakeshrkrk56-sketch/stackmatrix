@@ -114,6 +114,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Early') Limits set by the app's developer tier Source: [Xero developers: Pricing and tiers ↗](https://developer.xero.com/pricing) · Verified Nov 3, 2026 | Yes  ('Free') Source: [Slack developers: Incoming webhooks ↗](https://api.slack.com/messaging/webhooks) · Verified Nov 3, 2026 |
 | Webhook support at required tier | Yes  ('Early') No plan requirement in Xero's webhook docs Source: [Xero developers: Webhooks ↗](https://developer.xero.com/documentation/guides/webhooks/overview) · Verified Nov 3, 2026 | Yes  ('Free') Incoming webhooks Source: [Slack developers: Incoming webhooks ↗](https://api.slack.com/messaging/webhooks) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [Xero API access by plan](https://stackcostmatrix.com/xero-api-access/) and [Slack API access by plan](https://stackcostmatrix.com/slack-api-access/).
+
 [Visit Xero](https://stackcostmatrix.com/go/xero)  [Visit Slack](https://stackcostmatrix.com/go/slack)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -138,21 +140,16 @@ Each Make scenario runs one way. Make's Slack guide notes that Slack Watch modul
 
 ## Integrations related to Xero + Slack
 
-[All Xero integrations →](https://stackcostmatrix.com/xero-integrations-cost/) · [All Slack integrations →](https://stackcostmatrix.com/slack-integrations-cost/) · [Xero API access by plan →](https://stackcostmatrix.com/xero-api-access/) · [Slack API access by plan →](https://stackcostmatrix.com/slack-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 10 Xero integrations](https://stackcostmatrix.com/xero-integrations-cost/) and [all 17 Slack integrations](https://stackcostmatrix.com/slack-integrations-cost/).
 
-[### HubSpot + Xero
+- [Xero + Calendly](https://stackcostmatrix.com/stack/xero-and-calendly/): Middleware, $176.99 a month for 10 seats
+- [Xero + Zendesk](https://stackcostmatrix.com/stack/xero-and-zendesk/): Middleware, $727.59 a month for 10 seats
+- [Xero + Asana](https://stackcostmatrix.com/stack/xero-and-asana/): Middleware, $172.49 a month for 10 seats
+- [QuickBooks Online + Slack](https://stackcostmatrix.com/stack/quickbooks-and-slack/): Middleware, $67.99 a month for 10 seats
+- [Stripe + Slack](https://stackcostmatrix.com/stack/stripe-and-slack/): Native, $0.00 a month for 10 seats
+- [HubSpot + Slack](https://stackcostmatrix.com/stack/hubspot-and-slack/): Native, $0.00 a month for 10 seats
 
-Native](https://stackcostmatrix.com/stack/hubspot-and-xero/)[### Pipedrive + Xero
-
-Middleware](https://stackcostmatrix.com/stack/pipedrive-and-xero/)[### Salesforce + Xero
-
-Middleware](https://stackcostmatrix.com/stack/salesforce-and-xero/)[### Stripe + Xero
-
-Native](https://stackcostmatrix.com/stack/stripe-and-xero/)[### Xero + ActiveCampaign
-
-Middleware](https://stackcostmatrix.com/stack/xero-and-activecampaign/)[### Xero + Calendly
-
-Middleware](https://stackcostmatrix.com/stack/xero-and-calendly/)
+Xero + Slack is also covered in the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Requirements checked: Nov 12, 2026; prices: Nov 3, 2026 (exceptions listed at the top)
 

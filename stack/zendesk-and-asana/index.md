@@ -111,6 +111,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Suite Team') 200 requests/min Source: [Zendesk developers: Rate limits ↗](https://developer.zendesk.com/api-reference/introduction/rate-limits/) · Verified Nov 3, 2026 | Yes  ('Starter') Source: [Asana pricing ↗](https://asana.com/pricing) · Verified Oct 17, 2026 |
 | Webhook support at required tier | Yes  ('Suite Team') Source: [Zendesk: Creating webhooks ↗](https://support.zendesk.com/hc/en-us/articles/4408839108378) · Verified Nov 3, 2026 | Yes  ('Starter') API webhooks; no plan requirement stated Source: [Asana developers: Webhooks guide ↗](https://developers.asana.com/docs/webhooks-guide) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [Zendesk API access by plan](https://stackcostmatrix.com/zendesk-api-access/) and [Asana API access by plan](https://stackcostmatrix.com/asana-api-access/).
+
 [Visit Zendesk](https://stackcostmatrix.com/go/zendesk)  [Visit Asana](https://stackcostmatrix.com/go/asana)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -135,21 +137,16 @@ Only the fields Asana lists sync: the task's assignee, due date and completion s
 
 ## Integrations related to Zendesk + Asana
 
-[All Zendesk integrations →](https://stackcostmatrix.com/zendesk-integrations-cost/) · [All Asana integrations →](https://stackcostmatrix.com/asana-integrations-cost/) · [Zendesk API access by plan →](https://stackcostmatrix.com/zendesk-api-access/) · [Asana API access by plan →](https://stackcostmatrix.com/asana-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 11 Zendesk integrations](https://stackcostmatrix.com/zendesk-integrations-cost/) and [all 10 Asana integrations](https://stackcostmatrix.com/asana-integrations-cost/).
 
-[### ClickUp + Zendesk
+- [ClickUp + Zendesk](https://stackcostmatrix.com/stack/clickup-and-zendesk/): Native, $690.00 a month for 10 seats
+- [Monday.com + Zendesk](https://stackcostmatrix.com/stack/monday-and-zendesk/): Native, $830.00 a month for 10 seats
+- [Slack + Zendesk](https://stackcostmatrix.com/stack/slack-and-zendesk/): Native, $690.00 a month for 10 seats
+- [Asana + Slack](https://stackcostmatrix.com/stack/asana-and-slack/): Native, $134.90 a month for 10 seats
+- [Asana + Mailchimp](https://stackcostmatrix.com/stack/asana-and-mailchimp/): Middleware, $177.89 a month for 10 seats
+- [Asana + Notion](https://stackcostmatrix.com/stack/asana-and-notion/): Native, $254.90 a month for 10 seats
 
-Native](https://stackcostmatrix.com/stack/clickup-and-zendesk/)[### HubSpot + Zendesk
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-zendesk/)[### Monday.com + Zendesk
-
-Native](https://stackcostmatrix.com/stack/monday-and-zendesk/)[### Pipedrive + Zendesk
-
-Native](https://stackcostmatrix.com/stack/pipedrive-and-zendesk/)[### Salesforce + Zendesk
-
-Native](https://stackcostmatrix.com/stack/salesforce-and-zendesk/)[### Slack + Zendesk
-
-Native](https://stackcostmatrix.com/stack/slack-and-zendesk/)
+Zendesk + Asana is also covered in the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Requirements checked: Nov 12, 2026; prices: Nov 3, 2026
 

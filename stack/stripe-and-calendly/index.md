@@ -111,6 +111,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Standard') Source: [Stripe pricing ↗](https://stripe.com/pricing) · Verified Oct 17, 2026 | Yes  ('Standard') Source: [Calendly: API overview ↗](https://calendly.com/help/calendly-api-overview) · Verified Nov 3, 2026 |
 | Webhook support at required tier | Yes  ('Standard') Source: [Stripe API docs ↗](https://docs.stripe.com/api) · Verified Oct 17, 2026 | Yes  ('Standard') Source: [Calendly: API overview ↗](https://calendly.com/help/calendly-api-overview) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [Stripe API access by plan](https://stackcostmatrix.com/stripe-api-access/) and [Calendly API access by plan](https://stackcostmatrix.com/calendly-api-access/).
+
 [Visit Stripe](https://stackcostmatrix.com/go/stripe)  [Visit Calendly](https://stackcostmatrix.com/go/calendly)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -135,21 +137,16 @@ Each user has to connect their own Stripe account for personal event types; admi
 
 ## Integrations related to Stripe + Calendly
 
-[All Stripe integrations →](https://stackcostmatrix.com/stripe-integrations-cost/) · [All Calendly integrations →](https://stackcostmatrix.com/calendly-integrations-cost/) · [Stripe API access by plan →](https://stackcostmatrix.com/stripe-api-access/) · [Calendly API access by plan →](https://stackcostmatrix.com/calendly-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 13 Stripe integrations](https://stackcostmatrix.com/stripe-integrations-cost/) and [all 10 Calendly integrations](https://stackcostmatrix.com/calendly-integrations-cost/).
 
-[### ActiveCampaign + Stripe
+- [ClickUp + Stripe](https://stackcostmatrix.com/stack/clickup-and-stripe/): Middleware, $10.59 a month for 10 seats
+- [Stripe + Slack](https://stackcostmatrix.com/stack/stripe-and-slack/): Native, $0.00 a month for 10 seats
+- [Airtable + Stripe](https://stackcostmatrix.com/stack/airtable-and-stripe/): Middleware, $250.59 a month for 10 seats
+- [HubSpot + Calendly](https://stackcostmatrix.com/stack/hubspot-and-calendly/): Native, $120.00 a month for 10 seats
+- [Xero + Calendly](https://stackcostmatrix.com/stack/xero-and-calendly/): Middleware, $176.99 a month for 10 seats
+- [Pipedrive + Calendly](https://stackcostmatrix.com/stack/pipedrive-and-calendly/): Middleware, $270.59 a month for 10 seats
 
-Native](https://stackcostmatrix.com/stack/activecampaign-and-stripe/)[### Airtable + Stripe
-
-Middleware](https://stackcostmatrix.com/stack/airtable-and-stripe/)[### ClickUp + Stripe
-
-Middleware](https://stackcostmatrix.com/stack/clickup-and-stripe/)[### HubSpot + Stripe
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-stripe/)[### Intercom + Stripe
-
-Native](https://stackcostmatrix.com/stack/intercom-and-stripe/)[### Notion + Stripe
-
-Middleware](https://stackcostmatrix.com/stack/notion-and-stripe/)
+Stripe + Calendly is also covered in the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Requirements checked: Nov 12, 2026; prices: Nov 3, 2026
 

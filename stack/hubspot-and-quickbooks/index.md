@@ -111,6 +111,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Free') 100 req/10 s · 250,000/day (private apps) Source: [HubSpot developers: Usage guidelines ↗](https://developers.hubspot.com/docs/developer-tooling/platform/usage-guidelines) · Verified Nov 3, 2026 | Yes  ('Simple Start') Any paid plan (Zapier, Make and Mailchimp name no tier) Source: [Zapier help: QuickBooks Online API prerequisites ↗](https://help.zapier.com/hc/en-us/articles/8495935103885) · Verified Nov 3, 2026 |
 | Webhook support at required tier | No  ('Free') Workflow webhooks need Data Hub Professional Source: [HubSpot KB: Webhooks in workflows ↗](https://knowledge.hubspot.com/workflows/how-do-i-use-webhooks-with-hubspot-workflows) · Verified Nov 3, 2026 | Yes  ('Simple Start') App-level webhooks Source: [Intuit developers: Webhooks ↗](https://developer.intuit.com/app/developer/qbo/docs/develop/webhooks) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [HubSpot API access by plan](https://stackcostmatrix.com/hubspot-api-access/) and [QuickBooks API access by plan](https://stackcostmatrix.com/quickbooks-api-access/).
+
 [Visit HubSpot](https://stackcostmatrix.com/go/hubspot)  [Visit QuickBooks Online](https://stackcostmatrix.com/go/quickbooks)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -135,23 +137,16 @@ The integration doesn't yet support non-U.S. QuickBooks Online accounts. Some ed
 
 ## Integrations related to HubSpot + QuickBooks Online
 
-[All HubSpot integrations →](https://stackcostmatrix.com/hubspot-integrations-cost/) · [All QuickBooks integrations →](https://stackcostmatrix.com/quickbooks-integrations-cost/) · [HubSpot API access by plan →](https://stackcostmatrix.com/hubspot-api-access/) · [QuickBooks API access by plan →](https://stackcostmatrix.com/quickbooks-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 16 HubSpot integrations](https://stackcostmatrix.com/hubspot-integrations-cost/) and [all 9 QuickBooks integrations](https://stackcostmatrix.com/quickbooks-integrations-cost/).
 
-Part of our [CRM integration hidden-costs guide](https://stackcostmatrix.com/crm-integration-pricing-guide/).
+- [HubSpot + Xero](https://stackcostmatrix.com/stack/hubspot-and-xero/): Native, $27.00 a month for 10 seats
+- [HubSpot + Notion](https://stackcostmatrix.com/stack/hubspot-and-notion/): Native, $320.00 a month for 10 seats
+- [HubSpot + Stripe](https://stackcostmatrix.com/stack/hubspot-and-stripe/): Native, $0.00 a month for 10 seats
+- [Pipedrive + QuickBooks Online](https://stackcostmatrix.com/stack/pipedrive-and-quickbooks/): Native, $178.00 a month for 10 seats
+- [Salesforce Sales Cloud + QuickBooks Online](https://stackcostmatrix.com/stack/salesforce-and-quickbooks/): Middleware, $1,298.59 a month for 10 seats
+- [Stripe + QuickBooks Online](https://stackcostmatrix.com/stack/stripe-and-quickbooks/): Middleware, $48.59 a month for 10 seats
 
-[### Freshdesk + HubSpot
-
-Native](https://stackcostmatrix.com/stack/freshdesk-and-hubspot/)[### HubSpot + Asana
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-asana/)[### HubSpot + Calendly
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-calendly/)[### HubSpot + ClickUp
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-clickup/)[### HubSpot + Mailchimp
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-mailchimp/)[### HubSpot + Monday.com
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-monday/)
+HubSpot + QuickBooks Online is also covered in the [CRM integration hidden-costs guide](https://stackcostmatrix.com/crm-integration-pricing-guide/), the guide to [which HubSpot integrations need Professional](https://stackcostmatrix.com/hubspot-professional-integrations/) and the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Last checked: Nov 4, 2026 (exceptions listed at the top)
 

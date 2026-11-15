@@ -104,14 +104,17 @@ def guide_figures():
                f'<figcaption class="mt-2 text-xs text-slate-500">{label} at a glance. Free to reuse with credit (CC BY 4.0).</figcaption> </figure>')
         # per-integration total and check date, read from each pair page (the hand-written tables only had type and plan)
         s = re.sub(r' <t[hd] class="px-4 py-3[^"]*" data-x="1">.*?</t[hd]>', "", s)
+        # rows as links24.py leaves them: the pair's name in the first cell is the link, and the two cells go at the end of the row
         def row(m):
             p = pairs.get(m.group(2))
             if not p: return m.group(0)
-            return (f' <td class="px-4 py-3" data-x="1">{money(p["v"]["N"])}</td> <td class="px-4 py-3" data-x="1"><span class="text-xs text-slate-500">{p["checked"]}</span></td>'
-                    + m.group(1))
-        s = re.sub(r'( <td class="px-4 py-3"> <a href="/stack/([^"/]+)/" class="font-medium text-indigo-600 hover:underline">True-cost calculator →</a> </td>)', row, s)
-        s = s.replace(' <th class="px-4 py-3 font-semibold">Guide</th>',
-                      ' <th class="px-4 py-3 font-semibold" data-x="1">10-seat total</th> <th class="px-4 py-3 font-semibold" data-x="1">Checked</th> <th class="px-4 py-3 font-semibold">Guide</th>', 1)
+            return (m.group(1) + f' <td class="px-4 py-3" data-x="1">{money(p["v"]["N"])}</td> <td class="px-4 py-3" data-x="1"><span class="text-xs text-slate-500">{p["checked"]}</span></td>'
+                    + m.group(3))
+        s, nrows = re.subn(r'(<tr class="border-t border-slate-100"> <td class="px-4 py-3 font-medium"><a href="/stack/([^"/]+)/"[^>]*>[^<]*</a></td>(?:(?!</tr>).)*?)( </tr>)', row, s, flags=re.S)
+        assert nrows, f"{f}: no pair rows found (links24.py must run before ux18.py)"
+        head = s.rfind(" </tr> </thead>", 0, s.index('<td class="px-4 py-3 font-medium"><a href="/stack/'))
+        assert head > 0, f
+        s = s[:head] + ' <th class="px-4 py-3 font-semibold" data-x="1">10-seat total</th> <th class="px-4 py-3 font-semibold" data-x="1">Checked</th>' + s[head:]
         allrows = sorted(((pairs[x]["v"], x) for x in set(re.findall(r'href="/stack/([^"/]+)/"', s[s.index("<main"):s.index("</main>")])) if x in pairs), key=lambda t: (-t[0]["N"], t[1]))   # slug breaks ties, so the order is the same on every run
         rows = allrows[:14]
         scope = f"the {len(rows)} most expensive of {len(allrows)} integrations, " if len(rows) < len(allrows) else ""

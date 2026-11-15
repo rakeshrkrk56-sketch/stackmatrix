@@ -100,6 +100,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Free') 100 requests/min per token Source: [ClickUp developers: API availability by plan ↗](https://developer.clickup.com/docs/apis-available-by-plan) · Verified Nov 3, 2026 | Yes  ('Free') Source: [Slack developers: Incoming webhooks ↗](https://api.slack.com/messaging/webhooks) · Verified Nov 3, 2026 |
 | Webhook support at required tier | Yes  ('Free') API webhooks Source: [ClickUp: Automation webhooks ↗](https://help.clickup.com/hc/en-us/articles/35313844961943-Integrate-ClickUp-using-Automation-webhooks) · Verified Nov 3, 2026 | Yes  ('Free') Incoming webhooks Source: [Slack developers: Incoming webhooks ↗](https://api.slack.com/messaging/webhooks) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [ClickUp API access by plan](https://stackcostmatrix.com/clickup-api-access/) and [Slack API access by plan](https://stackcostmatrix.com/slack-api-access/).
+
 [Visit ClickUp](https://stackcostmatrix.com/go/clickup)  [Visit Slack](https://stackcostmatrix.com/go/slack)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -124,21 +126,16 @@ Guests and limited members can't use it. With a Workspace connection, activity c
 
 ## Integrations related to ClickUp + Slack
 
-[All ClickUp integrations →](https://stackcostmatrix.com/clickup-integrations-cost/) · [All Slack integrations →](https://stackcostmatrix.com/slack-integrations-cost/) · [ClickUp API access by plan →](https://stackcostmatrix.com/clickup-api-access/) · [Slack API access by plan →](https://stackcostmatrix.com/slack-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 7 ClickUp integrations](https://stackcostmatrix.com/clickup-integrations-cost/) and [all 17 Slack integrations](https://stackcostmatrix.com/slack-integrations-cost/).
 
-[### ClickUp + Zendesk
+- [ClickUp + Notion](https://stackcostmatrix.com/stack/clickup-and-notion/): Native, $120.00 a month for 10 seats
+- [ClickUp + Zendesk](https://stackcostmatrix.com/stack/clickup-and-zendesk/): Native, $690.00 a month for 10 seats
+- [ClickUp + Stripe](https://stackcostmatrix.com/stack/clickup-and-stripe/): Middleware, $10.59 a month for 10 seats
+- [Monday.com + Slack](https://stackcostmatrix.com/stack/monday-and-slack/): Native, $140.00 a month for 10 seats
+- [Asana + Slack](https://stackcostmatrix.com/stack/asana-and-slack/): Native, $134.90 a month for 10 seats
+- [Slack + Airtable](https://stackcostmatrix.com/stack/slack-and-airtable/): Native, $0.00 a month for 10 seats
 
-Native](https://stackcostmatrix.com/stack/clickup-and-zendesk/)[### Monday.com + Slack
-
-Native](https://stackcostmatrix.com/stack/monday-and-slack/)[### Pipedrive + Slack
-
-Native](https://stackcostmatrix.com/stack/pipedrive-and-slack/)[### Asana + Slack
-
-Native](https://stackcostmatrix.com/stack/asana-and-slack/)[### Freshdesk + Slack
-
-Native](https://stackcostmatrix.com/stack/freshdesk-and-slack/)[### Slack + Intercom
-
-Native](https://stackcostmatrix.com/stack/slack-and-intercom/)
+ClickUp + Slack is also covered in the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Last checked: Nov 3, 2026
 

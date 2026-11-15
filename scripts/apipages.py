@@ -4,7 +4,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 from apidata import TOOLS, CHECKED
 from site16 import fix_ld
 from model import svg_bars
-from hubs import load_pairs, plan_price, render, read, esc, attr, SHORT, SITE, P, H2, TH, TD, LINK, join_names, h2q
+from hubs import load_pairs, plan_price, render, read, esc, attr, SHORT, SITE, P, H2, TH, TD, LINK, join_names, h2q, index_list
 
 QUOTE_OK = set()  # filled from the source check: (slug, index) whose quote was found on the page
 
@@ -14,6 +14,10 @@ def val_html(v, note):
 
 ANNUAL_ONLY = {"activecampaign", "pipedrive", "salesforce"}   # vendors that publish annual-billing rates only (see /about/)
 API_COL = {"Yes": "#047857", "Add-on": "#b45309", "No": "#64748b", "Not stated": "#64748b"}
+
+def api_links(api_urls, skip=None):
+    """(url, link text) for every API page, by tool name. Also used by links24.py."""
+    return [(u, f"{n} API access") for s2, (n, u) in sorted(api_urls.items(), key=lambda kv: kv[1][0].lower()) if s2 != skip]
 
 def build(slug, tool, pairs, hubs, api_urls):
     T = TOOLS[slug]; short = SHORT.get(slug, tool["name"]); name = tool["name"]
@@ -55,8 +59,7 @@ def build(slug, tool, pairs, hubs, api_urls):
         qt = f' <span class="block text-xs text-slate-500">&ldquo;{esc(q)}&rdquo;</span>' if (slug, i) in QUOTE_OK else ""
         src.append(f'<li><a href="{attr(u)}" rel="noopener" {LINK}>{esc(l)} ↗</a>{qt}</li>')
     sources = f'{H2}Sources</h2> <p class="mt-3 text-sm text-slate-500">Checked {T.get('checked', CHECKED)}.</p> <ul class="mt-3 space-y-3 text-sm"> {" ".join(src)} </ul>'
-    nav = " · ".join(f'<a href="{u}" {LINK}>{esc(n)}</a>' for s2, (n, u) in sorted(api_urls.items(), key=lambda kv: kv[1][0].lower()) if s2 != slug)
-    navh = f'{H2}API access by plan for other tools</h2> <p class="mt-3 leading-relaxed text-slate-600">{nav}</p>'
+    navh = f'{H2}API access by plan for other tools</h2> {index_list(api_links(api_urls, skip=slug))}'
     # FAQ
     fig = (f'<figure class="mt-6"> <img src="/og/{slug}-api-access.jpg" width="1200" height="630" loading="lazy" class="scm-fig" '
            f'alt="{attr(short)} API access by plan: ' + "; ".join(f"{pl} {f['api'].lower()}" for pl, f, _ in plans[:4]) + '"> '
@@ -104,7 +107,7 @@ def build(slug, tool, pairs, hubs, api_urls):
     ld = [
         {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faqs]},
         {"@context": "https://schema.org", "@type": "TechArticle", "headline": title, "description": desc,
-         "author": {"@type": "Organization", "name": "StackCostMatrix", "url": f"{SITE}/", "email": "admin@stackcostmatrix.com"}, "datePublished": "2026-11-03", "dateModified": max(T.get("modified", "2026-11-03"), "2026-11-11"),   # plan chart and question headings changed every API page
+         "author": {"@type": "Organization", "name": "StackCostMatrix", "url": f"{SITE}/", "email": "admin@stackcostmatrix.com"}, "datePublished": "2026-11-03", "dateModified": max(T.get("modified", "2026-11-03"), "2026-11-15"),   # Nov 15: the list of other API pages changed on every page (Nov 11: plan chart, question headings)
          "citation": [u for _, u, _ in T["sources"]], "mainEntityOfPage": url,
          "publisher": {"@type": "Organization", "name": "StackCostMatrix", "url": f"{SITE}/", "logo": f"{SITE}/icon-512.png"}, "image": f"{SITE}/icon-512.png", "inLanguage": "en"},
         {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [

@@ -13,20 +13,20 @@ This page collects the 10 ActiveCampaign integrations in the StackCostMatrix ind
 
 ActiveCampaign Integration Costs (2026): Minimum Plans, API Access & Hidden Fees
 
-| Integration | Type | Min. ActiveCampaign plan | Other tool's plan | 10-seat total | Checked | Details |
-| --- | --- | --- | --- | --- | --- | --- |
-| [ClickUp + ActiveCampaign](https://stackcostmatrix.com/stack/clickup-and-activecampaign/) | Middleware Make Core $10.59/mo | Starter | Free | $25.59 | Nov 12, 2026 | [Calculator →](https://stackcostmatrix.com/stack/clickup-and-activecampaign/) |
-| [ActiveCampaign + Slack](https://stackcostmatrix.com/stack/activecampaign-and-slack/) | Native | Plus | Free | $49.00 | Nov 12, 2026 | [Calculator →](https://stackcostmatrix.com/stack/activecampaign-and-slack/) |
-| [ActiveCampaign + Stripe](https://stackcostmatrix.com/stack/activecampaign-and-stripe/) | Native | Plus | Standard | $49.00 | Nov 8, 2026 | [Calculator →](https://stackcostmatrix.com/stack/activecampaign-and-stripe/) |
-| [Xero + ActiveCampaign](https://stackcostmatrix.com/stack/xero-and-activecampaign/) | Middleware Make Core $10.59/mo | Starter | Early | $52.59 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/xero-and-activecampaign/) |
-| [ActiveCampaign + Calendly](https://stackcostmatrix.com/stack/activecampaign-and-calendly/) | Native | Starter | Standard | $135.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/activecampaign-and-calendly/) |
-| [Asana + ActiveCampaign](https://stackcostmatrix.com/stack/asana-and-activecampaign/) | Middleware Make Core $10.59/mo | Starter | Starter | $160.49 | Nov 12, 2026 | [Calculator →](https://stackcostmatrix.com/stack/asana-and-activecampaign/) |
-| [Monday.com + ActiveCampaign](https://stackcostmatrix.com/stack/monday-and-activecampaign/) | Middleware Make Core $10.59/mo | Starter | Standard | $165.59 | Nov 12, 2026 | [Calculator →](https://stackcostmatrix.com/stack/monday-and-activecampaign/) |
-| [Freshdesk + ActiveCampaign](https://stackcostmatrix.com/stack/freshdesk-and-activecampaign/) | Middleware Make Core $10.59/mo | Starter | Growth | $255.59 | Nov 12, 2026 | [Calculator →](https://stackcostmatrix.com/stack/freshdesk-and-activecampaign/) |
-| [ActiveCampaign + Pipedrive](https://stackcostmatrix.com/stack/activecampaign-and-pipedrive/) | Native | Starter | Growth | $405.00 | Nov 3, 2026 (Pipedrive plan unconfirmed) | [Calculator →](https://stackcostmatrix.com/stack/activecampaign-and-pipedrive/) |
-| [Intercom + ActiveCampaign](https://stackcostmatrix.com/stack/intercom-and-activecampaign/) | Middleware Make Core $10.59/mo | Starter | Essential | $415.59 | Nov 12, 2026 | [Calculator →](https://stackcostmatrix.com/stack/intercom-and-activecampaign/) |
+| Integration | Type | Min. ActiveCampaign plan | Other tool's plan | 10-seat total | Checked |
+| --- | --- | --- | --- | --- | --- |
+| [ClickUp + ActiveCampaign](https://stackcostmatrix.com/stack/clickup-and-activecampaign/) | Middleware Make Core $10.59/mo | Starter | Free | $25.59 | Nov 12, 2026 |
+| [ActiveCampaign + Slack](https://stackcostmatrix.com/stack/activecampaign-and-slack/) | Native | Plus | Free | $49.00 | Nov 12, 2026 |
+| [ActiveCampaign + Stripe](https://stackcostmatrix.com/stack/activecampaign-and-stripe/) | Native | Plus | Standard | $49.00 | Nov 8, 2026 |
+| [Xero + ActiveCampaign](https://stackcostmatrix.com/stack/xero-and-activecampaign/) | Middleware Make Core $10.59/mo | Starter | Early | $52.59 | Nov 3, 2026 |
+| [ActiveCampaign + Calendly](https://stackcostmatrix.com/stack/activecampaign-and-calendly/) | Native | Starter | Standard | $135.00 | Nov 3, 2026 |
+| [Asana + ActiveCampaign](https://stackcostmatrix.com/stack/asana-and-activecampaign/) | Middleware Make Core $10.59/mo | Starter | Starter | $160.49 | Nov 12, 2026 |
+| [Monday.com + ActiveCampaign](https://stackcostmatrix.com/stack/monday-and-activecampaign/) | Middleware Make Core $10.59/mo | Starter | Standard | $165.59 | Nov 12, 2026 |
+| [Freshdesk + ActiveCampaign](https://stackcostmatrix.com/stack/freshdesk-and-activecampaign/) | Middleware Make Core $10.59/mo | Starter | Growth | $255.59 | Nov 12, 2026 |
+| [ActiveCampaign + Pipedrive](https://stackcostmatrix.com/stack/activecampaign-and-pipedrive/) | Native | Starter | Growth | $405.00 | Nov 3, 2026 (Pipedrive plan unconfirmed) |
+| [Intercom + ActiveCampaign](https://stackcostmatrix.com/stack/intercom-and-activecampaign/) | Middleware Make Core $10.59/mo | Starter | Essential | $415.59 | Nov 12, 2026 |
 
-Totals are monthly-billing prices for 10 seats on the minimum plans, including any connector fee. Open a calculator to change team size, switch to annual billing or add usage costs.
+Totals are monthly-billing prices for 10 seats on the minimum plans, including any connector fee. Each integration's name opens its page, where a calculator lets you change team size, switch to annual billing or add usage costs.
 
 Chart: ActiveCampaign integrations: monthly cost for 10 seats on the plans each needs: Intercom + ActiveCampaign $415.59; ActiveCampaign + Pipedrive $405.00; Freshdesk + ActiveCampaign $255.59; Monday.com + ActiveCampaign $165.59; Asana + ActiveCampaign $160.49; ActiveCampaign + Calendly $135.00; Xero + ActiveCampaign $52.59; ActiveCampaign + Slack $49.00; ActiveCampaign + Stripe $49.00; ClickUp + ActiveCampaign $25.59
 
@@ -38,7 +38,7 @@ Image: [ActiveCampaign integration costs summary: 10 integrations priced, from $
 
 ## Which ActiveCampaign integrations force a plan upgrade?
 
-2 of the 10 integrations need a more expensive ActiveCampaign plan than Starter, ActiveCampaign's cheapest plan with API access. The extra ActiveCampaign cost at 10 seats: ActiveCampaign + Slack needs Plus (+$34.00/mo); ActiveCampaign + Stripe needs Plus (+$34.00/mo). That gap is the hidden cost: you pay it every month even if you only wanted the integration. Each pair's "Hidden Cost Trap" box shows the full breakdown.
+2 of the 10 integrations need a more expensive ActiveCampaign plan than Starter, ActiveCampaign's cheapest plan with API access. The extra ActiveCampaign cost at 10 seats: ActiveCampaign + Slack needs Plus (+$34.00/mo); ActiveCampaign + Stripe needs Plus (+$34.00/mo). That gap is the hidden cost: you pay it every month even if you only wanted the integration. Each pair's "Hidden Cost Trap" box shows the full breakdown. The [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/) adds these costs up across all 90 pairs in the index.
 
 ## Which ActiveCampaign integrations need Make or Zapier?
 
@@ -66,7 +66,23 @@ Full 20-tool source index: [About StackCostMatrix →](https://stackcostmatrix.c
 
 ## Integration costs by tool
 
-[Airtable](https://stackcostmatrix.com/airtable-integrations-cost/) · [Asana](https://stackcostmatrix.com/asana-integrations-cost/) · [Calendly](https://stackcostmatrix.com/calendly-integrations-cost/) · [ClickUp](https://stackcostmatrix.com/clickup-integrations-cost/) · [Freshdesk](https://stackcostmatrix.com/freshdesk-integrations-cost/) · [HubSpot](https://stackcostmatrix.com/hubspot-integrations-cost/) · [Intercom](https://stackcostmatrix.com/intercom-integrations-cost/) · [Mailchimp](https://stackcostmatrix.com/mailchimp-integrations-cost/) · [Monday.com](https://stackcostmatrix.com/monday-integrations-cost/) · [Notion](https://stackcostmatrix.com/notion-integrations-cost/) · [Pipedrive](https://stackcostmatrix.com/pipedrive-integrations-cost/) · [QuickBooks](https://stackcostmatrix.com/quickbooks-integrations-cost/) · [Salesforce](https://stackcostmatrix.com/salesforce-integrations-cost/) · [Slack](https://stackcostmatrix.com/slack-integrations-cost/) · [Stripe](https://stackcostmatrix.com/stripe-integrations-cost/) · [Xero](https://stackcostmatrix.com/xero-integrations-cost/) · [Zendesk](https://stackcostmatrix.com/zendesk-integrations-cost/)
+- [Airtable integrations](https://stackcostmatrix.com/airtable-integrations-cost/)
+- [Asana integrations](https://stackcostmatrix.com/asana-integrations-cost/)
+- [Calendly integrations](https://stackcostmatrix.com/calendly-integrations-cost/)
+- [ClickUp integrations](https://stackcostmatrix.com/clickup-integrations-cost/)
+- [Freshdesk integrations](https://stackcostmatrix.com/freshdesk-integrations-cost/)
+- [HubSpot integrations](https://stackcostmatrix.com/hubspot-integrations-cost/)
+- [Intercom integrations](https://stackcostmatrix.com/intercom-integrations-cost/)
+- [Mailchimp integrations](https://stackcostmatrix.com/mailchimp-integrations-cost/)
+- [Monday.com integrations](https://stackcostmatrix.com/monday-integrations-cost/)
+- [Notion integrations](https://stackcostmatrix.com/notion-integrations-cost/)
+- [Pipedrive integrations](https://stackcostmatrix.com/pipedrive-integrations-cost/)
+- [QuickBooks integrations](https://stackcostmatrix.com/quickbooks-integrations-cost/)
+- [Salesforce integrations](https://stackcostmatrix.com/salesforce-integrations-cost/)
+- [Slack integrations](https://stackcostmatrix.com/slack-integrations-cost/)
+- [Stripe integrations](https://stackcostmatrix.com/stripe-integrations-cost/)
+- [Xero integrations](https://stackcostmatrix.com/xero-integrations-cost/)
+- [Zendesk integrations](https://stackcostmatrix.com/zendesk-integrations-cost/)
 
 ## ActiveCampaign integration costs: frequently asked questions
 

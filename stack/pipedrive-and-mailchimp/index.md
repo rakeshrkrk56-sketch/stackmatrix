@@ -110,6 +110,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Lite') 20 req/2 s · daily budget ×1 Source: [Pipedrive developers: Rate limiting ↗](https://pipedrive.readme.io/docs/core-api-concepts-rate-limiting) · Verified Nov 3, 2026 | Yes  ('Free') No plan requirement in Mailchimp's API key article Source: [Mailchimp: About API keys ↗](https://mailchimp.com/help/about-api-keys/) · Verified Nov 3, 2026 |
 | Webhook support at required tier | Yes  ('Lite') Source: [Pipedrive: Automations webhook requests ↗](https://support.pipedrive.com/en/article/automations-webhook-requests) · Verified Nov 3, 2026 | No  ('Free') Webhook automation step needs Standard Source: [Mailchimp: About webhooks ↗](https://mailchimp.com/help/about-webhooks/) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [Pipedrive API access by plan](https://stackcostmatrix.com/pipedrive-api-access/) and [Mailchimp API access by plan](https://stackcostmatrix.com/mailchimp-api-access/).
+
 [Visit Pipedrive](https://stackcostmatrix.com/go/pipedrive)  [Visit Mailchimp](https://stackcostmatrix.com/go/mailchimp)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -134,23 +136,16 @@ Flows run on a schedule, so new matches can take a while to appear; the first sy
 
 ## Integrations related to Pipedrive + Mailchimp
 
-[All Pipedrive integrations →](https://stackcostmatrix.com/pipedrive-integrations-cost/) · [All Mailchimp integrations →](https://stackcostmatrix.com/mailchimp-integrations-cost/) · [Pipedrive API access by plan →](https://stackcostmatrix.com/pipedrive-api-access/) · [Mailchimp API access by plan →](https://stackcostmatrix.com/mailchimp-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 11 Pipedrive integrations](https://stackcostmatrix.com/pipedrive-integrations-cost/) and [all 11 Mailchimp integrations](https://stackcostmatrix.com/mailchimp-integrations-cost/).
 
-Part of our [CRM integration hidden-costs guide](https://stackcostmatrix.com/crm-integration-pricing-guide/).
+- [ActiveCampaign + Pipedrive](https://stackcostmatrix.com/stack/activecampaign-and-pipedrive/): Native, $405.00 a month for 10 seats
+- [Pipedrive + Intercom](https://stackcostmatrix.com/stack/pipedrive-and-intercom/): Native, $530.00 a month for 10 seats
+- [Pipedrive + Zendesk](https://stackcostmatrix.com/stack/pipedrive-and-zendesk/): Native, $830.00 a month for 10 seats
+- [Salesforce Sales Cloud + Mailchimp](https://stackcostmatrix.com/stack/salesforce-and-mailchimp/): Native, $1,270.00 a month for 10 seats
+- [HubSpot + Mailchimp](https://stackcostmatrix.com/stack/hubspot-and-mailchimp/): Native, $20.00 a month for 10 seats
+- [Intercom + Mailchimp](https://stackcostmatrix.com/stack/intercom-and-mailchimp/): Native, $390.00 a month for 10 seats
 
-[### Asana + Mailchimp
-
-Middleware](https://stackcostmatrix.com/stack/asana-and-mailchimp/)[### Salesforce Sales Cloud + Mailchimp
-
-Native](https://stackcostmatrix.com/stack/salesforce-and-mailchimp/)[### HubSpot + Pipedrive
-
-Middleware](https://stackcostmatrix.com/stack/hubspot-and-pipedrive/)[### Mailchimp + Airtable
-
-Middleware](https://stackcostmatrix.com/stack/mailchimp-and-airtable/)[### QuickBooks Online + Mailchimp
-
-Native](https://stackcostmatrix.com/stack/quickbooks-and-mailchimp/)[### Stripe + Mailchimp
-
-Middleware](https://stackcostmatrix.com/stack/stripe-and-mailchimp/)
+Pipedrive + Mailchimp is also covered in the [CRM integration hidden-costs guide](https://stackcostmatrix.com/crm-integration-pricing-guide/) and the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Last checked: Nov 3, 2026 (exceptions listed at the top)
 

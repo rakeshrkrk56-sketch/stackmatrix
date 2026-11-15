@@ -112,6 +112,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Starter') Source: [Asana pricing ↗](https://asana.com/pricing) · Verified Oct 17, 2026 | Yes  ('Simple Start') Any paid plan (Zapier, Make and Mailchimp name no tier) Source: [Zapier help: QuickBooks Online API prerequisites ↗](https://help.zapier.com/hc/en-us/articles/8495935103885) · Verified Nov 3, 2026 |
 | Webhook support at required tier | Yes  ('Starter') API webhooks; no plan requirement stated Source: [Asana developers: Webhooks guide ↗](https://developers.asana.com/docs/webhooks-guide) · Verified Nov 3, 2026 | Yes  ('Simple Start') App-level webhooks Source: [Intuit developers: Webhooks ↗](https://developer.intuit.com/app/developer/qbo/docs/develop/webhooks) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [Asana API access by plan](https://stackcostmatrix.com/asana-api-access/) and [QuickBooks API access by plan](https://stackcostmatrix.com/quickbooks-api-access/).
+
 [Visit Asana](https://stackcostmatrix.com/go/asana)  [Visit QuickBooks Online](https://stackcostmatrix.com/go/quickbooks)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -136,21 +138,16 @@ Sync is one-way per scenario, and you build and maintain the field mapping yours
 
 ## Integrations related to Asana + QuickBooks Online
 
-[All Asana integrations →](https://stackcostmatrix.com/asana-integrations-cost/) · [All QuickBooks integrations →](https://stackcostmatrix.com/quickbooks-integrations-cost/) · [Asana API access by plan →](https://stackcostmatrix.com/asana-api-access/) · [QuickBooks API access by plan →](https://stackcostmatrix.com/quickbooks-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 10 Asana integrations](https://stackcostmatrix.com/asana-integrations-cost/) and [all 9 QuickBooks integrations](https://stackcostmatrix.com/quickbooks-integrations-cost/).
 
-[### Airtable + QuickBooks Online
+- [Xero + Asana](https://stackcostmatrix.com/stack/xero-and-asana/): Middleware, $172.49 a month for 10 seats
+- [Asana + Notion](https://stackcostmatrix.com/stack/asana-and-notion/): Native, $254.90 a month for 10 seats
+- [HubSpot + Asana](https://stackcostmatrix.com/stack/hubspot-and-asana/): Native, $634.90 a month for 10 seats
+- [Monday.com + QuickBooks Online](https://stackcostmatrix.com/stack/monday-and-quickbooks/): Middleware, $188.59 a month for 10 seats
+- [QuickBooks Online + Slack](https://stackcostmatrix.com/stack/quickbooks-and-slack/): Middleware, $67.99 a month for 10 seats
+- [Airtable + QuickBooks Online](https://stackcostmatrix.com/stack/airtable-and-quickbooks/): Middleware, $288.59 a month for 10 seats
 
-Middleware](https://stackcostmatrix.com/stack/airtable-and-quickbooks/)[### Asana + Mailchimp
-
-Middleware](https://stackcostmatrix.com/stack/asana-and-mailchimp/)[### Asana + Slack
-
-Native](https://stackcostmatrix.com/stack/asana-and-slack/)[### QuickBooks Online + Slack
-
-Middleware](https://stackcostmatrix.com/stack/quickbooks-and-slack/)[### HubSpot + Asana
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-asana/)[### QuickBooks Online + Mailchimp
-
-Native](https://stackcostmatrix.com/stack/quickbooks-and-mailchimp/)
+Asana + QuickBooks Online is also covered in the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Last checked: Nov 3, 2026 (exceptions listed at the top)
 

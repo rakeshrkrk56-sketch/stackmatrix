@@ -115,6 +115,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Starter') 100 req/10 s · 250,000/day (private apps) Source: [HubSpot developers: Usage guidelines ↗](https://developers.hubspot.com/docs/developer-tooling/platform/usage-guidelines) · Verified Nov 3, 2026 | Yes  ('Plus') Source: [Notion developers: Webhooks ↗](https://developers.notion.com/reference/webhooks) · Verified Nov 3, 2026 |
 | Webhook support at required tier | No  ('Starter') Workflow webhooks need Data Hub Professional Source: [HubSpot KB: Webhooks in workflows ↗](https://knowledge.hubspot.com/workflows/how-do-i-use-webhooks-with-hubspot-workflows) · Verified Nov 3, 2026 | Yes  ('Plus') Source: [Notion developers: Webhooks ↗](https://developers.notion.com/reference/webhooks) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [HubSpot API access by plan](https://stackcostmatrix.com/hubspot-api-access/) and [Notion API access by plan](https://stackcostmatrix.com/notion-api-access/).
+
 [Visit HubSpot](https://stackcostmatrix.com/go/hubspot)  [Visit Notion](https://stackcostmatrix.com/go/notion)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -139,23 +141,16 @@ Activating the sync needs Data Hub Starter; this page models it at HubSpot's Sta
 
 ## Integrations related to HubSpot + Notion
 
-[All HubSpot integrations →](https://stackcostmatrix.com/hubspot-integrations-cost/) · [All Notion integrations →](https://stackcostmatrix.com/notion-integrations-cost/) · [HubSpot API access by plan →](https://stackcostmatrix.com/hubspot-api-access/) · [Notion API access by plan →](https://stackcostmatrix.com/notion-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 16 HubSpot integrations](https://stackcostmatrix.com/hubspot-integrations-cost/) and [all 7 Notion integrations](https://stackcostmatrix.com/notion-integrations-cost/).
 
-Part of our [CRM integration hidden-costs guide](https://stackcostmatrix.com/crm-integration-pricing-guide/).
+- [HubSpot + Airtable](https://stackcostmatrix.com/stack/hubspot-and-airtable/): Native, $200.00 a month for 10 seats
+- [HubSpot + QuickBooks Online](https://stackcostmatrix.com/stack/hubspot-and-quickbooks/): Native, $38.00 a month for 10 seats
+- [HubSpot + Xero](https://stackcostmatrix.com/stack/hubspot-and-xero/): Native, $27.00 a month for 10 seats
+- [Zendesk + Notion](https://stackcostmatrix.com/stack/zendesk-and-notion/): Middleware, $839.99 a month for 10 seats
+- [Notion + Stripe](https://stackcostmatrix.com/stack/notion-and-stripe/): Middleware, $130.59 a month for 10 seats
+- [Slack + Notion](https://stackcostmatrix.com/stack/slack-and-notion/): Native, $120.00 a month for 10 seats
 
-[### Freshdesk + HubSpot
-
-Native](https://stackcostmatrix.com/stack/freshdesk-and-hubspot/)[### HubSpot + Airtable
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-airtable/)[### HubSpot + Asana
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-asana/)[### HubSpot + Calendly
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-calendly/)[### HubSpot + ClickUp
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-clickup/)[### HubSpot + Mailchimp
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-mailchimp/)
+HubSpot + Notion is also covered in the [CRM integration hidden-costs guide](https://stackcostmatrix.com/crm-integration-pricing-guide/), the guide to [which HubSpot integrations need Professional](https://stackcostmatrix.com/hubspot-professional-integrations/) and the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Requirements checked: Nov 12, 2026; prices: Nov 3, 2026
 

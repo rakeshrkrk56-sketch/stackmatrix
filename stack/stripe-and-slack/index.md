@@ -112,6 +112,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Standard') Source: [Stripe pricing ↗](https://stripe.com/pricing) · Verified Oct 17, 2026 | Yes  ('Free') Source: [Slack developers: Incoming webhooks ↗](https://api.slack.com/messaging/webhooks) · Verified Nov 3, 2026 |
 | Webhook support at required tier | Yes  ('Standard') Source: [Stripe API docs ↗](https://docs.stripe.com/api) · Verified Oct 17, 2026 | Yes  ('Free') Incoming webhooks Source: [Slack developers: Incoming webhooks ↗](https://api.slack.com/messaging/webhooks) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [Stripe API access by plan](https://stackcostmatrix.com/stripe-api-access/) and [Slack API access by plan](https://stackcostmatrix.com/slack-api-access/).
+
 [Visit Stripe](https://stackcostmatrix.com/go/stripe)  [Visit Slack](https://stackcostmatrix.com/go/slack)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -136,21 +138,16 @@ Notifications only go to channels the Stripe bot has been invited to, and Slack'
 
 ## Integrations related to Stripe + Slack
 
-[All Stripe integrations →](https://stackcostmatrix.com/stripe-integrations-cost/) · [All Slack integrations →](https://stackcostmatrix.com/slack-integrations-cost/) · [Stripe API access by plan →](https://stackcostmatrix.com/stripe-api-access/) · [Slack API access by plan →](https://stackcostmatrix.com/slack-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 13 Stripe integrations](https://stackcostmatrix.com/stripe-integrations-cost/) and [all 17 Slack integrations](https://stackcostmatrix.com/slack-integrations-cost/).
 
-[### Monday.com + Slack
+- [Stripe + Calendly](https://stackcostmatrix.com/stack/stripe-and-calendly/): Native, $120.00 a month for 10 seats
+- [Zendesk + Stripe](https://stackcostmatrix.com/stack/zendesk-and-stripe/): Middleware, $700.59 a month for 10 seats
+- [ClickUp + Stripe](https://stackcostmatrix.com/stack/clickup-and-stripe/): Middleware, $10.59 a month for 10 seats
+- [HubSpot + Slack](https://stackcostmatrix.com/stack/hubspot-and-slack/): Native, $0.00 a month for 10 seats
+- [Xero + Slack](https://stackcostmatrix.com/stack/xero-and-slack/): Middleware, $37.59 a month for 10 seats
+- [Pipedrive + Slack](https://stackcostmatrix.com/stack/pipedrive-and-slack/): Native, $390.00 a month for 10 seats
 
-Native](https://stackcostmatrix.com/stack/monday-and-slack/)[### Salesforce Sales Cloud + Stripe
-
-Native](https://stackcostmatrix.com/stack/salesforce-and-stripe/)[### Notion + Stripe
-
-Middleware](https://stackcostmatrix.com/stack/notion-and-stripe/)[### Stripe + Mailchimp
-
-Middleware](https://stackcostmatrix.com/stack/stripe-and-mailchimp/)[### Stripe + QuickBooks Online
-
-Middleware](https://stackcostmatrix.com/stack/stripe-and-quickbooks/)[### Stripe + Xero
-
-Native](https://stackcostmatrix.com/stack/stripe-and-xero/)
+Stripe + Slack is also covered in the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Last checked: Nov 3, 2026
 

@@ -110,6 +110,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Free') Source: [Slack developers: Incoming webhooks ↗](https://api.slack.com/messaging/webhooks) · Verified Nov 3, 2026 | Yes  ('Free') Source: [Calendly: API overview ↗](https://calendly.com/help/calendly-api-overview) · Verified Nov 3, 2026 |
 | Webhook support at required tier | Yes  ('Free') Incoming webhooks Source: [Slack developers: Incoming webhooks ↗](https://api.slack.com/messaging/webhooks) · Verified Nov 3, 2026 | No  ('Free') Webhooks need a paid plan Source: [Calendly: API overview ↗](https://calendly.com/help/calendly-api-overview) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [Slack API access by plan](https://stackcostmatrix.com/slack-api-access/) and [Calendly API access by plan](https://stackcostmatrix.com/calendly-api-access/).
+
 [Visit Slack](https://stackcostmatrix.com/go/slack)  [Visit Calendly](https://stackcostmatrix.com/go/calendly)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -134,21 +136,16 @@ Each person connects their own Calendly account after a workspace admin installs
 
 ## Integrations related to Slack + Calendly
 
-[All Slack integrations →](https://stackcostmatrix.com/slack-integrations-cost/) · [All Calendly integrations →](https://stackcostmatrix.com/calendly-integrations-cost/) · [Slack API access by plan →](https://stackcostmatrix.com/slack-api-access/) · [Calendly API access by plan →](https://stackcostmatrix.com/calendly-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 17 Slack integrations](https://stackcostmatrix.com/slack-integrations-cost/) and [all 10 Calendly integrations](https://stackcostmatrix.com/calendly-integrations-cost/).
 
-[### ActiveCampaign + Calendly
+- [Asana + Slack](https://stackcostmatrix.com/stack/asana-and-slack/): Native, $134.90 a month for 10 seats
+- [Slack + Zendesk](https://stackcostmatrix.com/stack/slack-and-zendesk/): Native, $690.00 a month for 10 seats
+- [ClickUp + Slack](https://stackcostmatrix.com/stack/clickup-and-slack/): Native, $0.00 a month for 10 seats
+- [Notion + Calendly](https://stackcostmatrix.com/stack/notion-and-calendly/): Middleware, $250.59 a month for 10 seats
+- [Intercom + Calendly](https://stackcostmatrix.com/stack/intercom-and-calendly/): Native, $390.00 a month for 10 seats
+- [Xero + Calendly](https://stackcostmatrix.com/stack/xero-and-calendly/): Middleware, $176.99 a month for 10 seats
 
-Native](https://stackcostmatrix.com/stack/activecampaign-and-calendly/)[### Notion + Calendly
-
-Middleware](https://stackcostmatrix.com/stack/notion-and-calendly/)[### QuickBooks Online + Slack
-
-Middleware](https://stackcostmatrix.com/stack/quickbooks-and-slack/)[### Slack + Intercom
-
-Native](https://stackcostmatrix.com/stack/slack-and-intercom/)[### Slack + Notion
-
-Native](https://stackcostmatrix.com/stack/slack-and-notion/)[### Xero + Calendly
-
-Middleware](https://stackcostmatrix.com/stack/xero-and-calendly/)
+Slack + Calendly is also covered in the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Last checked: Nov 3, 2026
 

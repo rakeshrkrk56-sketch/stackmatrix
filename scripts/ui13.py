@@ -71,6 +71,10 @@ output{display:block}
 .scm-jump a{display:inline-flex;align-items:center;min-height:44px;padding:0 14px;border-radius:4px;border:1px solid var(--rule);background:#fff;color:var(--ink);font-size:.9375rem;font-weight:500;text-decoration:none}
 .scm-jump a:hover{background:var(--wash);border-color:var(--ink)}
 .scm-jump a.scm-jump-p,.scm-jump a.scm-jump-p:hover{background:var(--ink);border-color:var(--ink);color:#fff}
+.scm-index{margin-top:12px;padding:0;list-style:none;columns:2;column-gap:24px;font-size:.9375rem;line-height:1.35}
+.scm-index li{break-inside:avoid;padding:2px 0}
+.scm-index a{display:inline-block;padding:6px 0;font-weight:500;color:var(--ink)}
+@media (min-width:640px){.scm-index{columns:3;column-gap:32px}}
 .scm-anchor{display:block;height:0;scroll-margin-top:16px}
 h2[id],div[id=calculators]{scroll-margin-top:16px}
 .text-xs{font-size:.8125rem;line-height:1.2rem}

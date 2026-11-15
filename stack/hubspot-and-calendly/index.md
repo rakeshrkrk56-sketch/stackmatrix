@@ -110,6 +110,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Free') 100 req/10 s · 250,000/day (private apps) Source: [HubSpot developers: Usage guidelines ↗](https://developers.hubspot.com/docs/developer-tooling/platform/usage-guidelines) · Verified Nov 3, 2026 | Yes  ('Standard') Source: [Calendly: API overview ↗](https://calendly.com/help/calendly-api-overview) · Verified Nov 3, 2026 |
 | Webhook support at required tier | No  ('Free') Workflow webhooks need Data Hub Professional Source: [HubSpot KB: Webhooks in workflows ↗](https://knowledge.hubspot.com/workflows/how-do-i-use-webhooks-with-hubspot-workflows) · Verified Nov 3, 2026 | Yes  ('Standard') Source: [Calendly: API overview ↗](https://calendly.com/help/calendly-api-overview) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [HubSpot API access by plan](https://stackcostmatrix.com/hubspot-api-access/) and [Calendly API access by plan](https://stackcostmatrix.com/calendly-api-access/).
+
 [Visit HubSpot](https://stackcostmatrix.com/go/hubspot)  [Visit Calendly](https://stackcostmatrix.com/go/calendly)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -134,23 +136,16 @@ Routing from HubSpot forms needs Calendly Teams or Enterprise. Changing a meetin
 
 ## Integrations related to HubSpot + Calendly
 
-[All HubSpot integrations →](https://stackcostmatrix.com/hubspot-integrations-cost/) · [All Calendly integrations →](https://stackcostmatrix.com/calendly-integrations-cost/) · [HubSpot API access by plan →](https://stackcostmatrix.com/hubspot-api-access/) · [Calendly API access by plan →](https://stackcostmatrix.com/calendly-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 16 HubSpot integrations](https://stackcostmatrix.com/hubspot-integrations-cost/) and [all 10 Calendly integrations](https://stackcostmatrix.com/calendly-integrations-cost/).
 
-Part of our [HubSpot integration cost guide](https://stackcostmatrix.com/hubspot-integrations-cost/) and [CRM integration hidden-costs guide](https://stackcostmatrix.com/crm-integration-pricing-guide/).
+- [HubSpot + Asana](https://stackcostmatrix.com/stack/hubspot-and-asana/): Native, $634.90 a month for 10 seats
+- [HubSpot + Slack](https://stackcostmatrix.com/stack/hubspot-and-slack/): Native, $0.00 a month for 10 seats
+- [HubSpot + ClickUp](https://stackcostmatrix.com/stack/hubspot-and-clickup/): Native, $120.00 a month for 10 seats
+- [Pipedrive + Calendly](https://stackcostmatrix.com/stack/pipedrive-and-calendly/): Middleware, $270.59 a month for 10 seats
+- [Salesforce Sales Cloud + Calendly](https://stackcostmatrix.com/stack/salesforce-and-calendly/): Native, $1,850.00 a month for 10 seats
+- [Stripe + Calendly](https://stackcostmatrix.com/stack/stripe-and-calendly/): Native, $120.00 a month for 10 seats
 
-[### Pipedrive + Calendly
-
-Middleware](https://stackcostmatrix.com/stack/pipedrive-and-calendly/)[### ActiveCampaign + Calendly
-
-Native](https://stackcostmatrix.com/stack/activecampaign-and-calendly/)[### HubSpot + Pipedrive
-
-Middleware](https://stackcostmatrix.com/stack/hubspot-and-pipedrive/)[### HubSpot + Salesforce Sales Cloud
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-salesforce/)[### Intercom + HubSpot
-
-Native](https://stackcostmatrix.com/stack/intercom-and-hubspot/)[### Mailchimp + Calendly
-
-Native](https://stackcostmatrix.com/stack/mailchimp-and-calendly/)
+HubSpot + Calendly is also covered in the [CRM integration hidden-costs guide](https://stackcostmatrix.com/crm-integration-pricing-guide/), the guide to [which HubSpot integrations need Professional](https://stackcostmatrix.com/hubspot-professional-integrations/) and the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Last checked: Nov 3, 2026
 

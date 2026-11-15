@@ -110,6 +110,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Lite') 20 req/2 s · daily budget ×1 Source: [Pipedrive developers: Rate limiting ↗](https://pipedrive.readme.io/docs/core-api-concepts-rate-limiting) · Verified Nov 3, 2026 | Yes  ('Essential') Paid workspaces Source: [Intercom developers: Webhooks ↗](https://developers.intercom.com/docs/webhooks) · Verified Nov 3, 2026 |
 | Webhook support at required tier | Yes  ('Lite') Source: [Pipedrive: Automations webhook requests ↗](https://support.pipedrive.com/en/article/automations-webhook-requests) · Verified Nov 3, 2026 | Yes  ('Essential') Source: [Intercom developers: Webhooks ↗](https://developers.intercom.com/docs/webhooks) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [Pipedrive API access by plan](https://stackcostmatrix.com/pipedrive-api-access/) and [Intercom API access by plan](https://stackcostmatrix.com/intercom-api-access/).
+
 [Visit Pipedrive](https://stackcostmatrix.com/go/pipedrive)  [Visit Intercom](https://stackcostmatrix.com/go/intercom)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -134,23 +136,16 @@ Deals always land in the first stage of your default pipeline, and only the lead
 
 ## Integrations related to Pipedrive + Intercom
 
-[All Pipedrive integrations →](https://stackcostmatrix.com/pipedrive-integrations-cost/) · [All Intercom integrations →](https://stackcostmatrix.com/intercom-integrations-cost/) · [Pipedrive API access by plan →](https://stackcostmatrix.com/pipedrive-api-access/) · [Intercom API access by plan →](https://stackcostmatrix.com/intercom-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 11 Pipedrive integrations](https://stackcostmatrix.com/pipedrive-integrations-cost/) and [all 8 Intercom integrations](https://stackcostmatrix.com/intercom-integrations-cost/).
 
-Part of our [CRM integration hidden-costs guide](https://stackcostmatrix.com/crm-integration-pricing-guide/).
+- [Pipedrive + Zendesk](https://stackcostmatrix.com/stack/pipedrive-and-zendesk/): Native, $830.00 a month for 10 seats
+- [Pipedrive + Mailchimp](https://stackcostmatrix.com/stack/pipedrive-and-mailchimp/): Native, $140.00 a month for 10 seats
+- [Pipedrive + Slack](https://stackcostmatrix.com/stack/pipedrive-and-slack/): Native, $390.00 a month for 10 seats
+- [Intercom + Salesforce Sales Cloud](https://stackcostmatrix.com/stack/intercom-and-salesforce/): Native, $2,240.00 a month for 10 seats
+- [Intercom + HubSpot](https://stackcostmatrix.com/stack/intercom-and-hubspot/): Native, $390.00 a month for 10 seats
+- [Intercom + ActiveCampaign](https://stackcostmatrix.com/stack/intercom-and-activecampaign/): Middleware, $415.59 a month for 10 seats
 
-[### ActiveCampaign + Pipedrive
-
-Native](https://stackcostmatrix.com/stack/activecampaign-and-pipedrive/)[### HubSpot + Pipedrive
-
-Middleware](https://stackcostmatrix.com/stack/hubspot-and-pipedrive/)[### Pipedrive + Asana
-
-Native](https://stackcostmatrix.com/stack/pipedrive-and-asana/)[### Pipedrive + Calendly
-
-Middleware](https://stackcostmatrix.com/stack/pipedrive-and-calendly/)[### Pipedrive + Mailchimp
-
-Native](https://stackcostmatrix.com/stack/pipedrive-and-mailchimp/)[### Pipedrive + QuickBooks
-
-Native](https://stackcostmatrix.com/stack/pipedrive-and-quickbooks/)
+Pipedrive + Intercom is also covered in the [CRM integration hidden-costs guide](https://stackcostmatrix.com/crm-integration-pricing-guide/) and the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Requirements checked: Nov 12, 2026; prices: Nov 3, 2026 (exceptions listed at the top)
 

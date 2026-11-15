@@ -13,27 +13,27 @@ This page collects the 17 Slack integrations in the StackCostMatrix index: which
 
 Slack Integration Costs (2026): Minimum Plans, API Access & Hidden Fees
 
-| Integration | Type | Min. Slack plan | Other tool's plan | 10-seat total | Checked | Details |
-| --- | --- | --- | --- | --- | --- | --- |
-| [Slack + Airtable](https://stackcostmatrix.com/stack/slack-and-airtable/) | Native | Free | Free | $0.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/slack-and-airtable/) |
-| [Slack + Calendly](https://stackcostmatrix.com/stack/slack-and-calendly/) | Native | Free | Free | $0.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/slack-and-calendly/) |
-| [ClickUp + Slack](https://stackcostmatrix.com/stack/clickup-and-slack/) | Native | Free | Free | $0.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/clickup-and-slack/) |
-| [HubSpot + Slack](https://stackcostmatrix.com/stack/hubspot-and-slack/) | Native | Free | Free | $0.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/hubspot-and-slack/) |
-| [Mailchimp + Slack](https://stackcostmatrix.com/stack/mailchimp-and-slack/) | Native | Free | Free | $0.00 | Nov 12, 2026 | [Calculator →](https://stackcostmatrix.com/stack/mailchimp-and-slack/) |
-| [Stripe + Slack](https://stackcostmatrix.com/stack/stripe-and-slack/) | Native | Free | Standard | $0.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/stripe-and-slack/) |
-| [Xero + Slack](https://stackcostmatrix.com/stack/xero-and-slack/) | Middleware Make Core $10.59/mo | Free | Early | $37.59 | Nov 12, 2026 | [Calculator →](https://stackcostmatrix.com/stack/xero-and-slack/) |
-| [ActiveCampaign + Slack](https://stackcostmatrix.com/stack/activecampaign-and-slack/) | Native | Free | Plus | $49.00 | Nov 12, 2026 | [Calculator →](https://stackcostmatrix.com/stack/activecampaign-and-slack/) |
-| [QuickBooks + Slack](https://stackcostmatrix.com/stack/quickbooks-and-slack/) | Middleware Zapier Professional $29.99/mo | Free | Simple Start | $67.99 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/quickbooks-and-slack/) |
-| [Slack + Notion](https://stackcostmatrix.com/stack/slack-and-notion/) | Native | Free | Plus | $120.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/slack-and-notion/) |
-| [Asana + Slack](https://stackcostmatrix.com/stack/asana-and-slack/) | Native | Free | Starter | $134.90 | Nov 3, 2026 (Asana plan unconfirmed) | [Calculator →](https://stackcostmatrix.com/stack/asana-and-slack/) |
-| [Monday.com + Slack](https://stackcostmatrix.com/stack/monday-and-slack/) | Native | Free | Standard | $140.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/monday-and-slack/) |
-| [Freshdesk + Slack](https://stackcostmatrix.com/stack/freshdesk-and-slack/) | Native | Free | Growth | $230.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/freshdesk-and-slack/) |
-| [Slack + Intercom](https://stackcostmatrix.com/stack/slack-and-intercom/) | Native | Free | Essential | $390.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/slack-and-intercom/) |
-| [Pipedrive + Slack](https://stackcostmatrix.com/stack/pipedrive-and-slack/) | Native | Free | Growth | $390.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/pipedrive-and-slack/) |
-| [Slack + Zendesk](https://stackcostmatrix.com/stack/slack-and-zendesk/) | Native | Free | Suite Team | $690.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/slack-and-zendesk/) |
-| [Salesforce + Slack](https://stackcostmatrix.com/stack/salesforce-and-slack/) | Native | Pro | Enterprise | $1,737.50 | Nov 3, 2026 (Salesforce edition unconfirmed) | [Calculator →](https://stackcostmatrix.com/stack/salesforce-and-slack/) |
+| Integration | Type | Min. Slack plan | Other tool's plan | 10-seat total | Checked |
+| --- | --- | --- | --- | --- | --- |
+| [Slack + Airtable](https://stackcostmatrix.com/stack/slack-and-airtable/) | Native | Free | Free | $0.00 | Nov 3, 2026 |
+| [Slack + Calendly](https://stackcostmatrix.com/stack/slack-and-calendly/) | Native | Free | Free | $0.00 | Nov 3, 2026 |
+| [ClickUp + Slack](https://stackcostmatrix.com/stack/clickup-and-slack/) | Native | Free | Free | $0.00 | Nov 3, 2026 |
+| [HubSpot + Slack](https://stackcostmatrix.com/stack/hubspot-and-slack/) | Native | Free | Free | $0.00 | Nov 3, 2026 |
+| [Mailchimp + Slack](https://stackcostmatrix.com/stack/mailchimp-and-slack/) | Native | Free | Free | $0.00 | Nov 12, 2026 |
+| [Stripe + Slack](https://stackcostmatrix.com/stack/stripe-and-slack/) | Native | Free | Standard | $0.00 | Nov 3, 2026 |
+| [Xero + Slack](https://stackcostmatrix.com/stack/xero-and-slack/) | Middleware Make Core $10.59/mo | Free | Early | $37.59 | Nov 12, 2026 |
+| [ActiveCampaign + Slack](https://stackcostmatrix.com/stack/activecampaign-and-slack/) | Native | Free | Plus | $49.00 | Nov 12, 2026 |
+| [QuickBooks + Slack](https://stackcostmatrix.com/stack/quickbooks-and-slack/) | Middleware Zapier Professional $29.99/mo | Free | Simple Start | $67.99 | Nov 3, 2026 |
+| [Slack + Notion](https://stackcostmatrix.com/stack/slack-and-notion/) | Native | Free | Plus | $120.00 | Nov 3, 2026 |
+| [Asana + Slack](https://stackcostmatrix.com/stack/asana-and-slack/) | Native | Free | Starter | $134.90 | Nov 3, 2026 (Asana plan unconfirmed) |
+| [Monday.com + Slack](https://stackcostmatrix.com/stack/monday-and-slack/) | Native | Free | Standard | $140.00 | Nov 3, 2026 |
+| [Freshdesk + Slack](https://stackcostmatrix.com/stack/freshdesk-and-slack/) | Native | Free | Growth | $230.00 | Nov 3, 2026 |
+| [Slack + Intercom](https://stackcostmatrix.com/stack/slack-and-intercom/) | Native | Free | Essential | $390.00 | Nov 3, 2026 |
+| [Pipedrive + Slack](https://stackcostmatrix.com/stack/pipedrive-and-slack/) | Native | Free | Growth | $390.00 | Nov 3, 2026 |
+| [Slack + Zendesk](https://stackcostmatrix.com/stack/slack-and-zendesk/) | Native | Free | Suite Team | $690.00 | Nov 3, 2026 |
+| [Salesforce + Slack](https://stackcostmatrix.com/stack/salesforce-and-slack/) | Native | Pro | Enterprise | $1,737.50 | Nov 3, 2026 (Salesforce edition unconfirmed) |
 
-Totals are monthly-billing prices for 10 seats on the minimum plans, including any connector fee. Open a calculator to change team size, switch to annual billing or add usage costs.
+Totals are monthly-billing prices for 10 seats on the minimum plans, including any connector fee. Each integration's name opens its page, where a calculator lets you change team size, switch to annual billing or add usage costs.
 
 Chart: Slack integrations: monthly cost for 10 seats on the plans each needs: Salesforce + Slack $1,737.50; Slack + Zendesk $690.00; Slack + Intercom $390.00; Pipedrive + Slack $390.00; Freshdesk + Slack $230.00; Monday.com + Slack $140.00; Asana + Slack $134.90; Slack + Notion $120.00; QuickBooks + Slack $67.99; ActiveCampaign + Slack $49.00; Xero + Slack $37.59; Slack + Airtable $0.00; Slack + Calendly $0.00; ClickUp + Slack $0.00; HubSpot + Slack $0.00; Mailchimp + Slack $0.00; Stripe + Slack $0.00
 
@@ -45,7 +45,7 @@ Image: [Slack integration costs summary: 17 integrations priced, from $0 to $1,7
 
 ## Which Slack integrations force a plan upgrade?
 
-1 of the 17 integrations needs a more expensive Slack plan than Free, Slack's cheapest plan with API access. The extra Slack cost at 10 seats: Salesforce + Slack needs Pro (+$87.50/mo). That gap is the hidden cost: you pay it every month even if you only wanted the integration. Each pair's "Hidden Cost Trap" box shows the full breakdown.
+1 of the 17 integrations needs a more expensive Slack plan than Free, Slack's cheapest plan with API access. The extra Slack cost at 10 seats: Salesforce + Slack needs Pro (+$87.50/mo). That gap is the hidden cost: you pay it every month even if you only wanted the integration. Each pair's "Hidden Cost Trap" box shows the full breakdown. The [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/) adds these costs up across all 90 pairs in the index.
 
 ## Which Slack integrations need Make or Zapier?
 
@@ -73,7 +73,23 @@ Full 20-tool source index: [About StackCostMatrix →](https://stackcostmatrix.c
 
 ## Integration costs by tool
 
-[ActiveCampaign](https://stackcostmatrix.com/activecampaign-integrations-cost/) · [Airtable](https://stackcostmatrix.com/airtable-integrations-cost/) · [Asana](https://stackcostmatrix.com/asana-integrations-cost/) · [Calendly](https://stackcostmatrix.com/calendly-integrations-cost/) · [ClickUp](https://stackcostmatrix.com/clickup-integrations-cost/) · [Freshdesk](https://stackcostmatrix.com/freshdesk-integrations-cost/) · [HubSpot](https://stackcostmatrix.com/hubspot-integrations-cost/) · [Intercom](https://stackcostmatrix.com/intercom-integrations-cost/) · [Mailchimp](https://stackcostmatrix.com/mailchimp-integrations-cost/) · [Monday.com](https://stackcostmatrix.com/monday-integrations-cost/) · [Notion](https://stackcostmatrix.com/notion-integrations-cost/) · [Pipedrive](https://stackcostmatrix.com/pipedrive-integrations-cost/) · [QuickBooks](https://stackcostmatrix.com/quickbooks-integrations-cost/) · [Salesforce](https://stackcostmatrix.com/salesforce-integrations-cost/) · [Stripe](https://stackcostmatrix.com/stripe-integrations-cost/) · [Xero](https://stackcostmatrix.com/xero-integrations-cost/) · [Zendesk](https://stackcostmatrix.com/zendesk-integrations-cost/)
+- [ActiveCampaign integrations](https://stackcostmatrix.com/activecampaign-integrations-cost/)
+- [Airtable integrations](https://stackcostmatrix.com/airtable-integrations-cost/)
+- [Asana integrations](https://stackcostmatrix.com/asana-integrations-cost/)
+- [Calendly integrations](https://stackcostmatrix.com/calendly-integrations-cost/)
+- [ClickUp integrations](https://stackcostmatrix.com/clickup-integrations-cost/)
+- [Freshdesk integrations](https://stackcostmatrix.com/freshdesk-integrations-cost/)
+- [HubSpot integrations](https://stackcostmatrix.com/hubspot-integrations-cost/)
+- [Intercom integrations](https://stackcostmatrix.com/intercom-integrations-cost/)
+- [Mailchimp integrations](https://stackcostmatrix.com/mailchimp-integrations-cost/)
+- [Monday.com integrations](https://stackcostmatrix.com/monday-integrations-cost/)
+- [Notion integrations](https://stackcostmatrix.com/notion-integrations-cost/)
+- [Pipedrive integrations](https://stackcostmatrix.com/pipedrive-integrations-cost/)
+- [QuickBooks integrations](https://stackcostmatrix.com/quickbooks-integrations-cost/)
+- [Salesforce integrations](https://stackcostmatrix.com/salesforce-integrations-cost/)
+- [Stripe integrations](https://stackcostmatrix.com/stripe-integrations-cost/)
+- [Xero integrations](https://stackcostmatrix.com/xero-integrations-cost/)
+- [Zendesk integrations](https://stackcostmatrix.com/zendesk-integrations-cost/)
 
 ## Slack integration costs: frequently asked questions
 

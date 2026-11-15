@@ -147,7 +147,7 @@ FACTS_EXTRA = {("salesforce", "Enterprise"): ("Yes", "Yes"), ("slack", "Free"): 
                ("mailchimp", "Free"): ("Yes", "No")}  # webhook value copied from Essentials
 SHORT = {"Salesforce Sales Cloud": "Salesforce", "QuickBooks Online": "QuickBooks"}
 TODAY = "2026-11-03"
-ROUND_DATE = "2026-11-11"  # last change to every pair page (Nov 11: connection diagram; Nov 8: trap text, FAQ, descriptions)
+ROUND_DATE = "2026-11-15"  # last change to every pair page (Nov 15: related links rebuilt by links24.py; Nov 11: connection diagram; Nov 8: trap text, FAQ, descriptions)
 
 def esc(s):  # matches the site's escaping of summaries/FAQ text
     return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace("'", "&#39;")

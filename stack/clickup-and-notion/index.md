@@ -109,6 +109,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Free') 100 requests/min per token Source: [ClickUp developers: API availability by plan ↗](https://developer.clickup.com/docs/apis-available-by-plan) · Verified Nov 3, 2026 | Yes  ('Plus') Source: [Notion developers: Webhooks ↗](https://developers.notion.com/reference/webhooks) · Verified Nov 3, 2026 |
 | Webhook support at required tier | Yes  ('Free') API webhooks Source: [ClickUp: Automation webhooks ↗](https://help.clickup.com/hc/en-us/articles/35313844961943-Integrate-ClickUp-using-Automation-webhooks) · Verified Nov 3, 2026 | Yes  ('Plus') Source: [Notion developers: Webhooks ↗](https://developers.notion.com/reference/webhooks) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [ClickUp API access by plan](https://stackcostmatrix.com/clickup-api-access/) and [Notion API access by plan](https://stackcostmatrix.com/notion-api-access/).
+
 [Visit ClickUp](https://stackcostmatrix.com/go/clickup)  [Visit Notion](https://stackcostmatrix.com/go/notion)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -133,21 +135,16 @@ It's previews only: no database sync and nothing sent back to ClickUp, so moving
 
 ## Integrations related to ClickUp + Notion
 
-[All ClickUp integrations →](https://stackcostmatrix.com/clickup-integrations-cost/) · [All Notion integrations →](https://stackcostmatrix.com/notion-integrations-cost/) · [ClickUp API access by plan →](https://stackcostmatrix.com/clickup-api-access/) · [Notion API access by plan →](https://stackcostmatrix.com/notion-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 7 ClickUp integrations](https://stackcostmatrix.com/clickup-integrations-cost/) and [all 7 Notion integrations](https://stackcostmatrix.com/notion-integrations-cost/).
 
-[### ClickUp + ActiveCampaign
+- [ClickUp + Stripe](https://stackcostmatrix.com/stack/clickup-and-stripe/): Middleware, $10.59 a month for 10 seats
+- [ClickUp + Slack](https://stackcostmatrix.com/stack/clickup-and-slack/): Native, $0.00 a month for 10 seats
+- [HubSpot + ClickUp](https://stackcostmatrix.com/stack/hubspot-and-clickup/): Native, $120.00 a month for 10 seats
+- [Asana + Notion](https://stackcostmatrix.com/stack/asana-and-notion/): Native, $254.90 a month for 10 seats
+- [Notion + Stripe](https://stackcostmatrix.com/stack/notion-and-stripe/): Middleware, $130.59 a month for 10 seats
+- [HubSpot + Notion](https://stackcostmatrix.com/stack/hubspot-and-notion/): Native, $320.00 a month for 10 seats
 
-Middleware](https://stackcostmatrix.com/stack/clickup-and-activecampaign/)[### ClickUp + Salesforce
-
-Middleware](https://stackcostmatrix.com/stack/clickup-and-salesforce/)[### ClickUp + Slack
-
-Native](https://stackcostmatrix.com/stack/clickup-and-slack/)[### ClickUp + Stripe
-
-Middleware](https://stackcostmatrix.com/stack/clickup-and-stripe/)[### ClickUp + Zendesk
-
-Native](https://stackcostmatrix.com/stack/clickup-and-zendesk/)[### HubSpot + ClickUp
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-clickup/)
+ClickUp + Notion is also covered in the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Requirements checked: Nov 12, 2026; prices: Nov 3, 2026
 

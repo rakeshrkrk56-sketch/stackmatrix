@@ -112,6 +112,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Starter') Source: [Asana pricing ↗](https://asana.com/pricing) · Verified Oct 17, 2026 | Yes  ('Essentials') No plan requirement in Mailchimp's API key article Source: [Mailchimp: About API keys ↗](https://mailchimp.com/help/about-api-keys/) · Verified Nov 3, 2026 |
 | Webhook support at required tier | Yes  ('Starter') API webhooks; no plan requirement stated Source: [Asana developers: Webhooks guide ↗](https://developers.asana.com/docs/webhooks-guide) · Verified Nov 3, 2026 | No  ('Essentials') Webhook automation step needs Standard Source: [Mailchimp: About webhooks ↗](https://mailchimp.com/help/about-webhooks/) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [Asana API access by plan](https://stackcostmatrix.com/asana-api-access/) and [Mailchimp API access by plan](https://stackcostmatrix.com/mailchimp-api-access/).
+
 [Visit Asana](https://stackcostmatrix.com/go/asana)  [Visit Mailchimp](https://stackcostmatrix.com/go/mailchimp)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -136,21 +138,16 @@ Each run is one-way, from the trigger app to the action app, and every run count
 
 ## Integrations related to Asana + Mailchimp
 
-[All Asana integrations →](https://stackcostmatrix.com/asana-integrations-cost/) · [All Mailchimp integrations →](https://stackcostmatrix.com/mailchimp-integrations-cost/) · [Asana API access by plan →](https://stackcostmatrix.com/asana-api-access/) · [Mailchimp API access by plan →](https://stackcostmatrix.com/mailchimp-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 10 Asana integrations](https://stackcostmatrix.com/asana-integrations-cost/) and [all 11 Mailchimp integrations](https://stackcostmatrix.com/mailchimp-integrations-cost/).
 
-[### Asana + Slack
+- [Asana + ActiveCampaign](https://stackcostmatrix.com/stack/asana-and-activecampaign/): Middleware, $160.49 a month for 10 seats
+- [Zendesk + Asana](https://stackcostmatrix.com/stack/zendesk-and-asana/): Native, $824.90 a month for 10 seats
+- [Asana + Slack](https://stackcostmatrix.com/stack/asana-and-slack/): Native, $134.90 a month for 10 seats
+- [Monday.com + Mailchimp](https://stackcostmatrix.com/stack/monday-and-mailchimp/): Native, $140.00 a month for 10 seats
+- [Mailchimp + Calendly](https://stackcostmatrix.com/stack/mailchimp-and-calendly/): Native, $120.00 a month for 10 seats
+- [Mailchimp + Airtable](https://stackcostmatrix.com/stack/mailchimp-and-airtable/): Middleware, $263.59 a month for 10 seats
 
-Native](https://stackcostmatrix.com/stack/asana-and-slack/)[### HubSpot + Mailchimp
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-mailchimp/)[### Salesforce Sales Cloud + Mailchimp
-
-Native](https://stackcostmatrix.com/stack/salesforce-and-mailchimp/)[### Stripe + Mailchimp
-
-Middleware](https://stackcostmatrix.com/stack/stripe-and-mailchimp/)[### HubSpot + Asana
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-asana/)[### Mailchimp + Airtable
-
-Middleware](https://stackcostmatrix.com/stack/mailchimp-and-airtable/)
+Asana + Mailchimp is also covered in the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Last checked: Nov 3, 2026 (exceptions listed at the top)
 

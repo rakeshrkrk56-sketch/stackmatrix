@@ -114,6 +114,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Essential') Paid workspaces Source: [Intercom developers: Webhooks ↗](https://developers.intercom.com/docs/webhooks) · Verified Nov 3, 2026 | Yes  ('Starter') Source: [ActiveCampaign: Getting started with the API ↗](https://help.activecampaign.com/hc/en-us/articles/207317590) · Verified Nov 3, 2026 |
 | Webhook support at required tier | Yes  ('Essential') Source: [Intercom developers: Webhooks ↗](https://developers.intercom.com/docs/webhooks) · Verified Nov 3, 2026 | Yes  ('Starter') Source: [ActiveCampaign: Use webhooks ↗](https://help.activecampaign.com/hc/en-us/articles/115001403484) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [Intercom API access by plan](https://stackcostmatrix.com/intercom-api-access/) and [ActiveCampaign API access by plan](https://stackcostmatrix.com/activecampaign-api-access/).
+
 [Visit Intercom](https://stackcostmatrix.com/go/intercom)  [Visit ActiveCampaign](https://stackcostmatrix.com/go/activecampaign)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -138,21 +140,16 @@ Each Make scenario runs one way. Make's ActiveCampaign guide says the app needs 
 
 ## Integrations related to Intercom + ActiveCampaign
 
-[All Intercom integrations →](https://stackcostmatrix.com/intercom-integrations-cost/) · [All ActiveCampaign integrations →](https://stackcostmatrix.com/activecampaign-integrations-cost/) · [Intercom API access by plan →](https://stackcostmatrix.com/intercom-api-access/) · [ActiveCampaign API access by plan →](https://stackcostmatrix.com/activecampaign-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 8 Intercom integrations](https://stackcostmatrix.com/intercom-integrations-cost/) and [all 10 ActiveCampaign integrations](https://stackcostmatrix.com/activecampaign-integrations-cost/).
 
-[### Intercom + Calendly
+- [Intercom + Mailchimp](https://stackcostmatrix.com/stack/intercom-and-mailchimp/): Native, $390.00 a month for 10 seats
+- [Intercom + Salesforce Sales Cloud](https://stackcostmatrix.com/stack/intercom-and-salesforce/): Native, $2,240.00 a month for 10 seats
+- [Slack + Intercom](https://stackcostmatrix.com/stack/slack-and-intercom/): Native, $390.00 a month for 10 seats
+- [Freshdesk + ActiveCampaign](https://stackcostmatrix.com/stack/freshdesk-and-activecampaign/): Middleware, $255.59 a month for 10 seats
+- [ActiveCampaign + Slack](https://stackcostmatrix.com/stack/activecampaign-and-slack/): Native, $49.00 a month for 10 seats
+- [ActiveCampaign + Calendly](https://stackcostmatrix.com/stack/activecampaign-and-calendly/): Native, $135.00 a month for 10 seats
 
-Native](https://stackcostmatrix.com/stack/intercom-and-calendly/)[### Intercom + HubSpot
-
-Native](https://stackcostmatrix.com/stack/intercom-and-hubspot/)[### Intercom + Mailchimp
-
-Native](https://stackcostmatrix.com/stack/intercom-and-mailchimp/)[### Intercom + Salesforce
-
-Native](https://stackcostmatrix.com/stack/intercom-and-salesforce/)[### Intercom + Stripe
-
-Native](https://stackcostmatrix.com/stack/intercom-and-stripe/)[### Pipedrive + Intercom
-
-Native](https://stackcostmatrix.com/stack/pipedrive-and-intercom/)
+Intercom + ActiveCampaign is also covered in the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Requirements checked: Nov 12, 2026; prices: Nov 3, 2026 (exceptions listed at the top)
 

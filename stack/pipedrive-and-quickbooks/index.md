@@ -110,6 +110,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Lite') 20 req/2 s · daily budget ×1 Source: [Pipedrive developers: Rate limiting ↗](https://pipedrive.readme.io/docs/core-api-concepts-rate-limiting) · Verified Nov 3, 2026 | Yes  ('Simple Start') Any paid plan (Zapier, Make and Mailchimp name no tier) Source: [Zapier help: QuickBooks Online API prerequisites ↗](https://help.zapier.com/hc/en-us/articles/8495935103885) · Verified Nov 3, 2026 |
 | Webhook support at required tier | Yes  ('Lite') Source: [Pipedrive: Automations webhook requests ↗](https://support.pipedrive.com/en/article/automations-webhook-requests) · Verified Nov 3, 2026 | Yes  ('Simple Start') App-level webhooks Source: [Intuit developers: Webhooks ↗](https://developer.intuit.com/app/developer/qbo/docs/develop/webhooks) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [Pipedrive API access by plan](https://stackcostmatrix.com/pipedrive-api-access/) and [QuickBooks API access by plan](https://stackcostmatrix.com/quickbooks-api-access/).
+
 [Visit Pipedrive](https://stackcostmatrix.com/go/pipedrive)  [Visit QuickBooks Online](https://stackcostmatrix.com/go/quickbooks)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -134,23 +136,16 @@ It needs an active paying or trial account with both Pipedrive and QuickBooks, a
 
 ## Integrations related to Pipedrive + QuickBooks Online
 
-[All Pipedrive integrations →](https://stackcostmatrix.com/pipedrive-integrations-cost/) · [All QuickBooks integrations →](https://stackcostmatrix.com/quickbooks-integrations-cost/) · [Pipedrive API access by plan →](https://stackcostmatrix.com/pipedrive-api-access/) · [QuickBooks API access by plan →](https://stackcostmatrix.com/quickbooks-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 11 Pipedrive integrations](https://stackcostmatrix.com/pipedrive-integrations-cost/) and [all 9 QuickBooks integrations](https://stackcostmatrix.com/quickbooks-integrations-cost/).
 
-Part of our [CRM integration hidden-costs guide](https://stackcostmatrix.com/crm-integration-pricing-guide/).
+- [Pipedrive + Xero](https://stackcostmatrix.com/stack/pipedrive-and-xero/): Middleware, $177.59 a month for 10 seats
+- [Pipedrive + Asana](https://stackcostmatrix.com/stack/pipedrive-and-asana/): Native, $274.90 a month for 10 seats
+- [HubSpot + Pipedrive](https://stackcostmatrix.com/stack/hubspot-and-pipedrive/): Middleware, $150.59 a month for 10 seats
+- [Salesforce Sales Cloud + QuickBooks Online](https://stackcostmatrix.com/stack/salesforce-and-quickbooks/): Middleware, $1,298.59 a month for 10 seats
+- [HubSpot + QuickBooks Online](https://stackcostmatrix.com/stack/hubspot-and-quickbooks/): Native, $38.00 a month for 10 seats
+- [QuickBooks Online + Mailchimp](https://stackcostmatrix.com/stack/quickbooks-and-mailchimp/): Native, $38.00 a month for 10 seats
 
-[### ActiveCampaign + Pipedrive
-
-Native](https://stackcostmatrix.com/stack/activecampaign-and-pipedrive/)[### HubSpot + Pipedrive
-
-Middleware](https://stackcostmatrix.com/stack/hubspot-and-pipedrive/)[### Pipedrive + Calendly
-
-Middleware](https://stackcostmatrix.com/stack/pipedrive-and-calendly/)[### Pipedrive + Mailchimp
-
-Native](https://stackcostmatrix.com/stack/pipedrive-and-mailchimp/)[### Pipedrive + Salesforce
-
-Middleware](https://stackcostmatrix.com/stack/pipedrive-and-salesforce/)[### Pipedrive + Slack
-
-Native](https://stackcostmatrix.com/stack/pipedrive-and-slack/)
+Pipedrive + QuickBooks Online is also covered in the [CRM integration hidden-costs guide](https://stackcostmatrix.com/crm-integration-pricing-guide/) and the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Last checked: Nov 4, 2026 (exceptions listed at the top)
 

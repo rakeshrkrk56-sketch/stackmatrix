@@ -115,6 +115,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Professional') Web Services API add-on (modeled at $25/user) Source: [Salesforce developers: Supported editions ↗](https://developer.salesforce.com/docs/platform/api-rest/guide/intro-rest-compatible-editions.html) · Verified Nov 3, 2026 | Yes  ('Business') Not stated in the article we read Source: [Airtable: Managing API call limits ↗](https://support.airtable.com/articles/7735693959-managing-api-call-limits-in-airtable) · Verified Nov 3, 2026 |
 | Webhook support at required tier | No  ('Professional') Change Data Capture (Salesforce's change-event feed) isn't available on Professional, so sync runs through the REST API. Source: [Salesforce developers: Change Data Capture ↗](https://developer.salesforce.com/docs/atlas.en-us.change_data_capture.meta/change_data_capture/cdc_intro.htm) · Verified Nov 8, 2026 | Yes  ('Business') Source: [Airtable: Create a webhook ↗](https://airtable.com/developers/web/api/create-a-webhook) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [Salesforce API access by plan](https://stackcostmatrix.com/salesforce-api-access/) and [Airtable API access by plan](https://stackcostmatrix.com/airtable-api-access/).
+
 [Visit Salesforce Sales Cloud](https://stackcostmatrix.com/go/salesforce)  [Visit Airtable](https://stackcostmatrix.com/go/airtable)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -139,23 +141,16 @@ It needs Airtable Business or Enterprise Scale, so Free and Team workspaces can'
 
 ## Integrations related to Salesforce Sales Cloud + Airtable
 
-[All Salesforce integrations →](https://stackcostmatrix.com/salesforce-integrations-cost/) · [All Airtable integrations →](https://stackcostmatrix.com/airtable-integrations-cost/) · [Salesforce API access by plan →](https://stackcostmatrix.com/salesforce-api-access/) · [Airtable API access by plan →](https://stackcostmatrix.com/airtable-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 13 Salesforce integrations](https://stackcostmatrix.com/salesforce-integrations-cost/) and [all 8 Airtable integrations](https://stackcostmatrix.com/airtable-integrations-cost/).
 
-Part of our [CRM integration hidden-costs guide](https://stackcostmatrix.com/crm-integration-pricing-guide/).
+- [Salesforce Sales Cloud + QuickBooks Online](https://stackcostmatrix.com/stack/salesforce-and-quickbooks/): Middleware, $1,298.59 a month for 10 seats
+- [ClickUp + Salesforce Sales Cloud](https://stackcostmatrix.com/stack/clickup-and-salesforce/): Middleware, $1,260.59 a month for 10 seats
+- [Salesforce Sales Cloud + Xero](https://stackcostmatrix.com/stack/salesforce-and-xero/): Middleware, $1,287.59 a month for 10 seats
+- [HubSpot + Airtable](https://stackcostmatrix.com/stack/hubspot-and-airtable/): Native, $200.00 a month for 10 seats
+- [Mailchimp + Airtable](https://stackcostmatrix.com/stack/mailchimp-and-airtable/): Middleware, $263.59 a month for 10 seats
+- [Zendesk + Airtable](https://stackcostmatrix.com/stack/zendesk-and-airtable/): Native, $1,230.00 a month for 10 seats
 
-[### Asana + Salesforce
-
-Native](https://stackcostmatrix.com/stack/asana-and-salesforce/)[### HubSpot + Salesforce
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-salesforce/)[### Intercom + Salesforce
-
-Native](https://stackcostmatrix.com/stack/intercom-and-salesforce/)[### Pipedrive + Salesforce
-
-Middleware](https://stackcostmatrix.com/stack/pipedrive-and-salesforce/)[### Salesforce + Calendly
-
-Native](https://stackcostmatrix.com/stack/salesforce-and-calendly/)[### Salesforce + Mailchimp
-
-Native](https://stackcostmatrix.com/stack/salesforce-and-mailchimp/)
+Salesforce Sales Cloud + Airtable is also covered in the [CRM integration hidden-costs guide](https://stackcostmatrix.com/crm-integration-pricing-guide/) and the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Requirements checked: Nov 12, 2026; prices: Nov 3, 2026 (exceptions listed at the top)
 

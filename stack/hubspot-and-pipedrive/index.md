@@ -112,6 +112,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Free') 100 req/10 s · 250,000/day (private apps) Source: [HubSpot developers: Usage guidelines ↗](https://developers.hubspot.com/docs/developer-tooling/platform/usage-guidelines) · Verified Nov 3, 2026 | Yes  ('Lite') 20 req/2 s · daily budget ×1 Source: [Pipedrive developers: Rate limiting ↗](https://pipedrive.readme.io/docs/core-api-concepts-rate-limiting) · Verified Nov 3, 2026 |
 | Webhook support at required tier | No  ('Free') Workflow webhooks need Data Hub Professional Source: [HubSpot KB: Webhooks in workflows ↗](https://knowledge.hubspot.com/workflows/how-do-i-use-webhooks-with-hubspot-workflows) · Verified Nov 3, 2026 | Yes  ('Lite') Source: [Pipedrive: Automations webhook requests ↗](https://support.pipedrive.com/en/article/automations-webhook-requests) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [HubSpot API access by plan](https://stackcostmatrix.com/hubspot-api-access/) and [Pipedrive API access by plan](https://stackcostmatrix.com/pipedrive-api-access/).
+
 [Visit HubSpot](https://stackcostmatrix.com/go/hubspot)  [Visit Pipedrive](https://stackcostmatrix.com/go/pipedrive)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -136,23 +138,16 @@ For ongoing sync you need middleware such as Make or Zapier, which works trigger
 
 ## Integrations related to HubSpot + Pipedrive
 
-[All HubSpot integrations →](https://stackcostmatrix.com/hubspot-integrations-cost/) · [All Pipedrive integrations →](https://stackcostmatrix.com/pipedrive-integrations-cost/) · [HubSpot API access by plan →](https://stackcostmatrix.com/hubspot-api-access/) · [Pipedrive API access by plan →](https://stackcostmatrix.com/pipedrive-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 16 HubSpot integrations](https://stackcostmatrix.com/hubspot-integrations-cost/) and [all 11 Pipedrive integrations](https://stackcostmatrix.com/pipedrive-integrations-cost/).
 
-Part of our [HubSpot integration cost guide](https://stackcostmatrix.com/hubspot-integrations-cost/) and [CRM integration hidden-costs guide](https://stackcostmatrix.com/crm-integration-pricing-guide/).
+- [HubSpot + Salesforce Sales Cloud](https://stackcostmatrix.com/stack/hubspot-and-salesforce/): Native, $1,750.00 a month for 10 seats
+- [HubSpot + Stripe](https://stackcostmatrix.com/stack/hubspot-and-stripe/): Native, $0.00 a month for 10 seats
+- [HubSpot + Mailchimp](https://stackcostmatrix.com/stack/hubspot-and-mailchimp/): Native, $20.00 a month for 10 seats
+- [Pipedrive + Salesforce Sales Cloud](https://stackcostmatrix.com/stack/pipedrive-and-salesforce/): Middleware, $1,400.59 a month for 10 seats
+- [Pipedrive + Xero](https://stackcostmatrix.com/stack/pipedrive-and-xero/): Middleware, $177.59 a month for 10 seats
+- [ActiveCampaign + Pipedrive](https://stackcostmatrix.com/stack/activecampaign-and-pipedrive/): Native, $405.00 a month for 10 seats
 
-[### HubSpot + Zendesk
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-zendesk/)[### ActiveCampaign + Pipedrive
-
-Native](https://stackcostmatrix.com/stack/activecampaign-and-pipedrive/)[### Freshdesk + HubSpot
-
-Native](https://stackcostmatrix.com/stack/freshdesk-and-hubspot/)[### HubSpot + Asana
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-asana/)[### HubSpot + ClickUp
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-clickup/)[### HubSpot + Monday.com
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-monday/)
+HubSpot + Pipedrive is also covered in the [CRM integration hidden-costs guide](https://stackcostmatrix.com/crm-integration-pricing-guide/), the guide to [which HubSpot integrations need Professional](https://stackcostmatrix.com/hubspot-professional-integrations/) and the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Last checked: Nov 3, 2026 (exceptions listed at the top)
 

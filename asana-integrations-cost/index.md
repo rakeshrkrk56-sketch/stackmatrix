@@ -13,20 +13,20 @@ This page collects the 10 Asana integrations in the StackCostMatrix index: which
 
 Asana Integration Costs (2026): Minimum Plans, API Access & Hidden Fees
 
-| Integration | Type | Min. Asana plan | Other tool's plan | 10-seat total | Checked | Details |
-| --- | --- | --- | --- | --- | --- | --- |
-| [Asana + Slack](https://stackcostmatrix.com/stack/asana-and-slack/) | Native | Starter | Free | $134.90 | Nov 3, 2026 (Asana plan unconfirmed) | [Calculator →](https://stackcostmatrix.com/stack/asana-and-slack/) |
-| [Asana + ActiveCampaign](https://stackcostmatrix.com/stack/asana-and-activecampaign/) | Middleware Make Core $10.59/mo | Starter | Starter | $160.49 | Nov 12, 2026 | [Calculator →](https://stackcostmatrix.com/stack/asana-and-activecampaign/) |
-| [Xero + Asana](https://stackcostmatrix.com/stack/xero-and-asana/) | Middleware Make Core $10.59/mo | Starter | Early | $172.49 | Nov 12, 2026 | [Calculator →](https://stackcostmatrix.com/stack/xero-and-asana/) |
-| [Asana + Mailchimp](https://stackcostmatrix.com/stack/asana-and-mailchimp/) | Middleware Zapier Professional $29.99/mo | Starter | Essentials | $177.89 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/asana-and-mailchimp/) |
-| [Asana + QuickBooks](https://stackcostmatrix.com/stack/asana-and-quickbooks/) | Middleware Make Core $10.59/mo | Starter | Simple Start | $183.49 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/asana-and-quickbooks/) |
-| [Asana + Notion](https://stackcostmatrix.com/stack/asana-and-notion/) | Native | Starter | Plus | $254.90 | Nov 12, 2026 | [Calculator →](https://stackcostmatrix.com/stack/asana-and-notion/) |
-| [Pipedrive + Asana](https://stackcostmatrix.com/stack/pipedrive-and-asana/) | Native | Starter | Lite | $274.90 | Nov 12, 2026 | [Calculator →](https://stackcostmatrix.com/stack/pipedrive-and-asana/) |
-| [HubSpot + Asana](https://stackcostmatrix.com/stack/hubspot-and-asana/) | Native | Starter | Professional | $634.90 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/hubspot-and-asana/) |
-| [Zendesk + Asana](https://stackcostmatrix.com/stack/zendesk-and-asana/) | Native | Starter | Suite Team | $824.90 | Nov 12, 2026 | [Calculator →](https://stackcostmatrix.com/stack/zendesk-and-asana/) |
-| [Asana + Salesforce](https://stackcostmatrix.com/stack/asana-and-salesforce/) | Native | Advanced | Professional | $1,554.90 | Nov 12, 2026 | [Calculator →](https://stackcostmatrix.com/stack/asana-and-salesforce/) |
+| Integration | Type | Min. Asana plan | Other tool's plan | 10-seat total | Checked |
+| --- | --- | --- | --- | --- | --- |
+| [Asana + Slack](https://stackcostmatrix.com/stack/asana-and-slack/) | Native | Starter | Free | $134.90 | Nov 3, 2026 (Asana plan unconfirmed) |
+| [Asana + ActiveCampaign](https://stackcostmatrix.com/stack/asana-and-activecampaign/) | Middleware Make Core $10.59/mo | Starter | Starter | $160.49 | Nov 12, 2026 |
+| [Xero + Asana](https://stackcostmatrix.com/stack/xero-and-asana/) | Middleware Make Core $10.59/mo | Starter | Early | $172.49 | Nov 12, 2026 |
+| [Asana + Mailchimp](https://stackcostmatrix.com/stack/asana-and-mailchimp/) | Middleware Zapier Professional $29.99/mo | Starter | Essentials | $177.89 | Nov 3, 2026 |
+| [Asana + QuickBooks](https://stackcostmatrix.com/stack/asana-and-quickbooks/) | Middleware Make Core $10.59/mo | Starter | Simple Start | $183.49 | Nov 3, 2026 |
+| [Asana + Notion](https://stackcostmatrix.com/stack/asana-and-notion/) | Native | Starter | Plus | $254.90 | Nov 12, 2026 |
+| [Pipedrive + Asana](https://stackcostmatrix.com/stack/pipedrive-and-asana/) | Native | Starter | Lite | $274.90 | Nov 12, 2026 |
+| [HubSpot + Asana](https://stackcostmatrix.com/stack/hubspot-and-asana/) | Native | Starter | Professional | $634.90 | Nov 3, 2026 |
+| [Zendesk + Asana](https://stackcostmatrix.com/stack/zendesk-and-asana/) | Native | Starter | Suite Team | $824.90 | Nov 12, 2026 |
+| [Asana + Salesforce](https://stackcostmatrix.com/stack/asana-and-salesforce/) | Native | Advanced | Professional | $1,554.90 | Nov 12, 2026 |
 
-Totals are monthly-billing prices for 10 seats on the minimum plans, including any connector fee. Open a calculator to change team size, switch to annual billing or add usage costs.
+Totals are monthly-billing prices for 10 seats on the minimum plans, including any connector fee. Each integration's name opens its page, where a calculator lets you change team size, switch to annual billing or add usage costs.
 
 Chart: Asana integrations: monthly cost for 10 seats on the plans each needs: Asana + Salesforce $1,554.90; Zendesk + Asana $824.90; HubSpot + Asana $634.90; Pipedrive + Asana $274.90; Asana + Notion $254.90; Asana + QuickBooks $183.49; Asana + Mailchimp $177.89; Xero + Asana $172.49; Asana + ActiveCampaign $160.49; Asana + Slack $134.90
 
@@ -38,7 +38,7 @@ Image: [Asana integration costs summary: 10 integrations priced, from $134.90 to
 
 ## Which Asana integrations force a plan upgrade?
 
-1 of the 10 integrations needs a more expensive Asana plan than Starter, Asana's cheapest plan with API access. The extra Asana cost at 10 seats: Asana + Salesforce needs Advanced (+$170.00/mo). That gap is the hidden cost: you pay it every month even if you only wanted the integration. Each pair's "Hidden Cost Trap" box shows the full breakdown.
+1 of the 10 integrations needs a more expensive Asana plan than Starter, Asana's cheapest plan with API access. The extra Asana cost at 10 seats: Asana + Salesforce needs Advanced (+$170.00/mo). That gap is the hidden cost: you pay it every month even if you only wanted the integration. Each pair's "Hidden Cost Trap" box shows the full breakdown. The [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/) adds these costs up across all 90 pairs in the index.
 
 ## Which Asana integrations need Make or Zapier?
 
@@ -65,7 +65,23 @@ Full 20-tool source index: [About StackCostMatrix →](https://stackcostmatrix.c
 
 ## Integration costs by tool
 
-[ActiveCampaign](https://stackcostmatrix.com/activecampaign-integrations-cost/) · [Airtable](https://stackcostmatrix.com/airtable-integrations-cost/) · [Calendly](https://stackcostmatrix.com/calendly-integrations-cost/) · [ClickUp](https://stackcostmatrix.com/clickup-integrations-cost/) · [Freshdesk](https://stackcostmatrix.com/freshdesk-integrations-cost/) · [HubSpot](https://stackcostmatrix.com/hubspot-integrations-cost/) · [Intercom](https://stackcostmatrix.com/intercom-integrations-cost/) · [Mailchimp](https://stackcostmatrix.com/mailchimp-integrations-cost/) · [Monday.com](https://stackcostmatrix.com/monday-integrations-cost/) · [Notion](https://stackcostmatrix.com/notion-integrations-cost/) · [Pipedrive](https://stackcostmatrix.com/pipedrive-integrations-cost/) · [QuickBooks](https://stackcostmatrix.com/quickbooks-integrations-cost/) · [Salesforce](https://stackcostmatrix.com/salesforce-integrations-cost/) · [Slack](https://stackcostmatrix.com/slack-integrations-cost/) · [Stripe](https://stackcostmatrix.com/stripe-integrations-cost/) · [Xero](https://stackcostmatrix.com/xero-integrations-cost/) · [Zendesk](https://stackcostmatrix.com/zendesk-integrations-cost/)
+- [ActiveCampaign integrations](https://stackcostmatrix.com/activecampaign-integrations-cost/)
+- [Airtable integrations](https://stackcostmatrix.com/airtable-integrations-cost/)
+- [Calendly integrations](https://stackcostmatrix.com/calendly-integrations-cost/)
+- [ClickUp integrations](https://stackcostmatrix.com/clickup-integrations-cost/)
+- [Freshdesk integrations](https://stackcostmatrix.com/freshdesk-integrations-cost/)
+- [HubSpot integrations](https://stackcostmatrix.com/hubspot-integrations-cost/)
+- [Intercom integrations](https://stackcostmatrix.com/intercom-integrations-cost/)
+- [Mailchimp integrations](https://stackcostmatrix.com/mailchimp-integrations-cost/)
+- [Monday.com integrations](https://stackcostmatrix.com/monday-integrations-cost/)
+- [Notion integrations](https://stackcostmatrix.com/notion-integrations-cost/)
+- [Pipedrive integrations](https://stackcostmatrix.com/pipedrive-integrations-cost/)
+- [QuickBooks integrations](https://stackcostmatrix.com/quickbooks-integrations-cost/)
+- [Salesforce integrations](https://stackcostmatrix.com/salesforce-integrations-cost/)
+- [Slack integrations](https://stackcostmatrix.com/slack-integrations-cost/)
+- [Stripe integrations](https://stackcostmatrix.com/stripe-integrations-cost/)
+- [Xero integrations](https://stackcostmatrix.com/xero-integrations-cost/)
+- [Zendesk integrations](https://stackcostmatrix.com/zendesk-integrations-cost/)
 
 ## Asana integration costs: frequently asked questions
 

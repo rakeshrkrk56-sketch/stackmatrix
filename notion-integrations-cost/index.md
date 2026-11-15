@@ -13,17 +13,17 @@ This page collects the 7 Notion integrations in the StackCostMatrix index: which
 
 Notion Integration Costs (2026): Minimum Plans, API Access & Hidden Fees
 
-| Integration | Type | Min. Notion plan | Other tool's plan | 10-seat total | Checked | Details |
-| --- | --- | --- | --- | --- | --- | --- |
-| [ClickUp + Notion](https://stackcostmatrix.com/stack/clickup-and-notion/) | Native | Plus | Free | $120.00 | Nov 12, 2026 | [Calculator →](https://stackcostmatrix.com/stack/clickup-and-notion/) |
-| [Slack + Notion](https://stackcostmatrix.com/stack/slack-and-notion/) | Native | Plus | Free | $120.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/slack-and-notion/) |
-| [Notion + Stripe](https://stackcostmatrix.com/stack/notion-and-stripe/) | Middleware Make Core $10.59/mo | Plus | Standard | $130.59 | Nov 3, 2026 (Notion plan unconfirmed) | [Calculator →](https://stackcostmatrix.com/stack/notion-and-stripe/) |
-| [Notion + Calendly](https://stackcostmatrix.com/stack/notion-and-calendly/) | Middleware Make Core $10.59/mo | Plus | Standard | $250.59 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/notion-and-calendly/) |
-| [Asana + Notion](https://stackcostmatrix.com/stack/asana-and-notion/) | Native | Plus | Starter | $254.90 | Nov 12, 2026 | [Calculator →](https://stackcostmatrix.com/stack/asana-and-notion/) |
-| [HubSpot + Notion](https://stackcostmatrix.com/stack/hubspot-and-notion/) | Native | Plus | Starter | $320.00 | Nov 12, 2026 | [Calculator →](https://stackcostmatrix.com/stack/hubspot-and-notion/) |
-| [Zendesk + Notion](https://stackcostmatrix.com/stack/zendesk-and-notion/) | Middleware Zapier Professional $29.99/mo | Plus | Suite Team | $839.99 | Nov 3, 2026 (Notion plan unconfirmed) | [Calculator →](https://stackcostmatrix.com/stack/zendesk-and-notion/) |
+| Integration | Type | Min. Notion plan | Other tool's plan | 10-seat total | Checked |
+| --- | --- | --- | --- | --- | --- |
+| [ClickUp + Notion](https://stackcostmatrix.com/stack/clickup-and-notion/) | Native | Plus | Free | $120.00 | Nov 12, 2026 |
+| [Slack + Notion](https://stackcostmatrix.com/stack/slack-and-notion/) | Native | Plus | Free | $120.00 | Nov 3, 2026 |
+| [Notion + Stripe](https://stackcostmatrix.com/stack/notion-and-stripe/) | Middleware Make Core $10.59/mo | Plus | Standard | $130.59 | Nov 3, 2026 (Notion plan unconfirmed) |
+| [Notion + Calendly](https://stackcostmatrix.com/stack/notion-and-calendly/) | Middleware Make Core $10.59/mo | Plus | Standard | $250.59 | Nov 3, 2026 |
+| [Asana + Notion](https://stackcostmatrix.com/stack/asana-and-notion/) | Native | Plus | Starter | $254.90 | Nov 12, 2026 |
+| [HubSpot + Notion](https://stackcostmatrix.com/stack/hubspot-and-notion/) | Native | Plus | Starter | $320.00 | Nov 12, 2026 |
+| [Zendesk + Notion](https://stackcostmatrix.com/stack/zendesk-and-notion/) | Middleware Zapier Professional $29.99/mo | Plus | Suite Team | $839.99 | Nov 3, 2026 (Notion plan unconfirmed) |
 
-Totals are monthly-billing prices for 10 seats on the minimum plans, including any connector fee. Open a calculator to change team size, switch to annual billing or add usage costs.
+Totals are monthly-billing prices for 10 seats on the minimum plans, including any connector fee. Each integration's name opens its page, where a calculator lets you change team size, switch to annual billing or add usage costs.
 
 Chart: Notion integrations: monthly cost for 10 seats on the plans each needs: Zendesk + Notion $839.99; HubSpot + Notion $320.00; Asana + Notion $254.90; Notion + Calendly $250.59; Notion + Stripe $130.59; ClickUp + Notion $120.00; Slack + Notion $120.00
 
@@ -35,7 +35,7 @@ Image: [Notion integration costs summary: 7 integrations priced, from $120 to $8
 
 ## Does Notion force an upgrade?
 
-Not for any of the 7 integrations here: each one works on Notion's cheapest plan with API access, so the integration itself adds no Notion upgrade cost. Any extra cost comes from the other tool's plan or from a connector fee, shown in the table above.
+Not for any of the 7 integrations here: each one works on Notion's cheapest plan with API access, so the integration itself adds no Notion upgrade cost. Any extra cost comes from the other tool's plan or from a connector fee, shown in the table above. The [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/) adds these costs up across all 90 pairs in the index.
 
 ## Which Notion integrations need Make or Zapier?
 
@@ -62,7 +62,23 @@ Full 20-tool source index: [About StackCostMatrix →](https://stackcostmatrix.c
 
 ## Integration costs by tool
 
-[ActiveCampaign](https://stackcostmatrix.com/activecampaign-integrations-cost/) · [Airtable](https://stackcostmatrix.com/airtable-integrations-cost/) · [Asana](https://stackcostmatrix.com/asana-integrations-cost/) · [Calendly](https://stackcostmatrix.com/calendly-integrations-cost/) · [ClickUp](https://stackcostmatrix.com/clickup-integrations-cost/) · [Freshdesk](https://stackcostmatrix.com/freshdesk-integrations-cost/) · [HubSpot](https://stackcostmatrix.com/hubspot-integrations-cost/) · [Intercom](https://stackcostmatrix.com/intercom-integrations-cost/) · [Mailchimp](https://stackcostmatrix.com/mailchimp-integrations-cost/) · [Monday.com](https://stackcostmatrix.com/monday-integrations-cost/) · [Pipedrive](https://stackcostmatrix.com/pipedrive-integrations-cost/) · [QuickBooks](https://stackcostmatrix.com/quickbooks-integrations-cost/) · [Salesforce](https://stackcostmatrix.com/salesforce-integrations-cost/) · [Slack](https://stackcostmatrix.com/slack-integrations-cost/) · [Stripe](https://stackcostmatrix.com/stripe-integrations-cost/) · [Xero](https://stackcostmatrix.com/xero-integrations-cost/) · [Zendesk](https://stackcostmatrix.com/zendesk-integrations-cost/)
+- [ActiveCampaign integrations](https://stackcostmatrix.com/activecampaign-integrations-cost/)
+- [Airtable integrations](https://stackcostmatrix.com/airtable-integrations-cost/)
+- [Asana integrations](https://stackcostmatrix.com/asana-integrations-cost/)
+- [Calendly integrations](https://stackcostmatrix.com/calendly-integrations-cost/)
+- [ClickUp integrations](https://stackcostmatrix.com/clickup-integrations-cost/)
+- [Freshdesk integrations](https://stackcostmatrix.com/freshdesk-integrations-cost/)
+- [HubSpot integrations](https://stackcostmatrix.com/hubspot-integrations-cost/)
+- [Intercom integrations](https://stackcostmatrix.com/intercom-integrations-cost/)
+- [Mailchimp integrations](https://stackcostmatrix.com/mailchimp-integrations-cost/)
+- [Monday.com integrations](https://stackcostmatrix.com/monday-integrations-cost/)
+- [Pipedrive integrations](https://stackcostmatrix.com/pipedrive-integrations-cost/)
+- [QuickBooks integrations](https://stackcostmatrix.com/quickbooks-integrations-cost/)
+- [Salesforce integrations](https://stackcostmatrix.com/salesforce-integrations-cost/)
+- [Slack integrations](https://stackcostmatrix.com/slack-integrations-cost/)
+- [Stripe integrations](https://stackcostmatrix.com/stripe-integrations-cost/)
+- [Xero integrations](https://stackcostmatrix.com/xero-integrations-cost/)
+- [Zendesk integrations](https://stackcostmatrix.com/zendesk-integrations-cost/)
 
 ## Notion integration costs: frequently asked questions
 

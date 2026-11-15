@@ -113,6 +113,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Starter') Source: [Asana pricing ↗](https://asana.com/pricing) · Verified Oct 17, 2026 | Yes  ('Starter') Source: [ActiveCampaign: Getting started with the API ↗](https://help.activecampaign.com/hc/en-us/articles/207317590) · Verified Nov 3, 2026 |
 | Webhook support at required tier | Yes  ('Starter') API webhooks; no plan requirement stated Source: [Asana developers: Webhooks guide ↗](https://developers.asana.com/docs/webhooks-guide) · Verified Nov 3, 2026 | Yes  ('Starter') Source: [ActiveCampaign: Use webhooks ↗](https://help.activecampaign.com/hc/en-us/articles/115001403484) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [Asana API access by plan](https://stackcostmatrix.com/asana-api-access/) and [ActiveCampaign API access by plan](https://stackcostmatrix.com/activecampaign-api-access/).
+
 [Visit Asana](https://stackcostmatrix.com/go/asana)  [Visit ActiveCampaign](https://stackcostmatrix.com/go/activecampaign)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -137,21 +139,16 @@ Each Make scenario runs one way. Make's ActiveCampaign guide says the app needs 
 
 ## Integrations related to Asana + ActiveCampaign
 
-[All Asana integrations →](https://stackcostmatrix.com/asana-integrations-cost/) · [All ActiveCampaign integrations →](https://stackcostmatrix.com/activecampaign-integrations-cost/) · [Asana API access by plan →](https://stackcostmatrix.com/asana-api-access/) · [ActiveCampaign API access by plan →](https://stackcostmatrix.com/activecampaign-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 10 Asana integrations](https://stackcostmatrix.com/asana-integrations-cost/) and [all 10 ActiveCampaign integrations](https://stackcostmatrix.com/activecampaign-integrations-cost/).
 
-[### Asana + Mailchimp
+- [Asana + Mailchimp](https://stackcostmatrix.com/stack/asana-and-mailchimp/): Middleware, $177.89 a month for 10 seats
+- [Asana + Salesforce Sales Cloud](https://stackcostmatrix.com/stack/asana-and-salesforce/): Native, $1,554.90 a month for 10 seats
+- [Zendesk + Asana](https://stackcostmatrix.com/stack/zendesk-and-asana/): Native, $824.90 a month for 10 seats
+- [ClickUp + ActiveCampaign](https://stackcostmatrix.com/stack/clickup-and-activecampaign/): Middleware, $25.59 a month for 10 seats
+- [Monday.com + ActiveCampaign](https://stackcostmatrix.com/stack/monday-and-activecampaign/): Middleware, $165.59 a month for 10 seats
+- [ActiveCampaign + Calendly](https://stackcostmatrix.com/stack/activecampaign-and-calendly/): Native, $135.00 a month for 10 seats
 
-Middleware](https://stackcostmatrix.com/stack/asana-and-mailchimp/)[### Asana + Notion
-
-Native](https://stackcostmatrix.com/stack/asana-and-notion/)[### Asana + QuickBooks
-
-Middleware](https://stackcostmatrix.com/stack/asana-and-quickbooks/)[### Asana + Salesforce
-
-Native](https://stackcostmatrix.com/stack/asana-and-salesforce/)[### Asana + Slack
-
-Native](https://stackcostmatrix.com/stack/asana-and-slack/)[### HubSpot + Asana
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-asana/)
+Asana + ActiveCampaign is also covered in the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Requirements checked: Nov 12, 2026; prices: Nov 3, 2026 (exceptions listed at the top)
 

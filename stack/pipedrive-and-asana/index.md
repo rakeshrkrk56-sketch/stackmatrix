@@ -111,6 +111,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Lite') 20 req/2 s · daily budget ×1 Source: [Pipedrive developers: Rate limiting ↗](https://pipedrive.readme.io/docs/core-api-concepts-rate-limiting) · Verified Nov 3, 2026 | Yes  ('Starter') Source: [Asana pricing ↗](https://asana.com/pricing) · Verified Oct 17, 2026 |
 | Webhook support at required tier | Yes  ('Lite') Source: [Pipedrive: Automations webhook requests ↗](https://support.pipedrive.com/en/article/automations-webhook-requests) · Verified Nov 3, 2026 | Yes  ('Starter') API webhooks; no plan requirement stated Source: [Asana developers: Webhooks guide ↗](https://developers.asana.com/docs/webhooks-guide) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [Pipedrive API access by plan](https://stackcostmatrix.com/pipedrive-api-access/) and [Asana API access by plan](https://stackcostmatrix.com/asana-api-access/).
+
 [Visit Pipedrive](https://stackcostmatrix.com/go/pipedrive)  [Visit Asana](https://stackcostmatrix.com/go/asana)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -135,23 +137,16 @@ It's one-way, from Pipedrive to Asana; each admin user can create one rule, and 
 
 ## Integrations related to Pipedrive + Asana
 
-[All Pipedrive integrations →](https://stackcostmatrix.com/pipedrive-integrations-cost/) · [All Asana integrations →](https://stackcostmatrix.com/asana-integrations-cost/) · [Pipedrive API access by plan →](https://stackcostmatrix.com/pipedrive-api-access/) · [Asana API access by plan →](https://stackcostmatrix.com/asana-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 11 Pipedrive integrations](https://stackcostmatrix.com/pipedrive-integrations-cost/) and [all 10 Asana integrations](https://stackcostmatrix.com/asana-integrations-cost/).
 
-Part of our [CRM integration hidden-costs guide](https://stackcostmatrix.com/crm-integration-pricing-guide/).
+- [Pipedrive + QuickBooks Online](https://stackcostmatrix.com/stack/pipedrive-and-quickbooks/): Native, $178.00 a month for 10 seats
+- [Pipedrive + Calendly](https://stackcostmatrix.com/stack/pipedrive-and-calendly/): Middleware, $270.59 a month for 10 seats
+- [Pipedrive + Xero](https://stackcostmatrix.com/stack/pipedrive-and-xero/): Middleware, $177.59 a month for 10 seats
+- [Asana + Salesforce Sales Cloud](https://stackcostmatrix.com/stack/asana-and-salesforce/): Native, $1,554.90 a month for 10 seats
+- [HubSpot + Asana](https://stackcostmatrix.com/stack/hubspot-and-asana/): Native, $634.90 a month for 10 seats
+- [Asana + ActiveCampaign](https://stackcostmatrix.com/stack/asana-and-activecampaign/): Middleware, $160.49 a month for 10 seats
 
-[### ActiveCampaign + Pipedrive
-
-Native](https://stackcostmatrix.com/stack/activecampaign-and-pipedrive/)[### HubSpot + Pipedrive
-
-Middleware](https://stackcostmatrix.com/stack/hubspot-and-pipedrive/)[### Pipedrive + Calendly
-
-Middleware](https://stackcostmatrix.com/stack/pipedrive-and-calendly/)[### Pipedrive + Intercom
-
-Native](https://stackcostmatrix.com/stack/pipedrive-and-intercom/)[### Pipedrive + Mailchimp
-
-Native](https://stackcostmatrix.com/stack/pipedrive-and-mailchimp/)[### Pipedrive + QuickBooks
-
-Native](https://stackcostmatrix.com/stack/pipedrive-and-quickbooks/)
+Pipedrive + Asana is also covered in the [CRM integration hidden-costs guide](https://stackcostmatrix.com/crm-integration-pricing-guide/) and the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Requirements checked: Nov 12, 2026; prices: Nov 3, 2026 (exceptions listed at the top)
 

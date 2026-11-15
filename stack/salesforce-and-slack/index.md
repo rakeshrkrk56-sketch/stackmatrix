@@ -114,6 +114,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Enterprise') 100,000 + 1,000 per Salesforce license / 24 h Source: [Salesforce developers: Supported editions ↗](https://developer.salesforce.com/docs/platform/api-rest/guide/intro-rest-compatible-editions.html) · Verified Nov 3, 2026 | Yes  ('Pro') Source: [Slack developers: Incoming webhooks ↗](https://api.slack.com/messaging/webhooks) · Verified Nov 3, 2026 |
 | Webhook support at required tier | Yes  ('Enterprise') Change Data Capture (Salesforce's change-event feed) is available on Enterprise. Source: [Salesforce developers: Change Data Capture ↗](https://developer.salesforce.com/docs/atlas.en-us.change_data_capture.meta/change_data_capture/cdc_intro.htm) · Verified Nov 8, 2026 | Yes  ('Pro') Source: [Slack developers: Incoming webhooks ↗](https://api.slack.com/messaging/webhooks) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [Salesforce API access by plan](https://stackcostmatrix.com/salesforce-api-access/) and [Slack API access by plan](https://stackcostmatrix.com/slack-api-access/).
+
 [Visit Salesforce Sales Cloud](https://stackcostmatrix.com/go/salesforce)  [Visit Slack](https://stackcostmatrix.com/go/slack)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -138,23 +140,16 @@ Salesforce lists Enterprise, Performance, Unlimited and Developer editions for i
 
 ## Integrations related to Salesforce Sales Cloud + Slack
 
-[All Salesforce integrations →](https://stackcostmatrix.com/salesforce-integrations-cost/) · [All Slack integrations →](https://stackcostmatrix.com/slack-integrations-cost/) · [Salesforce API access by plan →](https://stackcostmatrix.com/salesforce-api-access/) · [Slack API access by plan →](https://stackcostmatrix.com/slack-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 13 Salesforce integrations](https://stackcostmatrix.com/salesforce-integrations-cost/) and [all 17 Slack integrations](https://stackcostmatrix.com/slack-integrations-cost/).
 
-Part of our [Salesforce integration cost guide](https://stackcostmatrix.com/salesforce-integrations-cost/) and [CRM integration hidden-costs guide](https://stackcostmatrix.com/crm-integration-pricing-guide/).
+- [Salesforce Sales Cloud + Calendly](https://stackcostmatrix.com/stack/salesforce-and-calendly/): Native, $1,850.00 a month for 10 seats
+- [Salesforce Sales Cloud + Zendesk](https://stackcostmatrix.com/stack/salesforce-and-zendesk/): Native, $1,940.00 a month for 10 seats
+- [Asana + Salesforce Sales Cloud](https://stackcostmatrix.com/stack/asana-and-salesforce/): Native, $1,554.90 a month for 10 seats
+- [Pipedrive + Slack](https://stackcostmatrix.com/stack/pipedrive-and-slack/): Native, $390.00 a month for 10 seats
+- [ActiveCampaign + Slack](https://stackcostmatrix.com/stack/activecampaign-and-slack/): Native, $49.00 a month for 10 seats
+- [Mailchimp + Slack](https://stackcostmatrix.com/stack/mailchimp-and-slack/): Native, $0.00 a month for 10 seats
 
-[### HubSpot + Slack
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-slack/)[### Monday.com + Slack
-
-Native](https://stackcostmatrix.com/stack/monday-and-slack/)[### Pipedrive + Slack
-
-Native](https://stackcostmatrix.com/stack/pipedrive-and-slack/)[### Salesforce Sales Cloud + Mailchimp
-
-Native](https://stackcostmatrix.com/stack/salesforce-and-mailchimp/)[### Salesforce Sales Cloud + Stripe
-
-Native](https://stackcostmatrix.com/stack/salesforce-and-stripe/)[### Salesforce Sales Cloud + Zendesk
-
-Native](https://stackcostmatrix.com/stack/salesforce-and-zendesk/)
+Salesforce Sales Cloud + Slack is also covered in the [CRM integration hidden-costs guide](https://stackcostmatrix.com/crm-integration-pricing-guide/) and the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Last checked: Nov 3, 2026 (exceptions listed at the top)
 

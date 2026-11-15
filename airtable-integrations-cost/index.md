@@ -13,18 +13,18 @@ This page collects the 8 Airtable integrations in the StackCostMatrix index: whi
 
 Airtable Integration Costs (2026): Minimum Plans, API Access & Hidden Fees
 
-| Integration | Type | Min. Airtable plan | Other tool's plan | 10-seat total | Checked | Details |
-| --- | --- | --- | --- | --- | --- | --- |
-| [Slack + Airtable](https://stackcostmatrix.com/stack/slack-and-airtable/) | Native | Free | Free | $0.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/slack-and-airtable/) |
-| [Xero + Airtable](https://stackcostmatrix.com/stack/xero-and-airtable/) | Middleware Make Core $10.59/mo | Free | Early | $37.59 | Nov 12, 2026 | [Calculator →](https://stackcostmatrix.com/stack/xero-and-airtable/) |
-| [HubSpot + Airtable](https://stackcostmatrix.com/stack/hubspot-and-airtable/) | Native | Free | Starter | $200.00 | Nov 12, 2026 | [Calculator →](https://stackcostmatrix.com/stack/hubspot-and-airtable/) |
-| [Airtable + Stripe](https://stackcostmatrix.com/stack/airtable-and-stripe/) | Middleware Make Core $10.59/mo | Team | Standard | $250.59 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/airtable-and-stripe/) |
-| [Mailchimp + Airtable](https://stackcostmatrix.com/stack/mailchimp-and-airtable/) | Middleware Make Core $10.59/mo | Team | Essentials | $263.59 | Nov 3, 2026 (Mailchimp plan unconfirmed) | [Calculator →](https://stackcostmatrix.com/stack/mailchimp-and-airtable/) |
-| [Airtable + QuickBooks](https://stackcostmatrix.com/stack/airtable-and-quickbooks/) | Middleware Make Core $10.59/mo | Team | Simple Start | $288.59 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/airtable-and-quickbooks/) |
-| [Zendesk + Airtable](https://stackcostmatrix.com/stack/zendesk-and-airtable/) | Native | Business | Suite Team | $1,230.00 | Nov 12, 2026 | [Calculator →](https://stackcostmatrix.com/stack/zendesk-and-airtable/) |
-| [Salesforce + Airtable](https://stackcostmatrix.com/stack/salesforce-and-airtable/) | Native | Business | Professional | $1,790.00 | Nov 12, 2026 | [Calculator →](https://stackcostmatrix.com/stack/salesforce-and-airtable/) |
+| Integration | Type | Min. Airtable plan | Other tool's plan | 10-seat total | Checked |
+| --- | --- | --- | --- | --- | --- |
+| [Slack + Airtable](https://stackcostmatrix.com/stack/slack-and-airtable/) | Native | Free | Free | $0.00 | Nov 3, 2026 |
+| [Xero + Airtable](https://stackcostmatrix.com/stack/xero-and-airtable/) | Middleware Make Core $10.59/mo | Free | Early | $37.59 | Nov 12, 2026 |
+| [HubSpot + Airtable](https://stackcostmatrix.com/stack/hubspot-and-airtable/) | Native | Free | Starter | $200.00 | Nov 12, 2026 |
+| [Airtable + Stripe](https://stackcostmatrix.com/stack/airtable-and-stripe/) | Middleware Make Core $10.59/mo | Team | Standard | $250.59 | Nov 3, 2026 |
+| [Mailchimp + Airtable](https://stackcostmatrix.com/stack/mailchimp-and-airtable/) | Middleware Make Core $10.59/mo | Team | Essentials | $263.59 | Nov 3, 2026 (Mailchimp plan unconfirmed) |
+| [Airtable + QuickBooks](https://stackcostmatrix.com/stack/airtable-and-quickbooks/) | Middleware Make Core $10.59/mo | Team | Simple Start | $288.59 | Nov 3, 2026 |
+| [Zendesk + Airtable](https://stackcostmatrix.com/stack/zendesk-and-airtable/) | Native | Business | Suite Team | $1,230.00 | Nov 12, 2026 |
+| [Salesforce + Airtable](https://stackcostmatrix.com/stack/salesforce-and-airtable/) | Native | Business | Professional | $1,790.00 | Nov 12, 2026 |
 
-Totals are monthly-billing prices for 10 seats on the minimum plans, including any connector fee. Open a calculator to change team size, switch to annual billing or add usage costs.
+Totals are monthly-billing prices for 10 seats on the minimum plans, including any connector fee. Each integration's name opens its page, where a calculator lets you change team size, switch to annual billing or add usage costs.
 
 Chart: Airtable integrations: monthly cost for 10 seats on the plans each needs: Salesforce + Airtable $1,790.00; Zendesk + Airtable $1,230.00; Airtable + QuickBooks $288.59; Mailchimp + Airtable $263.59; Airtable + Stripe $250.59; HubSpot + Airtable $200.00; Xero + Airtable $37.59; Slack + Airtable $0.00
 
@@ -36,7 +36,7 @@ Image: [Airtable integration costs summary: 8 integrations priced, from $0 to $1
 
 ## Which Airtable integrations force a plan upgrade?
 
-5 of the 8 integrations need a more expensive Airtable plan than Free, Airtable's cheapest plan with API access. The extra Airtable cost at 10 seats: Zendesk + Airtable needs Business (+$540.00/mo); Salesforce + Airtable needs Business (+$540.00/mo); Airtable + Stripe needs Team (+$240.00/mo); Mailchimp + Airtable needs Team (+$240.00/mo); Airtable + QuickBooks needs Team (+$240.00/mo). That gap is the hidden cost: you pay it every month even if you only wanted the integration. Each pair's "Hidden Cost Trap" box shows the full breakdown.
+5 of the 8 integrations need a more expensive Airtable plan than Free, Airtable's cheapest plan with API access. The extra Airtable cost at 10 seats: Zendesk + Airtable needs Business (+$540.00/mo); Salesforce + Airtable needs Business (+$540.00/mo); Airtable + Stripe needs Team (+$240.00/mo); Mailchimp + Airtable needs Team (+$240.00/mo); Airtable + QuickBooks needs Team (+$240.00/mo). That gap is the hidden cost: you pay it every month even if you only wanted the integration. Each pair's "Hidden Cost Trap" box shows the full breakdown. The [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/) adds these costs up across all 90 pairs in the index.
 
 ## Which Airtable integrations need Make or Zapier?
 
@@ -64,7 +64,23 @@ Full 20-tool source index: [About StackCostMatrix →](https://stackcostmatrix.c
 
 ## Integration costs by tool
 
-[ActiveCampaign](https://stackcostmatrix.com/activecampaign-integrations-cost/) · [Asana](https://stackcostmatrix.com/asana-integrations-cost/) · [Calendly](https://stackcostmatrix.com/calendly-integrations-cost/) · [ClickUp](https://stackcostmatrix.com/clickup-integrations-cost/) · [Freshdesk](https://stackcostmatrix.com/freshdesk-integrations-cost/) · [HubSpot](https://stackcostmatrix.com/hubspot-integrations-cost/) · [Intercom](https://stackcostmatrix.com/intercom-integrations-cost/) · [Mailchimp](https://stackcostmatrix.com/mailchimp-integrations-cost/) · [Monday.com](https://stackcostmatrix.com/monday-integrations-cost/) · [Notion](https://stackcostmatrix.com/notion-integrations-cost/) · [Pipedrive](https://stackcostmatrix.com/pipedrive-integrations-cost/) · [QuickBooks](https://stackcostmatrix.com/quickbooks-integrations-cost/) · [Salesforce](https://stackcostmatrix.com/salesforce-integrations-cost/) · [Slack](https://stackcostmatrix.com/slack-integrations-cost/) · [Stripe](https://stackcostmatrix.com/stripe-integrations-cost/) · [Xero](https://stackcostmatrix.com/xero-integrations-cost/) · [Zendesk](https://stackcostmatrix.com/zendesk-integrations-cost/)
+- [ActiveCampaign integrations](https://stackcostmatrix.com/activecampaign-integrations-cost/)
+- [Asana integrations](https://stackcostmatrix.com/asana-integrations-cost/)
+- [Calendly integrations](https://stackcostmatrix.com/calendly-integrations-cost/)
+- [ClickUp integrations](https://stackcostmatrix.com/clickup-integrations-cost/)
+- [Freshdesk integrations](https://stackcostmatrix.com/freshdesk-integrations-cost/)
+- [HubSpot integrations](https://stackcostmatrix.com/hubspot-integrations-cost/)
+- [Intercom integrations](https://stackcostmatrix.com/intercom-integrations-cost/)
+- [Mailchimp integrations](https://stackcostmatrix.com/mailchimp-integrations-cost/)
+- [Monday.com integrations](https://stackcostmatrix.com/monday-integrations-cost/)
+- [Notion integrations](https://stackcostmatrix.com/notion-integrations-cost/)
+- [Pipedrive integrations](https://stackcostmatrix.com/pipedrive-integrations-cost/)
+- [QuickBooks integrations](https://stackcostmatrix.com/quickbooks-integrations-cost/)
+- [Salesforce integrations](https://stackcostmatrix.com/salesforce-integrations-cost/)
+- [Slack integrations](https://stackcostmatrix.com/slack-integrations-cost/)
+- [Stripe integrations](https://stackcostmatrix.com/stripe-integrations-cost/)
+- [Xero integrations](https://stackcostmatrix.com/xero-integrations-cost/)
+- [Zendesk integrations](https://stackcostmatrix.com/zendesk-integrations-cost/)
 
 ## Airtable integration costs: frequently asked questions
 

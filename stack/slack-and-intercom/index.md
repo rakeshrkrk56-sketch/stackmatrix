@@ -109,6 +109,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Free') Source: [Slack developers: Incoming webhooks ↗](https://api.slack.com/messaging/webhooks) · Verified Nov 3, 2026 | Yes  ('Essential') Paid workspaces Source: [Intercom developers: Webhooks ↗](https://developers.intercom.com/docs/webhooks) · Verified Nov 3, 2026 |
 | Webhook support at required tier | Yes  ('Free') Incoming webhooks Source: [Slack developers: Incoming webhooks ↗](https://api.slack.com/messaging/webhooks) · Verified Nov 3, 2026 | Yes  ('Essential') Source: [Intercom developers: Webhooks ↗](https://developers.intercom.com/docs/webhooks) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [Slack API access by plan](https://stackcostmatrix.com/slack-api-access/) and [Intercom API access by plan](https://stackcostmatrix.com/intercom-api-access/).
+
 [Visit Slack](https://stackcostmatrix.com/go/slack)  [Visit Intercom](https://stackcostmatrix.com/go/intercom)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -133,21 +135,16 @@ Automatic Slack notifications for new conversations rely on Workflows, which are
 
 ## Integrations related to Slack + Intercom
 
-[All Slack integrations →](https://stackcostmatrix.com/slack-integrations-cost/) · [All Intercom integrations →](https://stackcostmatrix.com/intercom-integrations-cost/) · [Slack API access by plan →](https://stackcostmatrix.com/slack-api-access/) · [Intercom API access by plan →](https://stackcostmatrix.com/intercom-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 17 Slack integrations](https://stackcostmatrix.com/slack-integrations-cost/) and [all 8 Intercom integrations](https://stackcostmatrix.com/intercom-integrations-cost/).
 
-[### Pipedrive + Slack
+- [Slack + Zendesk](https://stackcostmatrix.com/stack/slack-and-zendesk/): Native, $690.00 a month for 10 seats
+- [Freshdesk + Slack](https://stackcostmatrix.com/stack/freshdesk-and-slack/): Native, $230.00 a month for 10 seats
+- [Slack + Calendly](https://stackcostmatrix.com/stack/slack-and-calendly/): Native, $0.00 a month for 10 seats
+- [Intercom + Calendly](https://stackcostmatrix.com/stack/intercom-and-calendly/): Native, $390.00 a month for 10 seats
+- [Intercom + Mailchimp](https://stackcostmatrix.com/stack/intercom-and-mailchimp/): Native, $390.00 a month for 10 seats
+- [Intercom + Stripe](https://stackcostmatrix.com/stack/intercom-and-stripe/): Native, $390.00 a month for 10 seats
 
-Native](https://stackcostmatrix.com/stack/pipedrive-and-slack/)[### Freshdesk + Slack
-
-Native](https://stackcostmatrix.com/stack/freshdesk-and-slack/)[### QuickBooks Online + Slack
-
-Middleware](https://stackcostmatrix.com/stack/quickbooks-and-slack/)[### Slack + Airtable
-
-Native](https://stackcostmatrix.com/stack/slack-and-airtable/)[### Slack + Calendly
-
-Native](https://stackcostmatrix.com/stack/slack-and-calendly/)[### Slack + Zendesk
-
-Native](https://stackcostmatrix.com/stack/slack-and-zendesk/)
+Slack + Intercom is also covered in the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Last checked: Nov 3, 2026
 
