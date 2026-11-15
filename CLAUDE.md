@@ -35,6 +35,7 @@ rediscover it. Details live in `scripts/README.md`. Update the "State" section a
 | Diagram labels | `pairdata20.py` |
 | Hubs, API pages, HubSpot guide, report | `hubs.py`, `apipages.py` + `apidata.py`, `hspro.py`, `research.py` |
 | Theme, navigation, homepage chart and finder | `ui13.py` (see "Theme" in `scripts/README.md`) |
+| About page "How this site is made" (keep every sentence true) | `about25.py` |
 | Links between pages: related cards, link lists, guide tables, footer | `links24.py` (rules in `scripts/README.md`, "Links between pages"); checked by `linkcheck.py` |
 | Jump links, guide figures | `ux18.py` |
 | Editor, schema graph, share-image tags | `site16.py` |
@@ -159,9 +160,9 @@ rediscover it. Details live in `scripts/README.md`. Update the "State" section a
 - Owner tasks: the GitHub repo description still says 59 integrations (now 90; update it after each batch); real
   screenshots from the free pairs; a fresh Search
   Console export in about a month ("Last 3 months"). The Google key only if the owner wants live access later.
-- Waiting for the owner's yes or no: (1) sending the changed URLs to IndexNow after a merge (`python3 scripts/indexnow.py --since <date> --send`);
-  (2) a short "how this site is made" note on the About page that says software and AI tools help assemble the pages and that the editor checks
-  every fact against the vendor's page (Google's "give users context"); (3) the 14 pair pages whose calculators leave out a free plan.
+- Waiting for the owner's yes or no: the 14 pair pages whose calculators leave out a free plan.
+- IndexNow (`python3 scripts/indexnow.py --since <date>`, then `--send`): the owner said yes for the Nov 15 changes. It contacts an outside
+  service, so ask again before sending for a later change.
 - Optional, only if the owner asks: a short captioned video for the Integration Tax report.
 - A monthly price-check task is scheduled for Dec 1.
 
@@ -204,5 +205,10 @@ rediscover it. Details live in `scripts/README.md`. Update the "State" section a
   (it was missing from the homepage, three guides and its own pairs); the HubSpot Professional guide is linked from 20 pages plus every footer
   (was 3); the report is linked in the text of 112 pages (was 3). Found and fixed on the way: seven new pair pages had a wrong first link in the
   footer. Every page is now one click from the homepage. `build_all.sh` and `check_all.sh` (now with `linkcheck.py`) pass.
+- Nov 15, 2026: merged as PR #35 and live: 25 of 25 sampled files match the repo; seven pages at desktop and phone width in a browser: no console
+  errors, no overflow, fonts load. With the owner's yes, the 131 URLs changed that day went to IndexNow (HTTP 200, accepted).
+- Nov 15, 2026: the owner asked for the "How this site is made" note (`about25.py`): AI tools help read vendor pages, draft text and write the
+  scripts; facts come from vendor pages with dates and links; Rakesh approves every change. Opened as PR #36. After it merges, send
+  `/about/` to IndexNow (the owner's yes covered the day's changes).
 - Not re-audited since the redesign: the claude-seo "Visual" category (was 90). Worth one run when the owner asks
   for scores again; the other categories were not touched by the redesign.
