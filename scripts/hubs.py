@@ -7,7 +7,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 from model import compute, tiers, cost, cheapest_api, money, svg_bars
 
 TODAY = "2026-11-03"
-MODIFIED = "2026-11-11"   # charts (Nov 10) and question headings (Nov 11) changed every generated hub
+MODIFIED = "2026-11-15"   # Nov 15: link lists and the pair table changed on every generated hub (Nov 10 charts, Nov 11 question headings before that)
 ED = ' · Edited by <a href="/about/#editor" class="font-medium text-indigo-600 hover:underline">Rakesh Kumar</a>'
 SITE = "https://stackcostmatrix.com"
 EXISTING = {"hubspot": "/hubspot-integrations-cost/", "salesforce": "/salesforce-integrations-cost/"}
@@ -85,6 +85,17 @@ def join_names(xs):
     xs = list(xs)
     return xs[0] if len(xs) == 1 else ", ".join(xs[:-1]) + " and " + xs[-1]
 
+def index_list(items):
+    """A list of site links, set in columns (.scm-index in ui13.py). items: (url, link text). The link text says what
+    the page is ("Slack integrations", "Slack API access"), not just the tool's name: the same name alone used to point
+    at two different pages. Used by the hubs, the API pages and links24.py, so every list looks the same."""
+    return '<ul class="scm-index"> ' + " ".join(f'<li><a href="{u}">{esc(t)}</a></li>' for u, t in items) + " </ul>"
+
+def hub_links(hubs, skip=None):
+    return [(u, f"{nm} integrations") for s2, (nm, u) in sorted(hubs.items(), key=lambda kv: kv[1][0].lower()) if s2 != skip]
+
+REPORT = '/integration-tax-2026/'
+
 def build_tool(slug, name, plans, pairs, sources, hubs):
     short = SHORT.get(slug, name)
     mine = [p for p in pairs if any(t["slug"] == slug for t in p["d"]["tools"])]
@@ -133,11 +144,10 @@ def build_tool(slug, name, plans, pairs, sources, hubs):
         chk = c0 if st == "verified" else ("Oct 17, 2026 (re-check pending)" if st == "pending" else c0 + " (" + st.split(": ", 1)[1] + ")")
         conn = "" if r["p"]["v"]["native"] else f'<span class="block text-xs text-slate-500">{esc(r["p"]["conn"])} {m0(r["p"]["d"]["middleware"])}/mo</span>'
         trs.append(f'<tr class="border-t border-slate-100"> <td class="px-4 py-3 font-medium"><a href="/stack/{r["p"]["slug"]}/" {LINK}>{esc(r["label"])}</a></td> {TD}{BADGE[r["p"]["v"]["native"]]}{conn}</td> '
-                   f'{TD}{esc(r["me"]["required"])}</td> {TD}{esc(r["other"]["required"])}</td> {TD}{money(r["N"])}</td> {TD}<span class="text-xs text-slate-500">{esc(chk)}</span></td> '
-                   f'{TD}<a href="/stack/{r["p"]["slug"]}/" {LINK}>Calculator →</a></td> </tr>')
+                   f'{TD}{esc(r["me"]["required"])}</td> {TD}{esc(r["other"]["required"])}</td> {TD}{money(r["N"])}</td> {TD}<span class="text-xs text-slate-500">{esc(chk)}</span></td> </tr>')
     table = (f'<div class="mt-8 overflow-x-auto rounded-xl border border-slate-200 bg-white shadow-sm"> <table class="spec-matrix w-full min-w-[640px] text-sm"> <thead class="bg-slate-50"> <tr class="text-left"> '
-             f'{TH}Integration</th> {TH}Type</th> {TH}Min. {esc(short)} plan</th> {TH}Other tool&#39;s plan</th> {TH}10-seat total</th> {TH}Checked</th> {TH}Details</th> </tr> </thead> <tbody> {"".join(trs)} </tbody> </table> </div>'
-             f'<p class="mt-3 text-xs text-slate-500">Totals are monthly-billing prices for 10 seats on the minimum plans, including any connector fee. Open a calculator to change team size, switch to annual billing or add usage costs.</p>')
+             f'{TH}Integration</th> {TH}Type</th> {TH}Min. {esc(short)} plan</th> {TH}Other tool&#39;s plan</th> {TH}10-seat total</th> {TH}Checked</th> </tr> </thead> <tbody> {"".join(trs)} </tbody> </table> </div>'
+             f'<p class="mt-3 text-xs text-slate-500">Totals are monthly-billing prices for 10 seats on the minimum plans, including any connector fee. Each integration&#39;s name opens its page, where a calculator lets you change team size, switch to annual billing or add usage costs.</p>')
 
     chart = ('<figure class="mt-6"> ' + svg_bars([(r["label"], r["N"], "#16223f" if r["p"]["v"]["native"] else "#0e7490") for r in sorted(rows, key=lambda r: -r["N"])],
                                                 f"{short} integrations: monthly cost for 10 seats on the plans each needs")
@@ -163,13 +173,14 @@ def build_tool(slug, name, plans, pairs, sources, hubs):
                 f'{TH}Plan</th> {TH}Price</th> {TH}API access</th> {TH}Webhooks</th> {TH}Integrations that need it</th> </tr> </thead> <tbody> {"".join(ptr)} </tbody> </table> </div>')
 
     # hidden cost section
+    report = f' The <a href="{REPORT}" {LINK}>Integration Tax 2026 report</a> adds these costs up across all {len(pairs)} pairs in the index.'
     if forced:
         items = "; ".join(f"{esc(r['label'])} needs {esc(r['me']['required'])} (+{money(r['forced'])}/mo)" for r in forced)
         trap = (f'{h2q('Forced upgrades')}Which {esc(short)} integrations force a plan upgrade?</h2> {P}{cnt(len(forced), n, 'integrations needs', 'integrations need')} a more expensive {esc(short)} plan than {esc(floor_plan['tier_name'])}, {esc(short)}&#39;s cheapest plan with API access. The extra {esc(short)} cost at 10 seats: {items}. '
-                f'That gap is the hidden cost: you pay it every month even if you only wanted the integration. Each pair&#39;s "Hidden Cost Trap" box shows the full breakdown.</p>')
+                f'That gap is the hidden cost: you pay it every month even if you only wanted the integration. Each pair&#39;s "Hidden Cost Trap" box shows the full breakdown.{report}</p>')
     else:
         trap = (f'{H2}Does {esc(short)} force an upgrade?</h2> {P}Not for any of the {n} integrations here: each one works on {esc(short)}&#39;s cheapest plan with API access, so the integration itself adds no {esc(short)} upgrade cost. '
-                f'Any extra cost comes from the other tool&#39;s plan or from a connector fee, shown in the table above.</p>')
+                f'Any extra cost comes from the other tool&#39;s plan or from a connector fee, shown in the table above.{report}</p>')
     # middleware section
     if mid:
         mtxt = "; ".join(f"{esc(r['label'])} ({esc(r['p']['conn'])}, {money(r['p']['d']['middleware'])}/mo)" for r in mid)
@@ -206,8 +217,7 @@ def build_tool(slug, name, plans, pairs, sources, hubs):
             src.append(f'<a href="{attr(du)}" rel="noopener" class="rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm shadow-sm transition hover:shadow-md"><span class="font-semibold text-slate-900">{esc(nm)}</span> <span class="text-slate-500">— API docs ↗</span></a>')
     sources_html = (f'{H2}Vendor sources</h2> <p class="mt-3 text-sm text-slate-500">Each pair page lists the specific help-center and developer-docs pages behind its facts.</p> <div class="mt-4 grid gap-3 sm:grid-cols-2"> {" ".join(src)} </div>'
                     f' <p class="mt-4 text-sm text-slate-500">\nFull 20-tool source index: <a href="/about/" {LINK}>About StackCostMatrix →</a> </p>')
-    others = " · ".join(f'<a href="{u}" {LINK}>{esc(nm)}</a>' for s2, (nm, u) in sorted(hubs.items(), key=lambda kv: kv[1][0].lower()) if s2 != slug)
-    nav = f'{H2}Integration costs by tool</h2> <p class="mt-3 leading-relaxed text-slate-600">{others}</p>'
+    nav = f'{H2}Integration costs by tool</h2> {index_list(hub_links(hubs, skip=slug))}'
 
     body = (f'<section class="mx-auto max-w-4xl"> '
             f'<h1 class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">\n{esc(short)} Integration Costs (2026): Minimum Plans, API Access &amp; Hidden Fees\n</h1> '

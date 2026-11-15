@@ -111,6 +111,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Starter') Source: [ActiveCampaign: Getting started with the API ↗](https://help.activecampaign.com/hc/en-us/articles/207317590) · Verified Nov 3, 2026 | Yes  ('Standard') Source: [Calendly: API overview ↗](https://calendly.com/help/calendly-api-overview) · Verified Nov 3, 2026 |
 | Webhook support at required tier | Yes  ('Starter') Source: [ActiveCampaign: Use webhooks ↗](https://help.activecampaign.com/hc/en-us/articles/115001403484) · Verified Nov 3, 2026 | Yes  ('Standard') Source: [Calendly: API overview ↗](https://calendly.com/help/calendly-api-overview) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [ActiveCampaign API access by plan](https://stackcostmatrix.com/activecampaign-api-access/) and [Calendly API access by plan](https://stackcostmatrix.com/calendly-api-access/).
+
 [Visit ActiveCampaign](https://stackcostmatrix.com/go/activecampaign)  [Visit Calendly](https://stackcostmatrix.com/go/calendly)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -135,21 +137,16 @@ Calendly lists the integration for its Professional, Standard, Standard Plus, Te
 
 ## Integrations related to ActiveCampaign + Calendly
 
-[All ActiveCampaign integrations →](https://stackcostmatrix.com/activecampaign-integrations-cost/) · [All Calendly integrations →](https://stackcostmatrix.com/calendly-integrations-cost/) · [ActiveCampaign API access by plan →](https://stackcostmatrix.com/activecampaign-api-access/) · [Calendly API access by plan →](https://stackcostmatrix.com/calendly-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 10 ActiveCampaign integrations](https://stackcostmatrix.com/activecampaign-integrations-cost/) and [all 10 Calendly integrations](https://stackcostmatrix.com/calendly-integrations-cost/).
 
-[### ActiveCampaign + Stripe
+- [Asana + ActiveCampaign](https://stackcostmatrix.com/stack/asana-and-activecampaign/): Middleware, $160.49 a month for 10 seats
+- [ActiveCampaign + Slack](https://stackcostmatrix.com/stack/activecampaign-and-slack/): Native, $49.00 a month for 10 seats
+- [ClickUp + ActiveCampaign](https://stackcostmatrix.com/stack/clickup-and-activecampaign/): Middleware, $25.59 a month for 10 seats
+- [Mailchimp + Calendly](https://stackcostmatrix.com/stack/mailchimp-and-calendly/): Native, $120.00 a month for 10 seats
+- [Salesforce Sales Cloud + Calendly](https://stackcostmatrix.com/stack/salesforce-and-calendly/): Native, $1,850.00 a month for 10 seats
+- [Intercom + Calendly](https://stackcostmatrix.com/stack/intercom-and-calendly/): Native, $390.00 a month for 10 seats
 
-Native](https://stackcostmatrix.com/stack/activecampaign-and-stripe/)[### Mailchimp + Calendly
-
-Native](https://stackcostmatrix.com/stack/mailchimp-and-calendly/)[### Slack + Calendly
-
-Native](https://stackcostmatrix.com/stack/slack-and-calendly/)[### Notion + Calendly
-
-Middleware](https://stackcostmatrix.com/stack/notion-and-calendly/)[### Xero + ActiveCampaign
-
-Middleware](https://stackcostmatrix.com/stack/xero-and-activecampaign/)[### Xero + Calendly
-
-Middleware](https://stackcostmatrix.com/stack/xero-and-calendly/)
+ActiveCampaign + Calendly is also covered in the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Last checked: Nov 3, 2026
 

@@ -111,6 +111,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Free') 100 req/10 s · 250,000/day (private apps) Source: [HubSpot developers: Usage guidelines ↗](https://developers.hubspot.com/docs/developer-tooling/platform/usage-guidelines) · Verified Nov 3, 2026 | Yes  ('Suite Team') 200 requests/min Source: [Zendesk developers: Rate limits ↗](https://developer.zendesk.com/api-reference/introduction/rate-limits/) · Verified Nov 3, 2026 |
 | Webhook support at required tier | No  ('Free') Workflow webhooks need Data Hub Professional Source: [HubSpot KB: Webhooks in workflows ↗](https://knowledge.hubspot.com/workflows/how-do-i-use-webhooks-with-hubspot-workflows) · Verified Nov 3, 2026 | Yes  ('Suite Team') Source: [Zendesk: Creating webhooks ↗](https://support.zendesk.com/hc/en-us/articles/4408839108378) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [HubSpot API access by plan](https://stackcostmatrix.com/hubspot-api-access/) and [Zendesk API access by plan](https://stackcostmatrix.com/zendesk-api-access/).
+
 [Visit HubSpot](https://stackcostmatrix.com/go/hubspot)  [Visit Zendesk](https://stackcostmatrix.com/go/zendesk)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -135,23 +137,16 @@ Tickets can only be shown on the contact timeline, not on companies or deals, an
 
 ## Integrations related to HubSpot + Zendesk
 
-[All HubSpot integrations →](https://stackcostmatrix.com/hubspot-integrations-cost/) · [All Zendesk integrations →](https://stackcostmatrix.com/zendesk-integrations-cost/) · [HubSpot API access by plan →](https://stackcostmatrix.com/hubspot-api-access/) · [Zendesk API access by plan →](https://stackcostmatrix.com/zendesk-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 16 HubSpot integrations](https://stackcostmatrix.com/hubspot-integrations-cost/) and [all 11 Zendesk integrations](https://stackcostmatrix.com/zendesk-integrations-cost/).
 
-Part of our [HubSpot integration cost guide](https://stackcostmatrix.com/hubspot-integrations-cost/) and [CRM integration hidden-costs guide](https://stackcostmatrix.com/crm-integration-pricing-guide/).
+- [Intercom + HubSpot](https://stackcostmatrix.com/stack/intercom-and-hubspot/): Native, $390.00 a month for 10 seats
+- [HubSpot + Slack](https://stackcostmatrix.com/stack/hubspot-and-slack/): Native, $0.00 a month for 10 seats
+- [HubSpot + Calendly](https://stackcostmatrix.com/stack/hubspot-and-calendly/): Native, $120.00 a month for 10 seats
+- [Pipedrive + Zendesk](https://stackcostmatrix.com/stack/pipedrive-and-zendesk/): Native, $830.00 a month for 10 seats
+- [Salesforce Sales Cloud + Zendesk](https://stackcostmatrix.com/stack/salesforce-and-zendesk/): Native, $1,940.00 a month for 10 seats
+- [Zendesk + Stripe](https://stackcostmatrix.com/stack/zendesk-and-stripe/): Middleware, $700.59 a month for 10 seats
 
-[### HubSpot + Calendly
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-calendly/)[### HubSpot + Mailchimp
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-mailchimp/)[### Monday.com + Zendesk
-
-Native](https://stackcostmatrix.com/stack/monday-and-zendesk/)[### Salesforce Sales Cloud + Zendesk
-
-Native](https://stackcostmatrix.com/stack/salesforce-and-zendesk/)[### Zendesk + Notion
-
-Middleware](https://stackcostmatrix.com/stack/zendesk-and-notion/)[### Zendesk + Stripe
-
-Middleware](https://stackcostmatrix.com/stack/zendesk-and-stripe/)
+HubSpot + Zendesk is also covered in the [CRM integration hidden-costs guide](https://stackcostmatrix.com/crm-integration-pricing-guide/), the guide to [which HubSpot integrations need Professional](https://stackcostmatrix.com/hubspot-professional-integrations/) and the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Last checked: Nov 3, 2026
 

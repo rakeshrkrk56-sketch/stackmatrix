@@ -111,6 +111,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Growth') Source: [Freshdesk API reference ↗](https://developers.freshdesk.com/api/) · Verified Nov 3, 2026 | Yes  ('Free') Source: [Slack developers: Incoming webhooks ↗](https://api.slack.com/messaging/webhooks) · Verified Nov 3, 2026 |
 | Webhook support at required tier | Yes  ('Growth') Webhooks run from automation rules Source: [Freshdesk: Using webhooks in automation rules ↗](https://support.freshdesk.com/en/support/solutions/articles/132589) · Verified Nov 3, 2026 | Yes  ('Free') Incoming webhooks Source: [Slack developers: Incoming webhooks ↗](https://api.slack.com/messaging/webhooks) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [Freshdesk API access by plan](https://stackcostmatrix.com/freshdesk-api-access/) and [Slack API access by plan](https://stackcostmatrix.com/slack-api-access/).
+
 [Visit Freshdesk](https://stackcostmatrix.com/go/freshdesk)  [Visit Slack](https://stackcostmatrix.com/go/slack)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -135,21 +137,16 @@ Freshdesk lists Slack integration on Growth and above, and the installing admin 
 
 ## Integrations related to Freshdesk + Slack
 
-[All Slack integrations →](https://stackcostmatrix.com/slack-integrations-cost/) · [Freshdesk API access by plan →](https://stackcostmatrix.com/freshdesk-api-access/) · [Slack API access by plan →](https://stackcostmatrix.com/slack-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 3 Freshdesk integrations](https://stackcostmatrix.com/freshdesk-integrations-cost/) and [all 17 Slack integrations](https://stackcostmatrix.com/slack-integrations-cost/).
 
-[### Asana + Slack
+- [Freshdesk + HubSpot](https://stackcostmatrix.com/stack/freshdesk-and-hubspot/): Native, $230.00 a month for 10 seats
+- [Freshdesk + ActiveCampaign](https://stackcostmatrix.com/stack/freshdesk-and-activecampaign/): Middleware, $255.59 a month for 10 seats
+- [Slack + Intercom](https://stackcostmatrix.com/stack/slack-and-intercom/): Native, $390.00 a month for 10 seats
+- [Slack + Zendesk](https://stackcostmatrix.com/stack/slack-and-zendesk/): Native, $690.00 a month for 10 seats
+- [Mailchimp + Slack](https://stackcostmatrix.com/stack/mailchimp-and-slack/): Native, $0.00 a month for 10 seats
+- [ActiveCampaign + Slack](https://stackcostmatrix.com/stack/activecampaign-and-slack/): Native, $49.00 a month for 10 seats
 
-Native](https://stackcostmatrix.com/stack/asana-and-slack/)[### ClickUp + Slack
-
-Native](https://stackcostmatrix.com/stack/clickup-and-slack/)[### HubSpot + Slack
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-slack/)[### Monday.com + Slack
-
-Native](https://stackcostmatrix.com/stack/monday-and-slack/)[### Salesforce Sales Cloud + Slack
-
-Native](https://stackcostmatrix.com/stack/salesforce-and-slack/)[### Freshdesk + HubSpot
-
-Native](https://stackcostmatrix.com/stack/freshdesk-and-hubspot/)
+Freshdesk + Slack is also covered in the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Last checked: Nov 3, 2026
 

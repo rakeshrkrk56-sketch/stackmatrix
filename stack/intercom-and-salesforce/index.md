@@ -116,6 +116,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Advanced') Paid workspaces Source: [Intercom developers: Webhooks ↗](https://developers.intercom.com/docs/webhooks) · Verified Nov 3, 2026 | Yes  ('Professional') Web Services API add-on (modeled at $25/user) Source: [Salesforce developers: Supported editions ↗](https://developer.salesforce.com/docs/platform/api-rest/guide/intro-rest-compatible-editions.html) · Verified Nov 3, 2026 |
 | Webhook support at required tier | Yes  ('Advanced') Source: [Intercom developers: Webhooks ↗](https://developers.intercom.com/docs/webhooks) · Verified Nov 3, 2026 | No  ('Professional') Change Data Capture (Salesforce's change-event feed) isn't available on Professional, so sync runs through the REST API. Source: [Salesforce developers: Change Data Capture ↗](https://developer.salesforce.com/docs/atlas.en-us.change_data_capture.meta/change_data_capture/cdc_intro.htm) · Verified Nov 8, 2026 |
 
+API and webhook access can change with the plan you are on: see [Intercom API access by plan](https://stackcostmatrix.com/intercom-api-access/) and [Salesforce API access by plan](https://stackcostmatrix.com/salesforce-api-access/).
+
 [Visit Intercom](https://stackcostmatrix.com/go/intercom)  [Visit Salesforce Sales Cloud](https://stackcostmatrix.com/go/salesforce)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -140,23 +142,16 @@ It isn't on Intercom's Essential plan, so it forces Advanced, and installing int
 
 ## Integrations related to Intercom + Salesforce Sales Cloud
 
-[All Intercom integrations →](https://stackcostmatrix.com/intercom-integrations-cost/) · [All Salesforce integrations →](https://stackcostmatrix.com/salesforce-integrations-cost/) · [Intercom API access by plan →](https://stackcostmatrix.com/intercom-api-access/) · [Salesforce API access by plan →](https://stackcostmatrix.com/salesforce-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 8 Intercom integrations](https://stackcostmatrix.com/intercom-integrations-cost/) and [all 13 Salesforce integrations](https://stackcostmatrix.com/salesforce-integrations-cost/).
 
-Part of our [CRM integration hidden-costs guide](https://stackcostmatrix.com/crm-integration-pricing-guide/).
+- [Pipedrive + Intercom](https://stackcostmatrix.com/stack/pipedrive-and-intercom/): Native, $530.00 a month for 10 seats
+- [Intercom + ActiveCampaign](https://stackcostmatrix.com/stack/intercom-and-activecampaign/): Middleware, $415.59 a month for 10 seats
+- [Intercom + Mailchimp](https://stackcostmatrix.com/stack/intercom-and-mailchimp/): Native, $390.00 a month for 10 seats
+- [Salesforce Sales Cloud + Zendesk](https://stackcostmatrix.com/stack/salesforce-and-zendesk/): Native, $1,940.00 a month for 10 seats
+- [Salesforce Sales Cloud + Mailchimp](https://stackcostmatrix.com/stack/salesforce-and-mailchimp/): Native, $1,270.00 a month for 10 seats
+- [Salesforce Sales Cloud + Slack](https://stackcostmatrix.com/stack/salesforce-and-slack/): Native, $1,737.50 a month for 10 seats
 
-[### Intercom + Calendly
-
-Native](https://stackcostmatrix.com/stack/intercom-and-calendly/)[### Intercom + HubSpot
-
-Native](https://stackcostmatrix.com/stack/intercom-and-hubspot/)[### Intercom + Mailchimp
-
-Native](https://stackcostmatrix.com/stack/intercom-and-mailchimp/)[### Intercom + Stripe
-
-Native](https://stackcostmatrix.com/stack/intercom-and-stripe/)[### Pipedrive + Intercom
-
-Native](https://stackcostmatrix.com/stack/pipedrive-and-intercom/)[### Slack + Intercom
-
-Native](https://stackcostmatrix.com/stack/slack-and-intercom/)
+Intercom + Salesforce Sales Cloud is also covered in the [CRM integration hidden-costs guide](https://stackcostmatrix.com/crm-integration-pricing-guide/) and the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Requirements checked: Nov 12, 2026; prices: Nov 3, 2026 (exceptions listed at the top)
 

@@ -112,6 +112,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Standard') Source: [Stripe pricing ↗](https://stripe.com/pricing) · Verified Oct 17, 2026 | Yes  ('Simple Start') Any paid plan (Zapier, Make and Mailchimp name no tier) Source: [Zapier help: QuickBooks Online API prerequisites ↗](https://help.zapier.com/hc/en-us/articles/8495935103885) · Verified Nov 3, 2026 |
 | Webhook support at required tier | Yes  ('Standard') Source: [Stripe API docs ↗](https://docs.stripe.com/api) · Verified Oct 17, 2026 | Yes  ('Simple Start') App-level webhooks Source: [Intuit developers: Webhooks ↗](https://developer.intuit.com/app/developer/qbo/docs/develop/webhooks) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [Stripe API access by plan](https://stackcostmatrix.com/stripe-api-access/) and [QuickBooks API access by plan](https://stackcostmatrix.com/quickbooks-api-access/).
+
 [Visit Stripe](https://stackcostmatrix.com/go/stripe)  [Visit QuickBooks Online](https://stackcostmatrix.com/go/quickbooks)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -136,21 +138,16 @@ Third-party sync apps have their own pricing, which isn't included here; this ca
 
 ## Integrations related to Stripe + QuickBooks Online
 
-[All Stripe integrations →](https://stackcostmatrix.com/stripe-integrations-cost/) · [All QuickBooks integrations →](https://stackcostmatrix.com/quickbooks-integrations-cost/) · [Stripe API access by plan →](https://stackcostmatrix.com/stripe-api-access/) · [QuickBooks API access by plan →](https://stackcostmatrix.com/quickbooks-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 13 Stripe integrations](https://stackcostmatrix.com/stripe-integrations-cost/) and [all 9 QuickBooks integrations](https://stackcostmatrix.com/quickbooks-integrations-cost/).
 
-[### Asana + QuickBooks Online
+- [Stripe + Xero](https://stackcostmatrix.com/stack/stripe-and-xero/): Native, $27.00 a month for 10 seats
+- [Notion + Stripe](https://stackcostmatrix.com/stack/notion-and-stripe/): Middleware, $130.59 a month for 10 seats
+- [HubSpot + Stripe](https://stackcostmatrix.com/stack/hubspot-and-stripe/): Native, $0.00 a month for 10 seats
+- [HubSpot + QuickBooks Online](https://stackcostmatrix.com/stack/hubspot-and-quickbooks/): Native, $38.00 a month for 10 seats
+- [Airtable + QuickBooks Online](https://stackcostmatrix.com/stack/airtable-and-quickbooks/): Middleware, $288.59 a month for 10 seats
+- [Pipedrive + QuickBooks Online](https://stackcostmatrix.com/stack/pipedrive-and-quickbooks/): Native, $178.00 a month for 10 seats
 
-Middleware](https://stackcostmatrix.com/stack/asana-and-quickbooks/)[### Monday.com + QuickBooks Online
-
-Middleware](https://stackcostmatrix.com/stack/monday-and-quickbooks/)[### Salesforce Sales Cloud + Stripe
-
-Native](https://stackcostmatrix.com/stack/salesforce-and-stripe/)[### Stripe + Xero
-
-Native](https://stackcostmatrix.com/stack/stripe-and-xero/)[### ActiveCampaign + Stripe
-
-Native](https://stackcostmatrix.com/stack/activecampaign-and-stripe/)[### QuickBooks Online + Mailchimp
-
-Native](https://stackcostmatrix.com/stack/quickbooks-and-mailchimp/)
+Stripe + QuickBooks Online is also covered in the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Last checked: Nov 3, 2026 (exceptions listed at the top)
 

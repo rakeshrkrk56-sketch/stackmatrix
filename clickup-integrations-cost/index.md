@@ -13,17 +13,17 @@ This page collects the 7 ClickUp integrations in the StackCostMatrix index: whic
 
 ClickUp Integration Costs (2026): Minimum Plans, API Access & Hidden Fees
 
-| Integration | Type | Min. ClickUp plan | Other tool's plan | 10-seat total | Checked | Details |
-| --- | --- | --- | --- | --- | --- | --- |
-| [ClickUp + Slack](https://stackcostmatrix.com/stack/clickup-and-slack/) | Native | Free | Free | $0.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/clickup-and-slack/) |
-| [ClickUp + Stripe](https://stackcostmatrix.com/stack/clickup-and-stripe/) | Middleware Make Core $10.59/mo | Free | Standard | $10.59 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/clickup-and-stripe/) |
-| [ClickUp + ActiveCampaign](https://stackcostmatrix.com/stack/clickup-and-activecampaign/) | Middleware Make Core $10.59/mo | Free | Starter | $25.59 | Nov 12, 2026 | [Calculator →](https://stackcostmatrix.com/stack/clickup-and-activecampaign/) |
-| [HubSpot + ClickUp](https://stackcostmatrix.com/stack/hubspot-and-clickup/) | Native | Core | Free | $120.00 | Nov 3, 2026 (ClickUp plan unconfirmed) | [Calculator →](https://stackcostmatrix.com/stack/hubspot-and-clickup/) |
-| [ClickUp + Notion](https://stackcostmatrix.com/stack/clickup-and-notion/) | Native | Free | Plus | $120.00 | Nov 12, 2026 | [Calculator →](https://stackcostmatrix.com/stack/clickup-and-notion/) |
-| [ClickUp + Zendesk](https://stackcostmatrix.com/stack/clickup-and-zendesk/) | Native | Free | Suite Team | $690.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/clickup-and-zendesk/) |
-| [ClickUp + Salesforce](https://stackcostmatrix.com/stack/clickup-and-salesforce/) | Middleware Make Core $10.59/mo | Free | Professional | $1,260.59 | Nov 12, 2026 | [Calculator →](https://stackcostmatrix.com/stack/clickup-and-salesforce/) |
+| Integration | Type | Min. ClickUp plan | Other tool's plan | 10-seat total | Checked |
+| --- | --- | --- | --- | --- | --- |
+| [ClickUp + Slack](https://stackcostmatrix.com/stack/clickup-and-slack/) | Native | Free | Free | $0.00 | Nov 3, 2026 |
+| [ClickUp + Stripe](https://stackcostmatrix.com/stack/clickup-and-stripe/) | Middleware Make Core $10.59/mo | Free | Standard | $10.59 | Nov 3, 2026 |
+| [ClickUp + ActiveCampaign](https://stackcostmatrix.com/stack/clickup-and-activecampaign/) | Middleware Make Core $10.59/mo | Free | Starter | $25.59 | Nov 12, 2026 |
+| [HubSpot + ClickUp](https://stackcostmatrix.com/stack/hubspot-and-clickup/) | Native | Core | Free | $120.00 | Nov 3, 2026 (ClickUp plan unconfirmed) |
+| [ClickUp + Notion](https://stackcostmatrix.com/stack/clickup-and-notion/) | Native | Free | Plus | $120.00 | Nov 12, 2026 |
+| [ClickUp + Zendesk](https://stackcostmatrix.com/stack/clickup-and-zendesk/) | Native | Free | Suite Team | $690.00 | Nov 3, 2026 |
+| [ClickUp + Salesforce](https://stackcostmatrix.com/stack/clickup-and-salesforce/) | Middleware Make Core $10.59/mo | Free | Professional | $1,260.59 | Nov 12, 2026 |
 
-Totals are monthly-billing prices for 10 seats on the minimum plans, including any connector fee. Open a calculator to change team size, switch to annual billing or add usage costs.
+Totals are monthly-billing prices for 10 seats on the minimum plans, including any connector fee. Each integration's name opens its page, where a calculator lets you change team size, switch to annual billing or add usage costs.
 
 Chart: ClickUp integrations: monthly cost for 10 seats on the plans each needs: ClickUp + Salesforce $1,260.59; ClickUp + Zendesk $690.00; HubSpot + ClickUp $120.00; ClickUp + Notion $120.00; ClickUp + ActiveCampaign $25.59; ClickUp + Stripe $10.59; ClickUp + Slack $0.00
 
@@ -35,7 +35,7 @@ Image: [ClickUp integration costs summary: 7 integrations priced, from $0 to $1,
 
 ## Which ClickUp integrations force a plan upgrade?
 
-1 of the 7 integrations needs a more expensive ClickUp plan than Free, ClickUp's cheapest plan with API access. The extra ClickUp cost at 10 seats: HubSpot + ClickUp needs Core (+$120.00/mo). That gap is the hidden cost: you pay it every month even if you only wanted the integration. Each pair's "Hidden Cost Trap" box shows the full breakdown.
+1 of the 7 integrations needs a more expensive ClickUp plan than Free, ClickUp's cheapest plan with API access. The extra ClickUp cost at 10 seats: HubSpot + ClickUp needs Core (+$120.00/mo). That gap is the hidden cost: you pay it every month even if you only wanted the integration. Each pair's "Hidden Cost Trap" box shows the full breakdown. The [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/) adds these costs up across all 90 pairs in the index.
 
 ## Which ClickUp integrations need Make or Zapier?
 
@@ -63,7 +63,23 @@ Full 20-tool source index: [About StackCostMatrix →](https://stackcostmatrix.c
 
 ## Integration costs by tool
 
-[ActiveCampaign](https://stackcostmatrix.com/activecampaign-integrations-cost/) · [Airtable](https://stackcostmatrix.com/airtable-integrations-cost/) · [Asana](https://stackcostmatrix.com/asana-integrations-cost/) · [Calendly](https://stackcostmatrix.com/calendly-integrations-cost/) · [Freshdesk](https://stackcostmatrix.com/freshdesk-integrations-cost/) · [HubSpot](https://stackcostmatrix.com/hubspot-integrations-cost/) · [Intercom](https://stackcostmatrix.com/intercom-integrations-cost/) · [Mailchimp](https://stackcostmatrix.com/mailchimp-integrations-cost/) · [Monday.com](https://stackcostmatrix.com/monday-integrations-cost/) · [Notion](https://stackcostmatrix.com/notion-integrations-cost/) · [Pipedrive](https://stackcostmatrix.com/pipedrive-integrations-cost/) · [QuickBooks](https://stackcostmatrix.com/quickbooks-integrations-cost/) · [Salesforce](https://stackcostmatrix.com/salesforce-integrations-cost/) · [Slack](https://stackcostmatrix.com/slack-integrations-cost/) · [Stripe](https://stackcostmatrix.com/stripe-integrations-cost/) · [Xero](https://stackcostmatrix.com/xero-integrations-cost/) · [Zendesk](https://stackcostmatrix.com/zendesk-integrations-cost/)
+- [ActiveCampaign integrations](https://stackcostmatrix.com/activecampaign-integrations-cost/)
+- [Airtable integrations](https://stackcostmatrix.com/airtable-integrations-cost/)
+- [Asana integrations](https://stackcostmatrix.com/asana-integrations-cost/)
+- [Calendly integrations](https://stackcostmatrix.com/calendly-integrations-cost/)
+- [Freshdesk integrations](https://stackcostmatrix.com/freshdesk-integrations-cost/)
+- [HubSpot integrations](https://stackcostmatrix.com/hubspot-integrations-cost/)
+- [Intercom integrations](https://stackcostmatrix.com/intercom-integrations-cost/)
+- [Mailchimp integrations](https://stackcostmatrix.com/mailchimp-integrations-cost/)
+- [Monday.com integrations](https://stackcostmatrix.com/monday-integrations-cost/)
+- [Notion integrations](https://stackcostmatrix.com/notion-integrations-cost/)
+- [Pipedrive integrations](https://stackcostmatrix.com/pipedrive-integrations-cost/)
+- [QuickBooks integrations](https://stackcostmatrix.com/quickbooks-integrations-cost/)
+- [Salesforce integrations](https://stackcostmatrix.com/salesforce-integrations-cost/)
+- [Slack integrations](https://stackcostmatrix.com/slack-integrations-cost/)
+- [Stripe integrations](https://stackcostmatrix.com/stripe-integrations-cost/)
+- [Xero integrations](https://stackcostmatrix.com/xero-integrations-cost/)
+- [Zendesk integrations](https://stackcostmatrix.com/zendesk-integrations-cost/)
 
 ## ClickUp integration costs: frequently asked questions
 

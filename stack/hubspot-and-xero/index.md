@@ -112,6 +112,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Free') 100 req/10 s · 250,000/day (private apps) Source: [HubSpot developers: Usage guidelines ↗](https://developers.hubspot.com/docs/developer-tooling/platform/usage-guidelines) · Verified Nov 3, 2026 | Yes  ('Early') Limits set by the app's developer tier Source: [Xero developers: Pricing and tiers ↗](https://developer.xero.com/pricing) · Verified Nov 3, 2026 |
 | Webhook support at required tier | No  ('Free') Workflow webhooks need Data Hub Professional Source: [HubSpot KB: Webhooks in workflows ↗](https://knowledge.hubspot.com/workflows/how-do-i-use-webhooks-with-hubspot-workflows) · Verified Nov 3, 2026 | Yes  ('Early') No plan requirement in Xero's webhook docs Source: [Xero developers: Webhooks ↗](https://developer.xero.com/documentation/guides/webhooks/overview) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [HubSpot API access by plan](https://stackcostmatrix.com/hubspot-api-access/) and [Xero API access by plan](https://stackcostmatrix.com/xero-api-access/).
+
 [Visit HubSpot](https://stackcostmatrix.com/go/hubspot)  [Visit Xero](https://stackcostmatrix.com/go/xero)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -136,23 +138,16 @@ Invoices created in HubSpot have to be edited in HubSpot, or they fail to sync. 
 
 ## Integrations related to HubSpot + Xero
 
-[All HubSpot integrations →](https://stackcostmatrix.com/hubspot-integrations-cost/) · [All Xero integrations →](https://stackcostmatrix.com/xero-integrations-cost/) · [HubSpot API access by plan →](https://stackcostmatrix.com/hubspot-api-access/) · [Xero API access by plan →](https://stackcostmatrix.com/xero-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 16 HubSpot integrations](https://stackcostmatrix.com/hubspot-integrations-cost/) and [all 10 Xero integrations](https://stackcostmatrix.com/xero-integrations-cost/).
 
-Part of our [CRM integration hidden-costs guide](https://stackcostmatrix.com/crm-integration-pricing-guide/).
+- [HubSpot + QuickBooks Online](https://stackcostmatrix.com/stack/hubspot-and-quickbooks/): Native, $38.00 a month for 10 seats
+- [HubSpot + Stripe](https://stackcostmatrix.com/stack/hubspot-and-stripe/): Native, $0.00 a month for 10 seats
+- [HubSpot + Pipedrive](https://stackcostmatrix.com/stack/hubspot-and-pipedrive/): Middleware, $150.59 a month for 10 seats
+- [Pipedrive + Xero](https://stackcostmatrix.com/stack/pipedrive-and-xero/): Middleware, $177.59 a month for 10 seats
+- [Salesforce Sales Cloud + Xero](https://stackcostmatrix.com/stack/salesforce-and-xero/): Middleware, $1,287.59 a month for 10 seats
+- [Stripe + Xero](https://stackcostmatrix.com/stack/stripe-and-xero/): Native, $27.00 a month for 10 seats
 
-[### Freshdesk + HubSpot
-
-Native](https://stackcostmatrix.com/stack/freshdesk-and-hubspot/)[### HubSpot + Airtable
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-airtable/)[### HubSpot + Asana
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-asana/)[### HubSpot + Calendly
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-calendly/)[### HubSpot + ClickUp
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-clickup/)[### HubSpot + Mailchimp
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-mailchimp/)
+HubSpot + Xero is also covered in the [CRM integration hidden-costs guide](https://stackcostmatrix.com/crm-integration-pricing-guide/), the guide to [which HubSpot integrations need Professional](https://stackcostmatrix.com/hubspot-professional-integrations/) and the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Requirements checked: Nov 12, 2026; prices: Nov 3, 2026
 

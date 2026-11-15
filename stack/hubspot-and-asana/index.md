@@ -116,6 +116,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Professional') 190 req/10 s · 625,000/day (private apps) Source: [HubSpot developers: Usage guidelines ↗](https://developers.hubspot.com/docs/developer-tooling/platform/usage-guidelines) · Verified Nov 3, 2026 | Yes  ('Starter') Source: [Asana pricing ↗](https://asana.com/pricing) · Verified Oct 17, 2026 |
 | Webhook support at required tier | No  ('Professional') Only with Data Hub Professional Source: [HubSpot KB: Webhooks in workflows ↗](https://knowledge.hubspot.com/workflows/how-do-i-use-webhooks-with-hubspot-workflows) · Verified Nov 3, 2026 | Yes  ('Starter') API webhooks; no plan requirement stated Source: [Asana developers: Webhooks guide ↗](https://developers.asana.com/docs/webhooks-guide) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [HubSpot API access by plan](https://stackcostmatrix.com/hubspot-api-access/) and [Asana API access by plan](https://stackcostmatrix.com/asana-api-access/).
+
 [Visit HubSpot](https://stackcostmatrix.com/go/hubspot)  [Visit Asana](https://stackcostmatrix.com/go/asana)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -140,23 +142,16 @@ It needs HubSpot workflows, so a Professional or Enterprise subscription. Tasks 
 
 ## Integrations related to HubSpot + Asana
 
-[All HubSpot integrations →](https://stackcostmatrix.com/hubspot-integrations-cost/) · [All Asana integrations →](https://stackcostmatrix.com/asana-integrations-cost/) · [HubSpot API access by plan →](https://stackcostmatrix.com/hubspot-api-access/) · [Asana API access by plan →](https://stackcostmatrix.com/asana-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 16 HubSpot integrations](https://stackcostmatrix.com/hubspot-integrations-cost/) and [all 10 Asana integrations](https://stackcostmatrix.com/asana-integrations-cost/).
 
-Part of our [HubSpot integration cost guide](https://stackcostmatrix.com/hubspot-integrations-cost/) and [CRM integration hidden-costs guide](https://stackcostmatrix.com/crm-integration-pricing-guide/).
+- [HubSpot + ClickUp](https://stackcostmatrix.com/stack/hubspot-and-clickup/): Native, $120.00 a month for 10 seats
+- [HubSpot + Monday.com](https://stackcostmatrix.com/stack/hubspot-and-monday/): Native, $140.00 a month for 10 seats
+- [HubSpot + Calendly](https://stackcostmatrix.com/stack/hubspot-and-calendly/): Native, $120.00 a month for 10 seats
+- [Pipedrive + Asana](https://stackcostmatrix.com/stack/pipedrive-and-asana/): Native, $274.90 a month for 10 seats
+- [Asana + Salesforce Sales Cloud](https://stackcostmatrix.com/stack/asana-and-salesforce/): Native, $1,554.90 a month for 10 seats
+- [Xero + Asana](https://stackcostmatrix.com/stack/xero-and-asana/): Middleware, $172.49 a month for 10 seats
 
-[### Asana + Slack
-
-Native](https://stackcostmatrix.com/stack/asana-and-slack/)[### HubSpot + Slack
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-slack/)[### Freshdesk + HubSpot
-
-Native](https://stackcostmatrix.com/stack/freshdesk-and-hubspot/)[### HubSpot + Monday.com
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-monday/)[### HubSpot + Salesforce Sales Cloud
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-salesforce/)[### Intercom + HubSpot
-
-Native](https://stackcostmatrix.com/stack/intercom-and-hubspot/)
+HubSpot + Asana is also covered in the [CRM integration hidden-costs guide](https://stackcostmatrix.com/crm-integration-pricing-guide/), the guide to [which HubSpot integrations need Professional](https://stackcostmatrix.com/hubspot-professional-integrations/) and the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Last checked: Nov 3, 2026 (exceptions listed at the top)
 

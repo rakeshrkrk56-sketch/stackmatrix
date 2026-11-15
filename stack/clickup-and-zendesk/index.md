@@ -100,6 +100,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Free') 100 requests/min per token Source: [ClickUp developers: API availability by plan ↗](https://developer.clickup.com/docs/apis-available-by-plan) · Verified Nov 3, 2026 | Yes  ('Suite Team') 200 requests/min Source: [Zendesk developers: Rate limits ↗](https://developer.zendesk.com/api-reference/introduction/rate-limits/) · Verified Nov 3, 2026 |
 | Webhook support at required tier | Yes  ('Free') API webhooks Source: [ClickUp: Automation webhooks ↗](https://help.clickup.com/hc/en-us/articles/35313844961943-Integrate-ClickUp-using-Automation-webhooks) · Verified Nov 3, 2026 | Yes  ('Suite Team') Source: [Zendesk: Creating webhooks ↗](https://support.zendesk.com/hc/en-us/articles/4408839108378) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [ClickUp API access by plan](https://stackcostmatrix.com/clickup-api-access/) and [Zendesk API access by plan](https://stackcostmatrix.com/zendesk-api-access/).
+
 [Visit ClickUp](https://stackcostmatrix.com/go/clickup)  [Visit Zendesk](https://stackcostmatrix.com/go/zendesk)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -124,21 +126,16 @@ Only Workspace owners and admins can install it. Keeping every ticket update in 
 
 ## Integrations related to ClickUp + Zendesk
 
-[All ClickUp integrations →](https://stackcostmatrix.com/clickup-integrations-cost/) · [All Zendesk integrations →](https://stackcostmatrix.com/zendesk-integrations-cost/) · [ClickUp API access by plan →](https://stackcostmatrix.com/clickup-api-access/) · [Zendesk API access by plan →](https://stackcostmatrix.com/zendesk-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 7 ClickUp integrations](https://stackcostmatrix.com/clickup-integrations-cost/) and [all 11 Zendesk integrations](https://stackcostmatrix.com/zendesk-integrations-cost/).
 
-[### ClickUp + Slack
+- [ClickUp + Slack](https://stackcostmatrix.com/stack/clickup-and-slack/): Native, $0.00 a month for 10 seats
+- [ClickUp + ActiveCampaign](https://stackcostmatrix.com/stack/clickup-and-activecampaign/): Middleware, $25.59 a month for 10 seats
+- [ClickUp + Notion](https://stackcostmatrix.com/stack/clickup-and-notion/): Native, $120.00 a month for 10 seats
+- [Monday.com + Zendesk](https://stackcostmatrix.com/stack/monday-and-zendesk/): Native, $830.00 a month for 10 seats
+- [Zendesk + Asana](https://stackcostmatrix.com/stack/zendesk-and-asana/): Native, $824.90 a month for 10 seats
+- [Zendesk + Airtable](https://stackcostmatrix.com/stack/zendesk-and-airtable/): Native, $1,230.00 a month for 10 seats
 
-Native](https://stackcostmatrix.com/stack/clickup-and-slack/)[### ClickUp + Stripe
-
-Middleware](https://stackcostmatrix.com/stack/clickup-and-stripe/)[### HubSpot + Zendesk
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-zendesk/)[### Salesforce Sales Cloud + Zendesk
-
-Native](https://stackcostmatrix.com/stack/salesforce-and-zendesk/)[### Slack + Zendesk
-
-Native](https://stackcostmatrix.com/stack/slack-and-zendesk/)[### HubSpot + ClickUp
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-clickup/)
+ClickUp + Zendesk is also covered in the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Last checked: Nov 3, 2026
 

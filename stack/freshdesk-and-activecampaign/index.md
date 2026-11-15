@@ -114,6 +114,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Growth') Source: [Freshdesk API reference ↗](https://developers.freshdesk.com/api/) · Verified Nov 3, 2026 | Yes  ('Starter') Source: [ActiveCampaign: Getting started with the API ↗](https://help.activecampaign.com/hc/en-us/articles/207317590) · Verified Nov 3, 2026 |
 | Webhook support at required tier | Yes  ('Growth') Webhooks run from automation rules Source: [Freshdesk: Using webhooks in automation rules ↗](https://support.freshdesk.com/en/support/solutions/articles/132589) · Verified Nov 3, 2026 | Yes  ('Starter') Source: [ActiveCampaign: Use webhooks ↗](https://help.activecampaign.com/hc/en-us/articles/115001403484) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [Freshdesk API access by plan](https://stackcostmatrix.com/freshdesk-api-access/) and [ActiveCampaign API access by plan](https://stackcostmatrix.com/activecampaign-api-access/).
+
 [Visit Freshdesk](https://stackcostmatrix.com/go/freshdesk)  [Visit ActiveCampaign](https://stackcostmatrix.com/go/activecampaign)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -138,21 +140,16 @@ Each Make scenario runs one way. Make's ActiveCampaign guide says the app needs 
 
 ## Integrations related to Freshdesk + ActiveCampaign
 
-[All ActiveCampaign integrations →](https://stackcostmatrix.com/activecampaign-integrations-cost/) · [Freshdesk API access by plan →](https://stackcostmatrix.com/freshdesk-api-access/) · [ActiveCampaign API access by plan →](https://stackcostmatrix.com/activecampaign-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 3 Freshdesk integrations](https://stackcostmatrix.com/freshdesk-integrations-cost/) and [all 10 ActiveCampaign integrations](https://stackcostmatrix.com/activecampaign-integrations-cost/).
 
-[### Freshdesk + HubSpot
+- [Freshdesk + Slack](https://stackcostmatrix.com/stack/freshdesk-and-slack/): Native, $230.00 a month for 10 seats
+- [Freshdesk + HubSpot](https://stackcostmatrix.com/stack/freshdesk-and-hubspot/): Native, $230.00 a month for 10 seats
+- [Intercom + ActiveCampaign](https://stackcostmatrix.com/stack/intercom-and-activecampaign/): Middleware, $415.59 a month for 10 seats
+- [ActiveCampaign + Pipedrive](https://stackcostmatrix.com/stack/activecampaign-and-pipedrive/): Native, $405.00 a month for 10 seats
+- [ActiveCampaign + Slack](https://stackcostmatrix.com/stack/activecampaign-and-slack/): Native, $49.00 a month for 10 seats
+- [ActiveCampaign + Stripe](https://stackcostmatrix.com/stack/activecampaign-and-stripe/): Native, $49.00 a month for 10 seats
 
-Native](https://stackcostmatrix.com/stack/freshdesk-and-hubspot/)[### Freshdesk + Slack
-
-Native](https://stackcostmatrix.com/stack/freshdesk-and-slack/)[### ActiveCampaign + Calendly
-
-Native](https://stackcostmatrix.com/stack/activecampaign-and-calendly/)[### ActiveCampaign + Pipedrive
-
-Native](https://stackcostmatrix.com/stack/activecampaign-and-pipedrive/)[### ActiveCampaign + Slack
-
-Native](https://stackcostmatrix.com/stack/activecampaign-and-slack/)[### ActiveCampaign + Stripe
-
-Native](https://stackcostmatrix.com/stack/activecampaign-and-stripe/)
+Freshdesk + ActiveCampaign is also covered in the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Requirements checked: Nov 12, 2026; prices: Nov 3, 2026 (exceptions listed at the top)
 

@@ -111,6 +111,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Professional') Web Services API add-on (modeled at $25/user) Source: [Salesforce developers: Supported editions ↗](https://developer.salesforce.com/docs/platform/api-rest/guide/intro-rest-compatible-editions.html) · Verified Nov 3, 2026 | Yes  ('Suite Team') 200 requests/min Source: [Zendesk developers: Rate limits ↗](https://developer.zendesk.com/api-reference/introduction/rate-limits/) · Verified Nov 3, 2026 |
 | Webhook support at required tier | No  ('Professional') Change Data Capture (Salesforce's change-event feed) isn't available on Professional, so sync runs through the REST API. Source: [Salesforce developers: Change Data Capture ↗](https://developer.salesforce.com/docs/atlas.en-us.change_data_capture.meta/change_data_capture/cdc_intro.htm) · Verified Nov 8, 2026 | Yes  ('Suite Team') Source: [Zendesk: Creating webhooks ↗](https://support.zendesk.com/hc/en-us/articles/4408839108378) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [Salesforce API access by plan](https://stackcostmatrix.com/salesforce-api-access/) and [Zendesk API access by plan](https://stackcostmatrix.com/zendesk-api-access/).
+
 [Visit Salesforce Sales Cloud](https://stackcostmatrix.com/go/salesforce)  [Visit Zendesk](https://stackcostmatrix.com/go/zendesk)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -135,23 +137,16 @@ It needs Salesforce Enterprise or above, or Professional with the API add-on. Ac
 
 ## Integrations related to Salesforce Sales Cloud + Zendesk
 
-[All Salesforce integrations →](https://stackcostmatrix.com/salesforce-integrations-cost/) · [All Zendesk integrations →](https://stackcostmatrix.com/zendesk-integrations-cost/) · [Salesforce API access by plan →](https://stackcostmatrix.com/salesforce-api-access/) · [Zendesk API access by plan →](https://stackcostmatrix.com/zendesk-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 13 Salesforce integrations](https://stackcostmatrix.com/salesforce-integrations-cost/) and [all 11 Zendesk integrations](https://stackcostmatrix.com/zendesk-integrations-cost/).
 
-Part of our [Salesforce integration cost guide](https://stackcostmatrix.com/salesforce-integrations-cost/) and [CRM integration hidden-costs guide](https://stackcostmatrix.com/crm-integration-pricing-guide/).
+- [Intercom + Salesforce Sales Cloud](https://stackcostmatrix.com/stack/intercom-and-salesforce/): Native, $2,240.00 a month for 10 seats
+- [Salesforce Sales Cloud + Slack](https://stackcostmatrix.com/stack/salesforce-and-slack/): Native, $1,737.50 a month for 10 seats
+- [Salesforce Sales Cloud + Calendly](https://stackcostmatrix.com/stack/salesforce-and-calendly/): Native, $1,850.00 a month for 10 seats
+- [Pipedrive + Zendesk](https://stackcostmatrix.com/stack/pipedrive-and-zendesk/): Native, $830.00 a month for 10 seats
+- [Slack + Zendesk](https://stackcostmatrix.com/stack/slack-and-zendesk/): Native, $690.00 a month for 10 seats
+- [Zendesk + Asana](https://stackcostmatrix.com/stack/zendesk-and-asana/): Native, $824.90 a month for 10 seats
 
-[### ClickUp + Zendesk
-
-Native](https://stackcostmatrix.com/stack/clickup-and-zendesk/)[### HubSpot + Zendesk
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-zendesk/)[### Salesforce Sales Cloud + Slack
-
-Native](https://stackcostmatrix.com/stack/salesforce-and-slack/)[### Salesforce Sales Cloud + Stripe
-
-Native](https://stackcostmatrix.com/stack/salesforce-and-stripe/)[### HubSpot + Salesforce Sales Cloud
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-salesforce/)[### Zendesk + Stripe
-
-Middleware](https://stackcostmatrix.com/stack/zendesk-and-stripe/)
+Salesforce Sales Cloud + Zendesk is also covered in the [CRM integration hidden-costs guide](https://stackcostmatrix.com/crm-integration-pricing-guide/) and the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Last checked: Nov 3, 2026 (exceptions listed at the top)
 

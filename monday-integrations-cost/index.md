@@ -13,16 +13,16 @@ This page collects the 6 Monday.com integrations in the StackCostMatrix index: w
 
 Monday.com Integration Costs (2026): Minimum Plans, API Access & Hidden Fees
 
-| Integration | Type | Min. Monday.com plan | Other tool's plan | 10-seat total | Checked | Details |
-| --- | --- | --- | --- | --- | --- | --- |
-| [HubSpot + Monday.com](https://stackcostmatrix.com/stack/hubspot-and-monday/) | Native | Standard | Free | $140.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/hubspot-and-monday/) |
-| [Monday.com + Mailchimp](https://stackcostmatrix.com/stack/monday-and-mailchimp/) | Native | Standard | Free | $140.00 | Nov 12, 2026 | [Calculator →](https://stackcostmatrix.com/stack/monday-and-mailchimp/) |
-| [Monday.com + Slack](https://stackcostmatrix.com/stack/monday-and-slack/) | Native | Standard | Free | $140.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/monday-and-slack/) |
-| [Monday.com + ActiveCampaign](https://stackcostmatrix.com/stack/monday-and-activecampaign/) | Middleware Make Core $10.59/mo | Standard | Starter | $165.59 | Nov 12, 2026 | [Calculator →](https://stackcostmatrix.com/stack/monday-and-activecampaign/) |
-| [Monday.com + QuickBooks](https://stackcostmatrix.com/stack/monday-and-quickbooks/) | Middleware Make Core $10.59/mo | Standard | Simple Start | $188.59 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/monday-and-quickbooks/) |
-| [Monday.com + Zendesk](https://stackcostmatrix.com/stack/monday-and-zendesk/) | Native | Standard | Suite Team | $830.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/monday-and-zendesk/) |
+| Integration | Type | Min. Monday.com plan | Other tool's plan | 10-seat total | Checked |
+| --- | --- | --- | --- | --- | --- |
+| [HubSpot + Monday.com](https://stackcostmatrix.com/stack/hubspot-and-monday/) | Native | Standard | Free | $140.00 | Nov 3, 2026 |
+| [Monday.com + Mailchimp](https://stackcostmatrix.com/stack/monday-and-mailchimp/) | Native | Standard | Free | $140.00 | Nov 12, 2026 |
+| [Monday.com + Slack](https://stackcostmatrix.com/stack/monday-and-slack/) | Native | Standard | Free | $140.00 | Nov 3, 2026 |
+| [Monday.com + ActiveCampaign](https://stackcostmatrix.com/stack/monday-and-activecampaign/) | Middleware Make Core $10.59/mo | Standard | Starter | $165.59 | Nov 12, 2026 |
+| [Monday.com + QuickBooks](https://stackcostmatrix.com/stack/monday-and-quickbooks/) | Middleware Make Core $10.59/mo | Standard | Simple Start | $188.59 | Nov 3, 2026 |
+| [Monday.com + Zendesk](https://stackcostmatrix.com/stack/monday-and-zendesk/) | Native | Standard | Suite Team | $830.00 | Nov 3, 2026 |
 
-Totals are monthly-billing prices for 10 seats on the minimum plans, including any connector fee. Open a calculator to change team size, switch to annual billing or add usage costs.
+Totals are monthly-billing prices for 10 seats on the minimum plans, including any connector fee. Each integration's name opens its page, where a calculator lets you change team size, switch to annual billing or add usage costs.
 
 Chart: Monday.com integrations: monthly cost for 10 seats on the plans each needs: Monday.com + Zendesk $830.00; Monday.com + QuickBooks $188.59; Monday.com + ActiveCampaign $165.59; HubSpot + Monday.com $140.00; Monday.com + Mailchimp $140.00; Monday.com + Slack $140.00
 
@@ -34,7 +34,7 @@ Image: [Monday.com integration costs summary: 6 integrations priced, from $140 t
 
 ## Does Monday.com force an upgrade?
 
-Not for any of the 6 integrations here: each one works on Monday.com's cheapest plan with API access, so the integration itself adds no Monday.com upgrade cost. Any extra cost comes from the other tool's plan or from a connector fee, shown in the table above.
+Not for any of the 6 integrations here: each one works on Monday.com's cheapest plan with API access, so the integration itself adds no Monday.com upgrade cost. Any extra cost comes from the other tool's plan or from a connector fee, shown in the table above. The [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/) adds these costs up across all 90 pairs in the index.
 
 ## Which Monday.com integrations need Make or Zapier?
 
@@ -62,7 +62,23 @@ Full 20-tool source index: [About StackCostMatrix →](https://stackcostmatrix.c
 
 ## Integration costs by tool
 
-[ActiveCampaign](https://stackcostmatrix.com/activecampaign-integrations-cost/) · [Airtable](https://stackcostmatrix.com/airtable-integrations-cost/) · [Asana](https://stackcostmatrix.com/asana-integrations-cost/) · [Calendly](https://stackcostmatrix.com/calendly-integrations-cost/) · [ClickUp](https://stackcostmatrix.com/clickup-integrations-cost/) · [Freshdesk](https://stackcostmatrix.com/freshdesk-integrations-cost/) · [HubSpot](https://stackcostmatrix.com/hubspot-integrations-cost/) · [Intercom](https://stackcostmatrix.com/intercom-integrations-cost/) · [Mailchimp](https://stackcostmatrix.com/mailchimp-integrations-cost/) · [Notion](https://stackcostmatrix.com/notion-integrations-cost/) · [Pipedrive](https://stackcostmatrix.com/pipedrive-integrations-cost/) · [QuickBooks](https://stackcostmatrix.com/quickbooks-integrations-cost/) · [Salesforce](https://stackcostmatrix.com/salesforce-integrations-cost/) · [Slack](https://stackcostmatrix.com/slack-integrations-cost/) · [Stripe](https://stackcostmatrix.com/stripe-integrations-cost/) · [Xero](https://stackcostmatrix.com/xero-integrations-cost/) · [Zendesk](https://stackcostmatrix.com/zendesk-integrations-cost/)
+- [ActiveCampaign integrations](https://stackcostmatrix.com/activecampaign-integrations-cost/)
+- [Airtable integrations](https://stackcostmatrix.com/airtable-integrations-cost/)
+- [Asana integrations](https://stackcostmatrix.com/asana-integrations-cost/)
+- [Calendly integrations](https://stackcostmatrix.com/calendly-integrations-cost/)
+- [ClickUp integrations](https://stackcostmatrix.com/clickup-integrations-cost/)
+- [Freshdesk integrations](https://stackcostmatrix.com/freshdesk-integrations-cost/)
+- [HubSpot integrations](https://stackcostmatrix.com/hubspot-integrations-cost/)
+- [Intercom integrations](https://stackcostmatrix.com/intercom-integrations-cost/)
+- [Mailchimp integrations](https://stackcostmatrix.com/mailchimp-integrations-cost/)
+- [Notion integrations](https://stackcostmatrix.com/notion-integrations-cost/)
+- [Pipedrive integrations](https://stackcostmatrix.com/pipedrive-integrations-cost/)
+- [QuickBooks integrations](https://stackcostmatrix.com/quickbooks-integrations-cost/)
+- [Salesforce integrations](https://stackcostmatrix.com/salesforce-integrations-cost/)
+- [Slack integrations](https://stackcostmatrix.com/slack-integrations-cost/)
+- [Stripe integrations](https://stackcostmatrix.com/stripe-integrations-cost/)
+- [Xero integrations](https://stackcostmatrix.com/xero-integrations-cost/)
+- [Zendesk integrations](https://stackcostmatrix.com/zendesk-integrations-cost/)
 
 ## Monday.com integration costs: frequently asked questions
 

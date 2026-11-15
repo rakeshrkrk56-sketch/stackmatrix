@@ -13,21 +13,21 @@ This page collects the 11 Mailchimp integrations in the StackCostMatrix index: w
 
 Mailchimp Integration Costs (2026): Minimum Plans, API Access & Hidden Fees
 
-| Integration | Type | Min. Mailchimp plan | Other tool's plan | 10-seat total | Checked | Details |
-| --- | --- | --- | --- | --- | --- | --- |
-| [Mailchimp + Slack](https://stackcostmatrix.com/stack/mailchimp-and-slack/) | Native | Free | Free | $0.00 | Nov 12, 2026 | [Calculator →](https://stackcostmatrix.com/stack/mailchimp-and-slack/) |
-| [Stripe + Mailchimp](https://stackcostmatrix.com/stack/stripe-and-mailchimp/) | Middleware Data Mapper for Mailchimp $15/mo | Free | Standard | $15.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/stripe-and-mailchimp/) |
-| [HubSpot + Mailchimp](https://stackcostmatrix.com/stack/hubspot-and-mailchimp/) | Native | Standard | Free | $20.00 | Nov 3, 2026 (Mailchimp plan unconfirmed) | [Calculator →](https://stackcostmatrix.com/stack/hubspot-and-mailchimp/) |
-| [QuickBooks + Mailchimp](https://stackcostmatrix.com/stack/quickbooks-and-mailchimp/) | Native | Free | Simple Start | $38.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/quickbooks-and-mailchimp/) |
-| [Mailchimp + Calendly](https://stackcostmatrix.com/stack/mailchimp-and-calendly/) | Native | Free | Standard | $120.00 | Nov 8, 2026 | [Calculator →](https://stackcostmatrix.com/stack/mailchimp-and-calendly/) |
-| [Monday.com + Mailchimp](https://stackcostmatrix.com/stack/monday-and-mailchimp/) | Native | Free | Standard | $140.00 | Nov 12, 2026 | [Calculator →](https://stackcostmatrix.com/stack/monday-and-mailchimp/) |
-| [Pipedrive + Mailchimp](https://stackcostmatrix.com/stack/pipedrive-and-mailchimp/) | Native | Free | Lite | $140.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/pipedrive-and-mailchimp/) |
-| [Asana + Mailchimp](https://stackcostmatrix.com/stack/asana-and-mailchimp/) | Middleware Zapier Professional $29.99/mo | Essentials | Starter | $177.89 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/asana-and-mailchimp/) |
-| [Mailchimp + Airtable](https://stackcostmatrix.com/stack/mailchimp-and-airtable/) | Middleware Make Core $10.59/mo | Essentials | Team | $263.59 | Nov 3, 2026 (Mailchimp plan unconfirmed) | [Calculator →](https://stackcostmatrix.com/stack/mailchimp-and-airtable/) |
-| [Intercom + Mailchimp](https://stackcostmatrix.com/stack/intercom-and-mailchimp/) | Native | Free | Essential | $390.00 | Nov 12, 2026 | [Calculator →](https://stackcostmatrix.com/stack/intercom-and-mailchimp/) |
-| [Salesforce + Mailchimp](https://stackcostmatrix.com/stack/salesforce-and-mailchimp/) | Native | Standard | Professional | $1,270.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/salesforce-and-mailchimp/) |
+| Integration | Type | Min. Mailchimp plan | Other tool's plan | 10-seat total | Checked |
+| --- | --- | --- | --- | --- | --- |
+| [Mailchimp + Slack](https://stackcostmatrix.com/stack/mailchimp-and-slack/) | Native | Free | Free | $0.00 | Nov 12, 2026 |
+| [Stripe + Mailchimp](https://stackcostmatrix.com/stack/stripe-and-mailchimp/) | Middleware Data Mapper for Mailchimp $15/mo | Free | Standard | $15.00 | Nov 3, 2026 |
+| [HubSpot + Mailchimp](https://stackcostmatrix.com/stack/hubspot-and-mailchimp/) | Native | Standard | Free | $20.00 | Nov 3, 2026 (Mailchimp plan unconfirmed) |
+| [QuickBooks + Mailchimp](https://stackcostmatrix.com/stack/quickbooks-and-mailchimp/) | Native | Free | Simple Start | $38.00 | Nov 3, 2026 |
+| [Mailchimp + Calendly](https://stackcostmatrix.com/stack/mailchimp-and-calendly/) | Native | Free | Standard | $120.00 | Nov 8, 2026 |
+| [Monday.com + Mailchimp](https://stackcostmatrix.com/stack/monday-and-mailchimp/) | Native | Free | Standard | $140.00 | Nov 12, 2026 |
+| [Pipedrive + Mailchimp](https://stackcostmatrix.com/stack/pipedrive-and-mailchimp/) | Native | Free | Lite | $140.00 | Nov 3, 2026 |
+| [Asana + Mailchimp](https://stackcostmatrix.com/stack/asana-and-mailchimp/) | Middleware Zapier Professional $29.99/mo | Essentials | Starter | $177.89 | Nov 3, 2026 |
+| [Mailchimp + Airtable](https://stackcostmatrix.com/stack/mailchimp-and-airtable/) | Middleware Make Core $10.59/mo | Essentials | Team | $263.59 | Nov 3, 2026 (Mailchimp plan unconfirmed) |
+| [Intercom + Mailchimp](https://stackcostmatrix.com/stack/intercom-and-mailchimp/) | Native | Free | Essential | $390.00 | Nov 12, 2026 |
+| [Salesforce + Mailchimp](https://stackcostmatrix.com/stack/salesforce-and-mailchimp/) | Native | Standard | Professional | $1,270.00 | Nov 3, 2026 |
 
-Totals are monthly-billing prices for 10 seats on the minimum plans, including any connector fee. Open a calculator to change team size, switch to annual billing or add usage costs.
+Totals are monthly-billing prices for 10 seats on the minimum plans, including any connector fee. Each integration's name opens its page, where a calculator lets you change team size, switch to annual billing or add usage costs.
 
 Chart: Mailchimp integrations: monthly cost for 10 seats on the plans each needs: Salesforce + Mailchimp $1,270.00; Intercom + Mailchimp $390.00; Mailchimp + Airtable $263.59; Asana + Mailchimp $177.89; Monday.com + Mailchimp $140.00; Pipedrive + Mailchimp $140.00; Mailchimp + Calendly $120.00; QuickBooks + Mailchimp $38.00; HubSpot + Mailchimp $20.00; Stripe + Mailchimp $15.00; Mailchimp + Slack $0.00
 
@@ -39,7 +39,7 @@ Image: [Mailchimp integration costs summary: 11 integrations priced, from $0 to 
 
 ## Which Mailchimp integrations force a plan upgrade?
 
-4 of the 11 integrations need a more expensive Mailchimp plan than Free, Mailchimp's cheapest plan with API access. The extra Mailchimp cost at 10 seats: HubSpot + Mailchimp needs Standard (+$20.00/mo); Salesforce + Mailchimp needs Standard (+$20.00/mo); Asana + Mailchimp needs Essentials (+$13.00/mo); Mailchimp + Airtable needs Essentials (+$13.00/mo). That gap is the hidden cost: you pay it every month even if you only wanted the integration. Each pair's "Hidden Cost Trap" box shows the full breakdown.
+4 of the 11 integrations need a more expensive Mailchimp plan than Free, Mailchimp's cheapest plan with API access. The extra Mailchimp cost at 10 seats: HubSpot + Mailchimp needs Standard (+$20.00/mo); Salesforce + Mailchimp needs Standard (+$20.00/mo); Asana + Mailchimp needs Essentials (+$13.00/mo); Mailchimp + Airtable needs Essentials (+$13.00/mo). That gap is the hidden cost: you pay it every month even if you only wanted the integration. Each pair's "Hidden Cost Trap" box shows the full breakdown. The [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/) adds these costs up across all 90 pairs in the index.
 
 ## Which Mailchimp integrations need Make or Zapier?
 
@@ -68,7 +68,23 @@ Full 20-tool source index: [About StackCostMatrix →](https://stackcostmatrix.c
 
 ## Integration costs by tool
 
-[ActiveCampaign](https://stackcostmatrix.com/activecampaign-integrations-cost/) · [Airtable](https://stackcostmatrix.com/airtable-integrations-cost/) · [Asana](https://stackcostmatrix.com/asana-integrations-cost/) · [Calendly](https://stackcostmatrix.com/calendly-integrations-cost/) · [ClickUp](https://stackcostmatrix.com/clickup-integrations-cost/) · [Freshdesk](https://stackcostmatrix.com/freshdesk-integrations-cost/) · [HubSpot](https://stackcostmatrix.com/hubspot-integrations-cost/) · [Intercom](https://stackcostmatrix.com/intercom-integrations-cost/) · [Monday.com](https://stackcostmatrix.com/monday-integrations-cost/) · [Notion](https://stackcostmatrix.com/notion-integrations-cost/) · [Pipedrive](https://stackcostmatrix.com/pipedrive-integrations-cost/) · [QuickBooks](https://stackcostmatrix.com/quickbooks-integrations-cost/) · [Salesforce](https://stackcostmatrix.com/salesforce-integrations-cost/) · [Slack](https://stackcostmatrix.com/slack-integrations-cost/) · [Stripe](https://stackcostmatrix.com/stripe-integrations-cost/) · [Xero](https://stackcostmatrix.com/xero-integrations-cost/) · [Zendesk](https://stackcostmatrix.com/zendesk-integrations-cost/)
+- [ActiveCampaign integrations](https://stackcostmatrix.com/activecampaign-integrations-cost/)
+- [Airtable integrations](https://stackcostmatrix.com/airtable-integrations-cost/)
+- [Asana integrations](https://stackcostmatrix.com/asana-integrations-cost/)
+- [Calendly integrations](https://stackcostmatrix.com/calendly-integrations-cost/)
+- [ClickUp integrations](https://stackcostmatrix.com/clickup-integrations-cost/)
+- [Freshdesk integrations](https://stackcostmatrix.com/freshdesk-integrations-cost/)
+- [HubSpot integrations](https://stackcostmatrix.com/hubspot-integrations-cost/)
+- [Intercom integrations](https://stackcostmatrix.com/intercom-integrations-cost/)
+- [Monday.com integrations](https://stackcostmatrix.com/monday-integrations-cost/)
+- [Notion integrations](https://stackcostmatrix.com/notion-integrations-cost/)
+- [Pipedrive integrations](https://stackcostmatrix.com/pipedrive-integrations-cost/)
+- [QuickBooks integrations](https://stackcostmatrix.com/quickbooks-integrations-cost/)
+- [Salesforce integrations](https://stackcostmatrix.com/salesforce-integrations-cost/)
+- [Slack integrations](https://stackcostmatrix.com/slack-integrations-cost/)
+- [Stripe integrations](https://stackcostmatrix.com/stripe-integrations-cost/)
+- [Xero integrations](https://stackcostmatrix.com/xero-integrations-cost/)
+- [Zendesk integrations](https://stackcostmatrix.com/zendesk-integrations-cost/)
 
 ## Mailchimp integration costs: frequently asked questions
 

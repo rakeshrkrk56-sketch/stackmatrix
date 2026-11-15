@@ -54,7 +54,23 @@ Checked Nov 3, 2026.
 
 ## API access by plan for other tools
 
-[ActiveCampaign](https://stackcostmatrix.com/activecampaign-api-access/) · [Airtable](https://stackcostmatrix.com/airtable-api-access/) · [Asana](https://stackcostmatrix.com/asana-api-access/) · [Calendly](https://stackcostmatrix.com/calendly-api-access/) · [ClickUp](https://stackcostmatrix.com/clickup-api-access/) · [Freshdesk](https://stackcostmatrix.com/freshdesk-api-access/) · [HubSpot](https://stackcostmatrix.com/hubspot-api-access/) · [Intercom](https://stackcostmatrix.com/intercom-api-access/) · [Mailchimp](https://stackcostmatrix.com/mailchimp-api-access/) · [Monday.com](https://stackcostmatrix.com/monday-api-access/) · [Notion](https://stackcostmatrix.com/notion-api-access/) · [Pipedrive](https://stackcostmatrix.com/pipedrive-api-access/) · [Salesforce](https://stackcostmatrix.com/salesforce-api-access/) · [Slack](https://stackcostmatrix.com/slack-api-access/) · [Stripe](https://stackcostmatrix.com/stripe-api-access/) · [Xero](https://stackcostmatrix.com/xero-api-access/) · [Zendesk](https://stackcostmatrix.com/zendesk-api-access/)
+- [ActiveCampaign API access](https://stackcostmatrix.com/activecampaign-api-access/)
+- [Airtable API access](https://stackcostmatrix.com/airtable-api-access/)
+- [Asana API access](https://stackcostmatrix.com/asana-api-access/)
+- [Calendly API access](https://stackcostmatrix.com/calendly-api-access/)
+- [ClickUp API access](https://stackcostmatrix.com/clickup-api-access/)
+- [Freshdesk API access](https://stackcostmatrix.com/freshdesk-api-access/)
+- [HubSpot API access](https://stackcostmatrix.com/hubspot-api-access/)
+- [Intercom API access](https://stackcostmatrix.com/intercom-api-access/)
+- [Mailchimp API access](https://stackcostmatrix.com/mailchimp-api-access/)
+- [Monday.com API access](https://stackcostmatrix.com/monday-api-access/)
+- [Notion API access](https://stackcostmatrix.com/notion-api-access/)
+- [Pipedrive API access](https://stackcostmatrix.com/pipedrive-api-access/)
+- [Salesforce API access](https://stackcostmatrix.com/salesforce-api-access/)
+- [Slack API access](https://stackcostmatrix.com/slack-api-access/)
+- [Stripe API access](https://stackcostmatrix.com/stripe-api-access/)
+- [Xero API access](https://stackcostmatrix.com/xero-api-access/)
+- [Zendesk API access](https://stackcostmatrix.com/zendesk-api-access/)
 
 ## QuickBooks API access: frequently asked questions
 

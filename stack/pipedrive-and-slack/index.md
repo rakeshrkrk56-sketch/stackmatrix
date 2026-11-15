@@ -114,6 +114,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Growth') 40 req/2 s · daily budget ×2 Source: [Pipedrive developers: Rate limiting ↗](https://pipedrive.readme.io/docs/core-api-concepts-rate-limiting) · Verified Nov 3, 2026 | Yes  ('Free') Source: [Slack developers: Incoming webhooks ↗](https://api.slack.com/messaging/webhooks) · Verified Nov 3, 2026 |
 | Webhook support at required tier | Yes  ('Growth') Source: [Pipedrive: Automations webhook requests ↗](https://support.pipedrive.com/en/article/automations-webhook-requests) · Verified Nov 3, 2026 | Yes  ('Free') Incoming webhooks Source: [Slack developers: Incoming webhooks ↗](https://api.slack.com/messaging/webhooks) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [Pipedrive API access by plan](https://stackcostmatrix.com/pipedrive-api-access/) and [Slack API access by plan](https://stackcostmatrix.com/slack-api-access/).
+
 [Visit Pipedrive](https://stackcostmatrix.com/go/pipedrive)  [Visit Slack](https://stackcostmatrix.com/go/slack)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -138,23 +140,16 @@ Pipedrive says Automations are only available on Growth and higher plans (Advanc
 
 ## Integrations related to Pipedrive + Slack
 
-[All Pipedrive integrations →](https://stackcostmatrix.com/pipedrive-integrations-cost/) · [All Slack integrations →](https://stackcostmatrix.com/slack-integrations-cost/) · [Pipedrive API access by plan →](https://stackcostmatrix.com/pipedrive-api-access/) · [Slack API access by plan →](https://stackcostmatrix.com/slack-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 11 Pipedrive integrations](https://stackcostmatrix.com/pipedrive-integrations-cost/) and [all 17 Slack integrations](https://stackcostmatrix.com/slack-integrations-cost/).
 
-Part of our [CRM integration hidden-costs guide](https://stackcostmatrix.com/crm-integration-pricing-guide/).
+- [Pipedrive + Calendly](https://stackcostmatrix.com/stack/pipedrive-and-calendly/): Middleware, $270.59 a month for 10 seats
+- [Pipedrive + Zendesk](https://stackcostmatrix.com/stack/pipedrive-and-zendesk/): Native, $830.00 a month for 10 seats
+- [Pipedrive + Asana](https://stackcostmatrix.com/stack/pipedrive-and-asana/): Native, $274.90 a month for 10 seats
+- [Salesforce Sales Cloud + Slack](https://stackcostmatrix.com/stack/salesforce-and-slack/): Native, $1,737.50 a month for 10 seats
+- [HubSpot + Slack](https://stackcostmatrix.com/stack/hubspot-and-slack/): Native, $0.00 a month for 10 seats
+- [ActiveCampaign + Slack](https://stackcostmatrix.com/stack/activecampaign-and-slack/): Native, $49.00 a month for 10 seats
 
-[### Pipedrive + Calendly
-
-Middleware](https://stackcostmatrix.com/stack/pipedrive-and-calendly/)[### Pipedrive + Mailchimp
-
-Native](https://stackcostmatrix.com/stack/pipedrive-and-mailchimp/)[### Pipedrive + Xero
-
-Middleware](https://stackcostmatrix.com/stack/pipedrive-and-xero/)[### Salesforce Sales Cloud + Slack
-
-Native](https://stackcostmatrix.com/stack/salesforce-and-slack/)[### ActiveCampaign + Pipedrive
-
-Native](https://stackcostmatrix.com/stack/activecampaign-and-pipedrive/)[### ClickUp + Slack
-
-Native](https://stackcostmatrix.com/stack/clickup-and-slack/)
+Pipedrive + Slack is also covered in the [CRM integration hidden-costs guide](https://stackcostmatrix.com/crm-integration-pricing-guide/) and the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Last checked: Nov 3, 2026 (exceptions listed at the top)
 

@@ -110,6 +110,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Free') No plan requirement in Mailchimp's API key article Source: [Mailchimp: About API keys ↗](https://mailchimp.com/help/about-api-keys/) · Verified Nov 3, 2026 | Yes  ('Standard') Source: [Calendly: API overview ↗](https://calendly.com/help/calendly-api-overview) · Verified Nov 3, 2026 |
 | Webhook support at required tier | No  ('Free') Webhook automation step needs Standard Source: [Mailchimp: About webhooks ↗](https://mailchimp.com/help/about-webhooks/) · Verified Nov 3, 2026 | Yes  ('Standard') Source: [Calendly: API overview ↗](https://calendly.com/help/calendly-api-overview) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [Mailchimp API access by plan](https://stackcostmatrix.com/mailchimp-api-access/) and [Calendly API access by plan](https://stackcostmatrix.com/calendly-api-access/).
+
 [Visit Mailchimp](https://stackcostmatrix.com/go/mailchimp)  [Visit Calendly](https://stackcostmatrix.com/go/calendly)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -134,21 +136,16 @@ Data flows from Calendly to Mailchimp only. Invitees in GDPR regions are added a
 
 ## Integrations related to Mailchimp + Calendly
 
-[All Mailchimp integrations →](https://stackcostmatrix.com/mailchimp-integrations-cost/) · [All Calendly integrations →](https://stackcostmatrix.com/calendly-integrations-cost/) · [Mailchimp API access by plan →](https://stackcostmatrix.com/mailchimp-api-access/) · [Calendly API access by plan →](https://stackcostmatrix.com/calendly-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 11 Mailchimp integrations](https://stackcostmatrix.com/mailchimp-integrations-cost/) and [all 10 Calendly integrations](https://stackcostmatrix.com/calendly-integrations-cost/).
 
-[### HubSpot + Calendly
+- [Asana + Mailchimp](https://stackcostmatrix.com/stack/asana-and-mailchimp/): Middleware, $177.89 a month for 10 seats
+- [Mailchimp + Slack](https://stackcostmatrix.com/stack/mailchimp-and-slack/): Native, $0.00 a month for 10 seats
+- [Monday.com + Mailchimp](https://stackcostmatrix.com/stack/monday-and-mailchimp/): Native, $140.00 a month for 10 seats
+- [ActiveCampaign + Calendly](https://stackcostmatrix.com/stack/activecampaign-and-calendly/): Native, $135.00 a month for 10 seats
+- [Intercom + Calendly](https://stackcostmatrix.com/stack/intercom-and-calendly/): Native, $390.00 a month for 10 seats
+- [Slack + Calendly](https://stackcostmatrix.com/stack/slack-and-calendly/): Native, $0.00 a month for 10 seats
 
-Native](https://stackcostmatrix.com/stack/hubspot-and-calendly/)[### Pipedrive + Calendly
-
-Middleware](https://stackcostmatrix.com/stack/pipedrive-and-calendly/)[### Pipedrive + Mailchimp
-
-Native](https://stackcostmatrix.com/stack/pipedrive-and-mailchimp/)[### Salesforce Sales Cloud + Mailchimp
-
-Native](https://stackcostmatrix.com/stack/salesforce-and-mailchimp/)[### Notion + Calendly
-
-Middleware](https://stackcostmatrix.com/stack/notion-and-calendly/)[### Xero + Calendly
-
-Middleware](https://stackcostmatrix.com/stack/xero-and-calendly/)
+Mailchimp + Calendly is also covered in the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Last checked: Nov 3, 2026
 

@@ -111,6 +111,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Free') 100 req/10 s · 250,000/day (private apps) Source: [HubSpot developers: Usage guidelines ↗](https://developers.hubspot.com/docs/developer-tooling/platform/usage-guidelines) · Verified Nov 3, 2026 | Yes  ('Standard') Source: [Stripe pricing ↗](https://stripe.com/pricing) · Verified Oct 17, 2026 |
 | Webhook support at required tier | No  ('Free') Workflow webhooks need Data Hub Professional Source: [HubSpot KB: Webhooks in workflows ↗](https://knowledge.hubspot.com/workflows/how-do-i-use-webhooks-with-hubspot-workflows) · Verified Nov 3, 2026 | Yes  ('Standard') Source: [Stripe API docs ↗](https://docs.stripe.com/api) · Verified Oct 17, 2026 |
 
+API and webhook access can change with the plan you are on: see [HubSpot API access by plan](https://stackcostmatrix.com/hubspot-api-access/) and [Stripe API access by plan](https://stackcostmatrix.com/stripe-api-access/).
+
 [Visit HubSpot](https://stackcostmatrix.com/go/hubspot)  [Visit Stripe](https://stackcostmatrix.com/go/stripe)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -135,23 +137,16 @@ Stripe's per-transaction processing fees still apply and aren't included in the 
 
 ## Integrations related to HubSpot + Stripe
 
-[All HubSpot integrations →](https://stackcostmatrix.com/hubspot-integrations-cost/) · [All Stripe integrations →](https://stackcostmatrix.com/stripe-integrations-cost/) · [HubSpot API access by plan →](https://stackcostmatrix.com/hubspot-api-access/) · [Stripe API access by plan →](https://stackcostmatrix.com/stripe-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 16 HubSpot integrations](https://stackcostmatrix.com/hubspot-integrations-cost/) and [all 13 Stripe integrations](https://stackcostmatrix.com/stripe-integrations-cost/).
 
-Part of our [HubSpot integration cost guide](https://stackcostmatrix.com/hubspot-integrations-cost/) and [CRM integration hidden-costs guide](https://stackcostmatrix.com/crm-integration-pricing-guide/).
+- [HubSpot + Pipedrive](https://stackcostmatrix.com/stack/hubspot-and-pipedrive/): Middleware, $150.59 a month for 10 seats
+- [HubSpot + Xero](https://stackcostmatrix.com/stack/hubspot-and-xero/): Native, $27.00 a month for 10 seats
+- [HubSpot + Salesforce Sales Cloud](https://stackcostmatrix.com/stack/hubspot-and-salesforce/): Native, $1,750.00 a month for 10 seats
+- [Salesforce Sales Cloud + Stripe](https://stackcostmatrix.com/stack/salesforce-and-stripe/): Native, $1,250.00 a month for 10 seats
+- [Stripe + Xero](https://stackcostmatrix.com/stack/stripe-and-xero/): Native, $27.00 a month for 10 seats
+- [ActiveCampaign + Stripe](https://stackcostmatrix.com/stack/activecampaign-and-stripe/): Native, $49.00 a month for 10 seats
 
-[### HubSpot + Asana
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-asana/)[### HubSpot + ClickUp
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-clickup/)[### HubSpot + Monday.com
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-monday/)[### HubSpot + Pipedrive
-
-Middleware](https://stackcostmatrix.com/stack/hubspot-and-pipedrive/)[### HubSpot + Salesforce Sales Cloud
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-salesforce/)[### Intercom + HubSpot
-
-Native](https://stackcostmatrix.com/stack/intercom-and-hubspot/)
+HubSpot + Stripe is also covered in the [CRM integration hidden-costs guide](https://stackcostmatrix.com/crm-integration-pricing-guide/), the guide to [which HubSpot integrations need Professional](https://stackcostmatrix.com/hubspot-professional-integrations/) and the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Last checked: Nov 3, 2026
 

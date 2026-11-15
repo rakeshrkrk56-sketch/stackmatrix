@@ -116,6 +116,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Professional') Web Services API add-on (modeled at $25/user) Source: [Salesforce developers: Supported editions ↗](https://developer.salesforce.com/docs/platform/api-rest/guide/intro-rest-compatible-editions.html) · Verified Nov 3, 2026 | Yes  ('Early') Limits set by the app's developer tier Source: [Xero developers: Pricing and tiers ↗](https://developer.xero.com/pricing) · Verified Nov 3, 2026 |
 | Webhook support at required tier | No  ('Professional') Change Data Capture (Salesforce's change-event feed) isn't available on Professional, so sync runs through the REST API. Source: [Salesforce developers: Change Data Capture ↗](https://developer.salesforce.com/docs/atlas.en-us.change_data_capture.meta/change_data_capture/cdc_intro.htm) · Verified Nov 8, 2026 | Yes  ('Early') No plan requirement in Xero's webhook docs Source: [Xero developers: Webhooks ↗](https://developer.xero.com/documentation/guides/webhooks/overview) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [Salesforce API access by plan](https://stackcostmatrix.com/salesforce-api-access/) and [Xero API access by plan](https://stackcostmatrix.com/xero-api-access/).
+
 [Visit Salesforce Sales Cloud](https://stackcostmatrix.com/go/salesforce)  [Visit Xero](https://stackcostmatrix.com/go/xero)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -140,23 +142,16 @@ This calculator models Salesforce Professional with the $25/user API add-on plus
 
 ## Integrations related to Salesforce Sales Cloud + Xero
 
-[All Salesforce integrations →](https://stackcostmatrix.com/salesforce-integrations-cost/) · [All Xero integrations →](https://stackcostmatrix.com/xero-integrations-cost/) · [Salesforce API access by plan →](https://stackcostmatrix.com/salesforce-api-access/) · [Xero API access by plan →](https://stackcostmatrix.com/xero-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 13 Salesforce integrations](https://stackcostmatrix.com/salesforce-integrations-cost/) and [all 10 Xero integrations](https://stackcostmatrix.com/xero-integrations-cost/).
 
-Part of our [CRM integration hidden-costs guide](https://stackcostmatrix.com/crm-integration-pricing-guide/).
+- [Salesforce Sales Cloud + QuickBooks Online](https://stackcostmatrix.com/stack/salesforce-and-quickbooks/): Middleware, $1,298.59 a month for 10 seats
+- [Salesforce Sales Cloud + Stripe](https://stackcostmatrix.com/stack/salesforce-and-stripe/): Native, $1,250.00 a month for 10 seats
+- [HubSpot + Salesforce Sales Cloud](https://stackcostmatrix.com/stack/hubspot-and-salesforce/): Native, $1,750.00 a month for 10 seats
+- [Pipedrive + Xero](https://stackcostmatrix.com/stack/pipedrive-and-xero/): Middleware, $177.59 a month for 10 seats
+- [Xero + ActiveCampaign](https://stackcostmatrix.com/stack/xero-and-activecampaign/): Middleware, $52.59 a month for 10 seats
+- [Xero + Zendesk](https://stackcostmatrix.com/stack/xero-and-zendesk/): Middleware, $727.59 a month for 10 seats
 
-[### Asana + Salesforce
-
-Native](https://stackcostmatrix.com/stack/asana-and-salesforce/)[### HubSpot + Salesforce
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-salesforce/)[### Intercom + Salesforce
-
-Native](https://stackcostmatrix.com/stack/intercom-and-salesforce/)[### Pipedrive + Salesforce
-
-Middleware](https://stackcostmatrix.com/stack/pipedrive-and-salesforce/)[### Salesforce + Airtable
-
-Native](https://stackcostmatrix.com/stack/salesforce-and-airtable/)[### Salesforce + Calendly
-
-Native](https://stackcostmatrix.com/stack/salesforce-and-calendly/)
+Salesforce Sales Cloud + Xero is also covered in the [CRM integration hidden-costs guide](https://stackcostmatrix.com/crm-integration-pricing-guide/) and the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Requirements checked: Nov 12, 2026; prices: Nov 3, 2026 (exceptions listed at the top)
 

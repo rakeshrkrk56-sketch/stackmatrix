@@ -112,6 +112,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Suite Team') 200 requests/min Source: [Zendesk developers: Rate limits ↗](https://developer.zendesk.com/api-reference/introduction/rate-limits/) · Verified Nov 3, 2026 | Yes  ('Standard') Source: [Stripe pricing ↗](https://stripe.com/pricing) · Verified Oct 17, 2026 |
 | Webhook support at required tier | Yes  ('Suite Team') Source: [Zendesk: Creating webhooks ↗](https://support.zendesk.com/hc/en-us/articles/4408839108378) · Verified Nov 3, 2026 | Yes  ('Standard') Source: [Stripe API docs ↗](https://docs.stripe.com/api) · Verified Oct 17, 2026 |
 
+API and webhook access can change with the plan you are on: see [Zendesk API access by plan](https://stackcostmatrix.com/zendesk-api-access/) and [Stripe API access by plan](https://stackcostmatrix.com/stripe-api-access/).
+
 [Visit Zendesk](https://stackcostmatrix.com/go/zendesk)  [Visit Stripe](https://stackcostmatrix.com/go/stripe)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -136,21 +138,16 @@ It's one-way (Stripe → Zendesk). Zendesk's webhooks and triggers are on every 
 
 ## Integrations related to Zendesk + Stripe
 
-[All Zendesk integrations →](https://stackcostmatrix.com/zendesk-integrations-cost/) · [All Stripe integrations →](https://stackcostmatrix.com/stripe-integrations-cost/) · [Zendesk API access by plan →](https://stackcostmatrix.com/zendesk-api-access/) · [Stripe API access by plan →](https://stackcostmatrix.com/stripe-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 11 Zendesk integrations](https://stackcostmatrix.com/zendesk-integrations-cost/) and [all 13 Stripe integrations](https://stackcostmatrix.com/stripe-integrations-cost/).
 
-[### ClickUp + Zendesk
+- [HubSpot + Zendesk](https://stackcostmatrix.com/stack/hubspot-and-zendesk/): Native, $690.00 a month for 10 seats
+- [Xero + Zendesk](https://stackcostmatrix.com/stack/xero-and-zendesk/): Middleware, $727.59 a month for 10 seats
+- [Pipedrive + Zendesk](https://stackcostmatrix.com/stack/pipedrive-and-zendesk/): Native, $830.00 a month for 10 seats
+- [Intercom + Stripe](https://stackcostmatrix.com/stack/intercom-and-stripe/): Native, $390.00 a month for 10 seats
+- [Stripe + Slack](https://stackcostmatrix.com/stack/stripe-and-slack/): Native, $0.00 a month for 10 seats
+- [Stripe + Calendly](https://stackcostmatrix.com/stack/stripe-and-calendly/): Native, $120.00 a month for 10 seats
 
-Native](https://stackcostmatrix.com/stack/clickup-and-zendesk/)[### HubSpot + Stripe
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-stripe/)[### HubSpot + Zendesk
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-zendesk/)[### Monday.com + Zendesk
-
-Native](https://stackcostmatrix.com/stack/monday-and-zendesk/)[### Intercom + Stripe
-
-Native](https://stackcostmatrix.com/stack/intercom-and-stripe/)[### Stripe + Mailchimp
-
-Middleware](https://stackcostmatrix.com/stack/stripe-and-mailchimp/)
+Zendesk + Stripe is also covered in the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Last checked: Nov 3, 2026 (exceptions listed at the top)
 

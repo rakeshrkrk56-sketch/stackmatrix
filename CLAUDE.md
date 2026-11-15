@@ -6,7 +6,7 @@ rediscover it. Details live in `scripts/README.md`. Update the "State" section a
 ## What this is
 - https://stackcostmatrix.com: an independent index of what B2B software integrations really cost.
 - Static HTML, served by GitHub Pages straight from `main`. No build step, no framework.
-- 90 pair pages (`stack/<a>-and-<b>/`), 17 tool hubs, 18 API pages, a research report, guides. 134 pages in all.
+- 90 pair pages (`stack/<a>-and-<b>/`), 18 tool hubs, 18 API pages, a research report, guides. 134 pages in all.
 - 18 tools, so 153 possible pairs; 90 are covered. The plan (owner agreed Nov 12, 2026): fill the grid in batches of
   15 to 25 verified pairs, one PR each, then add tools a few at a time (35 to 40 tools at most, not hundreds).
 
@@ -35,6 +35,7 @@ rediscover it. Details live in `scripts/README.md`. Update the "State" section a
 | Diagram labels | `pairdata20.py` |
 | Hubs, API pages, HubSpot guide, report | `hubs.py`, `apipages.py` + `apidata.py`, `hspro.py`, `research.py` |
 | Theme, navigation, homepage chart and finder | `ui13.py` (see "Theme" in `scripts/README.md`) |
+| Links between pages: related cards, link lists, guide tables, footer | `links24.py` (rules in `scripts/README.md`, "Links between pages"); checked by `linkcheck.py` |
 | Jump links, guide figures | `ux18.py` |
 | Editor, schema graph, share-image tags | `site16.py` |
 | Markdown copies, llms.txt | `agent17.py` |
@@ -50,6 +51,9 @@ rediscover it. Details live in `scripts/README.md`. Update the "State" section a
 - `security.py` must run last after any change to a page's scripts.
 - `pairfix.py selftest` must reproduce every pair page byte for byte. If a later script adds markup to pair pages,
   put it where pairfix's patterns don't reach (see `ux18.py`).
+- A `newpairs` script copies a template page and swaps tool names. That rewrote the footer's first link on seven new pages, and nothing noticed for
+  days. Links that are written once go stale: `links24.py` now rebuilds them on every build and `linkcheck.py` fails when a footer differs.
+- Don't bring back link text like "Calculator →" or rows of links joined with "·". Link text names its target; links sit in sentences.
 - New pairs: `hspro.py` asserts every HubSpot pair needs Free, Starter or Professional, and a tool's Free tier must be in
   the calculator data whenever the tool's other pages list it (Airtable, HubSpot), or the forced-upgrade amount is wrong.
   Likewise a tier's API flag must match the tool's other pages (monday.com Basic has none), which `newpairs23.py` copies.
@@ -108,6 +112,22 @@ rediscover it. Details live in `scripts/README.md`. Update the "State" section a
 - Of the seven pairs without setup steps, ActiveCampaign + Stripe and ClickUp + Slack are the closest to page 1:
   ask for those two help texts first.
 
+## What Google says now (its own pages, read Nov 14 and 15, 2026)
+- A core update began on Nov 10, 2026 and was still running on Nov 15 (status.search.google.com). Don't read anything into rankings until it has
+  been finished for a week or two. Earlier in 2026: core updates on Mar 27 and May 21, spam updates in Mar, Jun, Aug and Sep.
+- "Optimizing your website for generative AI features" (added May 2026): the same SEO basics decide AI Overviews and AI Mode. What counts most is
+  content that isn't a commodity (here: the verified costs and the report). Not needed for Google: llms.txt, special markup, "chunking". llms.txt
+  neither helps nor harms, so `agent17.py` stays as it is. Making a page for every variation of a search is scaled content abuse: the reason the
+  grid grows in verified batches and not by the hundred.
+- Measuring: Search Console has a "Generative AI performance" report. The preferred-sources page says a site must be "included in Search generative
+  AI features in Search Console" to show as a preferred source in AI Mode and AI Overviews. The owner should check both (ask for a screenshot).
+- FAQ rich results ended in May 2026 (documentation removed in June). The FAQ markup is harmless and stays; don't promise FAQ results in Google.
+- Links: link text should describe the target, links shouldn't be chained next to each other, and every page worth finding needs a link from
+  another page. That is what `links24.py` implements.
+- AI-written content: Google asks for manual fact-checking (titles, descriptions and structured data included) and suggests telling readers how
+  content was made. The first is the vendor-page rule above. The second is an open question for the owner (see "Still open").
+- Bing: Webmaster Tools has an "AI Performance" report (Copilot citations) once the site is verified, and Bing wants IndexNow (`indexnow.py`).
+
 ## Design (since Nov 11, 2026)
 - Idea: a printed fare chart. White paper, navy ink, Barlow type, thin rules. The homepage opens with a chart of
   every pair's 10-seat cost.
@@ -139,6 +159,9 @@ rediscover it. Details live in `scripts/README.md`. Update the "State" section a
 - Owner tasks: the GitHub repo description still says 59 integrations (now 90; update it after each batch); real
   screenshots from the free pairs; a fresh Search
   Console export in about a month ("Last 3 months"). The Google key only if the owner wants live access later.
+- Waiting for the owner's yes or no: (1) sending the changed URLs to IndexNow after a merge (`python3 scripts/indexnow.py --since <date> --send`);
+  (2) a short "how this site is made" note on the About page that says software and AI tools help assemble the pages and that the editor checks
+  every fact against the vendor's page (Google's "give users context"); (3) the 14 pair pages whose calculators leave out a free plan.
 - Optional, only if the owner asks: a short captioned video for the Integration Tax report.
 - A monthly price-check task is scheduled for Dec 1.
 
@@ -174,5 +197,12 @@ rediscover it. Details live in `scripts/README.md`. Update the "State" section a
   the most alike: don't add many more of that kind without something specific to say on each.
 - Nov 14, 2026: the owner set up Bing Webmaster Tools; `BingSiteAuth.xml` in the root is its verification file (keep it,
   like the `google*.html` one). Bing's Backlinks and Keyword Research reports are the free source for that data.
+- Nov 15, 2026: the owner asked for "next level" SEO: current guidance, all internal linking fixed, everything checked. Read Google's own pages
+  (section above), mapped every internal link, then built `links24.py`. Before and after, pair pages: links from other pair pages went from a
+  median of 9 for old pairs and 2 for new ones (nine pairs had none) to 5 to 7 for every pair; 51 of 59 older pages now link to a newer pair (was
+  0); 217 links with the text "Calculator →" or "True-cost calculator →" are gone; the Freshdesk hub is linked from the homepage and 22 more pages
+  (it was missing from the homepage, three guides and its own pairs); the HubSpot Professional guide is linked from 20 pages plus every footer
+  (was 3); the report is linked in the text of 112 pages (was 3). Found and fixed on the way: seven new pair pages had a wrong first link in the
+  footer. Every page is now one click from the homepage. `build_all.sh` and `check_all.sh` (now with `linkcheck.py`) pass.
 - Not re-audited since the redesign: the claude-seo "Visual" category (was 90). Worth one run when the owner asks
   for scores again; the other categories were not touched by the redesign.

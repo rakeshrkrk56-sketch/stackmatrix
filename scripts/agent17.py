@@ -30,6 +30,10 @@ def to_markdown(f, s):
         items = re.findall(r'<a href="(/stack/[^"]+)" aria-label="([^"]*)"', m.group(0))
         return "<ul>" + "".join(f'<li><a href="{u}">{t}</a></li>' for u, t in items) + "</ul>"
     main = re.sub(r'<div class="scm-fare-wrap"[^>]*>.*?</table></div>', chart_list, main, flags=re.S)
+    def card_list(m):   # related-pair cards (links24.py): a heading inside a link reads badly in Markdown, so one line per pair
+        items = re.findall(r'<a href="(/stack/[^"]+/)" class="rounded-xl[^>]*> <h3[^>]*> ([^<]+) </h3> <p[^>]*> (\w+) </p>(?: <p[^>]*>([^<]*)</p>)? </a>', m.group(0))
+        return "<ul>" + "".join(f'<li><a href="{u}">{t}</a>: {k}{", " + c if c else ""}</li>' for u, t, k, c in items) + "</ul>"
+    main = re.sub(r'<div class="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3"> (?:<a href="/stack/[^"]+/" class="rounded-xl(?:(?!</a>).)*</a>)+ </div>', card_list, main, flags=re.S)
     main = re.sub(r'<svg class="scm-chart"[^>]*aria-label="([^"]*)"[^>]*>.*?</svg>', lambda m: f"<p>Chart: {m.group(1)}</p>", main, flags=re.S)
     main = re.sub(r'<svg class="scm-diagram"[^>]*aria-label="([^"]*)"[^>]*>.*?</svg>', lambda m: f"<p>{m.group(1)}</p>", main, flags=re.S)   # the label already starts "Diagram of how..."
     h1 = re.search(r"<h1[^>]*>(.*?)</h1>", main, re.S)

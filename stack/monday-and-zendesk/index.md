@@ -100,6 +100,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Standard') 1,000 calls/day Source: [monday.com developers: Rate limits ↗](https://developer.monday.com/api-reference/docs/rate-limits) · Verified Nov 3, 2026 | Yes  ('Suite Team') 200 requests/min Source: [Zendesk developers: Rate limits ↗](https://developer.zendesk.com/api-reference/introduction/rate-limits/) · Verified Nov 3, 2026 |
 | Webhook support at required tier | Yes  ('Standard') Source: [monday.com developers: Rate limits ↗](https://developer.monday.com/api-reference/docs/rate-limits) · Verified Nov 3, 2026 | Yes  ('Suite Team') Source: [Zendesk: Creating webhooks ↗](https://support.zendesk.com/hc/en-us/articles/4408839108378) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [Monday.com API access by plan](https://stackcostmatrix.com/monday-api-access/) and [Zendesk API access by plan](https://stackcostmatrix.com/zendesk-api-access/).
+
 [Visit Monday.com](https://stackcostmatrix.com/go/monday)  [Visit Zendesk](https://stackcostmatrix.com/go/zendesk)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -124,21 +126,16 @@ Only the ticket's initial comment is pulled into the item's updates, and that se
 
 ## Integrations related to Monday.com + Zendesk
 
-[All Monday.com integrations →](https://stackcostmatrix.com/monday-integrations-cost/) · [All Zendesk integrations →](https://stackcostmatrix.com/zendesk-integrations-cost/) · [Monday.com API access by plan →](https://stackcostmatrix.com/monday-api-access/) · [Zendesk API access by plan →](https://stackcostmatrix.com/zendesk-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 6 Monday.com integrations](https://stackcostmatrix.com/monday-integrations-cost/) and [all 11 Zendesk integrations](https://stackcostmatrix.com/zendesk-integrations-cost/).
 
-[### ClickUp + Zendesk
+- [Monday.com + Slack](https://stackcostmatrix.com/stack/monday-and-slack/): Native, $140.00 a month for 10 seats
+- [Monday.com + Mailchimp](https://stackcostmatrix.com/stack/monday-and-mailchimp/): Native, $140.00 a month for 10 seats
+- [Monday.com + QuickBooks Online](https://stackcostmatrix.com/stack/monday-and-quickbooks/): Middleware, $188.59 a month for 10 seats
+- [ClickUp + Zendesk](https://stackcostmatrix.com/stack/clickup-and-zendesk/): Native, $690.00 a month for 10 seats
+- [Zendesk + Airtable](https://stackcostmatrix.com/stack/zendesk-and-airtable/): Native, $1,230.00 a month for 10 seats
+- [Zendesk + Notion](https://stackcostmatrix.com/stack/zendesk-and-notion/): Middleware, $839.99 a month for 10 seats
 
-Native](https://stackcostmatrix.com/stack/clickup-and-zendesk/)[### HubSpot + Zendesk
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-zendesk/)[### Monday.com + QuickBooks Online
-
-Middleware](https://stackcostmatrix.com/stack/monday-and-quickbooks/)[### Monday.com + Slack
-
-Native](https://stackcostmatrix.com/stack/monday-and-slack/)[### Zendesk + Notion
-
-Middleware](https://stackcostmatrix.com/stack/zendesk-and-notion/)[### Zendesk + Stripe
-
-Middleware](https://stackcostmatrix.com/stack/zendesk-and-stripe/)
+Monday.com + Zendesk is also covered in the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Last checked: Nov 3, 2026
 

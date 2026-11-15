@@ -114,6 +114,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Early') Limits set by the app's developer tier Source: [Xero developers: Pricing and tiers ↗](https://developer.xero.com/pricing) · Verified Nov 3, 2026 | Yes  ('Suite Team') 200 requests/min Source: [Zendesk developers: Rate limits ↗](https://developer.zendesk.com/api-reference/introduction/rate-limits/) · Verified Nov 3, 2026 |
 | Webhook support at required tier | Yes  ('Early') No plan requirement in Xero's webhook docs Source: [Xero developers: Webhooks ↗](https://developer.xero.com/documentation/guides/webhooks/overview) · Verified Nov 3, 2026 | Yes  ('Suite Team') Source: [Zendesk: Creating webhooks ↗](https://support.zendesk.com/hc/en-us/articles/4408839108378) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [Xero API access by plan](https://stackcostmatrix.com/xero-api-access/) and [Zendesk API access by plan](https://stackcostmatrix.com/zendesk-api-access/).
+
 [Visit Xero](https://stackcostmatrix.com/go/xero)  [Visit Zendesk](https://stackcostmatrix.com/go/zendesk)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -138,21 +140,16 @@ Each Make scenario runs one way, and you build the filter and the ticket mapping
 
 ## Integrations related to Xero + Zendesk
 
-[All Xero integrations →](https://stackcostmatrix.com/xero-integrations-cost/) · [All Zendesk integrations →](https://stackcostmatrix.com/zendesk-integrations-cost/) · [Xero API access by plan →](https://stackcostmatrix.com/xero-api-access/) · [Zendesk API access by plan →](https://stackcostmatrix.com/zendesk-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 10 Xero integrations](https://stackcostmatrix.com/xero-integrations-cost/) and [all 11 Zendesk integrations](https://stackcostmatrix.com/zendesk-integrations-cost/).
 
-[### HubSpot + Xero
+- [Xero + Slack](https://stackcostmatrix.com/stack/xero-and-slack/): Middleware, $37.59 a month for 10 seats
+- [Xero + ActiveCampaign](https://stackcostmatrix.com/stack/xero-and-activecampaign/): Middleware, $52.59 a month for 10 seats
+- [Xero + Calendly](https://stackcostmatrix.com/stack/xero-and-calendly/): Middleware, $176.99 a month for 10 seats
+- [Zendesk + Stripe](https://stackcostmatrix.com/stack/zendesk-and-stripe/): Middleware, $700.59 a month for 10 seats
+- [Zendesk + Notion](https://stackcostmatrix.com/stack/zendesk-and-notion/): Middleware, $839.99 a month for 10 seats
+- [HubSpot + Zendesk](https://stackcostmatrix.com/stack/hubspot-and-zendesk/): Native, $690.00 a month for 10 seats
 
-Native](https://stackcostmatrix.com/stack/hubspot-and-xero/)[### Pipedrive + Xero
-
-Middleware](https://stackcostmatrix.com/stack/pipedrive-and-xero/)[### Salesforce + Xero
-
-Middleware](https://stackcostmatrix.com/stack/salesforce-and-xero/)[### Stripe + Xero
-
-Native](https://stackcostmatrix.com/stack/stripe-and-xero/)[### Xero + ActiveCampaign
-
-Middleware](https://stackcostmatrix.com/stack/xero-and-activecampaign/)[### Xero + Airtable
-
-Middleware](https://stackcostmatrix.com/stack/xero-and-airtable/)
+Xero + Zendesk is also covered in the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Requirements checked: Nov 12, 2026; prices: Nov 3, 2026 (exceptions listed at the top)
 

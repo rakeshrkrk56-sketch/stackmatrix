@@ -110,6 +110,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Standard') 1,000 calls/day Source: [monday.com developers: Rate limits ↗](https://developer.monday.com/api-reference/docs/rate-limits) · Verified Nov 3, 2026 | Yes  ('Free') No plan requirement in Mailchimp's API key article Source: [Mailchimp: About API keys ↗](https://mailchimp.com/help/about-api-keys/) · Verified Nov 3, 2026 |
 | Webhook support at required tier | Yes  ('Standard') Source: [monday.com developers: Rate limits ↗](https://developer.monday.com/api-reference/docs/rate-limits) · Verified Nov 3, 2026 | No  ('Free') Webhook automation step needs Standard Source: [Mailchimp: About webhooks ↗](https://mailchimp.com/help/about-webhooks/) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [Monday.com API access by plan](https://stackcostmatrix.com/monday-api-access/) and [Mailchimp API access by plan](https://stackcostmatrix.com/mailchimp-api-access/).
+
 [Visit Monday.com](https://stackcostmatrix.com/go/monday)  [Visit Mailchimp](https://stackcostmatrix.com/go/mailchimp)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -134,21 +136,16 @@ monday.com's Basic plan doesn't include integrations; Standard includes 250 inte
 
 ## Integrations related to Monday.com + Mailchimp
 
-[All Monday.com integrations →](https://stackcostmatrix.com/monday-integrations-cost/) · [All Mailchimp integrations →](https://stackcostmatrix.com/mailchimp-integrations-cost/) · [Monday.com API access by plan →](https://stackcostmatrix.com/monday-api-access/) · [Mailchimp API access by plan →](https://stackcostmatrix.com/mailchimp-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 6 Monday.com integrations](https://stackcostmatrix.com/monday-integrations-cost/) and [all 11 Mailchimp integrations](https://stackcostmatrix.com/mailchimp-integrations-cost/).
 
-[### HubSpot + Monday.com
+- [Monday.com + ActiveCampaign](https://stackcostmatrix.com/stack/monday-and-activecampaign/): Middleware, $165.59 a month for 10 seats
+- [Monday.com + Zendesk](https://stackcostmatrix.com/stack/monday-and-zendesk/): Native, $830.00 a month for 10 seats
+- [Monday.com + Slack](https://stackcostmatrix.com/stack/monday-and-slack/): Native, $140.00 a month for 10 seats
+- [Asana + Mailchimp](https://stackcostmatrix.com/stack/asana-and-mailchimp/): Middleware, $177.89 a month for 10 seats
+- [Mailchimp + Airtable](https://stackcostmatrix.com/stack/mailchimp-and-airtable/): Middleware, $263.59 a month for 10 seats
+- [QuickBooks Online + Mailchimp](https://stackcostmatrix.com/stack/quickbooks-and-mailchimp/): Native, $38.00 a month for 10 seats
 
-Native](https://stackcostmatrix.com/stack/hubspot-and-monday/)[### Monday.com + ActiveCampaign
-
-Middleware](https://stackcostmatrix.com/stack/monday-and-activecampaign/)[### Monday.com + QuickBooks
-
-Middleware](https://stackcostmatrix.com/stack/monday-and-quickbooks/)[### Monday.com + Slack
-
-Native](https://stackcostmatrix.com/stack/monday-and-slack/)[### Monday.com + Zendesk
-
-Native](https://stackcostmatrix.com/stack/monday-and-zendesk/)[### Asana + Mailchimp
-
-Middleware](https://stackcostmatrix.com/stack/asana-and-mailchimp/)
+Monday.com + Mailchimp is also covered in the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Requirements checked: Nov 12, 2026; prices: Nov 3, 2026
 

@@ -111,6 +111,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Standard') Source: [Stripe pricing ↗](https://stripe.com/pricing) · Verified Oct 17, 2026 | Yes  ('Early') Limits set by the app's developer tier Source: [Xero developers: Pricing and tiers ↗](https://developer.xero.com/pricing) · Verified Nov 3, 2026 |
 | Webhook support at required tier | Yes  ('Standard') Source: [Stripe API docs ↗](https://docs.stripe.com/api) · Verified Oct 17, 2026 | Yes  ('Early') No plan requirement in Xero's webhook docs Source: [Xero developers: Webhooks ↗](https://developer.xero.com/documentation/guides/webhooks/overview) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [Stripe API access by plan](https://stackcostmatrix.com/stripe-api-access/) and [Xero API access by plan](https://stackcostmatrix.com/xero-api-access/).
+
 [Visit Stripe](https://stackcostmatrix.com/go/stripe)  [Visit Xero](https://stackcostmatrix.com/go/xero)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -135,21 +137,16 @@ Xero's cheapest Early plan ($27/mo) accepts online invoice payments but limits y
 
 ## Integrations related to Stripe + Xero
 
-[All Stripe integrations →](https://stackcostmatrix.com/stripe-integrations-cost/) · [All Xero integrations →](https://stackcostmatrix.com/xero-integrations-cost/) · [Stripe API access by plan →](https://stackcostmatrix.com/stripe-api-access/) · [Xero API access by plan →](https://stackcostmatrix.com/xero-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 13 Stripe integrations](https://stackcostmatrix.com/stripe-integrations-cost/) and [all 10 Xero integrations](https://stackcostmatrix.com/xero-integrations-cost/).
 
-[### Pipedrive + Xero
+- [Stripe + QuickBooks Online](https://stackcostmatrix.com/stack/stripe-and-quickbooks/): Middleware, $48.59 a month for 10 seats
+- [HubSpot + Stripe](https://stackcostmatrix.com/stack/hubspot-and-stripe/): Native, $0.00 a month for 10 seats
+- [Salesforce Sales Cloud + Stripe](https://stackcostmatrix.com/stack/salesforce-and-stripe/): Native, $1,250.00 a month for 10 seats
+- [HubSpot + Xero](https://stackcostmatrix.com/stack/hubspot-and-xero/): Native, $27.00 a month for 10 seats
+- [Xero + Airtable](https://stackcostmatrix.com/stack/xero-and-airtable/): Middleware, $37.59 a month for 10 seats
+- [Pipedrive + Xero](https://stackcostmatrix.com/stack/pipedrive-and-xero/): Middleware, $177.59 a month for 10 seats
 
-Middleware](https://stackcostmatrix.com/stack/pipedrive-and-xero/)[### Stripe + Slack
-
-Native](https://stackcostmatrix.com/stack/stripe-and-slack/)[### Notion + Stripe
-
-Middleware](https://stackcostmatrix.com/stack/notion-and-stripe/)[### Stripe + Mailchimp
-
-Middleware](https://stackcostmatrix.com/stack/stripe-and-mailchimp/)[### Xero + ActiveCampaign
-
-Middleware](https://stackcostmatrix.com/stack/xero-and-activecampaign/)[### Xero + Calendly
-
-Middleware](https://stackcostmatrix.com/stack/xero-and-calendly/)
+Stripe + Xero is also covered in the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Last checked: Nov 3, 2026
 

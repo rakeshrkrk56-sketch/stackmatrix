@@ -113,6 +113,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Standard') 1,000 calls/day Source: [monday.com developers: Rate limits ↗](https://developer.monday.com/api-reference/docs/rate-limits) · Verified Nov 3, 2026 | Yes  ('Starter') Source: [ActiveCampaign: Getting started with the API ↗](https://help.activecampaign.com/hc/en-us/articles/207317590) · Verified Nov 3, 2026 |
 | Webhook support at required tier | Yes  ('Standard') Source: [monday.com developers: Rate limits ↗](https://developer.monday.com/api-reference/docs/rate-limits) · Verified Nov 3, 2026 | Yes  ('Starter') Source: [ActiveCampaign: Use webhooks ↗](https://help.activecampaign.com/hc/en-us/articles/115001403484) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [Monday.com API access by plan](https://stackcostmatrix.com/monday-api-access/) and [ActiveCampaign API access by plan](https://stackcostmatrix.com/activecampaign-api-access/).
+
 [Visit Monday.com](https://stackcostmatrix.com/go/monday)  [Visit ActiveCampaign](https://stackcostmatrix.com/go/activecampaign)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -137,21 +139,16 @@ Each Make scenario runs one way. Make's ActiveCampaign guide says the app needs 
 
 ## Integrations related to Monday.com + ActiveCampaign
 
-[All Monday.com integrations →](https://stackcostmatrix.com/monday-integrations-cost/) · [All ActiveCampaign integrations →](https://stackcostmatrix.com/activecampaign-integrations-cost/) · [Monday.com API access by plan →](https://stackcostmatrix.com/monday-api-access/) · [ActiveCampaign API access by plan →](https://stackcostmatrix.com/activecampaign-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 6 Monday.com integrations](https://stackcostmatrix.com/monday-integrations-cost/) and [all 10 ActiveCampaign integrations](https://stackcostmatrix.com/activecampaign-integrations-cost/).
 
-[### HubSpot + Monday.com
+- [Monday.com + Mailchimp](https://stackcostmatrix.com/stack/monday-and-mailchimp/): Native, $140.00 a month for 10 seats
+- [HubSpot + Monday.com](https://stackcostmatrix.com/stack/hubspot-and-monday/): Native, $140.00 a month for 10 seats
+- [Monday.com + Zendesk](https://stackcostmatrix.com/stack/monday-and-zendesk/): Native, $830.00 a month for 10 seats
+- [ClickUp + ActiveCampaign](https://stackcostmatrix.com/stack/clickup-and-activecampaign/): Middleware, $25.59 a month for 10 seats
+- [Xero + ActiveCampaign](https://stackcostmatrix.com/stack/xero-and-activecampaign/): Middleware, $52.59 a month for 10 seats
+- [ActiveCampaign + Stripe](https://stackcostmatrix.com/stack/activecampaign-and-stripe/): Native, $49.00 a month for 10 seats
 
-Native](https://stackcostmatrix.com/stack/hubspot-and-monday/)[### Monday.com + Mailchimp
-
-Native](https://stackcostmatrix.com/stack/monday-and-mailchimp/)[### Monday.com + QuickBooks
-
-Middleware](https://stackcostmatrix.com/stack/monday-and-quickbooks/)[### Monday.com + Slack
-
-Native](https://stackcostmatrix.com/stack/monday-and-slack/)[### Monday.com + Zendesk
-
-Native](https://stackcostmatrix.com/stack/monday-and-zendesk/)[### ActiveCampaign + Calendly
-
-Native](https://stackcostmatrix.com/stack/activecampaign-and-calendly/)
+Monday.com + ActiveCampaign is also covered in the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Requirements checked: Nov 12, 2026; prices: Nov 3, 2026 (exceptions listed at the top)
 

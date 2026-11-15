@@ -13,19 +13,19 @@ This page collects the 9 QuickBooks Online integrations in the StackCostMatrix i
 
 QuickBooks Integration Costs (2026): Minimum Plans, API Access & Hidden Fees
 
-| Integration | Type | Min. QuickBooks plan | Other tool's plan | 10-seat total | Checked | Details |
-| --- | --- | --- | --- | --- | --- | --- |
-| [HubSpot + QuickBooks](https://stackcostmatrix.com/stack/hubspot-and-quickbooks/) | Native | Simple Start | Free | $38.00 | Nov 4, 2026 | [Calculator →](https://stackcostmatrix.com/stack/hubspot-and-quickbooks/) |
-| [QuickBooks + Mailchimp](https://stackcostmatrix.com/stack/quickbooks-and-mailchimp/) | Native | Simple Start | Free | $38.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/quickbooks-and-mailchimp/) |
-| [Stripe + QuickBooks](https://stackcostmatrix.com/stack/stripe-and-quickbooks/) | Middleware Make Core $10.59/mo | Simple Start | Standard | $48.59 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/stripe-and-quickbooks/) |
-| [QuickBooks + Slack](https://stackcostmatrix.com/stack/quickbooks-and-slack/) | Middleware Zapier Professional $29.99/mo | Simple Start | Free | $67.99 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/quickbooks-and-slack/) |
-| [Pipedrive + QuickBooks](https://stackcostmatrix.com/stack/pipedrive-and-quickbooks/) | Native | Simple Start | Lite | $178.00 | Nov 4, 2026 | [Calculator →](https://stackcostmatrix.com/stack/pipedrive-and-quickbooks/) |
-| [Asana + QuickBooks](https://stackcostmatrix.com/stack/asana-and-quickbooks/) | Middleware Make Core $10.59/mo | Simple Start | Starter | $183.49 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/asana-and-quickbooks/) |
-| [Monday.com + QuickBooks](https://stackcostmatrix.com/stack/monday-and-quickbooks/) | Middleware Make Core $10.59/mo | Simple Start | Standard | $188.59 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/monday-and-quickbooks/) |
-| [Airtable + QuickBooks](https://stackcostmatrix.com/stack/airtable-and-quickbooks/) | Middleware Make Core $10.59/mo | Simple Start | Team | $288.59 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/airtable-and-quickbooks/) |
-| [Salesforce + QuickBooks](https://stackcostmatrix.com/stack/salesforce-and-quickbooks/) | Middleware Make Core $10.59/mo | Simple Start | Professional | $1,298.59 | Nov 4, 2026 | [Calculator →](https://stackcostmatrix.com/stack/salesforce-and-quickbooks/) |
+| Integration | Type | Min. QuickBooks plan | Other tool's plan | 10-seat total | Checked |
+| --- | --- | --- | --- | --- | --- |
+| [HubSpot + QuickBooks](https://stackcostmatrix.com/stack/hubspot-and-quickbooks/) | Native | Simple Start | Free | $38.00 | Nov 4, 2026 |
+| [QuickBooks + Mailchimp](https://stackcostmatrix.com/stack/quickbooks-and-mailchimp/) | Native | Simple Start | Free | $38.00 | Nov 3, 2026 |
+| [Stripe + QuickBooks](https://stackcostmatrix.com/stack/stripe-and-quickbooks/) | Middleware Make Core $10.59/mo | Simple Start | Standard | $48.59 | Nov 3, 2026 |
+| [QuickBooks + Slack](https://stackcostmatrix.com/stack/quickbooks-and-slack/) | Middleware Zapier Professional $29.99/mo | Simple Start | Free | $67.99 | Nov 3, 2026 |
+| [Pipedrive + QuickBooks](https://stackcostmatrix.com/stack/pipedrive-and-quickbooks/) | Native | Simple Start | Lite | $178.00 | Nov 4, 2026 |
+| [Asana + QuickBooks](https://stackcostmatrix.com/stack/asana-and-quickbooks/) | Middleware Make Core $10.59/mo | Simple Start | Starter | $183.49 | Nov 3, 2026 |
+| [Monday.com + QuickBooks](https://stackcostmatrix.com/stack/monday-and-quickbooks/) | Middleware Make Core $10.59/mo | Simple Start | Standard | $188.59 | Nov 3, 2026 |
+| [Airtable + QuickBooks](https://stackcostmatrix.com/stack/airtable-and-quickbooks/) | Middleware Make Core $10.59/mo | Simple Start | Team | $288.59 | Nov 3, 2026 |
+| [Salesforce + QuickBooks](https://stackcostmatrix.com/stack/salesforce-and-quickbooks/) | Middleware Make Core $10.59/mo | Simple Start | Professional | $1,298.59 | Nov 4, 2026 |
 
-Totals are monthly-billing prices for 10 seats on the minimum plans, including any connector fee. Open a calculator to change team size, switch to annual billing or add usage costs.
+Totals are monthly-billing prices for 10 seats on the minimum plans, including any connector fee. Each integration's name opens its page, where a calculator lets you change team size, switch to annual billing or add usage costs.
 
 Chart: QuickBooks integrations: monthly cost for 10 seats on the plans each needs: Salesforce + QuickBooks $1,298.59; Airtable + QuickBooks $288.59; Monday.com + QuickBooks $188.59; Asana + QuickBooks $183.49; Pipedrive + QuickBooks $178.00; QuickBooks + Slack $67.99; Stripe + QuickBooks $48.59; HubSpot + QuickBooks $38.00; QuickBooks + Mailchimp $38.00
 
@@ -37,7 +37,7 @@ Image: [QuickBooks integration costs summary: 9 integrations priced, from $38 to
 
 ## Does QuickBooks force an upgrade?
 
-Not for any of the 9 integrations here: each one works on QuickBooks's cheapest plan with API access, so the integration itself adds no QuickBooks upgrade cost. Any extra cost comes from the other tool's plan or from a connector fee, shown in the table above.
+Not for any of the 9 integrations here: each one works on QuickBooks's cheapest plan with API access, so the integration itself adds no QuickBooks upgrade cost. Any extra cost comes from the other tool's plan or from a connector fee, shown in the table above. The [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/) adds these costs up across all 90 pairs in the index.
 
 ## Which QuickBooks integrations need Make or Zapier?
 
@@ -65,7 +65,23 @@ Full 20-tool source index: [About StackCostMatrix →](https://stackcostmatrix.c
 
 ## Integration costs by tool
 
-[ActiveCampaign](https://stackcostmatrix.com/activecampaign-integrations-cost/) · [Airtable](https://stackcostmatrix.com/airtable-integrations-cost/) · [Asana](https://stackcostmatrix.com/asana-integrations-cost/) · [Calendly](https://stackcostmatrix.com/calendly-integrations-cost/) · [ClickUp](https://stackcostmatrix.com/clickup-integrations-cost/) · [Freshdesk](https://stackcostmatrix.com/freshdesk-integrations-cost/) · [HubSpot](https://stackcostmatrix.com/hubspot-integrations-cost/) · [Intercom](https://stackcostmatrix.com/intercom-integrations-cost/) · [Mailchimp](https://stackcostmatrix.com/mailchimp-integrations-cost/) · [Monday.com](https://stackcostmatrix.com/monday-integrations-cost/) · [Notion](https://stackcostmatrix.com/notion-integrations-cost/) · [Pipedrive](https://stackcostmatrix.com/pipedrive-integrations-cost/) · [Salesforce](https://stackcostmatrix.com/salesforce-integrations-cost/) · [Slack](https://stackcostmatrix.com/slack-integrations-cost/) · [Stripe](https://stackcostmatrix.com/stripe-integrations-cost/) · [Xero](https://stackcostmatrix.com/xero-integrations-cost/) · [Zendesk](https://stackcostmatrix.com/zendesk-integrations-cost/)
+- [ActiveCampaign integrations](https://stackcostmatrix.com/activecampaign-integrations-cost/)
+- [Airtable integrations](https://stackcostmatrix.com/airtable-integrations-cost/)
+- [Asana integrations](https://stackcostmatrix.com/asana-integrations-cost/)
+- [Calendly integrations](https://stackcostmatrix.com/calendly-integrations-cost/)
+- [ClickUp integrations](https://stackcostmatrix.com/clickup-integrations-cost/)
+- [Freshdesk integrations](https://stackcostmatrix.com/freshdesk-integrations-cost/)
+- [HubSpot integrations](https://stackcostmatrix.com/hubspot-integrations-cost/)
+- [Intercom integrations](https://stackcostmatrix.com/intercom-integrations-cost/)
+- [Mailchimp integrations](https://stackcostmatrix.com/mailchimp-integrations-cost/)
+- [Monday.com integrations](https://stackcostmatrix.com/monday-integrations-cost/)
+- [Notion integrations](https://stackcostmatrix.com/notion-integrations-cost/)
+- [Pipedrive integrations](https://stackcostmatrix.com/pipedrive-integrations-cost/)
+- [Salesforce integrations](https://stackcostmatrix.com/salesforce-integrations-cost/)
+- [Slack integrations](https://stackcostmatrix.com/slack-integrations-cost/)
+- [Stripe integrations](https://stackcostmatrix.com/stripe-integrations-cost/)
+- [Xero integrations](https://stackcostmatrix.com/xero-integrations-cost/)
+- [Zendesk integrations](https://stackcostmatrix.com/zendesk-integrations-cost/)
 
 ## QuickBooks integration costs: frequently asked questions
 

@@ -115,6 +115,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Advanced') Source: [Asana pricing ↗](https://asana.com/pricing) · Verified Oct 17, 2026 | Yes  ('Professional') Web Services API add-on (modeled at $25/user) Source: [Salesforce developers: Supported editions ↗](https://developer.salesforce.com/docs/platform/api-rest/guide/intro-rest-compatible-editions.html) · Verified Nov 3, 2026 |
 | Webhook support at required tier | Yes  ('Advanced') API webhooks; no plan requirement stated Source: [Asana developers: Webhooks guide ↗](https://developers.asana.com/docs/webhooks-guide) · Verified Nov 3, 2026 | No  ('Professional') Change Data Capture (Salesforce's change-event feed) isn't available on Professional, so sync runs through the REST API. Source: [Salesforce developers: Change Data Capture ↗](https://developer.salesforce.com/docs/atlas.en-us.change_data_capture.meta/change_data_capture/cdc_intro.htm) · Verified Nov 8, 2026 |
 
+API and webhook access can change with the plan you are on: see [Asana API access by plan](https://stackcostmatrix.com/asana-api-access/) and [Salesforce API access by plan](https://stackcostmatrix.com/salesforce-api-access/).
+
 [Visit Asana](https://stackcostmatrix.com/go/asana)  [Visit Salesforce Sales Cloud](https://stackcostmatrix.com/go/salesforce)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -139,23 +141,16 @@ It needs Asana Advanced or higher, so Asana Starter teams have to upgrade. Asana
 
 ## Integrations related to Asana + Salesforce Sales Cloud
 
-[All Asana integrations →](https://stackcostmatrix.com/asana-integrations-cost/) · [All Salesforce integrations →](https://stackcostmatrix.com/salesforce-integrations-cost/) · [Asana API access by plan →](https://stackcostmatrix.com/asana-api-access/) · [Salesforce API access by plan →](https://stackcostmatrix.com/salesforce-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 10 Asana integrations](https://stackcostmatrix.com/asana-integrations-cost/) and [all 13 Salesforce integrations](https://stackcostmatrix.com/salesforce-integrations-cost/).
 
-Part of our [CRM integration hidden-costs guide](https://stackcostmatrix.com/crm-integration-pricing-guide/).
+- [Pipedrive + Asana](https://stackcostmatrix.com/stack/pipedrive-and-asana/): Native, $274.90 a month for 10 seats
+- [Asana + ActiveCampaign](https://stackcostmatrix.com/stack/asana-and-activecampaign/): Middleware, $160.49 a month for 10 seats
+- [Asana + Mailchimp](https://stackcostmatrix.com/stack/asana-and-mailchimp/): Middleware, $177.89 a month for 10 seats
+- [ClickUp + Salesforce Sales Cloud](https://stackcostmatrix.com/stack/clickup-and-salesforce/): Middleware, $1,260.59 a month for 10 seats
+- [Salesforce Sales Cloud + Calendly](https://stackcostmatrix.com/stack/salesforce-and-calendly/): Native, $1,850.00 a month for 10 seats
+- [Salesforce Sales Cloud + Airtable](https://stackcostmatrix.com/stack/salesforce-and-airtable/): Native, $1,790.00 a month for 10 seats
 
-[### Asana + Mailchimp
-
-Middleware](https://stackcostmatrix.com/stack/asana-and-mailchimp/)[### Asana + QuickBooks
-
-Middleware](https://stackcostmatrix.com/stack/asana-and-quickbooks/)[### Asana + Slack
-
-Native](https://stackcostmatrix.com/stack/asana-and-slack/)[### HubSpot + Asana
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-asana/)[### Pipedrive + Asana
-
-Native](https://stackcostmatrix.com/stack/pipedrive-and-asana/)[### Zendesk + Asana
-
-Native](https://stackcostmatrix.com/stack/zendesk-and-asana/)
+Asana + Salesforce Sales Cloud is also covered in the [CRM integration hidden-costs guide](https://stackcostmatrix.com/crm-integration-pricing-guide/) and the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Requirements checked: Nov 12, 2026; prices: Nov 3, 2026 (exceptions listed at the top)
 

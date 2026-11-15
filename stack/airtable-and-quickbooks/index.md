@@ -112,6 +112,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Team') 100,000 API calls a month Source: [Airtable: Managing API call limits ↗](https://support.airtable.com/articles/7735693959-managing-api-call-limits-in-airtable) · Verified Nov 3, 2026 | Yes  ('Simple Start') Any paid plan (Zapier, Make and Mailchimp name no tier) Source: [Zapier help: QuickBooks Online API prerequisites ↗](https://help.zapier.com/hc/en-us/articles/8495935103885) · Verified Nov 3, 2026 |
 | Webhook support at required tier | Yes  ('Team') Source: [Airtable: Create a webhook ↗](https://airtable.com/developers/web/api/create-a-webhook) · Verified Nov 3, 2026 | Yes  ('Simple Start') App-level webhooks Source: [Intuit developers: Webhooks ↗](https://developer.intuit.com/app/developer/qbo/docs/develop/webhooks) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [Airtable API access by plan](https://stackcostmatrix.com/airtable-api-access/) and [QuickBooks API access by plan](https://stackcostmatrix.com/quickbooks-api-access/).
+
 [Visit Airtable](https://stackcostmatrix.com/go/airtable)  [Visit QuickBooks Online](https://stackcostmatrix.com/go/quickbooks)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -136,21 +138,16 @@ Each Make or Zapier scenario runs one way. Every Make run that reads or writes A
 
 ## Integrations related to Airtable + QuickBooks Online
 
-[All Airtable integrations →](https://stackcostmatrix.com/airtable-integrations-cost/) · [All QuickBooks integrations →](https://stackcostmatrix.com/quickbooks-integrations-cost/) · [Airtable API access by plan →](https://stackcostmatrix.com/airtable-api-access/) · [QuickBooks API access by plan →](https://stackcostmatrix.com/quickbooks-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 8 Airtable integrations](https://stackcostmatrix.com/airtable-integrations-cost/) and [all 9 QuickBooks integrations](https://stackcostmatrix.com/quickbooks-integrations-cost/).
 
-[### Airtable + Stripe
+- [Xero + Airtable](https://stackcostmatrix.com/stack/xero-and-airtable/): Middleware, $37.59 a month for 10 seats
+- [Slack + Airtable](https://stackcostmatrix.com/stack/slack-and-airtable/): Native, $0.00 a month for 10 seats
+- [Airtable + Stripe](https://stackcostmatrix.com/stack/airtable-and-stripe/): Middleware, $250.59 a month for 10 seats
+- [Stripe + QuickBooks Online](https://stackcostmatrix.com/stack/stripe-and-quickbooks/): Middleware, $48.59 a month for 10 seats
+- [Monday.com + QuickBooks Online](https://stackcostmatrix.com/stack/monday-and-quickbooks/): Middleware, $188.59 a month for 10 seats
+- [HubSpot + QuickBooks Online](https://stackcostmatrix.com/stack/hubspot-and-quickbooks/): Native, $38.00 a month for 10 seats
 
-Middleware](https://stackcostmatrix.com/stack/airtable-and-stripe/)[### Asana + QuickBooks Online
-
-Middleware](https://stackcostmatrix.com/stack/asana-and-quickbooks/)[### Mailchimp + Airtable
-
-Middleware](https://stackcostmatrix.com/stack/mailchimp-and-airtable/)[### Monday.com + QuickBooks Online
-
-Middleware](https://stackcostmatrix.com/stack/monday-and-quickbooks/)[### Slack + Airtable
-
-Native](https://stackcostmatrix.com/stack/slack-and-airtable/)[### Stripe + QuickBooks Online
-
-Middleware](https://stackcostmatrix.com/stack/stripe-and-quickbooks/)
+Airtable + QuickBooks Online is also covered in the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Last checked: Nov 3, 2026 (exceptions listed at the top)
 

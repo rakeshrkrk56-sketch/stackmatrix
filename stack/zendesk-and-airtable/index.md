@@ -115,6 +115,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Suite Team') 200 requests/min Source: [Zendesk developers: Rate limits ↗](https://developer.zendesk.com/api-reference/introduction/rate-limits/) · Verified Nov 3, 2026 | Yes  ('Business') Not stated in the article we read Source: [Airtable: Managing API call limits ↗](https://support.airtable.com/articles/7735693959-managing-api-call-limits-in-airtable) · Verified Nov 3, 2026 |
 | Webhook support at required tier | Yes  ('Suite Team') Source: [Zendesk: Creating webhooks ↗](https://support.zendesk.com/hc/en-us/articles/4408839108378) · Verified Nov 3, 2026 | Yes  ('Business') Source: [Airtable: Create a webhook ↗](https://airtable.com/developers/web/api/create-a-webhook) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [Zendesk API access by plan](https://stackcostmatrix.com/zendesk-api-access/) and [Airtable API access by plan](https://stackcostmatrix.com/airtable-api-access/).
+
 [Visit Zendesk](https://stackcostmatrix.com/go/zendesk)  [Visit Airtable](https://stackcostmatrix.com/go/airtable)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -139,21 +141,16 @@ It needs Airtable Business or Enterprise Scale, so it forces Business. It's one-
 
 ## Integrations related to Zendesk + Airtable
 
-[All Zendesk integrations →](https://stackcostmatrix.com/zendesk-integrations-cost/) · [All Airtable integrations →](https://stackcostmatrix.com/airtable-integrations-cost/) · [Zendesk API access by plan →](https://stackcostmatrix.com/zendesk-api-access/) · [Airtable API access by plan →](https://stackcostmatrix.com/airtable-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 11 Zendesk integrations](https://stackcostmatrix.com/zendesk-integrations-cost/) and [all 8 Airtable integrations](https://stackcostmatrix.com/airtable-integrations-cost/).
 
-[### ClickUp + Zendesk
+- [Zendesk + Notion](https://stackcostmatrix.com/stack/zendesk-and-notion/): Middleware, $839.99 a month for 10 seats
+- [Monday.com + Zendesk](https://stackcostmatrix.com/stack/monday-and-zendesk/): Native, $830.00 a month for 10 seats
+- [Xero + Zendesk](https://stackcostmatrix.com/stack/xero-and-zendesk/): Middleware, $727.59 a month for 10 seats
+- [Slack + Airtable](https://stackcostmatrix.com/stack/slack-and-airtable/): Native, $0.00 a month for 10 seats
+- [Mailchimp + Airtable](https://stackcostmatrix.com/stack/mailchimp-and-airtable/): Middleware, $263.59 a month for 10 seats
+- [Airtable + QuickBooks Online](https://stackcostmatrix.com/stack/airtable-and-quickbooks/): Middleware, $288.59 a month for 10 seats
 
-Native](https://stackcostmatrix.com/stack/clickup-and-zendesk/)[### HubSpot + Zendesk
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-zendesk/)[### Monday.com + Zendesk
-
-Native](https://stackcostmatrix.com/stack/monday-and-zendesk/)[### Pipedrive + Zendesk
-
-Native](https://stackcostmatrix.com/stack/pipedrive-and-zendesk/)[### Salesforce + Zendesk
-
-Native](https://stackcostmatrix.com/stack/salesforce-and-zendesk/)[### Slack + Zendesk
-
-Native](https://stackcostmatrix.com/stack/slack-and-zendesk/)
+Zendesk + Airtable is also covered in the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Requirements checked: Nov 12, 2026; prices: Nov 3, 2026
 

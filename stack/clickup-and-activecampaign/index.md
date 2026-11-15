@@ -114,6 +114,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Free') 100 requests/min per token Source: [ClickUp developers: API availability by plan ↗](https://developer.clickup.com/docs/apis-available-by-plan) · Verified Nov 3, 2026 | Yes  ('Starter') Source: [ActiveCampaign: Getting started with the API ↗](https://help.activecampaign.com/hc/en-us/articles/207317590) · Verified Nov 3, 2026 |
 | Webhook support at required tier | Yes  ('Free') API webhooks Source: [ClickUp: Automation webhooks ↗](https://help.clickup.com/hc/en-us/articles/35313844961943-Integrate-ClickUp-using-Automation-webhooks) · Verified Nov 3, 2026 | Yes  ('Starter') Source: [ActiveCampaign: Use webhooks ↗](https://help.activecampaign.com/hc/en-us/articles/115001403484) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [ClickUp API access by plan](https://stackcostmatrix.com/clickup-api-access/) and [ActiveCampaign API access by plan](https://stackcostmatrix.com/activecampaign-api-access/).
+
 [Visit ClickUp](https://stackcostmatrix.com/go/clickup)  [Visit ActiveCampaign](https://stackcostmatrix.com/go/activecampaign)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -138,21 +140,16 @@ Each Make scenario runs one way. Make's ActiveCampaign guide says the app needs 
 
 ## Integrations related to ClickUp + ActiveCampaign
 
-[All ClickUp integrations →](https://stackcostmatrix.com/clickup-integrations-cost/) · [All ActiveCampaign integrations →](https://stackcostmatrix.com/activecampaign-integrations-cost/) · [ClickUp API access by plan →](https://stackcostmatrix.com/clickup-api-access/) · [ActiveCampaign API access by plan →](https://stackcostmatrix.com/activecampaign-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 7 ClickUp integrations](https://stackcostmatrix.com/clickup-integrations-cost/) and [all 10 ActiveCampaign integrations](https://stackcostmatrix.com/activecampaign-integrations-cost/).
 
-[### ClickUp + Notion
+- [ClickUp + Zendesk](https://stackcostmatrix.com/stack/clickup-and-zendesk/): Native, $690.00 a month for 10 seats
+- [ClickUp + Salesforce Sales Cloud](https://stackcostmatrix.com/stack/clickup-and-salesforce/): Middleware, $1,260.59 a month for 10 seats
+- [ClickUp + Slack](https://stackcostmatrix.com/stack/clickup-and-slack/): Native, $0.00 a month for 10 seats
+- [Monday.com + ActiveCampaign](https://stackcostmatrix.com/stack/monday-and-activecampaign/): Middleware, $165.59 a month for 10 seats
+- [Asana + ActiveCampaign](https://stackcostmatrix.com/stack/asana-and-activecampaign/): Middleware, $160.49 a month for 10 seats
+- [Xero + ActiveCampaign](https://stackcostmatrix.com/stack/xero-and-activecampaign/): Middleware, $52.59 a month for 10 seats
 
-Native](https://stackcostmatrix.com/stack/clickup-and-notion/)[### ClickUp + Salesforce
-
-Middleware](https://stackcostmatrix.com/stack/clickup-and-salesforce/)[### ClickUp + Slack
-
-Native](https://stackcostmatrix.com/stack/clickup-and-slack/)[### ClickUp + Stripe
-
-Middleware](https://stackcostmatrix.com/stack/clickup-and-stripe/)[### ClickUp + Zendesk
-
-Native](https://stackcostmatrix.com/stack/clickup-and-zendesk/)[### HubSpot + ClickUp
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-clickup/)
+ClickUp + ActiveCampaign is also covered in the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Requirements checked: Nov 12, 2026; prices: Nov 3, 2026 (exceptions listed at the top)
 

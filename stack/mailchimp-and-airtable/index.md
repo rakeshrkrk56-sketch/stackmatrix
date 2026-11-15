@@ -112,6 +112,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Essentials') No plan requirement in Mailchimp's API key article Source: [Mailchimp: About API keys ↗](https://mailchimp.com/help/about-api-keys/) · Verified Nov 3, 2026 | Yes  ('Team') 100,000 API calls a month Source: [Airtable: Managing API call limits ↗](https://support.airtable.com/articles/7735693959-managing-api-call-limits-in-airtable) · Verified Nov 3, 2026 |
 | Webhook support at required tier | No  ('Essentials') Webhook automation step needs Standard Source: [Mailchimp: About webhooks ↗](https://mailchimp.com/help/about-webhooks/) · Verified Nov 3, 2026 | Yes  ('Team') Source: [Airtable: Create a webhook ↗](https://airtable.com/developers/web/api/create-a-webhook) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [Mailchimp API access by plan](https://stackcostmatrix.com/mailchimp-api-access/) and [Airtable API access by plan](https://stackcostmatrix.com/airtable-api-access/).
+
 [Visit Mailchimp](https://stackcostmatrix.com/go/mailchimp)  [Visit Airtable](https://stackcostmatrix.com/go/airtable)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -136,21 +138,16 @@ Each Make or Zapier scenario runs one way, so two-way sync needs a second automa
 
 ## Integrations related to Mailchimp + Airtable
 
-[All Mailchimp integrations →](https://stackcostmatrix.com/mailchimp-integrations-cost/) · [All Airtable integrations →](https://stackcostmatrix.com/airtable-integrations-cost/) · [Mailchimp API access by plan →](https://stackcostmatrix.com/mailchimp-api-access/) · [Airtable API access by plan →](https://stackcostmatrix.com/airtable-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 11 Mailchimp integrations](https://stackcostmatrix.com/mailchimp-integrations-cost/) and [all 8 Airtable integrations](https://stackcostmatrix.com/airtable-integrations-cost/).
 
-[### Asana + Mailchimp
+- [QuickBooks Online + Mailchimp](https://stackcostmatrix.com/stack/quickbooks-and-mailchimp/): Native, $38.00 a month for 10 seats
+- [Monday.com + Mailchimp](https://stackcostmatrix.com/stack/monday-and-mailchimp/): Native, $140.00 a month for 10 seats
+- [Stripe + Mailchimp](https://stackcostmatrix.com/stack/stripe-and-mailchimp/): Middleware, $15.00 a month for 10 seats
+- [Zendesk + Airtable](https://stackcostmatrix.com/stack/zendesk-and-airtable/): Native, $1,230.00 a month for 10 seats
+- [Salesforce Sales Cloud + Airtable](https://stackcostmatrix.com/stack/salesforce-and-airtable/): Native, $1,790.00 a month for 10 seats
+- [Slack + Airtable](https://stackcostmatrix.com/stack/slack-and-airtable/): Native, $0.00 a month for 10 seats
 
-Middleware](https://stackcostmatrix.com/stack/asana-and-mailchimp/)[### HubSpot + Mailchimp
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-mailchimp/)[### Salesforce Sales Cloud + Mailchimp
-
-Native](https://stackcostmatrix.com/stack/salesforce-and-mailchimp/)[### Slack + Airtable
-
-Native](https://stackcostmatrix.com/stack/slack-and-airtable/)[### Stripe + Mailchimp
-
-Middleware](https://stackcostmatrix.com/stack/stripe-and-mailchimp/)[### Airtable + Stripe
-
-Middleware](https://stackcostmatrix.com/stack/airtable-and-stripe/)
+Mailchimp + Airtable is also covered in the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Last checked: Nov 3, 2026 (exceptions listed at the top)
 

@@ -112,6 +112,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Early') Limits set by the app's developer tier Source: [Xero developers: Pricing and tiers ↗](https://developer.xero.com/pricing) · Verified Nov 3, 2026 | Yes  ('Standard') Source: [Calendly: API overview ↗](https://calendly.com/help/calendly-api-overview) · Verified Nov 3, 2026 |
 | Webhook support at required tier | Yes  ('Early') No plan requirement in Xero's webhook docs Source: [Xero developers: Webhooks ↗](https://developer.xero.com/documentation/guides/webhooks/overview) · Verified Nov 3, 2026 | Yes  ('Standard') Source: [Calendly: API overview ↗](https://calendly.com/help/calendly-api-overview) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [Xero API access by plan](https://stackcostmatrix.com/xero-api-access/) and [Calendly API access by plan](https://stackcostmatrix.com/calendly-api-access/).
+
 [Visit Xero](https://stackcostmatrix.com/go/xero)  [Visit Calendly](https://stackcostmatrix.com/go/calendly)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -136,21 +138,16 @@ Calendly's webhooks need a paid plan from Standard up. Zapier needs a paid Xero 
 
 ## Integrations related to Xero + Calendly
 
-[All Xero integrations →](https://stackcostmatrix.com/xero-integrations-cost/) · [All Calendly integrations →](https://stackcostmatrix.com/calendly-integrations-cost/) · [Xero API access by plan →](https://stackcostmatrix.com/xero-api-access/) · [Calendly API access by plan →](https://stackcostmatrix.com/calendly-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 10 Xero integrations](https://stackcostmatrix.com/xero-integrations-cost/) and [all 10 Calendly integrations](https://stackcostmatrix.com/calendly-integrations-cost/).
 
-[### ActiveCampaign + Calendly
+- [Xero + Asana](https://stackcostmatrix.com/stack/xero-and-asana/): Middleware, $172.49 a month for 10 seats
+- [Xero + Slack](https://stackcostmatrix.com/stack/xero-and-slack/): Middleware, $37.59 a month for 10 seats
+- [Xero + Airtable](https://stackcostmatrix.com/stack/xero-and-airtable/): Middleware, $37.59 a month for 10 seats
+- [Stripe + Calendly](https://stackcostmatrix.com/stack/stripe-and-calendly/): Native, $120.00 a month for 10 seats
+- [Notion + Calendly](https://stackcostmatrix.com/stack/notion-and-calendly/): Middleware, $250.59 a month for 10 seats
+- [HubSpot + Calendly](https://stackcostmatrix.com/stack/hubspot-and-calendly/): Native, $120.00 a month for 10 seats
 
-Native](https://stackcostmatrix.com/stack/activecampaign-and-calendly/)[### HubSpot + Calendly
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-calendly/)[### Pipedrive + Calendly
-
-Middleware](https://stackcostmatrix.com/stack/pipedrive-and-calendly/)[### Pipedrive + Xero
-
-Middleware](https://stackcostmatrix.com/stack/pipedrive-and-xero/)[### Slack + Calendly
-
-Native](https://stackcostmatrix.com/stack/slack-and-calendly/)[### Notion + Calendly
-
-Middleware](https://stackcostmatrix.com/stack/notion-and-calendly/)
+Xero + Calendly is also covered in the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Last checked: Nov 3, 2026 (exceptions listed at the top)
 

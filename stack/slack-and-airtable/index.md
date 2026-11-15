@@ -110,6 +110,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Free') Source: [Slack developers: Incoming webhooks ↗](https://api.slack.com/messaging/webhooks) · Verified Nov 3, 2026 | Yes  ('Free') 1,000 API calls a month Source: [Airtable: Managing API call limits ↗](https://support.airtable.com/articles/7735693959-managing-api-call-limits-in-airtable) · Verified Nov 3, 2026 |
 | Webhook support at required tier | Yes  ('Free') Incoming webhooks Source: [Slack developers: Incoming webhooks ↗](https://api.slack.com/messaging/webhooks) · Verified Nov 3, 2026 | Yes  ('Free') Source: [Airtable: Create a webhook ↗](https://airtable.com/developers/web/api/create-a-webhook) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [Slack API access by plan](https://stackcostmatrix.com/slack-api-access/) and [Airtable API access by plan](https://stackcostmatrix.com/airtable-api-access/).
+
 [Visit Slack](https://stackcostmatrix.com/go/slack)  [Visit Airtable](https://stackcostmatrix.com/go/airtable)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -134,21 +136,16 @@ It's one-way (Airtable → Slack) and only posts notifications. Your organizatio
 
 ## Integrations related to Slack + Airtable
 
-[All Slack integrations →](https://stackcostmatrix.com/slack-integrations-cost/) · [All Airtable integrations →](https://stackcostmatrix.com/airtable-integrations-cost/) · [Slack API access by plan →](https://stackcostmatrix.com/slack-api-access/) · [Airtable API access by plan →](https://stackcostmatrix.com/airtable-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 17 Slack integrations](https://stackcostmatrix.com/slack-integrations-cost/) and [all 8 Airtable integrations](https://stackcostmatrix.com/airtable-integrations-cost/).
 
-[### Airtable + QuickBooks Online
+- [Slack + Notion](https://stackcostmatrix.com/stack/slack-and-notion/): Native, $120.00 a month for 10 seats
+- [Monday.com + Slack](https://stackcostmatrix.com/stack/monday-and-slack/): Native, $140.00 a month for 10 seats
+- [QuickBooks Online + Slack](https://stackcostmatrix.com/stack/quickbooks-and-slack/): Middleware, $67.99 a month for 10 seats
+- [Airtable + QuickBooks Online](https://stackcostmatrix.com/stack/airtable-and-quickbooks/): Middleware, $288.59 a month for 10 seats
+- [Zendesk + Airtable](https://stackcostmatrix.com/stack/zendesk-and-airtable/): Native, $1,230.00 a month for 10 seats
+- [Xero + Airtable](https://stackcostmatrix.com/stack/xero-and-airtable/): Middleware, $37.59 a month for 10 seats
 
-Middleware](https://stackcostmatrix.com/stack/airtable-and-quickbooks/)[### Airtable + Stripe
-
-Middleware](https://stackcostmatrix.com/stack/airtable-and-stripe/)[### Mailchimp + Airtable
-
-Middleware](https://stackcostmatrix.com/stack/mailchimp-and-airtable/)[### Slack + Calendly
-
-Native](https://stackcostmatrix.com/stack/slack-and-calendly/)[### Slack + Intercom
-
-Native](https://stackcostmatrix.com/stack/slack-and-intercom/)[### Slack + Notion
-
-Native](https://stackcostmatrix.com/stack/slack-and-notion/)
+Slack + Airtable is also covered in the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Last checked: Nov 3, 2026
 

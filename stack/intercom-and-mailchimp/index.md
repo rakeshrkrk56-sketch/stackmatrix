@@ -111,6 +111,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Essential') Paid workspaces Source: [Intercom developers: Webhooks ↗](https://developers.intercom.com/docs/webhooks) · Verified Nov 3, 2026 | Yes  ('Free') No plan requirement in Mailchimp's API key article Source: [Mailchimp: About API keys ↗](https://mailchimp.com/help/about-api-keys/) · Verified Nov 3, 2026 |
 | Webhook support at required tier | Yes  ('Essential') Source: [Intercom developers: Webhooks ↗](https://developers.intercom.com/docs/webhooks) · Verified Nov 3, 2026 | No  ('Free') Webhook automation step needs Standard Source: [Mailchimp: About webhooks ↗](https://mailchimp.com/help/about-webhooks/) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [Intercom API access by plan](https://stackcostmatrix.com/intercom-api-access/) and [Mailchimp API access by plan](https://stackcostmatrix.com/mailchimp-api-access/).
+
 [Visit Intercom](https://stackcostmatrix.com/go/intercom)  [Visit Mailchimp](https://stackcostmatrix.com/go/mailchimp)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -135,21 +137,16 @@ A Mailchimp list with required merge fields can't be used with the Subscribe app
 
 ## Integrations related to Intercom + Mailchimp
 
-[All Intercom integrations →](https://stackcostmatrix.com/intercom-integrations-cost/) · [All Mailchimp integrations →](https://stackcostmatrix.com/mailchimp-integrations-cost/) · [Intercom API access by plan →](https://stackcostmatrix.com/intercom-api-access/) · [Mailchimp API access by plan →](https://stackcostmatrix.com/mailchimp-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 8 Intercom integrations](https://stackcostmatrix.com/intercom-integrations-cost/) and [all 11 Mailchimp integrations](https://stackcostmatrix.com/mailchimp-integrations-cost/).
 
-[### Intercom + Calendly
+- [Intercom + ActiveCampaign](https://stackcostmatrix.com/stack/intercom-and-activecampaign/): Middleware, $415.59 a month for 10 seats
+- [Slack + Intercom](https://stackcostmatrix.com/stack/slack-and-intercom/): Native, $390.00 a month for 10 seats
+- [Intercom + Calendly](https://stackcostmatrix.com/stack/intercom-and-calendly/): Native, $390.00 a month for 10 seats
+- [Mailchimp + Slack](https://stackcostmatrix.com/stack/mailchimp-and-slack/): Native, $0.00 a month for 10 seats
+- [Salesforce Sales Cloud + Mailchimp](https://stackcostmatrix.com/stack/salesforce-and-mailchimp/): Native, $1,270.00 a month for 10 seats
+- [Mailchimp + Calendly](https://stackcostmatrix.com/stack/mailchimp-and-calendly/): Native, $120.00 a month for 10 seats
 
-Native](https://stackcostmatrix.com/stack/intercom-and-calendly/)[### Intercom + HubSpot
-
-Native](https://stackcostmatrix.com/stack/intercom-and-hubspot/)[### Intercom + Salesforce
-
-Native](https://stackcostmatrix.com/stack/intercom-and-salesforce/)[### Intercom + Stripe
-
-Native](https://stackcostmatrix.com/stack/intercom-and-stripe/)[### Pipedrive + Intercom
-
-Native](https://stackcostmatrix.com/stack/pipedrive-and-intercom/)[### Slack + Intercom
-
-Native](https://stackcostmatrix.com/stack/slack-and-intercom/)
+Intercom + Mailchimp is also covered in the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Requirements checked: Nov 12, 2026; prices: Nov 3, 2026
 

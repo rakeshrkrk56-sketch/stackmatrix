@@ -111,6 +111,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Growth') Source: [Freshdesk API reference ↗](https://developers.freshdesk.com/api/) · Verified Nov 3, 2026 | Yes  ('Free') 100 req/10 s · 250,000/day (private apps) Source: [HubSpot developers: Usage guidelines ↗](https://developers.hubspot.com/docs/developer-tooling/platform/usage-guidelines) · Verified Nov 3, 2026 |
 | Webhook support at required tier | Yes  ('Growth') Webhooks run from automation rules Source: [Freshdesk: Using webhooks in automation rules ↗](https://support.freshdesk.com/en/support/solutions/articles/132589) · Verified Nov 3, 2026 | No  ('Free') Workflow webhooks need Data Hub Professional Source: [HubSpot KB: Webhooks in workflows ↗](https://knowledge.hubspot.com/workflows/how-do-i-use-webhooks-with-hubspot-workflows) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [Freshdesk API access by plan](https://stackcostmatrix.com/freshdesk-api-access/) and [HubSpot API access by plan](https://stackcostmatrix.com/hubspot-api-access/).
+
 [Visit Freshdesk](https://stackcostmatrix.com/go/freshdesk)  [Visit HubSpot](https://stackcostmatrix.com/go/hubspot)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -135,23 +137,16 @@ Custom field mappings need Data Hub Starter or Professional. HubSpot doesn't nam
 
 ## Integrations related to Freshdesk + HubSpot
 
-[All HubSpot integrations →](https://stackcostmatrix.com/hubspot-integrations-cost/) · [Freshdesk API access by plan →](https://stackcostmatrix.com/freshdesk-api-access/) · [HubSpot API access by plan →](https://stackcostmatrix.com/hubspot-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 3 Freshdesk integrations](https://stackcostmatrix.com/freshdesk-integrations-cost/) and [all 16 HubSpot integrations](https://stackcostmatrix.com/hubspot-integrations-cost/).
 
-Part of our [HubSpot integration cost guide](https://stackcostmatrix.com/hubspot-integrations-cost/) and [CRM integration hidden-costs guide](https://stackcostmatrix.com/crm-integration-pricing-guide/).
+- [Freshdesk + ActiveCampaign](https://stackcostmatrix.com/stack/freshdesk-and-activecampaign/): Middleware, $255.59 a month for 10 seats
+- [Freshdesk + Slack](https://stackcostmatrix.com/stack/freshdesk-and-slack/): Native, $230.00 a month for 10 seats
+- [Intercom + HubSpot](https://stackcostmatrix.com/stack/intercom-and-hubspot/): Native, $390.00 a month for 10 seats
+- [HubSpot + Zendesk](https://stackcostmatrix.com/stack/hubspot-and-zendesk/): Native, $690.00 a month for 10 seats
+- [HubSpot + Mailchimp](https://stackcostmatrix.com/stack/hubspot-and-mailchimp/): Native, $20.00 a month for 10 seats
+- [HubSpot + Salesforce Sales Cloud](https://stackcostmatrix.com/stack/hubspot-and-salesforce/): Native, $1,750.00 a month for 10 seats
 
-[### Freshdesk + Slack
-
-Native](https://stackcostmatrix.com/stack/freshdesk-and-slack/)[### HubSpot + Slack
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-slack/)[### HubSpot + Stripe
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-stripe/)[### HubSpot + ClickUp
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-clickup/)[### HubSpot + Monday.com
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-monday/)[### Intercom + HubSpot
-
-Native](https://stackcostmatrix.com/stack/intercom-and-hubspot/)
+Freshdesk + HubSpot is also covered in the [CRM integration hidden-costs guide](https://stackcostmatrix.com/crm-integration-pricing-guide/), the guide to [which HubSpot integrations need Professional](https://stackcostmatrix.com/hubspot-professional-integrations/) and the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Last checked: Nov 3, 2026
 

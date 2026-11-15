@@ -106,6 +106,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Plus') Source: [ActiveCampaign: Getting started with the API ↗](https://help.activecampaign.com/hc/en-us/articles/207317590) · Verified Nov 3, 2026 | Yes  ('Free') Source: [Slack developers: Incoming webhooks ↗](https://api.slack.com/messaging/webhooks) · Verified Nov 3, 2026 |
 | Webhook support at required tier | Yes  ('Plus') Source: [ActiveCampaign: Use webhooks ↗](https://help.activecampaign.com/hc/en-us/articles/115001403484) · Verified Nov 3, 2026 | Yes  ('Free') Incoming webhooks Source: [Slack developers: Incoming webhooks ↗](https://api.slack.com/messaging/webhooks) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [ActiveCampaign API access by plan](https://stackcostmatrix.com/activecampaign-api-access/) and [Slack API access by plan](https://stackcostmatrix.com/slack-api-access/).
+
 [Visit ActiveCampaign](https://stackcostmatrix.com/go/activecampaign)  [Visit Slack](https://stackcostmatrix.com/go/slack)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -130,21 +132,16 @@ It isn't included with ActiveCampaign Starter, so it forces Plus. It only sends 
 
 ## Integrations related to ActiveCampaign + Slack
 
-[All ActiveCampaign integrations →](https://stackcostmatrix.com/activecampaign-integrations-cost/) · [All Slack integrations →](https://stackcostmatrix.com/slack-integrations-cost/) · [ActiveCampaign API access by plan →](https://stackcostmatrix.com/activecampaign-api-access/) · [Slack API access by plan →](https://stackcostmatrix.com/slack-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 10 ActiveCampaign integrations](https://stackcostmatrix.com/activecampaign-integrations-cost/) and [all 17 Slack integrations](https://stackcostmatrix.com/slack-integrations-cost/).
 
-[### ActiveCampaign + Calendly
+- [ActiveCampaign + Calendly](https://stackcostmatrix.com/stack/activecampaign-and-calendly/): Native, $135.00 a month for 10 seats
+- [Intercom + ActiveCampaign](https://stackcostmatrix.com/stack/intercom-and-activecampaign/): Middleware, $415.59 a month for 10 seats
+- [Asana + ActiveCampaign](https://stackcostmatrix.com/stack/asana-and-activecampaign/): Middleware, $160.49 a month for 10 seats
+- [Mailchimp + Slack](https://stackcostmatrix.com/stack/mailchimp-and-slack/): Native, $0.00 a month for 10 seats
+- [Salesforce Sales Cloud + Slack](https://stackcostmatrix.com/stack/salesforce-and-slack/): Native, $1,737.50 a month for 10 seats
+- [Freshdesk + Slack](https://stackcostmatrix.com/stack/freshdesk-and-slack/): Native, $230.00 a month for 10 seats
 
-Native](https://stackcostmatrix.com/stack/activecampaign-and-calendly/)[### ActiveCampaign + Pipedrive
-
-Native](https://stackcostmatrix.com/stack/activecampaign-and-pipedrive/)[### ActiveCampaign + Stripe
-
-Native](https://stackcostmatrix.com/stack/activecampaign-and-stripe/)[### Asana + ActiveCampaign
-
-Middleware](https://stackcostmatrix.com/stack/asana-and-activecampaign/)[### ClickUp + ActiveCampaign
-
-Middleware](https://stackcostmatrix.com/stack/clickup-and-activecampaign/)[### Freshdesk + ActiveCampaign
-
-Middleware](https://stackcostmatrix.com/stack/freshdesk-and-activecampaign/)
+ActiveCampaign + Slack is also covered in the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Requirements checked: Nov 12, 2026; prices: Nov 3, 2026
 

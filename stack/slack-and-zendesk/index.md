@@ -111,6 +111,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Free') Source: [Slack developers: Incoming webhooks ↗](https://api.slack.com/messaging/webhooks) · Verified Nov 3, 2026 | Yes  ('Suite Team') 200 requests/min Source: [Zendesk developers: Rate limits ↗](https://developer.zendesk.com/api-reference/introduction/rate-limits/) · Verified Nov 3, 2026 |
 | Webhook support at required tier | Yes  ('Free') Incoming webhooks Source: [Slack developers: Incoming webhooks ↗](https://api.slack.com/messaging/webhooks) · Verified Nov 3, 2026 | Yes  ('Suite Team') Source: [Zendesk: Creating webhooks ↗](https://support.zendesk.com/hc/en-us/articles/4408839108378) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [Slack API access by plan](https://stackcostmatrix.com/slack-api-access/) and [Zendesk API access by plan](https://stackcostmatrix.com/zendesk-api-access/).
+
 [Visit Slack](https://stackcostmatrix.com/go/slack)  [Visit Zendesk](https://stackcostmatrix.com/go/zendesk)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -135,21 +137,16 @@ It needs a Zendesk Suite plan from Team up. Organization-shared channels on Slac
 
 ## Integrations related to Slack + Zendesk
 
-[All Slack integrations →](https://stackcostmatrix.com/slack-integrations-cost/) · [All Zendesk integrations →](https://stackcostmatrix.com/zendesk-integrations-cost/) · [Slack API access by plan →](https://stackcostmatrix.com/slack-api-access/) · [Zendesk API access by plan →](https://stackcostmatrix.com/zendesk-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 17 Slack integrations](https://stackcostmatrix.com/slack-integrations-cost/) and [all 11 Zendesk integrations](https://stackcostmatrix.com/zendesk-integrations-cost/).
 
-[### HubSpot + Slack
+- [Slack + Intercom](https://stackcostmatrix.com/stack/slack-and-intercom/): Native, $390.00 a month for 10 seats
+- [Slack + Calendly](https://stackcostmatrix.com/stack/slack-and-calendly/): Native, $0.00 a month for 10 seats
+- [Asana + Slack](https://stackcostmatrix.com/stack/asana-and-slack/): Native, $134.90 a month for 10 seats
+- [Zendesk + Asana](https://stackcostmatrix.com/stack/zendesk-and-asana/): Native, $824.90 a month for 10 seats
+- [Salesforce Sales Cloud + Zendesk](https://stackcostmatrix.com/stack/salesforce-and-zendesk/): Native, $1,940.00 a month for 10 seats
+- [ClickUp + Zendesk](https://stackcostmatrix.com/stack/clickup-and-zendesk/): Native, $690.00 a month for 10 seats
 
-Native](https://stackcostmatrix.com/stack/hubspot-and-slack/)[### HubSpot + Zendesk
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-zendesk/)[### Slack + Calendly
-
-Native](https://stackcostmatrix.com/stack/slack-and-calendly/)[### Stripe + Slack
-
-Native](https://stackcostmatrix.com/stack/stripe-and-slack/)[### Zendesk + Notion
-
-Middleware](https://stackcostmatrix.com/stack/zendesk-and-notion/)[### Zendesk + Stripe
-
-Middleware](https://stackcostmatrix.com/stack/zendesk-and-stripe/)
+Slack + Zendesk is also covered in the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Last checked: Nov 3, 2026
 

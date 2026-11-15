@@ -49,6 +49,9 @@ print(f"{len(pages)} pages checked, {bad} problems")
 sys.exit(1 if bad else 0)
 EOF
 
+step "Internal links (click depth, related cards, hub and API links, link text, footer)"
+python3 scripts/linkcheck.py | tail -8; [ "${PIPESTATUS[0]}" -eq 0 ] || fail=1
+
 step "Security tags (Content-Security-Policy matches each page's scripts)"
 python3 scripts/security.py check | tail -3; [ "${PIPESTATUS[0]}" -eq 0 ] || fail=1
 

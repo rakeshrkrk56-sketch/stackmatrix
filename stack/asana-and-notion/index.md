@@ -110,6 +110,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Starter') Source: [Asana pricing ↗](https://asana.com/pricing) · Verified Oct 17, 2026 | Yes  ('Plus') Source: [Notion developers: Webhooks ↗](https://developers.notion.com/reference/webhooks) · Verified Nov 3, 2026 |
 | Webhook support at required tier | Yes  ('Starter') API webhooks; no plan requirement stated Source: [Asana developers: Webhooks guide ↗](https://developers.asana.com/docs/webhooks-guide) · Verified Nov 3, 2026 | Yes  ('Plus') Source: [Notion developers: Webhooks ↗](https://developers.notion.com/reference/webhooks) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [Asana API access by plan](https://stackcostmatrix.com/asana-api-access/) and [Notion API access by plan](https://stackcostmatrix.com/notion-api-access/).
+
 [Visit Asana](https://stackcostmatrix.com/go/asana)  [Visit Notion](https://stackcostmatrix.com/go/notion)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -134,21 +136,16 @@ It's one-way, and a database made from Asana is a one-time copy: Notion says the
 
 ## Integrations related to Asana + Notion
 
-[All Asana integrations →](https://stackcostmatrix.com/asana-integrations-cost/) · [All Notion integrations →](https://stackcostmatrix.com/notion-integrations-cost/) · [Asana API access by plan →](https://stackcostmatrix.com/asana-api-access/) · [Notion API access by plan →](https://stackcostmatrix.com/notion-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 10 Asana integrations](https://stackcostmatrix.com/asana-integrations-cost/) and [all 7 Notion integrations](https://stackcostmatrix.com/notion-integrations-cost/).
 
-[### Asana + ActiveCampaign
+- [Asana + QuickBooks Online](https://stackcostmatrix.com/stack/asana-and-quickbooks/): Middleware, $183.49 a month for 10 seats
+- [Asana + Slack](https://stackcostmatrix.com/stack/asana-and-slack/): Native, $134.90 a month for 10 seats
+- [Xero + Asana](https://stackcostmatrix.com/stack/xero-and-asana/): Middleware, $172.49 a month for 10 seats
+- [ClickUp + Notion](https://stackcostmatrix.com/stack/clickup-and-notion/): Native, $120.00 a month for 10 seats
+- [Notion + Calendly](https://stackcostmatrix.com/stack/notion-and-calendly/): Middleware, $250.59 a month for 10 seats
+- [Notion + Stripe](https://stackcostmatrix.com/stack/notion-and-stripe/): Middleware, $130.59 a month for 10 seats
 
-Middleware](https://stackcostmatrix.com/stack/asana-and-activecampaign/)[### Asana + Mailchimp
-
-Middleware](https://stackcostmatrix.com/stack/asana-and-mailchimp/)[### Asana + QuickBooks
-
-Middleware](https://stackcostmatrix.com/stack/asana-and-quickbooks/)[### Asana + Salesforce
-
-Native](https://stackcostmatrix.com/stack/asana-and-salesforce/)[### Asana + Slack
-
-Native](https://stackcostmatrix.com/stack/asana-and-slack/)[### HubSpot + Asana
-
-Native](https://stackcostmatrix.com/stack/hubspot-and-asana/)
+Asana + Notion is also covered in the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Requirements checked: Nov 12, 2026; prices: Nov 3, 2026
 

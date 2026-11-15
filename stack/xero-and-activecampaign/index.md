@@ -113,6 +113,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Early') Limits set by the app's developer tier Source: [Xero developers: Pricing and tiers ↗](https://developer.xero.com/pricing) · Verified Nov 3, 2026 | Yes  ('Starter') Source: [ActiveCampaign: Getting started with the API ↗](https://help.activecampaign.com/hc/en-us/articles/207317590) · Verified Nov 3, 2026 |
 | Webhook support at required tier | Yes  ('Early') No plan requirement in Xero's webhook docs Source: [Xero developers: Webhooks ↗](https://developer.xero.com/documentation/guides/webhooks/overview) · Verified Nov 3, 2026 | Yes  ('Starter') Source: [ActiveCampaign: Use webhooks ↗](https://help.activecampaign.com/hc/en-us/articles/115001403484) · Verified Nov 3, 2026 |
 
+API and webhook access can change with the plan you are on: see [Xero API access by plan](https://stackcostmatrix.com/xero-api-access/) and [ActiveCampaign API access by plan](https://stackcostmatrix.com/activecampaign-api-access/).
+
 [Visit Xero](https://stackcostmatrix.com/go/xero)  [Visit ActiveCampaign](https://stackcostmatrix.com/go/activecampaign)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -137,21 +139,16 @@ Xero's Early plan allows 20 invoices and 5 bills a month; if you send more invoi
 
 ## Integrations related to Xero + ActiveCampaign
 
-[All Xero integrations →](https://stackcostmatrix.com/xero-integrations-cost/) · [All ActiveCampaign integrations →](https://stackcostmatrix.com/activecampaign-integrations-cost/) · [Xero API access by plan →](https://stackcostmatrix.com/xero-api-access/) · [ActiveCampaign API access by plan →](https://stackcostmatrix.com/activecampaign-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 10 Xero integrations](https://stackcostmatrix.com/xero-integrations-cost/) and [all 10 ActiveCampaign integrations](https://stackcostmatrix.com/activecampaign-integrations-cost/).
 
-[### ActiveCampaign + Calendly
+- [Xero + Zendesk](https://stackcostmatrix.com/stack/xero-and-zendesk/): Middleware, $727.59 a month for 10 seats
+- [Salesforce Sales Cloud + Xero](https://stackcostmatrix.com/stack/salesforce-and-xero/): Middleware, $1,287.59 a month for 10 seats
+- [Xero + Slack](https://stackcostmatrix.com/stack/xero-and-slack/): Middleware, $37.59 a month for 10 seats
+- [ActiveCampaign + Stripe](https://stackcostmatrix.com/stack/activecampaign-and-stripe/): Native, $49.00 a month for 10 seats
+- [Monday.com + ActiveCampaign](https://stackcostmatrix.com/stack/monday-and-activecampaign/): Middleware, $165.59 a month for 10 seats
+- [ActiveCampaign + Pipedrive](https://stackcostmatrix.com/stack/activecampaign-and-pipedrive/): Native, $405.00 a month for 10 seats
 
-Native](https://stackcostmatrix.com/stack/activecampaign-and-calendly/)[### ActiveCampaign + Pipedrive
-
-Native](https://stackcostmatrix.com/stack/activecampaign-and-pipedrive/)[### ActiveCampaign + Stripe
-
-Native](https://stackcostmatrix.com/stack/activecampaign-and-stripe/)[### Pipedrive + Xero
-
-Middleware](https://stackcostmatrix.com/stack/pipedrive-and-xero/)[### Stripe + Xero
-
-Native](https://stackcostmatrix.com/stack/stripe-and-xero/)[### Xero + Calendly
-
-Middleware](https://stackcostmatrix.com/stack/xero-and-calendly/)
+Xero + ActiveCampaign is also covered in the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Last checked: Nov 3, 2026 (exceptions listed at the top)
 

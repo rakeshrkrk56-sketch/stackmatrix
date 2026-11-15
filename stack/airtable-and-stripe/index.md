@@ -112,6 +112,8 @@ Side-by-side spec matrix
 | API access at required tier | Yes  ('Team') 100,000 API calls a month Source: [Airtable: Managing API call limits ↗](https://support.airtable.com/articles/7735693959-managing-api-call-limits-in-airtable) · Verified Nov 3, 2026 | Yes  ('Standard') Source: [Stripe pricing ↗](https://stripe.com/pricing) · Verified Oct 17, 2026 |
 | Webhook support at required tier | Yes  ('Team') Source: [Airtable: Create a webhook ↗](https://airtable.com/developers/web/api/create-a-webhook) · Verified Nov 3, 2026 | Yes  ('Standard') Source: [Stripe API docs ↗](https://docs.stripe.com/api) · Verified Oct 17, 2026 |
 
+API and webhook access can change with the plan you are on: see [Airtable API access by plan](https://stackcostmatrix.com/airtable-api-access/) and [Stripe API access by plan](https://stackcostmatrix.com/stripe-api-access/).
+
 [Visit Airtable](https://stackcostmatrix.com/go/airtable)  [Visit Stripe](https://stackcostmatrix.com/go/stripe)
 
 Some outbound links may earn us a referral commission at no extra cost to you. [Read our affiliate disclosure](https://stackcostmatrix.com/about/).
@@ -136,21 +138,16 @@ Each Make or Zapier scenario runs one way. Every Make run that reads or writes A
 
 ## Integrations related to Airtable + Stripe
 
-[All Airtable integrations →](https://stackcostmatrix.com/airtable-integrations-cost/) · [All Stripe integrations →](https://stackcostmatrix.com/stripe-integrations-cost/) · [Airtable API access by plan →](https://stackcostmatrix.com/airtable-api-access/) · [Stripe API access by plan →](https://stackcostmatrix.com/stripe-api-access/)
+More integrations for the same two tools, each with its connection type and what it costs a 10-person team. The full lists: [all 8 Airtable integrations](https://stackcostmatrix.com/airtable-integrations-cost/) and [all 13 Stripe integrations](https://stackcostmatrix.com/stripe-integrations-cost/).
 
-[### Slack + Airtable
+- [HubSpot + Airtable](https://stackcostmatrix.com/stack/hubspot-and-airtable/): Native, $200.00 a month for 10 seats
+- [Xero + Airtable](https://stackcostmatrix.com/stack/xero-and-airtable/): Middleware, $37.59 a month for 10 seats
+- [Salesforce Sales Cloud + Airtable](https://stackcostmatrix.com/stack/salesforce-and-airtable/): Native, $1,790.00 a month for 10 seats
+- [Notion + Stripe](https://stackcostmatrix.com/stack/notion-and-stripe/): Middleware, $130.59 a month for 10 seats
+- [ClickUp + Stripe](https://stackcostmatrix.com/stack/clickup-and-stripe/): Middleware, $10.59 a month for 10 seats
+- [Stripe + QuickBooks Online](https://stackcostmatrix.com/stack/stripe-and-quickbooks/): Middleware, $48.59 a month for 10 seats
 
-Native](https://stackcostmatrix.com/stack/slack-and-airtable/)[### ActiveCampaign + Stripe
-
-Native](https://stackcostmatrix.com/stack/activecampaign-and-stripe/)[### Intercom + Stripe
-
-Native](https://stackcostmatrix.com/stack/intercom-and-stripe/)[### Notion + Stripe
-
-Middleware](https://stackcostmatrix.com/stack/notion-and-stripe/)[### Stripe + Slack
-
-Native](https://stackcostmatrix.com/stack/stripe-and-slack/)[### Zendesk + Stripe
-
-Middleware](https://stackcostmatrix.com/stack/zendesk-and-stripe/)
+Airtable + Stripe is also covered in the [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/), which adds up the hidden costs of all 90 pairs.
 
 Last checked: Nov 3, 2026 (exceptions listed at the top)
 

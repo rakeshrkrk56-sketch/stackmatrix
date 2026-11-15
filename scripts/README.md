@@ -28,6 +28,7 @@ Run everything **from the repo root**. Needs `python3`, plus `node` with Playwri
 | HubSpot Professional guide | `hubspot-professional-integrations/` | `hspro.py`. Integration requirements come from the pair pages; each Professional Hub's prices are in its `PRO` list (re-read them on HubSpot's pricing pages, clicking the billing toggles). |
 | Editor & site identity | every page | `site16.py`: "Edited by Rakesh" byline, one Organization/WebSite/Person @id graph (homepage, /about/) that every page's schema points to, the 1200x630 `og-image.png`, breadcrumbs on the hand-written guides, and the 404 page's redirect for reversed pair URLs (/stack/b-and-a/). Run after the generators. |
 | Sitemap | `sitemap-0.xml` | `sitemap16.py` rebuilds it from the pages on disk, with lastmod from each page's dateModified (or its last commit). |
+| Links between pages | every page | `links24.py` rebuilds them on every build: the related-pair cards and the API sentence on pair pages, the "by tool" grid and API list on the homepage, the link lists and pair tables on the three hand-written pages, and the footer's guide list. `hubs.py` and `apipages.py` write the same lists on the pages they generate. See "Links between pages" below. |
 | Jump links | every long page | `ux18.py` adds the "On this page" row under the intro and the anchors it points to. Run it after `pairfix.py` and the generators (they rebuild pages without it). |
 | AI/agent files | `llms.txt`, `llms-full.txt`, `<page>/index.md`, robots.txt Content-Signal | `agent17.py` regenerates them from the pages and the open data. |
 | Share images | `og/<pair>.jpg`, `og-image.png` | `og17.py` renders a 1200x630 card per pair (cost, extra cost, plans); `site16.py` points each page at it. |
@@ -42,6 +43,16 @@ The look lives in one place: the `CSS` string in `ui13.py`, written into every p
 - **Homepage chart:** `ui13.py` `fare_chart()` rebuilds it from the pair pages on every run. `PRICE_NOTE` under it repeats the price-check dates from `/about/`; update both together.
 - **Charts, diagrams, share images, icons:** bar colours are set where each chart is built (`model.py`, `pairfix.py`, `hubs.py`, `research.py`, `ux18.py`); share images in `og17.py` (it also writes `/og-image.png`); icons come from `logo.svg` and `favicon.svg` through `icons.py`.
 
+## Links between pages
+`links24.py` owns every block of internal links that used to be written once and then went stale. It runs in `build_all.sh` after the page generators and before `ux18.py`, and replaces each block on every run.
+- **Related cards on pair pages.** Each tool's partners are put in a ring, ordered by category (`CAT_ORDER`, read from the homepage cards' `data-cats`) and then by name. A page links to its three nearest neighbours in each of its two rings. A pair whose tools both have four or more integrations therefore gets at least six links from other pair pages (seven where a page's other tool has only three integrations and takes four cards from this side); a new pair is linked from older pages on the next build; adding one changes only its neighbours' cards. Each card shows the connection type and the 10-seat monthly total. `pairfix.py` and `consistency.py` read the card's one-word type line, so keep that `<p>` as it is.
+- **Sentences, not chains.** Links to hubs, API pages, the CRM guide, the HubSpot Professional guide and the report sit in sentences that say what the target is. Don't go back to "A → · B → · C →" rows or to link text such as "Calculator →": the same words on 150 links tell a reader, and a search engine, nothing about the page behind each one.
+- **Link lists** (`hubs.index_list`, class `scm-index`): "Slack integrations" leads to a hub, "Slack API access" to an API page. The tool's name alone used to point at both.
+- **Hand-written tables** (HubSpot hub, Salesforce hub, CRM guide): the pair's name in the first cell is the link. A row added in the old shape (plain name, a last cell with "True-cost calculator →") is converted on the next build; `ux18.py` then appends the 10-seat total and the check date.
+- **Footer.** `site_nav()` writes the same "Cost guides" list on every page and computes the pair count. A `newpairs` script copies a template page and swaps tool names, which used to rewrite the footer's first link on the new page; the build now puts it right.
+- **Check:** `linkcheck.py` (part of `check_all.sh`) fails if a sitemap page is more than three clicks from the homepage, a pair page has fewer than three links from other pair pages or lacks a link to its tools' hubs and API pages, the homepage misses a hub or API page, link text says nothing ("Calculator", "Read more"), or the footer differs between pages.
+- **IndexNow:** `python3 scripts/indexnow.py --since YYYY-MM-DD` lists the sitemap URLs changed since that day; add `--send` to notify Bing. It contacts an outside service, so it is not part of the build: run it only when the owner says so, after the change is live.
+
 ## Common jobs
 
 **Change a price** (example: Slack Pro goes from $8.75 to $9.25 per seat, monthly):
@@ -52,6 +63,7 @@ python3 scripts/hubs.py               # tool hubs
 python3 scripts/apipages.py           # API pages (plan price column)
 python3 scripts/research.py           # only if the change corrects the report's figures
 python3 scripts/ui13.py               # finder data on homepage/404
+python3 scripts/links24.py            # related-pair cards (they show each pair's 10-seat cost), link lists, footer
 python3 scripts/og17.py               # share images for pairs, hubs, API pages and the report chart (only re-renders changed ones)
 python3 scripts/ux18.py               # "On this page" jump links and their anchors
 python3 scripts/site16.py             # editor byline, shared Organization/Person schema, share images, 404 redirects
@@ -64,7 +76,7 @@ Then update `data/integration-pairs.json` (that tool's plan prices and each affe
 
 **Change which plan an integration needs:** add a new dated `pairdataN.py` with a `PAIRS` entry (`native`, `req`, `sync`, `summary`) and, if needed, `COPY` text with its sources. See `pairdata8.py` to `pairdata13.py` for examples. Then run the same commands as above.
 
-**Add new pairs (between tools the site already prices):** write a dated `pairdataN.py` like `pairdata22.py` (per pair: a template page of the same connection type that shares one tool, the plans each tool needs, summary, answer, how it works, limits, setup steps, sources, diagram labels), hook it into `pairfix.py` next to `pairdata22`, then run a copy of `newpairs22.py` (builds the pages once from their templates) and of `wire22.py` (open data, homepage cards, counts, guide rows, changelogs, READMEs), then `build_all.sh` and `check_all.sh`. `research.py` picks up new pairs by itself; log the report's changed figures (see rule 5). Batch 2 (`pairdata23.py`, `newpairs23.py`, `wire23.py`) is the latest worked example. A tool tier no page used before gets its spec cells from another tier with the same facts in `apidata.py`; `newpairs22.py` prints each case.
+**Add new pairs (between tools the site already prices):** write a dated `pairdataN.py` like `pairdata22.py` (per pair: a template page of the same connection type that shares one tool, the plans each tool needs, summary, answer, how it works, limits, setup steps, sources, diagram labels), hook it into `pairfix.py` next to `pairdata22`, then run a copy of `newpairs22.py` (builds the pages once from their templates) and of `wire22.py` (open data, homepage cards, counts, guide rows, changelogs, READMEs), then `build_all.sh` and `check_all.sh`. The build's `links24.py` step then links the new pages in by itself: related cards on the new and the neighbouring pages, the guide rows' links, the homepage "by tool" grid if a tool gains a hub, and the footer. `research.py` picks up new pairs by itself; log the report's changed figures (see rule 5). Batch 2 (`pairdata23.py`, `newpairs23.py`, `wire23.py`) is the latest worked example. A tool tier no page used before gets its spec cells from another tier with the same facts in `apidata.py`; `newpairs22.py` prints each case.
 
 **Read a vendor page the way the checks did:** `node scripts/docread.js <outdir> name=https://vendor.com/pricing` saves the page text to `<outdir>/name.txt` and prints plan-related sentences.
 

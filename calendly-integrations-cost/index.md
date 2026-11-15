@@ -13,20 +13,20 @@ This page collects the 10 Calendly integrations in the StackCostMatrix index: wh
 
 Calendly Integration Costs (2026): Minimum Plans, API Access & Hidden Fees
 
-| Integration | Type | Min. Calendly plan | Other tool's plan | 10-seat total | Checked | Details |
-| --- | --- | --- | --- | --- | --- | --- |
-| [Slack + Calendly](https://stackcostmatrix.com/stack/slack-and-calendly/) | Native | Free | Free | $0.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/slack-and-calendly/) |
-| [HubSpot + Calendly](https://stackcostmatrix.com/stack/hubspot-and-calendly/) | Native | Standard | Free | $120.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/hubspot-and-calendly/) |
-| [Mailchimp + Calendly](https://stackcostmatrix.com/stack/mailchimp-and-calendly/) | Native | Standard | Free | $120.00 | Nov 8, 2026 | [Calculator →](https://stackcostmatrix.com/stack/mailchimp-and-calendly/) |
-| [Stripe + Calendly](https://stackcostmatrix.com/stack/stripe-and-calendly/) | Native | Standard | Standard | $120.00 | Nov 12, 2026 | [Calculator →](https://stackcostmatrix.com/stack/stripe-and-calendly/) |
-| [ActiveCampaign + Calendly](https://stackcostmatrix.com/stack/activecampaign-and-calendly/) | Native | Standard | Starter | $135.00 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/activecampaign-and-calendly/) |
-| [Xero + Calendly](https://stackcostmatrix.com/stack/xero-and-calendly/) | Middleware Zapier Professional $29.99/mo | Standard | Early | $176.99 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/xero-and-calendly/) |
-| [Notion + Calendly](https://stackcostmatrix.com/stack/notion-and-calendly/) | Middleware Make Core $10.59/mo | Standard | Plus | $250.59 | Nov 3, 2026 | [Calculator →](https://stackcostmatrix.com/stack/notion-and-calendly/) |
-| [Pipedrive + Calendly](https://stackcostmatrix.com/stack/pipedrive-and-calendly/) | Middleware Make Core $10.59/mo | Standard | Lite | $270.59 | Nov 3, 2026 (Pipedrive plan unconfirmed) | [Calculator →](https://stackcostmatrix.com/stack/pipedrive-and-calendly/) |
-| [Intercom + Calendly](https://stackcostmatrix.com/stack/intercom-and-calendly/) | Native | Free | Essential | $390.00 | Nov 12, 2026 | [Calculator →](https://stackcostmatrix.com/stack/intercom-and-calendly/) |
-| [Salesforce + Calendly](https://stackcostmatrix.com/stack/salesforce-and-calendly/) | Native | Teams | Enterprise | $1,850.00 | Nov 12, 2026 | [Calculator →](https://stackcostmatrix.com/stack/salesforce-and-calendly/) |
+| Integration | Type | Min. Calendly plan | Other tool's plan | 10-seat total | Checked |
+| --- | --- | --- | --- | --- | --- |
+| [Slack + Calendly](https://stackcostmatrix.com/stack/slack-and-calendly/) | Native | Free | Free | $0.00 | Nov 3, 2026 |
+| [HubSpot + Calendly](https://stackcostmatrix.com/stack/hubspot-and-calendly/) | Native | Standard | Free | $120.00 | Nov 3, 2026 |
+| [Mailchimp + Calendly](https://stackcostmatrix.com/stack/mailchimp-and-calendly/) | Native | Standard | Free | $120.00 | Nov 8, 2026 |
+| [Stripe + Calendly](https://stackcostmatrix.com/stack/stripe-and-calendly/) | Native | Standard | Standard | $120.00 | Nov 12, 2026 |
+| [ActiveCampaign + Calendly](https://stackcostmatrix.com/stack/activecampaign-and-calendly/) | Native | Standard | Starter | $135.00 | Nov 3, 2026 |
+| [Xero + Calendly](https://stackcostmatrix.com/stack/xero-and-calendly/) | Middleware Zapier Professional $29.99/mo | Standard | Early | $176.99 | Nov 3, 2026 |
+| [Notion + Calendly](https://stackcostmatrix.com/stack/notion-and-calendly/) | Middleware Make Core $10.59/mo | Standard | Plus | $250.59 | Nov 3, 2026 |
+| [Pipedrive + Calendly](https://stackcostmatrix.com/stack/pipedrive-and-calendly/) | Middleware Make Core $10.59/mo | Standard | Lite | $270.59 | Nov 3, 2026 (Pipedrive plan unconfirmed) |
+| [Intercom + Calendly](https://stackcostmatrix.com/stack/intercom-and-calendly/) | Native | Free | Essential | $390.00 | Nov 12, 2026 |
+| [Salesforce + Calendly](https://stackcostmatrix.com/stack/salesforce-and-calendly/) | Native | Teams | Enterprise | $1,850.00 | Nov 12, 2026 |
 
-Totals are monthly-billing prices for 10 seats on the minimum plans, including any connector fee. Open a calculator to change team size, switch to annual billing or add usage costs.
+Totals are monthly-billing prices for 10 seats on the minimum plans, including any connector fee. Each integration's name opens its page, where a calculator lets you change team size, switch to annual billing or add usage costs.
 
 Chart: Calendly integrations: monthly cost for 10 seats on the plans each needs: Salesforce + Calendly $1,850.00; Intercom + Calendly $390.00; Pipedrive + Calendly $270.59; Notion + Calendly $250.59; Xero + Calendly $176.99; ActiveCampaign + Calendly $135.00; HubSpot + Calendly $120.00; Mailchimp + Calendly $120.00; Stripe + Calendly $120.00; Slack + Calendly $0.00
 
@@ -38,7 +38,7 @@ Image: [Calendly integration costs summary: 10 integrations priced, from $0 to $
 
 ## Which Calendly integrations force a plan upgrade?
 
-8 of the 10 integrations need a more expensive Calendly plan than Free, Calendly's cheapest plan with API access. The extra Calendly cost at 10 seats: Salesforce + Calendly needs Teams (+$200.00/mo); HubSpot + Calendly needs Standard (+$120.00/mo); Mailchimp + Calendly needs Standard (+$120.00/mo); Stripe + Calendly needs Standard (+$120.00/mo); ActiveCampaign + Calendly needs Standard (+$120.00/mo); Xero + Calendly needs Standard (+$120.00/mo); Notion + Calendly needs Standard (+$120.00/mo); Pipedrive + Calendly needs Standard (+$120.00/mo). That gap is the hidden cost: you pay it every month even if you only wanted the integration. Each pair's "Hidden Cost Trap" box shows the full breakdown.
+8 of the 10 integrations need a more expensive Calendly plan than Free, Calendly's cheapest plan with API access. The extra Calendly cost at 10 seats: Salesforce + Calendly needs Teams (+$200.00/mo); HubSpot + Calendly needs Standard (+$120.00/mo); Mailchimp + Calendly needs Standard (+$120.00/mo); Stripe + Calendly needs Standard (+$120.00/mo); ActiveCampaign + Calendly needs Standard (+$120.00/mo); Xero + Calendly needs Standard (+$120.00/mo); Notion + Calendly needs Standard (+$120.00/mo); Pipedrive + Calendly needs Standard (+$120.00/mo). That gap is the hidden cost: you pay it every month even if you only wanted the integration. Each pair's "Hidden Cost Trap" box shows the full breakdown. The [Integration Tax 2026 report](https://stackcostmatrix.com/integration-tax-2026/) adds these costs up across all 90 pairs in the index.
 
 ## Which Calendly integrations need Make or Zapier?
 
@@ -66,7 +66,23 @@ Full 20-tool source index: [About StackCostMatrix →](https://stackcostmatrix.c
 
 ## Integration costs by tool
 
-[ActiveCampaign](https://stackcostmatrix.com/activecampaign-integrations-cost/) · [Airtable](https://stackcostmatrix.com/airtable-integrations-cost/) · [Asana](https://stackcostmatrix.com/asana-integrations-cost/) · [ClickUp](https://stackcostmatrix.com/clickup-integrations-cost/) · [Freshdesk](https://stackcostmatrix.com/freshdesk-integrations-cost/) · [HubSpot](https://stackcostmatrix.com/hubspot-integrations-cost/) · [Intercom](https://stackcostmatrix.com/intercom-integrations-cost/) · [Mailchimp](https://stackcostmatrix.com/mailchimp-integrations-cost/) · [Monday.com](https://stackcostmatrix.com/monday-integrations-cost/) · [Notion](https://stackcostmatrix.com/notion-integrations-cost/) · [Pipedrive](https://stackcostmatrix.com/pipedrive-integrations-cost/) · [QuickBooks](https://stackcostmatrix.com/quickbooks-integrations-cost/) · [Salesforce](https://stackcostmatrix.com/salesforce-integrations-cost/) · [Slack](https://stackcostmatrix.com/slack-integrations-cost/) · [Stripe](https://stackcostmatrix.com/stripe-integrations-cost/) · [Xero](https://stackcostmatrix.com/xero-integrations-cost/) · [Zendesk](https://stackcostmatrix.com/zendesk-integrations-cost/)
+- [ActiveCampaign integrations](https://stackcostmatrix.com/activecampaign-integrations-cost/)
+- [Airtable integrations](https://stackcostmatrix.com/airtable-integrations-cost/)
+- [Asana integrations](https://stackcostmatrix.com/asana-integrations-cost/)
+- [ClickUp integrations](https://stackcostmatrix.com/clickup-integrations-cost/)
+- [Freshdesk integrations](https://stackcostmatrix.com/freshdesk-integrations-cost/)
+- [HubSpot integrations](https://stackcostmatrix.com/hubspot-integrations-cost/)
+- [Intercom integrations](https://stackcostmatrix.com/intercom-integrations-cost/)
+- [Mailchimp integrations](https://stackcostmatrix.com/mailchimp-integrations-cost/)
+- [Monday.com integrations](https://stackcostmatrix.com/monday-integrations-cost/)
+- [Notion integrations](https://stackcostmatrix.com/notion-integrations-cost/)
+- [Pipedrive integrations](https://stackcostmatrix.com/pipedrive-integrations-cost/)
+- [QuickBooks integrations](https://stackcostmatrix.com/quickbooks-integrations-cost/)
+- [Salesforce integrations](https://stackcostmatrix.com/salesforce-integrations-cost/)
+- [Slack integrations](https://stackcostmatrix.com/slack-integrations-cost/)
+- [Stripe integrations](https://stackcostmatrix.com/stripe-integrations-cost/)
+- [Xero integrations](https://stackcostmatrix.com/xero-integrations-cost/)
+- [Zendesk integrations](https://stackcostmatrix.com/zendesk-integrations-cost/)
 
 ## Calendly integration costs: frequently asked questions
 
