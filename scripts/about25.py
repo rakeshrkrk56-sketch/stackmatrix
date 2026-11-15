@@ -17,9 +17,10 @@ SECTION = (H2 + ' <div class="mt-4 space-y-4 leading-relaxed text-slate-600" dat
            'pricing pages and help-centre articles, draft the text of the pages and write the scripts that build the site. The pages are generated '
            'by those scripts from one set of data, so a price corrected in one place is corrected everywhere it appears.</p> '
            + P + '<strong class="font-semibold text-slate-800">What the software doesn&#39;t decide.</strong> Every price, plan requirement and API fact '
-           'comes from the vendor&#39;s own page, read on the date shown next to it, and each page links the vendor pages it relies on so you can check '
-           'them. Where a vendor page couldn&#39;t be read, the page says so instead of guessing. Rakesh Kumar reviews and approves every change before '
-           'it&#39;s published.</p> '
+           'comes from the vendor&#39;s own page, read on the date shown next to it, and each page links the pages it relies on so you can check them. '
+           'Two exceptions are flagged wherever they apply: Pipedrive&#39;s prices come from an indexed copy of its pricing page and Make&#39;s monthly '
+           'price from third-party reviews, because both sites block automated checks. Where a vendor page couldn&#39;t be read, the page says so '
+           'instead of guessing. Rakesh Kumar reviews and approves every change before it&#39;s published.</p> '
            + P + 'Nothing here claims hands-on testing: the costs are what vendors publish, added up for a 10-person team. The connection diagrams are '
            'drawn from the facts on each page and labelled as diagrams.</p> </div> ')
 OLD_RE = re.compile(re.escape(H2) + r' <div class="mt-4 space-y-4 leading-relaxed text-slate-600" data-about="made">.*?</div> ', re.S)

@@ -23,7 +23,7 @@ is cheaper. Integration requirements re-checked 2026-11-03; prices re-checked 20
 
 ### Go middleware when…
 
-- Native forces a big plan upgrade (typically $120–$251/mo at 10 seats in our research)
+- Native forces a big plan upgrade (typically $120–$320/mo at 10 seats in our research)
 - You connect 3+ tools in one workflow
 - Your team is small and per-seat jumps hurt most
 

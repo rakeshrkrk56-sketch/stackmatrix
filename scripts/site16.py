@@ -29,6 +29,7 @@ PERSON = {"@type": "Person", "@id": EDITOR_URL, "name": EDITOR_NAME, "url": EDIT
           "description": f"Founder and editor of StackCostMatrix, with five years of experience across {EDITOR_AREAS}.",
           "knowsAbout": ["SaaS tools", "Sales and marketing operations", "Digital marketing and SEO", "Web development"],
           "worksFor": {"@id": ORG_ID}, "sameAs": [EDITOR_LINKEDIN, EDITOR_PROFILE]}
+DATA_MODIFIED = "2026-11-12"   # last change to data/integration-pairs.json (batch 2 of new pairs); update it with the data
 def graph(f, title, modified=None):
     """Organization + WebSite + Person, plus the page's own node (homepage WebPage / AboutPage)."""
     url = f"{SITE}/" + ("" if f == "index.html" else f[:-len("index.html")])
@@ -109,8 +110,8 @@ def main():
                                     "with the date it was checked; exceptions are flagged on each page.")
                 o["creator"] = {"@id": ORG_ID}; o["publisher"] = {"@id": ORG_ID}
                 o["distribution"] = [{"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": f"{SITE}/data/integration-pairs.json"}]
-                o["dateModified"] = "2026-11-08"
-                o["@id"] = DATASET_ID; o["isAccessibleForFree"] = True; o["temporalCoverage"] = "2026-10-17/2026-11-08"
+                o["dateModified"] = DATA_MODIFIED
+                o["@id"] = DATASET_ID; o["isAccessibleForFree"] = True; o["temporalCoverage"] = f"2026-10-17/{DATA_MODIFIED}"
                 o["keywords"] = ["SaaS pricing", "integration cost", "minimum plan", "API access by plan", "webhooks", "Zapier", "Make", "HubSpot", "Salesforce", "Slack", "Stripe"]
                 o["variableMeasured"] = ["Minimum plan required on each tool", "Monthly plan price (USD)", "Connector fee (USD per month)", "Monthly cost for 10 seats (USD)",
                                          "API access by plan", "Webhook availability by plan", "Date checked"]

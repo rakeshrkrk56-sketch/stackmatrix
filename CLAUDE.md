@@ -70,12 +70,21 @@ rediscover it. Details live in `scripts/README.md`. Update the "State" section a
 ## Audits (claude-seo plugin)
 - Sub-agent audits are expensive. Run only the categories a change could move, and resume an earlier auditor
   with SendMessage instead of starting a new one. Use the same rubric each round so scores stay comparable.
-- Scores on Nov 11, 2026, live site, with the authority/backlink part left out (the owner's chosen measure):
-  Technical 94, Sitemap 96, Performance 100, AI agents 92, Schema 92, Visual 90, GEO 91, Content 89, SXO 76.
+- Scores on Nov 15, 2026 (round 5), live site, with the authority/backlink part left out (the owner's chosen measure):
+  Technical 94, Sitemap 96, Performance 100, AI agents 93, Schema 94, Visual 91, GEO 92, Content 89, SXO 76
+  (Nov 11: 94, 96, 100, 92, 92, 90, 91, 89, 76). With authority counted: GEO 86, Content 85, SXO 72.
+- How each was measured, so the next round matches: Content "with Authoritativeness removed"; GEO "excluding Authority & Brand,
+  re-normalised"; SXO "without the Authority dimension", same five query/page pairs; Sitemap and Performance were measured
+  directly (all sitemap URLs fetched; Lighthouse on /, /stack/hubspot-and-salesforce/, /integration-tax-2026/ and
+  /hubspot-api-access/, phone and desktop). The auditors' findings files live in the session scratchpad and vanish with it.
+- Check an auditor's numbers before acting on them. On Nov 15 the visual auditor reported a 0.24 layout shift and 36px menu
+  links on phones; 54 page loads showed no shift and the links measure 44x47. The technical auditor missed that IndexNow had
+  been used that day.
 - Content needs first-hand evidence to pass 90: real screenshots from the owner. These pairs cost $0 to connect, so
   they can be tested for free: HubSpot + Slack, Stripe + Slack, Slack + Airtable, Slack + Calendly, ClickUp + Slack,
   HubSpot + Stripe.
-- SXO can't reach 90 from on-site work: it leans on authority and on the homepage's search intent.
+- SXO can't reach 90 from on-site work: it leans on authority and on the homepage's search intent. The redesign moved it
+  too (the homepage), not only Visual.
 
 ## Search Console access
 - `.mcp.json` starts a Search Console MCP server through `scripts/gsc_mcp.sh` (PyPI `mcp-search-console`, pinned to
@@ -154,13 +163,16 @@ rediscover it. Details live in `scripts/README.md`. Update the "State" section a
   (no readable vendor page says whether a native integration exists; zendesk.com/marketplace has a bot check),
   Pipedrive + Stripe (third-party Marketplace apps, pricing not read), Asana + Intercom (asana.com/apps/intercom is 404),
   Notion + Salesforce (needs Notion Enterprise, which the site doesn't price). help.asana.com doesn't render here.
-- Seven native pairs have no setup steps because their help centres can't be read: activecampaign-and-pipedrive,
-  activecampaign-and-stripe, clickup-and-slack, clickup-and-zendesk, hubspot-and-clickup, hubspot-and-monday,
-  monday-and-zendesk. The owner can paste the help text.
+- Eight native pairs have no setup steps because their help centres can't be read: activecampaign-and-pipedrive,
+  activecampaign-and-slack, activecampaign-and-stripe, clickup-and-slack, clickup-and-zendesk, hubspot-and-clickup,
+  hubspot-and-monday, monday-and-zendesk. The owner can paste the help text.
 - Owner tasks: the GitHub repo description still says 59 integrations (now 90; update it after each batch); real
   screenshots from the free pairs; a fresh Search
   Console export in about a month ("Last 3 months"). The Google key only if the owner wants live access later.
-- Waiting for the owner's yes or no: the 14 pair pages whose calculators leave out a free plan.
+- Waiting for the owner's yes or no: the 14 pair pages whose calculators leave out a free plan. The Nov 15 content audit rates
+  it Medium: five of them (hubspot-and-calendly, for one) say "No hidden cost" and call Calendly Standard "the cheapest plan
+  with API access", while the site's own Calendly API page says the API works on every plan; and the homepage chart shows 48
+  yellow cells against the report's 53. Fixing the calculators settles all three.
 - IndexNow (`python3 scripts/indexnow.py --since <date>`, then `--send`): the owner said yes for the Nov 15 changes. It contacts an outside
   service, so ask again before sending for a later change.
 - Optional, only if the owner asks: a short captioned video for the Integration Tax report.
@@ -210,5 +222,9 @@ rediscover it. Details live in `scripts/README.md`. Update the "State" section a
 - Nov 15, 2026: the owner asked for the "How this site is made" note (`about25.py`): AI tools help read vendor pages, draft text and write the
   scripts; facts come from vendor pages with dates and links; Rakesh approves every change. Opened as PR #36. After it merges, send
   `/about/` to IndexNow (the owner's yes covered the day's changes).
-- Not re-audited since the redesign: the claude-seo "Visual" category (was 90). Worth one run when the owner asks
-  for scores again; the other categories were not touched by the redesign.
+- Nov 15, 2026: the owner asked for fresh claude-seo scores: round 5 above (seven auditors resumed after a usage-limit
+  pause; Sitemap and Performance measured directly). Fixed from its findings, in PR #36 with the About note: the CRM guide
+  still quoted the report's old upgrade range ($120-$251; `research.py` now writes the current one there), the homepage
+  Dataset's dates (`site16.py` DATA_MODIFIED), the Salesforce API page's schema headline, and the About note now names the
+  Pipedrive and Make price exceptions. Left for later: the webhook explainer is the same text on all 18 API pages; repo
+  files such as /CLAUDE.md are served by GitHub Pages (moving to a deploy from a build folder needs the owner's settings).
