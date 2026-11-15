@@ -106,7 +106,7 @@ def build(slug, tool, pairs, hubs, api_urls):
             f'{h2q("API access by plan")}Which {esc(short)} plans include API access and webhooks?</h2> {P}<strong>Short answer:</strong> {esc(T["answer"])}</p> {table} {note} {chart} {fig} {extra} {kinds} {integ} {sources} {navh}{faq_html} </section> ')
     ld = [
         {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faqs]},
-        {"@context": "https://schema.org", "@type": "TechArticle", "headline": title, "description": desc,
+        {"@context": "https://schema.org", "@type": "TechArticle", "headline": h1, "description": desc,
          "author": {"@type": "Organization", "name": "StackCostMatrix", "url": f"{SITE}/", "email": "admin@stackcostmatrix.com"}, "datePublished": "2026-11-03", "dateModified": max(T.get("modified", "2026-11-03"), "2026-11-15"),   # Nov 15: the list of other API pages changed on every page (Nov 11: plan chart, question headings)
          "citation": [u for _, u, _ in T["sources"]], "mainEntityOfPage": url,
          "publisher": {"@type": "Organization", "name": "StackCostMatrix", "url": f"{SITE}/", "logo": f"{SITE}/icon-512.png"}, "image": f"{SITE}/icon-512.png", "inLanguage": "en"},

@@ -226,7 +226,7 @@ def build():
     json.dump({k: (v if not isinstance(v, list) or k == "mw_fees" else len(v)) for k, v in S.items() if k != "by_tool"}, sys.stdout, default=str); print()
 
 def update_home_card():
-    """Homepage: the research card and the first FAQ answer quote the report's current figures."""
+    """Homepage (research card, first FAQ answer, cost section) and the CRM guide quote the report's current figures."""
     D, rows = dataset(); S = stats(rows)
     rng = f"${round(S['forced_q1']):,}–${round(S['forced_q3']):,}"
     new = (f"Original research: {S['taxed']} of {S['n']} popular integrations add a hidden monthly cost, usually {rng} a month when a plan upgrade is forced. "
@@ -255,6 +255,13 @@ def update_home_card():
     assert h.count(anchor) == 1
     h = h.replace(anchor, cost + anchor, 1)
     open("index.html", "w", encoding="utf-8").write(h)
+    # The CRM guide's "native vs middleware" table quotes the same range. polish16.py wrote it once (Nov 8) and it went
+    # stale when the report grew to 90 pairs ($120-$251 against the report's $120-$320), so it follows the report here.
+    f = "crm-integration-pricing-guide/index.html"; g = read(f)
+    g2, n = re.subn(r"Native forces a big plan upgrade \(typically \$[\d,]+–\$[\d,]+/mo at 10 seats in our research\)",
+                    f"Native forces a big plan upgrade (typically {rng}/mo at 10 seats in our research)", g)
+    assert n == 1, "CRM guide: upgrade range not found"
+    if g2 != g: open(f, "w", encoding="utf-8").write(g2)
 
 if __name__ == "__main__":
     build()
