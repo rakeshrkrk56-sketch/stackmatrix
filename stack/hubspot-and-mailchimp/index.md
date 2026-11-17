@@ -48,15 +48,15 @@ Sources (checked Nov 3, 2026; setup guide read again for the steps on Nov 10, 20
 **Native integration costs $20.00/mo ($240.00/yr)** for a 10-seat team —
 HubSpot 'Free' ($0.00/mo) + Mailchimp 'Standard' ($20.00/mo),
 no middleware required.
-Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capable tiers ($23.59/mo all-in) — the native path is cheaper.
+Alternative: skip the native tier upgrade and run via Make/Zapier middleware for ~$10.59/mo all-in (adds a third-party dependency).
 
  
 
 ## Native vs middleware for HubSpot + Mailchimp
 
-The native connector is the cheapest route here. Make or Zapier only makes sense if you already run other automations through it, or need a step the native app doesn't offer.
+The connector routes are cheaper on paper because they skip the forced plan upgrade. The trade-off: you swap the native connector for a third-party automation you build and maintain, sync stays 1-way per automation, and the connector bills by usage.
 
-Chart: HubSpot + Mailchimp: monthly cost for 10 seats by route: Native connector $20.00; Make Core route $23.59; Zapier Professional route $42.99
+Chart: HubSpot + Mailchimp: monthly cost for 10 seats by route: Native connector $20.00; Make Core route $10.59; Zapier Professional route $29.99
 
 Monthly cost for 10 seats by route, HubSpot + Mailchimp.
 
@@ -67,12 +67,12 @@ Integration routes compared for a 10-seat team
 | Route | Plans | 10 seats / month | Sync |
 | --- | --- | --- | --- |
 | Native HubSpot + Mailchimp connector | HubSpot 'Free' + Mailchimp 'Standard' | $20.00 | 1-way (HubSpot → Mailchimp) |
-| Make Core on the cheapest API plans | HubSpot 'Free' + Mailchimp 'Essentials' + Make | $23.59 | 1-way per scenario |
-| Zapier Professional on the cheapest API plans | HubSpot 'Free' + Mailchimp 'Essentials' + Zapier | $42.99 | 1-way per Zap |
+| Make Core on the cheapest API plans | HubSpot 'Free' + Mailchimp 'Free' + Make | $10.59 | 1-way per scenario |
+| Zapier Professional on the cheapest API plans | HubSpot 'Free' + Mailchimp 'Free' + Zapier | $29.99 | 1-way per Zap |
 
 Connector prices are monthly-billing list prices: Zapier Professional $29.99 (zapier.com/pricing) and Make Core $10.59 (from third-party pricing reviews, because make.com blocks automated checks). Both bill by usage, so high volumes cost more.
 
-Image: [HubSpot + Mailchimp integration cost summary: $20 a month for 10 seats, $7 of it is the hidden cost to connect; plans needed: HubSpot Free and Mailchimp Standard](https://stackcostmatrix.com/og/hubspot-and-mailchimp.jpg)
+Image: [HubSpot + Mailchimp integration cost summary: $20 a month for 10 seats, $20 of it is the hidden cost to connect; plans needed: HubSpot Free and Mailchimp Standard](https://stackcostmatrix.com/og/hubspot-and-mailchimp.jpg)
 
 ## ✓ Verified Vendor Facts
 
@@ -96,7 +96,11 @@ Mailchimp minimum tier
 Middleware fee
 :   None
 
-The hidden cost is a forced plan upgrade: Mailchimp needs 'Standard', $7/mo more than 'Essentials', its cheapest plan with API access. That adds $7/mo for 10 seats just to connect the two tools.
+The hidden cost is a forced plan upgrade: Mailchimp needs 'Standard', $20/mo more than 'Free', its cheapest plan with API access. That adds $20/mo for 10 seats just to connect the two tools. Running the same connection through Make on the cheapest API plans would cost about $10.59/mo in total instead of $20/mo, but you'd give up the native connector.
+
+ [Skip the native tier upgrade: connect HubSpot + Mailchimp via Make.com middleware instead](https://stackcostmatrix.com/go/make) 
+
+Affiliate link — we may earn a commission at no extra cost to you.
 
 ## Side-by-side spec matrix
 
@@ -122,7 +126,7 @@ Some outbound links may earn us a referral commission at no extra cost to you. [
 
 ### What are the minimum plan tiers required for the HubSpot + Mailchimp integration?
 
-To unlock the native integration, HubSpot must be on the 'Free' plan or higher and Mailchimp must be on the 'Standard' plan or higher. Mailchimp's cheapest plan with API access is 'Essentials', so 'Standard' is a $7/mo upgrade at 10 seats.
+To unlock the native integration, HubSpot must be on the 'Free' plan or higher and Mailchimp must be on the 'Standard' plan or higher. Mailchimp's cheapest plan with API access is 'Free', so 'Standard' is a $20/mo upgrade at 10 seats.
 
 ### How much does the HubSpot + Mailchimp stack cost per month for a 10-person team?
 
@@ -130,7 +134,7 @@ At 10 seats with the required tiers (HubSpot 'Free' + Mailchimp 'Standard'), the
 
 ### Is the HubSpot + Mailchimp integration native, and would Make or Zapier be cheaper?
 
-The HubSpot + Mailchimp connection is native — no third-party middleware subscription is required. Make would cost about $23.59/month on the cheapest API plans, more than the native route, so it only makes sense if you already use it.
+The HubSpot + Mailchimp connection is native — no third-party middleware subscription is required. Connecting through Make on the cheapest API plans would cost about $10.59/month in total instead of $20.00, but you'd replace the native connector with a third-party automation.
 
 ### What are the limitations of the HubSpot + Mailchimp integration?
 

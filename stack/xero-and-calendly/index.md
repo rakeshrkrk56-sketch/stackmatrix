@@ -68,7 +68,7 @@ Integration routes compared for a 10-seat team
 
 Connector prices are monthly-billing list prices: Zapier Professional $29.99 (zapier.com/pricing) and Make Core $10.59 (from third-party pricing reviews, because make.com blocks automated checks). Both bill by usage, so high volumes cost more.
 
-Image: [Xero + Calendly integration cost summary: $176.99 a month for 10 seats, $29.99 of it is the hidden cost to connect; plans needed: Xero Early and Calendly Standard](https://stackcostmatrix.com/og/xero-and-calendly.jpg)
+Image: [Xero + Calendly integration cost summary: $176.99 a month for 10 seats, $149.99 of it is the hidden cost to connect; plans needed: Xero Early and Calendly Standard](https://stackcostmatrix.com/og/xero-and-calendly.jpg)
 
 ## ✓ Verified Vendor Facts
 
@@ -92,7 +92,7 @@ Calendly minimum tier
 Middleware fee
 :   $29.99/mo
 
-The hidden cost here is the connector: there's no native Xero + Calendly app, so you pay for Zapier Professional ($29.99/mo) on top of both tools.
+The hidden cost here is the connector: there's no native Xero + Calendly app, so you pay for Zapier Professional ($29.99/mo) on top of both tools. On top of that, Calendly needs 'Standard', $120/mo more than 'Free', its cheapest plan with API access.
 
  [Connect Xero + Calendly via Make.com — the middleware this integration runs on](https://stackcostmatrix.com/go/make) 
 
@@ -122,7 +122,7 @@ Some outbound links may earn us a referral commission at no extra cost to you. [
 
 ### What are the minimum plan tiers required for the Xero + Calendly integration?
 
-To unlock the integration, Xero must be on the 'Early' plan or higher and Calendly must be on the 'Standard' plan or higher. Those are each tool's cheapest plan with API access (Xero 'Early' at $27/mo and Calendly 'Standard' at $120/mo for 10 seats), so the integration doesn't force an upgrade.
+To unlock the integration, Xero must be on the 'Early' plan or higher and Calendly must be on the 'Standard' plan or higher. Calendly's cheapest plan with API access is 'Free', so 'Standard' is a $120/mo upgrade at 10 seats.
 
 ### How much does the Xero + Calendly stack cost per month for a 10-person team?
 

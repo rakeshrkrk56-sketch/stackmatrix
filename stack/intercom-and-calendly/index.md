@@ -47,7 +47,7 @@ Sources (checked Nov 12, 2026): [Calendly: Calendly + Intercom ↗](https://cale
 **Native integration costs $390.00/mo ($4,680.00/yr)** for a 10-seat team —
 Intercom 'Essential' ($390.00/mo) + Calendly 'Free' ($0.00/mo),
 no middleware required.
-Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capable tiers ($400.59/mo all-in) — the native path is cheaper.
+Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest tiers it can use, with Calendly on 'Standard' ($520.59/mo all-in) — the native path is cheaper.
 
  
 
@@ -55,7 +55,7 @@ Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capab
 
 The native connector is the cheapest route here. Make or Zapier only makes sense if you already run other automations through it, or need a step the native app doesn't offer.
 
-Chart: Intercom + Calendly: monthly cost for 10 seats by route: Native connector $390.00; Make Core route $400.59; Zapier Professional route $419.99
+Chart: Intercom + Calendly: monthly cost for 10 seats by route: Native connector $390.00; Make Core route $520.59; Zapier Professional route $539.99
 
 Monthly cost for 10 seats by route, Intercom + Calendly.
 
@@ -66,8 +66,8 @@ Integration routes compared for a 10-seat team
 | Route | Plans | 10 seats / month | Sync |
 | --- | --- | --- | --- |
 | Native Intercom + Calendly connector | Intercom 'Essential' + Calendly 'Free' | $390.00 | 1-way (Calendly → Intercom) |
-| Make Core on the cheapest API plans | Intercom 'Essential' + Calendly 'Free' + Make | $400.59 | 1-way per scenario |
-| Zapier Professional on the cheapest API plans | Intercom 'Essential' + Calendly 'Free' + Zapier | $419.99 | 1-way per Zap |
+| Make Core on the cheapest plans it can use | Intercom 'Essential' + Calendly 'Standard' + Make | $520.59 | 1-way per scenario |
+| Zapier Professional on the cheapest plans it can use | Intercom 'Essential' + Calendly 'Standard' + Zapier | $539.99 | 1-way per Zap |
 
 Connector prices are monthly-billing list prices: Zapier Professional $29.99 (zapier.com/pricing) and Make Core $10.59 (from third-party pricing reviews, because make.com blocks automated checks). Both bill by usage, so high volumes cost more.
 
@@ -129,7 +129,7 @@ At 10 seats with the required tiers (Intercom 'Essential' + Calendly 'Free'), th
 
 ### Is the Intercom + Calendly integration native, and would Make or Zapier be cheaper?
 
-The Intercom + Calendly connection is native — no third-party middleware subscription is required. Make would cost about $400.59/month on the cheapest API plans, more than the native route, so it only makes sense if you already use it.
+The Intercom + Calendly connection is native — no third-party middleware subscription is required. Make would cost about $520.59/month on the cheapest plans it can use (Calendly on 'Standard', because its free plan has no webhooks, which Make's and Zapier's Calendly triggers need), more than the native route, so it only makes sense if you already use it.
 
 ### What are the limitations of the Intercom + Calendly integration?
 

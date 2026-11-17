@@ -1,6 +1,6 @@
-# HubSpot + Calendly Integration (2026): How It Works, Setup & True Cost
+# HubSpot + Calendly Integration Cost (2026): True Price, Minimum Plan & Hidden API Fees
 
-> How the HubSpot + Calendly integration works, how to set it up, and the plans it needs: HubSpot Free + Calendly Standard, $120/mo for 10 seats.
+> HubSpot + Calendly needs HubSpot Free and Calendly Standard for the native integration: $120/mo for 10 seats, including a +$120/mo forced upgrade.
 
 Source page: https://stackcostmatrix.com/stack/hubspot-and-calendly/  
 Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (credit StackCostMatrix and link to https://stackcostmatrix.com)
@@ -16,8 +16,6 @@ Edited by [Rakesh Kumar](https://stackcostmatrix.com/about/#editor), founder of 
 ## How the HubSpot + Calendly integration works
 
 When someone books through Calendly, the integration creates a HubSpot contact if one doesn't exist yet, or logs the meeting on the existing contact. Reschedules update the meeting, and cancellations are marked [Canceled].
-
-[Setup guide: Calendly: Calendly + HubSpot ↗](https://calendly.com/help/calendly-hubspot)
 
 Diagram of how HubSpot and Calendly connect. Calendly: Standard plan · $120/mo for 10 seats. HubSpot: Free plan · $0/mo for 10 seats. Calendly to HubSpot: bookings become contacts and meetings. Native app, 1-way, no connector fee.
 
@@ -37,6 +35,8 @@ Steps follow [Calendly's setup guide ↗](https://calendly.com/help/calendly-hub
 
 **Limitations:** Routing from HubSpot forms needs Calendly Teams or Enterprise. Changing a meeting's length in HubSpot doesn't update Calendly, and using Calendly's and HubSpot's calendar sync together can create duplicate meetings.
 
+[Setup guide: Calendly: Calendly + HubSpot ↗](https://calendly.com/help/calendly-hubspot)
+
 Sources (checked Nov 3, 2026; setup guide read again for the steps on Nov 10, 2026): [Calendly: Calendly + HubSpot ↗](https://calendly.com/help/calendly-hubspot) · [HubSpot Marketplace: Calendly ↗](https://ecosystem.hubspot.com/marketplace/listing/calendly-199720)
 
 *Interactive cost calculator: open the web page to change team size, billing and add-ons.*
@@ -46,7 +46,7 @@ Sources (checked Nov 3, 2026; setup guide read again for the steps on Nov 10, 20
 **Native integration costs $120.00/mo ($1,440.00/yr)** for a 10-seat team —
 HubSpot 'Free' ($0.00/mo) + Calendly 'Standard' ($120.00/mo),
 no middleware required.
-Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capable tiers ($130.59/mo all-in) — the native path is cheaper.
+Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest tiers it can use, with Calendly on 'Standard' ($130.59/mo all-in) — the native path is cheaper.
 
  
 
@@ -65,12 +65,12 @@ Integration routes compared for a 10-seat team
 | Route | Plans | 10 seats / month | Sync |
 | --- | --- | --- | --- |
 | Native HubSpot + Calendly connector | HubSpot 'Free' + Calendly 'Standard' | $120.00 | 1-way (Calendly → HubSpot) |
-| Make Core on the cheapest API plans | HubSpot 'Free' + Calendly 'Standard' + Make | $130.59 | 1-way per scenario |
-| Zapier Professional on the cheapest API plans | HubSpot 'Free' + Calendly 'Standard' + Zapier | $149.99 | 1-way per Zap |
+| Make Core on the cheapest plans it can use | HubSpot 'Free' + Calendly 'Standard' + Make | $130.59 | 1-way per scenario |
+| Zapier Professional on the cheapest plans it can use | HubSpot 'Free' + Calendly 'Standard' + Zapier | $149.99 | 1-way per Zap |
 
 Connector prices are monthly-billing list prices: Zapier Professional $29.99 (zapier.com/pricing) and Make Core $10.59 (from third-party pricing reviews, because make.com blocks automated checks). Both bill by usage, so high volumes cost more.
 
-Image: [HubSpot + Calendly integration cost summary: $120 a month for 10 seats, nothing extra to connect; plans needed: HubSpot Free and Calendly Standard](https://stackcostmatrix.com/og/hubspot-and-calendly.jpg)
+Image: [HubSpot + Calendly integration cost summary: $120 a month for 10 seats, $120 of it is the hidden cost to connect; plans needed: HubSpot Free and Calendly Standard](https://stackcostmatrix.com/og/hubspot-and-calendly.jpg)
 
 ## ✓ Verified Vendor Facts
 
@@ -81,7 +81,7 @@ Image: [HubSpot + Calendly integration cost summary: $120 a month for 10 seats, 
 
 Last checked: Nov 3, 2026 · Sources linked below.
 
-## ! Plan requirements
+## ! Hidden Cost Trap
 
 Requires HubSpot on the 'Free' plan or higher — Requires Calendly on the 'Standard' plan or higher.
 
@@ -94,7 +94,7 @@ Calendly minimum tier
 Middleware fee
 :   None
 
-No hidden cost: the native connector works on HubSpot 'Free' and Calendly 'Standard', so connecting them adds nothing to what you already pay for the two tools.
+The hidden cost is a forced plan upgrade: Calendly needs 'Standard', $120/mo more than 'Free', its cheapest plan with API access. That adds $120/mo for 10 seats just to connect the two tools.
 
 ## Side-by-side spec matrix
 
@@ -120,7 +120,7 @@ Some outbound links may earn us a referral commission at no extra cost to you. [
 
 ### What are the minimum plan tiers required for the HubSpot + Calendly integration?
 
-To unlock the native integration, HubSpot must be on the 'Free' plan or higher and Calendly must be on the 'Standard' plan or higher. Those are each tool's cheapest plan with API access (HubSpot 'Free' at $0/mo and Calendly 'Standard' at $120/mo for 10 seats), so the integration doesn't force an upgrade.
+To unlock the native integration, HubSpot must be on the 'Free' plan or higher and Calendly must be on the 'Standard' plan or higher. Calendly's cheapest plan with API access is 'Free', so 'Standard' is a $120/mo upgrade at 10 seats.
 
 ### How much does the HubSpot + Calendly stack cost per month for a 10-person team?
 
@@ -128,7 +128,7 @@ At 10 seats with the required tiers (HubSpot 'Free' + Calendly 'Standard'), the 
 
 ### Is the HubSpot + Calendly integration native, and would Make or Zapier be cheaper?
 
-The HubSpot + Calendly connection is native — no third-party middleware subscription is required. Make would cost about $130.59/month on the cheapest API plans, more than the native route, so it only makes sense if you already use it.
+The HubSpot + Calendly connection is native — no third-party middleware subscription is required. Make would cost about $130.59/month on the cheapest plans it can use (Calendly on 'Standard', because its free plan has no webhooks, which Make's and Zapier's Calendly triggers need), more than the native route, so it only makes sense if you already use it.
 
 ### What are the limitations of the HubSpot + Calendly integration?
 

@@ -55,6 +55,10 @@ rediscover it. Details live in `scripts/README.md`. Update the "State" section a
 - A `newpairs` script copies a template page and swaps tool names. That rewrote the footer's first link on seven new pages, and nothing noticed for
   days. Links that are written once go stale: `links24.py` now rebuilds them on every build and `linkcheck.py` fails when a footer differs.
 - Don't bring back link text like "Calculator →" or rows of links joined with "·". Link text names its target; links sit in sentences.
+- Calculators left out free plans that have API access, so 14 pages showed a smaller hidden cost than the report and five said
+  "No hidden cost" (fixed Nov 17). `pairfix.py` now adds such a free plan itself and stops the build for a page not in
+  `pairdata26.FREE26`. The Make/Zapier comparison prices each tool at the plan those connectors can use (`model.MW_FLOOR`:
+  Calendly Standard). Read the connector's own app page (apps.make.com/<app>) before letting a free plan into that comparison.
 - New pairs: `hspro.py` asserts every HubSpot pair needs Free, Starter or Professional, and a tool's Free tier must be in
   the calculator data whenever the tool's other pages list it (Airtable, HubSpot), or the forced-upgrade amount is wrong.
   Likewise a tier's API flag must match the tool's other pages (monday.com Basic has none), which `newpairs23.py` copies.
@@ -169,10 +173,6 @@ rediscover it. Details live in `scripts/README.md`. Update the "State" section a
 - Owner tasks: the GitHub repo description says 90 integrations (the owner updated it on Nov 15; update it after each batch); real
   screenshots from the free pairs; a fresh Search
   Console export in about a month ("Last 3 months"). The Google key only if the owner wants live access later.
-- Waiting for the owner's yes or no: the 14 pair pages whose calculators leave out a free plan. The Nov 15 content audit rates
-  it Medium: five of them (hubspot-and-calendly, for one) say "No hidden cost" and call Calendly Standard "the cheapest plan
-  with API access", while the site's own Calendly API page says the API works on every plan; and the homepage chart shows 48
-  yellow cells against the report's 53. Fixing the calculators settles all three.
 - IndexNow (`python3 scripts/indexnow.py --since <date>`, then `--send`): the owner said yes for the Nov 15 changes. It contacts an outside
   service, so ask again before sending for a later change.
 - Optional, only if the owner asks: a short captioned video for the Integration Tax report.
@@ -202,7 +202,7 @@ rediscover it. Details live in `scripts/README.md`. Update the "State" section a
   counts). `research.py` no longer excludes later pairs; the report follows the index. New headline: 53 of 90 carry a
   hidden cost, max $600. Merged as PR #32 and live (10 of 10 files match, no console errors). Known gap, not fixed: 14 pair pages show a lower extra cost than the report, because their
   calculators leave out the free plan of Calendly, Mailchimp, ClickUp or Slack; the report says so in its limitations.
-  Fixing the pages would turn about 10 more cells yellow, so ask the owner first.
+  Fixing the pages would turn about 10 more cells yellow, so ask the owner first. (The owner said yes; fixed Nov 17, see below.)
 - Nov 14, 2026: health check after the 31 new pairs (scripted, not the claude-seo auditors, so no new category scores):
   133 sitemap URLs all 200, self-canonical, unique titles/descriptions/H1s, schema parses, no broken links or orphans;
   Lighthouse 100/100/100/100 on the homepage, two new pair pages and the report. New pages are as unique as the older
@@ -232,3 +232,11 @@ rediscover it. Details live in `scripts/README.md`. Update the "State" section a
   landscape) in Chromium with touch: no overflow, menu links 47px tall, no console errors. Only change: the homepage's side-by-side hero
   (text beside the chart) needed a mouse (`pointer:fine`), so a 12.9" iPad in landscape got the stacked layout with empty space; the
   rule in `ui13.py` now needs only 1200px of width. Safari itself (WebKit) isn't installed here, so a look on a real iPad is still worth it.
+- Nov 17, 2026: the owner asked for the 14-page fix. The 14 calculators now list the free plan of Calendly, Mailchimp, ClickUp
+  or Slack (all have API access in the open data), so every page's hidden cost matches the report: 53 of 90 yellow on the
+  homepage (was 48), the report's limitations note about the gap is gone. Found on the way: with Calendly Free listed, five
+  native Calendly pages would have offered "Skip the native tier upgrade: connect via Make" for $10.59, but Make's Calendly
+  trigger needs a paid Calendly plan (apps.make.com/calendly, read that day), so `model.MW_FLOOR` prices the Make and Zapier
+  route at Calendly Standard ($130.59, more than native; the button doesn't show). 16 pair pages changed (the 14 plus
+  intercom-and-calendly and slack-and-calendly, whose Make row went from $10.59 to $130.59), dated Nov 17; no checked date
+  moved, no price changed. Changelog entries by `polish26.py`.

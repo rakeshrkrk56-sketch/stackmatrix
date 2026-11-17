@@ -46,7 +46,7 @@ Sources (checked Nov 8, 2026; setup guide read again for the steps on Nov 10, 20
 **Native integration costs $0.00/mo ($0.00/yr)** for a 10-seat team —
 Slack 'Free' ($0.00/mo) + Calendly 'Free' ($0.00/mo),
 no middleware required.
-Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capable tiers ($10.59/mo all-in) — the native path is cheaper.
+Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest tiers it can use, with Calendly on 'Standard' ($130.59/mo all-in) — the native path is cheaper.
 
  
 
@@ -54,7 +54,7 @@ Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capab
 
 The native connector is the cheapest route here. Make or Zapier only makes sense if you already run other automations through it, or need a step the native app doesn't offer.
 
-Chart: Slack + Calendly: monthly cost for 10 seats by route: Native connector $0.00; Make Core route $10.59; Zapier Professional route $29.99
+Chart: Slack + Calendly: monthly cost for 10 seats by route: Native connector $0.00; Make Core route $130.59; Zapier Professional route $149.99
 
 Monthly cost for 10 seats by route, Slack + Calendly.
 
@@ -65,8 +65,8 @@ Integration routes compared for a 10-seat team
 | Route | Plans | 10 seats / month | Sync |
 | --- | --- | --- | --- |
 | Native Slack + Calendly connector | Slack 'Free' + Calendly 'Free' | $0.00 | 1-way (Calendly → Slack) |
-| Make Core on the cheapest API plans | Slack 'Free' + Calendly 'Free' + Make | $10.59 | 1-way per scenario |
-| Zapier Professional on the cheapest API plans | Slack 'Free' + Calendly 'Free' + Zapier | $29.99 | 1-way per Zap |
+| Make Core on the cheapest plans it can use | Slack 'Free' + Calendly 'Standard' + Make | $130.59 | 1-way per scenario |
+| Zapier Professional on the cheapest plans it can use | Slack 'Free' + Calendly 'Standard' + Zapier | $149.99 | 1-way per Zap |
 
 Connector prices are monthly-billing list prices: Zapier Professional $29.99 (zapier.com/pricing) and Make Core $10.59 (from third-party pricing reviews, because make.com blocks automated checks). Both bill by usage, so high volumes cost more.
 
@@ -128,7 +128,7 @@ At 10 seats with the required tiers (Slack 'Free' + Calendly 'Free'), the stack 
 
 ### Is the Slack + Calendly integration native, and would Make or Zapier be cheaper?
 
-The Slack + Calendly connection is native — no third-party middleware subscription is required. Make would cost about $10.59/month on the cheapest API plans, more than the native route, so it only makes sense if you already use it.
+The Slack + Calendly connection is native — no third-party middleware subscription is required. Make would cost about $130.59/month on the cheapest plans it can use (Calendly on 'Standard', because its free plan has no webhooks, which Make's and Zapier's Calendly triggers need), more than the native route, so it only makes sense if you already use it.
 
 ### What are the limitations of the Slack + Calendly integration?
 

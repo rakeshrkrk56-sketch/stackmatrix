@@ -68,7 +68,7 @@ Integration routes compared for a 10-seat team
 
 Connector prices are monthly-billing list prices: Zapier Professional $29.99 (zapier.com/pricing) and Make Core $10.59 (from third-party pricing reviews, because make.com blocks automated checks). Both bill by usage, so high volumes cost more.
 
-Image: [Mailchimp + Airtable integration cost summary: $263.59 a month for 10 seats, $250.59 of it is the hidden cost to connect; plans needed: Mailchimp Essentials and Airtable Team](https://stackcostmatrix.com/og/mailchimp-and-airtable.jpg)
+Image: [Mailchimp + Airtable integration cost summary: $263.59 a month for 10 seats, $263.59 of it is the hidden cost to connect; plans needed: Mailchimp Essentials and Airtable Team](https://stackcostmatrix.com/og/mailchimp-and-airtable.jpg)
 
 ## ✓ Verified Vendor Facts
 
@@ -92,7 +92,7 @@ Airtable minimum tier
 Middleware fee
 :   $10.59/mo
 
-The hidden cost here is the connector: there's no native Mailchimp + Airtable app, so you pay for Make Core ($10.59/mo) on top of both tools. On top of that, Airtable needs 'Team', $240/mo more than 'Free', its cheapest plan with API access.
+The hidden cost here is the connector: there's no native Mailchimp + Airtable app, so you pay for Make Core ($10.59/mo) on top of both tools. On top of that, Mailchimp needs 'Essentials', $13/mo more than 'Free', its cheapest plan with API access; Airtable needs 'Team', $240/mo more than 'Free', its cheapest plan with API access.
 
  [Connect Mailchimp + Airtable via Make.com — the middleware this integration runs on](https://stackcostmatrix.com/go/make) 
 
@@ -122,7 +122,7 @@ Some outbound links may earn us a referral commission at no extra cost to you. [
 
 ### What are the minimum plan tiers required for the Mailchimp + Airtable integration?
 
-To unlock the integration, Mailchimp must be on the 'Essentials' plan or higher and Airtable must be on the 'Team' plan or higher. Airtable's cheapest plan with API access is 'Free', so 'Team' is a $240/mo upgrade at 10 seats.
+To unlock the integration, Mailchimp must be on the 'Essentials' plan or higher and Airtable must be on the 'Team' plan or higher. Mailchimp's cheapest plan with API access is 'Free', so 'Essentials' is a $13/mo upgrade at 10 seats. Airtable's cheapest plan with API access is 'Free', so 'Team' is a $240/mo upgrade at 10 seats.
 
 ### How much does the Mailchimp + Airtable stack cost per month for a 10-person team?
 

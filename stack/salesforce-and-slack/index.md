@@ -1,6 +1,6 @@
 # Salesforce Sales Cloud + Slack Integration Cost (2026): True Price, Minimum Plan & Hidden API Fees
 
-> Salesforce Sales Cloud + Slack needs Salesforce Sales Cloud Enterprise and Slack Pro: $1,737.50/mo for 10 seats, including a +$400/mo forced upgrade.
+> Salesforce Sales Cloud + Slack needs Salesforce Sales Cloud Enterprise and Slack Pro: $1,737.50/mo for 10 seats, including a +$487.50/mo forced upgrade.
 
 Source page: https://stackcostmatrix.com/stack/salesforce-and-slack/  
 Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (credit StackCostMatrix and link to https://stackcostmatrix.com)
@@ -46,7 +46,7 @@ Sources (checked Nov 3, 2026; setup guide read again for the steps on Nov 10, 20
 **Native integration costs $1,737.50/mo ($20,850.00/yr)** for a 10-seat team —
 Salesforce Sales Cloud 'Enterprise' ($1,650.00/mo) + Slack 'Pro' ($87.50/mo),
 no middleware required.
-Alternative: skip the native tier upgrade and run via Make/Zapier middleware for ~$1,348.09/mo all-in (adds a third-party dependency).
+Alternative: skip the native tier upgrade and run via Make/Zapier middleware for ~$1,260.59/mo all-in (adds a third-party dependency).
 
  
 
@@ -54,7 +54,7 @@ Alternative: skip the native tier upgrade and run via Make/Zapier middleware for
 
 The connector routes are cheaper on paper because they skip the forced plan upgrade. The trade-off: you swap the native connector for a third-party automation you build and maintain, sync drops from 2-way to 1-way per automation, and the connector bills by usage.
 
-Chart: Salesforce Sales Cloud + Slack: monthly cost for 10 seats by route: Native connector $1,737.50; Make Core route $1,348.09; Zapier Professional route $1,367.49
+Chart: Salesforce Sales Cloud + Slack: monthly cost for 10 seats by route: Native connector $1,737.50; Make Core route $1,260.59; Zapier Professional route $1,279.99
 
 Monthly cost for 10 seats by route, Salesforce Sales Cloud + Slack.
 
@@ -65,12 +65,12 @@ Integration routes compared for a 10-seat team
 | Route | Plans | 10 seats / month | Sync |
 | --- | --- | --- | --- |
 | Native Salesforce Sales Cloud + Slack connector | Salesforce Sales Cloud 'Enterprise' + Slack 'Pro' | $1,737.50 | 2-way |
-| Make Core on the cheapest API plans | Salesforce Sales Cloud 'Professional' + Slack 'Pro' + Make | $1,348.09 | 1-way per scenario |
-| Zapier Professional on the cheapest API plans | Salesforce Sales Cloud 'Professional' + Slack 'Pro' + Zapier | $1,367.49 | 1-way per Zap |
+| Make Core on the cheapest API plans | Salesforce Sales Cloud 'Professional' + Slack 'Free' + Make | $1,260.59 | 1-way per scenario |
+| Zapier Professional on the cheapest API plans | Salesforce Sales Cloud 'Professional' + Slack 'Free' + Zapier | $1,279.99 | 1-way per Zap |
 
 Connector prices are monthly-billing list prices: Zapier Professional $29.99 (zapier.com/pricing) and Make Core $10.59 (from third-party pricing reviews, because make.com blocks automated checks). Both bill by usage, so high volumes cost more.
 
-Image: [Salesforce Sales Cloud + Slack integration cost summary: $1,737.50 a month for 10 seats, $400 of it is the hidden cost to connect; plans needed: Salesforce Sales Cloud Enterprise and Slack Pro](https://stackcostmatrix.com/og/salesforce-and-slack.jpg)
+Image: [Salesforce Sales Cloud + Slack integration cost summary: $1,737.50 a month for 10 seats, $487.50 of it is the hidden cost to connect; plans needed: Salesforce Sales Cloud Enterprise and Slack Pro](https://stackcostmatrix.com/og/salesforce-and-slack.jpg)
 
 ## ✓ Verified Vendor Facts
 
@@ -94,7 +94,7 @@ Slack minimum tier
 Middleware fee
 :   None
 
-The hidden cost is a forced plan upgrade: Salesforce Sales Cloud needs 'Enterprise', $400/mo more than 'Professional', its cheapest plan with API access. That adds $400/mo for 10 seats just to connect the two tools. Running the same connection through Make on the cheapest API plans would cost about $1,348.09/mo in total instead of $1,737.50/mo, but you'd give up the native connector.
+The hidden cost is a forced plan upgrade: Salesforce Sales Cloud needs 'Enterprise', $400/mo more than 'Professional', its cheapest plan with API access; Slack needs 'Pro', $87.50/mo more than 'Free', its cheapest plan with API access. That adds $487.50/mo for 10 seats just to connect the two tools. Running the same connection through Make on the cheapest API plans would cost about $1,260.59/mo in total instead of $1,737.50/mo, but you'd give up the native connector.
 
  [Skip the native tier upgrade: connect Salesforce Sales Cloud + Slack via Make.com middleware instead](https://stackcostmatrix.com/go/make) 
 
@@ -124,7 +124,7 @@ Some outbound links may earn us a referral commission at no extra cost to you. [
 
 ### What are the minimum plan tiers required for the Salesforce Sales Cloud + Slack integration?
 
-To unlock the native integration, Salesforce Sales Cloud must be on the 'Enterprise' plan or higher and Slack must be on the 'Pro' plan or higher. Salesforce Sales Cloud's cheapest plan with API access is 'Professional', so 'Enterprise' is a $400/mo upgrade at 10 seats.
+To unlock the native integration, Salesforce Sales Cloud must be on the 'Enterprise' plan or higher and Slack must be on the 'Pro' plan or higher. Salesforce Sales Cloud's cheapest plan with API access is 'Professional', so 'Enterprise' is a $400/mo upgrade at 10 seats. Slack's cheapest plan with API access is 'Free', so 'Pro' is a $87.50/mo upgrade at 10 seats.
 
 ### How much does the Salesforce Sales Cloud + Slack stack cost per month for a 10-person team?
 
@@ -132,7 +132,7 @@ At 10 seats with the required tiers (Salesforce Sales Cloud 'Enterprise' + Slack
 
 ### Is the Salesforce Sales Cloud + Slack integration native, and would Make or Zapier be cheaper?
 
-The Salesforce Sales Cloud + Slack connection is native — no third-party middleware subscription is required. Connecting through Make on the cheapest API plans would cost about $1,348.09/month in total instead of $1,737.50, but you'd replace the native connector with a third-party automation.
+The Salesforce Sales Cloud + Slack connection is native — no third-party middleware subscription is required. Connecting through Make on the cheapest API plans would cost about $1,260.59/month in total instead of $1,737.50, but you'd replace the native connector with a third-party automation.
 
 ### What are the limitations of the Salesforce Sales Cloud + Slack integration?
 

@@ -6,7 +6,7 @@ Usage (run from repo root):
 """
 import re, json, glob, html, sys, os
 sys.path.insert(0, os.path.dirname(__file__))
-from model import compute, render_tco, render_nvm, money, cheapest_api, tiers, cost as tier_cost, MAKE_MONTHLY, svg_bars, svg_flow
+from model import compute, render_tco, render_nvm, money, cheapest_api, cheapest_mw, mw_raised, tiers, cost as tier_cost, MAKE_MONTHLY, svg_bars, svg_flow
 from pairdata import PAIRS, COPY
 from pairdata2 import PAIRS2, COPY2
 PAIRS.update(PAIRS2); COPY.update(COPY2)
@@ -138,6 +138,11 @@ PAIRS.update(PAIRS23); COPY.update(COPY23)
 for _p, _c in NEW23.items():
     if _c["mw"]: MW7[_p] = tuple(_c["mw"])
 MODIFIED.update({_p: DATE23 for _p in PAIRS23})
+from pairdata26 import FREE26, MW26, DATE26, FREE_TIER
+MODIFIED.update({_p: DATE26 for _p in FREE26 + MW26})
+# tools whose free plan has API access in the open data: their calculators must list it (see pairdata26.py)
+FREE_API = {_s for _s, _t in json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "integration-pairs.json"), encoding="utf-8"))["tools"].items()
+            if _t["plans"].get("Free", {}).get("api_access")}
 FACTS16 = {("activecampaign", "Plus"): ("Yes", "Yes")}   # apidata: API and webhooks on every ActiveCampaign plan
 
 FACTS_EXTRA = {("salesforce", "Enterprise"): ("Yes", "Yes"), ("slack", "Free"): ("Yes", "Yes"),
@@ -207,7 +212,7 @@ def trap_text(v, d):
         if ups: out += f" On top of that, {upt}."
     elif ups:
         out = f"The hidden cost is a forced plan upgrade: {upt}. That adds {m0(v['UP'])}/mo for 10 seats just to connect the two tools."
-        if v["MP"] < v["N"]: out += f" Running the same connection through Make on the cheapest API plans would cost about {m0(v['MP'])}/mo in total instead of {m0(v['N'])}/mo, but you'd give up the native connector."
+        if v["MP"] < v["N"]: out += f" Running the same connection through Make on {mw_plans(d)} would cost about {m0(v['MP'])}/mo in total instead of {m0(v['N'])}/mo, but you'd give up the native connector."
     else:
         out = f"No hidden cost: the native connector works on {A} '{v['ta']}' and {B} '{v['tb']}', so connecting them adds nothing to what you already pay for the two tools."
     if any(t["slug"] == "stripe" for t in d["tools"]):
@@ -215,16 +220,24 @@ def trap_text(v, d):
     return out
 
 TH_ = '<th class="px-4 py-3 font-semibold">'; TD_ = '<td class="px-4 py-3">'
+def mw_plans(d, short=False):
+    """How the Make/Zapier comparison names its plans: normally "the cheapest API plans"; where a tool's cheapest API plan
+    can't run their trigger (model.MW_FLOOR), the plan it uses instead (since Nov 17, 2026)."""
+    r = mw_raised(d)
+    if not r: return "the cheapest API plans"
+    if short: return "the cheapest plans it can use"
+    return "the cheapest plans it can use (" + "; ".join(f"{n} on '{p}', because {why}" for n, p, why in r) + ")"
+
 def nvm_table(v, d, sync="2-way"):
     """Native (or modeled connector) route vs the connector alternatives, at 10 seats."""
     A, B = v["na"], v["nb"]
-    ch = [cheapest_api(t)["tier_name"] for t in d["tools"]]
+    ch = [cheapest_mw(t)["tier_name"] for t in d["tools"]]
     rows = []
     if v["native"]:
         chp = f"{html.escape(A)} &#39;{ch[0]}&#39; + {html.escape(B)} &#39;{ch[1]}&#39;"
         rows.append((f"Native {html.escape(A)} + {html.escape(B)} connector", f"{html.escape(A)} &#39;{v['ta']}&#39; + {html.escape(B)} &#39;{v['tb']}&#39;", money(v["N"]), sync))
-        rows.append(("Make Core on the cheapest API plans", chp + " + Make", money(v["MP"]), "1-way per scenario"))
-        rows.append(("Zapier Professional on the cheapest API plans", chp + " + Zapier", money(v["MP"] - MAKE_MONTHLY + 29.99), "1-way per Zap"))
+        rows.append((f"Make Core on {mw_plans(d, True)}", chp + " + Make", money(v["MP"]), "1-way per scenario"))
+        rows.append((f"Zapier Professional on {mw_plans(d, True)}", chp + " + Zapier", money(v["MP"] - MAKE_MONTHLY + 29.99), "1-way per Zap"))
     else:
         conn = CONNECTOR.get(v["mw"], "Connector")
         alt, altfee = ("Zapier Professional", 29.99) if v["mw"] != 29.99 else ("Make Core", MAKE_MONTHLY)
@@ -279,8 +292,8 @@ def faq_answers(v, d):
     why = (" " + " ".join(f"{n}'s cheapest plan with API access is '{ch}', so '{req}' is a {m0(x)}/mo upgrade at 10 seats." for n, req, ch, x in ups)) if ups else f" Those are each tool's cheapest plan with API access ({A} '{ta}' at {m0(v['ca'])}/mo and {B} '{tb}' at {m0(v['cb'])}/mo for 10 seats), so the integration doesn't force an upgrade."
     q3 = f"Is the {A} + {B} integration native, and would Make or Zapier be cheaper?" if v["native"] else f"Why does {A} + {B} need middleware, and what does it cost?"
     if v["native"]:
-        alt = (f" Connecting through Make on the cheapest API plans would cost about {money(v['MP'])}/month in total instead of {money(v['N'])}, but you'd replace the native connector with a third-party automation."
-               if v["MP"] < v["N"] else f" Make would cost about {money(v['MP'])}/month on the cheapest API plans, more than the native route, so it only makes sense if you already use it.")
+        alt = (f" Connecting through Make on {mw_plans(d)} would cost about {money(v['MP'])}/month in total instead of {money(v['N'])}, but you'd replace the native connector with a third-party automation."
+               if v["MP"] < v["N"] else f" Make would cost about {money(v['MP'])}/month on {mw_plans(d)}, more than the native route, so it only makes sense if you already use it.")
         return (f"To unlock the native integration, {A} must be on the '{ta}' plan or higher and {B} must be on the '{tb}' plan or higher." + why,
                 f"At 10 seats with the required tiers ({A} '{ta}' + {B} '{tb}'), the stack costs {money(v['N'])} per month.",
                 f"The {A} + {B} connection is native — no third-party middleware subscription is required." + alt, q3)
@@ -410,7 +423,7 @@ def render_page(s, pair, d, summary, sync, facts, date_modified=None, copy=None,
                 'ask Salesforce whether your connector needs it (<a href="/salesforce-api-access/" class="underline hover:text-indigo-600">Salesforce API access by edition</a>).</p>')
         s = sub1(r'(id="calc-line-h-cost">[^<]*</td> </tr> </tbody> </table> </div>)', lambda m: m.group(1) + note, s, what="sf addon note")
     # TCO summary + native vs middleware
-    s = sub1(r'(aria-label="Default 10-seat TCO summary">.*?<p class="mt-2 text-sm leading-relaxed text-indigo-950">).*?(</p> </aside>)', lambda m: m.group(1) + render_tco(v, tco_b) + sf_addon_note(v, d) + m.group(2), s, what="tco")
+    s = sub1(r'(aria-label="Default 10-seat TCO summary">.*?<p class="mt-2 text-sm leading-relaxed text-indigo-950">).*?(</p> </aside>)', lambda m: m.group(1) + render_tco(v, tco_b, *(["the cheapest tiers it can use, with " + " and ".join(f"{n} on \'{p}\'" for n, p, _ in mw_raised(d))] if mw_raised(d) else [])) + sf_addon_note(v, d) + m.group(2), s, what="tco")
     s = sub1(r'(aria-label="Native versus middleware"> <h2 class="text-xl font-bold">.*?</h2>).*?(</section>)', lambda m: m.group(1) + render_nvm(v, nvm_b, sync2) + nvm_table(v, d, sync) + pair_figure(v, d, pair) + m.group(2), s, what="nvm")
     # verified facts
     s = sub1(r"(<li><strong>Required tiers:</strong> ).*?( — the minimum plans)", lambda m: m.group(1) + f"'{ta}' / '{tb}'" + m.group(2), s, what="facts")
@@ -590,6 +603,10 @@ def main(mode):
             else: d["middleware"], d["middlewareLabel"] = (fix.get("mw") or d["middleware"] or 9), "Middleware"
             if p in MW7: d["middleware"], d["middlewareAnnual"] = MW7[p]
             summ, sync = fix["summary"], fix["sync"]
+        for t in d["tools"]:   # Nov 17, 2026: start from the free plan when it has API access, as the report does (pairdata26.py)
+            if t["slug"] in FREE_API and not any(x["tier_name"] == "Free" for x in t["tiers"]):
+                assert p in FREE26, f"{p}: {t['slug']} calculator lacks its free plan; add the page to FREE26 with today's date"
+                t["tiers"].insert(0, _copy.deepcopy(FREE_TIER))
         s2, v = render_page(s, p, d, summ, sync, facts, date_modified=max(MODIFIED.get(p, ROUND_DATE), ROUND_DATE), copy=cp, cta=(fix or {}).get('cta', True))
         out[f] = s2
         if fix:
