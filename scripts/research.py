@@ -113,7 +113,11 @@ def build():
     max_why = "; ".join(f"{r['label']} needs {' and '.join(x['name'] + ' ' + x['req'] for x in r['parts'] if x['up'] > 0.005)}" for r in S["max_rows"])
     lower = [r for r in rows if r["tax"] - r["page_extra"] > 0.01]   # pair pages that start from a paid plan the report doesn't
     lower_tools = sorted({x["name"] for r in lower for x in r["parts"] if x["up"] > 0.005 and not x["floor_listed"]})
-    assert lower_tools and all(any(x["up"] > 0.005 and not x["floor_listed"] for x in r["parts"]) for r in lower), "a page differs from the report for another reason"
+    assert all(any(x["up"] > 0.005 and not x["floor_listed"] for x in r["parts"]) for r in lower), "a page differs from the report for another reason"
+    # Since Nov 17, 2026 every calculator lists the free plan when it has API access (pairdata26.py), so this note is normally empty.
+    lower_note = (f'On {len(lower)} pair pages the extra cost shown is lower than in this table: a pair&#39;s calculator starts from the cheapest plan it lists for each tool, '
+                  f'and for {esc(", ".join(lower_tools[:-1]) + " and " + lower_tools[-1] if len(lower_tools) > 1 else lower_tools[0])} that is a paid plan unless the integration works on the free one, '
+                  f'while this report always starts from the free plan.') if lower else ""
     n_new = S["n"] - 55
     find = [
         f"<strong>Plan upgrades, not connectors, are the real cost.</strong> Forced upgrades make up {S['up_share']:.0f}% of the total integration tax, and across all {S['n']} stacks the integration tax is {S['share']:.0f}% of what they cost in total. Connector fees are small by comparison: "
@@ -183,8 +187,8 @@ def build():
             f'{P}<strong>Limitations.</strong> HubSpot Professional is modeled as Smart CRM Professional ($50 per seat a month, $45 on annual billing), the cheapest subscription that unlocks the Salesforce connector and the Asana workflow action; other Professional Hubs cost more. Make Core&#39;s $10.59 monthly price comes from third-party pricing reviews, because make.com blocks automated checks. '
             f'Salesforce&#39;s baseline includes the $25/user API add-on that Professional needs. Stripe has no plan fee, so its baseline is $0. '
             f'{len(unc)} integrations include an upgrade that rests on a plan requirement we haven&#39;t confirmed yet ({esc(", ".join(r["label"] for r in unc))}), worth {m0(sum(r["unconfirmed_up"] for r in unc))} a month in total; '
-            f'counting only confirmed requirements, {S["conf_forced"]} of {S["n"]} integrations force an upgrade instead of {S["forced"]}. Usage-based charges (Zapier tasks, Make credits, API overages) aren&#39;t included. '
-            f'On {len(lower)} pair pages the extra cost shown is lower than in this table: a pair&#39;s calculator starts from the cheapest plan it lists for each tool, and for {esc(", ".join(lower_tools[:-1]) + " and " + lower_tools[-1])} that is a paid plan unless the integration works on the free one, while this report always starts from the free plan.</p>'
+            f'counting only confirmed requirements, {S["conf_forced"]} of {S["n"]} integrations force an upgrade instead of {S["forced"]}. Usage-based charges (Zapier tasks, Make credits, API overages) aren&#39;t included.'
+            f'{(" " + lower_note) if lower_note else ""}</p>'
             f'{P}<strong>Why the headline is split.</strong> Integrations that force a plan upgrade and those that only need a connector differ by an order of magnitude, so a single median across both swings between the two groups whenever one row changes. The figures are therefore reported per group: the range covers the middle half of the integrations in each group.</p>')
     cite = (f'<div class="mt-10 rounded-xl border border-indigo-200 bg-indigo-50 p-6"> <h2 class="text-lg font-bold">Use this research</h2> '
             f'<p class="mt-2 text-sm leading-relaxed text-slate-700">The data is open under <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener" {LINK}>CC BY 4.0</a>: reuse it, including commercially, with a credit and a link. '
@@ -210,7 +214,7 @@ def build():
     ld = [
         {"@context": "https://schema.org", "@type": "Article", "headline": "The Integration Tax 2026: What Connecting SaaS Tools Really Costs", "description": desc,
          "author": {"@type": "Organization", "name": "StackCostMatrix", "url": f"{SITE}/"}, "publisher": {"@type": "Organization", "name": "StackCostMatrix", "url": f"{SITE}/", "logo": f"{SITE}/icon-512.png"},
-         "datePublished": "2026-11-03", "dateModified": "2026-11-14", "mainEntityOfPage": URL, "image": f"{SITE}/og/integration-tax-2026.jpg", "inLanguage": "en", "isBasedOn": {"@id": f"{SITE}/#dataset"}},
+         "datePublished": "2026-11-03", "dateModified": "2026-11-17", "mainEntityOfPage": URL, "image": f"{SITE}/og/integration-tax-2026.jpg", "inLanguage": "en", "isBasedOn": {"@id": f"{SITE}/#dataset"}},
         {"@context": "https://schema.org", "@type": "Dataset", "@id": f"{URL}#dataset", "isBasedOn": {"@id": f"{SITE}/#dataset"}, "isAccessibleForFree": True, "name": "StackCostMatrix Integration Tax 2026", "description": f"Monthly integration tax (forced plan upgrades plus connector fees) for {S['n']} B2B SaaS integrations at 10 seats, derived from vendor-verified plan requirements and prices checked 2026-11-03.",
          "url": URL, "license": "https://creativecommons.org/licenses/by/4.0/", "creator": {"@id": f"{SITE}/#organization"}, "publisher": {"@id": f"{SITE}/#organization"}, "temporalCoverage": "2026-11-03/2026-11-12",
          "dateModified": "2026-11-14", "keywords": ["SaaS pricing", "integration cost", "API access", "webhooks", "Zapier", "Make"],

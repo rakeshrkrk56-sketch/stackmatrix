@@ -69,7 +69,7 @@ Integration routes compared for a 10-seat team
 
 Connector prices are monthly-billing list prices: Zapier Professional $29.99 (zapier.com/pricing) and Make Core $10.59 (from third-party pricing reviews, because make.com blocks automated checks). Both bill by usage, so high volumes cost more.
 
-Image: [Notion + Calendly integration cost summary: $250.59 a month for 10 seats, $10.59 of it is the hidden cost to connect; plans needed: Notion Plus and Calendly Standard](https://stackcostmatrix.com/og/notion-and-calendly.jpg)
+Image: [Notion + Calendly integration cost summary: $250.59 a month for 10 seats, $130.59 of it is the hidden cost to connect; plans needed: Notion Plus and Calendly Standard](https://stackcostmatrix.com/og/notion-and-calendly.jpg)
 
 ## ✓ Verified Vendor Facts
 
@@ -93,7 +93,7 @@ Calendly minimum tier
 Middleware fee
 :   $10.59/mo
 
-The hidden cost here is the connector: there's no native Notion + Calendly app, so you pay for Make Core ($10.59/mo) on top of both tools.
+The hidden cost here is the connector: there's no native Notion + Calendly app, so you pay for Make Core ($10.59/mo) on top of both tools. On top of that, Calendly needs 'Standard', $120/mo more than 'Free', its cheapest plan with API access.
 
  [Connect Notion + Calendly via Make.com — the middleware this integration runs on](https://stackcostmatrix.com/go/make) 
 
@@ -123,7 +123,7 @@ Some outbound links may earn us a referral commission at no extra cost to you. [
 
 ### What are the minimum plan tiers required for the Notion + Calendly integration?
 
-To unlock the integration, Notion must be on the 'Plus' plan or higher and Calendly must be on the 'Standard' plan or higher. Those are each tool's cheapest plan with API access (Notion 'Plus' at $120/mo and Calendly 'Standard' at $120/mo for 10 seats), so the integration doesn't force an upgrade.
+To unlock the integration, Notion must be on the 'Plus' plan or higher and Calendly must be on the 'Standard' plan or higher. Calendly's cheapest plan with API access is 'Free', so 'Standard' is a $120/mo upgrade at 10 seats.
 
 ### How much does the Notion + Calendly stack cost per month for a 10-person team?
 

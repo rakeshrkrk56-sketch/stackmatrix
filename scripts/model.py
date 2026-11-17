@@ -12,6 +12,20 @@ def cheapest_api(t):
     for u in ts[1:]:
         if cost(u, t["slug"]) < cost(best, t["slug"]): best = u
     return best
+# Where a Make or Zapier route can't run on a tool's cheapest plan with API access, the plan it needs instead, and why.
+# Calendly: Make's "Watch events" trigger "requires a paid Calendly subscription. The webhook feature is not included in
+# free Calendly plans" (apps.make.com/calendly, read Nov 17, 2026); the site's Make and Zapier Calendly pairs already need
+# Standard. The hidden cost (UP) still starts from the cheapest plan with API access, as the report does.
+MW_FLOOR = {"calendly": ("Standard", "its free plan has no webhooks, which Make's and Zapier's Calendly triggers need")}
+def cheapest_mw(t):
+    """The plan a Make/Zapier route needs on this tool: its cheapest API plan, or MW_FLOOR's plan when that costs more."""
+    ca = cheapest_api(t); fl = MW_FLOOR.get(t["slug"])
+    ft = next((u for u in tiers(t) if u["tier_name"] == fl[0]), None) if fl else None
+    return ft if ft and (ca is None or cost(ft, t["slug"]) > cost(ca, t["slug"])) else ca
+def mw_raised(d):
+    """[(tool name, plan, reason)] for each tool whose Make/Zapier route needs more than its cheapest API plan."""
+    return [(t["name"], cheapest_mw(t)["tier_name"], MW_FLOOR[t["slug"]][1]) for t in d["tools"]
+            if cheapest_api(t) and cheapest_mw(t)["tier_name"] != cheapest_api(t)["tier_name"]]
 def compute(d):
     v = {}
     A, B = d["tools"]
@@ -19,17 +33,18 @@ def compute(d):
         req = next(u for u in tiers(t) if u["tier_name"] == t["required"])
         v[f"n{k}"] = t["name"]; v[f"t{k}"] = t["required"]; v[f"c{k}"] = cost(req, t["slug"]); v[f"api{k}"] = "Yes" if req["api"] else "No"
         ca = cheapest_api(t); v[f"ch{k}"] = cost(ca, t["slug"]) if ca else 0
+        cm = cheapest_mw(t); v[f"cm{k}"] = cost(cm, t["slug"]) if cm else 0
     v["mw"] = d["middleware"]; v["native"] = d["middleware"] == 0
     v["N"] = v["ca"] + v["cb"] + v["mw"]
-    v["MP"] = v["cha"] + v["chb"] + MAKE_MONTHLY; v["UP"] = v["N"] - (v["cha"] + v["chb"])
+    v["MP"] = v["cma"] + v["cmb"] + MAKE_MONTHLY; v["UP"] = v["N"] - (v["cha"] + v["chb"])
     return v
-def render_tco(v, rule_b):
+def render_tco(v, rule_b, tiers_phrase="the cheapest API-capable tiers"):
     head = f"  <strong>{'Native' if v['native'] else 'Middleware'} integration costs {money(v['N'])}/mo ({money(v['N']*12)}/yr)</strong> for a 10-seat team —\n"
     if not v["native"]:
         return head + f"{v['na']} '{v['ta']}' ({money(v['ca'])}/mo) + {v['nb']} '{v['tb']}' ({money(v['cb'])}/mo)\n          + {money(v['mw'])}/mo middleware. No native connector exists for this pair.\n "
     head += f"{v['na']} '{v['ta']}' ({money(v['ca'])}/mo) + {v['nb']} '{v['tb']}' ({money(v['cb'])}/mo),\n          no middleware required.\n"
     if rule_b(v): return head + f" Alternative: skip the native tier upgrade and run via Make/Zapier middleware for ~{money(v['MP'])}/mo all-in (adds a third-party dependency). "
-    return head + f" Middleware via Make/Zapier would add ~{money(MAKE_MONTHLY)}/mo on top of the cheapest API-capable tiers ({money(v['MP'])}/mo all-in) — the native path is cheaper. "
+    return head + f" Middleware via Make/Zapier would add ~{money(MAKE_MONTHLY)}/mo on top of {tiers_phrase} ({money(v['MP'])}/mo all-in) — the native path is cheaper. "
 def render_nvm(v, rule_b, sync2=True):
     """One sentence on the trade-off; the chart and the route table under it carry the numbers (2026-11-10)."""
     P = ' <p class="mt-3 leading-relaxed text-slate-700">\n'

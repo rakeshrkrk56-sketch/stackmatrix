@@ -7,7 +7,7 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 
 ---
 
-90 integrations between 18 business tools, priced for a 10-person team from each vendor's own pages, with the plan each one needs. Yellow marks the 48 that include a cost the pricing page doesn't show up front: a forced plan upgrade or a connector fee.
+90 integrations between 18 business tools, priced for a 10-person team from each vendor's own pages, with the plan each one needs. Yellow marks the 53 that include a cost the pricing page doesn't show up front: a forced plan upgrade or a connector fee.
 
 - [HubSpot + Slack: $0 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/hubspot-and-slack/)
 - [Salesforce Sales Cloud + Slack: $1,738 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/salesforce-and-slack/)
@@ -39,12 +39,12 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 - [Zendesk + Asana: $825 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/zendesk-and-asana/)
 - [Asana + ActiveCampaign: $160 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/asana-and-activecampaign/)
 - [Slack + Calendly: $0 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/slack-and-calendly/)
-- [HubSpot + Calendly: $120 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/hubspot-and-calendly/)
+- [HubSpot + Calendly: $120 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/hubspot-and-calendly/)
 - [Salesforce Sales Cloud + Calendly: $1,850 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/salesforce-and-calendly/)
-- [Stripe + Calendly: $120 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/stripe-and-calendly/)
-- [Mailchimp + Calendly: $120 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/mailchimp-and-calendly/)
+- [Stripe + Calendly: $120 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/stripe-and-calendly/)
+- [Mailchimp + Calendly: $120 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/mailchimp-and-calendly/)
 - [Pipedrive + Calendly: $271 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/pipedrive-and-calendly/)
-- [ActiveCampaign + Calendly: $135 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/activecampaign-and-calendly/)
+- [ActiveCampaign + Calendly: $135 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/activecampaign-and-calendly/)
 - [Xero + Slack: $38 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/xero-and-slack/)
 - [HubSpot + Xero: $27 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/hubspot-and-xero/)
 - [Salesforce Sales Cloud + Xero: $1,288 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/salesforce-and-xero/)
@@ -78,7 +78,7 @@ Publisher: StackCostMatrix · Editor: Rakesh Kumar · Data licence: CC BY 4.0 (c
 - [Intercom + ActiveCampaign: $416 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/intercom-and-activecampaign/)
 - [Intercom + Calendly: $390 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/intercom-and-calendly/)
 - [ClickUp + Slack: $0 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/clickup-and-slack/)
-- [HubSpot + ClickUp: $120 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/hubspot-and-clickup/)
+- [HubSpot + ClickUp: $120 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/hubspot-and-clickup/)
 - [ClickUp + Salesforce Sales Cloud: $1,261 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/clickup-and-salesforce/)
 - [ClickUp + Stripe: $11 a month for 10 seats, including a cost the pricing pages don't show up front](https://stackcostmatrix.com/stack/clickup-and-stripe/)
 - [ClickUp + Zendesk: $690 a month for 10 seats, no extra cost to connect](https://stackcostmatrix.com/stack/clickup-and-zendesk/)
@@ -759,6 +759,7 @@ Full 20-tool source index with audit timestamps: [About StackCostMatrix →](htt
 
 Recent verification activity:
 
+- **Nov 17, 2026** — 14 integration pages now count the free plan of Calendly, Mailchimp, ClickUp or Slack as the starting point, as the report does, so 53 of 90 show a hidden cost. No prices changed.
 - **Nov 15, 2026** — Links between pages rebuilt: every integration page now links to related integrations for both of its tools, with each one's cost for 10 seats. No prices changed.
 - **Nov 14, 2026** — The Integration Tax report now covers all 90 integrations, not only the 55 it was published with: 53 of 90 carry a hidden cost. No prices changed.
 - **Nov 12, 2026** — 14 more integrations, later the same day: ActiveCampaign with Slack, Airtable with Zendesk, Notion with Asana and ClickUp, monday.com with Mailchimp, and nine that run through Make. The index now covers 90 pairs. No prices changed.

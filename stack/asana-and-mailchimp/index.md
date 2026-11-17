@@ -68,7 +68,7 @@ Integration routes compared for a 10-seat team
 
 Connector prices are monthly-billing list prices: Zapier Professional $29.99 (zapier.com/pricing) and Make Core $10.59 (from third-party pricing reviews, because make.com blocks automated checks). Both bill by usage, so high volumes cost more.
 
-Image: [Asana + Mailchimp integration cost summary: $177.89 a month for 10 seats, $29.99 of it is the hidden cost to connect; plans needed: Asana Starter and Mailchimp Essentials](https://stackcostmatrix.com/og/asana-and-mailchimp.jpg)
+Image: [Asana + Mailchimp integration cost summary: $177.89 a month for 10 seats, $42.99 of it is the hidden cost to connect; plans needed: Asana Starter and Mailchimp Essentials](https://stackcostmatrix.com/og/asana-and-mailchimp.jpg)
 
 ## ✓ Verified Vendor Facts
 
@@ -92,7 +92,7 @@ Mailchimp minimum tier
 Middleware fee
 :   $29.99/mo
 
-The hidden cost here is the connector: there's no native Asana + Mailchimp app, so you pay for Zapier Professional ($29.99/mo) on top of both tools.
+The hidden cost here is the connector: there's no native Asana + Mailchimp app, so you pay for Zapier Professional ($29.99/mo) on top of both tools. On top of that, Mailchimp needs 'Essentials', $13/mo more than 'Free', its cheapest plan with API access.
 
  [Connect Asana + Mailchimp via Make.com — the middleware this integration runs on](https://stackcostmatrix.com/go/make) 
 
@@ -122,7 +122,7 @@ Some outbound links may earn us a referral commission at no extra cost to you. [
 
 ### What are the minimum plan tiers required for the Asana + Mailchimp integration?
 
-To unlock the integration, Asana must be on the 'Starter' plan or higher and Mailchimp must be on the 'Essentials' plan or higher. Those are each tool's cheapest plan with API access (Asana 'Starter' at $134.90/mo and Mailchimp 'Essentials' at $13/mo for 10 seats), so the integration doesn't force an upgrade.
+To unlock the integration, Asana must be on the 'Starter' plan or higher and Mailchimp must be on the 'Essentials' plan or higher. Mailchimp's cheapest plan with API access is 'Free', so 'Essentials' is a $13/mo upgrade at 10 seats.
 
 ### How much does the Asana + Mailchimp stack cost per month for a 10-person team?
 

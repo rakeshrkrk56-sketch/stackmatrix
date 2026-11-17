@@ -12,6 +12,7 @@ Run everything **from the repo root**. Needs `python3`, plus `node` with Playwri
 3. **Never merge.** Open a pull request describing exactly what changed and why, with links to the evidence. The owner reviews and merges.
 4. **Run `bash scripts/check_all.sh` before every commit.** It must end with `ALL CHECKS PASSED`.
 5. **The Integration Tax report** (`/integration-tax-2026/`) covers every pair in the index (since Nov 14, 2026; before that, only the 55 it was published with). When new pairs change its figures, add a dated changelog entry with the old and new headline numbers (see `polish22.py`) and update the "Updated" date and `dateModified` in `research.py`.
+6. **Hidden cost starts from the cheapest plan with API access, on every page and in the report.** Since Nov 17, 2026 `pairfix.py` adds a tool's free plan to any calculator that lacks it when `data/integration-pairs.json` says that plan has API access (`FREE_API`; see `pairdata26.py`), and stops the build if a page not listed in `FREE26` needs it, so a new pair can't drift from the report again. The Make and Zapier comparison is the exception: it prices each tool at the plan those connectors can actually use (`model.MW_FLOOR`; Calendly needs Standard because Make's Calendly trigger needs a paid plan).
 
 ## How the site is put together
 | Thing | Where it lives | How it's produced |

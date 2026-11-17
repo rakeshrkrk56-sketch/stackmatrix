@@ -67,12 +67,12 @@ Integration routes compared for a 10-seat team
 | Route | Plans | 10 seats / month | Sync |
 | --- | --- | --- | --- |
 | Native Salesforce Sales Cloud + Calendly connector | Salesforce Sales Cloud 'Enterprise' + Calendly 'Teams' | $1,850.00 | 1-way (Calendly → Salesforce) |
-| Make Core on the cheapest API plans | Salesforce Sales Cloud 'Professional' + Calendly 'Standard' + Make | $1,380.59 | 1-way per scenario |
-| Zapier Professional on the cheapest API plans | Salesforce Sales Cloud 'Professional' + Calendly 'Standard' + Zapier | $1,399.99 | 1-way per Zap |
+| Make Core on the cheapest plans it can use | Salesforce Sales Cloud 'Professional' + Calendly 'Standard' + Make | $1,380.59 | 1-way per scenario |
+| Zapier Professional on the cheapest plans it can use | Salesforce Sales Cloud 'Professional' + Calendly 'Standard' + Zapier | $1,399.99 | 1-way per Zap |
 
 Connector prices are monthly-billing list prices: Zapier Professional $29.99 (zapier.com/pricing) and Make Core $10.59 (from third-party pricing reviews, because make.com blocks automated checks). Both bill by usage, so high volumes cost more.
 
-Image: [Salesforce Sales Cloud + Calendly integration cost summary: $1,850 a month for 10 seats, $480 of it is the hidden cost to connect; plans needed: Salesforce Sales Cloud Enterprise and Calendly Teams](https://stackcostmatrix.com/og/salesforce-and-calendly.jpg)
+Image: [Salesforce Sales Cloud + Calendly integration cost summary: $1,850 a month for 10 seats, $600 of it is the hidden cost to connect; plans needed: Salesforce Sales Cloud Enterprise and Calendly Teams](https://stackcostmatrix.com/og/salesforce-and-calendly.jpg)
 
 ## ✓ Verified Vendor Facts
 
@@ -96,7 +96,7 @@ Calendly minimum tier
 Middleware fee
 :   None
 
-The hidden cost is a forced plan upgrade: Salesforce Sales Cloud needs 'Enterprise', $400/mo more than 'Professional', its cheapest plan with API access; Calendly needs 'Teams', $80/mo more than 'Standard', its cheapest plan with API access. That adds $480/mo for 10 seats just to connect the two tools. Running the same connection through Make on the cheapest API plans would cost about $1,380.59/mo in total instead of $1,850/mo, but you'd give up the native connector.
+The hidden cost is a forced plan upgrade: Salesforce Sales Cloud needs 'Enterprise', $400/mo more than 'Professional', its cheapest plan with API access; Calendly needs 'Teams', $200/mo more than 'Free', its cheapest plan with API access. That adds $600/mo for 10 seats just to connect the two tools. Running the same connection through Make on the cheapest plans it can use (Calendly on 'Standard', because its free plan has no webhooks, which Make's and Zapier's Calendly triggers need) would cost about $1,380.59/mo in total instead of $1,850/mo, but you'd give up the native connector.
 
  [Skip the native tier upgrade: connect Salesforce Sales Cloud + Calendly via Make.com middleware instead](https://stackcostmatrix.com/go/make) 
 
@@ -126,7 +126,7 @@ Some outbound links may earn us a referral commission at no extra cost to you. [
 
 ### What are the minimum plan tiers required for the Salesforce Sales Cloud + Calendly integration?
 
-To unlock the native integration, Salesforce Sales Cloud must be on the 'Enterprise' plan or higher and Calendly must be on the 'Teams' plan or higher. Salesforce Sales Cloud's cheapest plan with API access is 'Professional', so 'Enterprise' is a $400/mo upgrade at 10 seats. Calendly's cheapest plan with API access is 'Standard', so 'Teams' is a $80/mo upgrade at 10 seats.
+To unlock the native integration, Salesforce Sales Cloud must be on the 'Enterprise' plan or higher and Calendly must be on the 'Teams' plan or higher. Salesforce Sales Cloud's cheapest plan with API access is 'Professional', so 'Enterprise' is a $400/mo upgrade at 10 seats. Calendly's cheapest plan with API access is 'Free', so 'Teams' is a $200/mo upgrade at 10 seats.
 
 ### How much does the Salesforce Sales Cloud + Calendly stack cost per month for a 10-person team?
 
@@ -134,7 +134,7 @@ At 10 seats with the required tiers (Salesforce Sales Cloud 'Enterprise' + Calen
 
 ### Is the Salesforce Sales Cloud + Calendly integration native, and would Make or Zapier be cheaper?
 
-The Salesforce Sales Cloud + Calendly connection is native — no third-party middleware subscription is required. Connecting through Make on the cheapest API plans would cost about $1,380.59/month in total instead of $1,850.00, but you'd replace the native connector with a third-party automation.
+The Salesforce Sales Cloud + Calendly connection is native — no third-party middleware subscription is required. Connecting through Make on the cheapest plans it can use (Calendly on 'Standard', because its free plan has no webhooks, which Make's and Zapier's Calendly triggers need) would cost about $1,380.59/month in total instead of $1,850.00, but you'd replace the native connector with a third-party automation.
 
 ### What are the limitations of the Salesforce Sales Cloud + Calendly integration?
 

@@ -47,7 +47,7 @@ Sources (checked Nov 12, 2026): [Calendly: Calendly + Stripe ↗](https://calend
 **Native integration costs $120.00/mo ($1,440.00/yr)** for a 10-seat team —
 Stripe 'Standard' ($0.00/mo) + Calendly 'Standard' ($120.00/mo),
 no middleware required.
-Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest API-capable tiers ($130.59/mo all-in) — the native path is cheaper.
+Middleware via Make/Zapier would add ~$10.59/mo on top of the cheapest tiers it can use, with Calendly on 'Standard' ($130.59/mo all-in) — the native path is cheaper.
 
  
 
@@ -66,12 +66,12 @@ Integration routes compared for a 10-seat team
 | Route | Plans | 10 seats / month | Sync |
 | --- | --- | --- | --- |
 | Native Stripe + Calendly connector | Stripe 'Standard' + Calendly 'Standard' | $120.00 | 1-way (Calendly → Stripe) |
-| Make Core on the cheapest API plans | Stripe 'Standard' + Calendly 'Standard' + Make | $130.59 | 1-way per scenario |
-| Zapier Professional on the cheapest API plans | Stripe 'Standard' + Calendly 'Standard' + Zapier | $149.99 | 1-way per Zap |
+| Make Core on the cheapest plans it can use | Stripe 'Standard' + Calendly 'Standard' + Make | $130.59 | 1-way per scenario |
+| Zapier Professional on the cheapest plans it can use | Stripe 'Standard' + Calendly 'Standard' + Zapier | $149.99 | 1-way per Zap |
 
 Connector prices are monthly-billing list prices: Zapier Professional $29.99 (zapier.com/pricing) and Make Core $10.59 (from third-party pricing reviews, because make.com blocks automated checks). Both bill by usage, so high volumes cost more.
 
-Image: [Stripe + Calendly integration cost summary: $120 a month for 10 seats, nothing extra to connect; plans needed: Stripe Standard and Calendly Standard](https://stackcostmatrix.com/og/stripe-and-calendly.jpg)
+Image: [Stripe + Calendly integration cost summary: $120 a month for 10 seats, $120 of it is the hidden cost to connect; plans needed: Stripe Standard and Calendly Standard](https://stackcostmatrix.com/og/stripe-and-calendly.jpg)
 
 ## ✓ Verified Vendor Facts
 
@@ -82,7 +82,7 @@ Image: [Stripe + Calendly integration cost summary: $120 a month for 10 seats, n
 
 Requirements checked: Nov 12, 2026; prices: Nov 3, 2026 · Sources linked below.
 
-## ! Plan requirements
+## ! Hidden Cost Trap
 
 Requires Stripe on the 'Standard' plan or higher — Requires Calendly on the 'Standard' plan or higher.
 
@@ -95,7 +95,7 @@ Calendly minimum tier
 Middleware fee
 :   None
 
-No hidden cost: the native connector works on Stripe 'Standard' and Calendly 'Standard', so connecting them adds nothing to what you already pay for the two tools. Stripe has no monthly plan fee; it charges per transaction, so it counts as $0/month here.
+The hidden cost is a forced plan upgrade: Calendly needs 'Standard', $120/mo more than 'Free', its cheapest plan with API access. That adds $120/mo for 10 seats just to connect the two tools. Stripe has no monthly plan fee; it charges per transaction, so it counts as $0/month here.
 
 ## Side-by-side spec matrix
 
@@ -121,7 +121,7 @@ Some outbound links may earn us a referral commission at no extra cost to you. [
 
 ### What are the minimum plan tiers required for the Stripe + Calendly integration?
 
-To unlock the native integration, Stripe must be on the 'Standard' plan or higher and Calendly must be on the 'Standard' plan or higher. Those are each tool's cheapest plan with API access (Stripe 'Standard' at $0/mo and Calendly 'Standard' at $120/mo for 10 seats), so the integration doesn't force an upgrade.
+To unlock the native integration, Stripe must be on the 'Standard' plan or higher and Calendly must be on the 'Standard' plan or higher. Calendly's cheapest plan with API access is 'Free', so 'Standard' is a $120/mo upgrade at 10 seats.
 
 ### How much does the Stripe + Calendly stack cost per month for a 10-person team?
 
@@ -129,7 +129,7 @@ At 10 seats with the required tiers (Stripe 'Standard' + Calendly 'Standard'), t
 
 ### Is the Stripe + Calendly integration native, and would Make or Zapier be cheaper?
 
-The Stripe + Calendly connection is native — no third-party middleware subscription is required. Make would cost about $130.59/month on the cheapest API plans, more than the native route, so it only makes sense if you already use it.
+The Stripe + Calendly connection is native — no third-party middleware subscription is required. Make would cost about $130.59/month on the cheapest plans it can use (Calendly on 'Standard', because its free plan has no webhooks, which Make's and Zapier's Calendly triggers need), more than the native route, so it only makes sense if you already use it.
 
 ### What are the limitations of the Stripe + Calendly integration?
 
