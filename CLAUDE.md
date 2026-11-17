@@ -166,7 +166,7 @@ rediscover it. Details live in `scripts/README.md`. Update the "State" section a
 - Eight native pairs have no setup steps because their help centres can't be read: activecampaign-and-pipedrive,
   activecampaign-and-slack, activecampaign-and-stripe, clickup-and-slack, clickup-and-zendesk, hubspot-and-clickup,
   hubspot-and-monday, monday-and-zendesk. The owner can paste the help text.
-- Owner tasks: the GitHub repo description still says 59 integrations (now 90; update it after each batch); real
+- Owner tasks: the GitHub repo description says 90 integrations (the owner updated it on Nov 15; update it after each batch); real
   screenshots from the free pairs; a fresh Search
   Console export in about a month ("Last 3 months"). The Google key only if the owner wants live access later.
 - Waiting for the owner's yes or no: the 14 pair pages whose calculators leave out a free plan. The Nov 15 content audit rates
@@ -220,11 +220,15 @@ rediscover it. Details live in `scripts/README.md`. Update the "State" section a
 - Nov 15, 2026: merged as PR #35 and live: 25 of 25 sampled files match the repo; seven pages at desktop and phone width in a browser: no console
   errors, no overflow, fonts load. With the owner's yes, the 131 URLs changed that day went to IndexNow (HTTP 200, accepted).
 - Nov 15, 2026: the owner asked for the "How this site is made" note (`about25.py`): AI tools help read vendor pages, draft text and write the
-  scripts; facts come from vendor pages with dates and links; Rakesh approves every change. Opened as PR #36. After it merges, send
-  `/about/` to IndexNow (the owner's yes covered the day's changes).
+  scripts; facts come from vendor pages with dates and links; Rakesh approves every change. Merged with the audit fixes below as PR #36 and live
+  (12 of 12 files match; four changed pages fine in a browser). The four changed URLs went to IndexNow (HTTP 200).
 - Nov 15, 2026: the owner asked for fresh claude-seo scores: round 5 above (seven auditors resumed after a usage-limit
   pause; Sitemap and Performance measured directly). Fixed from its findings, in PR #36 with the About note: the CRM guide
   still quoted the report's old upgrade range ($120-$251; `research.py` now writes the current one there), the homepage
   Dataset's dates (`site16.py` DATA_MODIFIED), the Salesforce API page's schema headline, and the About note now names the
   Pipedrive and Make price exceptions. Left for later: the webhook explainer is the same text on all 18 API pages; repo
   files such as /CLAUDE.md are served by GitHub Pages (moving to a deploy from a build folder needs the owner's settings).
+- Nov 17, 2026: the owner asked whether iPads need extra work. Checked 7 pages at six iPad sizes (mini, Pro 11, Pro 12.9; portrait and
+  landscape) in Chromium with touch: no overflow, menu links 47px tall, no console errors. Only change: the homepage's side-by-side hero
+  (text beside the chart) needed a mouse (`pointer:fine`), so a 12.9" iPad in landscape got the stacked layout with empty space; the
+  rule in `ui13.py` now needs only 1200px of width. Safari itself (WebKit) isn't installed here, so a look on a real iPad is still worth it.
