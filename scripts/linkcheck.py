@@ -7,6 +7,7 @@ before links24.py existed. Usage (from the repo root): python3 scripts/linkcheck
   4. the homepage links to every hub and every API page
   5. no link in a page's main content has link text that says nothing about its target ("Calculator", "Read more")
   6. the footer's list of guides is the same on every page
+  7. every link to a directory or partner site in the footer carries rel="nofollow" or "sponsored" (no link exchanges)
 """
 import collections, glob, html, json, os, re, sys
 
@@ -62,6 +63,15 @@ def main():
         m = re.search(r'<nav aria-label="Site".*?</nav>', read(f), re.S)
         if m: navs[m.group(0)] += 1
     if len(navs) != 1: bad.append(f"the footer's guide list has {len(navs)} versions: {sorted(navs.values(), reverse=True)}")
+    # 7. outbound footer links (directory badges and the like) must not pass ranking credit
+    for f in glob.glob("*.html") + glob.glob("*/index.html") + glob.glob("stack/*/index.html"):
+        s = read(f); i = s.find("</main>")
+        if i < 0: continue
+        for m in re.finditer(r'<a\b([^>]*)>', s[i:]):
+            h = re.search(r'href="(https?://[^"]+)"', m.group(1))
+            if not h or h.group(1).startswith(SITE): continue
+            rel = (re.search(r'rel="([^"]*)"', m.group(1)) or [None, ""])[1].split()
+            if not {"nofollow", "sponsored"} & set(rel): bad.append(f"{f}: footer link to {h.group(1)} has no nofollow or sponsored")
     for b_ in bad[:25]: print("  ", b_)
     vals = sorted(inbound[p] for p in pairs)
     print(f"link check: {len(paths)} pages, deepest {max(depth.values())} clicks from the homepage, pair pages linked from {vals[0]} to {vals[-1]} other pair pages, {len(bad)} problems")

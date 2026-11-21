@@ -59,6 +59,10 @@ rediscover it. Details live in `scripts/README.md`. Update the "State" section a
   "No hidden cost" (fixed Nov 17). `pairfix.py` now adds such a free plan itself and stops the build for a page not in
   `pairdata26.FREE26`. The Make/Zapier comparison prices each tool at the plan those connectors can use (`model.MW_FLOOR`:
   Calendly Standard). Read the connector's own app page (apps.make.com/<app>) before letting a free plan into that comparison.
+- No link exchanges. Google's spam policy lists "Excessive link exchanges" and "Exchanging goods or services for links" as link
+  spam unless the link carries rel="nofollow" or "sponsored". Any link given in return for something (directory badges, a
+  partner's mention) gets one of those; `links24.py` puts nofollow on the footer badges and `linkcheck.py` fails on a footer
+  link to another site without it. A tool outside the index doesn't get a paragraph on our pages in return for a link.
 - New pairs: `hspro.py` asserts every HubSpot pair needs Free, Starter or Professional, and a tool's Free tier must be in
   the calculator data whenever the tool's other pages list it (Airtable, HubSpot), or the forced-upgrade amount is wrong.
   Likewise a tier's API flag must match the tool's other pages (monday.com Basic has none), which `newpairs23.py` copies.
@@ -123,6 +127,11 @@ rediscover it. Details live in `scripts/README.md`. Update the "State" section a
   pages reach page 1, with very few searches behind them.
 - Impressions from page 6 and deeper are mostly not people (rank-checking tools page that deep). Judge progress by
   position and clicks, not by the impression count.
+- Export of Nov 17, 2026 ("Last 3 months", data to Nov 14): impressions per day kept rising week by week, the average
+  position stayed around page 6, and clicks are still negligible (almost all on the homepage, from India, likely the owner's
+  own visits). Monday.com + Slack is the page closest to page 1. Long question-style searches put the site in the top 6.
+  The Nov 10 core update was still running, so judge only after it ends. The owner was advised to hold off on affiliate
+  programs until real clicks come in.
 - Of the seven pairs without setup steps, ActiveCampaign + Stripe and ClickUp + Slack are the closest to page 1:
   ask for those two help texts first.
 
@@ -240,3 +249,9 @@ rediscover it. Details live in `scripts/README.md`. Update the "State" section a
   route at Calendly Standard ($130.59, more than native; the button doesn't show). 16 pair pages changed (the 14 plus
   intercom-and-calendly and slack-and-calendly, whose Make row went from $10.59 to $130.59), dated Nov 17; no checked date
   moved, no price changed. Changelog entries by `polish26.py`.
+- Nov 17, 2026: PR #38 merged and live (13 of 13 files match; five changed pages fine in a browser). With the owner's yes, the
+  19 URLs it changed went to IndexNow (HTTP 200); privacy and terms were left out (their sitemap date moved with the iPad CSS only).
+- Nov 17, 2026: outreach emails. GoodDay (goodday.work) offered a dofollow link in return for a dofollow paragraph about GoodDay on
+  the Xero hub: advised to accept their link but decline the return link (draft reply given). PeerPush (a launch directory):
+  a free listing is optional, paid launches and its "100 directories" service are not worth it. Then, at the owner's request,
+  the four footer badges (SaaSHub, Twelve Tools, Startup Fame, Fazier) got rel="nofollow"; a directory may drop its own link.

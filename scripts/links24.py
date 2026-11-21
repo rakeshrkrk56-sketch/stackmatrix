@@ -12,7 +12,8 @@ What this script writes. Each block is replaced on every run, so the build stays
   HubSpot hub, Salesforce hub, CRM guide (the three hand-written pages)
                  both link lists, one "related research" sentence, and the pair table: the pair's name is now the
                  link and the "Guide" column, which repeated one phrase on every row, is gone
-  every page     the footer's "Cost guides" list. Pages built from a template by a newpairs script had the template's
+  every page     the footer's directory badges get rel="nofollow" (see "footer badges" below), and
+                 the footer's "Cost guides" list. Pages built from a template by a newpairs script had the template's
                  first link rewritten (seven pages pointed "Intercom integration costs" and the like at another hub,
                  two listed Salesforce twice); the list is now the same everywhere and its pair count is computed
   About page, homepage   the changelog entry for this change (once)
@@ -181,6 +182,21 @@ def site_nav(n_pairs):
     return f'<nav aria-label="Site" class="mt-6 grid gap-6 text-sm sm:grid-cols-2"> {col("Cost guides", guides)} {col("Company", company)} </nav>'
 
 
+# ---------- footer badges ----------
+# Directory badges (SaaSHub, Twelve Tools, Startup Fame, Fazier) were added in return for free listings. Google's spam
+# policy counts links given as part of such an arrangement as link schemes unless they carry rel="nofollow" or
+# "sponsored" (developers.google.com/search/docs/essentials/spam-policies, read Nov 17, 2026), so they get nofollow.
+# The owner chose this on Nov 17, 2026, knowing a directory may then drop its own link back.
+BADGE_RE = re.compile(r'<a href="(https://(?:www\.saashub\.com/|twelve\.tools|startupfa\.me/|fazier\.com)[^"]*)"([^>]*?) rel="([^"]*)"')
+def nofollow_badges(s):
+    i = s.find("</main>")
+    if i < 0: return s
+    def fix(m):
+        rel = m.group(3).split()
+        return f'<a href="{m.group(1)}"{m.group(2)} rel="{" ".join(rel if "nofollow" in rel else ["nofollow"] + rel)}"'
+    return s[:i] + BADGE_RE.sub(fix, s[i:])
+
+
 # ---------- changelog (once) ----------
 ABOUT_UL = '<ul class="mt-4 space-y-3 text-sm leading-relaxed text-slate-600"> '
 HOME_UL = '<ul class="mt-5 space-y-3 text-sm leading-relaxed text-slate-600"> '
@@ -242,7 +258,7 @@ def main():
         s0 = read(f)
         if not SITE_NAV.search(s0): continue
         assert len(SITE_NAV.findall(s0)) == 1, f
-        fixed += save(f, SITE_NAV.sub(lambda m: nav, s0, count=1), s0)
+        fixed += save(f, nofollow_badges(SITE_NAV.sub(lambda m: nav, s0, count=1)), s0)
     vals = sorted(inbound.values())
     print(f"links24: {n} pages changed, footer rewritten on {fixed} | links to a pair from other pair pages: min {vals[0]}, median {vals[len(vals) // 2]}, max {vals[-1]}")
 
